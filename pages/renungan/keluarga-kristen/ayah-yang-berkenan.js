@@ -99,9 +99,9 @@ export default function renungan() {
             Mengasihi Keluarga dengan Kasih Kristus
           </h2>
           <p>
-            Dalam Efesus 5:25, Tuhan mengingatkan kita bahwa "suami harus
+            Dalam Efesus 5:25, Tuhan mengingatkan kita bahwa suami harus
             mengasihi istri mereka, seperti Kristus mengasihi jemaat dan
-            menyerahkan diri-Nya untuk jemaat." Kasih ini bukan hanya tentang
+            menyerahkan diri-Nya untuk jemaat. Kasih ini bukan hanya tentang
             tindakan fisik, tetapi juga tentang kasih yang tidak egois, penuh
             pengorbanan, dan sabar. Seorang ayah yang berkenan di hadapan Tuhan
             akan memprioritaskan kasih kepada keluarganya, baik dalam kata-kata
@@ -144,9 +144,9 @@ export default function renungan() {
             pribadi Kristus.
           </p>
           <p>
-            Dalam Efesus 6:4, Paulus mengingatkan, "Dan kamu, bapak-bapak,
+            Dalam Efesus 6:4, Paulus mengingatkan. Dan kamu, bapak-bapak,
             janganlah membangkitkan amarah anak-anakmu, tetapi didiklah mereka
-            dalam ajaran dan nasihat Tuhan." Di sini jelas bahwa seorang ayah
+            dalam ajaran dan nasihat Tuhan. Di sini jelas bahwa seorang ayah
             memiliki tanggung jawab untuk mendidik anak-anak dalam iman kepada
             Tuhan, mengajarkan nilai-nilai rohani, dan membimbing mereka untuk
             hidup sesuai dengan firman Tuhan. Ayah yang baik tidak hanya
