@@ -9,19 +9,19 @@ export default function Header() {
   };
 
   return (
-    <nav className="bg-gray-900 text-gray-100 border-1 lg:bg-gray-900 lg:text-white p-4 lg:w-1/4 lg:h-screen lg:fixed lg:overflow-y-auto lg:m-0">
+    <nav className="fixed z-50 w-full top-0 bg-gray-900 text-gray-100 border-1 lg:bg-gray-900 lg:text-white p-4 md:px-12 lg:w-1/4 lg:h-screen lg:overflow-y-auto lg:m-0">
       {/* Logo */}
       <div className="lg:mb-8">
         <Link
           href="/"
-          className="text-lg font-bold hover:text-blue-400 lg:text-xl xl:text-2xl "
+          className="text-xl font-bold hover:text-blue-400 lg:text-2xl xl:text-2xl "
         >
           Sekolah Teologi Online
         </Link>
       </div>
 
       {/* Navigation Menu */}
-      <ul className="lg:space-y-4 flex gap-4 lg:px-3 lg:block lg:text-lg">
+      <ul className="lg:space-y-4 flex gap-4 lg:px-3 lg:block lg:text-xl">
         {/* Renungan */}
         <li className="relative">
           <button

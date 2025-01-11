@@ -13,7 +13,7 @@ export default function renungan() {
         <img
           src="/images/produktif.webp"
           alt=""
-          className="w-full h-44 lg:h-80 object-cover rounded"
+          className="w-full h-44 md:h-80 object-cover rounded"
         />
         <article>
           <p>

@@ -19,10 +19,10 @@ function MyApp({ Component, pageProps }) {
         <meta name="author" content="Noldi" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="lg:relative">
+      <div className="relative">
         <Sidebar />
-        <div className="lg:relative lg:w-3/5 lg:left-1/4">
-          <main className="px-3 md:px-9 xl:border-l-4 text-base md:text-lg">
+        <div className="relative top-24 lg:top-3 lg:w-3/5 lg:left-1/4">
+          <main className="px-4 md:px-12 xl:border-l-4 text-lg">
             {/* Render Halaman */}
             <Component {...pageProps} />
           </main>
