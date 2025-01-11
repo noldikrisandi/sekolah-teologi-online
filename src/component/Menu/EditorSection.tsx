@@ -6,11 +6,12 @@ const EditorSection = () => {
 
   useEffect(() => {
     const currentDate = new Date();
-    const options = {
+    const options: Intl.DateTimeFormatOptions = {
       year: "numeric",
       month: "long",
       day: "numeric",
     };
+
     setLastUpdated(currentDate.toLocaleDateString("en-US", options));
   }, []);
 
