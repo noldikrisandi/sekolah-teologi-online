@@ -1,23 +1,25 @@
 import EditorSection from "@/component/Menu/EditorSection";
-import Image from "next/image";
+import Head from "next/head";
 import Link from "next/link";
 
 const Renungan = () => {
   return (
     <>
+      <Head>
+        <title>Pengtingnya Mengasihi Diri Sendiri</title>
+      </Head>
       <section>
         <h1 className="text-2xl font-semibold mt-5 rounded-lg md:3xl">
           Pentingnya Mengasihi Diri Sendiri
         </h1>
+        <p className="text-md">Penulis: Noldi Krisandi</p>
         <EditorSection />
       </section>
       <section>
-        <Image
+        <img
           src="/images/puisi-romantis-populer.webp"
           alt=""
-          width={700}
-          height={300}
-          className="rounded my-5"
+          className="w-full h-44 md:h-80 object-cover rounded"
         />
         <article>
           <p>
@@ -73,7 +75,9 @@ const Renungan = () => {
 
       <section>
         <article>
-          <h2 className="fs-3">Menerima Kelebihan dan Kekurangan</h2>
+          <h2 className="text-xl font-semibold">
+            Menerima Kelebihan dan Kekurangan
+          </h2>
           <p>
             Menerima kelebihan artinya tidak sedang membandingkan diri kita itu
             lebih baik daripada orang lain, karena setiap orang diciptakan Tuhan
@@ -97,7 +101,7 @@ const Renungan = () => {
         </article>
 
         <article>
-          <h2 className="fs-3">Dilarang Membenci</h2>
+          <h2 className="text-xl font-semibold">Dilarang Membenci</h2>
           <p>
             Tuhan mengajarkan untuk kita saling mengampuni, bisa dikatan bukan
             hanya mengajarkan tapi mengharuskan kita untuk saling mengampuni
@@ -124,7 +128,7 @@ const Renungan = () => {
         </article>
 
         <article>
-          <h2 className="fs-3">Merawat Tubuh dan Jiwa</h2>
+          <h2 className="text-xl font-semibold">Merawat Tubuh dan Jiwa</h2>
           <p>
             Tubuh kita adalah bait Allah (Gereja), dengan merawat tubuh artinya
             kita memelihara bait Allah. Jika tubuh kita terawat maka secara
@@ -146,7 +150,9 @@ const Renungan = () => {
         </article>
 
         <article>
-          <h2 className="fs-3">Bersyukur untuk Diri Sendiri</h2>
+          <h2 className="text-xl font-semibold">
+            Bersyukur untuk Diri Sendiri
+          </h2>
           <p>
             Puncak dari mengasihi diri sendiri adalah mampuh bersyukur untuk
             diri sendiri, jika sudah bisa bersyukur untuk diri sendiri artinya

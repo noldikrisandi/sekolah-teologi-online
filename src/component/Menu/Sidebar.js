@@ -14,14 +14,14 @@ export default function Header() {
       <div className="lg:mb-8">
         <Link
           href="/"
-          className="text-xl font-bold hover:text-blue-400 lg:text-2xl xl:text-2xl "
+          className="text-xl font-bold hover:text-blue-400 md:text-2xl xl:text-xl "
         >
           Sekolah Teologi Online
         </Link>
       </div>
 
       {/* Navigation Menu */}
-      <ul className="lg:space-y-4 flex gap-4 lg:px-3 lg:block lg:text-xl">
+      <ul className="lg:space-y-4 flex gap-4 lg:px-3 lg:block lg:text-lg">
         {/* Renungan */}
         <li className="relative">
           <button
@@ -42,6 +42,14 @@ export default function Header() {
               </li>
               <li>
                 <Link
+                  href="/renungan/kasih-damai-sejahtera"
+                  className="block px-4 py-2 hover:bg-gray-700 hover:text-blue-400"
+                >
+                  Kasih dan Damai Sejahtera
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/renungan/keluarga-kristen"
                   className="block px-4 py-2 hover:bg-gray-700 hover:text-blue-400"
                 >
@@ -54,14 +62,6 @@ export default function Header() {
                   className="block px-4 py-2 hover:bg-gray-700 hover:text-blue-400"
                 >
                   Mengerti Maksud Tuhan
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/renungan/kasih-damai-sejahtera"
-                  className="block px-4 py-2 hover:bg-gray-700 hover:text-blue-400"
-                >
-                  Kasih dan Damai Sejahtera
                 </Link>
               </li>
             </ul>

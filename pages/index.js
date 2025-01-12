@@ -29,14 +29,15 @@ export default function Home() {
           Sekolah Teologi Online
         </h1>
         <p className="text-lg text-gray-600 mb-8">
-          Dapatkan Edukasi dan Renungan Rohani Terbaik di Indonesia
+          Edukasi Teologi dan Renungan Rohani di Indonesia
         </p>
         <div className="space-y-6">
           <blockquote className="italic text-xl text-gray-700">
-            &quot;Sekolah Teologi Online hadir untuk memberikan Edukasi dan
-            Renungan yang dapat menjadi dasar hidup orang percaya. Pengetahuan
-            yang benar mengenai Ketuhanan dan Keselamatan dalam Iman Kristen
-            akan membuat kita benar-benar mengerti akan kehendak Tuhan.&quot;{" "}
+            &quot;Sekolah Teologi Online hadir untuk memberikan Edukasi Teologi
+            dan Renungan Rohani yang dapat menjadi dasar hidup orang percaya.
+            Pengetahuan yang benar mengenai Ketuhanan dan Keselamatan dalam Iman
+            Kristen akan membuat kita benar-benar mengerti akan kehendak
+            Tuhan.&quot;
             <br />
             <span className="block mt-2 text-sm text-gray-500">
               - Matius 28:19-20
@@ -44,23 +45,23 @@ export default function Home() {
           </blockquote>
           <blockquote className="italic text-xl text-gray-700">
             &quot;Banyak orang yang hidupnya hancur hanya karena tidak mengerti
-            kebenaran Firman Tuhan, hidup menurut Firman Tuhan membawa kita
+            kebenaran Firman Tuhan. Menghidupi Firman Tuhan akan membawa kita
             menjalani kehidupan yang penuh dengan kemenangan.&quot; <br />
             <span className="block mt-2 text-sm text-gray-500">
               - Yeremia 29:11
             </span>
           </blockquote>
           <blockquote className="italic text-xl text-gray-700">
-            &quot;Dapatkan Edukasi dan Renungan Rohani yang akan membuat hidupmu
-            semakin serupa dengan Kristus dan selalu hidup dalam kemenangan di
-            dalam Kristus Yesus.&quot; <br />
+            &quot;Dapatkan Edukasi Teologi dan Renungan Rohani yang membuat
+            hidupmu semakin serupa dengan Kristus dan selalu hidup dalam
+            kemenangan di dalam Kristus Yesus.&quot; <br />
             <span className="block mt-2 text-sm text-gray-500">
               - 2 Korintus 3:17
             </span>
           </blockquote>
         </div>
         <div className="bg-blue-500 p-3 rounded text-white mt-5">
-          <BtnLink url="renungan/renungan-harian" labelBtn="Renungan Harian" />
+          <BtnLink url="/renungan/renungan-harian" labelBtn="Renungan" />
         </div>
       </div>
     </>

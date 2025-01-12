@@ -12,18 +12,10 @@ export default function Kasih() {
     },
     {
       img: "../images/produktif.webp",
-      altText: "Gambar 2",
-      title: "Kasih Tuhan dalam Hidupku",
-      desc: "Pentingnya mengetahui bagaimana kasih Tuhan mengalir dalam hidup manusia, sehingga kasih Tuhan terpancar dalam kehidupan kita.",
-      url: "/kasih-damai-sejahtera/kasih-tuhan-dalam-hidupku",
-      labelBtn: "Renungan",
-    },
-    {
-      img: "../images/produktif.webp",
       altText: "Gambar 3",
       title: "Menjadi Pribadi Penuh Damai",
       desc: "Semua orang mencari kedamain, tetapi hanya sedikit yang mau menjadi sumber damai. Mari menjadi pribadi yang membawa kedamaian.",
-      url: "/kasih-damai-sejahtera/menjadi-pribadi-penuh-damai",
+      url: "kasih-damai-sejahtera/menjadi-pribadi-penuh-damai",
       labelBtn: "Renungan",
     },
     {
@@ -31,7 +23,7 @@ export default function Kasih() {
       altText: "Gambar 4",
       title: "Selalu Hidup dalam Kesejahteraan",
       desc: "Siapa sih yang tidak ingin hidup sejahtera, mari belajar dari Firman Tuhan bagaimana cara untuk selalu hidup dalam kesejahteraan.",
-      url: "/kasih-damai-sejahtera/selalu-hidup-dalam-kesejahteraan",
+      url: "kasih-damai-sejahtera/selalu-hidup-dalam-kesejahteraan",
       labelBtn: "Renungan",
     },
     {
@@ -39,7 +31,7 @@ export default function Kasih() {
       altText: "Gambar 3",
       title: "Memberi karena Kasih",
       desc: "Memberi karena kasih bukan karena gengsi atau untuk investasi, memberi untuk kemuliaan Tuhan bukan untuk dimuliakan Tuhan.",
-      url: "/kasih-damai-sejahtera/memberi-karena-kasih",
+      url: "kasih-damai-sejahtera/memberi-karena-kasih",
       labelBtn: "Renungan",
     },
     {
@@ -47,7 +39,7 @@ export default function Kasih() {
       altText: "Gambar 3",
       title: "Kasih Yesus Mengubah Hidupku",
       desc: "Setiap orang yang mengalami dan mengerti akan kasih Yesus, maka hidupnya akan berubah menjadi pribadi kasih.",
-      url: "/kasih-damai-sejahtera/kasih-yesus-mengubah-hidupku",
+      url: "kasih-damai-sejahtera/kasih-yesus-mengubah-hidupku",
       labelBtn: "Renungan",
     },
   ];

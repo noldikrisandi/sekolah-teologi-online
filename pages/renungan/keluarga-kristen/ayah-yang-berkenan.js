@@ -1,12 +1,15 @@
+import EditorSection from "src/component/Menu/EditorSection";
+
 export default function renungan() {
   return (
     <>
       <header>
         <div>
           <h1 className="text-xl py-4 md:text-2xl font-semibold">
-            Menjadi Ayah yang Berkenan di Hadapan Tuhan
+            Menjadi Ayah dan Suami yang Berkenan di Hadapan Tuhan
           </h1>
-          <p className="text-md mb-4">Penulis: Noldi Krisandi</p>
+          <p className="text-md">Penulis: Noldi Krisandi</p>
+          <EditorSection />
         </div>
       </header>
       <section>
