@@ -1,4 +1,4 @@
-import EditorSection from "src/component/Menu/EditorSection";
+import Image from "next/image";
 
 export default function Renungan() {
   return (
@@ -9,35 +9,28 @@ export default function Renungan() {
             Makna Salib Yesus bagi Manusia
           </h1>
           <p className="text-md">Penulis: Noldi Krisandi</p>
-          <EditorSection />
         </div>
       </header>
       <section>
-        <img
+        <Image
           src="/images/produktif.webp"
           alt=""
-          className="w-full h-44 md:h-80 object-cover rounded"
+          className="w-full h-44 md:h-80 object-cover rounded mb-6"
+          width={500}
+          height={300}
         />
         <article>
+          <p>Shalom saudara-saudari yang dikasihi oleh Tuhan Yesus Kristus.</p>
+          <p>
+            Renungan kali ini akan membahas mengenai Makna Salib Yesus bagi
+            Manusia.
+          </p>
           <p>
             <strong>Salib Yesus adalah</strong> simbol pengorbanan Tuhan Yesus
-            di kayu salib untuk menyelamatkan manusia dari belenggu dosa,
-            sehingga manusia dilayakan untuk menghampiri Tuhan dan menjadikan
-            manusia sebagai warga kerajaan Sorga bagi mereka yang percaya kepada
-            Yesus. Yesus adalah Tuhan yang rela menjadi manusia untuk menebus
-            dosa umat manusia, melalui pengorbanan Tuhan Yesus manusia dilayakan
-            untuk bisa langsung berinteraksi dengan Tuhan tanpa melalui
-            pengorbanan di bait suci karena sekarang tubuh kita adalah bait suci
-            Allah (1 Korintus 6:19-20).
-          </p>
-        </article>
-        <article>
-          <p>
-            Salib Yesus membuat kita semua mengerti arti sebuah pengorbanan
-            sejati, sebuah pengorbanan pemberian hidup agar kita semua menjadi
-            anak-anakNya yang berkenan dan bisa hidup sesuai dengan perintah
-            Tuhan. Mari bersama kita merenungi apa sih makna salib Yesus dalam
-            hidup kita?
+            di kayu salib, untuk menyelamatkan manusia dari belenggu dosa. Salib
+            Yesus membuat kita mengerti arti sebuah pengorbanan sejati, sebuah
+            pengorbanan pemberian hidup agar manusia yang penuh dosa menjadi
+            berkenan dihadapan Allah.
           </p>
         </article>
         <article>
@@ -46,44 +39,27 @@ export default function Renungan() {
           </h2>
           <p>
             Kematian di kayu salib merupakan puncak pengorbanan Tuhan Yesus bagi
-            kita manusia, Yesus yang sejatinya adalah Tuhan dengan kenyamanan
-            luar biasa di sorga, rela datang ke dunia dalam rupa manusia. Sebuah
-            pengorbanan meninggalkan kenyamanan di sorga untuk hidup di bumi
-            yang penuh dengan ketidaknyamanan.
+            kita manusia, Yesus sejatinya adalah Tuhan dengan kenyamanan luar
+            biasa di sorga, rela datang ke dunia dalam rupa manusia dan hidup
+            menderita bersama manusia di bumi.
           </p>
           <p>
-            Kita sering kagum melihat bagaimana presiden atau pemimpin daerah
-            mau terjun langsung ke masyarakat untuk menyelesaikan permasalahan,
-            karena dengan turun langsung ke masyarakat seorang pemimpin jadi
-            benar-benar tahu apa yang dibutuhkan oleh rakyatnya. Tuhan Yesus
-            melakukan hal yang sama, dia turun dari tahkta kemuliaan-Nya di
-            Sorga untuk datang langsung ke tengah-tengah manusia, bukan hanya
-            sekadar menyelesaikan masalah manusia dengan mengajarkan langsung
-            perintah Tuhan Allah, tetapi dia rela menderita dan mati di kayu
-            salib hanya untuk menyelamatkan saya dan kamu dari dosa yang
+            Kita sering kagum melihat presiden atau pemimpin daerah mau terjun
+            langsung ke masyarakat untuk menyelesaikan permasalahan, hanya
+            dengan turun langsung ke masyarakat seorang pemimpin jadi
+            benar-benar tahu apa yang dibutuhkan oleh rakyatnya.
+          </p>
+          <p>
+            Tuhan Yesus melakukan hal yang sama, dia turun dari tahkta
+            kemuliaan-Nya di Sorga untuk datang langsung ke tengah-tengah
+            manusia, bukan hanya sekadar menyelesaikan masalah manusia dengan
+            mengajarkan perintah Tuhan Allah, tetapi dia rela menderita dan mati
+            di kayu salib hanya untuk menyelamatkan saya dan kamu dari dosa yang
             membelengku kehidupan kita.
           </p>
           <p>
-            Sebuah pengorbanan yang membawa keselamatan bagi manusia,
-            keselamatan di sini bukan hanya sekedar keselamatan setelah
-            kematian, tapi juga keselamatan jiwa kita dari belenggu dosa dan
-            rasa bersalah, bahkan juga keselamatan manusia dari sakit fisik.
-            Jika saat ini kamu masih merasa berdosa atau terbelenggu dalam dosa,
-            kamu harus sadar bahwa Yesus sudah berusaha menyelamatkan kamu dari
-            belenggu dosa, hanya saja kamu belum mau diselamatkan oleh Tuhan
-            Yesus. Untuk banyak orang, kuasa pengorbanan Yesus membuat mereka
-            sembuh dari penyakit fisik.
-          </p>
-          <p>
-            Keselamatan dalam Iman Kristen hanya didapatkan oleh orang yang
-            percaya kepada Yesus (Yohanes 3:16), percaya kepada Yesus bukan
-            hanya sekedar kamu datang ke Gereja, atau kamu hanya mengaku di
-            mulut bahwa Yesus adalah Tuhan. Percaya kepada Yesus artinya kamu
-            percaya dan melakukan semua perintah Tuhan Yesus, ingat ya melakukan
-            semua perintah Yesus akan dilakukan oleh orang yang percaya kepada
-            Yesus. Kami sudah menjelaskan tentang Keselamatan dalam Iman Kristen
-            pada halaman lain di website ini, kamu bisa membacanya untuk
-            benar-benar mengerti tentang Keselamatan dalam Iman Kristen.
+            Disini jelas bahwa makna Salib Yesus adalah Pengorbanan yang Membawa
+            Keselamatan
           </p>
         </article>
         <article>
@@ -91,10 +67,27 @@ export default function Renungan() {
           <p>
             Dalam 2 Korintus 5:21, dijelaskan bahwa Yesus adalah pribadi yang
             tidak mengenal dosa menjadi dosa untuk menebus manusia, agar kita
-            dibenarkan di hadapan Allah. Ini adalah bukti nyata bagaimana kasih
-            Allah lebih besar daripada dosa manusia. Pengorbanan Yesus
-            mengingatkan kita bahwa tidak ada dosa yang terlalu besar untuk
-            diampuni.
+            dibenarkan di hadapan Allah. Konsep ini mungkin sulit untuk
+            dipahami, saya akan mencoba menjelaskannya lebih sederhana.
+          </p>
+          <p>
+            Anggap saja dosa itu adalah sebuah sampah, Tuhan Yesus tidak pernah
+            membuat sampah. Tetapi manusia dipenuhi oleh sampah, kemudian Tuhan
+            Yesus diubah menjadi sampah agar manusia terbebas dari sampah.
+            Sekarang ubah kata sampah itu menjadi dosa. Begitulah konsep dari 2
+            Korintus 5:21.
+          </p>
+          <p>
+            Begini kurang lebih narasinya: <br />
+            Tuhan Yesus tidak pernah membuat dosa. Tetapi manusia dipenuhi oleh
+            dosa, kemudian Tuhan Yesus diubah menjadi dosa agar manusia terbebas
+            dari dosa.
+          </p>
+          <p>
+            Bayangkan saja Tuhan Yesus diubah menjadi dosa untuk menebus dosa
+            kita. Ini adalah bukti nyata bahwa kasih Allah lebih besar daripada
+            dosa manusia. Pengorbanan Yesus mengingatkan kita bahwa tidak ada
+            dosa yang terlalu besar untuk diampuni.
           </p>
           <p>
             Kasih Yesus di kayu salib memulihkan hubungan kita dengan Allah.
@@ -103,16 +96,12 @@ export default function Renungan() {
             kepadaNya untuk mengampuni orang lain, jadi jika saat ini kamu belum
             mengampuni kesalahan orang lain artinya kamu belum percaya kepada
             Yesus. Jika Allah telah mengampuni kita, maka kita pun dipanggil
-            untuk mengampuni orang lain.
+            untuk mengampuni orang lain (Matius 6:14-15).
           </p>
           <p>
-            Yesus berkata dalam Matius 6:14-15, &quot;Karena jikalau kamu
-            mengampuni kesalahan orang, Bapamu yang di sorga akan mengampuni
-            kamu juga. Tetapi jikalau kamu tidak mengampuni orang, Bapamu juga
-            tidak akan mengampuni kesalahanmu.&quot; Hal ini menandakan bahwa
-            mengampuni adalah bagian dari mengikut Yesus yang tidak bisa
-            ditinggalkan. Inilah mengapa Makna Salib Yesus melambangkan kasih
-            yang mengalahkan dosa.
+            Memalui pengorbanan Tuhan Yesus kita dipanggil untuk mengasihi semua
+            orang, sehingga salib Yesus memiliki maksa Kasih yang Mengalahkan
+            Dosa
           </p>
         </article>
         <article>
@@ -129,20 +118,18 @@ export default function Renungan() {
             murid-murid-Ku, yaitu jikalau kamu saling mengasihi.&quot;
           </p>
           <p>
-            Mengasihi sesama adalah bukti kita adalah murid Yesus. Yesus secara
-            jelas mengatakan bahwa semua murid-Nya harus saling mengasihi, kasih
-            ini bukan hanya sekedar diucapkan tapi dilakukan dalam bentuk
-            tindakan dan pikiran. Tuhan Yesus tidak hanya mengajarkan kita
-            mengasihi sesama murid Yesus, tetapi mengajarkan dan memerintahkan
-            muridnya untuk mengasihi seluruh manusia termasuk musuh kita.
+            Mengasihi sesama adalah jadi diri murid Yesus. Tuhan Yesus tidak
+            hanya mengajarkan kita mengasihi sesama murid Yesus, tetapi
+            mengajarkan dan memerintahkan muridnya untuk mengasihi seluruh
+            manusia termasuk musuh kita.
           </p>
           <p>
-            Jika mengasihi orang yang juga mengasihi kita itu sangat mudah,
-            tetapi mengasihi orang yang tidak kita sukai tentunya hal yang
-            sangat sulit. Sebenarnya di dalam Tuhan tidak ada musuh atau orang
-            yang tidak disukai, karena semua orang adalah gambar dan rupa Allah.
+            Mengasihi orang yang juga mengasihi kita merupakan hal mudah, tetapi
+            mengasihi orang yang tidak kita sukai tentunya hal yang sangat
+            sulit. Sebenarnya di dalam Tuhan tidak ada musuh atau orang yang
+            tidak disukai, karena semua orang adalah gambar dan rupa Allah.
             Ketika kita tidak mengasihi orang lain, artinya kita tidak mengasihi
-            Allah. itu sebabnya hukum kasih kepada sesama dikatakan oleh Yesus
+            Allah. Itu sebabnya hukum kasih kepada sesama dikatakan oleh Yesus
             sebagai hukum yang sama dengan mengasihi Allah (Matius 22:37-40).
             Dari sini kita tahu bahwa panggilan untuk saling mengasihi merupakan
             makna salib Yesus.
@@ -155,11 +142,10 @@ export default function Renungan() {
           <p>
             Tuhan Yesus adalah pahlawan sejati dalam iman Kristen, meninggalkan
             hidup nyaman di Sorga untuk mengajarkan manusia tentang Firman Allah
-            yang benar, bahkan Ia sampai rela mati di kayu salib hanya untuk
-            melayakan manusia agar bisa masuk ke dalam Kerajaan Sorga. Tanpa
-            penebusan yang dilakukan oleh Yesus, kita sama sekali tidak layak
-            masuk ke dalam Kerajaan Sorga, sekalipun kita berbuat sangat banyak
-            kebaikan.
+            yang benar, bahkan Ia rela mati di kayu salib hanya untuk melayakan
+            manusia masuk ke dalam Kerajaan Sorga. Tanpa penebusan yang
+            dilakukan oleh Yesus, kita sama sekali tidak layak masuk ke dalam
+            Kerajaan Sorga, sekalipun kita berbuat sangat banyak kebaikan.
           </p>
           <p>
             Pengorbanan Tuhan Yesus di kayu salib, memberikan pengharapan kepada
@@ -175,16 +161,6 @@ export default function Renungan() {
             yang sangat dalam, bagaimana kita dipanggil untuk berjuangan agar
             bisa hidup seperti ajaran Yesus, dengan pengharapan yang jelas yaitu
             mendapat upah di Kerajaan Sorga (Yohanes 8:31).
-          </p>
-          <p>
-            Hidup yang penuh perjuangan membentuk kita melakukan yang terbaik
-            dalam setiap aktifitas sehari-hari, karena apapun yang kita kerjakan
-            memiliki sebuah pengharapan. Baik kamu seorang karyawan, pengusaha,
-            petani, nelayan, peternak, pembisnis, pemain saham/kripto dan
-            pekerjaan lainnya, pastikan kamu bekerja dengan sebaik mungkin agar
-            nama Tuhan dipermuliakan dalam pekerjaanmu maka kamu diberkati oleh
-            Tuhan dan mendapat hasil yang maksimal. Itulah mengapa hidup yang
-            penuh perjuangan dan pengharapan merupakan Makna Salib Yesus.
           </p>
         </article>
         <hr />

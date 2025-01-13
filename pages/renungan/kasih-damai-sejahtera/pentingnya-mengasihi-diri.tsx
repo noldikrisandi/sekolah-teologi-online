@@ -1,6 +1,6 @@
-import EditorSection from "@/component/Menu/EditorSection";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 
 const Renungan = () => {
   return (
@@ -13,13 +13,14 @@ const Renungan = () => {
           Pentingnya Mengasihi Diri Sendiri
         </h1>
         <p className="text-md">Penulis: Noldi Krisandi</p>
-        <EditorSection />
       </section>
       <section>
-        <img
-          src="/images/puisi-romantis-populer.webp"
+        <Image
+          src="/images/produktif.webp"
           alt=""
           className="w-full h-44 md:h-80 object-cover rounded"
+          width={500}
+          height={300}
         />
         <article>
           <p>
@@ -33,9 +34,10 @@ const Renungan = () => {
             </i>
           </p>
           <p>
-            Mengasihi adalah inti dari identitas orang Kristen, sesuai dengan
-            ajaran Tuhan Yesus yang mengingatkan kita untuk mengasihi sesama
-            seperti kita mengasihi diri sendiri (
+            Shalom saudara-saudari yang dikasihi oleh Tuhan Yesus Kristus.{" "}
+            <br /> Pernahkah terbesit dalam pikiran kita bahwa mengasihi adalah
+            identitas orang kristen. Tuhan Yesus mengajarkan kita untuk
+            mengasihi sesama manusia seperti diri kita sendiri.{" "}
             <Link
               href="/alkitab/matius-22#ayat-39"
               title="Kasihilah sesamamu manusia seperti dirimu sendiri"
@@ -44,11 +46,11 @@ const Renungan = () => {
             >
               Matius 22:39
             </Link>
-            ). Ini menunjukkan bahwa untuk bisa mengasihi orang lain dengan
-            benar, kita harus terlebih dahulu belajar{" "}
-            <strong>
-              mengasihi diri sendiri seperti Tuhan mengasihi kita.
-            </strong>
+          </p>
+          <p>
+            Ada satu pertanyaan klasik &quot;Bagaimana kita bisa mengasihi orang
+            lain jika kita tidak bisa mengasihi diri sendiri?&quot; Hal ini akan
+            menjadi renungan kita sekarang.
           </p>
           <p>
             <Link href="/alkitab/kejadian-1-27" target="_blank" title="">

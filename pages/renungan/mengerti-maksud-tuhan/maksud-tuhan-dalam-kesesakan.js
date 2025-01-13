@@ -1,5 +1,5 @@
 import Head from "next/head";
-import EditorSection from "src/component/Menu/EditorSection";
+import Image from "next/image";
 
 export default function Renungan() {
   return (
@@ -13,14 +13,15 @@ export default function Renungan() {
             Mengerti Maksud Tuhan dalam Kesesakan
           </h1>
           <p className="text-md">Penulis: Noldi Krisandi</p>
-          <EditorSection />
         </div>
       </header>
       <section>
-        <img
+        <Image
           src="/images/produktif.webp"
           alt=""
           className="w-full h-44 md:h-80 object-cover rounded"
+          width={500}
+          height={300}
         />
         <article>
           <p>

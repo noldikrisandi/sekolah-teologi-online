@@ -1,5 +1,5 @@
 import Head from "next/head";
-import EditorSection from "src/component/Menu/EditorSection";
+import Image from "next/image";
 
 export default function Renungan() {
   return (
@@ -13,36 +13,40 @@ export default function Renungan() {
             Tujuan Tuhan Menciptakan Manusia
           </h1>
           <p className="text-md">Penulis: Noldi Krisandi</p>
-          <EditorSection />
         </div>
       </header>
       <section>
-        <img
+        <Image
           src="/images/produktif.webp"
           alt=""
-          className="w-full h-44 md:h-80 object-cover rounded"
+          className="w-full h-44 md:h-80 object-cover rounded mb-6"
+          width={500}
+          height={300}
         />
         <article>
+          <blockquote className="italic text-gray-950 mb-5">
+            &quot;Berfirmanlah Allah: Baiklah Kita menjadikan manusia menurut
+            gambar dan rupa Kita, supaya mereka berkuasa atas ikan-ikan di laut,
+            burung-burung di udara, atas ternak dan atas seluruh bumi dan atas
+            segala binatang melata yang merayap di bumi.&quot;
+            <br />
+            <span className="block mt-2 text-sm">- Kejadian 1:26</span>
+          </blockquote>
           <p>
-            Pernakah kamu bertanya dalam hati &quot;apa tujuan Tuhan menciptakan
-            manusia? Jika itu pertanyaannya kamu akan mendapatkan jawabannya di
-            sini. Jika kita mencermati kisah penciptaan di bumi, secara jelas
-            Tuhan merencanakan penciptaan manusia ini dengan sangat matang, ini
-            ayatnya &quot;Berfirmanlah Allah: &quot;Baiklah Kita menjadikan
-            manusia menurut gambar dan rupa Kita, supaya mereka berkuasa atas
-            ikan-ikan di laut, burung-burung di udara, atas ternak dan atas
-            seluruh bumi dan atas segala binatang melata yang merayap di
-            bumi.&quot; (Kejadian 1:26). Di situ ada kata{" "}
+            Dalam Kitab Kejadian 1:26, tertulis{" "}
             <strong>
               baiklah kita menjadikan manusia menurut gambar dan rupa Kita
             </strong>
-            , terdapat makna tersirat bahwa dari awal Tuhan memang merencanakan
-            menciptakan manusia sebelum Tuhan menciptakan yang lainnya.
+            , kata &quot;baiklah&quot; dari kutipan ayat ini mempunyai makna
+            tersirat bahwa Tuhan merencanakan penciptakan manusia sebelum Tuhan
+            menciptakan hal lainnya.
           </p>
           <p>
-            Terus apa sih istimewahnya manusia ini? Kenapa sampai diciptakan
-            sesuai gambar dan rupa Allah sendiri? Yuk simak Tujuan Tuhan
-            Menciptakan Manusia:
+            Artinya manusia ini spesial, karena Tuhan menciptakan terlebih
+            dahulu apa yang dibutuhkan manusia barulah kemudian manusia
+            diciptakan. Bahkan Tuhan menciptakan manusia sesuai gambar dan
+            rupa-Nya, sangat luar biasa Tuhan mempersiapkan penciptaan manusia.
+            Terus apa sih Tujuan Tuhan menciptakan manusia?
           </p>
         </article>
         <article>
@@ -52,7 +56,8 @@ export default function Renungan() {
             memuliakan Tuhan. Tertulis dalam Kitab Yesaya 43:7 &quot;Semua orang
             yang disebutkan dengan nama-Ku, yang Kuciptakan untuk kemuliaan-Ku,
             yang Kubentuk dan juga Kujadikan!&quot; Ayat ini sudah sangat jelas
-            bahwa Tuhan menciptakan manusia untuk memuliakanNya.
+            bahwa <strong>Tuhan menciptakan manusia untuk memuliakanNya</strong>
+            .
           </p>
           <p>
             Rasul Paulus juga menyatakan hal yang sama dalam 1 Korintus 10:31
@@ -82,47 +87,48 @@ export default function Renungan() {
             mulai bertanya kenapa kok ada anak muda di daerah terpencil memiliki
             smartphone, sedangkan akses internet dan listrik saja belum masuk.
             Kemudian seseorang memberi tahu bahwa anak muda itu menjadi
-            eksperimen seorang ahli IT, dia sengajah diberikan hp untuk melihat
-            perilaku mereka saat menggunakan smartphone tersebut.
+            eksperimen seorang ahli IT, dia sengaja diberikan smartphone untuk
+            melihat perilaku mereka saat menggunakannya.
           </p>
           <p>
             Sontak kami terkaget melihat anak mudah itu menggunakan smartphone
-            untuk membuka buah pala, kemudian dia meletakan smartphone itu untuk
+            untuk membuka buah pala, kemudian dia meletakan smartphone untuk
             mengganjal pintu. Benda secanggih itu hanya digunakan untuk
-            melakukan hal sepele. Padahal pembuat smartphone tidak menciptakan
-            benda itu untuk membuka buah pala ataupun untuk mengganjal pintu,
-            tetapi kalau kita pikir memang bisa sih untuk digunakan seperti itu.
+            melakukan hal sepele. Padahal pembuat smartphone tidak
+            menciptakannya untuk membuka buah pala ataupun untuk mengganjal
+            pintu, tetapi kalau kita pikir memang bisa sih untuk digunakan
+            seperti itu.
           </p>
           <p>
             Melihat peristiwa ini saya teringat bagaimana Tuhan menciptakan
-            manusia untuk tujuan mempermuliakanNya, tetapi lucunya saya melihat
+            manusia untuk tujuan memuliakanNya, tetapi lucunya saya melihat
             banyak manusia tidak sadar bahwa tugasnya adalah memuliakan Tuhan.
             Tuhan Yesus berkata dalam Matius untuk mengasihi Allah dengan
-            segenap hati, jiwa, dan akal budi kita, itu artinya hati, jiwa, dan
-            akal budi kita diciptakan untuk mengasihi Allah (Mengasihi Allah di
-            sini sama dengan memuliakan Allah, karena setiap orang yang
-            mengasihi Allah akan memuliakan Allah).
+            segenap hati, jiwa, dan akal budi, itu artinya hati, jiwa, dan akal
+            budi kita diciptakan untuk mengasihi Allah (Mengasihi Allah di sini
+            sama dengan memuliakan Allah, karena setiap orang yang mengasihi
+            Allah akan memuliakan Allah).
           </p>
           <p>
             Jika kita gagal memuliakan Allah dengan segenap hati, jiwa, dan akal
             budi, artinya kita tidak berfungsi sebagaimana mestinya, sama
             seperti smartphone tadi tidak berfungsi sesuai kegunaanya. Mari kita
-            kembali ke kisah smartphone tadi, karena anak muda tadi tidak tahu
-            menggunakan smartphone dengan benar, kemudian ahli IT itu mengajari
-            anak muda ini cara menggunakan smartphone dengan benar, karena sudah
+            kembali ke kisah smartphone, karena anak muda itu tidak tahu
+            menggunakan smartphone dengan benar, kemudian ahli IT mengajari anak
+            muda ini cara menggunakan smartphone dengan benar, karena sudah
             diajari akhirnya anak muda ini sedikit demi sedikit mampu
             menggunakan smartphone sesuai kegunaanya. Hal ini sama dengan Tuhan
-            Yesus langsung datang ke dunia untuk mengajari kita hidup untuk
-            memuliakan Tuhan, Yesus mengajar dan memberi tedalan kasih sebagai
-            cara hidup untuk mempermuliakan Tuhan.
+            Yesus datang ke dunia untuk mengajari kita hidup memuliakan Tuhan,
+            Yesus mengajar dan memberi tedalan kasih sebagai cara hidup dalam
+            mempermuliakan Tuhan.
           </p>
           <p>
-            Yesus datang ke dunia untuk memperbaiki hidup kita agar berfungsi
-            sebagaimana mestinya, tetapi faktanya hanya sebagian kecil saja yang
-            mau dan berusaha untuk hidup seperti Yesus. Hidup serupa dengan
-            Yesus sebenarnya adalah setelan awal Tuhan menciptakan manusia,
-            kalau kita melihat kehidupan Yesus, Ia selalu memuliakan Tuhan,
-            begitu juga seharusnya kehidupan kita.
+            Yesus datang ke dunia demi memperbaiki hidup kita agar berfungsi
+            sebagaimana mestinya, tetapi hanya sebagian kecil saja yang mau dan
+            berusaha untuk hidup seperti Yesus. Hidup serupa dengan Yesus
+            sebenarnya adalah setelan awal Tuhan menciptakan manusia, kalau kita
+            melihat kehidupan Yesus, Ia selalu memuliakan Tuhan, begitu juga
+            seharusnya kehidupan manusia.
           </p>
           <p>
             Hidup serupa dengan Yesus itu konsepnya sangat mudah, yaitu lakukan
@@ -138,14 +144,14 @@ export default function Renungan() {
           <p>
             Kamu harus ingat bahwa Tuhan tidak menyukai orang malas(Amsal 13:4),
             Tuhan memberikan contoh semut merah yang dengan rajin mengumpulkan
-            makanan (Amsal 6:6-11). Dengan tidak malas kamu sudah bisa
+            makanan (Amsal 6:6-11). Dengan tidak malas saja kamu sudah bisa
             mempermuliakan Tuhan.
           </p>
           <p>
             Memuliakan Tuhan itu juga bisa kita lakukan dengan cara mengasihi,
             Firman Tuhan jelas mengatakan kita harus mengasihi orang lain
-            seperti diri kita sendiri, ketik kita mengasihi orang lain itu juga
-            sudah memuliakan Tuhan.
+            seperti diri kita sendiri, ketika kita mengasihi orang lain itu juga
+            merupakan bagian dari memuliakan Tuhan.
           </p>
           <p>
             Kolose 3:17 &quot;Dan segala sesuatu yang kamu lakukan dengan

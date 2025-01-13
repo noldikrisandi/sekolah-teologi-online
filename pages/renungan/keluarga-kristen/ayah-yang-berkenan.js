@@ -1,4 +1,4 @@
-import EditorSection from "src/component/Menu/EditorSection";
+import Image from "next/image";
 
 export default function renungan() {
   return (
@@ -9,14 +9,15 @@ export default function renungan() {
             Menjadi Ayah dan Suami yang Berkenan di Hadapan Tuhan
           </h1>
           <p className="text-md">Penulis: Noldi Krisandi</p>
-          <EditorSection />
         </div>
       </header>
       <section>
-        <img
+        <Image
           src="/images/produktif.webp"
           alt=""
           className="w-full h-44 md:h-80 object-cover rounded"
+          width={500}
+          height={300}
         />
         <article>
           <p>
@@ -77,7 +78,7 @@ export default function renungan() {
           <p>
             Salah satu cara memimpin keluarga dalam kebenaran adalah dengan
             belajar Firman Tuhan bersama. Banyak orang berfikir, belajar Firman
-            dalam keluarga itu hanya harus dilakukna oleh Pendeta atau orang
+            dalam keluarga itu hanya harus dilakukan oleh Pendeta atau orang
             penting lainnya di Gereja, jelas sekali ini pemikiran yang salah.
             Bagaimana mungkin sebuah keluarga bisa melakukan Firman Tuhan secara
             utuh jika tidak belajar Firman di dalam keluarga? Parahnya banyak
@@ -224,7 +225,7 @@ export default function renungan() {
             terhadap semua yang terjadi dalam rumah tangga. Jika istrimu sering
             mengomel, kamu memiliki tanggung jawab untuk menghentikan omelannya
             dengan kasih. Jika anakmu melakukan kesalahan, kamu memiliki
-            tanggung jawab untuk menegur dan menuntutnya dalam kebenaran. Semua
+            tanggung jawab untuk menegur dan menuntunnya dalam kebenaran. Semua
             tanggung jawab dalam keluarga ada pada kelapa keluarga.
           </p>
           <p>

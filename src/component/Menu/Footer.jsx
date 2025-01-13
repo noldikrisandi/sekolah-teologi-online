@@ -39,6 +39,7 @@ export default function Footer() {
             </svg>
           </Link>
         </div>
+        <p>Menerima jasa pembuatan website (WA: 0823-4648-4778)</p>
         <p className="text-sm">
           &copy; {new Date().getFullYear()} Sekolah Teologi Online. Semua hak
           cipta dilindungi.

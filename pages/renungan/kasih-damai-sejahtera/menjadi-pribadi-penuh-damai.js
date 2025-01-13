@@ -1,6 +1,7 @@
+import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
-import EditorSection from "src/component/Menu/EditorSection";
+import Saran from "./index";
 
 export default function Renungan() {
   return (
@@ -11,17 +12,18 @@ export default function Renungan() {
       <header>
         <div>
           <h1 className="text-xl py-4 md:text-2xl font-semibold">
-            Menjadi Pribadi yang Penuh Damai yang Sesuai Firman Tuhan
+            Menjadi Pribadi yang Penuh Damai Sesuai Firman Tuhan
           </h1>
           <p className="text-md">Penulis: Noldi Krisandi</p>
-          <EditorSection />
         </div>
       </header>
       <section>
-        <img
+        <Image
           src="/images/produktif.webp"
           alt=""
           className="w-full h-44 md:h-80 object-cover rounded"
+          width={500}
+          height={300}
         />
         <article>
           <p>
@@ -199,8 +201,62 @@ export default function Renungan() {
             mengampuni orang yang mengungkit kesalahan itu. Hal ini mungkin
             sangat sulit tapi itu harus kamu lakukan.
           </p>
-          <p></p>
+          <p>
+            Setelah kamu berhasil mengampuni dirimu sendiri atas kesalahan yang
+            pernah kamu perbuat, maka langkah terakhir untuk menjadi pribadi
+            yang penuh damai adalah menerima segala kelebihan dan kekurangan
+            yang kamu miliki.
+          </p>
+          <p>
+            Menerima kelebihan artinya tidak sedang membandingkan diri kita itu
+            lebih baik daripada orang lain, karena setiap orang diciptakan Tuhan
+            spesial sehingga memiliki kelebihan masing-masing sesuai apa yang
+            dikaruniakan oleh Tuhan.
+          </p>
+          <p>
+            Menerima kekurangan artinya menerima segala kekurangan yang kita
+            miliki, karena Tuhan menerima kita apa adanya. Setiap orang memiliki
+            kekurangannya masing-masing, tidak perlu berkecil hati dengan apa
+            yang kita miliki. Ingatlah bahwa kamu berharga di mata Tuhan,
+            diciptakan sesuai gambar dan rupa Allah.
+          </p>
+          <p>
+            Berhenti membandingkan diri kita dengan orang lain, karena setiap
+            manusia diciptakan berbeda dan memiliki kelebihan serta kekurangan
+            masing-masing, agar kita semua bisa saling melengkapi satu dengan
+            lainnya dalam kasih di dalam Yesus Kristus.
+          </p>
         </article>
+        <article>
+          <p>
+            Di atas saya sudah jelaskan tahapan agar kita bisa menjadi pribadi
+            yang penuh damai. Tahapan di atas hanya akan sekedar teori yang
+            tidak berjuga jika kamu tidak lakukan, waktunya kamu memulai semua
+            tahapan ini agar kamu bisa menjadi pribadi yang penuh damai.
+          </p>
+          <p>
+            Saya paham bahwa semua tahapan ini tidak mudah, tetapi bisa
+            dilakukan. Kamu tidak harus melakukan semuanya sekaligus dalam satu
+            waktu yang sama, tetapi mulailah dari satu tahapan ke tahapan
+            berikutnya.
+          </p>
+          <p>
+            Saat kamu sukses melakukan semua tahapan ini, maka kamu akan
+            merasakan dampak yang luar biasa dalam hidupmu. Saya ingatkan
+            kembali bahwa menjadi pribadi yang membawa damai adalah kewajiban
+            untuk semua anak-anak Allah (Matius 5:9).
+          </p>
+          <p>
+            Kiranya melalui renungan ini kemuliaan Tuhan selalu nyata dalam
+            hidupmu. Tuhan Yesus Memberkati
+          </p>
+          <p>
+            <strong>Penulis : Noldi Krisandi</strong>
+          </p>
+        </article>
+      </section>
+      <section>
+        <Saran />
       </section>
     </>
   );
