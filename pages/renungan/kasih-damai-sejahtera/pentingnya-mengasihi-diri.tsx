@@ -18,7 +18,7 @@ const Renungan = () => {
         <Image
           src="/images/produktif.webp"
           alt=""
-          className="w-full h-44 md:h-80 object-cover rounded"
+          className="w-full h-44 md:h-80 object-cover rounded mb-6"
           width={500}
           height={300}
         />
@@ -36,7 +36,7 @@ const Renungan = () => {
           <p>
             Shalom saudara-saudari yang dikasihi oleh Tuhan Yesus Kristus.{" "}
             <br /> Pernahkah terbesit dalam pikiran kita bahwa mengasihi adalah
-            identitas orang kristen. Tuhan Yesus mengajarkan kita untuk
+            identitas orang Kristen. Tuhan Yesus mengajarkan kita untuk
             mengasihi sesama manusia seperti diri kita sendiri.{" "}
             <Link
               href="/alkitab/matius-22#ayat-39"
@@ -50,27 +50,26 @@ const Renungan = () => {
           <p>
             Ada satu pertanyaan klasik &quot;Bagaimana kita bisa mengasihi orang
             lain jika kita tidak bisa mengasihi diri sendiri?&quot; Hal ini akan
-            menjadi renungan kita sekarang.
+            menjadi renungan kita saat ini.
           </p>
           <p>
             <Link href="/alkitab/kejadian-1-27" target="_blank" title="">
               Kejadian 1:27
-            </Link>
-            , kita diajarkan bahwa manusia diciptakan menurut gambar dan rupa
-            Allah. Artinya, jika kita mengasihi Allah, kita juga seharusnya
-            mengasihi diri kita sendiri. Dan karena setiap orang juga diciptakan
-            sesuai gambar Allah, maka mengasihi Allah juga berarti mengasihi
-            sesama.
+            </Link>{" "}
+            mengajarkan bahwa manusia diciptakan menurut gambar dan rupa Allah.
+            Hal ini berarti, jika kita mengasihi Allah, kita juga seharusnya
+            mengasihi diri sendiri. Karena setiap orang diciptakan sesuai gambar
+            Allah, mengasihi Allah juga berarti mengasihi sesama.
           </p>
           <p>
             Namun, penting untuk membedakan antara mengasihi diri sendiri dan
-            mengasihani diri sendiri. Hidup kita sangat berharga, dan kita tidak
-            perlu merasa dikasihani. Mengasihi diri sendiri bukan berarti
+            mengasihani diri sendiri. Hidup kita sangat berharga, sehingga kita
+            tidak perlu merasa dikasihani. Mengasihi diri sendiri bukan berarti
             memanjakan diri atau merendahkan diri, tetapi lebih kepada menerima
-            dengan penuh syukur segala kelebihan dan kekurangan yang Tuhan
-            berikan pada kita. Inilah yang memungkinkan kita untuk mengasihi
-            orang lain dengan tulus dan penuh kasih, seperti yang diajarkan oleh
-            Tuhan.
+            dengan penuh syukur segala kelebihan dan kekurangan yang telah Tuhan
+            berikan kepada kita. Sikap inilah yang memungkinkan kita untuk
+            mengasihi orang lain dengan tulus dan penuh kasih, seperti yang
+            diajarkan oleh Tuhan.
           </p>
         </article>
       </section>
@@ -81,51 +80,53 @@ const Renungan = () => {
             Menerima Kelebihan dan Kekurangan
           </h2>
           <p>
-            Menerima kelebihan artinya tidak sedang membandingkan diri kita itu
-            lebih baik daripada orang lain, karena setiap orang diciptakan Tuhan
-            spesial sehingga memiliki kelebihan masing-masing sesuai apa yang
-            dikaruniakan oleh Tuhan.
+            Menerima kelebihan berarti tidak membandingkan diri kita dengan
+            orang lain untuk merasa lebih baik daripada mereka. Setiap orang
+            diciptakan Tuhan secara istimewa, dengan kelebihan masing-masing
+            yang telah dikaruniakan oleh-Nya.
           </p>
           <p>
-            Menerima kekurangan artinya menerima segala kekurangan yang kita
+            Menerima kekurangan berarti menerima segala keterbatasan yang kita
             miliki, karena Tuhan menerima kita apa adanya. Setiap orang memiliki
-            kekurangannya masing-masing, tidak perlu berkecil hati dengan apa
-            yang kita miliki. Ingatlah bahwa kamu berharga di mata Tuhan,
-            diciptakan sesuai gambar dan rupa Allah.
+            kekurangan masing-masing, dan kita tidak perlu berkecil hati atas
+            apa yang kita miliki. Ingatlah bahwa kita berharga di mata Tuhan,
+            karena kita diciptakan sesuai gambar dan rupa-Nya.
           </p>
           <p>
-            Menerima kelebihan dan kekurangan merupakan bagian dari mengasihi
-            diri sendiri. Berhenti membandingkan diri kita dengan orang lain,
-            karena setiap manusia diciptakan berbeda dan memiliki kelebihan
-            serta kekurangan masing-masing, agar kita semua bisa saling
-            melengkapi satu dengan lainnya dalam kasih di dalam Yesus Kristus.
+            Menerima kelebihan dan kekurangan adalah bagian penting dari
+            mengasihi diri sendiri. Berhentilah membandingkan diri dengan orang
+            lain, karena setiap manusia diciptakan unik dengan kelebihan dan
+            kekurangan masing-masing. Dengan demikian, kita dapat saling
+            melengkapi satu sama lain dalam kasih yang berasal dari Yesus
+            Kristus.
           </p>
         </article>
 
         <article>
           <h2 className="text-xl font-semibold">Dilarang Membenci</h2>
           <p>
-            Tuhan mengajarkan untuk kita saling mengampuni, bisa dikatan bukan
-            hanya mengajarkan tapi mengharuskan kita untuk saling mengampuni
-            (Matius 6:15). Sebelum mengampuni orang lain, tentunya kita harus
-            bisa mengampuni diri sendiri.
+            Tuhan mengajarkan kita untuk saling mengampuni, dan bahkan
+            mengharuskan hal itu terjadi di antara kita (Matius 6:15). Namun,
+            sebelum kita bisa mengampuni orang lain, kita harus terlebih dahulu
+            mampu mengampuni diri sendiri.
           </p>
           <p>
-            Mungkin kamu pernah melakukan kesalahan kepada orang lain atau
-            kepada diri sendiri yang sangat membekas, sehingga sampai saat ini
-            kamu belum bisa mengampuni dirimu sendiri? Jika hal itu sedang kamu
-            alami, maka kamu perlu mengampuni diri sendiri. Mengampuni diri
-            sendiri juga berbicara mengenai bagaimana kamu bisa menerima segala
-            kelemahanmu, mungkin kamu lemah dalam mata pelajaran di sekolah atau
-            kamu sering melakukan kesalahan di kantor, toko, atau ladang
-            tempatmu bekerja. Terimalah semua itu jika kamu memiliki kelemahan
-            di situ, kemudian bangkit untuk bisa jadi pribadi yang lebih baik.
+            Mungkin kamu pernah melakukan kesalahan yang fatal kepada orang lain
+            atau bahkan kepada dirimu sendiri, sehingga saat kini kamu merasa
+            sulit untuk memaafkan dirimu sendiri. Jika itu yang sedang kamu
+            alami, maka penting bagimu untuk belajar mengampuni diri sendiri.
+            Mengampuni diri sendiri juga berarti menerima segala kelemahan yang
+            ada pada dirimu. Mungkin kamu kesulitan dalam mata pelajaran
+            tertentu di sekolah, atau sering membuat kesalahan di tempat kerja,
+            toko, atau ladang tempatmu berusaha. Terimalah kelemahan itu sebagai
+            bagian dari dirimu, dan jadikanlah titik awal untuk bangkit menjadi
+            pribadi yang lebih baik.
           </p>
           <p>
-            Mengampuni diri sendiri artinya kita berdamai dengan diri sendiri,
-            serta tidak terpuruk dalam kelemahan kita. Berdamailah dengan diri
-            sendiri. Ampuni segala kesalahan yang pernah kamu lakukan, saatnya
-            bangkit dan menjadi pemenang atas diri sendiri.
+            Mengampuni diri sendiri berarti berdamai dengan diri sendiri dan
+            tidak membiarkan setiap kelemahan bisa menjatuhkanmu. Berdamailah
+            dengan segala kesalahan yang pernah kamu lakukan. Ampunilah dirimu,
+            dan saatnya bangkit untuk menjadi pemenang atas dirimu sendiri.
           </p>
         </article>
 
@@ -138,7 +139,7 @@ const Renungan = () => {
             aktivitas sehingga bisa membuat kita lebih mengasihi diri sendiri.
           </p>
           <p>
-            Mulailah berolahraga teratur, mengkonsumsi makanan sehat, menjaga
+            Mulailah berolahraga teratur, mengonsumsi makanan sehat, menjaga
             pola tidur, dan istirahat yang cukup. Jika perlu kamu bisa
             menggunakan skin care atau produk kesehatan lainnya.
           </p>
@@ -156,10 +157,10 @@ const Renungan = () => {
             Bersyukur untuk Diri Sendiri
           </h2>
           <p>
-            Puncak dari mengasihi diri sendiri adalah mampuh bersyukur untuk
-            diri sendiri, jika sudah bisa bersyukur untuk diri sendiri artinya
-            kamu sudah berdamai dengan diri sendiri, dengan menyadari secara
-            penuh jika kamu itu gambar dan rupa Allah yang sejati.
+            Puncak dari mengasihi diri sendiri adalah mampu bersyukur untuk diri
+            sendiri, jika sudah bisa bersyukur untuk diri sendiri artinya kamu
+            sudah berdamai dengan diri sendiri, dengan menyadari secara penuh
+            jika kamu itu gambar dan rupa Allah yang sejati.
           </p>
           <p>
             Perintah Tuhan jelas, bersyukurlah atas segala hal. Bersyukur
@@ -174,8 +175,8 @@ const Renungan = () => {
         <article>
           <p>
             Kiranya renungan ini bisa membuat kita semua jadi bertumbuh dalam
-            pengenalan yang benar tentang Tuhan, dan selalu menjadi berkat
-            dimanapun kita berada. Tuhan Yesus Memberkati.
+            pengenalan yang benar tentang Tuhan, dan selalu menjadi berkat di
+            mana pun kita berada. Tuhan Yesus Memberkati.
           </p>
         </article>
       </section>

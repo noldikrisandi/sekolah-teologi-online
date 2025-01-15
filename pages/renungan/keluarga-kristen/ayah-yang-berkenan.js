@@ -15,25 +15,27 @@ export default function renungan() {
         <Image
           src="/images/produktif.webp"
           alt=""
-          className="w-full h-44 md:h-80 object-cover rounded"
+          className="w-full h-44 md:h-80 object-cover rounded mb-6"
           width={500}
           height={300}
         />
         <article>
           <p>
-            Sebagai seorang ayah, peran yang diemban bukan hanya sekadar sebagai
+            Sebagai seorang ayah, peran yang diemban tidak hanya sekadar sebagai
             pencari nafkah atau pelindung fisik, tetapi juga sebagai pemimpin
-            yang membawa keluarga makin dekat kepada Tuhan. Alkitab mengajarkan
-            banyak prinsip tentang bagaimana menjadi ayah yang berkenan di
-            hadapan Tuhan, yang tidak hanya mengedepankan tugas-tugas duniawi,
-            tetapi juga menjalankan panggilan Tuhan dengan penuh kesungguhan
-            hati.
+            yang membawa keluarga semakin dekat kepada Tuhan.
           </p>
           <p>
-            Seorang Ayah yang berkenan di hadapan Tuhan, haruslah hidup sesuai
-            dengan kebenaran Firman Tuhan sehingga hidupnya mencerminkan kasih
-            Yesus. Peran ayah sangat besar dalam keluarga, untuk itu perlu kerja
-            keras untuk mewujudkan keluarga yang dipenuhi kemuliaan Tuhan.
+            Alkitab mengajarkan banyak prinsip tentang bagaimana menjadi ayah
+            yang tidak hanya mengutamakan tugas-tugas duniawi, tetapi juga
+            menjalankan panggilan Tuhan dengan penuh kesungguhan hati.
+          </p>
+          <p>
+            Seorang ayah yang berkenan di hadapan Tuhan harus hidup sesuai
+            dengan kebenaran Firman Tuhan, sehingga hidupnya mencerminkan kasih
+            Kristus. Peran ayah dalam keluarga sangatlah besar. Oleh karena itu,
+            diperlukan kerja keras untuk mewujudkan keluarga yang dipenuhi
+            kemuliaan Tuhan.
           </p>
         </article>
       </section>
@@ -41,86 +43,93 @@ export default function renungan() {
         <article>
           <h2 className="text-xl font-semibold">Memimpin dalam Kebenaran</h2>
           <p>
-            Sebelum menjadi kepala keluarga, sangat penting untuk mengerti
-            Firman Tuhan sebagai dasar kehidupan keluarga. Kepala keluarga yang
-            tidak mengerti Firman Tuhan tidak mungkin bisa memimpin keluarga
-            dalam kebenaran Firman Tuhan, padahal Firman Tuhan itu harus menjadi
-            pelita kehidupan keluarga. Tuhan adalah sumber damai, untuk bisa
-            selalu menciptakan kedamaian di rumah tentunya ayah sebagai kepala
-            keluarga harus dekat kepada Tuhan sebagai sumber kedamaian agar
-            kehidupan keluarga dipenuhi damai Kristus.
+            Sebelum menjadi kepala keluarga, penting untuk menjadikan Firman
+            Tuhan sebagai dasar kehidupan keluarga. Tanpa pemahaman Firman
+            Tuhan, sulit bagi kepala keluarga untuk memimpin dalam kebenaran.
+            Firman Tuhan harusnya menjadi pelita yang menerangi perjalanan
+            kehidupan keluarga.
           </p>
           <p>
-            Ayah harus mengerti dan bisa menerapkan Firman Tuhan, sehingga bisa
-            memimpin keluarga dalam kebenaran Firman Allah. Ketika keluarga
-            berada dalam kebenaran Firman Tuhan maka kehidupan keluarga akan
-            selalu disertai Tuhan sehingga berkat-berkat Tuhan turun atas
-            keluarga. Berkat Tuhan bukan hanya berbicara soal materi, karena
-            sejatinya berkat Tuhan itu ada 2, yaitu damai dan sejahtera.
+            Ayah perlu memahami dan menerapkan Firman Tuhan agar dapat
+            membimbing keluarga sesuai kehendak Tuhan. Ketika keluarga hidup
+            dalam kebenaran Firman Tuhan, penyertaan dan berkat Tuhan akan
+            nyata. Berkat Tuhan itu ada dua, yaitu damai dan sejahtera.
           </p>
           <p>
-            Damai artinya keluarga dipenuhi rasa kasih sayang, rasa aman, dan
-            rasa nyaman. kedamaian dalam keluarga bisa menjadi sumber sukacita
-            karena ada Tuhan di dalamnya, dimana ada Tuhan di situ ada
-            kedamaian. Jika keluargamu saat ini tidak dipenuhi dengan damai,
-            kamu harus cek apakah kamu sudah memimpin keluarga dalam kebenaran.
+            Damai mencakup kasih sayang, rasa aman, dan kenyamanan dalam
+            keluarga. Kedamaian ini menjadi sumber sukacita karena Tuhan hadir.
+            Jika keluargamu belum dipenuhi damai, evaluasi apakah kepemimpinanmu
+            sudah sesuai dengan kebenaran Firman Tuhan.
           </p>
           <p>
-            Sejahtera artinya keluargamu tidak mengalami kekurangan sandang,
-            pangan, papan. Tuhan tidak akan membiarkan anak-anakNya terpuruk
-            dalam kekurangan, karena sejahtera adalah hasil dari kita mengikut
-            Tuhan. Tuhan mengajarkan kita untuk menabung di saat berkelimpahan
-            agar tetap hidup layak saat masa sukar datang(Amsal 6:6-8), dan
-            cara-cara agar bisa hidup sejahtera telah Tuhan perintahkan. Apakah
-            kamu sudah melakukan perintah itu agar hidup keluargamu tidak
-            kekurangan?
+            Sejahtera berarti keluargamu tidak mengalami kekurangan dalam
+            sandang, pangan, dan papan. Tuhan tidak akan membiarkan
+            anak-anak-Nya terpuruk dalam kekurangan, karena sejahtera adalah
+            hasil dari kita mengikuti Tuhan.
           </p>
+          <p>
+            Tuhan mengajarkan kita untuk menabung saat berkelimpahan, agar kita
+            tetap hidup layak saat masa sukar datang (Amsal 6:6-8). Selain itu,
+            Tuhan juga memberikan petunjuk tentang cara-cara untuk hidup
+            sejahtera. Apakah kamu sudah menjalankan perintah tersebut, sehingga
+            hidup keluargamu tidak kekurangan?
+          </p>
+          <h3 className="text-lg font-semibold">
+            Belajar Firman Tuhan Bersama Keluarga
+          </h3>
           <p>
             Salah satu cara memimpin keluarga dalam kebenaran adalah dengan
-            belajar Firman Tuhan bersama. Banyak orang berfikir, belajar Firman
-            dalam keluarga itu hanya harus dilakukan oleh Pendeta atau orang
-            penting lainnya di Gereja, jelas sekali ini pemikiran yang salah.
-            Bagaimana mungkin sebuah keluarga bisa melakukan Firman Tuhan secara
-            utuh jika tidak belajar Firman di dalam keluarga? Parahnya banyak
-            orang hanya mengharapkan persekutuan di Gereja yang dilakukan satu
-            atau dua kali seminggu, tentu hal itu sangat kurang.
+            belajar Firman Tuhan bersama. Banyak orang berpikir bahwa belajar
+            Firman dalam keluarga hanya perlu dilakukan oleh pendeta atau orang
+            penting lainnya di gereja. Ini jelas merupakan pemikiran yang salah.
           </p>
           <p>
-            Belajar bersama Firman Tuhan di dalam keluarga akan berdampak baik
-            untuk keluargamu, semakin paham kebenaran, sebuah keluarga akan
-            semakin hidup dalam damai dan sejahtera di dalam Kristus. Tentu
-            memahami kebenaran saja tidak cukup jika tidak dilakukan dalam
-            kehidupan sehari-hari.
+            Bagaimana mungkin sebuah keluarga bisa hidup menurut Firman Tuhan
+            secara utuh jika tidak belajar Firman bersama di dalam keluarga?
+            Parahnya, banyak orang hanya mengandalkan persekutuan gereja yang
+            dilakukan satu atau dua kali seminggu, padahal itu sangat kurang.
           </p>
           <p>
-            Pimpinlah keluargamu dalam Kebenaran Firman Tuhan maka kamu dan
-            keluarga akan mengalami berkat Damai dan Sejahtera dari Tuhan Yesus
-            Kristus.
+            Semakin paham kebenaran, sebuah keluarga akan semakin hidup dalam
+            damai dan sejahtera di dalam Kristus. Tentu saja, memahami kebenaran
+            saja tidak cukup jika tidak diterapkan dalam kehidupan sehari-hari.
+          </p>
+          <p>
+            Pimpinlah keluargamu dalam kebenaran Firman Tuhan, maka kamu dan
+            keluargamu akan mengalami berkat damai dan sejahtera dari Tuhan
+            Yesus Kristus.
           </p>
         </article>
         <article>
           <h2 className="text-xl font-semibold">
             Mengasihi Keluarga dengan Kasih Kristus
           </h2>
+          <blockquote className="italic text-gray-950 mb-5 mt-4">
+            &quot;Suami, kasihilah istrimu, sebagaimana Kristus telah mengasihi
+            gereja dan telah menyerahkan diri-Nya baginya.&quot;
+            <br />
+            <span className="block mt-2 text-sm">- Efesus 5:25 </span>
+          </blockquote>
           <p>
-            Dalam Efesus 5:25, Tuhan mengingatkan kita bahwa suami harus
-            mengasihi istri mereka, seperti Kristus mengasihi jemaat dan
-            menyerahkan diri-Nya untuk jemaat. Kasih ini bukan hanya tentang
-            tindakan fisik, tetapi juga tentang kasih yang tidak egois, penuh
-            pengorbanan, dan sabar. Seorang ayah yang berkenan di hadapan Tuhan
-            akan memprioritaskan kasih kepada keluarganya, baik dalam kata-kata
-            maupun tindakan, serta meneladani Kristus dalam setiap aspek
-            kehidupan.
+            Tuhan mengingatkan kita bahwa suami harus mengasihi istrinya,
+            seperti Kristus mengasihi jemaat dan menyerahkan diri-Nya untuk
+            jemaat. Kasih ini bukan hanya tentang tindakan fisik, tetapi juga
+            tentang kasih yang tidak egois, penuh pengorbanan, dan sabar.
           </p>
           <p>
-            Sering kali seorang anak tidak mengalami kasih Kristus dalam
-            keluarganya, sehingga mereka mencari kasih lain di luaran sana.
-            Sangat berbahaya jika anak atau istri lebih nyaman ketika tidak
-            bersama dengan ayah, dampaknya akan sangat mengerikan.
+            Seorang ayah yang berkenan di hadapan Tuhan akan memprioritaskan
+            kasih kepada keluarganya, baik dalam kata-kata maupun tindakan,
+            serta meneladani Kristus dalam setiap aspek kehidupannya.
+          </p>
+          <p>
+            Sering kali, seorang anak tidak mengalami kasih Kristus dalam
+            keluarganya, sehingga mereka mencari kasih yang lain di luar sana.
+            Ini sangat berbahaya jika anak atau istri merasa lebih nyaman ketika
+            tidak bersama ayah, karena dampaknya bisa sangat mengerikan.
           </p>
           <p>
             Seorang ayah harus memancarkan kasih Kristus dalam kehidupannya agar
-            keluarga terus dalam kasih Kristus.
+            keluarga terus hidup dalam kasih Kristus.
           </p>
         </article>
         <article>
@@ -128,66 +137,42 @@ export default function renungan() {
             Mengajarkan Firman Tuhan kepada Anak
           </h2>
           <p>
-            Sering kali kita salah perspektif mengenai pendidikan rohani seorang
-            anak. Orang tua banyak yang lepas tanggunggjawab dalam mengajarkan
-            Firman Tuhan, mereka kebanyakan melimpahkan tanggunggjawab itu
-            kepada Gereja atau Guru Sekolah Minggu, padahal itu sebenarnya
-            tanggunggjawab orang tua.
+            Sering kali, orang tua salah paham tentang pendidikan rohani anak,
+            dengan menyerahkan tanggung jawab ini sepenuhnya kepada gereja atau
+            guru sekolah Minggu. Padahal, pendidikan rohani adalah tanggung
+            jawab utama orang tua, terutama ayah.
           </p>
           <p>
-            Seorang ayah memiliki peran besar dalam mengajarkan anak mengenai
-            Firman Tuhan, tidak bisa dipungkiri jika anak cenderung lebih
-            mendengarkan ayah daripada ibu. Hal ini menjadi esensial sekali
-            untuk seorang ayah dalam memberikan teladan dan mengajarkan
-            kebenaran kepada anak.
+            Ayah memiliki peran penting dalam mengajarkan Firman Tuhan, karena
+            anak cenderung lebih mendengarkan ayah. Sebagai pemimpin keluarga,
+            ayah harus menjadi teladan dalam perkataan dan perbuatan yang
+            mencerminkan Kristus. Firman Tuhan menegaskan:
+          </p>
+          <blockquote className="italic text-gray-950 mb-5">
+            &quot;Dan kamu, bapak-bapak, janganlah membangkitkan amarah
+            anak-anakmu, tetapi didiklah mereka dalam ajaran dan nasihat
+            Tuhan.&quot;
+            <br />
+            <span className="block mt-2 text-sm">- Efesus 6:4 </span>
+          </blockquote>
+          <p>
+            Seorang ayah yang memahami dan menerapkan Firman Tuhan akan
+            membimbing anak dalam kebenaran. Sebaliknya, ayah yang tidak
+            memahami Firman Tuhan gagal memberikan dasar iman yang kuat bagi
+            anak, sehingga anak mudah terpengaruh nilai dunia.
           </p>
           <p>
-            Harusnya anak pertama kali mendengarkan Firman Tuhan itu dari
-            seorang ayah, dan seorang ayah juga harus menjadi orang pertama yang
-            menjadi teladan dalam perkata dan perbuatan yang mencerminkan
-            pribadi Kristus.
+            Jika ayahmu dulu gagal mengajarkan Firman Tuhan, jadikan itu
+            motivasi untuk tidak mengulanginya. Jadilah teladan yang baik,
+            karena anak akan menghormati ayah yang mengajarkan dan menjalankan
+            kebenaran.{" "}
+            <strong>Jangan menuntut hormat tanpa memberikan teladan.</strong>
           </p>
           <p>
-            Dalam Efesus 6:4, Paulus mengingatkan. Dan kamu, bapak-bapak,
-            janganlah membangkitkan amarah anak-anakmu, tetapi didiklah mereka
-            dalam ajaran dan nasihat Tuhan. Di sini jelas bahwa seorang ayah
-            memiliki tanggung jawab untuk mendidik anak-anak dalam iman kepada
-            Tuhan, mengajarkan nilai-nilai rohani, dan membimbing mereka untuk
-            hidup sesuai dengan firman Tuhan. Ayah yang baik tidak hanya
-            mengajarkan melalui kata-kata, tetapi juga dengan memberikan contoh
-            hidup yang sesuai dengan ajaran Kristus.
-          </p>
-          <p>
-            Ironisnya banyak ayah yang gagal mengajarkan Firman Tuhan kepada
-            anak, karena dia sendiri tidak mengerti Firman Tuhan. Hal ini
-            membuat anak tidak punya jadi diri dalam pengenalan akan Tuhan,
-            sehingga jangan heran jika seorang anak tidak patuh dan taat pada
-            orang tua, karena ayah gagal mengajarkan Firman dan menjadi teladan
-            yang baik untuk anak.
-          </p>
-          <p>
-            Ketika kamu gagal mengajarkan Firman Tuhan kepada anak, maka anak
-            akan diajari nilai dunia oleh lingkungannya karena dia tidak
-            memiliki dasar kebenaran. Jika dulu ayah kamu gagal mengajarkan
-            Firman Tuhan kepadamu, jangan sampai kamu menjadi ayah yang gagal
-            juga untuk mengajarkan Firman Tuhan kepada anakmu.
-          </p>
-          <p>
-            Jangan menuntut hormat dari anak jika kamu gagal mengajarkan dia
-            nilai kebenaran, anak tidak perlu dituntut untuk menghormati orang
-            tua, jadilah ayah yang berhasil mengajar dan menjadi teladan di
-            dalam Yesus Kristus, maka dengan sendirinya anak akan menghormati
-            kamu sebagai seorang ayah. Jika anak kamu tidak taat atau tidak
-            menghormati kamu, sangat perlu kamu intropeksi diri apakah kamu
-            sudah mengajarkan kebenaran dan menjadi teladan untuk anak kamu?
-            Jika belum ini saatnya kamu memperbaiki itu semua.
-          </p>
-          <p>
-            Penting untuk diingat, bahwa karakter seorang anak itu dibentuk
-            dalam keluarga yang dipimpin oleh seorang ayah. Kamu punya
-            tanggunggjawab untuk membentuk anak menjadi pribadi yang serupa
-            dengan Kristus, karena kamulah pemimpin keluarga. Jadilah pemimpin
-            keluarga yang berhasil dengan mengajarkan Firman Tuhan kepada anak.
+            Ingatlah, karakter anak dibentuk oleh keluarga yang dipimpin dengan
+            hikmat dan kasih berdasarkan Firman Tuhan. Sebagai pemimpin
+            keluarga, jadilah pemimpin yang berhasil membimbing anak menjadi
+            pribadi yang serupa dengan Kristus.
           </p>
         </article>
         <article>
@@ -195,65 +180,65 @@ export default function renungan() {
             Mengutamakan Doa dan Kehadiran Tuhan dalam Keluarga
           </h2>
           <p>
-            Apakah keluargamu memiliki mezbah doa? Dan apakah keluargamu selalu
-            mengharapkan kehadiran Tuhan dalam setiap situasi? Atau keluargamu
-            hanya menjadikan Tuhan sebagai pajangan dan tempat meminta-minta?
+            Apakah keluargamu memiliki mezbah doa? Apakah keluargamu selalu
+            mengharapkan kehadiran Tuhan dalam setiap situasi, atau hanya
+            menjadikan Tuhan sebagai simbol dan tempat meminta-minta?
           </p>
           <p>
-            Mezbah doa dalam keluarga itu sangat penting, kepala keluarga harus
-            memiliki inisiatif untuk membangun mezbah doa dalam keluarga. Dengan
-            doa menandakan kamu selalu mengharapkan kehadiran Tuhan dalam setiap
-            langkah kehidupan keluargamu. Jika kamu tidak membangun mezbah doa
-            dalam keluarga, bisa dikatakan bahwa keluargamu tidak sepenuhnya
-            percaya dan bergantung pada Tuhan.
+            Mezbah doa dalam keluarga sangat penting. Kepala keluarga harus
+            memiliki inisiatif untuk membangun mezbah doa, karena melalui doa,
+            menunjukkan bahwa kita selalu mengharapkan kehadiran Tuhan dalam
+            setiap langkah kehidupan keluarga.
           </p>
           <p>
-            Jika kamu ingin merasakan Tuhan selalu hadir dalam keluarga, maka
-            doa harus menjadi salah satu pondasi untuk kehidupan keluargamu
-            (Yeremia 29:12-13).
+            Jika kamu tidak membangun mezbah doa dalam keluarga, maka itu
+            menunjukkan keluargamu belum sepenuhnya percaya dan bergantung pada
+            Tuhan.
+          </p>
+          <p>
+            Kamu pasti menginginkan kehadiran Tuhan selalu ada dalam keluargamu,
+            maka doa harus menjadi salah satu fondasi utama dalam kehidupan
+            keluarga, seperti yang tertulis dalam Yeremia 29:12-13.
           </p>
         </article>
         <article>
           <h2 className="text-xl font-semibold">Ayah yang Bertanggung jawab</h2>
           <p>
-            Jika di perusahaan memiliki CEO yang bertanggung jawab atas segala
-            yang ada di kantor, begitu juga di keluarga memiliki ayah yang
-            bertanggung jawab atas segala yang ada di keluarga.
+            Jika di perusahaan ada CEO yang bertanggung jawab atas segala hal di
+            kantor, maka dalam keluarga memiliki ayah yang tanggung jawab atas
+            segala hal yang ada di dalam keluarga.
           </p>
           <p>
-            Sebagai seorang kepala keluarga, tentunya ayah bertanggung jawab
-            terhadap semua yang terjadi dalam rumah tangga. Jika istrimu sering
-            mengomel, kamu memiliki tanggung jawab untuk menghentikan omelannya
-            dengan kasih. Jika anakmu melakukan kesalahan, kamu memiliki
-            tanggung jawab untuk menegur dan menuntunnya dalam kebenaran. Semua
-            tanggung jawab dalam keluarga ada pada kelapa keluarga.
+            Ketika istrimu sering mengomel, kamu memiliki tanggung jawab untuk
+            menghentikan omelannya dengan kasih. Begitu juga ketika istri atau
+            anakmu melakukan kesalahan, kamu memiliki tanggung jawab untuk
+            menegur dan menuntunnya ke jalan yang benar. Semua tanggung jawab
+            dalam keluarga ada pada kepala keluarga.
           </p>
           <p>
-            Ayah juga memiliki tanggung jawab untuk membawa keluarga semakin
-            dekat kepada Tuhan. Banyak sekali keluarga yang gagal karena ayah
-            gagal membawa keluarga semakin dekat kepada Tuhan, jangan sampai hal
-            ini juga terjadi kepada keluarga kamu.
+            Banyak keluarga yang gagal karena ayah tidak berhasil membawa
+            keluarganya semakin dekat kepada Tuhan. Jangan sampai hal ini
+            terjadi pada keluargamu.
           </p>
           <p>
             Ingat, semua yang terjadi dalam keluarga adalah tanggung jawab
-            seorang ayah. Kamu tidak boleh menyalahkan istri ketika anakmu nakal
-            dan melakukan kesalahan, karena tugas mengajar dan menjadi teladan
-            itu ada pada ayah. Begitu juga ketika istrimu mengomel atau
-            melakukan hal yang tidak baik, itu adalah tanggung jawabmu untuk
-            membawa istrimu pada jalan kebenaran sesuai dengan kehendak Tuhan.
+            seorang ayah.
           </p>
           <p>
-            Jangan melempar tangggung jawab keluarga kepada orang lain, karena
-            kamulah pemimpinnya. Kamulah yang harus mengayomi, melindungi,
+            Jangan melempar tanggung jawab keluarga kepada orang lain, karena
+            kamulah pemimpinnya. Kamu yang harus mengayomi, melindungi,
             mencukupi, dan menjadi teladan dalam keluarga. Sedangkan istri
-            adalah penolongmu, dalam memikul tanggung jawab itu, ingat istrimu
-            itu penolong bukan penanggung(Kejadian 2:18).
+            adalah penolongmu dalam memikul tanggung jawab itu. Ingat, istrimu
+            adalah penolong, bukan penanggung (Kejadian 2:18).
           </p>
         </article>
         <article>
           <p>
             Kiranya Damai Sejahtera yang berasal dari Tuhan Yesus Kristus selalu
             menyertai keluargamu. Amin.
+          </p>
+          <p>
+            <p className="font-semibold">Penulis : Noldi Krisandi</p>
           </p>
         </article>
       </section>

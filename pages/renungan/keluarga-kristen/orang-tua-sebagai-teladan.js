@@ -15,7 +15,7 @@ export default function renungan() {
         <Image
           src="/images/produktif.webp"
           alt=""
-          className="w-full h-44 md:h-80 object-cover rounded"
+          className="w-full h-44 md:h-80 object-cover rounded mb-6"
           width={500}
           height={300}
         />
@@ -23,8 +23,12 @@ export default function renungan() {
           <p>
             Shalom saudara-saudari yang dikasih oleh Tuhan Yesus. Dalam
             menjalani kehidupan ini sering kali kita mendengar bahwa Anak adalah
-            cerminan orang tua. Ini adalah pepata yang sering kita temui, dan
+            cerminan orang tua. Ini adalah pepata yang sering kita temui.
+          </p>
+          <p>
             ada lagi pepata lain &quot;buah jatuh tidak jauh dari pohon&quot;.
+          </p>
+          <p>
             Anak akan mengikuti apa yang dikatakan dan dilakukan oleh orang
             tuanya, mungkin saja tidak begitu persis sama, karena tiap anak beda
             cara menerjemahkan kata-kata dan perbuatan orang tuanya.
@@ -32,6 +36,8 @@ export default function renungan() {
           <p>
             Yang perlu kita ingat adalah, di setiap langkah kecil kita, ada mata
             yang memperhatikan, telinga yang mendengar, dan hati yang belajar.
+          </p>
+          <p>
             Anak-anak bukan hanya membutuhkan nasihat, tetapi juga contoh nyata
             dari kita, orang tuanya. Sudahkah kita menjadi teladan yang ingin
             mereka tiru?
@@ -39,18 +45,27 @@ export default function renungan() {
         </article>
         <article>
           <h2 className="text-xl font-semibold">Teladan dalam Kejujuran</h2>
+          <blockquote className="italic text-gray-950 mb-5 mt-3">
+            &quot;Bibir dusta adalah kekejian bagi Tuhan, tetapi orang yang
+            berlaku setia dikenan-Nya.&quot;
+            <br />
+            <span className="block mt-2 text-sm">- Amsal 12:2 </span>
+          </blockquote>
           <p>
             Pernakah anakmu berbohong? Jika pernah siapa sih yang mengajarinya?
             Untuk hal ini kamu bisa menjawabnya dalam hati.
           </p>
           <p>
             Kejujuran adalah nilai utama yang diajarkan Alkitab sebagai dasar
-            kehidupan orang percaya. Dalam Amsal 12:22 tertulis, &quot;Bibir
-            dusta adalah kekejian bagi Tuhan, tetapi orang yang berlaku setia
-            dikenan-Nya.&quot; Ayat ini mengingatkan kita bahwa Tuhan mencintai
-            orang-orang yang hidup dalam kebenaran. Sebagai orang tua, kita
-            dipanggil untuk menjadikan kejujuran bukan hanya sebagai ajaran,
-            tetapi juga sebagai gaya hidup yang nyata dalam keseharian.
+            kehidupan orang percaya. Amsal 12:22 mengingatkan kita bahwa Tuhan
+            mencintai orang-orang yang hidup dalam kebenaran.
+          </p>
+          <p>
+            Sebagai orang tua, kita dipanggil untuk menjadikan kejujuran bukan
+            hanya sebagai ajaran, tetapi juga sebagai gaya hidup yang nyata
+            dalam keseharian.
+          </p>
+          <p>
             Anak-anak yang melihat orang tuanya hidup dengan kejujuran akan
             belajar bahwa berkata benar adalah hal yang mulia di hadapan Tuhan
             dan sesama.
@@ -60,98 +75,150 @@ export default function renungan() {
             memberikan rasa aman kepada anak-anaknya. Anak akan merasa percaya
             bahwa orang tua mereka tidak hanya memberikan nasihat, tetapi juga
             mempraktikkan apa yang mereka ajarkan. Kepercayaan ini menjadi
-            fondasi hubungan yang kuat antara orang tua dan anak. Dalam dunia
-            yang sering memutarbalikkan kebenaran, kejujuran orang tua menjadi
-            teladan yang berharga bagi anak-anak untuk tetap berpegang pada
-            nilai-nilai yang benar.
+            fondasi hubungan yang kuat antara orang tua dan anak.
+          </p>
+          <p>
+            Dalam dunia yang sering memutarbalikkan kebenaran, kejujuran orang
+            tua menjadi teladan yang berharga bagi anak-anak untuk tetap
+            berpegang pada nilai-nilai yang benar.
           </p>
           <p>
             Alkitab juga mengingatkan kita akan pentingnya konsistensi antara
             perkataan dan perbuatan. Dalam Matius 5:37, Yesus berkata,
             &quot;Jika ya, hendaklah kamu katakan: ya, jika tidak, hendaklah
-            kamu katakan: tidak.&quot; Anak-anak adalah pengamat yang cermat,
-            mereka akan cepat mengenali jika orang tua mereka bersikap munafik
-            atau tidak konsisten. Oleh karena itu, hidup dengan kejujuran
-            berarti menunjukkan keberanian untuk berkata benar, bahkan ketika
-            itu sulit, dan mengakui kesalahan saat diperlukan.
+            kamu katakan: tidak.&quot;
+          </p>
+          <p>
+            Anak-anak adalah pengamat yang cermat, mereka akan cepat mengenali
+            jika orang tua mereka bersikap munafik atau tidak konsisten.
+          </p>
+          <p>
+            Oleh karena itu, hidup dengan kejujuran berarti menunjukkan
+            keberanian untuk berkata benar, bahkan ketika itu sulit, dan
+            mengakui kesalahan saat diperlukan.
           </p>
           <p>
             Melalui kejujuran, orang tua juga mengajarkan pentingnya integritas.
             Anak-anak yang tumbuh dalam keluarga yang menjunjung tinggi nilai
             ini akan memiliki dasar yang kuat untuk membedakan yang benar dari
-            yang salah. Mereka tidak hanya akan berkata jujur, tetapi juga hidup
-            dengan autentisitas, tanpa berpura-pura untuk menyenangkan orang
-            lain. Kejujuran yang dipraktikkan di rumah akan membentuk mereka
-            menjadi pribadi yang dapat dipercaya dan dihormati di tengah
-            masyarakat.
+            yang salah.
+          </p>
+          <p>
+            Mereka tidak hanya akan berkata jujur, tetapi juga hidup dengan
+            autentisitas, tanpa berpura-pura untuk menyenangkan orang lain.
+          </p>
+          <p>
+            Kejujuran yang dipraktikkan di rumah akan membentuk mereka menjadi
+            pribadi yang dapat dipercaya dan dihormati di tengah masyarakat.
           </p>
           <p>
             Kejujuran yang dijalankan orang tua adalah bentuk ketaatan kepada
-            Tuhan. Hidup dalam kebenaran bukan hanya mendidik anak-anak menjadi
-            pribadi yang baik, tetapi juga membawa mereka lebih dekat kepada
-            Tuhan yang menghargai kejujuran dan kebenaran. Dengan menjadi
-            teladan dalam kejujuran, kita tidak hanya membangun karakter
-            anak-anak kita, tetapi juga mewariskan iman yang kokoh kepada
-            mereka. Inilah panggilan mulia sebagai orang tua yang hidup sesuai
-            dengan kehendak Tuhan.
+            Tuhan.
+          </p>
+          <p>
+            Hidup dalam kebenaran bukan hanya mendidik anak-anak menjadi pribadi
+            yang baik, tetapi juga membawa mereka lebih dekat kepada Tuhan yang
+            menghargai kejujuran dan kebenaran.
+          </p>
+          <p>
+            Dengan menjadi teladan dalam kejujuran, kita tidak hanya membangun
+            karakter anak-anak kita, tetapi juga mewariskan iman yang kokoh
+            kepada mereka. Inilah panggilan mulia sebagai orang tua yang hidup
+            sesuai dengan kehendak Tuhan.
           </p>
         </article>
         <article>
           <h2 className="text-xl font-semibold">Teladan dalam Kesabaran</h2>
+          <blockquote className="italic text-gray-950 mb-5 mt-3">
+            &quot;Orang yang sabar meredakan pertengkaran, tetapi orang yang
+            pemarah membangkitkan amarah.&quot;
+            <br />
+            <span className="block mt-2 text-sm">- Dalam Amsal 15:18 </span>
+          </blockquote>
           <p>
             Kesabaran adalah salah satu buah Roh yang diajarkan dalam Alkitab
             dan menjadi kualitas penting yang harus dimiliki setiap orang tua.
-            Dalam Amsal 15:18, dikatakan, &quot;Orang yang sabar meredakan
-            pertengkaran, tetapi orang yang pemarah membangkitkan amarah.&quot;
-            Kesabaran adalah kunci untuk membangun suasana keluarga yang damai
-            dan penuh kasih. Sebagai orang tua, kita sering dihadapkan pada
-            berbagai tantangan dalam mendidik anak, seperti menghadapi
-            kenakalan, kesalahan, atau kebiasaan anak yang belum sempurna. Dalam
-            setiap situasi ini, kesabaran mengajarkan kita untuk menahan amarah
-            dan memilih cara yang bijaksana dalam mendidik mereka.
+          </p>
+          <p>
+            Kesabaran merupakan cara terbaik untuk membangun suasana keluarga
+            yang damai dan penuh kasih.
+          </p>
+          <p>
+            Sebagai orang tua, kita sering dihadapkan pada berbagai tantangan
+            dalam mendidik anak, seperti menghadapi kenakalan, kesalahan, atau
+            kebiasaan anak yang belum sempurna.
+          </p>
+          <p>
+            Dalam setiap situasi ini, kesabaran mengajarkan kita untuk menahan
+            amarah dan memilih cara yang bijaksana dalam mendidik mereka.
           </p>
           <p>
             Melalui kesabaran, orang tua memberikan teladan bagaimana menghadapi
-            masalah dengan kepala dingin. Anak-anak yang tumbuh di lingkungan di
-            mana orang tuanya sabar akan belajar untuk tidak mudah marah dan
-            lebih mampu mengontrol emosinya. Sebaliknya, sikap tidak sabar dapat
-            menularkan rasa cemas dan mudah frustrasi kepada anak. Dalam Efesus
-            4:2, kita diingatkan untuk selalu rendah hati, lemah lembut, dan
-            sabar, sambil saling membantu dengan kasih. Nilai ini penting untuk
-            diterapkan dalam hubungan antara orang tua dan anak, terutama saat
-            anak membutuhkan bimbingan dan pengertian.
+            masalah dengan kepala dingin.
+          </p>
+          <p>
+            Anak-anak yang tumbuh di lingkungan di mana orang tuanya sabar akan
+            belajar untuk tidak mudah marah dan lebih mampu mengontrol emosinya.
+            Sebaliknya, sikap tidak sabar dapat menularkan rasa cemas dan mudah
+            frustrasi kepada anak.
+          </p>
+          <p>
+            Dalam Efesus 4:2, kita diingatkan untuk selalu rendah hati, lemah
+            lembut, dan sabar, sambil saling membantu dengan kasih. Nilai ini
+            penting untuk diterapkan dalam hubungan antara orang tua dan anak,
+            terutama saat anak membutuhkan bimbingan dan pengertian.
           </p>
           <p>
             Kesabaran juga mengajarkan kita untuk memberikan waktu bagi
             anak-anak untuk belajar dan berkembang sesuai dengan kecepatan
             mereka. Tidak semua anak bisa langsung memahami sesuatu atau
-            melakukan hal dengan benar pada percobaan pertama. Dalam Pengkhotbah
-            7:8 tertulis, &quot;Akhir suatu hal lebih baik dari awalnya; panjang
-            sabar lebih baik dari tinggi hati.&quot; Ayat ini mengingatkan kita
-            bahwa hasil yang baik sering kali membutuhkan proses panjang yang
-            hanya bisa dijalani dengan kesabaran. Ketika kita sabar, kita
-            menunjukkan kepada anak bahwa proses itu penting dan bahwa kegagalan
-            adalah bagian dari pembelajaran.
+            melakukan hal dengan benar pada percobaan pertama.
+          </p>
+          <p>
+            Dalam Pengkhotbah 7:8 tertulis, &quot;Akhir suatu hal lebih baik
+            dari awalnya; panjang sabar lebih baik dari tinggi hati.&quot;
+          </p>
+          <p>
+            Ayat ini mengingatkan kita bahwa hasil yang baik sering kali
+            membutuhkan proses panjang yang hanya bisa dijalani dengan
+            kesabaran.
+          </p>
+          <p>
+            Ketika kita sabar, kita menunjukkan kepada anak bahwa proses itu
+            penting dan bahwa kegagalan adalah bagian dari pembelajaran.
           </p>
           <p>
             Selain itu, kesabaran dalam mendidik anak adalah wujud kasih yang
-            nyata. Dalam 1 Korintus 13:4, disebutkan bahwa kasih itu sabar.
-            Kesabaran adalah cara untuk menunjukkan cinta tanpa syarat kepada
-            anak-anak kita, meskipun mereka belum sempurna. Dengan bersabar,
-            kita menghargai mereka sebagai individu yang sedang bertumbuh dan
-            tidak membebani mereka dengan ekspektasi yang berlebihan. Kesabaran
-            mengajarkan mereka bahwa cinta orang tua tidak tergantung pada
-            kesuksesan atau kegagalan mereka.
+            nyata.
+          </p>
+          <p>
+            Dalam 1 Korintus 13:4, disebutkan bahwa kasih itu sabar. Kesabaran
+            adalah cara untuk menunjukkan cinta tanpa syarat kepada anak-anak
+            kita, meskipun mereka belum sempurna.
+          </p>
+          <p>
+            Dengan bersabar, kita menghargai mereka sebagai individu yang sedang
+            bertumbuh dan tidak membebani mereka dengan ekspektasi yang
+            berlebihan.
+          </p>
+          <p>
+            Kesabaran mengajarkan mereka bahwa cinta orang tua tidak tergantung
+            pada kesuksesan atau kegagalan mereka.
           </p>
           <p>
             Kesabaran sebagai orang tua adalah bentuk ketaatan kepada Tuhan.
-            Kita belajar bersabar karena Tuhan juga sabar kepada kita. Dalam
-            Mazmur 103:8, dikatakan bahwa Tuhan penuh kasih karunia dan panjang
-            sabar. Ketika kita sabar kepada anak-anak kita, kita meniru sifat
-            Tuhan yang selalu mengasihi, memaafkan, dan memberikan kesempatan
-            baru kepada umat-Nya. Dengan menjadi teladan kesabaran, kita
-            membantu anak-anak kita untuk tumbuh dalam kasih, kedewasaan, dan
-            pengenalan yang lebih dalam akan Tuhan.
+            Kita belajar bersabar karena Tuhan juga sabar kepada kita.
+          </p>
+          <p>
+            Dalam Mazmur 103:8, dikatakan bahwa Tuhan penuh kasih karunia dan
+            panjang sabar. Ketika kita sabar kepada anak-anak kita, kita meniru
+            sifat Tuhan yang selalu mengasihi, memaafkan, dan memberikan
+            kesempatan baru kepada umat-Nya.
+          </p>
+          <p>
+            Dengan menjadi teladan kesabaran, kita membantu anak-anak kita untuk
+            tumbuh dalam kasih, kedewasaan, dan pengenalan yang lebih dalam akan
+            Tuhan.
           </p>
         </article>
         <article>

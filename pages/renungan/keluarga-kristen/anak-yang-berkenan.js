@@ -16,312 +16,277 @@ export default function renungan() {
         <Image
           src="/images/produktif.webp"
           alt=""
-          className="w-full h-44 md:h-80 object-cover rounded"
+          className="w-full h-44 md:h-80 object-cover rounded mb-6"
           width={500}
           height={300}
         />
         <article>
           <p>
-            Menjadi anak yang berkenan di hadapan Tuhan dan di hadapan Orang Tua
-            itu adalah sesuatu yang berbeda tapi memiliki kaitan. Ketika kamu
-            berkenan di hadapan Tuhan belum tentu berkenan di hadapan orang tua,
-            dan juga sebaliknya.
+            Menjadi anak yang berkenan di hadapan Tuhan dan orang tua adalah hal
+            yang berbeda namun saling berkaitan. Berkenan di hadapan Tuhan belum
+            tentu sama dengan berkenan di mata orang tua, begitu pula
+            sebaliknya.
           </p>
           <p>
-            Kita lihat kisah Yakub dan Esau, sejatinya Ishak ayah mereka
-            berkenan agar Esau mendapatkan berkat keturunan Abraham dari Tuhan,
-            tetapi Ribka ibu mereka berkenan agar Yakub mendapatkan berkat
-            keturunan Abraham dari Tuhan. Hal ini menandakan bahwa ayah dan ibu
-            bisa saja memiliki cara pandang perkenanan yang berbeda.
+            Kisah Yakub dan Esau menunjukkan hal ini. Ishak, ayah mereka,
+            menghendaki Esau menerima berkat keturunan Abraham, sementara Ribka,
+            ibu mereka, menginginkan Yakub yang menerimanya. Ini menunjukkan
+            bahwa pandangan ayah dan ibu tentang perkenanan bisa berbeda.
           </p>
           <p>
-            Dari cerita di atas juga, kita bisa dibuat bingung siapa sebenarnya
-            yang mendapat perkenanan antara Ishak dengan Ribka, dan Esau dengan
-            Yakub? Semuanya memiliki pandangan yang berbeda.
+            Dari kisah tersebut, kita mungkin bingung siapa yang benar-benar
+            mendapat perkenanan, apakah Ishak atau Ribka, Esau atau Yakub? Semua
+            memiliki pandangan berbeda.
           </p>
           <p>
-            Kita tahu pada akhirnya Yakub lah yang memperoleh berkat dari Tuhan
-            menjadi penerus berkat Abraham, meskipun Yakub mendapatkan berkat
-            itu dengan menipu ayahnya Ishak. Mungkin kamu bertanya, kok Tuhan
-            berkenan kepada penipu sih, kan harusnya Esau sebagai putra sulung
-            yang memperoleh berkat itu. Ishak pun berkenan agar Esau yang
-            diberkati, tetapi akhirnya Tuhan memberkati Yakub. Ishak dan Tuhan
-            juga punya cara pandang perkenanan yang berbeda. Terus bagaimana
-            mungkin kita bisa menyimpulkan jika berkenan dihadapan Tuhan artinya
-            sama dengan berkenan dihadapan orang tua.
+            Pada akhirnya, Yakub menerima berkat dari Tuhan sebagai penerus
+            Abraham, meskipun ia mendapatkannya dengan menipu Ishak.
+          </p>
+          <p>
+            Kamu mungkin bertanya, mengapa Tuhan berkenan pada Yakub yang
+            menipu? Bukankah Esau, sebagai anak sulung, seharusnya menerima
+            berkat? Namun, kehendak Tuhan berbeda dengan kehendak Ishak.
+          </p>
+          <p>
+            Ini menunjukkan bahwa pandangan perkenanan Tuhan dan manusia tidak
+            selalu sama.
           </p>
         </article>
         <article>
           <h2 className="text-xl font-semibold">
-            Perkenanan Tuhan jadi Hal Utama
+            Perkenanan Tuhan Sebagai Prioritas Utama
           </h2>
           <p>
-            Sekarang kita bahas hal yang lebih berat lagi. Pernakah kamu
-            mendengar seorang dari agama lain memutuskan untuk mengikut Yesus,
-            hal itu membuat dia sangat-sangat tidak berkenan dihadapan orang
-            tuanya, bahkan orang tuanya hendak menghabisi nyawanya. Secara iman
-            Kristen jelas kita tahu bahwa orang yang meninggalkan agamanya untuk
-            mengikut Yesus adalah hal yang berkenan di hadapanTuhan, tetapi di
-            satu sisi tidak berkenan dihadapan orang tuanya.
+            Pernahkah kamu mendengar seseorang dari agama lain memutuskan untuk
+            mengikut Yesus? Keputusan ini sering kali membuatnya tidak berkenan
+            di hadapan orang tua.
           </p>
           <p>
-            Harusnya dari peristiwa di atas kamu sudah paham jika berkenan
-            dihadapan Tuhan belum tentu berkenan di hadapan orang tua, begitu
-            pula sebaliknnya. Jika kamu diperhadapkan apakah kamu mau berkenan
-            dihadapan orang tua atau Tuhan, manakah yang kamu pilih?
+            Dalam iman Kristen, meninggalkan agama lain untuk mengikut Yesus
+            adalah hal yang berkenan di hadapan Tuhan. Namun, di sisi lain, hal
+            tersebut mungkin tidak berkenan di mata orang tua.
           </p>
           <p>
-            Tuhan tidak pernah memerintahkan manusia untuk menuruti semua
-            perintah orang tua, tetapi Tuhan memerintahkan manusia untuk
-            menuruti perintahnya, di sini jelas bahkan perkenanan Tuhan lebih
-            besar dari pada perkenanan orang tua. Saya tidak sedang mengajak
-            kamu menjadi anak yang durhaka karena menghormati orang tua itu juga
-            menjadi perintah Tuhan, jadi jika kamu mau berkenanan dihadapan
-            Tuhan kamu juga wajib menghormati orang tua.
+            Dari peristiwa ini, kita memahami bahwa berkenan di hadapan Tuhan
+            tidak selalu berarti berkenan di hadapan orang tua. Jika kamu
+            dihadapkan pada pilihan, mana yang akan kamu utamakan: berkenan di
+            hadapan orang tua atau Tuhan?
+          </p>
+          <p>
+            Tuhan tidak memerintahkan manusia untuk menuruti semua perintah
+            orang tua, melainkan untuk menuruti perintah-Nya.{" "}
+            <strong>
+              Perkenanan Tuhan lebih besar daripada perkenanan orang tua.
+            </strong>
+          </p>
+          <p>
+            Meski begitu, menghormati orang tua tetaplah perintah Tuhan. Jadi,
+            untuk berkenan di hadapan Tuhan, kamu juga harus menghormati orang
+            tua.
           </p>
         </article>
         <article>
           <h2 className="text-xl font-semibold">Mengerti Perkenanan Tuhan</h2>
           <p>
-            Saya mau sedikit bercerita tentang seorang anak muda bernama Budi,
-            Budi adalah seseorang yang baru saja menjadi warga negara Indonesia,
-            sebagai warga negara Budi berkomitmen mengikuti semua aturan negara
-            Indonesia. Suatu hari Budi mengendarai sepeda motor dan mengambil
-            jalur sebelah kanan, kemudian menabrak tukang becak dari arah yang
-            berlawanan. Budi kemudian memarahi tukang becak tersebut, karena
-            mengganggap tukang becak tadi salah mengambil jalur di jalan dan
-            melaporkan tukang becak tadi ke polisi yang sedang berpatroli.
-            Tetapi nasib tragis menghampiri Budi, karena polisi malah menetapkan
-            Budi sebagai tersangka karena tidak mematuhi aturan lalu lintas
-            dengan mengambil jalur kanan saat mengendarai sepeda motor.
+            Saya ingin berbagi cerita tentang seorang pemuda bernama Budi. Budi
+            baru saja menjadi warga negara Indonesia (awalnya Budi adalah warga
+            negara Inggris) dan berkomitmen untuk mematuhi semua aturan di
+            negara Indonesia.
           </p>
           <p>
-            Budi bersikeras bahwa dia sudah benar, karena dari dulu dia
-            mengambil jalur kanan saat mengendarai kendaraan baik mobil maupun
-            motor. Kemudian polisi menjelaskan bahwa di Indonesia aturan
-            kendaraan harus mengambil jalur sebelah kiri. Budi yang tidak
-            mengetahui aturan tersebut kemudian dibawah ke kantor polisi dan
-            menjadi tersangka sehingga dia dipenjara. Padahal Budi sebenarnya
-            ingin menjadi warga negara yang baik, tetapi budi gagal menjadi
-            warga negara yang baik karena tidak tahu aturannya.
+            Suatu hari, Budi mengendarai sepeda motor dan mengambil jalur kanan.
+            Akibatnya, ia bertabrakan dengan seorang tukang becak yang datang
+            dari arah berlawanan. Budi memarahi tukang becak tersebut karena
+            menganggapnya salah jalur, bahkan melaporkannya ke polisi yang
+            sedang berpatroli. Karena selama dia di Inggris, kendaraan bermotor
+            mengambil jalur kanan.
           </p>
           <p>
-            Dari cerita Budi tadi kita bisa ambil pelajaran, yaitu untuk
-            berkenan dihadapan Tuhan kita harus tahu aturannya. Tidak mungkin
-            kita bisa berkenan dihadapan Tuhan jika kita tidak tahu aturannya.
-            Mulailah belajar Firman dengan sungguh-sungguh agar kamu tahu
-            bagaimana caranya berkenan dihadapan Tuhan.
+            Namun, Budi justru ditetapkan sebagai tersangka oleh polisi karena
+            melanggar aturan lalu lintas dengan mengambil jalur kanan. Polisi
+            menjelaskan bahwa di Indonesia, kendaraan harus berjalan di jalur
+            kiri berbada dengan negara Inggris.
           </p>
           <p>
-            Jika kamu bisa membaca tentunya kamu wajib membaca seluruh isi
-            Alkitab agar kamu aturan untuk hidup berkenan dihadapan Tuhan,
-            karena kamu tidak mungkin dapat melakukan hal yang berkenan
-            dihadapan Tuhan, jika kamu tidak tahu apa yang harus dilakukan dan
-            apa yang tidak boleh dilakukan ketika mengikut Tuhan.
+            Budi bersikeras bahwa ia tidak salah, karena kebiasaan sebelumnya
+            selalu mengambil jalur kanan saat mengendarai kendaraan. Sayangnya,
+            ketidaktahuannya tentang aturan tersebut membuatnya ditahan dan
+            dipenjara. Budi yang berniat menjadi warga negara yang baik malah
+            gagal karena tidak memahami aturan.
           </p>
           <p>
-            Sebuah hal konyol kita kamu berkata akan melakukan kehendak Tuhan
-            padahal kamu tidak tahu apa semua yang menjadi kehendak Tuhan, malah
-            yang terjadi kamu melakukan apa yang dilarang oleh Tuhan karena kamu
-            tidak tahu aturan itu. Sama seperti Budi yang dipenjara karena tidak
-            tahu aturan lalu lintas di Indonesia, padahal dia sudah berusaha
-            menjadi warga negara yang baik tetapi karena keterbatasan
-            pengetahuan dia malah menjadi warga negara yang buruk dan merugikan
-            orang lain.
+            Dari cerita Budi, kita dapat mengambil pelajaran penting: untuk
+            berkenan di hadapan Tuhan, kita harus mengetahui aturan-Nya.
+          </p>
+          <p>
+            Tidak mungkin kita dapat berkenan di hadapan Tuhan jika kita tidak
+            tahu apa yang menjadi kehendak-Nya. Mulailah mempelajari Firman
+            Tuhan dengan sungguh-sungguh agar kita memahami cara hidup yang
+            sesuai dengan kehendak-Nya.
+          </p>
+          <p>
+            Membaca seluruh isi Alkitab adalah kewajiban bagi kita yang ingin
+            mengerti aturan Tuhan. Kita tidak akan mampu melakukan hal yang
+            berkenan di hadapan Tuhan jika tidak mengetahui apa yang
+            diperintahkan atau dilarang oleh-Nya.
+          </p>
+          <p>
+            Adalah hal yang keliru jika kita berkata ingin melakukan kehendak
+            Tuhan tanpa mengetahui apa saja yang menjadi kehendak-Nya. Hal ini
+            dapat menyebabkan kita secara tidak sengaja melanggar aturan Tuhan.
+          </p>
+          <p>
+            Sama seperti Budi yang gagal menjadi warga negara yang baik karena
+            ketidaktahuan akan aturan lalu lintas, kita juga bisa gagal berkenan
+            di hadapan Tuhan jika tidak memahami aturan-aturan-Nya. Oleh karena
+            itu, belajarlah Firman Tuhan agar kita dapat hidup sesuai dengan
+            kehendak-Nya.
           </p>
         </article>
         <article>
           <h2 className="text-xl font-semibold">
-            Melakukan Apapun untuk Tuhan
+            Melakukan Segala Sesuatu untuk Tuhan
           </h2>
+          <blockquote className="italic text-gray-950 mb-5 mt-3">
+            &quot;Apa pun yang kamu perbuat, perbuatlah dengan segenap hatimu
+            seperti untuk Tuhan dan bukan untuk manusia, karena kamu tahu, bahwa
+            dari Tuhan kamu akan menerima bagian yang ditentukan bagimu sebagai
+            upah. Kristus adalah Tuhan yang kamu layani.&quot;
+            <br />
+            <span className="block mt-2 text-sm">- Kolose 3:23-24</span>
+          </blockquote>
           <p>
-            Kolose 3:23-24 (TB): &quot;Apa pun yang kamu perbuat, perbuatlah
-            dengan segenap hatimu seperti untuk Tuhan dan bukan untuk manusia,
-            karena kamu tahu, bahwa dari Tuhan kamu akan menerima bagian yang
-            ditentukan bagimu sebagai upah. Kristus adalah Tuhan yang kamu
-            layani.&quot;
+            Segala sesuatu yang kita lakukan, hendaknya dilakukan dengan segenap
+            hati sebagai bentuk penghormatan dan persembahan kepada Tuhan.
+            Dengan demikian, orang lain dapat melihat kemuliaan Tuhan melalui
+            pekerjaan kita.
           </p>
           <p>
-            Dalam melakukan segala sesuatu, pastikan kamu melakukannya dengan
-            segenap hati sebagai bentuk penghormatan dan persembahan kepada
-            Tuhan, sehingga orang lain melihat kemuliaan Tuhan dalam segala
-            sesuatu yang kita kerjakan. Tidak ada pekerjaan yang kecil dihadapan
-            Tuhan jika kamu melakukannya untuk kemuliaan Tuhan karena melihat
-            hati bukan sekedar melihat apa yang kamu kerjakan.
+            Tidak ada pekerjaan yang terlalu kecil di hadapan Tuhan jika
+            dilakukan untuk memuliakan-Nya. Tuhan melihat hati kita, bukan
+            sekadar apa yang kita kerjakan.
           </p>
           <p>
-            Paulus menekankan bahwa Kristus adalah Tuhan yang kita layani. Ini
-            menunjukkan bahwa setiap tindakan seharusnya bukan hanya untuk
-            menyelesaikan sebuah pekerjaan, tetapi untuk memuliakan Tuhan.
-            Ingatlah bahwa segala pekerjaan adalah bentuk pelayanan kepada
-            Tuhan, sehingga saat bekerja kita memiliki sikap hati yang benar,
-            dengan penuh rasa syukur dan ketulusan.
+            Paulus mengingatkan bahwa Kristus adalah Tuhan yang kita layani. Ini
+            berarti setiap tindakan kita seharusnya lebih dari sekadar
+            menyelesaikan tugas, tetapi juga menjadi wujud nyata dalam
+            memuliakan Tuhan.
           </p>
           <p>
-            Simpelnya seperti ini, Lakukan segala sesuatu dengan tujuan
-            memuliakan Tuhan, termasuk saat kamu makan, minum, belajar, menyapu,
-            membersihkan kamar, atau aktifitas apapun, semuanya itu kamu lakukan
-            untuk memuliakan Tuhan.
+            Anggaplah setiap pekerjaan sebagai pelayanan kepada Tuhan. Dengan
+            sikap hati yang benar, penuh syukur dan ketulusan, kita dapat
+            menjalankan setiap tugas dengan sukacita.
           </p>
           <p>
-            Dengan memahami prinsip ini, kita jadi tahu caranya untuk menjalani
-            hidup dengan semangat yang lebih tinggi, yaitu untuk kemuliaan
-            Tuhan, bukan untuk manusia. Saat kita melakukan segala sesuatu
-            dengan penuh komitmen dan integritas, kita tidak hanya berusaha
-            menjadi pribadi yang lebih baik, tetapi juga menjadi anak yang
-            berkenan di hadapan Tuhan, yang memuliakan-Nya dalam setiap aspek
-            kehidupan kita.
+            Prinsipnya sederhana: lakukan segala sesuatu, baik itu makan, minum,
+            belajar, menyapu, atau pekerjaan lainnya, dengan tujuan memuliakan
+            Tuhan.
+          </p>
+          <p>
+            Dengan memahami prinsip ini, hidup kita akan dipenuhi semangat yang
+            lebih tinggi, yaitu hidup untuk kemuliaan Tuhan, bukan untuk
+            manusia.
+          </p>
+          <p>
+            Ketika kita bekerja dengan komitmen dan integritas, kita tidak hanya
+            menjadi pribadi yang lebih baik, tetapi juga anak yang berkenan di
+            hadapan Tuhan, memuliakan-Nya dalam setiap aspek kehidupan.
           </p>
         </article>
         <article>
           <h2 className="text-xl font-semibold">Menghormati Orang Tua</h2>
+          <blockquote className="italic text-gray-950 mb-5 mt-3">
+            &quot;Hormatilah ayahmu dan ibumu, supaya lanjut umurmu di tanah
+            yang diberikan TUHAN, Allahmu, kepadamu.&quot;
+            <br />
+            <span className="block mt-2 text-sm">- Keluaran 20:12</span>
+          </blockquote>
+          <blockquote className="italic text-gray-950 mb-5 mt-3">
+            &quot;Hai anak-anak, taatilah orang tuamu di dalam Tuhan, karena
+            haruslah demikian. Hormatilah ayahmu dan ibumu, supaya kamu
+            berbahagia dan panjang umurmu di negeri ini.&quot;
+            <br />
+            <span className="block mt-2 text-sm">- Efesus 6:1-3</span>
+          </blockquote>
           <p>
-            Menghormati orang tua adalah bagian dari Sepuluh Perintah Allah yang
-            diterima oleh Musa. Dalam
-            <Link
-              href="alkitab/keluaran20#ayat-12"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Keluaran 20:12
-            </Link>
-            , Tuhan berfirman, “Hormatilah ayahmu dan ibumu, supaya lanjut
-            umurmu di tanah yang diberikan Tuhan, Allahmu, kepadamu”.
-            Menghormati orang tua bukan hanya tentang memberi penghormatan
-            secara lahiriah, tetapi juga tentang menghargai dan menghormati
-            mereka dalam segala aspek kehidupan.
+            Menghormati orang tua adalah panggilan Tuhan yang melibatkan sikap
+            hati, perkataan, dan tindakan. Ini mencakup ketaatan, mendengarkan
+            nasihat, membantu mereka, dan menjaga hubungan yang baik.
           </p>
           <p>
-            Menghormati orang tua dalam iman Kristen berarti taat kepada mereka,
-            melalui penghormatan kepada orang tua, kita menunjukkan ketaatan
-            kepada Tuhan karena Tuhan yang memberikan mereka sebagai otoritas
-            dalam hidup kita. Dalam Efesus 6:1-3, Paulus menuliskan, “Anak-anak,
-            taatilah orang tuamu di dalam Tuhan, karena inilah yang benar.
-            Hormatilah ayahmu dan ibumu adalah perintah yang pertama dengan
-            janji supaya kamu berbahagia dan panjang umurmu di bumi” ayat ini
-            juga selaras dengan Kolose 3:20.
+            Dalam 1 Timotius 5:8, kita diajarkan untuk merawat keluarga,
+            termasuk orang tua. Merawat mereka adalah wujud kasih dan
+            penghormatan, terutama saat mereka menua dan membutuhkan perhatian
+            lebih.
           </p>
           <p>
-            Menghormati orang tua tidak hanya terlihat dari perkataan kita,
-            tetapi juga dalam tindakan kita sehari-hari dengan mendengarkan
-            nasihat mereka, membantu mereka dalam kesulitan, dan menjaga
-            hubungan yang baik.
+            Menghormati orang tua tidak hanya berlaku pada masa kecil, tetapi
+            sepanjang hidup, termasuk dalam fase dewasa. Ini melibatkan menjaga
+            komunikasi, menghargai keputusan mereka, dan memberikan perhatian,
+            meskipun ada perbedaan pendapat.
           </p>
           <p>
-            Sebagai anak-anak Tuhan, kita juga memiliki tanggung jawab untuk
-            merawat dan menjaga orang tua kita, terutama ketika mereka menua dan
-            membutuhkan perhatian lebih. Seperti yang tertulis Dalam 1 Timotius
-            5:8. Merawat orang tua adalah bagian dari ketaatan kita kepada
-            Tuhan. Tanggung jawab ini melibatkan kasih sayang, perhatian, dan
-            dukungan baik fisik, emosional, maupun finansial. Tuhan memandang
-            dengan sangat serius peran kita dalam merawat orang tua, dan ini
-            merupakan bagian dari hidup yang berkenan di hadapan-Nya.
+            Dalam Amsal 15:1, kita diingatkan bahwa jawaban lembut meredakan
+            kegeraman. Menghormati orang tua berarti berbicara dengan bijak dan
+            penuh kasih, bahkan saat ada ketidaksepakatan.
           </p>
           <p>
-            Menghormati orang tua juga tidak hanya berlaku pada masa kecil atau
-            remaja, tetapi terus berlanjut sepanjang hidup kita, bahkan setelah
-            kita dewasa dan memiliki keluarga sendiri. Dalam fase kehidupan
-            dewasa, menghormati orang tua berarti tetap menjaga komunikasi yang
-            baik, menghargai keputusan mereka, dan tetap memberi perhatian
-            kepada mereka. Terkadang, ini melibatkan pengorbanan waktu dan
-            tenaga untuk melayani mereka, meskipun kita juga memiliki banyak
-            tanggung jawab lainnya. Menghormati orang tua di usia dewasa berarti
-            menunjukkan bahwa kita tidak hanya menghormati mereka pada masa
-            kecil, tetapi juga menghargai peran dan kasih mereka sepanjang hidup
-            kita.
+            Janji Tuhan dalam Keluaran 20:12 memberikan berkat bagi mereka yang
+            menghormati orang tua, berupa umur panjang dan kehidupan yang penuh
+            kedamaian. Menghormati mereka juga berarti melibatkan doa, seperti
+            yang diajarkan dalam 1 Timotius 2:1-2.
           </p>
           <p>
-            Meskipun demikian, kita mungkin sering menghadapi perbedaan pendapat
-            dengan orang tua. Menghormati orang tua dalam situasi seperti ini
-            berarti kita tetap menunjukkan sikap yang penuh kasih dan bijaksana.
-            Dalam Amsal 15:1, kita diajarkan bahwa, “Jawaban yang lemah lembut
-            meredakan kegeraman, tetapi perkataan yang pedas membangkitkan
-            amarah.” Menghormati orang tua juga berarti berbicara dengan penuh
-            penghargaan, bahkan saat ada ketidaksetujuan. Menghormati mereka
-            tidak berarti kita harus selalu sepakat, tetapi kita harus selalu
-            menjaga rasa hormat, bahkan dalam perbedaan.
-          </p>
-          <p></p>
-          <p>
-            Janji berkat yang diberikan Tuhan kepada mereka yang menghormati
-            orang tua sangat jelas dalam Keluaran 20:12. Janji ini bukan hanya
-            berhubungan dengan umur panjang secara fisik, tetapi juga berkat
-            dalam kehidupan yang penuh kedamaian, kesejahteraan, dan kasih dari
-            Tuhan.
+            Hal kecil seperti mendengarkan, membantu pekerjaan rumah, atau
+            menghabiskan waktu bersama adalah cara sederhana namun penuh makna
+            untuk menunjukkan rasa hormat.
           </p>
           <p>
-            Menghormati orang tua tidak hanya terlihat dari hal-hal besar.
-            Seringkali, hal-hal kecil dalam kehidupan sehari-hari adalah yang
-            paling berharga. Memberikan waktu untuk mendengarkan mereka,
-            membantu pekerjaan rumah, atau sekadar menghabiskan waktu bersama
-            adalah cara-cara sederhana yang penuh makna dalam menghormati orang
-            tua. Ketika kita melayani mereka dengan penuh perhatian dan kasih
-            sayang, kita menunjukkan bahwa kita menghargai keberadaan mereka,
-            bukan hanya karena mereka orang tua kita, tetapi karena mereka
-            adalah hadiah Tuhan dalam hidup kita.
-          </p>
-          <p>
-            Selain itu, sebagai anak-anak Tuhan, kita juga dipanggil untuk
-            mendoakan orang tua kita. Dalam 1 Timotius 2:1-2, Paulus menulis
-            bahwa kita harus berdoa untuk semua orang, termasuk orang tua kita.
-            Mendoakan orang tua adalah bentuk lain dari penghormatan kita kepada
-            mereka, karena kita menginginkan yang terbaik bagi mereka dalam
-            segala aspek kehidupan mereka. Doa kita dapat menjadi sarana untuk
-            Tuhan memberkati mereka dengan kesehatan, kebahagiaan, dan damai
-            sejahtera.
-          </p>
-          <p>
-            Menghormati orang tua adalah bagian penting dari kehidupan Kristen.
-            Menghormati mereka bukan hanya tentang kepatuhan dalam kata-kata,
-            tetapi juga tentang tindakan dan sikap kita sehari-hari. Kita
-            dipanggil untuk menghormati mereka sepanjang hidup kita, tidak
-            peduli usia kita atau mereka. Sebagai anak-anak Tuhan, kita
-            diingatkan untuk menunjukkan rasa hormat yang sejati, yang dimulai
-            dari hati dan tercermin dalam setiap perbuatan kita. Dengan
-            menghormati orang tua, kita tidak hanya menunjukkan kasih kita
-            kepada mereka, tetapi juga ketaatan kita kepada Tuhan, yang berkenan
-            dengan tindakan kita yang penuh kasih dan penghargaan.
+            Dengan menghormati orang tua, kita tidak hanya menunjukkan kasih
+            kita kepada mereka, tetapi juga ketaatan kepada Tuhan.
           </p>
         </article>
         <hr />
         <article>
           <p>
-            Untuk menjadi anak yang berkenan dihadapan Tuhan dan dihadapan orang
-            tua, tentunya kita harus paham bahwa berkenan dihadapan Tuhan adalah
-            hal yang paling utama. Untuk bisa berkenan kepada Tuhan tentunya
-            kita harus membaca seluruh Firman Tuhan agar kita mengerti apa saja
-            yang berkenan bagi Tuhan dan apa yang tidak berkenan. Setelah tahu
-            apa saja yang berkenan dihadapan Tuhan barulah kita bisa melakukan
-            hal yang berkenan dihadapan Tuhan.
+            Menjadi anak yang berkenan di hadapan Tuhan dan orang tua adalah
+            panggilan mulia. Berkenan di hadapan Tuhan harus menjadi prioritas
+            utama.
           </p>
           <p>
-            Melakukan segala sesuatu untuk Tuhan bukan untuk manusia adalah
-            sesuatu yang berkenan di hadapan Tuhan. Melakukan segala sesuatu
-            untuk Tuhan artinya selalu berusaha memuliakan Tuhan dalam setiap
-            aktifitas yang kita lakukan, sehingga orang lain melihat kemuliaan
-            Tuhan dalam setiap aktifitas yang kita lakukan.
+            Untuk mengetahui apa yang berkenan di hadapan Tuhan, kita perlu
+            membaca dan merenungkan Firman Tuhan. Dengan memahami kehendak
+            Tuhan, kita dapat melakukan hal-hal yang memuliakan-Nya.
           </p>
           <p>
-            Untuk menjadi anak yang berkenan dihadapan Tuhan dan orang tua,
-            tentunya kita harus menghormati orang tua. Menghormati orang tua
-            mencerminkan ketaatan kepada Tuhan karena orang tua adalah otoritas
-            yang diberikan-Nya dalam hidup kita. Menghormati orang tua tidak
-            hanya melalui perkataan tetapi juga tindakan, seperti mendengarkan
-            nasihat, membantu mereka dalam kesulitan, dan menjaga hubungan yang
-            baik. Bahkan ketika kita dewasa, tanggung jawab untuk merawat dan
-            mendukung orang tua tetap ada, terutama ketika mereka menua. Dalam
-            menghadapi perbedaan pendapat, kita diajarkan untuk tetap
-            menghormati dengan sikap lemah lembut dan kasih.
+            Melakukan segala sesuatu untuk Tuhan, bukan untuk manusia, berarti
+            selalu berusaha memuliakan Tuhan dalam setiap aktivitas kita,
+            sehingga kemuliaan Tuhan terlihat oleh orang lain.
           </p>
           <p>
-            Selain itu, penghormatan juga terlihat dalam hal-hal kecil seperti
-            mendoakan mereka dan meluangkan waktu untuk mereka. Dengan
-            menghormati orang tua, kita tidak hanya memenuhi perintah Tuhan
-            tetapi juga menunjukkan kasih yang nyata kepada mereka, serta
-            menerima janji Tuhan berupa kehidupan yang penuh kedamaian dan
-            berkat.
+            Menghormati orang tua adalah salah satu cara kita menunjukkan
+            ketaatan kepada Tuhan. Orang tua adalah otoritas yang diberikan
+            Tuhan dalam hidup kita. Penghormatan ini tercermin dalam perkataan,
+            tindakan, dan sikap kita, seperti mendengarkan nasihat mereka,
+            membantu saat mereka membutuhkan, dan menjaga hubungan yang baik.
           </p>
-          <p>Kiranya Renungan ini bisa menjadi berkat bagi kita semua. Amin</p>
+          <p>
+            Tanggung jawab untuk menghormati dan merawat orang tua tidak
+            berhenti ketika kita dewasa. Sebaliknya, ini menjadi kesempatan
+            untuk menunjukkan kasih kita dalam hal-hal praktis, termasuk
+            menghadapi perbedaan pendapat dengan lembut dan penuh kasih.
+          </p>
+          <p>
+            Hal kecil seperti mendoakan orang tua dan meluangkan waktu bersama
+            mereka juga merupakan bentuk penghormatan yang sangat berarti.
+          </p>
+          <p>
+            Dengan menghormati orang tua, kita memenuhi perintah Tuhan,
+            menunjukkan kasih yang nyata, dan menerima janji berkat berupa
+            kedamaian dan kehidupan yang diberkati.
+          </p>
+          <p>Kiranya renungan ini menjadi berkat bagi kita semua. Amin.</p>
+          <p className="font-semibold">Penulis: Noldi Krisandi</p>
         </article>
       </section>
     </>

@@ -7,12 +7,12 @@ export default function Renungan() {
   return (
     <>
       <Head>
-        <title>Hidup dalam Kesehjateraan Sesuai Janji Tuhan</title>
+        <title>Hidup dalam Kesejahteraan Sesuai Janji Tuhan</title>
       </Head>
       <header>
         <div>
           <h1 className="text-xl py-4 md:text-2xl font-semibold">
-            Selalu Hidup dalam Kesehjateraan Sesuai Janji Tuhan
+            Selalu Hidup dalam Kesejahteraan Sesuai Janji Tuhan
           </h1>
           <p className="text-md mb-4">Penulis: Noldi Krisandi</p>
         </div>
@@ -28,20 +28,18 @@ export default function Renungan() {
         <article>
           <p>Shalom saudara-saudari di dalam Yesus Kristus.</p>
           <p>
-            Setiap orang pasti ingin selalu hidup dalam kesehjateraan, khususnya
-            dibagian finansial. Seseorang dikatakan sejahtera jika memiliki
-            jumlah aset jauh lebih banyak daripada hutang dan tanggunggan. Terus
-            bagaimana sih kita bisa selalu hidup dalam kesehjateraan menurut
-            Alkitab?
+            Setiap orang pasti ingin hidup dalam kesejahteraan, khususnya dalam
+            hal finansial. Seseorang dikatakan sejahtera jika memiliki jumlah
+            aset yang jauh lebih banyak daripada utang dan tanggungannya. Lalu,
+            bagaimana kita dapat hidup dalam kesejahteraan menurut Alkitab?
           </p>
         </article>
         <article>
           <h2 className="text-xl font-semibold">Rajin dalam Bekerja</h2>
           <p>
-            Langkah pertama untuk hidup sejahtera adalah rajin dalam bekerja,
-            Alkitab menulis sangat jelas bahwa kita harus rajin. Saya akan spam
-            ayat Alkitab yang menyatakan kita harus rajin dalam bekerja.
-            Persiapkan dirimu
+            Langkah pertama untuk hidup sejahtera adalah rajin dalam bekerja.
+            Alkitab menulis dengan sangat jelas bahwa kita harus rajin. Berikut
+            beberapa ayat yang menegaskan pentingnya bekerja dengan rajin:
           </p>
           <blockquote className="italic text-gray-950 mb-5">
             &quot;Siapa yang bekerja tanahnya akan kenyang dengan roti, tetapi
@@ -63,14 +61,13 @@ export default function Renungan() {
             <span className="block mt-2 text-sm">- 2 Tesalonika 3:10</span>
           </blockquote>
           <p>
-            Harusnya ayat-ayat Alkitab ini sangat cukup untuk menjadi alasan
-            kita bekerja dengan rajin, karena itu adalah perintah Tuhan. Jika
-            ada yang mengatakan dirinya mengikut Yesus tetapi malas dalam
-            bekerja, sama dengan menipu diri sendiri dan orang lain.
+            Ayat-ayat ini menunjukkan bahwa bekerja dengan rajin adalah perintah
+            Tuhan. Jika seseorang mengatakan dirinya mengikut Yesus tetapi malas
+            bekerja, ia menipu dirinya sendiri.
           </p>
           <p>
-            Alkitab juga menjuliskan kenapa sih orang bisa miskin dan
-            kekurangan.
+            Sebaliknya, Alkitab juga menjelaskan mengapa seseorang bisa jatuh
+            dalam kemiskinan:
           </p>
           <blockquote className="italic text-gray-950 mb-5">
             &quot;Tidur sebentar lagi, mengantuk sebentar lagi, melipat tangan
@@ -81,18 +78,18 @@ export default function Renungan() {
             <span className="block mt-2 text-sm">- Amsal 24:33-34</span>
           </blockquote>
           <p>
-            Jika saat ini hidupmu dalam kemiskinan dan kekurangan, maka pesan
-            Firman Tuhan sudah jelas, bekerjalah dengan rajin.
+            Jika saat ini hidupmu dalam kemiskinan dan kekurangan, pesan Firman
+            Tuhan sudah jelas <strong>bekerjalah dengan rajin</strong>. Namun,
+            kerja keras saja tidak cukup. Kita juga perlu melibatkan Tuhan
+            melalui doa.
           </p>
         </article>
         <article>
-          <h2 className="text-xl font-semibold">
-            Berdoa dalam Pengharapan kepada Tuhan
-          </h2>
+          <h2 className="text-xl font-semibold">Berdoa dengan Pengharapan</h2>
           <p>
-            Ketika kita sudah rajin dalam bekerja, hal selanjutnya yang harus
+            Ketika kita sudah rajin bekerja, hal selanjutnya yang harus
             dilakukan adalah berdoa kepada Tuhan dengan penuh pengharapan.
-            Kenapa sih kita harus berdoa dengan penuh pengharapan kepada Tuhan?
+            Mengapa kita harus berdoa?
           </p>
           <blockquote className="italic text-gray-950 mb-5">
             &quot;Sebab Aku ini mengetahui rancangan-rancangan apa yang ada
@@ -112,32 +109,23 @@ export default function Renungan() {
             <span className="block mt-2 text-sm">- Filipi 4:6-7</span>
           </blockquote>
           <p>
-            Dalam Kitab Yeremia jelas dikatakan bahwa Tuhan akan merancangkan
-            damai sejahtera untuk hidup kita, maka sangat perlu kita berdoa dan
-            memohon kepada Tuhan untuk segera merealisasikan rancangan damai
-            sejahtera itu dalam hidup kita.
-          </p>
-          <p>
-            Filipi 4:6-7 menegaskan bahwa kita tidak perlu khawatir tentang
-            apapun juga, kita hanya perlu menyatakan permintaan kepada Tuhan
-            melalui doa dan permohonan dengan ucapan syukur, maka Tuhan akan
-            memberikan apa yang Tuhan anggap baik dalam hidup kita.
-          </p>
-          <p>
-            Berdoa dibutuhkan agar Tuhan menyertai kita dalam melakukan
-            perkerjakan, karena jika Tuhan menyertai, maka apapun yang kita
-            kerjakan pasti berhasil. Yang perlu jadi catatan adalah, pastikan
-            apa yang kita kerjakan itu berkenan di hadapan Tuhan.
+            Yeremia 29:11 menunjukkan bahwa Tuhan memiliki rancangan damai
+            sejahtera bagi hidup kita. Filipi 4:6-7 menegaskan agar kita tidak
+            khawatir, tetapi menyampaikan segala permohonan kepada Tuhan. Dengan
+            berdoa, kita memohon penyertaan Tuhan dalam pekerjaan kita, karena
+            jika Tuhan menyertai, segala sesuatu yang kita lakukan akan berhasil
+            (Mazmur 127:1).
           </p>
         </article>
         <article>
           <h2 className="text-xl font-semibold">
-            Menabung dengan Hikmat dari Tuhan
+            Menabung dengan Hikmat Tuhan
           </h2>
           <p>
-            Mungkin sebagian orang berfikir, jika sudah bekerja dengan rajin dan
-            berdoa maka hidupnya akan selalu dalam kesehjateraan. Jika kita
-            lihat lagi dari sudut pandang Alkitab, hal ini belum cukup.
+            Bekerja keras dan berdoa saja belum cukup untuk mencapai
+            kesejahteraan. Kita juga perlu menabung dengan bijaksana. Alkitab
+            mengajarkan hal ini dengan cara yang sangat sederhana namun
+            mendalam:
           </p>
           <blockquote className="italic text-gray-950 mb-5">
             &quot;Hai pemalas, pergilah kepada semut, lihatlah bagaimana dia
@@ -148,13 +136,12 @@ export default function Renungan() {
             <span className="block mt-2 text-sm">- Amsal 6:6-8</span>
           </blockquote>
           <p>
-            Dalam kitab Amsal kita disuruh belajar dari semut, mereka
-            mengumpulkan makanan di masa kelimpahan makanan agar ketika di masa
-            sulit mengumpulkan makanan mereka tidak kekurangan. Hal ini juga
-            selaras dengan apa yang dilakukan oleh Yusuf ketika mengartikan
-            mimpi dari Firaun, yaitu mengumpulkan gandum saat masa kelimpahan 7
-            tahun, sehingga ketika masa kelaparan tiba mereka memiliki banyak
-            makanan.
+            Dalam ayat ini, semut menjadi contoh bagaimana kita seharusnya
+            menabung di masa kelimpahan untuk persiapan di masa kekurangan.
+            Prinsip ini juga diterapkan oleh Yusuf ketika menafsirkan mimpi
+            Firaun dan menyarankan untuk mengumpulkan gandum selama tujuh tahun
+            masa kelimpahan agar cukup untuk menghadapi tujuh tahun masa
+            kelaparan (Kejadian 41:47-49).
           </p>
           <p>
             Jika berbicara mengenai cara menabung, tentu saat ini sudah sangat
@@ -164,9 +151,8 @@ export default function Renungan() {
             pertimbangan inflasi, dan lain sebagainya.
           </p>
           <p>
-            Perlu hikmat dari Tuhan untuk menabung dengan tepat. Jika kamu saat
-            ini dalam masa kelimpahan maka segeralah menabung dan minta hikmat
-            dari Tuhan untuk menabung dengan cara yang terbaik.
+            Namun, kita perlu hikmat dari Tuhan untuk menabung dengan cara yang
+            benar dan sesuai kebutuhan.
           </p>
         </article>
         <article>
@@ -174,17 +160,19 @@ export default function Renungan() {
             Ketika saya membaca ulang renungan ini, saya seakan menjadi mentor
             finansial, padahal saya sedang membagikan Firman Tuhan. Dari sini
             dapat disimpulkan bahwa Tuhan juga menghendaki kita selalu hidup
-            dalam kesehjateraan.
+            dalam kesejahteraan.
           </p>
           <p>
-            Melalui renungan ini kita mengetahui untuk bisa selalu hidup dalam
-            kesehjateraan diperlukan 3 langkah yaitu; rajin dalam bekerja,
-            berdoa dalam pengharapan kepada Tuhan, dan menabung dengan hikmat
-            dari Tuhan.
+            Ketiga langkah ini harus dilakukan secara konsisten dan dengan iman
+            yang teguh. Tuhan menghendaki kita hidup dalam kesejahteraan dan
+            damai sejahtera, seperti yang tertulis dalam Yeremia 29:11. Mari
+            kita mulai menerapkan langkah-langkah ini dalam hidup kita
+            sehari-hari, agar kesejahteraan sejati yang Tuhan janjikan dapat
+            nyata dalam hidup kita.
           </p>
           <p>
-            Kiranya renungan ini kita bisa selalu hidup menyenangkan hati Tuhan.
-            Tuhan Yesus Memberkati. Amin
+            Kiranya renungan ini membawa berkat dan memotivasi kita untuk hidup
+            menyenangkan hati Tuhan. Tuhan Yesus memberkati. Amin.
           </p>
           <p className="font-semibold">Penulis : Noldi Krisandi</p>
         </article>

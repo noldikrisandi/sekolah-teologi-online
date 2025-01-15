@@ -35,14 +35,14 @@ export default function Renungan() {
           </p>
           <p>
             Renungan kita saat ini sangat sensitif, mungkin sebagian orang suka
-            dengan renungan seperti ini sebagian juga kurang menyukainya.
+            dengan renungan ini sebagian juga kurang menyukainya.
           </p>
           <p>
             saya akan membuka renungan ini dengan kalimat yang mungkin akan
             menjadi sangat kontroversi. &quot;Memberi kepada orang yang
             membutuhkan itu lebih baik dari pada kita memberi ke Gereja&quot;.
-            Saya ulangani sekali lagi &quot;Memberi kepada orang yang
-            membutuhkan itu lebih baik dari pada kita memberi ke Gereja&quot;
+            Saya ulangi sekali lagi &quot;Memberi kepada orang yang membutuhkan
+            itu lebih baik dari pada kita memberi ke Gereja&quot;
           </p>
         </article>
         <article>
@@ -53,14 +53,14 @@ export default function Renungan() {
             Saya duduk termenung ketika mendengar khotbah seorang pendeta senior
             yang memintah atau bisa dikatakan memerintahkan jemaatnya untuk
             memberi yang terbaik, jangan memberi dengan mominal yang kecil.
-            Beliau ini merendahkan jemaat yang memberi dengan nominal kecil,
-            sebut saja dua ribu rupiah atau lima ribu rupiah.
+            Beliau merendahkan jemaat yang memberi dengan nominal kecil, sebut
+            saja dua ribu rupiah atau lima ribu rupiah.
           </p>
           <p>
-            Akhirnya jemaat yang awalnya ingin memberi persembahan 2 ribu atau 5
-            ribu merasa malu, sehingga ada jemaat yang memilih untuk tidak
-            memberi ada juga yang dengan terpaksa mengeluarkan uang pecahan 10
-            ribuan keatas.
+            Akhirnya jemaat yang awalnya ingin memberi persembahan dua ribu atau
+            lima ribu merasa malu, sehingga ada jemaat yang memilih untuk tidak
+            memberi ada juga yang dengan terpaksa mengeluarkan uang pecahan
+            sepuluh ribuan keatas.
           </p>
           <p>
             Hal ini membuat jemaat memberi karena <strong>gengsi</strong> bukan
@@ -77,26 +77,20 @@ export default function Renungan() {
           </blockquote>
           <p>
             Jika kita memberi dengan sedih hati atau karena paksaan, maka
-            pemberian kita itu tidak diterima oleh Tuhan. Jika hal ini terjadi
-            dalam memberikan persembahan artinya, persembahan kita tidak
-            diterima oleh Tuhan tetapi diterima dengan senang hati oleh pendeta.
+            pemberian kita tidak diterima oleh Tuhan. Sama halnya ketika kita
+            memberikan persembahan hanya karena gengsi bukan karena kasih, maka
+            persembahan kita tidak diterima oleh Tuhan (Matius 15:8-9).
           </p>
           <p>
-            Ketika kita memberikan persembahan hanya karena gengsi, bukan karena
-            kasih maka persembahan kita itu diterima dengan sukacita oleh
-            pendeta atau lembaga gereja tetapi tidak diterima oleh Tuhan(Matius
-            15:8-9).
-          </p>
-          <p>
-            Ingat, <strong>Tuhan itu tidak butuh uangmu</strong>,{" "}
-            <strong>Tuhan butuh hatimu yang tulus mengasihiNya</strong>.
+            Ingat, <strong>Tuhan tidak butuh uangmu</strong>,{" "}
+            <strong>Tuhan butuh hati yang tulus mengasihiNya</strong>.
           </p>
           <p>
             Hal ini bukan hanya berlaku saat kita memberikan korban persembahan,
-            tetapi juga dalam kehidupan sehari-hari. Jangan memberi jika itu
-            bukan karena kasih, karena itu hanya akan membuat kemunafikan dalam
+            tetapi juga dalam kehidupan sehari-hari. Jangan memberi jika bukan
+            karena kasih, karena itu hanya akan membuat kemunafikan dalam
             dirimu. Jika kita memberi haruslah kita memberi karena kasih, bukan
-            karena paksaan.
+            karena gengsi.
           </p>
         </article>
         <article>
@@ -105,10 +99,10 @@ export default function Renungan() {
           </h2>
           <p>
             Banyak orang memberi kepada Tuhan agar mereka diberi lebih banyak
-            oleh Tuhan, hal ini semacam menghutangi Tuhan. Ha ha ha... Lucu
-            sekali pemikiran ini, seakan-akan Tuhan butuh uang kita, padahal
-            uang itu hanyalah nilai tukar yang dibuat oleh manusia. Terus kok
-            bisa ada konsep menghutangi Tuhan?
+            oleh Tuhan, hal ini semacam menghutangi Tuhan. Lucu sekali pemikiran
+            ini, seakan-akan Tuhan butuh uang kita, padahal uang itu hanyalah
+            nilai tukar yang dibuat oleh manusia. Terus kok bisa ada konsep
+            menghutangi Tuhan?
           </p>
           <blockquote className="italic text-gray-950">
             &quot;Atau siapakah yang pernah memberikan sesuatu kepada-Nya,
@@ -131,7 +125,7 @@ export default function Renungan() {
             Firman Tuhan.
           </p>
           <p>
-            Perpuluhan yang Tuhan perintahkah itu bukan diberikan kepada Tuhan,
+            Perpuluhan yang Tuhan perintahkah bukan diberikan kepada Tuhan,
             tetapi kepada suku Lewi yang tidak mendapat bagian dari tanah
             perjanjian. Bangsa Israel memiliki 12 suku, salah satunya adalah
             suku Lewi. Suku Lewi tidak mendapat jatah tanah perjanjian yang
@@ -148,28 +142,34 @@ export default function Renungan() {
           <p>
             Jadi jelas ya, perpuluhan yang diperintah oleh Tuhan ke bangsa
             Israel itu bukan diberikan kepada Tuhan, tetapi diberikan kepada
-            suku Lewi sebagai ganti jatah tanah perjanjian, dan orang asing,
-            anak yatim, dan janda (Ulangan 14:28-29).
+            suku Lewi sebagai ganti jatah tanah perjanjian, dan kepada orang
+            asing, anak yatim, dan janda (Ulangan 14:28-29).
+          </p>
+          <p>
+            Penting untuk diingat, memberi itu karena kasih bukan untuk
+            investasi. Memberi karna kasih dengan tujuan untuk kemuliaan nama
+            Tuhan, bukan untuk investasi kepada Tuhan.
           </p>
         </article>
         <article>
           <p>
             Kenapa di awal saya mengatakan &quot;Memberi kepada orang yang
             membutuhkan itu lebih baik dari pada kita memberi ke Gereja&quot;.
-            Tetapi bukan berarti memberi ke Gereja bukanlah hal yang baik,
-            memberi ke Gereja adalah hal yang sangat baik, karena melalui Gereja
-            banyak orang mengenal Tuhan. Tolong hal ini jangan di salah artikan.
+            Tetapi bukan berarti memberi ke Gereja adalah sesuatu yang tidak
+            baik. Memberkati Gereja lewat persembahan merupakan hal yang
+            penting, karena melalui Gereja banyak orang mengenal Tuhan. Tolong
+            hal ini jangan di salah artikan.
           </p>
           <p>
             Saya hanya mau menegaskan bahwa pemberian yang berkenan dihadapan
-            Tuhan bukan hanya memberi ke Gereja tetapi memberi ke orang yang
-            membutuhkan itu adalah hal yang sangat baik.
+            Tuhan bukan hanya memberi ke Gereja, tetapi juga termasuk memberi ke
+            orang yang membutuhkan.
           </p>
           <p>
-            Gereja juga butuh finansial yang baik untuk membeli peralatan
-            pendukung ibadah agar ibadah jadi lebih baik. Tetapi satu hal yang
-            ditekankan adalah ketika memberi itu karena kasih bukan karena
-            gengsi atau untuk investasi.
+            Gereja juga butuh finansial untuk membeli peralatan pendukung ibadah
+            agar ibadah jadi lebih baik. Tetapi satu hal yang ditekankan adalah
+            ketika memberi itu karena kasih bukan karena gengsi atau untuk
+            investasi.
           </p>
           <p>Tuhan Yesus Memberkati.</p>
           <p className="font-semibold">Penulis : Noldi Krisandi</p>

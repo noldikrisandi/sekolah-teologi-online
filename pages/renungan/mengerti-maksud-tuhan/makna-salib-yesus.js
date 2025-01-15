@@ -5,7 +5,7 @@ export default function Renungan() {
     <>
       <header>
         <div>
-          <h1 className="text-xl py-4 md:text-2xl font-semibold">
+          <h1 className="text-2xl py-4 font-semibold">
             Makna Salib Yesus bagi Manusia
           </h1>
           <p className="text-md">Penulis: Noldi Krisandi</p>
@@ -30,7 +30,7 @@ export default function Renungan() {
             di kayu salib, untuk menyelamatkan manusia dari belenggu dosa. Salib
             Yesus membuat kita mengerti arti sebuah pengorbanan sejati, sebuah
             pengorbanan pemberian hidup agar manusia yang penuh dosa menjadi
-            berkenan dihadapan Allah.
+            berkenan di hadapan Allah.
           </p>
         </article>
         <article>
@@ -50,16 +50,16 @@ export default function Renungan() {
             benar-benar tahu apa yang dibutuhkan oleh rakyatnya.
           </p>
           <p>
-            Tuhan Yesus melakukan hal yang sama, dia turun dari tahkta
+            Tuhan Yesus melakukan hal yang sama, Dia turun dari takhta
             kemuliaan-Nya di Sorga untuk datang langsung ke tengah-tengah
             manusia, bukan hanya sekadar menyelesaikan masalah manusia dengan
-            mengajarkan perintah Tuhan Allah, tetapi dia rela menderita dan mati
-            di kayu salib hanya untuk menyelamatkan saya dan kamu dari dosa yang
-            membelengku kehidupan kita.
+            mengajarkan perintah Tuhan Allah, tetapi Tuhan Yesus rela menderita
+            dan mati di kayu salib hanya untuk menyelamatkan saya dan kamu dari
+            dosa yang membelengku kehidupan kita.
           </p>
           <p>
-            Disini jelas bahwa makna Salib Yesus adalah Pengorbanan yang Membawa
-            Keselamatan
+            Di sini jelas bahwa makna Salib Yesus adalah Pengorbanan yang
+            Membawa Keselamatan
           </p>
         </article>
         <article>
@@ -99,8 +99,8 @@ export default function Renungan() {
             untuk mengampuni orang lain (Matius 6:14-15).
           </p>
           <p>
-            Memalui pengorbanan Tuhan Yesus kita dipanggil untuk mengasihi semua
-            orang, sehingga salib Yesus memiliki maksa Kasih yang Mengalahkan
+            Melalui pengorbanan Tuhan Yesus kita dipanggil untuk mengasihi semua
+            orang, sehingga salib Yesus memiliki makna Kasih yang Mengalahkan
             Dosa
           </p>
         </article>
@@ -118,7 +118,7 @@ export default function Renungan() {
             murid-murid-Ku, yaitu jikalau kamu saling mengasihi.&quot;
           </p>
           <p>
-            Mengasihi sesama adalah jadi diri murid Yesus. Tuhan Yesus tidak
+            Mengasihi sesama adalah jati diri murid Yesus. Tuhan Yesus tidak
             hanya mengajarkan kita mengasihi sesama murid Yesus, tetapi
             mengajarkan dan memerintahkan muridnya untuk mengasihi seluruh
             manusia termasuk musuh kita.
@@ -158,8 +158,8 @@ export default function Renungan() {
           </p>
           <p>
             Hidup yang penuh perjuangan dan pengharapan adalah makna Salib Yesus
-            yang sangat dalam, bagaimana kita dipanggil untuk berjuangan agar
-            bisa hidup seperti ajaran Yesus, dengan pengharapan yang jelas yaitu
+            yang sangat dalam, bagaimana kita dipanggil untuk berjuang agar bisa
+            hidup seperti ajaran Yesus, dengan pengharapan yang jelas yaitu
             mendapat upah di Kerajaan Sorga (Yohanes 8:31).
           </p>
         </article>
@@ -172,7 +172,7 @@ export default function Renungan() {
             kita memahami maksud Tuhan dalam hidup ini. Salib Yesus bukan hanya
             sekedar pajangan, tetapi sebuah simbol dengan arti yang sangat
             dalam. Kiranya renungan ini bisa menjadi berkat bagi kita semua,
-            sehingga nama Yesus selalu dipermuliakan dalam kehidupan kita.
+            sehingga Nama Yesus selalu dipermuliakan dalam kehidupan kita.
             Terpujilah Yesus, dan diberkatilah kita dengan FirmanNya. Amin.
           </p>
         </article>

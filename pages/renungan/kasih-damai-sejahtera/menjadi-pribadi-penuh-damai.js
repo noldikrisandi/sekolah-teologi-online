@@ -21,120 +21,106 @@ export default function Renungan() {
         <Image
           src="/images/produktif.webp"
           alt=""
-          className="w-full h-44 md:h-80 object-cover rounded"
+          className="w-full h-44 md:h-80 object-cover rounded mb-6"
           width={500}
           height={300}
         />
         <article>
           <p>
-            Sebagai seseorang yang beragama Kristen, pasti kita sering mendengar
-            kata {""}
-            <strong>Kasih</strong>. Perlu kita ketahui bahwa Hidup sebagai
-            pribadi penuh damai adalah panggilan untuk semua anak-anak Allah.
-            Yesus sendiri berkata, &quot;Berbahagialah orang yang membawa damai,
-            karena mereka akan disebut anak-anak Allah&quot; (Matius 5:9).
+            Shalom saudara-saudari yang dikasih oleh Tuhan Yesus. <br /> Kali
+            ini kita akan sama-sama belajar menjadi pribadi yang penuh damai.
+          </p>
+          <p>
+            Perlu kita ketahui bahwa hidup sebagai pribadi yang penuh damai
+            adalah panggilan bagi semua anak-anak Allah. Yesus sendiri berkata,
+            &quot;Berbahagialah orang yang membawa damai, karena mereka akan
+            disebut anak-anak Allah&quot; (Matius 5:9).
+          </p>
+          <p>
             Kedamaian bukan hanya keadaan tanpa konflik, tetapi juga kondisi
-            hati yang tenang di tengah badai hidup karena kehadiran Tuhan.
+            hati yang tenang di tengah badai kehidupan.
           </p>
         </article>
         <article>
           <h2 className="text-xl font-semibold">
-            Damai Dimulai dari Hubungan dengan Tuhan Allah
+            Damai Dimulai dari Hubungan dengan Tuhan
           </h2>
           <p>
-            Damai sejati hanya dapat kita peroleh ketika kita hidup dekat dengan
-            Tuhan. Rasul Paulus menulis, &quot;Karena itu, kita, yang dibenarkan
-            karena iman, hidup dalam damai sejahtera dengan Allah oleh karena
-            Tuhan kita, Yesus Kristus&quot; (Roma 5:1). Sangat jelas Rasul
-            Paulus menegaskan bahwa kita harus hidup dalam damai sejahtera{" "}
-            <strong>dengan Allah</strong>, jika saat ini mungkin kita memiliki
-            banyak masalah dengan orang lain atau mungkin memiliki masalah
-            dengan diri kita sendiri, tentunya sangat perlu untuk melihat apakah
-            kita memiliki hubugan yang baik dengan Allah?
+            Kedamaian hanya dapat kita peroleh ketika hidup dekat dengan Tuhan.
+            Rasul Paulus menulis, &quot;Karena itu, kita, yang dibenarkan karena
+            iman, hidup dalam damai sejahtera dengan Allah oleh karena Tuhan
+            kita, Yesus Kristus&quot; (Roma 5:1). Rasul Paulus menegaskan bahwa
+            kita harus hidup dalam damai sejahtera <strong>dengan Allah</strong>
+            . Jika kita memiliki banyak masalah dengan orang lain, penting untuk
+            melihat apakah hubungan kita dengan Allah dalam kondisi yang baik
+            atau tidak?
           </p>
           <p>
-            Lantas bagaimana caranya kita mengetahui apakah hubungan kita dengan
-            Allah dalam keadaan baik atau tidak? Cara simpelnya saya akan
-            membaginya dalam 4 fase. Fase pertama, apakah kamu pernah
-            menyalahkan Tuhan atas situasi sulit yang sedang atau pernah kamu
-            hadapai? Jika kamu menjawab tidak pernah menyalahkan Tuhan, artinya
-            kamu lolos fase pertama. Tetapi jika kamu pernah menyalahkan Tuhan
-            atas situasi sulit yang pernah kamu alamai, dapat disimpulkan bahwa
-            kamu memiliki hubungan yang buruk dengan Allah.
+            Ada 4 fase Untuk mengetahui apakah hubungan kita dengan Allah dalam
+            keadaan baik atau tidak.
           </p>
+          <h3 className="font-semibold">
+            Fase Pertama: Tidak menyalahkan Tuhan atas situasi sulit yang sedang
+            kamu hadapi.
+          </h3>
           <p>
-            Fase kedua, cek apakah kamu rutin berkomunikasi dengan Tuhan.
+            Jika kamu tidak pernah menyalahkan Tuhan, artinya kamu lolos fase
+            pertama. Tetapi jika kamu pernah menyalahkan Tuhan atas situasi
+            sulit yang kamu alamai, dapat disimpulkan bahwa kamu memiliki
+            hubungan yang buruk dengan Allah.
+          </p>
+
+          <h3 className="font-semibold">
+            Fase Kedua: Rutin berkomunikasi dengan Tuhan.
+          </h3>
+          <p>
             Seorang yang mengasihi Tuhan tidak mungkin putus hubungan dengan
-            Tuhan, sama halnya ketika kamu mengasihi orang lain, pasti kamu
-            ingin selalu berkomunikasi dengan orang yang kamu sayangi. Jika kamu
-            tidak rutin berkomunikasi dengan Allah baik dalam doa maupun
-            pergumulan, artinya kamu tidak memiliki hubungan yang baik dengan
-            Allah. Tetapi jika kamu rutin berdoa, atau bergumul dengan Tuhan
-            maka kamu lolos dalam fase kedua.
+            Tuhan. Sama halnya ketika kita mengasihi orang lain, pasti kita
+            ingin selalu berkomunikasi dengan orang tersebut.
           </p>
           <p>
-            Fase ketiga, kali ini saya tidak akan bertanya melainkan langsung to
-            the poin. Orang yang memiliki hubungan yang baik dengan Tuhan pasti
-            rutin membaca Firman, merenungakn Firman Tuhan, atau sebagian juga
-            senang mendengar dan menonton khotbah dari pendeta andalannya
-            masing-masing. Jika kamu tidak melakukan hal-hal ini, artinya kamu
-            tidak memilik kerinduan untuk mengetahui tentang Allah, sehingga
-            tidak mungkin hubunganmu baik dengan Allah karena kamu tidak
-            mengenal siapa Allah.
+            Berkomunikasi dengan Tuhan caranya mudah, bisa dilakukan dengan
+            berdoa, membaca serta merenungkan Firman, mendengarkan khotbah, dan
+            bergumul dengan Tuhan dalam setiap aktivitas.
           </p>
           <p>
-            Fase keempat, saya harap kamu lolos dalam fase pertama sampai
-            ketiga. Fase ini adalah fase terpenting untuk mengecek apakah
-            hubunganmu dengan Allah baik-baik saja atau tidak. Fase keempat
-            adalah melakukan Firman Tuhan, dengan melakukan Firman Tuhan itu
-            artinya kamu mempunyai hubungan yang baik dengan Tuhan, karena
-            puncak dari iman Kristen adalah melakukan Firman Tuhan.
+            Jika kamu tidak rutin berkomunikasi dengan Allah, artinya kamu
+            memiliki hubungan yang buruk dengan Allah. Kamu harus lolos dari
+            fase kedua dulu, baru bisa masuk dalam fase ketiga.
+          </p>
+          <h3 className="font-semibold">
+            Fase Ketiga: Memiliki kehausan akan Firman Tuhan
+          </h3>
+          <p>
+            Ketika kita memiliki hubungan yang baik dengan Allah maka secara
+            otomatis kita akan mengasihi Dia, karena Allah adalah kasih. Jika
+            kita mengasihi Allah tentunya kita akan memiliki kehausan akan
+            Firman Tuhan.
           </p>
           <p>
-            Jadi bagaimana apakah kamu sudah lolos dalam 4 fase untuk mengecek
-            apakah hubunganmu dengan Allah baik-baik saja atau tidak? Saya tahu
-            sebagian besar belum lolos dalam fase-fase tersebut, karena jika
-            sudah lolos keempat fase tersebut maka kamu tidak perlu membaca
-            renungan ini. Sekarang mari kita fokus memperbaiki hubungan kita
-            dengan Allah agar kita bisa menjadi pribadi kasih.
+            Kehausan akan Firman Tuhan akan membuat kita membaca dan merenungkan
+            Firman Tuhan, serta senang mendengarkan khotbah. Hal ini menandakan
+            kita memiliki rasa keingin tahuan yang tinggi mengenai siapa Tuhan,
+            dan bagaimana cara menyukakan hatiNya. Kehausan akan Firman Tuhan
+            menjadi bukti kita memiliki hubungan yang baik dengan Allah.
+          </p>
+          <h3 className="font-semibold">
+            Fase Keempat: Melakukan Segala Sesuatu untuk Menyenangkan Hati Tuhan
+          </h3>
+          <p>
+            Fase ini merupakan kelanjutan dari fase ketiga. Ketika kita memiliki
+            kehausan akan Firman Tuhan, langkah berikutnya adalah melakukan
+            segala sesuatu untuk menyenangkan hati Tuhan.
           </p>
           <p>
-            Cara memperbaiki hubungan kita dengan Tuhan ada 4 fase juga. Fase
-            pertama, memohon ampun kepada Tuhan jika kita pernah menuduhNya
-            merancangkan sesuatu yang jahat terhadap hidup kita. Ini adalah fase
-            paling gampang untuk orang rendah hati, tetapi akan sangat sulit
-            untuk orang sombong. Silahkan lakukan fase satu ini dulu baru kita
-            lanjut ke fase kedua.
+            Melakukan segala sesuatu untuk menyenangkan hati Tuhan adalah bukti
+            nyata kita memiliki hubungan yang baik dengan Allah.
           </p>
           <p>
-            Fase kedua adalah mulai bangun hubungan dengan Tuhan, melalui doa
-            dan bergumul dengan Tuhan untuk segala aktifitas yang kita lakukan.
-            Jangan membatasi komunikasi dengan Tuhan hanya lewat doa, tetapi
-            dalam melakukan setiap aktifitas selalu libatkan Tuhan dan
-            bergumulah dengan Dia.
-          </p>
-          <p>
-            Fase ketiga adalah mulai rutin membaca Alkitab dan merenungkan
-            Firman Tuhan, atau jika kamu mau mendengar/menonton khotbah itu
-            sangat dianjurkan. Mulailah memiliki kehausan akan kebenaran Firman
-            Tuhan sehingga menjadi modalmu untuk melangkah ke fase keempat.
-          </p>
-          <p>
-            Fase keempat adalah selalu{" "}
-            <strong>berusaha melakukan Firman Tuhan</strong>. Akan sangat naif
-            jika saya mengatakan kita bisa langsung spontan melakukan semua
-            Firman Tuhan setelah melawati fase satu sampai ketiga, tetapi bukan
-            hal yang mustahil jika ada orang yang langsung bisa melakukan semua
-            Firman Tuhan setelah melewati fase pertama sampai ketiga. Mulailah
-            dengan sadar berusaha melakukan semua perintah Tuhan, memang ini
-            bukan hal yang mudah tetapi berusahalah untuk melakukannya (Matius
-            5:48).
-          </p>
-          <p>
-            Jika hubungan kita dengan Tuhan Allah telah baik, maka akan sangat
-            mudah untuk kita menjadi pribadi yang penuh damai. Karena hubungan
-            baik dengan Tuhan Allah adalah dasar untuk bisa menjadi pribadi yang
-            penuh damai.
+            Melalui keempat fase ini, dapat diketahui apakah kita memiliki
+            hubungan yang baik atau tidak dengan Allah. Jika kita belum memiliki
+            hubungan yang baik dengan Allah, sangat perlu untuk memperbaiki
+            hubungan tersebut agar kita bisa menjadi pribadi penuh damai.
           </p>
         </article>
         <article>
@@ -144,20 +130,20 @@ export default function Renungan() {
           <p>
             Satu kata yang sulit untuk dilakukan oleh manusia, yaitu Mengampuni.
             Saya tidak akan panjang lebar menjelaskan tentang pentingnya
-            mengampuni karena saya punya ayat pamungkas untuk hal ini yaitu
-            Matius 6:14-15 &quot;Karena jikalau kamu mengampuni kesalahan orang,
-            Bapamu yang di sorga akan mengampuni kamu juga. Tetapi jikalau kamu
-            tidak mengampuni orang, Bapamu juga tidak akan mengampuni
-            kesalahanmu.&quot;
+            mengampuni karena saya punya ayat pamungkas untuk hal ini.
           </p>
+          <blockquote className="italic text-gray-950 mb-5">
+            &quot;Karena jikalau kamu mengampuni kesalahan orang, Bapamu yang di
+            sorga akan mengampuni kamu juga. Tetapi jikalau kamu tidak
+            mengampuni orang, Bapamu juga tidak akan mengampuni
+            kesalahanmu.&quot;
+            <br />
+            <span className="block mt-2 text-sm">- Matius 6:14-15 </span>
+          </blockquote>
           <p>
-            Sudah sangat jelas ya, kita tidak akan bisa menjadi pribadi yang
-            penuh damai jika kita tidak berhasil mengampuni orang lain.
-            Jangankan menjadi pribadi yang penuh damai, jika kita tidak
-            mengumpuni maka Bapa yang di Sorga juga tidak akan mengampuni
-            kesalahan kita, karena Tuhan Yesus hanya menyelamatkan orang yang
-            percaya kepadaNya, salah satu ciri orang yang percaya kepada Yesus
-            adalah bisa mengampuni.
+            Mengampuni adalah syarat untuk menjadi pribadi yang penuh damai.
+            Selain itu, mengampuni merupakan perintah langsung Tuhan Yesus yang
+            wajib dilakukan oleh semua orang yang percaya kepada-Nya.
           </p>
           <p>
             Saya anggap sudah clear ya pembahasan mengenai mengampuni, karena
@@ -165,10 +151,10 @@ export default function Renungan() {
             mengasihi orang tersebut.
           </p>
           <p>
-            Untuk menjadi pribadi yang penuh dengan damai kita sangat perlu
-            mengasihi orang lain, bahkan Firman Tuhan secara jelas menegaskan
-            bahkan mengasihi sesama adalah hukum kedua yang posisinya sama
-            dengan hukum mengasihi Tuhan Allah (Matius 22:39)
+            Untuk menjadi pribadi yang penuh dengan damai, kita sangat perlu
+            mengasihi orang lain. Firman Tuhan secara jelas menegaskan bahkan
+            mengasihi sesama adalah hukum kedua yang posisinya sama dengan hukum
+            mengasihi Tuhan Allah (Matius 22:39)
           </p>
         </article>
         <article>
@@ -176,75 +162,64 @@ export default function Renungan() {
             Berdamai dengan Diri Sendiri
           </h2>
           <p>
-            Saya sempat berfikir untuk menampatkan poin berdamai dengan diri
-            sendiri di poin kedua sebelum perbahasan Belajar Mengampuni dan
-            Mengasihi Sesama. Tetapi saya akan menjadika ini menjadi pembahasan
-            pamungkas.
+            Sering kali kita gagal menjadi pribadi yang penuh damai hanya karena
+            belum selesai dengan diri sendiri.
           </p>
           <p>
-            Sering kali kita gagal menjadi pribadi yang penuh dengan damai
-            karena belum selesai dengan diri sendiri. Mungkin kamu pernah
-            melakukan sebuah kesalahan yang cukup fatal sehingga membuat kamu
-            merasa bersalah sampai saat ini, hal ini bisa saja menghantui
-            pikiranmu. Jika kamu pernah melakukan kesalahan terimalah dirimu
-            yang tidak sempurna itu, dan ampunilah dirimu atas kesalahan yang
-            pernah kamu perbuat.
+            Mungkin kamu pernah merasa bersalah karena melakukan kesalahan yang
+            cukup fatal, sehingga hal itu menghantui pikiranmu. Jika hal itu
+            terjadi padamu, maka ampunilah dirimu karena Tuhan mengampuni dosa
+            umatnya dan tidak mengingat-ingat dosa itu lagi (Ibrani 10:16-18).
           </p>
           <p>
-            Jangan sampai karena merasa bersalah terhadap kejadian yang telah
-            lalu membuat masa depanmu menjadi suram. Kamu perlu mengampuni
-            dirimu sendiri atas kesalahan yang pernah kamu perbuat. Mungkin saja
-            kamu sudah menganggap dirimu mengampuni diri sendiri kemudian orang
-            lain menyinggung kesalahanmu itu, jika hal itu terjadi maka yang
-            pertama kamu harus lakukan adalah kembali mengampuni dirimu lagi
-            jika rasa bersalah itu muncul kembali, dan juga kamu harus
-            mengampuni orang yang mengungkit kesalahan itu. Hal ini mungkin
-            sangat sulit tapi itu harus kamu lakukan.
+            Saat kamu sudah mengampuni dirimu, mungkin masih ada orang yang
+            mengungkit kesalahanmu. Jika hal itu terjadi, kamu harus mengampuni
+            dirimu lagi ketika rasa bersalah itu muncul, kemudian kamu harus
+            mengampuni orang yang mengungkit kesalahan itu. Hal ini memang sulit
+            tapi itu harus dilakukan.
           </p>
           <p>
-            Setelah kamu berhasil mengampuni dirimu sendiri atas kesalahan yang
-            pernah kamu perbuat, maka langkah terakhir untuk menjadi pribadi
-            yang penuh damai adalah menerima segala kelebihan dan kekurangan
-            yang kamu miliki.
+            Setelah kamu berhasil mengampuni dirimu sendiri, langkah terakhir
+            untuk menjadi pribadi yang penuh damai adalah menerima segala
+            kelebihan dan kekurangan yang ada pada dirimu.
           </p>
           <p>
-            Menerima kelebihan artinya tidak sedang membandingkan diri kita itu
-            lebih baik daripada orang lain, karena setiap orang diciptakan Tuhan
-            spesial sehingga memiliki kelebihan masing-masing sesuai apa yang
-            dikaruniakan oleh Tuhan.
+            Menerima kelebihan berarti tidak membandingkan diri kita dengan
+            orang lain dan merasa lebih baik dari mereka. Setiap orang
+            diciptakan oleh Tuhan secara istimewa, dengan kelebihan
+            masing-masing sesuai dengan karunia yang diberikan-Nya.
           </p>
           <p>
-            Menerima kekurangan artinya menerima segala kekurangan yang kita
+            Menerima kekurangan berarti menerima setiap kelemahan yang kita
             miliki, karena Tuhan menerima kita apa adanya. Setiap orang memiliki
-            kekurangannya masing-masing, tidak perlu berkecil hati dengan apa
-            yang kita miliki. Ingatlah bahwa kamu berharga di mata Tuhan,
-            diciptakan sesuai gambar dan rupa Allah.
+            kekurangan untuk itulah kita harus saling melengkapi. Kamu berharga
+            di mata Tuhan, karena kamu diciptakan sesuai dengan gambar dan
+            rupa-Nya.
           </p>
           <p>
-            Berhenti membandingkan diri kita dengan orang lain, karena setiap
-            manusia diciptakan berbeda dan memiliki kelebihan serta kekurangan
-            masing-masing, agar kita semua bisa saling melengkapi satu dengan
-            lainnya dalam kasih di dalam Yesus Kristus.
+            Hentikan kebiasaan membandingkan diri dengan orang lain. Setiap
+            manusia diciptakan berbeda, dengan kelebihan dan kekurangan
+            masing-masing, agar kita dapat saling melengkapi dalam kasih di
+            dalam Yesus Kristus.
           </p>
         </article>
         <article>
           <p>
-            Di atas saya sudah jelaskan tahapan agar kita bisa menjadi pribadi
-            yang penuh damai. Tahapan di atas hanya akan sekedar teori yang
-            tidak berjuga jika kamu tidak lakukan, waktunya kamu memulai semua
-            tahapan ini agar kamu bisa menjadi pribadi yang penuh damai.
+            Tahapan yang saya jelaskan sebelumnya adalah langkah-langkah penting
+            untuk menjadi pribadi yang penuh damai. Namun, semua tahapan ini
+            akan menjadi teori yang tidak berguna jika tidak dipraktikkan.
+            Waktunya untuk mempraktikannya agar hidup kita dipenuhi dengan
+            kedamaian.
           </p>
           <p>
-            Saya paham bahwa semua tahapan ini tidak mudah, tetapi bisa
-            dilakukan. Kamu tidak harus melakukan semuanya sekaligus dalam satu
-            waktu yang sama, tetapi mulailah dari satu tahapan ke tahapan
-            berikutnya.
+            Saya paham bahwa setiap tahapan ini tidak mudah, tetapi semuanya
+            bisa dilakukan. Kamu tidak perlu melakukan semuanya sekaligus,
+            mulailah dengan satu tahapan dan lanjutkan ke tahapan berikutnya.
           </p>
           <p>
-            Saat kamu sukses melakukan semua tahapan ini, maka kamu akan
-            merasakan dampak yang luar biasa dalam hidupmu. Saya ingatkan
-            kembali bahwa menjadi pribadi yang membawa damai adalah kewajiban
-            untuk semua anak-anak Allah (Matius 5:9).
+            Ketika berhasil menjalankan semua tahapan ini, dampaknya akan sangat
+            baik dalam hidupmu. Ingatlah bahwa menjadi pribadi yang membawa
+            damai adalah kewajiban bagi semua anak-anak Allah (Matius 5:9).
           </p>
           <p>
             Kiranya melalui renungan ini kemuliaan Tuhan selalu nyata dalam
