@@ -107,7 +107,7 @@ export default function Renungan() {
             mengganjal pintu.
           </p>
           <p>
-            Alat yang secanggih itu digunakan untuk hal yang begitu sederhana.
+            Alat secanggih itu digunakan untuk hal yang begitu sederhana.
             Padahal, pembuat smartphone tidak menciptakan perangkat itu untuk
             membuka buah pala atau mengganjal pintu. Namun, jika dipikirkan,
             tentu saja hal itu masih bisa dilakukan dengan perangkat tersebut.
@@ -134,9 +134,9 @@ export default function Renungan() {
             muda itu perlahan mulai menggunakan smartphone sesuai fungsinya.
           </p>
           <p>
-            Hal ini mirip dengan kedatangan Tuhan Yesus ke dunia untuk
-            mengajarkan kita bagaimana hidup memuliakan Tuhan. Yesus mengajarkan
-            dan memberi teladan kasih sebagai cara hidup dalam memuliakan Tuhan.
+            Hal ini mirip dengan kedatangan Tuhan Yesus ke dunia untuk mengajar
+            manusia bagaimana hidup memuliakan Tuhan. Yesus mengajarkan dan
+            memberi teladan kasih sebagai cara hidup dalam memuliakan Tuhan.
           </p>
           <p>
             Yesus datang ke dunia untuk memperbaiki hidup kita agar dapat

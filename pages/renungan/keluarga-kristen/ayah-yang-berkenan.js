@@ -5,7 +5,7 @@ export default function renungan() {
     <>
       <header>
         <div>
-          <h1 className="text-xl py-4 md:text-2xl font-semibold">
+          <h1 className="text-2xl py-4 font-semibold">
             Menjadi Ayah dan Suami yang Berkenan di Hadapan Tuhan
           </h1>
           <p className="text-md">Penulis: Noldi Krisandi</p>
@@ -31,11 +31,9 @@ export default function renungan() {
             menjalankan panggilan Tuhan dengan penuh kesungguhan hati.
           </p>
           <p>
-            Seorang ayah yang berkenan di hadapan Tuhan harus hidup sesuai
-            dengan kebenaran Firman Tuhan, sehingga hidupnya mencerminkan kasih
-            Kristus. Peran ayah dalam keluarga sangatlah besar. Oleh karena itu,
-            diperlukan kerja keras untuk mewujudkan keluarga yang dipenuhi
-            kemuliaan Tuhan.
+            Seorang ayah harus hidup sesuai dengan kebenaran Firman Tuhan,
+            sehingga hidupnya mencerminkan kasih Kristus. Peran ayah dalam
+            keluarga sangatlah besar, oleh karena itu diperlukan kerja keras.
           </p>
         </article>
       </section>
@@ -44,10 +42,9 @@ export default function renungan() {
           <h2 className="text-xl font-semibold">Memimpin dalam Kebenaran</h2>
           <p>
             Sebelum menjadi kepala keluarga, penting untuk menjadikan Firman
-            Tuhan sebagai dasar kehidupan keluarga. Tanpa pemahaman Firman
-            Tuhan, sulit bagi kepala keluarga untuk memimpin dalam kebenaran.
-            Firman Tuhan harusnya menjadi pelita yang menerangi perjalanan
-            kehidupan keluarga.
+            Tuhan sebagai dasar kehidupan keluarga. Tanpa pemahaman Firman,
+            sulit bagi kepala keluarga dalam memimpin. Firman Tuhan harus
+            menjadi pelita yang menerangi perjalanan hidup keluarga.
           </p>
           <p>
             Ayah perlu memahami dan menerapkan Firman Tuhan agar dapat
@@ -56,10 +53,10 @@ export default function renungan() {
             nyata. Berkat Tuhan itu ada dua, yaitu damai dan sejahtera.
           </p>
           <p>
-            Damai mencakup kasih sayang, rasa aman, dan kenyamanan dalam
-            keluarga. Kedamaian ini menjadi sumber sukacita karena Tuhan hadir.
-            Jika keluargamu belum dipenuhi damai, evaluasi apakah kepemimpinanmu
-            sudah sesuai dengan kebenaran Firman Tuhan.
+            Kedamaian menjadi sumber sukacita dalam keluarga, karena mencakup
+            kasih sayang, rasa aman, dan kenyamanan. Jika keluargamu belum
+            dipenuhi damai, evaluasi apakah kepemimpinanmu sudah sesuai dengan
+            Firman Tuhan atau belum.
           </p>
           <p>
             Sejahtera berarti keluargamu tidak mengalami kekurangan dalam

@@ -27,192 +27,212 @@ export default function Edukasi() {
 
         <article>
           <p>
+            <strong>Inkarnasi</strong> merupakan salah satu doktrin utama dalam
+            iman Kristen yang mengajarkan bahwa Yesus Kristus, Putra Allah,
+            menjadi manusia untuk menyelamatkan umat manusia. Dogma ini
+            mengungkapkan bahwa Yesus, meskipun sepenuhnya Allah, memilih untuk
+            mengambil bentuk manusia dan hidup di dunia ini untuk memenuhi
+            rencana keselamatan Allah bagi umat manusia.
+          </p>
+        </article>
+
+        <article>
+          <h2 className="text-2xl font-semibold mt-5">Pengertian Inkarnasi</h2>
+          <p>
+            <strong>Ingkarnasi adalah</strong> perwujudan nyata dalam bentuk
+            mahkluk, dari roh atau sesuatu yang tidak dapat dilihat dan
+            dirasakan oleh panca indra manusia.
+          </p>
+          <p>
+            Dalam KBBI juga dicatat bahwa Ingkarnasi merupakan perwujudan
+            makhluk halus dalam bentuk yang nyata
+          </p>
+          <h3 className="font-semibold text-xl">
+            Pengertian Inkarnasi dalam Iman Kristen
+          </h3>
+          <p>
+            Inkarnasi berarti &quot;penjelmaan&quot; atau &quot;kehadiran&quot;
+            Allah dalam bentuk manusia. Dalam konteks Kekristenan, inkarnasi
+            merujuk pada keyakinan bahwa Yesus Kristus, yang adalah Putra Allah
+            yang kekal, mengambil bentuk manusia dan hidup di dunia ini.
+            Meskipun menjadi manusia, Yesus tetap sepenuhnya Allah.
+          </p>
+          <p>
             Inkarnasi merupakan salah satu doktrin utama dalam iman Kristen yang
             mengajarkan bahwa Yesus Kristus, Putra Allah, menjadi manusia untuk
-            menyelamatkan umat manusia. Dogma ini mengungkapkan bahwa Yesus,
-            meskipun sepenuhnya Allah, memilih untuk mengambil bentuk manusia
-            dan hidup di dunia ini untuk memenuhi rencana keselamatan Allah bagi
-            umat manusia.
+            menyelamatkan umat manusia.
+          </p>
+          <p>
+            Dogma ini mengungkapkan bahwa Yesus, meskipun sepenuhnya Allah,
+            memilih untuk mengambil bentuk manusia dan hidup di dunia ini untuk
+            memenuhi rencana keselamatan Allah bagi umat manusia.
           </p>
         </article>
 
         <article>
-          <h2 className="text-2xl font-semibold mt-5">
-          Pengertian Inkarnasi
-          </h2>
-          <p>
-            Dogma Tritunggal tidak disebutkan secara eksplisit dalam Alkitab
-            dengan istilah &quot;Tritunggal,&quot; namun konsep ini muncul
-            secara bertahap melalui pengajaran Yesus dan pengalaman umat Kristen
-            awal.
-          </p>
-          <p>
-            Pembentukan dogma ini berkembang sebagai respons terhadap pertanyaan
-            teologis yang muncul, seperti bagaimana memahami kehadiran Allah
-            dalam tiga pribadi yang berbeda namun tetap satu Tuhan.
-          </p>
-          <h3 className="font-semibold text-xl">Referensi Alkitab</h3>
-          <ul className="list-disc pl-5">
+          <h2 className="text-2xl font-semibold mt-5">Dasar Alkitab</h2>
+          <ol className="list-decimal pl-5 font-normal">
             <li>
-              <b>Matius 28:19:</b> Perintah Yesus untuk membaptis &quot;dalam
-              nama Bapa, dan Putra, dan Roh Kudus.&quot; Ayat ini sering
-              digunakan sebagai bukti bahwa Yesus mengajarkan tentang hubungan
-              antara ketiga pribadi dalam Allah.
+              <b>Yohanes 1:1-14:</b> &quot;Pada mulanya adalah Firman, Firman
+              itu bersama-sama dengan Allah, dan Firman itu adalah Allah... dan
+              Firman itu telah menjadi manusia dan diam di antara kita.&quot;
+              Ayat ini menyatakan bahwa Firman (Yesus) adalah Allah, dan Firman
+              itu menjadi manusia untuk hidup di dunia ini.
             </li>
             <li>
-              <b>2 Korintus 13:14:</b> &quot;Anugerah Tuhan Yesus Kristus, dan
-              kasih Allah, dan persekutuan Roh Kudus menyertai kamu
-              sekalian.&quot; Ini menunjukkan hubungan erat antara ketiga
-              pribadi dalam Allah.
+              <b>Filipi 2:6-8:</b> &quot;Yang, meskipun dalam rupa Allah, tidak
+              menganggap kesetaraan dengan Allah sebagai milik yang harus
+              dipertahankan, tetapi mengosongkan diri-Nya sendiri dan mengambil
+              rupa seorang hamba, dan menjadi sama dengan manusia. Dan dalam
+              keadaan sebagai manusia, Ia merendahkan diri dan taat sampai mati,
+              bahkan mati di kayu salib.&quot; Ayat ini menjelaskan bahwa Yesus
+              yang sepenuhnya Allah memilih untuk merendahkan diri dan menjadi
+              manusia demi keselamatan umat manusia.
             </li>
             <li>
-              <b>Yohanes 14:16-17:</b> Yesus berbicara tentang pengutusannya Roh
-              Kudus yang akan datang setelah Dia pergi, menyiratkan adanya
-              hubungan yang erat antara ketiga pribadi dalam Allah.
+              <b>Matius 1:23:</b> &quot;Sesungguhnya, anak dara itu akan
+              mengandung dan melahirkan seorang anak laki-laki, dan mereka akan
+              menamakan Dia Immanuel (yang berarti: Allah menyertai kita).&quot;
+              Yesus adalah manifestasi dari Allah yang hadir di tengah umat
+              manusia.
             </li>
             <li>
-              <b>Yohanes 1:1-14:</b> Menyatakan bahwa Firman (Yesus) adalah
-              Allah, dan Firman itu menjadi manusia, menegaskan kesatuan antara
-              Yesus dan Allah.
-            </li>
-          </ul>
-        </article>
-
-        <article>
-          <h2 className="text-2xl font-semibold mt-5">
-            Penjelasan Dogma Allah Tritunggal
-          </h2>
-          <ol className="list-decimal pl-5">
-            <li className="font-semibold">
-              Satu Esensi, Tiga Pribadi
-              <ul className="list-disc pl-5 font-normal">
-                <li>
-                  <b>Satu Esensi:</b> Allah Tritunggal meyakini bahwa meskipun
-                  ada tiga pribadi yang berbeda (Bapa, Putra, dan Roh Kudus),
-                  mereka semua memiliki esensi yang sama. Artinya, meskipun ada
-                  tiga pribadi yang berbeda, mereka adalah satu dalam
-                  hakikatnya.
-                </li>
-                <li>
-                  <b>Tiga Pribadi:</b> Masing-masing pribadi Allah; Bapa, Putra,
-                  dan Roh Kudus memiliki peran yang unik, tetapi mereka tidak
-                  terpisah dan tidak bisa dipahami terpisah satu sama lain.
-                  Masing-masing pribadi adalah sepenuhnya Allah.
-                </li>
-              </ul>
-            </li>
-            <li className="font-semibold">
-              Bapa
-              <ul className="list-disc pl-5 font-normal">
-                <li>
-                  Bapa adalah pribadi pertama dalam Tritunggal. Dia adalah
-                  pencipta segala sesuatu dan sumber dari segala kehidupan.
-                  Dalam Alkitab, Bapa sering kali digambarkan sebagai Tuhan yang
-                  mengutus Putra-Nya ke dunia untuk menebus umat manusia.
-                </li>
-              </ul>
-            </li>
-            <li className="font-semibold">
-              Putra (Yesus Kristus)
-              <ul className="list-disc pl-5 font-normal">
-                <li>
-                  Yesus Kristus adalah pribadi kedua dalam Tritunggal. Ia adalah
-                  Allah yang menjadi manusia (inkarnasi) untuk menyelamatkan
-                  umat manusia melalui kematian dan kebangkitan-Nya. Yesus tidak
-                  hanya sepenuhnya manusia, tetapi juga sepenuhnya Allah,
-                  sehingga dogma Tritunggal menegaskan keilahian-Nya bersama
-                  Bapa.
-                </li>
-              </ul>
-            </li>
-            <li className="font-semibold">
-              Roh Kudus
-              <ul className="list-disc pl-5 font-normal">
-                <li>
-                  Roh Kudus adalah pribadi ketiga dalam Tritunggal. Dia adalah
-                  Roh Allah yang bekerja di dunia dan dalam hati orang percaya.
-                  Roh Kudus membimbing, menguatkan, dan menghibur umat Kristen,
-                  serta memberikan karunia-karunia spiritual. Roh Kudus juga
-                  dianggap sebagai penghubung antara umat manusia dan Allah.
-                </li>
-              </ul>
+              <b>Ibrani 2:14-18:</b> Menyatakan bahwa Yesus menjadi manusia agar
+              dapat merasakan penderitaan manusia dan menebus dosa mereka.
+              &quot;Karena anak-anak itu turut mengambil bagian dalam darah dan
+              daging, maka Ia juga turut mengambil bagian dalam hal yang
+              sama...&quot;
             </li>
           </ol>
         </article>
 
         <article>
           <h2 className="text-2xl font-semibold mt-5">
-            Kesatuan dan Perbedaan dalam Tritunggal
+            Aspek-aspek Dogma Inkarnasi
           </h2>
-          <ul className="list-disc pl-5 font-normal">
+          <ol>
             <li>
-              <b>Kesatuan:</b> Meskipun ada tiga pribadi, Tritunggal tetap satu
-              dalam esensi atau hakikat. Mereka tidak terpisah, dan tidak ada
-              pribadi yang lebih besar atau lebih kecil dari yang lain.
+              <h3 className="font-semibold">
+                Sepenuhnya Allah dan Sepenuhnya Manusia
+              </h3>
+              <p>
+                Dogma ini mengajarkan bahwa Yesus Kristus adalah sepenuhnya
+                Allah dan sepenuhnya manusia pada saat yang bersamaan. Ini
+                dikenal sebagai &quot;dua kodrat&quot; Yesus—keilahian dan
+                kemanusiaan-Nya tidak tercampur atau terpisah, tetapi hadir
+                secara sempurna dalam diri-Nya. Yesus tidak kehilangan
+                keilahian-Nya ketika menjadi manusia, dan Dia tidak mengurangi
+                kemanusiaan-Nya dalam proses inkarnasi.
+              </p>
             </li>
             <li>
-              <b>Perbedaan:</b> Setiap pribadi memiliki peran yang unik dalam
-              rencana keselamatan Allah. Bapa menciptakan dunia dan mengutus
-              Putra; Putra datang untuk menyelamatkan umat manusia; dan Roh
-              Kudus tinggal dalam orang percaya untuk membimbing mereka dalam
-              kehidupan Kristen.
+              <h3 className="font-semibold">
+                Pentingnya Inkarnasi bagi Keselamatan
+              </h3>
+              <p>
+                {" "}
+                Salah satu alasan utama inkarnasi adalah untuk menyelamatkan
+                umat manusia. Dengan menjadi manusia, Yesus dapat mengalami
+                penderitaan dan kematian yang diperlukan untuk menebus dosa
+                manusia. Hanya dengan menjadi manusia, Yesus dapat menggantikan
+                manusia dalam penebusan dosa dan memberikan keselamatan.
+              </p>
+              <ul className="list-disc pl-5 font-normal">
+                <li>
+                  Sebagai Allah, Dia memiliki kuasa untuk menyelamatkan umat
+                  manusia.
+                </li>
+                <li>
+                  Sebagai manusia, Dia dapat mewakili umat manusia dan
+                  menanggung dosa mereka di kayu salib.
+                </li>
+              </ul>
             </li>
-          </ul>
+            <li>
+              <h3 className="font-semibold">Tujuan Inkarnasi</h3>
+              <p>
+                Inkarnasi terjadi karena kasih Allah terhadap umat manusia.
+                Allah ingin agar umat manusia dapat berhubungan dengan-Nya
+                secara langsung, dan melalui Yesus, manusia dapat melihat dan
+                memahami kasih dan kuasa Allah yang nyata. Yesus datang ke dunia
+                untuk membawa pesan keselamatan, untuk menebus dosa umat
+                manusia, dan untuk menggenapi janji keselamatan yang telah
+                diberikan Allah kepada umat manusia sejak awal sejarah.
+              </p>
+            </li>
+            <li>
+              <h3 className="font-semibold">Yesus sebagai Jalan Keselamatan</h3>
+              <p>
+                Dalam konteks inkarnasi, Yesus adalah satu-satunya jalan
+                keselamatan bagi umat manusia. Melalui pengorbanan-Nya di kayu
+                salib dan kebangkitan-Nya, Dia membuka jalan bagi manusia untuk
+                diperdamaikan dengan Allah dan menerima hidup kekal. Yohanes
+                14:6 mengutip Yesus yang berkata, &quot;Akulah jalan, kebenaran,
+                dan hidup. Tidak ada seorang pun yang datang kepada Bapa, kalau
+                tidak melalui Aku.&quot;
+              </p>
+            </li>
+          </ol>
         </article>
 
         <article>
           <h2 className="text-2xl font-semibold mt-5">
-            Konsekuensi Dogma Tritunggal bagi Iman Kristen
+            Penjelasan Teologis tentang Inkarnasi
           </h2>
           <ol className="list-decimal pl-5 font-normal">
             <li>
-              <b>Penyembahan kepada Tuhan:</b> Umat Kristen menyembah Allah
-              dalam tiga pribadi ini, bukan tiga Tuhan yang berbeda, tetapi satu
-              Tuhan dalam tiga pribadi yang saling berhubungan.
+              <b>Kekal dan Temporal:</b>Yesus adalah Allah yang kekal, tetapi
+              saat inkarnasi, Dia mengambil bentuk manusia yang temporer
+              (sementara).
             </li>
             <li>
-              <b>Penyelamatan:</b> Penyelamatan datang dari karya ketiga pribadi
-              ini. Bapa yang mengutus Putra, Putra yang menebus dosa umat
-              manusia, dan Roh Kudus yang bekerja di hati orang percaya.
+              <b>Penuh dan Utuh:</b> Keilahian dan kemanusiaan Yesus utuh tanpa
+              tercampur atau terpisah. Dia tidak mengorbankan salah satu
+              kodrat-Nya dalam proses inkarnasi.
             </li>
             <li>
-              <b>Pemberdayaan Rohani:</b> Roh Kudus sebagai pribadi dalam
-              Tritunggal memiliki peran besar dalam kehidupan spiritual umat
-              Kristen, mengajarkan, memberi kekuatan, dan menuntun umat dalam
-              kebenaran.
+              <b>Kristus sebagai Pengantara:</b> Yesus sebagai inkarnasi Allah
+              adalah pengantara antara Allah dan umat manusia. Dia menjadi
+              jembatan yang memungkinkan manusia untuk kembali kepada Allah
+              melalui karya penebusan-Nya.
             </li>
           </ol>
         </article>
 
         <article>
           <h2 className="text-2xl font-semibold mt-5">
-            Sejarah Pengembangan Dogma Tritunggal
+            Implikasi Dogma Inkarnasi
           </h2>
-          <p>
-            Dogma Tritunggal dibahas secara serius pada Konsili Nicea pada tahun
-            325 M. Konsili ini digelar untuk mengatasi berbagai ajaran sesat
-            tentang hubungan antara Yesus dan Allah. Salah satu ajaran yang
-            ditentang adalah ajaran Arianisme, yang menganggap bahwa Yesus tidak
-            sepenuhnya setara dengan Allah Bapa, melainkan makhluk ciptaan yang
-            lebih rendah. Konsili Nicea menghasilkan pengakuan iman yang
-            menegaskan bahwa Yesus adalah &quot;sehakikat&quot; (
-            <i>homoousios</i>) dengan Bapa.
-          </p>
-          <p>
-            Selanjutnya, Konsili Konstantinopel pada tahun 381 M melanjutkan
-            penegasan tentang keilahian Roh Kudus, mempertegas bahwa Roh Kudus
-            juga sepenuhnya Allah, dan merupakan bagian dari Tritunggal.
-          </p>
+          <ol className="list-decimal pl-5 font-normal">
+            <li>
+              <b>Pentingnya Pengorbanan Yesus:</b> Karena Yesus adalah
+              sepenuhnya manusia, Dia bisa mengidentifikasi dengan penderitaan
+              manusia, tetapi karena Dia juga sepenuhnya Allah, pengorbanan-Nya
+              memiliki kuasa untuk menebus dosa seluruh umat manusia.
+            </li>
+            <li>
+              <b>Hubungan dengan Allah:</b> Inkarnasi memungkinkan manusia
+              memiliki hubungan langsung dengan Allah melalui Yesus Kristus.
+              Yesus menunjukkan kasih Allah dalam bentuk yang dapat dimengerti
+              dan dialami oleh manusia.
+            </li>
+            <li>
+              <b>Menghidupi Teladan Kristus:</b> Sebagai manusia, Yesus
+              memberikan teladan hidup yang harus diikuti oleh umat Kristen,
+              seperti kesetiaan pada Bapa, kerendahan hati, dan kasih tanpa
+              batas.
+            </li>
+          </ol>
         </article>
 
         <article>
           <p>
-            <strong>Dogma tentang Allah Tritunggal</strong> adalah pokok ajaran
-            penting dalam Kekristenan yang menegaskan bahwa Allah adalah satu
-            dalam hakikat, namun terdiri dari tiga pribadi: Bapa, Putra, dan Roh
-            Kudus. Masing-masing pribadi ini memiliki peran yang berbeda, namun
-            mereka tidak terpisah dan bersama-sama bekerja dalam karya
-            penyelamatan umat manusia.
+            Dogma tentang inkarnasi mengajarkan bahwa Yesus Kristus, Putra
+            Allah, sepenuhnya Allah dan sepenuhnya manusia. Dia datang ke dunia
+            untuk menebus dosa manusia, dengan cara mengorbankan diri-Nya di
+            kayu salib. Inkarnasi adalah perwujudan kasih Allah yang
+            menyelamatkan umat manusia dan memberikan mereka akses kepada Allah
+            melalui Yesus Kristus.
           </p>
         </article>
       </section>
