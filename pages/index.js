@@ -1,7 +1,7 @@
 import { BtnLink } from "src/component/Button/BtnLink";
-import RenunganKeluarga from "./renungan/keluarga-kristen/index";
-import RenunganKasih from "./renungan/kasih-damai-sejahtera/index";
-import RenunganMaksudTuhan from "./renungan/mengerti-maksud-tuhan/index";
+// import RenunganKeluarga from "./renungan/keluarga-kristen/index";
+// import RenunganKasih from "./renungan/kasih-damai-sejahtera/index";
+// import RenunganMaksudTuhan from "./renungan/mengerti-maksud-tuhan/index";
 
 export default function Home() {
   return (
@@ -25,32 +25,16 @@ export default function Home() {
               - Matius 28:19-20
             </span>
           </blockquote>
-          {/* <blockquote className="italic text-xl text-gray-700">
-            &quot;Banyak orang yang hidupnya hancur hanya karena tidak mengerti
-            kebenaran Firman Tuhan. Menghidupi Firman Tuhan akan membawa kita
-            menjalani kehidupan yang penuh dengan kemenangan.&quot; <br />
-            <span className="block mt-2 text-sm text-gray-500">
-              - Yeremia 29:11
-            </span>
-          </blockquote>
-          <blockquote className="italic text-xl text-gray-700">
-            &quot;Dapatkan Edukasi Teologi dan Renungan Rohani yang membuat
-            hidupmu semakin serupa dengan Kristus dan selalu hidup dalam
-            kemenangan di dalam Kristus Yesus.&quot; <br />
-            <span className="block mt-2 text-sm text-gray-500">
-              - 2 Korintus 3:17
-            </span>
-          </blockquote> */}
         </div>
         <div className="bg-blue-500 p-3 rounded text-white mt-5 mb-5">
           <BtnLink url="/renungan/renungan-harian" labelBtn="Renungan Harian" />
         </div>
       </div>
-      <RenunganMaksudTuhan />
+      {/* <RenunganMaksudTuhan />
       <br />
       <RenunganKeluarga />
       <br />
-      <RenunganKasih />
+      <RenunganKasih /> */}
     </>
   );
 }

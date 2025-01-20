@@ -3,12 +3,47 @@
 @tailwind components;
 @tailwind utilities;
 
-main p {
+main p,
+main li {
   text-align: justify;
   margin-top: 0.5rem;
   margin-bottom: 0.8rem;
 }
 
-strong {
+strong,
+b {
   font-weight: 500;
+}
+
+/* Prevent text selection */
+* {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+}
+
+/* Prevent dragging images */
+img {
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+/* Prevent highlight */
+::selection {
+  background: transparent;
+}
+
+/* Prevent screenshot overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.002); /* Transparan */
+  z-index: 99999;
+  pointer-events: none;
 }

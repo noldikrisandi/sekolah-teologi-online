@@ -17,8 +17,8 @@ export default function Renungan() {
       </header>
       <section>
         <Image
-          src="/images/produktif.webp"
-          alt=""
+          src="/images/diberkati-tuhan.webp"
+          alt="seorang manusia memandang ke langit untuk mengerti tujuan Tuhan menciptakan manusia"
           className="w-full h-44 md:h-80 object-cover rounded mb-6"
           width={500}
           height={300}
@@ -42,124 +42,155 @@ export default function Renungan() {
             menciptakan hal lainnya.
           </p>
           <p>
-            Artinya manusia ini spesial, karena Tuhan menciptakan terlebih
-            dahulu apa yang dibutuhkan manusia barulah kemudian manusia
-            diciptakan. Bahkan Tuhan menciptakan manusia sesuai gambar dan
-            rupa-Nya, sangat luar biasa Tuhan mempersiapkan penciptaan manusia.
-            Terus apa sih Tujuan Tuhan menciptakan manusia?
+            Manusia sangat spesial karena Tuhan menciptakan segala sesuatu yang
+            dibutuhkan manusia terlebih dahulu, baru kemudian menciptakan
+            manusia itu sendiri.
           </p>
+          <p>
+            Bahkan, Tuhan menciptakan manusia sesuai dengan gambar dan rupa-Nya.
+            Ini menunjukkan betapa luar biasanya persiapan Tuhan dalam
+            menciptakan manusia.
+          </p>
+          <p>Lalu, apa sebenarnya tujuan Tuhan menciptakan manusia?</p>
         </article>
         <article>
           <h2 className="text-xl font-semibold">Untuk Memuliakan Tuhan</h2>
+          <blockquote className="italic text-gray-950 mb-5 mt-3">
+            &quot;Semua orang yang disebutkan dengan nama-Ku, yang Kuciptakan
+            untuk kemuliaan-Ku, yang Kubentuk dan juga Kujadikan!&quot;
+            <span className="block mt-2 text-sm">- Yesaya 43:7</span>
+          </blockquote>
+          <p>Tujuan Tuhan menciptakan manusia adalah untuk memuliakan-Nya.</p>
           <p>
-            Tujuan Tuhan menciptakan manusia yang pertama adalah untuk
-            memuliakan Tuhan. Tertulis dalam Kitab Yesaya 43:7 &quot;Semua orang
-            yang disebutkan dengan nama-Ku, yang Kuciptakan untuk kemuliaan-Ku,
-            yang Kubentuk dan juga Kujadikan!&quot; Ayat ini sudah sangat jelas
-            bahwa <strong>Tuhan menciptakan manusia untuk memuliakanNya</strong>
-            .
-          </p>
-          <p>
-            Rasul Paulus juga menyatakan hal yang sama dalam 1 Korintus 10:31
+            Rasul Paulus juga mengingatkan kita dalam 1 Korintus 10:31,
             &quot;Segala sesuatu yang kamu lakukan, lakukanlah itu untuk
-            kemuliaan Allah.&quot; Dia mengingatkan agar kita melakukan segala
-            aktifitas untuk kemuliaan Tuhan.
+            kemuliaan Allah.&quot; Ayat ini menegaskan bahwa segala aktivitas
+            kita harus diarahkan untuk memuliakan Tuhan.
           </p>
           <p>
-            Kolose 3:23-24 (TB): &quot;Apa pun yang kamu perbuat, perbuatlah
-            dengan segenap hatimu seperti untuk Tuhan dan bukan untuk manusia,
-            karena kamu tahu, bahwa dari Tuhan kamu akan menerima bagian yang
+            Kolose 3:23-24 &quot;Apa pun yang kamu perbuat, perbuatlah dengan
+            segenap hatimu, seperti untuk Tuhan dan bukan untuk manusia, karena
+            kamu tahu, bahwa dari Tuhan kamu akan menerima bagian yang
             ditentukan bagimu sebagai upah. Kristus adalah Tuhan yang kamu
-            layani.&quot; Dalam ayat ini menjadi lebih spesifik lagi jika kita
-            melakukan segala sesuatu itu untuk Tuhan, bukan untuk manusia,
-            karena memang tujuan Tuhan menciptakan kita adalah untuk memuliakan
-            Dia.
+            layani.&quot;
           </p>
           <p>
-            Sudakah kita sadar bahwa manusia diciptakan untuk memuliakan Tuhan?
-            Sudahkan kita melakukan segala sesuatu untuk memuliakan Tuhan, atau
-            hanya sekedar memuaskan keinginan kita saja?
+            Ayat ini lebih spesifik, mengingatkan kita bahwa segala sesuatu yang
+            kita lakukan seharusnya untuk Tuhan, bukan untuk manusia. Karena
+            tujuan utama Tuhan menciptakan kita adalah untuk memuliakan-Nya.
           </p>
           <p>
-            Saya memiliki cerita, suatu hari saya menjalankan misi di sebuah
-            daerah terpencil, di sana saya melihat keanehan yang luar biasa. Ada
-            seorang anak muda memiliki smartphone terjanggih saat itu, saya
-            mulai bertanya kenapa kok ada anak muda di daerah terpencil memiliki
-            smartphone, sedangkan akses internet dan listrik saja belum masuk.
-            Kemudian seseorang memberi tahu bahwa anak muda itu menjadi
-            eksperimen seorang ahli IT, dia sengaja diberikan smartphone untuk
-            melihat perilaku mereka saat menggunakannya.
+            Sudahkah kita menyadari bahwa kita diciptakan untuk memuliakan
+            Tuhan? Apakah kita melakukan segala sesuatu dalam hidup kita untuk
+            memuliakan Tuhan, atau sekadar untuk memuaskan keinginan kita
+            sendiri?
           </p>
           <p>
-            Sontak kami terkaget melihat anak mudah itu menggunakan smartphone
-            untuk membuka buah pala, kemudian dia meletakan smartphone untuk
-            mengganjal pintu. Benda secanggih itu hanya digunakan untuk
-            melakukan hal sepele. Padahal pembuat smartphone tidak
-            menciptakannya untuk membuka buah pala ataupun untuk mengganjal
-            pintu, tetapi kalau kita pikir memang bisa sih untuk digunakan
-            seperti itu.
+            Saya memiliki sebuah cerita. Suatu hari, saat saya menjalankan misi
+            di sebuah daerah terpencil, saya menyaksikan sesuatu yang sangat
+            aneh.
           </p>
           <p>
-            Melihat peristiwa ini saya teringat bagaimana Tuhan menciptakan
-            manusia untuk tujuan memuliakanNya, tetapi lucunya saya melihat
-            banyak manusia tidak sadar bahwa tugasnya adalah memuliakan Tuhan.
-            Tuhan Yesus berkata dalam Matius untuk mengasihi Allah dengan
-            segenap hati, jiwa, dan akal budi, itu artinya hati, jiwa, dan akal
-            budi kita diciptakan untuk mengasihi Allah (Mengasihi Allah di sini
-            sama dengan memuliakan Allah, karena setiap orang yang mengasihi
-            Allah akan memuliakan Allah).
+            Seorang anak muda di sana memiliki smartphone terjanggih pada masa
+            itu. Saya pun bertanya-tanya, bagaimana bisa anak muda ini memiliki
+            smartphone, padahal akses internet dan listrik saja belum tersedia
+            di daerah tersebut?
           </p>
           <p>
-            Jika kita gagal memuliakan Allah dengan segenap hati, jiwa, dan akal
-            budi, artinya kita tidak berfungsi sebagaimana mestinya, sama
-            seperti smartphone tadi tidak berfungsi sesuai kegunaanya. Mari kita
-            kembali ke kisah smartphone, karena anak muda itu tidak tahu
-            menggunakan smartphone dengan benar, kemudian ahli IT mengajari anak
-            muda ini cara menggunakan smartphone dengan benar, karena sudah
-            diajari akhirnya anak muda ini sedikit demi sedikit mampu
-            menggunakan smartphone sesuai kegunaanya. Hal ini sama dengan Tuhan
-            Yesus datang ke dunia untuk mengajari kita hidup memuliakan Tuhan,
-            Yesus mengajar dan memberi tedalan kasih sebagai cara hidup dalam
-            mempermuliakan Tuhan.
+            Ternyata, seseorang memberi tahu saya bahwa anak muda itu sedang
+            menjadi eksperimen seorang ahli IT. Dia sengaja diberikan smartphone
+            untuk mengamati perilaku mereka saat menggunakannya.
           </p>
           <p>
-            Yesus datang ke dunia demi memperbaiki hidup kita agar berfungsi
-            sebagaimana mestinya, tetapi hanya sebagian kecil saja yang mau dan
-            berusaha untuk hidup seperti Yesus. Hidup serupa dengan Yesus
-            sebenarnya adalah setelan awal Tuhan menciptakan manusia, kalau kita
-            melihat kehidupan Yesus, Ia selalu memuliakan Tuhan, begitu juga
-            seharusnya kehidupan manusia.
+            Kami sangat terkejut ketika melihat anak muda itu menggunakan
+            smartphone untuk membuka buah pala dan bahkan meletakkannya untuk
+            mengganjal pintu.
           </p>
           <p>
-            Hidup serupa dengan Yesus itu konsepnya sangat mudah, yaitu lakukan
-            segala sesuatu untuk Tuhan, itu saja kuncinya. Setiap kali kita
-            melakukan sesuatu ingatlah bahwa hal itu harus memuliakan Tuhan,
-            misalnya kita makan tujuannya untuk mempermuliakan Tuhan (tubuh kita
-            adalah bait Allah) maka kita harus menjaga tubuh dengan hidup sehat
-            (1 Korintus 10:31). Misalnya lagi kita menyapu, menyapulah dengan
-            bersih agar lingkungan jadi sehat, sama halnya ketika kita bekerja,
-            bekerjalah dengan sungguh-sungguh agar Tuhan dipermuliakan dalam
-            pekerjaan kita.
+            Alat yang secanggih itu digunakan untuk hal yang begitu sederhana.
+            Padahal, pembuat smartphone tidak menciptakan perangkat itu untuk
+            membuka buah pala atau mengganjal pintu. Namun, jika dipikirkan,
+            tentu saja hal itu masih bisa dilakukan dengan perangkat tersebut.
           </p>
           <p>
-            Kamu harus ingat bahwa Tuhan tidak menyukai orang malas(Amsal 13:4),
-            Tuhan memberikan contoh semut merah yang dengan rajin mengumpulkan
-            makanan (Amsal 6:6-11). Dengan tidak malas saja kamu sudah bisa
-            mempermuliakan Tuhan.
+            Kejadian ini membuat saya teringat bagaimana Tuhan menciptakan
+            manusia untuk tujuan memuliakan-Nya. Namun ironisnya, banyak manusia
+            yang tidak sadar bahwa tujuan utama mereka adalah memuliakan Tuhan.
           </p>
           <p>
-            Memuliakan Tuhan itu juga bisa kita lakukan dengan cara mengasihi,
-            Firman Tuhan jelas mengatakan kita harus mengasihi orang lain
-            seperti diri kita sendiri, ketika kita mengasihi orang lain itu juga
-            merupakan bagian dari memuliakan Tuhan.
+            Tuhan Yesus mengajarkan kita untuk mengasihi Allah dengan segenap
+            hati, jiwa, dan akal budi. Artinya hati, jiwa, dan akal budi kita
+            diciptakan untuk mengasihi Allah.
           </p>
           <p>
-            Kolose 3:17 &quot;Dan segala sesuatu yang kamu lakukan dengan
-            perkataan atau perbuatan, lakukanlah semuanya itu dalam nama Tuhan
-            Yesus, sambil mengucap syukur oleh Dia kepada Allah, Bapa
-            kita.&quot; Ayat ini menjadi ayat pamungkas renungan kita kali ini.
-            Kiranya Allah selalu dimulaikan dalam setiap perkataan dan perbuatan
-            kita. Tuhan Yesus memberkati. Amin
+            Jika kita gagal mengasihi Allah dengan segenap hati, jiwa, dan akal
+            budi, artinya kita tidak berfungsi sebagaimana mestinya, seperti
+            halnya smartphone yang tidak berfungsi sesuai tujuannya.
+          </p>
+          <p>
+            Kembali ke cerita smartphone, karena anak muda itu tidak tahu cara
+            menggunakan smartphone dengan benar, seorang ahli IT mengajarinya
+            bagaimana cara menggunakannya dengan tepat. Setelah diajari, anak
+            muda itu perlahan mulai menggunakan smartphone sesuai fungsinya.
+          </p>
+          <p>
+            Hal ini mirip dengan kedatangan Tuhan Yesus ke dunia untuk
+            mengajarkan kita bagaimana hidup memuliakan Tuhan. Yesus mengajarkan
+            dan memberi teladan kasih sebagai cara hidup dalam memuliakan Tuhan.
+          </p>
+          <p>
+            Yesus datang ke dunia untuk memperbaiki hidup kita agar dapat
+            berfungsi sebagaimana mestinya. Namun, hanya sebagian kecil dari
+            manusia yang bersedia dan berusaha untuk hidup seperti Yesus.
+          </p>
+          <p>
+            Hidup serupa dengan Yesus sebenarnya adalah tujuan awal Tuhan
+            menciptakan manusia. Jika kita melihat kehidupan Yesus, Dia selalu
+            memuliakan Tuhan. Begitu pula seharusnya kehidupan kita sebagai
+            manusia.
+          </p>
+          <p>
+            Hidup serupa dengan Yesus memiliki konsep yang sangat sederhana:
+            lakukan segala sesuatu untuk Tuhan. Itu adalah kunci utamanya.
+          </p>
+          <p>
+            Ketika kita melakukan sesuatu, ingatlah bahwa hal itu harus
+            memuliakan Tuhan. Misalnya, ketika kita makan, tujuan kita adalah
+            untuk memuliakan Tuhan.
+          </p>
+          <p>
+            Contoh lainnya, ketika kita menyapu, lakukanlah dengan
+            sungguh-sungguh agar lingkungan menjadi bersih dan sehat. Hal yang
+            sama berlaku saat kita bekerja, maka bekerjalah dengan sepenuh hati
+            agar Tuhan dimuliakan melalui pekerjaan kita.
+          </p>
+          <p>
+            Ingatlah bahwa Tuhan tidak menyukai orang malas (Amsal 13:4).
+            Bahkan, Tuhan memberi contoh semut merah yang rajin mengumpulkan
+            makanan (Amsal 6:6-11).{" "}
+            <strong>
+              Dengan tidak malas saja, kita sudah memuliakan Tuhan.
+            </strong>
+          </p>
+          <p>
+            Kita juga bisa memuliakan Tuhan dengan cara mengasihi. Firman Tuhan
+            dengan jelas mengajarkan bahwa kita harus mengasihi orang lain
+            seperti diri kita sendiri.
+          </p>
+          <p>
+            Ketika kita menunjukkan kasih kepada sesama, itu juga merupakan
+            bentuk memuliakan Tuhan.
+          </p>
+          <p>
+            Kolose 3:17 berkata, &quot;Dan segala sesuatu yang kamu lakukan
+            dengan perkataan atau perbuatan, lakukanlah semuanya itu dalam nama
+            Tuhan Yesus, sambil mengucap syukur oleh Dia kepada Allah, Bapa
+            kita.&quot;
+          </p>
+          <p>
+            Ayat ini menjadi penutup dari renungan kita kali ini. Kiranya Allah
+            selalu dimuliakan dalam setiap perkataan dan perbuatan kita. Tuhan
+            Yesus memberkati. Amin.
           </p>
         </article>
       </section>

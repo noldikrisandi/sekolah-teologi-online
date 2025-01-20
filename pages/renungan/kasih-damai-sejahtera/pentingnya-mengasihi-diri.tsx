@@ -16,8 +16,8 @@ const Renungan = () => {
       </section>
       <section>
         <Image
-          src="/images/produktif.webp"
-          alt=""
+          src="/images/renungan-kristen.webp"
+          alt="salib mejadi simbol pentingnya mengasihi diri sendiri"
           className="w-full h-44 md:h-80 object-cover rounded mb-6"
           width={500}
           height={300}

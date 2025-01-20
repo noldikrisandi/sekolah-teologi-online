@@ -5,6 +5,15 @@ export default function Footer() {
   return (
     <footer className="bg-white text-gray-900 py-10">
       <div className="container mx-auto px-4 text-center">
+        <div className="mb-10">
+          <Link
+            href="https://wa.me/6282346484778?text=Hallo%20saya%20memerlukan%20kunsultasi%20dan%20dukungan%20doa"
+            target="blank"
+            className="px-6 py-3 text-blue-800 hover:text-blue-900 rounded shadow-md"
+          >
+            Konsultasi dan Dukungan Doa
+          </Link>
+        </div>
         <div className="mb-6">
           <h2 className="text-2xl font-semibold">Sekolah Teologi Online</h2>
           <p className="mt-2">Edukasi Teologi dan Renungan Rohani Kristen.</p>
@@ -39,7 +48,15 @@ export default function Footer() {
             </svg>
           </Link>
         </div>
-        <p>Menerima jasa pembuatan website (WA: 0823-4648-4778)</p>
+        <p>Menerima jasa pembuatan website</p>
+        <p>Menerima kerja sama dari berbagai pihak</p>
+        <Link
+          href="https://wa.me/6282346484778?text=Hallo%20saya%20tertarik%20bekerjasama%20dengan%20Sekolah%20Teologi%20Online"
+          target="blank"
+          className="text-blue-800"
+        >
+          WA: 0823-4648-4778
+        </Link>
         <p className="text-sm">
           &copy; {new Date().getFullYear()} Sekolah Teologi Online. Semua hak
           cipta dilindungi.

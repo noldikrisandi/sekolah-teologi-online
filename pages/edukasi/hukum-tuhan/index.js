@@ -4,7 +4,7 @@ export default function Kasih() {
   const cards = [
     {
       img: "/images/renungan-kristen.webp",
-      altText: "salib mejadi simbol pentingnya mengasihi diri sendiri",
+      altText: "",
       title: "Pentingnya Mengasihi Diri Sendiri",
       desc: "Ketika kita berhasil mengasihi diri sendiri maka kita akan berhasil mengasihi sesama manusia dan selalu hidup dalam damai.",
       url: "/renungan/kasih-damai-sejahtera/pentingnya-mengasihi-diri",

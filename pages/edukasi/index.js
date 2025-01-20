@@ -1,11 +1,11 @@
 import { Card } from "src/component/Card/Card";
 
-export default function Kasih() {
+export default function edukasi() {
   const cards = [
     {
       img: "/images/renungan-kristen.webp",
-      altText: "salib mejadi simbol pentingnya mengasihi diri sendiri",
-      title: "Pentingnya Mengasihi Diri Sendiri",
+      altText: "",
+      title: "Teologi Dasar",
       desc: "Ketika kita berhasil mengasihi diri sendiri maka kita akan berhasil mengasihi sesama manusia dan selalu hidup dalam damai.",
       url: "/renungan/kasih-damai-sejahtera/pentingnya-mengasihi-diri",
       labelBtn: "Renungan",

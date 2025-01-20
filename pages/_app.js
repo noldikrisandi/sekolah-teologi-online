@@ -2,7 +2,10 @@ import "../styles/globals.css";
 import Sidebar from "../src/component/Menu/Sidebar";
 import Footer from "../src/component/Menu/Footer";
 import HeadPages from "../src/component/Menu/Head";
-// import Breadcrumb from "../src/component/Breadcrumb/Breadcrumb";
+import RenunganKeluarga from "./renungan/keluarga-kristen/index";
+import RenunganKasih from "./renungan/kasih-damai-sejahtera/index";
+import RenunganMaksudTuhan from "./renungan/mengerti-maksud-tuhan/index";
+import Keamanan from "../src/component/Menu/Keamanan";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -15,9 +18,17 @@ function MyApp({ Component, pageProps }) {
             {/* Render Halaman */}
             <Component {...pageProps} />
           </main>
+          <div className="px-4 md:px-12 mt-7">
+            <RenunganKasih />
+            <br />
+            <RenunganKeluarga />
+            <br />
+            <RenunganMaksudTuhan />
+          </div>
           <Footer />
         </div>
       </div>
+      <Keamanan />
     </>
   );
 }

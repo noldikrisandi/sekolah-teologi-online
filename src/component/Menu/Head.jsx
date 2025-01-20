@@ -17,6 +17,17 @@ export default function HeadPages() {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         />
+        {/* Prevent caching */}
+        <meta
+          httpEquiv="Cache-Control"
+          content="no-store, no-cache, must-revalidate"
+        />
+        <meta httpEquiv="Pragma" content="no-cache" />
+        <meta httpEquiv="Expires" content="0" />
+        {/* Prevent indexing */}
+        <meta name="robots" content="noindex, nofollow" />
+        {/* Disable autocomplete in forms */}
+        <meta name="autocomplete" content="off" />
       </Head>
     </>
   );

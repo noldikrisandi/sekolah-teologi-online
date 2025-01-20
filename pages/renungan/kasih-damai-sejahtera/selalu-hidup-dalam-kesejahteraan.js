@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
-import Saran from "./index";
 
 export default function Renungan() {
   return (
@@ -19,8 +18,8 @@ export default function Renungan() {
       </header>
       <section>
         <Image
-          src="/images/produktif.webp"
-          alt=""
+          src="/images/diberkati-tuhan.webp"
+          alt="seseorang yang mendapatkan berkat kesejahteraan dari Tuhan"
           className="w-full h-44 md:h-80 object-cover rounded mb-5"
           width={500}
           height={300}
@@ -176,9 +175,6 @@ export default function Renungan() {
           </p>
           <p className="font-semibold">Penulis : Noldi Krisandi</p>
         </article>
-      </section>
-      <section>
-        <Saran />
       </section>
     </>
   );
