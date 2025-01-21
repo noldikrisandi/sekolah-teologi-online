@@ -1,7 +1,4 @@
 import { BtnLink } from "src/component/Button/BtnLink";
-// import RenunganKeluarga from "./renungan/keluarga-kristen/index";
-// import RenunganKasih from "./renungan/kasih-damai-sejahtera/index";
-// import RenunganMaksudTuhan from "./renungan/mengerti-maksud-tuhan/index";
 
 export default function Home() {
   return (
@@ -30,11 +27,6 @@ export default function Home() {
           <BtnLink url="/renungan/renungan-harian" labelBtn="Renungan Harian" />
         </div>
       </div>
-      {/* <RenunganMaksudTuhan />
-      <br />
-      <RenunganKeluarga />
-      <br />
-      <RenunganKasih /> */}
     </>
   );
 }

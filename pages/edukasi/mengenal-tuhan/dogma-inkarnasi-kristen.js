@@ -30,9 +30,9 @@ export default function Edukasi() {
             <strong>Inkarnasi</strong> merupakan salah satu doktrin utama dalam
             iman Kristen yang mengajarkan bahwa Yesus Kristus, Putra Allah,
             menjadi manusia untuk menyelamatkan umat manusia. Dogma ini
-            mengungkapkan bahwa Yesus, meskipun sepenuhnya Allah, memilih untuk
-            mengambil bentuk manusia dan hidup di dunia ini untuk memenuhi
-            rencana keselamatan Allah bagi umat manusia.
+            mengungkapkan bahwa Yesus yang sepenuhnya Allah, memilih untuk
+            mengambil rupa manusia dan hidup di dunia ini untuk memenuhi rencana
+            keselamatan Allah bagi umat manusia.
           </p>
         </article>
 
@@ -52,20 +52,18 @@ export default function Edukasi() {
           </h3>
           <p>
             Inkarnasi berarti &quot;penjelmaan&quot; atau &quot;kehadiran&quot;
-            Allah dalam bentuk manusia. Dalam konteks Kekristenan, inkarnasi
+            Allah dalam rupa manusia. Dalam konteks Kekristenan, inkarnasi
             merujuk pada keyakinan bahwa Yesus Kristus, yang adalah Putra Allah
-            yang kekal, mengambil bentuk manusia dan hidup di dunia ini.
-            Meskipun menjadi manusia, Yesus tetap sepenuhnya Allah.
+            yang kekal mengambil rupa manusia dan hidup di dunia ini. Meskipun
+            menjadi manusia, Yesus tetap sepenuhnya Allah.
           </p>
           <p>
-            Inkarnasi merupakan salah satu doktrin utama dalam iman Kristen yang
-            mengajarkan bahwa Yesus Kristus, Putra Allah, menjadi manusia untuk
-            menyelamatkan umat manusia.
+            Inkarnasi merupakan salah satu doktrin utama dalam iman Kristen.
           </p>
           <p>
-            Dogma ini mengungkapkan bahwa Yesus, meskipun sepenuhnya Allah,
-            memilih untuk mengambil bentuk manusia dan hidup di dunia ini untuk
-            memenuhi rencana keselamatan Allah bagi umat manusia.
+            Dogma ini mengungkapkan bahwa Yesus, meskipun sepenuhnya Allah, rela
+            datang di dunia dalam rupa manusia untuk memenuhi rencana
+            keselamatan Allah bagi umat manusia.
           </p>
         </article>
 
@@ -86,7 +84,7 @@ export default function Edukasi() {
               rupa seorang hamba, dan menjadi sama dengan manusia. Dan dalam
               keadaan sebagai manusia, Ia merendahkan diri dan taat sampai mati,
               bahkan mati di kayu salib.&quot; Ayat ini menjelaskan bahwa Yesus
-              yang sepenuhnya Allah memilih untuk merendahkan diri dan menjadi
+              yang sepenuhnya Allah memilih untuk merendahkan diri untuk menjadi
               manusia demi keselamatan umat manusia.
             </li>
             <li>
@@ -118,7 +116,7 @@ export default function Edukasi() {
               <p>
                 Dogma ini mengajarkan bahwa Yesus Kristus adalah sepenuhnya
                 Allah dan sepenuhnya manusia pada saat yang bersamaan. Ini
-                dikenal sebagai &quot;dua kodrat&quot; Yesus—keilahian dan
+                dikenal sebagai &quot;dua kodrat&quot; keilahian dan
                 kemanusiaan-Nya tidak tercampur atau terpisah, tetapi hadir
                 secara sempurna dalam diri-Nya. Yesus tidak kehilangan
                 keilahian-Nya ketika menjadi manusia, dan Dia tidak mengurangi
@@ -130,7 +128,6 @@ export default function Edukasi() {
                 Pentingnya Inkarnasi bagi Keselamatan
               </h3>
               <p>
-                {" "}
                 Salah satu alasan utama inkarnasi adalah untuk menyelamatkan
                 umat manusia. Dengan menjadi manusia, Yesus dapat mengalami
                 penderitaan dan kematian yang diperlukan untuk menebus dosa
@@ -153,11 +150,13 @@ export default function Edukasi() {
               <p>
                 Inkarnasi terjadi karena kasih Allah terhadap umat manusia.
                 Allah ingin agar umat manusia dapat berhubungan dengan-Nya
-                secara langsung, dan melalui Yesus, manusia dapat melihat dan
-                memahami kasih dan kuasa Allah yang nyata. Yesus datang ke dunia
-                untuk membawa pesan keselamatan, untuk menebus dosa umat
-                manusia, dan untuk menggenapi janji keselamatan yang telah
-                diberikan Allah kepada umat manusia sejak awal sejarah.
+                secara langsung. Melalui Yesus, manusia dapat melihat dan
+                memahami kasih dan kuasa Allah yang nyata.
+              </p>
+              <p>
+                Yesus datang ke dunia membawa pesan keselamatan, untuk menebus
+                dosa umat manusia, dalam menggenapi janji keselamatan yang telah
+                diberikan Allah kepada umat manusia.
               </p>
             </li>
             <li>
@@ -166,10 +165,12 @@ export default function Edukasi() {
                 Dalam konteks inkarnasi, Yesus adalah satu-satunya jalan
                 keselamatan bagi umat manusia. Melalui pengorbanan-Nya di kayu
                 salib dan kebangkitan-Nya, Dia membuka jalan bagi manusia untuk
-                diperdamaikan dengan Allah dan menerima hidup kekal. Yohanes
-                14:6 mengutip Yesus yang berkata, &quot;Akulah jalan, kebenaran,
-                dan hidup. Tidak ada seorang pun yang datang kepada Bapa, kalau
-                tidak melalui Aku.&quot;
+                diperdamaikan dengan Allah dan menerima hidup kekal.
+              </p>
+              <p>
+                Yohanes 14:6 mengutip Yesus yang berkata, &quot;Akulah jalan,
+                kebenaran, dan hidup. Tidak ada seorang pun yang datang kepada
+                Bapa, kalau tidak melalui Aku.&quot;
               </p>
             </li>
           </ol>
@@ -181,8 +182,8 @@ export default function Edukasi() {
           </h2>
           <ol className="list-decimal pl-5 font-normal">
             <li>
-              <b>Kekal dan Temporal:</b>Yesus adalah Allah yang kekal, tetapi
-              saat inkarnasi, Dia mengambil bentuk manusia yang temporer
+              <b>Kekal dan Temporal:</b> Yesus adalah Allah yang kekal, tetapi
+              saat inkarnasi, Dia mengambil rupa manusia yang temporer
               (sementara).
             </li>
             <li>
@@ -206,9 +207,9 @@ export default function Edukasi() {
           <ol className="list-decimal pl-5 font-normal">
             <li>
               <b>Pentingnya Pengorbanan Yesus:</b> Karena Yesus adalah
-              sepenuhnya manusia, Dia bisa mengidentifikasi dengan penderitaan
-              manusia, tetapi karena Dia juga sepenuhnya Allah, pengorbanan-Nya
-              memiliki kuasa untuk menebus dosa seluruh umat manusia.
+              sepenuhnya manusia, Dia bisa mengidentifikasi penderitaan manusia,
+              tetapi karena Dia juga sepenuhnya Allah, pengorbanan-Nya memiliki
+              kuasa untuk menebus dosa seluruh umat manusia.
             </li>
             <li>
               <b>Hubungan dengan Allah:</b> Inkarnasi memungkinkan manusia
@@ -230,9 +231,12 @@ export default function Edukasi() {
             Dogma tentang inkarnasi mengajarkan bahwa Yesus Kristus, Putra
             Allah, sepenuhnya Allah dan sepenuhnya manusia. Dia datang ke dunia
             untuk menebus dosa manusia, dengan cara mengorbankan diri-Nya di
-            kayu salib. Inkarnasi adalah perwujudan kasih Allah yang
-            menyelamatkan umat manusia dan memberikan mereka akses kepada Allah
-            melalui Yesus Kristus.
+            kayu salib.
+          </p>
+          <p>
+            Inkarnasi adalah perwujudan kasih Allah yang menyelamatkan umat
+            manusia dan memberikan mereka akses kepada Allah melalui Yesus
+            Kristus.
           </p>
         </article>
       </section>

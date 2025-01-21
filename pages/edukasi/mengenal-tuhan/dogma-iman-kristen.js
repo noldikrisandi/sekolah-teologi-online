@@ -122,10 +122,7 @@ export default function Edukasi() {
               Allah adalah satu dalam esensi, tetapi terdiri dari tiga pribadi:
               Bapa, Putra, dan Roh Kudus. Ketiganya setara dalam kemuliaan dan
               kekuasaan.{" "}
-              <Link
-                href="dogma-allah-tritunggal"
-                className="text-blue-700 underline underline-offset-2"
-              >
+              <Link href="dogma-allah-tritunggal" className="text-blue-700">
                 Penjelasan lengkap mengenai Dogma tentang Allah Tritunggal klik
                 link ini.
               </Link>
@@ -134,10 +131,7 @@ export default function Edukasi() {
               <h3 className="font-semibold">Dogma tentang Inkarnasi</h3>
               Yesus Kristus, Putra Allah, menjadi manusia untuk menyelamatkan
               umat manusia. Dia sepenuhnya Allah dan sepenuhnya manusia.{" "}
-              <Link
-                href="dogma-inkarnasi-kristen"
-                className="text-blue-700 underline underline-offset-2"
-              >
+              <Link href="dogma-inkarnasi-kristen" className="text-blue-700">
                 Penjelasan lengkap mengenai Dogma tentang Inkarnasi klik link
                 ini.
               </Link>
@@ -147,10 +141,7 @@ export default function Edukasi() {
               Keselamatan diberikan oleh kasih karunia Allah melalui iman kepada
               Yesus Kristus. Manusia tidak dapat menyelamatkan dirinya sendiri,
               tetapi hanya melalui karya penebusan Kristus.{" "}
-              <Link
-                href="dogma-keselamatan-kristen"
-                className="text-blue-700 underline underline-offset-2"
-              >
+              <Link href="dogma-keselamatan-kristen" className="text-blue-700">
                 Penjelasan lengkap mengenai Dogma tentang Keselamatan klik link
                 ini.
               </Link>
@@ -159,26 +150,13 @@ export default function Edukasi() {
               <h3 className="font-semibold">Dogma tentang Kebangkitan</h3>
               Yesus Kristus bangkit dari antara orang mati pada hari ketiga
               setelah kematian-Nya, menjamin kebangkitan bagi semua orang
-              percaya.{" "}
-              <Link
-                href="dogma-kebangkitan-yesus"
-                className="text-blue-700 underline underline-offset-2"
-              >
-                Penjelasan lengkap mengenai Dogma tentang Kebangkitan klik link
-                ini.
-              </Link>
+              percaya.
             </li>
             <li>
               <h3 className="font-semibold">Dogma tentang Gereja</h3>
               Gereja adalah tubuh Kristus yang satu, kudus, katolik (universal),
               dan apostolik. Dipimpin oleh Roh Kudus, Gereja bertugas
-              menyebarkan Injil kepada seluruh bangsa.{" "}
-              <Link
-                href="dogma-gereja-kristen"
-                className="text-blue-700 underline underline-offset-2"
-              >
-                Penjelasan lengkap mengenai Dogma tentang Gereja klik link ini.
-              </Link>
+              menyebarkan Injil kepada seluruh bangsa.
             </li>
             <li>
               <h3 className="font-semibold">Dogma tentang Maria</h3> (khusus

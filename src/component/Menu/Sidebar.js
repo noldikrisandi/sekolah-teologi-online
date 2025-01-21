@@ -88,7 +88,7 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="/edukasi/keselamatan"
+                  href="/edukasi/keselamatan-iman-kristen"
                   className="block px-4 py-2 hover:bg-gray-700 hover:text-blue-400"
                 >
                   Keselamatan dalam Iman Kristen

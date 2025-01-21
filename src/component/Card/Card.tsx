@@ -22,7 +22,7 @@ function Card(props: CardProps) {
         <h2 className="text-xl font-bold mb-2">{props.title}</h2>
         <p className="text-gray-700 text-lg text-base">{props.desc}</p>
       </div>
-      <div className="px-4 py-2 bg-blue-600 text-white font-semibold rounded hover:bg-blue-800 transition mt-auto mb-3 w-28 ml-2">
+      <div className="px-4 py-2 bg-blue-600 text-white font-semibold rounded hover:bg-blue-800 transition mt-auto mb-3 w-36 ml-2">
         <BtnLink url={props.url} labelBtn={props.labelBtn} />
       </div>
     </div>

@@ -11,7 +11,7 @@ export default function HeadPages() {
           content="Deskripsi default untuk website ini."
         />
         <meta name="keywords" content="default, meta, next.js, SEO" />
-        <meta name="author" content="Noldi" />
+        <meta name="author" content="Noldi krisandi" />
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"

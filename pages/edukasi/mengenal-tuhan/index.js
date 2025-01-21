@@ -1,40 +1,40 @@
 import { Card } from "src/component/Card/Card";
 
-export default function Kasih() {
+export default function Edukasi() {
   const cards = [
     {
       img: "/images/renungan-kristen.webp",
-      altText: "salib mejadi simbol pentingnya mengasihi diri sendiri",
-      title: "Pentingnya Mengasihi Diri Sendiri",
-      desc: "Ketika kita berhasil mengasihi diri sendiri maka kita akan berhasil mengasihi sesama manusia dan selalu hidup dalam damai.",
-      url: "/renungan/kasih-damai-sejahtera/pentingnya-mengasihi-diri",
-      labelBtn: "Renungan",
+      altText: "",
+      title: "Dogma Iman Kristen",
+      desc: "Setiap orang Kristen harus mengerti Dogman Iman Kristen agar mengerti dasar Kekristenan yang diakui secara Universal...",
+      url: "/edukasi/mengenal-tuhan/dogma-iman-kristen",
+      labelBtn: "Selengkapnya",
     },
     {
       img: "/images/renungan-rohani.webp",
       altText:
         "salib di padang rumput mejadi simbol pentingnya Menjadi Pribadi Penuh Damai",
-      title: "Menjadi Pribadi Penuh Damai",
-      desc: "Semua orang mencari kedamain, tetapi hanya sedikit yang mau menjadi sumber damai. Mari menjadi pribadi yang membawa kedamaian.",
-      url: "/renungan/kasih-damai-sejahtera/menjadi-pribadi-penuh-damai",
-      labelBtn: "Renungan",
+      title: "Dogma Allah Tritunggal",
+      desc: "Allah adalah satu esensi yang dikenal dalam 3 Pribadi, yaitu Bapa, Anak, dan Roh Kudus. Konsep ini menjadi pondasi Kekristenan...",
+      url: "/edukasi/mengenal-tuhan/dogma-allah-tritunggal",
+      labelBtn: "Selengkapnya",
     },
     {
       img: "/images/diberkati-tuhan.webp",
       altText: "seseorang yang mendapatkan berkat kesejahteraan dari Tuhan",
-      title: "Selalu Hidup dalam Kesejahteraan",
-      desc: "Siapa sih yang tidak ingin hidup sejahtera, mari belajar dari Firman Tuhan bagaimana cara untuk selalu hidup dalam kesejahteraan.",
-      url: "/renungan/kasih-damai-sejahtera/selalu-hidup-dalam-kesejahteraan",
-      labelBtn: "Renungan",
+      title: "Dogma Inkarnasi Tuhan Yesus",
+      desc: "Yesus yang sepenuhnya Tuhan, mengambil rupa manusia dan tinggal bersama-sama manusia di bumi untuk karya keselamatan...",
+      url: "/edukasi/mengenal-tuhan/dogma-inkarnasi-kristen",
+      labelBtn: "Selengkapnya",
     },
     {
       img: "/images/memuliakan-tuhan-dengan-memandang-salib.webp",
       altText:
         "sekumpulan orang yang memandang salib agar dapat memberi karena kasih",
-      title: "Memberi karena Kasih",
-      desc: "Memberi karena kasih bukan karena gengsi atau untuk investasi, memberi untuk kemuliaan Tuhan bukan untuk dimuliakan Tuhan.",
-      url: "/renungan/kasih-damai-sejahtera/memberi-karena-kasih",
-      labelBtn: "Renungan",
+      title: "Dogma Keselamatan Iman Kristen",
+      desc: "Keselamatan hanya diberikan kepada semua orang yang percaya kepada Yesus. Tentu percaya bukan hanya sekadar ucapan...",
+      url: "/edukasi/mengenal-tuhan/dogma-keselamatan-kristen",
+      labelBtn: "Selengkapnya",
     },
   ];
 
