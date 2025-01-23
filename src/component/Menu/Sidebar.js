@@ -80,10 +80,10 @@ export default function Header() {
             <ul className="mt-2 bg-gray-800 rounded shadow-lg absolute p-1 w-52 lg:w-full lg:relative">
               <li>
                 <Link
-                  href="/edukasi/mengenal-tuhan"
+                  href="/edukasi/hukum-tuhan"
                   className="block px-4 py-2 hover:bg-gray-700 hover:text-blue-400"
                 >
-                  Mengenal Tuhan
+                  Hukum Tuhan
                 </Link>
               </li>
               <li>
@@ -96,10 +96,10 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="/edukasi/hukum-tuhan"
+                  href="/edukasi/mengenal-tuhan"
                   className="block px-4 py-2 hover:bg-gray-700 hover:text-blue-400"
                 >
-                  Hukum Tuhan
+                  Mengenal Tuhan
                 </Link>
               </li>
             </ul>
