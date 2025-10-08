@@ -1,0 +1,30 @@
+---
+// src/pages/renungan/index.astro
+import Card from '../../components/ui/Card.astro';
+import RenunganLayout from '../../layouts/RenunganLayout.astro';
+export const prerender = true;
+---
+
+<RenunganLayout
+  title="Renungan Harian"
+  description="Renungan harian untuk memperkuat iman">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+    <Card
+      img="/images/banner/ayah-dan-anak.svg"
+      altText="Renungan Keluarga Kristen"
+      title="Ayah yang Berkenan"
+      desc="Renungan tentang peran ayah dalam keluarga Kristen menurut pandangan Alkitab"
+      labelBtn="Baca Selengkapnya"
+      url="/renungan/keluarga-kristen/ayah-yang-berkenan"
+    />
+
+    <Card
+      img="/images/banner/salib-ketenangan.svg"
+      altText="Renungan Kasih Tuhan"
+      title="Kasih yang Tidak Bersyarat"
+      desc="Memahami kasih Tuhan yang sempurna dan tanpa syarat bagi umat-Nya"
+      labelBtn="Baca Selengkapnya"
+      url="/renungan/kasih-tuhan/tanpa-syarat"
+    />
+  </div>
+</RenunganLayout>

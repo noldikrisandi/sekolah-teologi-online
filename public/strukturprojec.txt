@@ -1,0 +1,58 @@
+mechanical-main/
+├── public/
+│   ├── favicon.ico
+│   ├── icon.svg
+│   ├── robots.txt
+│   ├── sitemap.xml
+│   └── images/
+│       ├── og-image.jpg
+│       └── logos/
+├── src/
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── Header.astro
+│   │   │   ├── Footer.astro
+│   │   │   ├── Navigation.astro
+│   │   │   └── Breadcrumb.astro
+│   │   │   └── SidebarRenungan.astro
+│   │   │   └── MobileMenuRenungan.astro
+│   │   ├── seo/
+│   │   │   ├── MetaTags.astro
+│   │   │   ├── SchemaMarkup.astro
+│   │   │   └── JsonLd.astro
+│   │   └── ui/
+│   │       ├── Card.astro
+│   │       └── Button.astro
+│   ├── layouts/
+│   │   ├── BaseLayout.astro
+│   │   ├── BlogLayout.astro
+│   │   └── RenunganLayout.astro
+|   |   └── SejarahLayout.astro
+|   |   └── EdukasiLayout.astro
+|   |   
+│   ├── pages/
+│   │   ├── index.astro
+│   │   ├── about.astro
+│   │   ├── blog/
+│   │   │   ├── index.astro
+│   │   │   └── [slug].astro
+│   │   ├── renungan/
+│   │   │   ├── index.astro
+│   │   │   └── [slug].astro
+│   │   ├── edukasi/
+│   │   │   ├── index.astro
+│   │   │   └── [slug].astro
+│   │   └── contact.astro
+│   ├── content/
+│   │   ├── blog/
+│   │   │   ├── post1.md
+│   │   │   └── post2.md
+│   │   └── programs/
+│   │       ├── program1.md
+│   │       └── program2.md
+│   └── utils/
+│       ├── seo.js
+│       └── helpers.js
+├── astro.config.mjs
+├── package.json
+└── tsconfig.json

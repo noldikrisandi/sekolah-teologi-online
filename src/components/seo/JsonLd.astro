@@ -1,0 +1,239 @@
+---
+// src/components/seo/JsonLd.astro
+// JSON-LD Structured Data Component untuk Online Business
+const {
+  type = 'Organization',
+  name = 'Sekolah Teologi',
+  description = 'Sekolah Teologi Online yang mengajarkan pendalaman alkitabiah dan kontekstual untuk membentuk pelayan Tuhan yang berkualitas',
+  url = 'https://sekolahteologi.com',
+  logo = 'https://sekolahteologi.com/images/logos/logo.png',
+  sameAs = [
+    'https://facebook.com/sekolahteologi',
+    'https://instagram.com/sekolahteologi', 
+    'https://youtube.com/sekolahteologi'
+  ],
+  // Online-specific
+  areaServed = ['Indonesia', 'International'],
+  contactPoint = {
+    telephone: '+62-852-1234-5678',
+    contactType: 'customer service',
+    email: 'info@sekolahteologi.com',
+    availableLanguage: ['Indonesian', 'English'],
+    contactOption: 'TollFree'
+  },
+  // Course specific
+  courses = [],
+  // Breadcrumb specific  
+  breadcrumbItems = [],
+  // Article specific
+  article = null,
+  // Event specific (online events)
+  event = null
+} = Astro.props;
+
+// Generate JSON-LD based on type
+const generateJsonLd = () => {
+  switch (type) {
+    case 'Organization':
+      return {
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name,
+        description: `${description} - Pendidikan Teologi Online`,
+        url,
+        logo: `${url}${logo}`,
+        sameAs,
+        // Untuk online business, gunakan areaServed instead of address
+        areaServed: areaServed,
+        // Contact point untuk online business
+        contactPoint: {
+          '@type': 'ContactPoint',
+          telephone: contactPoint.telephone,
+          contactType: contactPoint.contactType,
+          email: contactPoint.email,
+          availableLanguage: contactPoint.availableLanguage,
+          contactOption: contactPoint.contactOption,
+          areaServed: areaServed
+        },
+        // Tambah properties khusus online business
+        knowsAbout: [
+          'Teologi Sistematika',
+          'Studi Alkitab', 
+          'Pendidikan Kristen Online',
+          'Pembinaan Rohani'
+        ]
+      };
+
+    case 'EducationalOrganization':
+      return {
+        '@context': 'https://schema.org',
+        '@type': 'EducationalOrganization',
+        name: `${name} - Online`,
+        description: 'Lembaga pendidikan teologi online yang berfokus pada pengajaran alkitabiah dan pembentukan karakter Kristus',
+        url,
+        logo: `${url}${logo}`,
+        sameAs,
+        // Untuk educational organization online
+        areaServed: areaServed,
+        contactPoint: {
+          '@type': 'ContactPoint',
+          telephone: contactPoint.telephone,
+          contactType: contactPoint.contactType,
+          email: contactPoint.email,
+          availableLanguage: contactPoint.availableLanguage,
+          areaServed: areaServed
+        },
+        // Courses yang ditawarkan
+        hasCourse: courses.map(course => ({
+          '@type': 'Course',
+          name: course.name,
+          description: course.description,
+          educationalCredentialAwarded: course.credential,
+          provider: {
+            '@type': 'Organization',
+            name: 'Sekolah Teologi'
+          }
+        })),
+        // Spesifikasikan sebagai online education
+        knowsAbout: [
+          'Pendidikan Teologi Online',
+          'Kursus Alkitab Digital',
+          'Pembelajaran Jarak Jauh Kristen'
+        ]
+      };
+
+    case 'BreadcrumbList':
+      if (!breadcrumbItems.length) return null;
+      
+      return {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: breadcrumbItems.map((item, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          name: item.name,
+          item: `${url}${item.item}`
+        }))
+      };
+
+    case 'Article':
+      if (!article) return null;
+      
+      return {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: article.headline,
+        description: article.description,
+        image: article.images ? article.images.map(img => `${url}${img}`) : [`${url}/images/og-image.jpg`],
+        datePublished: article.datePublished,
+        dateModified: article.dateModified || article.datePublished,
+        author: {
+          '@type': 'Person',
+          name: article.authorName || 'Admin Sekolah Teologi'
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Sekolah Teologi',
+          logo: {
+            '@type': 'ImageObject',
+            url: `${url}${logo}`
+          }
+        },
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': `${url}${article.url}`
+        }
+      };
+
+    case 'Event':
+      if (!event) return null;
+      
+      // Untuk online events
+      return {
+        '@context': 'https://schema.org',
+        '@type': 'Event',
+        name: event.name,
+        description: event.description,
+        startDate: event.startDate,
+        endDate: event.endDate,
+        eventStatus: 'https://schema.org/EventScheduled',
+        // Penting: Tandai sebagai online event
+        eventAttendanceMode: 'https://schema.org/OnlineEventAttendanceMode',
+        location: {
+          '@type': 'VirtualLocation',
+          name: 'Online Platform Sekolah Teologi',
+          url: event.onlineUrl || url
+        },
+        organizer: {
+          '@type': 'Organization',
+          name: 'Sekolah Teologi',
+          url
+        },
+        // Untuk online events, tambah informasi akses
+        offers: {
+          '@type': 'Offer',
+          url: event.registrationUrl,
+          price: '0',
+          priceCurrency: 'IDR',
+          availability: 'https://schema.org/InStock',
+          validFrom: event.registrationStart
+        }
+      };
+
+    case 'Course':
+      if (!courses.length) return null;
+      
+      return courses.map(course => ({
+        '@context': 'https://schema.org',
+        '@type': 'Course',
+        name: course.name,
+        description: course.description,
+        courseCode: course.code,
+        // Tandai sebagai online course
+        educationalMode: 'online',
+        provider: {
+          '@type': 'Organization',
+          name: 'Sekolah Teologi',
+          sameAs: url
+        },
+        // Tambah typicalAgeRange untuk educational content
+        typicalAgeRange: '18-',
+        ...(course.offers && {
+          offers: {
+            '@type': 'Offer',
+            price: course.offers.price,
+            priceCurrency: course.offers.priceCurrency || 'IDR',
+            availability: 'https://schema.org/InStock'
+          }
+        })
+      }));
+
+    case 'WebSite':
+      return {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'Sekolah Teologi Online',
+        description: 'Platform pendidikan teologi online terpercaya',
+        url: url,
+        publisher: {
+          '@type': 'Organization',
+          name: 'Sekolah Teologi'
+        },
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: `${url}/search?q={search_term_string}`,
+          'query-input': 'required name=search_term_string'
+        }
+      };
+
+    default:
+      return null;
+  }
+};
+
+const jsonLdData = generateJsonLd();
+---
+
+{jsonLdData && (
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdData)} />
+)}

@@ -1,0 +1,166 @@
+---
+// src/components/common/NavigationMenu.astro
+// Renamed to avoid conflict
+---
+
+<nav class="hidden md:flex items-center space-x-8">
+  <!-- Renungan -->
+  <a 
+    href="/renungan" 
+    class="text-gray-700 hover:text-sky-600 font-medium transition-colors duration-200 relative group"
+  >
+    Renungan
+    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-sky-600 transition-all group-hover:w-full"></span>
+  </a>
+
+  <!-- Edukasi -->
+  <a 
+    href="/edukasi" 
+    class="text-gray-700 hover:text-sky-600 font-medium transition-colors duration-200 relative group"
+  >
+    Edukasi
+    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-sky-600 transition-all group-hover:w-full"></span>
+  </a>
+
+  <!-- Sejarah -->
+  <a 
+    href="/sejarah" 
+    class="text-gray-700 hover:text-sky-600 font-medium transition-colors duration-200 relative group"
+  >
+    Sejarah
+    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-sky-600 transition-all group-hover:w-full"></span>
+  </a>
+
+  <!-- Programs Dropdown -->
+  <div class="relative group">
+    <button class="text-gray-700 hover:text-sky-600 font-medium transition-colors duration-200 flex items-center space-x-1">
+      <span>Program Studi</span>
+      <svg class="w-4 h-4 transform group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </button>
+    
+    <!-- Dropdown Menu -->
+    <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+      <div class="py-2">
+        <a 
+          href="/programs" 
+          class="block px-4 py-2 text-gray-700 hover:bg-sky-50 hover:text-sky-600 transition-colors"
+        >
+          Semua Program
+        </a>
+        <a 
+          href="/programs/teologi-sistematika" 
+          class="block px-4 py-2 text-gray-700 hover:bg-sky-50 hover:text-sky-600 transition-colors"
+        >
+          Teologi Sistematika
+        </a>
+        <a 
+          href="/programs/studi-perjanjian-lama" 
+          class="block px-4 py-2 text-gray-700 hover:bg-sky-50 hover:text-sky-600 transition-colors"
+        >
+          Studi Perjanjian Lama
+        </a>
+        <a 
+          href="/programs/studi-perjanjian-baru" 
+          class="block px-4 py-2 text-gray-700 hover:bg-sky-50 hover:text-sky-600 transition-colors"
+        >
+          Studi Perjanjian Baru
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blog -->
+  <a 
+    href="/blog" 
+    class="text-gray-700 hover:text-sky-600 font-medium transition-colors duration-200 relative group"
+  >
+    Blog & Artikel
+    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-sky-600 transition-all group-hover:w-full"></span>
+  </a>
+
+  <!-- About -->
+  <a 
+    href="/tentang-kami" 
+    class="text-gray-700 hover:text-sky-600 font-medium transition-colors duration-200 relative group"
+  >
+    Tentang Kami
+    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-sky-600 transition-all group-hover:w-full"></span>
+  </a>
+</nav>
+
+<!-- Mobile Navigation Button -->
+<div class="md:hidden">
+  <button id="mobile-menu-button" class="text-gray-700 hover:text-sky-600 p-2">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+  </button>
+</div>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="md:hidden fixed inset-0 bg-white z-50 transform translate-x-full transition-transform duration-300">
+  <div class="p-6">
+    <div class="flex justify-between items-center mb-8">
+      <span class="text-lg font-bold text-sky-800">Menu</span>
+      <button id="mobile-menu-close" class="text-gray-500 hover:text-gray-700">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <nav class="space-y-4">
+      <a href="/" class="block text-lg text-gray-700 hover:text-sky-600 py-2 border-b border-gray-100">Beranda</a>
+      <a href="/about" class="block text-lg text-gray-700 hover:text-sky-600 py-2 border-b border-gray-100">Tentang Kami</a>
+      
+      <!-- Programs in Mobile -->
+      <div class="border-b border-gray-100">
+        <div class="flex justify-between items-center py-2">
+          <span class="text-lg text-gray-700">Program Studi</span>
+          <button class="text-gray-500">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="pl-4 space-y-2 pb-2">
+          <a href="/programs" class="block text-gray-600 hover:text-sky-600 py-1">Semua Program</a>
+          <a href="/programs/teologi-sistematika" class="block text-gray-600 hover:text-sky-600 py-1">Teologi Sistematika</a>
+          <a href="/programs/studi-perjanjian-lama" class="block text-gray-600 hover:text-sky-600 py-1">Studi Perjanjian Lama</a>
+          <a href="/programs/studi-perjanjian-baru" class="block text-gray-600 hover:text-sky-600 py-1">Studi Perjanjian Baru</a>
+        </div>
+      </div>
+      
+      <a href="/blog" class="block text-lg text-gray-700 hover:text-sky-600 py-2 border-b border-gray-100">Blog & Artikel</a>
+      <a href="/contact" class="block text-lg text-gray-700 hover:text-sky-600 py-2 border-b border-gray-100">Kontak</a>
+    </nav>
+  </div>
+</div>
+
+<script>
+  // Mobile menu functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (mobileMenuButton && mobileMenuClose && mobileMenu) {
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+      });
+
+      mobileMenuClose.addEventListener('click', () => {
+        mobileMenu.classList.add('translate-x-full');
+      });
+
+      // Close menu when clicking on links
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('translate-x-full');
+        });
+      });
+    }
+  });
+</script>

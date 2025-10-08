@@ -1,0 +1,109 @@
+---
+// src/pages/blog/index.astro
+import { getCollection } from 'astro:content';
+import BlogLayout from '../../layouts/BaseLayout.astro';
+
+export const prerender = true;
+
+// Get blog posts sorted by date
+const blogPosts = await getCollection('blog');
+const sortedPosts = blogPosts.sort(
+  (a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime()
+);
+---
+
+<BlogLayout 
+  title="Blog Sekolah Teologi" 
+  description="Artikel, renungan, dan materi teologi untuk memperdalam iman Kristen"
+>
+  <div class="bg-white rounded-lg shadow-sm p-6">
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold text-gray-900 mb-4">Blog Teologi</h1>
+      <p class="text-lg text-gray-600">
+        Temukan artikel-artikel teologi, renungan, dan materi pembelajaran untuk memperdalam iman Kristen Anda.
+      </p>
+    </header>
+
+    {/* Featured Posts */}
+    {sortedPosts.filter(post => post.data.featured).length > 0 && (
+      <section class="mb-12">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-6">Artikel Unggulan</h2>
+        <div class="grid gap-6 md:grid-cols-2">
+          {sortedPosts.filter(post => post.data.featured).map((post) => (
+            <article class="bg-blue-50 rounded-lg p-6 border border-blue-200">
+              <div class="flex items-center gap-2 text-sm text-blue-600 mb-3">
+                <span>⭐ Unggulan</span>
+                <span>•</span>
+                <span>{new Date(post.data.publishDate).toLocaleDateString('id-ID')}</span>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                <a 
+                  href={`/blog/${post.slug}/`}
+                  class="hover:text-blue-600 transition-colors"
+                >
+                  {post.data.title}
+                </a>
+              </h3>
+              <p class="text-gray-600 mb-4">{post.data.description}</p>
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-gray-500">Oleh: {post.data.author}</span>
+                <a 
+                  href={`/blog/${post.slug}/`}
+                  class="text-blue-600 hover:text-blue-800 font-medium text-sm"
+                >
+                  Baca Selengkapnya →
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {/* All Posts */}
+    <section>
+      <h2 class="text-2xl font-semibold text-gray-800 mb-6">Semua Artikel</h2>
+      <div class="space-y-8">
+        {sortedPosts.map((post) => (
+          <article class="border-b border-gray-200 pb-8 last:border-b-0">
+            <div class="flex items-center gap-4 text-sm text-gray-500 mb-2">
+              <span>{new Date(post.data.publishDate).toLocaleDateString('id-ID')}</span>
+              <span>•</span>
+              <span>Oleh: {post.data.author}</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">
+              <a 
+                href={`/blog/${post.slug}/`}
+                class="hover:text-blue-600 transition-colors"
+              >
+                {post.data.title}
+              </a>
+            </h3>
+            <p class="text-gray-600 mb-4">{post.data.description}</p>
+            <div class="flex items-center justify-between">
+              <div class="flex gap-2">
+                {post.data.tags.map((tag) => (
+                  <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">
+                    #{tag}
+                  </span>
+                ))}
+              </div>
+              <a 
+                href={`/blog/${post.slug}/`}
+                class="text-blue-600 hover:text-blue-800 font-medium"
+              >
+                Baca Selengkapnya →
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  </div>
+</BlogLayout>
+
+<style>
+  .prose {
+    max-width: none;
+  }
+</style>

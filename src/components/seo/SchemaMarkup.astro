@@ -1,0 +1,306 @@
+---
+// src/components/seo/SchemaMarkup.astro
+// Comprehensive Schema.org Markup untuk Educational Website
+const {
+  // Basic info
+  pageType = 'WebPage',
+  pageUrl = null,
+  
+  // Organization info
+  organization = {
+    name: 'Sekolah Teologi Online',
+    description: 'Platform pendidikan teologi online terpercaya yang menyediakan kursus alkitabiah dan pembinaan rohani',
+    url: 'https://sekolahteologi.com',
+    logo: 'favicon.ico',
+    email: 'info@sekolahteologi.com',
+    telephone: '+62-852-1234-5678',
+    socialProfiles: [
+      'https://facebook.com/sekolahteologi',
+      'https://instagram.com/sekolahteologi',
+      'https://youtube.com/sekolahteologi',
+      'https://twitter.com/sekolahteologi'
+    ]
+  },
+  
+  // Course info (untuk halaman program/course)
+  courses = [],
+  
+  // Article info (untuk halaman blog)
+  articles = [],
+  
+  // Event info (untuk halaman event)
+  events = [],
+  
+  // FAQ info
+  faqs = [],
+  
+  // Breadcrumb info
+  breadcrumbs = [],
+  
+  // Review/rating info
+  reviews = [],
+  aggregateRating = null,
+  
+  // Person info (untuk halaman pengajar)
+  persons = [],
+  
+  // Local business override (jika ada kantor virtual)
+  localBusiness = null
+} = Astro.props;
+
+// Helper function untuk generate full URL
+const fullUrl = (path) => {
+  const baseUrl = organization.url;
+  if (path.startsWith('http')) return path;
+  return `${baseUrl}${path.startsWith('/') ? path : '/' + path}`;
+};
+
+// Generate semua schema yang relevan
+const generateSchemas = () => {
+  const schemas = [];
+  
+  // 1. Organization Schema (selalu include)
+  schemas.push({
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: organization.name,
+    description: organization.description,
+    url: organization.url,
+    logo: fullUrl(organization.logo),
+    email: organization.email,
+    telephone: organization.telephone,
+    sameAs: organization.socialProfiles,
+    // Untuk online business
+    areaServed: ['ID', 'MY', 'SG', 'WW'],
+    knowsAbout: [
+      'Teologi Sistematika',
+      'Studi Alkitab Online',
+      'Pendidikan Kristen Digital',
+      'Pembinaan Rohani Virtual',
+      'Kursus Teologi Jarak Jauh'
+    ],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'customer service',
+      email: organization.email,
+      telephone: organization.telephone,
+      availableLanguage: ['Indonesian', 'English'],
+      areaServed: ['ID', 'MY', 'SG', 'WW']
+    }
+  });
+
+  // 2. WebSite Schema
+  schemas.push({
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: `${organization.name} - Website`,
+    url: organization.url,
+    description: organization.description,
+    publisher: {
+      '@type': 'Organization',
+      name: organization.name
+    },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: `${organization.url}/search?q={search_term_string}`,
+      'query-input': 'required name=search_term_string'
+    }
+  });
+
+  // 3. Breadcrumb Schema (jika ada)
+  if (breadcrumbs.length > 0) {
+    schemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: breadcrumbs.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: item.name,
+        item: fullUrl(item.url)
+      }))
+    });
+  }
+
+  // 4. Course Schemas (jika ada courses)
+  if (courses.length > 0) {
+    courses.forEach(course => {
+      const courseSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'Course',
+        name: course.name,
+        description: course.description,
+        courseCode: course.code,
+        educationalCredentialAwarded: course.credential,
+        educationalMode: 'online',
+        provider: {
+          '@type': 'Organization',
+          name: organization.name,
+          url: organization.url
+        },
+        typicalAgeRange: course.ageRange || '18-',
+        timeRequired: course.duration,
+        ...(course.thumbnail && {
+          image: fullUrl(course.thumbnail)
+        })
+      };
+
+      // Add offers jika ada harga
+      if (course.offers) {
+        courseSchema.offers = {
+          '@type': 'Offer',
+          price: course.offers.price,
+          priceCurrency: course.offers.currency || 'IDR',
+          availability: course.offers.availability || 'https://schema.org/InStock',
+          url: fullUrl(course.offers.url || `/programs/${course.slug}`)
+        };
+      }
+
+      // Add aggregateRating jika ada
+      if (course.aggregateRating) {
+        courseSchema.aggregateRating = {
+          '@type': 'AggregateRating',
+          ratingValue: course.aggregateRating.ratingValue,
+          ratingCount: course.aggregateRating.ratingCount,
+          bestRating: course.aggregateRating.bestRating || '5',
+          worstRating: course.aggregateRating.worstRating || '1'
+        };
+      }
+
+      schemas.push(courseSchema);
+    });
+  }
+
+  // 5. Article Schemas (jika ada articles)
+  if (articles.length > 0) {
+    articles.forEach(article => {
+      schemas.push({
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: article.headline,
+        description: article.description,
+        image: article.images ? article.images.map(img => fullUrl(img)) : [fullUrl('/favicon.ico')],
+        datePublished: article.datePublished,
+        dateModified: article.dateModified || article.datePublished,
+        author: {
+          '@type': 'Person',
+          name: article.authorName,
+          ...(article.authorUrl && { url: fullUrl(article.authorUrl) })
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: organization.name,
+          logo: {
+            '@type': 'ImageObject',
+            url: fullUrl(organization.logo)
+          }
+        },
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': fullUrl(article.url)
+        },
+        ...(article.keywords && { keywords: article.keywords.join(', ') })
+      });
+    });
+  }
+
+  // 6. Event Schemas (jika ada events - untuk webinar/online events)
+  if (events.length > 0) {
+    events.forEach(event => {
+      schemas.push({
+        '@context': 'https://schema.org',
+        '@type': 'Event',
+        name: event.name,
+        description: event.description,
+        startDate: event.startDate,
+        endDate: event.endDate,
+        eventStatus: 'https://schema.org/EventScheduled',
+        eventAttendanceMode: 'https://schema.org/OnlineEventAttendanceMode',
+        location: {
+          '@type': 'VirtualLocation',
+          name: event.locationName || 'Platform Online Sekolah Teologi',
+          url: event.onlineUrl || organization.url
+        },
+        organizer: {
+          '@type': 'Organization',
+          name: organization.name,
+          url: organization.url
+        },
+        offers: {
+          '@type': 'Offer',
+          url: fullUrl(event.registrationUrl),
+          price: event.price || '0',
+          priceCurrency: event.currency || 'IDR',
+          availability: event.availability || 'https://schema.org/InStock',
+          validFrom: event.registrationStart
+        },
+        ...(event.thumbnail && {
+          image: fullUrl(event.thumbnail)
+        })
+      });
+    });
+  }
+
+  // 7. FAQ Schema (jika ada FAQs)
+  if (faqs.length > 0) {
+    schemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqs.map(faq => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer
+        }
+      }))
+    });
+  }
+
+  // 8. Person Schema (untuk pengajar/staff)
+  if (persons.length > 0) {
+    persons.forEach(person => {
+      schemas.push({
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        name: person.name,
+        jobTitle: person.jobTitle,
+        worksFor: {
+          '@type': 'Organization',
+          name: organization.name
+        },
+        ...(person.bio && { description: person.bio }),
+        ...(person.image && { image: fullUrl(person.image) }),
+        ...(person.sameAs && { sameAs: person.sameAs })
+      });
+    });
+  }
+
+  // 9. Aggregate Rating (jika ada review aggregate)
+  if (aggregateRating) {
+    schemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: organization.name,
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: aggregateRating.ratingValue,
+        ratingCount: aggregateRating.ratingCount,
+        bestRating: aggregateRating.bestRating || '5',
+        worstRating: aggregateRating.worstRating || '1'
+      }
+    });
+  }
+
+  return schemas;
+};
+
+const schemas = generateSchemas();
+---
+
+{schemas.map((schema, index) => (
+  <script 
+    type="application/ld+json" 
+    set:html={JSON.stringify(schema)}
+    key={`schema-${index}`}
+  />
+))}

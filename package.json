@@ -1,33 +1,17 @@
 {
-  "name": "my-website",
-  "version": "0.1.0",
-  "private": true,
+  "name": "mechanical-main",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.7.2",
-    "@fortawesome/fontawesome-svg-core": "^6.7.2",
-    "@fortawesome/free-brands-svg-icons": "^6.7.2",
-    "@fortawesome/free-solid-svg-icons": "^6.7.2",
-    "@fortawesome/react-fontawesome": "^0.2.2",
-    "my-website": "file:",
-    "next": "13.5.7",
-    "react": "^18",
-    "react-dom": "^18"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10",
-    "eslint": "^8",
-    "eslint-config-next": "13.5.7",
-    "postcss": "^8",
-    "tailwindcss": "^3",
-    "typescript": "^5"
+    "@astrojs/sitemap": "^3.6.0",
+    "@tailwindcss/vite": "^4.1.13",
+    "astro": "^5.14.1",
+    "tailwindcss": "^4.1.13"
   }
 }

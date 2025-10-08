@@ -1,0 +1,257 @@
+---
+// src/pages/404.astro - Static page
+---
+
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Damai Sejahtera di Tengah Ketidakpastian - Sekolah Teologi</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+      
+      body { 
+        font-family: 'Inter', sans-serif; 
+        margin: 0; 
+        padding: 0; 
+        background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .container { 
+        max-width: 800px; 
+        margin: 0 auto; 
+        padding: 3rem 2rem; 
+        text-align: center; 
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      
+      .error-code { 
+        font-size: 6rem; 
+        font-weight: 300; 
+        color: #0ea5e9; 
+        margin-bottom: 1rem;
+        opacity: 0.8;
+      }
+      
+      .title { 
+        font-size: 2.5rem; 
+        font-weight: 600; 
+        color: #1e293b; 
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+      }
+      
+      .scripture {
+        font-size: 1.1rem;
+        color: #475569;
+        font-style: italic;
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        background: #f8fafc;
+        border-radius: 12px;
+        border-left: 4px solid #0ea5e9;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .description { 
+        font-size: 1.2rem; 
+        color: #64748b; 
+        margin-bottom: 3rem; 
+        max-width: 42rem; 
+        margin-left: auto; 
+        margin-right: auto;
+        line-height: 1.6;
+        font-weight: 400;
+      }
+      
+      .btn-container {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+      }
+      
+      .btn { 
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem 2rem; 
+        border-radius: 12px; 
+        font-weight: 500; 
+        text-decoration: none; 
+        transition: all 0.3s ease;
+        font-size: 1rem;
+      }
+      
+      .btn-primary { 
+        background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%); 
+        color: white; 
+        box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);
+      }
+      
+      .btn-primary:hover { 
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(14, 165, 233, 0.4);
+        background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+      }
+      
+      .btn-secondary { 
+        border: 2px solid #0ea5e9; 
+        color: #0ea5e9; 
+        background: transparent;
+      }
+      
+      .btn-secondary:hover { 
+        background: #f0f9ff; 
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(14, 165, 233, 0.2);
+      }
+      
+      .explore-section {
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid #e2e8f0;
+      }
+      
+      .explore-title {
+        font-size: 1.25rem; 
+        font-weight: 600; 
+        color: #1e293b; 
+        margin-bottom: 1.5rem;
+      }
+      
+      .explore-links {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      
+      .explore-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75rem 1rem;
+        background: #f8fafc;
+        color: #475569;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        font-weight: 500;
+      }
+      
+      .explore-link:hover {
+        background: #e0f2fe;
+        color: #0ea5e9;
+        transform: translateY(-2px);
+      }
+      
+      .peace-icon {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        opacity: 0.7;
+      }
+      
+      @media (max-width: 768px) {
+        .container {
+          margin: 1rem;
+          padding: 2rem 1.5rem;
+        }
+        
+        .error-code {
+          font-size: 4rem;
+        }
+        
+        .title {
+          font-size: 2rem;
+        }
+        
+        .btn-container {
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        .btn {
+          width: 100%;
+          max-width: 250px;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="peace-icon">🕊️</div>
+      <div class="error-code">404</div>
+      <h1 class="title">Damai Sejahtera di Tengah Ketidakpastian</h1>
+      
+      <div class="scripture">
+        "Damai sejahtera Kutinggalkan bagimu. Damai sejahtera-Ku Kuberikan kepadamu, 
+        dan apa yang Kuberikan tidak seperti yang diberikan oleh dunia kepadamu. 
+        Janganlah gelisah dan gentar hatimu." - Yohanes 14:27
+      </div>
+      
+      <p class="description">
+        Meskipun halaman yang Anda cari tidak ditemukan, ingatlah bahwa dalam Kristus 
+        kita selalu menemukan jalan. Biarlah damai sejahtera-Nya yang melampaui segala akal 
+        memelihara hati dan pikiran Anda.
+      </p>
+      
+      <div class="btn-container">
+        <a href="/" class="btn btn-primary">
+          🏠 Kembali ke Beranda
+        </a>
+        <a href="javascript:history.back()" class="btn btn-secondary">
+          ↩️ Kembali ke Halaman Sebelumnya
+        </a>
+      </div>
+      
+      <div class="explore-section">
+        <h3 class="explore-title">Temukan Damai Sejahtera dalam:</h3>
+        <div class="explore-links">
+          <a href="/renungan" class="explore-link">Renungan Harian</a>
+          <a href="/edukasi" class="explore-link">Edukasi Teologi</a>
+          <a href="/doa" class="explore-link">Panduan Doa</a>
+          <a href="/kontak" class="explore-link">Konseling & Dukungan</a>
+        </div>
+      </div>
+      
+      <div style="margin-top: 2rem; font-size: 0.9rem; color: #94a3b8;">
+        <p>"Marilah kepada-Ku, semua yang letih lesu dan berbeban berat, Aku akan memberi kelegaan kepadamu." - Matius 11:28</p>
+      </div>
+    </div>
+
+    <script>
+      // Tambahkan efek ketikan untuk ayat Alkitab
+      document.addEventListener('DOMContentLoaded', function() {
+        const scripture = document.querySelector('.scripture');
+        const originalText = scripture.textContent;
+        scripture.textContent = '';
+        
+        let i = 0;
+        function typeWriter() {
+          if (i < originalText.length) {
+            scripture.textContent += originalText.charAt(i);
+            i++;
+            setTimeout(typeWriter, 30);
+          }
+        }
+        
+        // Mulai efek ketikan setelah delay kecil
+        setTimeout(typeWriter, 1000);
+      });
+    </script>
+  </body>
+</html>

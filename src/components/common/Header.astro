@@ -1,0 +1,33 @@
+---
+// src/components/common/Header.astro
+import NavigationMenu from './NavigationMenu.astro';
+---
+
+<header class="bg-white shadow-sm sticky top-0 z-40">
+  <div class="container mx-auto px-4 py-4">
+    <div class="flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <a 
+          href="/" 
+          class="text-2xl font-bold text-sky-800 hover:text-sky-600 transition-colors duration-200"
+        >
+          sekolahteologi.com
+        </a>
+      </div>
+
+      <!-- Navigation Component -->
+      <NavigationMenu />
+
+      <!-- CTA Button -->
+      <div class="hidden md:block">
+        <a 
+          href="https://wa.me/6282346484778?text=Halo%20kak,%20saya%20mau%20konsultasi%20mengenai%20sekolahteologi.com" target="_blank"
+          class="bg-sky-600 hover:bg-sky-700 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
+        >
+          Konsultasi Sekarang
+        </a>
+      </div>
+    </div>
+  </div>
+</header>

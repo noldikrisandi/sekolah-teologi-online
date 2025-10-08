@@ -1,0 +1,446 @@
+---
+// src/components/common/MobileMenuSekolahMinggu.astro
+---
+
+<div>
+  <!-- Mobile menu button - hidden by default, show on scroll -->
+  <button
+    type="button"
+    data-menu-button
+    class="lg:hidden p-2 rounded-md text-sky-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500 fixed top-4 left-4 z-50 bg-white shadow-lg border border-gray-200 transition-all duration-300 opacity-0 -translate-y-4"
+    aria-label="Toggle menu">
+    <div class="flex items-center">
+      <svg
+        class="h-6 w-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+      <span class="ml-2 font-medium">Menu</span>
+    </div>
+  </button>
+
+  <!-- Mobile sidebar overlay -->
+  <div id="mobile-sidebar" class="lg:hidden hidden fixed inset-0 z-50">
+    <!-- Overlay -->
+    <div
+      class="fixed inset-0 bg-gray-600 bg-opacity-75 transition-opacity duration-300"
+      data-close-sidebar>
+    </div>
+
+    <!-- Sidebar panel -->
+    <div
+      class="fixed inset-y-0 left-0 max-w-xs w-full bg-white shadow-xl transition-transform duration-300 transform -translate-x-full">
+      <div class="h-full overflow-y-auto">
+        <!-- Header -->
+        <div class="px-6 py-4 border-b border-gray-200 bg-white">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+              <img src="/favicon.ico" alt="Logo Edukasi" class="h-8 w-8" />
+              <div>
+                <h2 class="text-xl font-semibold text-gray-800">Sekolah Minggu</h2>
+                <p class="text-gray-700">sekolahteologi.com</p>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 transition-colors"
+              data-close-sidebar
+              aria-label="Close menu">
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="mt-6 px-4">
+          <div class="space-y-1">
+            <!-- Home -->
+            <a
+              href="/"
+              class="flex items-center px-4 py-3 text-gray-700 rounded-lg hover:bg-sky-50 hover:text-sky-600 transition-colors group"
+              data-close-sidebar>
+              <svg
+                class="w-5 h-5 mr-3 text-gray-400 group-hover:text-sky-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 12l2-2m0 0l7-7 7 7m-9 13V9m0 13h6a2 2 0 002-2v-7h2a2 2 0 002-2V9.5a2 2 0 00-.586-1.414l-7-7a2 2 0 00-2.828 0l-7 7A2 2 0 003 9.5V12a2 2 0 002 2h2v7a2 2 0 002 2z"
+                ></path>
+              </svg>
+              Home
+            </a>
+
+            <!-- Sekolah Minggu -->
+            <a
+              href="/sekolah-minggu"
+              class="flex items-center px-4 py-3 text-gray-700 bg-sky-50 text-sky-600 rounded-lg transition-colors group"
+              data-close-sidebar>
+              <svg
+                class="w-5 h-5 mr-3 text-sky-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                ></path>
+              </svg>
+              Sekolah Minggu
+            </a>
+
+            <!-- Edukasi Teologi -->
+            <a
+              href="/edukasi"
+              class="flex items-center px-4 py-3 text-gray-700 rounded-lg hover:bg-sky-50 hover:text-sky-600 transition-colors group"
+              data-close-sidebar>
+              <svg
+                class="w-5 h-5 mr-3 text-gray-400 group-hover:text-sky-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                ></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                ></path>
+              </svg>
+              Edukasi Teologi
+            </a>
+
+            <!-- Renungan Kristen -->
+            <a
+              href="/renungan"
+              class="flex items-center px-4 py-3 text-gray-700 rounded-lg hover:bg-sky-50 hover:text-sky-600 transition-colors group"
+              data-close-sidebar>
+              <svg
+                class="w-5 h-5 mr-3 text-gray-400 group-hover:text-sky-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                ></path>
+              </svg>
+              Renungan Kristen
+            </a>
+
+            <!-- Sejarah Alkitab -->
+            <a
+              href="/sejarah"
+              class="flex items-center px-4 py-3 text-gray-700 rounded-lg hover:bg-sky-50 hover:text-sky-600 transition-colors group"
+              data-close-sidebar>
+              <svg
+                class="w-5 h-5 mr-3 text-gray-400 group-hover:text-sky-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              Sejarah Alkitab
+            </a>
+          </div>
+
+          <!-- Divider -->
+          <div class="my-6 border-t border-gray-200"></div>
+
+          <!-- Kelas Usia -->
+          <div class="mb-4">
+            <h3 class="px-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">
+              Kelas Usia
+            </h3>
+            <div class="mt-2 space-y-1">
+              <a
+                href="/sekolah-minggu/balita"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Balita (2-4 tahun)
+              </a>
+              <a
+                href="/sekolah-minggu/paud"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                PAUD (4-6 tahun)
+              </a>
+              <a
+                href="/sekolah-minggu/kelas-kecil"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Kelas Kecil (7-9 tahun)
+              </a>
+              <a
+                href="/sekolah-minggu/kelas-besar"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Kelas Besar (10-12 tahun)
+              </a>
+              <a
+                href="/sekolah-minggu/remaja"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Remaja (13-15 tahun)
+              </a>
+            </div>
+          </div>
+
+          <!-- Materi Pembelajaran -->
+          <div class="mb-4">
+            <h3 class="px-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">
+              Materi Pembelajaran
+            </h3>
+            <div class="mt-2 space-y-1">
+              <a
+                href="/sekolah-minggu/cerita-alkitab"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Cerita Alkitab
+              </a>
+              <a
+                href="/sekolah-minggu/ayat-hafalan"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Ayat Hafalan
+              </a>
+              <a
+                href="/sekolah-minggu/aktivitas"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Aktivitas & Kerajinan
+              </a>
+              <a
+                href="/sekolah-minggu/nyanyi-pujian"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Nyanyi & Pujian
+              </a>
+              <a
+                href="/sekolah-minggu/permainan"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Permainan Edukatif
+              </a>
+            </div>
+          </div>
+
+          <!-- Topik Pembelajaran -->
+          <div class="mb-4">
+            <h3 class="px-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">
+              Topik Pembelajaran
+            </h3>
+            <div class="mt-2 space-y-1">
+              <a
+                href="/sekolah-minggu/penciptaan"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Penciptaan & Adam-Hawa
+              </a>
+              <a
+                href="/sekolah-minggu/nuh"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Nuh & Air Bah
+              </a>
+              <a
+                href="/sekolah-minggu/abraham"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Abraham & Janji Tuhan
+              </a>
+              <a
+                href="/sekolah-minggu/musa"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Musa & Keluaran
+              </a>
+              <a
+                href="/sekolah-minggu/daud"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Daud & Goliat
+              </a>
+              <a
+                href="/sekolah-minggu/daniel"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Daniel & Gua Singa
+              </a>
+              <a
+                href="/sekolah-minggu/yesus"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Yesus & Mukjizat
+              </a>
+            </div>
+          </div>
+
+          <!-- Sumber Guru -->
+          <div class="mb-4">
+            <h3 class="px-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">
+              Sumber Guru
+            </h3>
+            <div class="mt-2 space-y-1">
+              <a
+                href="/sekolah-minggu/panduan-guru"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Panduan Guru
+              </a>
+              <a
+                href="/sekolah-minggu/rencana-pelajaran"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Rencana Pelajaran
+              </a>
+              <a
+                href="/sekolah-minggu/bahan-ajar"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Bahan Ajar
+              </a>
+              <a
+                href="/sekolah-minggu/tips-mengajar"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Tips Mengajar
+              </a>
+              <a
+                href="/sekolah-minggu/alat-peraga"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Alat Peraga
+              </a>
+            </div>
+          </div>
+
+          <!-- Khusus Orang Tua -->
+          <div class="mb-4">
+            <h3 class="px-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">
+              Untuk Orang Tua
+            </h3>
+            <div class="mt-2 space-y-1">
+              <a
+                href="/sekolah-minggu/pengasuhan-kristen"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Pengasuhan Kristen
+              </a>
+              <a
+                href="/sekolah-minggu/doa-keluarga"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Doa Keluarga
+              </a>
+              <a
+                href="/sekolah-minggu/aktivitas-keluarga"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Aktivitas Keluarga
+              </a>
+              <a
+                href="/sekolah-minggu/bahan-keluarga"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Bahan Keluarga
+              </a>
+            </div>
+          </div>
+
+          <!-- Event & Kegiatan -->
+          <div class="mb-4">
+            <h3 class="px-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">
+              Event & Kegiatan
+            </h3>
+            <div class="mt-2 space-y-1">
+              <a
+                href="/sekolah-minggu/natal"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Natal Anak
+              </a>
+              <a
+                href="/sekolah-minggu/paskah"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Paskah Anak
+              </a>
+              <a
+                href="/sekolah-minggu/vbs"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Sekolah Minggu Liburan
+              </a>
+              <a
+                href="/sekolah-minggu/retreat"
+                class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100"
+                data-close-sidebar>
+                Retreat Anak
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Smooth transitions untuk mobile sidebar */
+  #mobile-sidebar {
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  #mobile-sidebar > div:last-child {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* Prevent body scroll when menu is open */
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  /* Class untuk button visible */
+  .menu-button-visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+</style>

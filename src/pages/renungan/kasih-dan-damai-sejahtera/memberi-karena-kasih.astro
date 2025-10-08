@@ -1,0 +1,248 @@
+---
+// src/pages/renungan/kasih-dan-damai-sejahtera/memberi-karena-kasih.astro
+import RenunganLayout from "../../../layouts/RenunganLayout.astro";
+
+const renunganData = {
+  title: "Renungan Kristen Memberi karena Kasih Bukan karena Gengsi atau untuk Investasi",
+  author: "Noldi Krisandi",
+  image: "/images/banner/renungan-kristen-tuhan-pikul-salib.svg",
+  imageAlt: "sekumpulan orang yang memandang salib agar dapat memberi karena kasih",
+  description: "Renungan tentang pentingnya memberi karena kasih kepada Tuhan, bukan karena gengsi atau untuk investasi duniawi. Pelajari makna sebenarnya dari persembahan yang berkenan di hadapan Tuhan.",
+  publishedDate: "2025-10-03T08:00:00+07:00",
+  modifiedDate: "2025-10-03T08:00:00+07:00",
+  category: "Kasih dan Damai Sejahtera",
+  scripture: ["2 Korintus 9:7", "Roma 11:35-36", "Bilangan 18:21", "Ulangan 14:28-29"]
+};
+---
+
+<RenunganLayout
+  title={renunganData.title}
+  description={renunganData.description}
+  url="renungan/kasih-dan-damai-sejahtera/memberi-karena-kasih"
+  type="article"
+  articles={[{
+    headline: renunganData.title,
+    description: renunganData.description,
+    images: [renunganData.image],
+    datePublished: renunganData.publishedDate,
+    dateModified: renunganData.modifiedDate,
+    authorName: renunganData.author,
+    url: "/renungan/kasih-dan-damai-sejahtera/memberi-karena-kasih",
+    keywords: ["memberi karena kasih", "persembahan kristen", "renungan harian", "teologi"]
+  }]}
+  breadcrumbs={[
+    { name: "Home", url: "/" },
+    { name: "Renungan Harian", url: "/renungan" },
+    { name: "Kasih dan Damai Sejahtera", url: "/renungan/kasih-dan-damai-sejahtera" },
+    { name: "Memberi karena Kasih", url: "/renungan/kasih-dan-damai-sejahtera/memberi-karena-kasih" }
+  ]}
+>
+
+  <article class="bg-white rounded-lg shadow-sm p-6 md:p-8" itemscope itemtype="https://schema.org/Article">
+    <!-- Header dengan microdata -->
+    <header class="mb-8 border-l-4 border-blue-600 pl-4" itemprop="headline">
+      <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+        {renunganData.title}
+      </h1>
+      <div class="flex flex-wrap items-center gap-4 text-gray-600 text-lg">
+        <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+          Penulis: <span itemprop="name">{renunganData.author}</span>
+        </p>
+        <meta itemprop="datePublished" content={renunganData.publishedDate} />
+        <meta itemprop="dateModified" content={renunganData.modifiedDate} />
+      </div>
+      <h2 class="text-sky-600 text-lg">
+        Renungan Harian Jumat,
+        <time datetime="2025-10-03" itemprop="datePublished">03 Oktober 2025</time>
+      </h2>
+    </header>
+
+    <!-- Featured Image dengan schema -->
+    <div class="mb-8" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      <img
+        src={renunganData.image}
+        alt={renunganData.imageAlt}
+        width={800}
+        height={400}
+        class="w-full h-48 md:h-80 object-cover rounded-lg shadow-md"
+        itemprop="url"
+      />
+      <meta itemprop="width" content="800" />
+      <meta itemprop="height" content="400" />
+    </div>
+
+    <!-- Content dengan articleBody schema -->
+    <div class="prose prose-lg max-w-none text-gray-700" itemprop="articleBody">
+      <!-- Introduction -->
+      <section class="mb-8">
+        <p class="mb-4 leading-relaxed">
+          Shalom saudara-saudari yang terkasih di dalam Yesus Kristus.<br />
+          Kiranya berkat Damai Sejahtera dari Tuhan selalu menyertai kehidupan saudara-saudari
+          sekalian.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Renungan kita saat ini sangat sensitif, mungkin sebagian orang suka
+          dengan renungan ini sebagian juga kurang menyukainya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          saya akan membuka renungan ini dengan kalimat yang mungkin akan
+          menjadi sangat kontroversi. "Memberi kepada orang yang membutuhkan itu
+          lebih baik dari pada kita memberi ke Gereja". Saya ulangi sekali lagi
+          "Memberi kepada orang yang membutuhkan itu lebih baik dari pada kita
+          memberi ke Gereja"
+        </p>
+      </section>
+
+      <!-- Section 1 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Memberi karena Kasih bukan karena Gengsi
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Saya duduk termenung ketika mendengar khotbah seorang pendeta senior
+          yang memintah atau bisa dikatakan memerintahkan jemaatnya untuk
+          memberi yang terbaik, jangan memberi dengan mominal yang kecil. Beliau
+          merendahkan jemaat yang memberi dengan nominal kecil, sebut saja dua
+          ribu rupiah atau lima ribu rupiah.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Akhirnya jemaat yang awalnya ingin memberi persembahan dua ribu atau
+          lima ribu merasa malu, sehingga ada jemaat yang memilih untuk tidak
+          memberi ada juga yang dengan terpaksa mengeluarkan uang pecahan
+          sepuluh ribuan keatas.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Hal ini membuat jemaat memberi karena <strong
+            class="font-semibold text-gray-800">gengsi</strong
+          > bukan karena mengasihi Tuhan. Tapi tenang saudara, perkataan saya tentang
+          pendeta tadi tidaklah nyata, karena mana mungkin ada pendeta berkata demikian.
+        </p>
+
+        <!-- Blockquote dengan schema -->
+        <blockquote
+          class="border-l-4 border-blue-500 pl-4 my-6 italic text-gray-700 bg-blue-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Hendaklah masing-masing memberikan menurut kerelaan hatinya, jangan
+            dengan sedih hati atau karena paksaan, sebab Allah mengasihi orang
+            yang memberi dengan sukacita."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- 2 Korintus 9:7</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Jika kita memberi dengan sedih hati atau karena paksaan, maka
+          pemberian kita tidak diterima oleh Tuhan. Sama halnya ketika kita
+          memberikan persembahan hanya karena gengsi bukan karena kasih, maka
+          persembahan kita tidak diterima oleh Tuhan (Matius 15:8-9).
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ingat, <strong class="font-semibold text-gray-800"
+            >Tuhan tidak butuh uangmu</strong
+          >, <strong class="font-semibold text-gray-800"
+            >Tuhan butuh hati yang tulus mengasihiNya</strong
+          >.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Hal ini bukan hanya berlaku saat kita memberikan korban persembahan,
+          tetapi juga dalam kehidupan sehari-hari. Jangan memberi jika bukan
+          karena kasih, karena itu hanya akan membuat kemunafikan dalam dirimu.
+          Jika kita memberi haruslah kita memberi karena kasih, bukan karena
+          gengsi.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Memberi karena Kasih bukan Untuk Investasi
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Banyak orang memberi kepada Tuhan agar mereka diberi lebih banyak oleh
+          Tuhan, hal ini semacam menghutangi Tuhan. Lucu sekali pemikiran ini,
+          seakan-akan Tuhan butuh uang kita, padahal uang itu hanyalah nilai
+          tukar yang dibuat oleh manusia. Terus kok bisa ada konsep menghutangi
+          Tuhan?
+        </p>
+
+        <!-- Blockquote dengan schema -->
+        <blockquote
+          class="border-l-4 border-blue-500 pl-4 my-6 italic text-gray-700 bg-blue-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Atau siapakah yang pernah memberikan sesuatu kepada-Nya, sehingga
+            Ia harus menggantikannya? Sebab segala sesuatu adalah dari Dia, dan
+            oleh Dia, dan kepada Dia: Bagi Dialah kemuliaan sampai
+            selama-lamanya!"
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Roma 11:35-36</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Memberi kepada Tuhan itu karena kita sadar bahwa segala sesuatu untuk
+          kemuliaan Tuhan. Jangan sampai kita memberi untuk investasi, karena
+          uang itu sebuah benda yang berharga di mata manusia, tetapi tidak di
+          mata Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Mungkin kamu bertanya, lantas kenapa Tuhan menyuruh bangsa Israel
+          memberikan persepuluhan jika memang uang itu tidak berharga di mata
+          Tuhan? Kalau ada yang bertanya demikian seperti belum tuntas membaca
+          Firman Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Perpuluhan yang Tuhan perintahkah bukan diberikan kepada Tuhan, tetapi
+          kepada suku Lewi yang tidak mendapat bagian dari tanah perjanjian.
+          Bangsa Israel memiliki 12 suku, salah satunya adalah suku Lewi. Suku
+          Lewi tidak mendapat jatah tanah perjanjian yang dijanjikan oleh Tuhan
+          kepada bangsa Israel, sebagai gantinya Tuhan menyuruh semua suku lain
+          di bangsa Israel untuk memberikan perpuluhan kepada suku Lewi
+          (Bilangan 18:21).
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Selain diberikan kepada suku Lewi, perpuluhan juga diperuntuhkan untuk
+          orang asing, anak yatim, dan janda yang ada di wilayah Israel agar
+          mereka bisa makan dengan kenyang. Ketika memberikan perpuluhan Tuhan
+          menjajikan berkat kepada bangsa Israel (Ulangan 14:28-29).
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Jadi jelas ya, perpuluhan yang diperintah oleh Tuhan ke bangsa Israel
+          itu bukan diberikan kepada Tuhan, tetapi diberikan kepada suku Lewi
+          sebagai ganti jatah tanah perjanjian, dan kepada orang asing, anak
+          yatim, dan janda (Ulangan 14:28-29).
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Penting untuk diingat, memberi itu karena kasih bukan untuk investasi.
+          Memberi karna kasih dengan tujuan untuk kemuliaan nama Tuhan, bukan
+          untuk investasi kepada Tuhan.
+        </p>
+      </section>
+
+      <!-- Conclusion -->
+      <section class="mb-8">
+        <p class="mb-4 leading-relaxed">
+          Kenapa di awal saya mengatakan "Memberi kepada orang yang membutuhkan
+          itu lebih baik dari pada kita memberi ke Gereja". Tetapi bukan berarti
+          memberi ke Gereja adalah sesuatu yang tidak baik. Memberkati Gereja
+          lewat persembahan merupakan hal yang penting, karena melalui Gereja
+          banyak orang mengenal Tuhan. Tolong hal ini jangan di salah artikan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Saya hanya mau menegaskan bahwa pemberian yang berkenan dihadapan
+          Tuhan bukan hanya memberi ke Gereja, tetapi juga termasuk memberi ke
+          orang yang membutuhkan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Gereja juga butuh finansial untuk membeli peralatan pendukung ibadah
+          agar ibadah jadi lebih baik. Tetapi satu hal yang ditekankan adalah
+          ketika memberi itu karena kasih bukan karena gengsi atau untuk
+          investasi.
+        </p>
+        <p class="mb-4 leading-relaxed font-semibold">
+          Tuhan Yesus Memberkati.
+        </p>
+        <p class="text-gray-600 font-medium">Penulis : {renunganData.author}</p>
+      </section>
+    </div>
+  </article>
+</RenunganLayout>

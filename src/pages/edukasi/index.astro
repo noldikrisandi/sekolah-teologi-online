@@ -1,0 +1,547 @@
+---
+// src/pages/edukasi/index.astro
+import EdukasiLayout from "../../layouts/EdukasiLayout.astro";
+
+// Data untuk SEO dan konten
+const pageData = {
+  title: "Edukasi Teologi - Pembelajaran Alkitabiah untuk Penguatan Iman",
+  description:
+    "Temukan edukasi teologi alkitabiah yang mendalam tentang doktrin Kristen, teologi sistematik, etika teologis, dan pembelajaran Alkitab untuk memperkuat iman dan pengertian akan Firman Tuhan.",
+  image: "/images/banner/edukasi-teologi.webp",
+  url: "edukasi",
+  type: "website",
+  articles: [
+    {
+      title: "Panduan Lengkap Teologi Sistematika untuk Pemula",
+      description:
+        "Memahami dasar-dasar teologi sistematika dalam iman Kristen",
+      url: "/edukasi/teologi-sistematik/panduan-lengkap",
+      datePublished: "2024-01-15",
+      author: "Tim Sekolah Teologi",
+    },
+    {
+      title: "Keselamatan dalam Iman Kristen: Anugerah atau Perbuatan?",
+      description: "Menjelajahi doktrin keselamatan menurut pengajaran Alkitab",
+      url: "/edukasi/keselamatan-dalam-iman-kristen/doktrin-keselamatan",
+      datePublished: "2024-01-10",
+      author: "Tim Sekolah Teologi",
+    },
+  ],
+  breadcrumbs: [
+    { name: "Home", url: "https://sekolahteologi.com/" },
+    { name: "Edukasi Teologi", url: "https://sekolahteologi.com/edukasi" },
+  ],
+};
+---
+
+<EdukasiLayout {...pageData}>
+  <div class="space-y-10">
+    <!-- Hero Section -->
+    <section
+      class="relative bg-gradient-to-br from-sky-600 to-sky-800 rounded-2xl p-8 md:p-12 text-white overflow-hidden">
+      <div
+        class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cGF0aCBkPSJNMCA0MGg0MFYwaC00MCIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xNSA0MGgxMHYtNDBoLTEwdjQwem0yMC0yMGgxMHYtNDBoLTEwdjQweiIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgZmlsbD0idXJsKCNhKSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg==')] opacity-20">
+      </div>
+      <div class="relative z-10 max-w-3xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Edukasi Teologi</h1>
+        <p class="text-xl md:text-2xl text-sky-100 max-w-3xl mx-auto mb-6">
+          Memperdalam Pengertian Iman Kristen Melalui Pembelajaran Teologi yang
+          Alkitabiah
+        </p>
+        <div class="mt-8">
+          <a
+            href="/edukasi/teologi-sistematik"
+            class="inline-flex items-center bg-white text-sky-700 px-6 py-3 rounded-lg hover:bg-sky-50 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl">
+            Mulai Belajar Sekarang
+            <svg
+              class="w-5 h-5 ml-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section
+      class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-sky-100">
+      <div class="flex items-start mb-6">
+        <div class="bg-sky-100 p-3 rounded-full mr-4">
+          <svg
+            class="w-6 h-6 text-sky-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+            ></path>
+          </svg>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800">
+          Mengapa Belajar Teologi?
+        </h2>
+      </div>
+      <div class="prose prose-lg max-w-none text-gray-700">
+        <p class="text-lg">
+          Teologi bukan hanya untuk pendeta atau akademisi, tetapi untuk setiap
+          orang percaya yang ingin mengenal Allah lebih dalam. Melalui edukasi
+          teologi yang alkitabiah, kita dapat membangun fondasi iman yang kokoh
+          dan mampu membedakan kebenaran dari kesalahan.
+        </p>
+        <p class="text-lg">
+          Di <strong class="text-sky-600">SekolahTeologi.com</strong>, kami
+          menyajikan materi teologi yang mudah dipahami namun tetap mendalam,
+          sesuai dengan pengajaran Alkitab dan tradisi gereja yang sehat.
+        </p>
+      </div>
+    </section>
+
+    <!-- Categories Grid -->
+    <section
+      class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-sky-100">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">
+          Area Pembelajaran Teologi
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Jelajahi berbagai bidang teologi untuk memperdalam pengertian iman
+          Kristen Anda
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 2xl:grid-cols-3 gap-6">
+        <!-- Hukum Tuhan -->
+        <div
+          class="group bg-gradient-to-br from-white to-sky-50 border border-sky-100 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div
+            class="bg-sky-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-sky-200 transition-colors">
+            <svg
+              class="w-6 h-6 text-sky-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Hukum Tuhan</h3>
+          <p class="text-gray-600 mb-4">
+            Memahami hukum-hukum Allah dalam Perjanjian Lama dan relevansinya
+            bagi orang Kristen masa kini.
+          </p>
+          <a
+            href="/edukasi/hukum-tuhan"
+            class="inline-flex items-center text-sky-600 hover:text-sky-700 font-semibold group-hover:translate-x-1 transition-transform">
+            Pelajari Selengkapnya
+            <svg
+              class="w-4 h-4 ml-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Keselamatan Dalam Iman Kristen -->
+        <div
+          class="group bg-gradient-to-br from-white to-sky-50 border border-sky-100 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div
+            class="bg-sky-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-sky-200 transition-colors">
+            <svg
+              class="w-6 h-6 text-sky-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">
+            Keselamatan Dalam Iman Kristen
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Menjelajahi doktrin keselamatan oleh anugerah melalui iman dalam
+            Yesus Kristus.
+          </p>
+          <a
+            href="/edukasi/keselamatan-dalam-iman-kristen"
+            class="inline-flex items-center text-sky-600 hover:text-sky-700 font-semibold group-hover:translate-x-1 transition-transform">
+            Pelajari Selengkapnya
+            <svg
+              class="w-4 h-4 ml-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Dogma dan Doktrin -->
+        <div
+          class="group bg-gradient-to-br from-white to-sky-50 border border-sky-100 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div
+            class="bg-sky-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-sky-200 transition-colors">
+            <svg
+              class="w-6 h-6 text-sky-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">
+            Dogma dan Doktrin
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Pengajaran tentang keyakinan dasar iman Kristen yang telah diakui
+            oleh gereja sepanjang sejarah.
+          </p>
+          <a
+            href="/edukasi/dogma-dan-doktrin"
+            class="inline-flex items-center text-sky-600 hover:text-sky-700 font-semibold group-hover:translate-x-1 transition-transform">
+            Pelajari Selengkapnya
+            <svg
+              class="w-4 h-4 ml-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Teologi Sistematik -->
+        <div
+          class="group bg-gradient-to-br from-white to-sky-50 border border-sky-100 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div
+            class="bg-sky-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-sky-200 transition-colors">
+            <svg
+              class="w-6 h-6 text-sky-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">
+            Teologi Sistematik
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Penyusunan kebenaran Alkitab secara sistematis dalam
+            kategori-kategori teologis yang terorganisir.
+          </p>
+          <a
+            href="/edukasi/teologi-sistematik"
+            class="inline-flex items-center text-sky-600 hover:text-sky-700 font-semibold group-hover:translate-x-1 transition-transform">
+            Pelajari Selengkapnya
+            <svg
+              class="w-4 h-4 ml-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Teologi Praktis / Pastoral -->
+        <div
+          class="group bg-gradient-to-br from-white to-sky-50 border border-sky-100 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div
+            class="bg-sky-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-sky-200 transition-colors">
+            <svg
+              class="w-6 h-6 text-sky-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">
+            Teologi Praktis / Pastoral
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Penerapan kebenaran teologi dalam pelayanan, konseling, dan
+            kehidupan bergereja sehari-hari.
+          </p>
+          <a
+            href="/edukasi/teologi-praktis-pastoral"
+            class="inline-flex items-center text-sky-600 hover:text-sky-700 font-semibold group-hover:translate-x-1 transition-transform">
+            Pelajari Selengkapnya
+            <svg
+              class="w-4 h-4 ml-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Alkitab / Kitab Suci -->
+        <div
+          class="group bg-gradient-to-br from-white to-sky-50 border border-sky-100 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div
+            class="bg-sky-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-sky-200 transition-colors">
+            <svg
+              class="w-6 h-6 text-sky-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">
+            Alkitab / Kitab Suci
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Kajian tentang kanon, inspirasi, otoritas, dan penafsiran Alkitab
+            yang benar.
+          </p>
+          <a
+            href="/edukasi/alkitab"
+            class="inline-flex items-center text-sky-600 hover:text-sky-700 font-semibold group-hover:translate-x-1 transition-transform">
+            Pelajari Selengkapnya
+            <svg
+              class="w-4 h-4 ml-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section
+      class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-sky-100">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">
+          Artikel Teologi Terbaru
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Temukan wawasan teologis terkini untuk memperkaya pemahaman iman Anda
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        {
+          pageData.articles.map((article) => (
+            <article class="group bg-gradient-to-br from-white to-sky-50 border border-sky-100 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div class="flex justify-between items-start mb-4">
+                <span class="bg-sky-100 text-sky-700 text-xs font-semibold px-3 py-1 rounded-full">
+                  Artikel Baru
+                </span>
+                <span class="text-xs text-gray-500">
+                  {new Date(article.datePublished).toLocaleDateString("id-ID")}
+                </span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3 group-hover:text-sky-600 transition-colors">
+                <a href={article.url}>{article.title}</a>
+              </h3>
+              <p class="text-gray-600 mb-4">{article.description}</p>
+              <div class="flex justify-between items-center text-sm text-gray-500 pt-4 border-t border-sky-100">
+                <span>Oleh: {article.author}</span>
+                <a
+                  href={article.url}
+                  class="inline-flex items-center text-sky-600 hover:text-sky-700 font-medium group-hover:translate-x-1 transition-transform">
+                  Baca Artikel
+                  <svg
+                    class="w-4 h-4 ml-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+
+      <div class="text-center mt-8">
+        <a
+          href="/artikel"
+          class="inline-flex items-center bg-sky-600 text-white px-6 py-3 rounded-lg hover:bg-sky-700 transition-colors font-semibold shadow-md hover:shadow-lg">
+          Lihat Semua Artikel
+          <svg
+            class="w-5 h-5 ml-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section
+      class="bg-gradient-to-r from-sky-600 to-sky-800 rounded-2xl p-10 text-center text-white relative overflow-hidden">
+      <div
+        class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cGF0aCBkPSJNMCA0MGg0MFYwaC00MCIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xNSA0MGgxMHYtNDBoLTEwdjQwem0yMC0yMGgxMHYtNDBoLTEwdjQweiIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgZmlsbD0idXJsKCNhKSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg==')] opacity-10">
+      </div>
+      <div class="relative z-10">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">
+          Mulai Perjalanan Teologi Anda
+        </h2>
+        <p class="text-sky-100 text-lg mb-8 max-w-2xl mx-auto">
+          Bergabunglah dengan komunitas pembelajar yang ingin memperdalam
+          pengertian akan Allah dan Firman-Nya melalui edukasi teologi yang
+          alkitabiah.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/edukasi/teologi-sistematik"
+            class="bg-white text-sky-600 px-6 py-3 rounded-lg hover:bg-sky-50 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl">
+            Mulai Belajar
+          </a>
+          <a
+            href="/renungan"
+            class="border-2 border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-sky-600 transition-all duration-300 font-semibold">
+            Baca Renungan
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+</EdukasiLayout>
+
+<style>
+/* Custom styles untuk halaman edukasi */
+.prose {
+  line-height: 1.7;
+}
+
+.prose p {
+  margin-bottom: 1.2em;
+}
+
+/* Smooth transitions untuk semua interactive elements */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+/* Gradient text effect */
+.gradient-text {
+  background: linear-gradient(135deg, #0ea5e9, #0369a1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+</style>

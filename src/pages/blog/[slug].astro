@@ -1,0 +1,25 @@
+---
+// src/pages/blog/[slug].astro
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const blogPosts = await getCollection('blog');
+  
+  return blogPosts.map((post) => ({
+    params: { 
+      slug: post.slug 
+    },
+    props: {
+      post,
+      // Data untuk sitemap
+      lastmod: post.data.updateDate || post.data.publishDate,
+      priority: post.data.priority,
+      changefreq: post.data.changefreq,
+    }
+  }));
+}
+
+const { post } = Astro.props;
+---
+
+<!-- Layout dan konten blog -->

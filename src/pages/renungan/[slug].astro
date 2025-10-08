@@ -1,0 +1,46 @@
+---
+// src/pages/renungan/[slug].astro
+import { getCollection } from 'astro:content';
+import RenunganLayout from '../../layouts/RenunganLayout.astro';
+
+export async function getStaticPaths() {
+  const renunganItems = await getCollection('renungan');
+  
+  return renunganItems.map((item) => ({
+    params: { 
+      slug: item.slug 
+    },
+    props: {
+      renungan: item,
+      lastmod: item.data.publishDate,
+      priority: item.data.priority,
+      changefreq: item.data.changefreq,
+    }
+  }));
+}
+
+const { renungan } = Astro.props;
+---
+
+<RenunganLayout 
+  title={renungan.data.title} 
+  description={renungan.data.description}
+>
+  <div class="bg-white rounded-lg shadow-sm p-6">
+    <h1 class="text-3xl font-bold text-gray-900 mb-4">{renungan.data.title}</h1>
+    
+    {/* Metadata renungan */}
+    <div class="flex items-center gap-4 text-sm text-gray-600 mb-6">
+      <span>Ayat: {renungan.data.verse}</span>
+      <span>•</span>
+      <span>Oleh: {renungan.data.author}</span>
+      <span>•</span>
+      <span>{new Date(renungan.data.publishDate).toLocaleDateString('id-ID')}</span>
+    </div>
+    
+    {/* Konten renungan */}
+    <article class="prose prose-lg max-w-none">
+      
+    </article>
+  </div>
+</RenunganLayout>

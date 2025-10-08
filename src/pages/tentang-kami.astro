@@ -1,0 +1,232 @@
+---
+// src/pages/tentang-kami.astro
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const teamMembers = [
+  {
+    name: "Noldi Krisandi",
+    role: "Founder & Inisiator",
+    description: "Pemilik PT Menara Edukasi dan Teknologi yang memiliki visi untuk menyediakan edukasi teologi berkualitas secara gratis",
+    image: "/images/team/noldi-krisandi.webp"
+  }
+];
+
+const values = [
+  {
+    icon: "📖",
+    title: "Alkitabiah",
+    description: "Semua konten berdasarkan kebenaran Firman Tuhan yang alkitabiah"
+  },
+  {
+    icon: "💝",
+    title: "Gratis Selamanya",
+    description: "Komitmen untuk tetap gratis tanpa biaya tersembunyi"
+  },
+  {
+    icon: "🎯",
+    title: "Relevan",
+    description: "Konten yang sesuai dengan kebutuhan rohani zaman sekarang"
+  },
+  {
+    icon: "🤝",
+    title: "Komunitas",
+    description: "Membangun komunitas yang saling mendukung dalam iman"
+  }
+];
+---
+
+<BaseLayout 
+  title="Tentang Kami - Sekolah Teologi"
+  description="Kenali lebih dekat visi, misi, dan tim di balik Sekolah Teologi - platform edukasi teologi gratis oleh PT Menara Edukasi dan Teknologi"
+  url="tentang-kami"
+  type="website"
+>
+
+<!-- Hero Section -->
+<section class="relative bg-gradient-to-r from-sky-600 to-sky-800 text-white py-20 overflow-hidden">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 bg-black/10"></div>
+  <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-32 translate-x-32"></div>
+  <div class="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full -translate-x-48 translate-y-48"></div>
+  
+  <div class="relative container mx-auto px-4 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-6 animate-fade-in-up">
+      Tentang sekolahteologi.com
+    </h1>
+    <p class="text-xl text-sky-100 max-w-3xl mx-auto leading-relaxed">
+      Platform edukasi teologi gratis yang lahir dari visi untuk membagikan pengertian 
+      Firman Tuhan kepada semua orang tanpa hambatan biaya
+    </p>
+  </div>
+</section>
+
+<!-- Vision & Mission -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+      
+      <!-- Vision -->
+      <div class="text-center lg:text-left">
+        <div class="w-16 h-16 bg-gradient-to-r from-sky-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto lg:mx-0 mb-6">
+          <span class="text-2xl text-white">👁️</span>
+        </div>
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Visi Kami</h2>
+        <p class="text-lg text-gray-600 leading-relaxed">
+          Menjadi platform edukasi teologi terdepan yang menyediakan akses pembelajaran 
+          alkitabiah berkualitas tinggi secara gratis untuk setiap orang yang haus 
+akan kebenaran Firman Tuhan, tanpa memandang latar belakang atau kemampuan finansial.
+        </p>
+      </div>
+      
+      <!-- Mission -->
+      <div class="text-center lg:text-left">
+        <div class="w-16 h-16 bg-gradient-to-r from-sky-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto lg:mx-0 mb-6">
+          <span class="text-2xl text-white">🎯</span>
+        </div>
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Misi Kami</h2>
+        <ul class="text-lg text-gray-600 space-y-4">
+          <li class="flex items-start">
+            <span class="text-sky-500 mr-3">•</span>
+            Menyediakan konten teologi yang alkitabiah dan mudah dipahami
+          </li>
+          <li class="flex items-start">
+            <span class="text-sky-500 mr-3">•</span>
+            Menjaga komitmen untuk tetap gratis selamanya
+          </li>
+          <li class="flex items-start">
+            <span class="text-sky-500 mr-3">•</span>
+            Membangun komunitas yang saling mendukung dalam iman
+          </li>
+          <li class="flex items-start">
+            <span class="text-sky-500 mr-3">•</span>
+            Menjangkau generasi digital dengan konten yang relevan
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Company Info -->
+<section class="py-16 bg-sky-50">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="w-20 h-20 bg-gradient-to-r from-sky-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+        <span class="text-3xl text-white">🏢</span>
+      </div>
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Dikembangkan oleh PT Menara Edukasi dan Teknologi</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-8">
+        Sekolah Teologi merupakan inisiatif sosial dari PT Menara Edukasi dan Teknologi, 
+        sebuah perusahaan yang berkomitmen dalam pengembangan edukasi dan teknologi 
+        untuk kemajuan bangsa Indonesia.
+      </p>
+      <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100">
+        <p class="text-gray-700 text-lg italic leading-relaxed">
+          "Visi kami sederhana: membuat pendidikan teologi berkualitas dapat diakses oleh semua orang. 
+          Kami percaya bahwa pengertian akan Firman Tuhan seharusnya tidak terhalang oleh biaya."
+        </p>
+        <div class="mt-6 flex items-center justify-center">
+          <div class="w-12 h-12 bg-gradient-to-r from-sky-500 to-blue-600 rounded-full flex items-center justify-center mr-4">
+            <span class="text-white font-bold">N</span>
+          </div>
+          <div>
+            <div class="font-semibold text-gray-800">Noldi Krisandi</div>
+            <div class="text-sky-600">Pemilik PT Menara Edukasi dan Teknologi</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Values -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Nilai-nilai Kami</h2>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+        Prinsip-prinsip yang menjadi fondasi pelayanan kami
+      </p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+      {values.map((value, index) => (
+        <div class="text-center p-6 group hover:transform hover:-translate-y-2 transition-all duration-300">
+          <div class="w-16 h-16 bg-gradient-to-r from-sky-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+            <span class="text-2xl text-white">{value.icon}</span>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">{value.title}</h3>
+          <p class="text-gray-600 leading-relaxed">{value.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- Team Section -->
+<section class="py-16 bg-sky-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Tim Kami</h2>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+        Individu-individu yang berdedikasi di balik layar
+      </p>
+    </div>
+    
+    <div class="max-w-md mx-auto">
+      {teamMembers.map((member) => (
+        <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100 text-center group hover:shadow-xl transition-all duration-300">
+          <div class="w-32 h-32 bg-gradient-to-r from-sky-400 to-blue-500 rounded-full mx-auto mb-6 flex items-center justify-center text-white text-4xl font-bold">
+            {member.name.split(' ').map(n => n[0]).join('')}
+          </div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-2">{member.name}</h3>
+          <div class="text-sky-600 font-semibold mb-4">{member.role}</div>
+          <p class="text-gray-600 leading-relaxed">{member.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-16 bg-gradient-to-r from-sky-600 to-sky-800 text-white">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6">Siap Bergabung dengan Komunitas Kami?</h2>
+    <p class="text-xl text-sky-100 mb-8 max-w-2xl mx-auto">
+      Mulai perjalanan rohani Anda hari ini dengan konten edukasi teologi gratis berkualitas tinggi
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <a 
+        href="/edukasi"
+        class="bg-white text-sky-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-sky-50 transition-all duration-300 shadow-lg hover:shadow-xl"
+      >
+        Mulai Belajar
+      </a>
+      <a 
+        href="/kontak"
+        class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-all duration-300"
+      >
+        Hubungi Kami
+      </a>
+    </div>
+  </div>
+</section>
+
+</BaseLayout>
+
+<style>
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
