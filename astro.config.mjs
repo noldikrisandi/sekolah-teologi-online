@@ -4,12 +4,11 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   site: 'https://sekolahteologi.com',
+  
   integrations: [sitemap({
-    // Konfigurasi khusus berdasarkan struktur Anda
     changefreq: 'weekly',
     priority: 0.7,
     
-    // Filter halaman yang tidak perlu masuk sitemap
     filter: (page) => {
       const excludedPaths = [
         '/admin',
@@ -20,9 +19,7 @@ export default defineConfig({
       return !excludedPaths.some(excluded => page.includes(excluded));
     },
     
-    // Custom serializer untuk prioritas berbeda
     serialize: (item) => {
-      // Homepage - priority tertinggi
       if (item.url === 'https://sekolahteologi.com/') {
         return {
           ...item,
@@ -31,7 +28,6 @@ export default defineConfig({
         };
       }
       
-      // Halaman utama (about, contact) - priority tinggi
       if (['/about/', '/contact/'].some(path => item.url.includes(path))) {
         return {
           ...item,
@@ -40,7 +36,6 @@ export default defineConfig({
         };
       }
       
-      // Blog & Renungan - priority medium
       if (item.url.includes('/blog/') || item.url.includes('/renungan/')) {
         return {
           ...item,
@@ -49,7 +44,6 @@ export default defineConfig({
         };
       }
       
-      // Edukasi - priority medium
       if (item.url.includes('/edukasi/')) {
         return {
           ...item,
@@ -61,20 +55,16 @@ export default defineConfig({
       return item;
     }
   })],
-  build: {
-    format: 'directory'
-  },
+  
+  // HAPUS build.format - pakai default
   vite: {
     plugins: [tailwindcss()],
-    server: {
-      fs: {
-        allow: ['..']
-      }
-    }
   },
+  
   redirects: {
     '/home': '/',
     '/index': '/',
   },
+  
   trailingSlash: 'never'
 });
