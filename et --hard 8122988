@@ -1,0 +1,21 @@
+[33m86c9691[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m revert: back to working static config
+[33meb71bf0[m [resolve 1 404]
+[33mff7dc81[m [update 404]
+[33m8122988[m [add vercel.json]
+[33mcbf3fa8[m Ganti seluruh isi proyek dengan versi baru
+[33m91ad92f[m [update google confirm]
+[33m457946b[m [add google]
+[33m05fc67c[m update sejarah bangsa israel, tapi belum selesai
+[33ma438d63[m update edukasi keselamatan, dan perbaiki beberapa hal
+[33m2d18020[m update 2025-01-21
+[33m5ab5e17[m mengubah halaman renungan harian
+[33m35ccded[m menambahkan sistem keamanan
+[33md3bc830[m revisi sekolah teologi online 2025-01-15
+[33m77ea40f[m perbaiki dan lengkapi renungan 13 januari 2025
+[33maee4a40[m lengkapi artikel 2025-01-12
+[33m8f27a8a[m perbaiki text
+[33m23ea1b7[m perbaiki deploy netlify 4
+[33ma26ee14[m perbaiki deploy netlify 2
+[33me365d4f[m perbaiki deploy di netlify
+[33m178e46e[m first commit
+[33m6729faa[m Initial commit from Create Next App
