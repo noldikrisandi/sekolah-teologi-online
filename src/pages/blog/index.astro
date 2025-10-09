@@ -1,7 +1,7 @@
 ---
 // src/pages/blog/index.astro
 import { getCollection } from 'astro:content';
-import BlogLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
 
 export const prerender = true;
 
@@ -12,7 +12,7 @@ const sortedPosts = blogPosts.sort(
 );
 ---
 
-<BlogLayout 
+<BaseLayout 
   title="Blog Sekolah Teologi" 
   description="Artikel, renungan, dan materi teologi untuk memperdalam iman Kristen"
 >
@@ -100,7 +100,7 @@ const sortedPosts = blogPosts.sort(
       </div>
     </section>
   </div>
-</BlogLayout>
+</BaseLayout>
 
 <style>
   .prose {

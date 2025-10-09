@@ -1,0 +1,334 @@
+---
+// src/pages/renungan/kasih-dan-damai-sejahtera/damai-sejahtera-di-tengah-badai.astro
+import RenunganLayout from "../../../layouts/RenunganLayout.astro";
+
+const renunganData = {
+  title: "Renungan Harian, 3 November 2025 - Damai Sejahtera di Tengah Badai",
+  author: "Noldi Krisandi",
+  image: "/images/banner/renungan-rohani.webp",
+  imageAlt: "Ilustrasi damai sejahtera Allah yang melampaui segala akal di tengah badai kehidupan",
+  description: "Renungan harian 3 November 2025 tentang menemukan damai sejahtera Allah di tengah badai kehidupan. Pelajari bagaimana memiliki ketenangan yang melampaui akal sehat dalam menghadapi masalah dan kesulitan.",
+  publishedDate: "2025-11-03T08:00:00+07:00",
+  modifiedDate: "2025-11-03T08:00:00+07:00",
+  category: "renungan harian kristen",
+  scripture: ["Filipi 4:6-7", "Yohanes 14:27", "Yesaya 26:3", "Matius 8:23-27"]
+};
+
+const breadcrumbs = [
+  { name: "Home", url: "https://sekolahteologi.com/" },
+  { name: "Renungan", url: "https://sekolahteologi.com/renungan" },
+  {
+    name: "Kasih dan Damai Sejahtera",
+    url: "https://sekolahteologi.com/renungan/kasih-dan-damai-sejahtera",
+  },
+  { name: "Damai Sejahtera di Tengah Badai", url: "https://sekolahteologi.com/renungan/kasih-dan-damai-sejahtera/damai-sejahtera-di-tengah-badai" },
+];
+---
+
+<RenunganLayout
+  title={renunganData.title}
+  description={renunganData.description}
+  url="renungan/kasih-dan-damai-sejahtera/damai-sejahtera-di-tengah-badai"
+  type="article"
+  articles={[{
+    headline: renunganData.title,
+    description: renunganData.description,
+    images: [renunganData.image],
+    datePublished: renunganData.publishedDate,
+    dateModified: renunganData.modifiedDate,
+    authorName: renunganData.author,
+    url: "/renungan/kasih-dan-damai-sejahtera/damai-sejahtera-di-tengah-badai",
+    keywords: ["damai sejahtera", "badai kehidupan", "renungan harian", "ketenangan dalam Tuhan"]
+  }]}
+  breadcrumbs={breadcrumbs}
+>
+
+  <article class="bg-white rounded-lg shadow-sm p-6 md:p-8" itemscope itemtype="https://schema.org/Article">
+    <!-- Header dengan microdata -->
+    <header class="mb-8 border-l-4 border-sky-600 pl-4" itemprop="headline">
+      <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+        {renunganData.title}
+      </h1>
+      <div class="flex flex-wrap items-center gap-4 text-gray-600 text-lg">
+        <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+          Penulis: <span itemprop="name">{renunganData.author}</span>
+        </p>
+        <meta itemprop="datePublished" content={renunganData.publishedDate} />
+        <meta itemprop="dateModified" content={renunganData.modifiedDate} />
+      </div>
+      <h2 class="text-sky-700 text-lg">
+        Renungan Harian Kristen Hari ini,
+        <time datetime="2025-11-03" itemprop="datePublished">03 November 2025</time>
+      </h2>
+    </header>
+
+    <!-- Featured Image dengan schema -->
+    <div class="mb-8" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      <img
+        src={renunganData.image}
+        alt={renunganData.imageAlt}
+        width={800}
+        height={400}
+        class="w-full h-48 md:h-80 object-cover rounded-lg shadow-md"
+        itemprop="url"
+      />
+      <meta itemprop="width" content="800" />
+      <meta itemprop="height" content="400" />
+    </div>
+
+    <!-- Content dengan articleBody schema -->
+    <div class="prose prose-lg max-w-none text-gray-700" itemprop="articleBody">
+      <!-- Introduction -->
+      <section class="mb-8">
+        <p class="mb-4 leading-relaxed">
+          Shalom saudara-saudari yang dikasihi oleh Tuhan Yesus Kristus.<br />
+          Kiranya damai sejahtera Allah yang melampaui segala akal, memelihara hati dan pikiran kita semua.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Hidup ini tidak selalu berjalan mulus. Ada kalanya kita menghadapi badai kehidupan yang datang bertubi-tubi - masalah keuangan, kesehatan yang terganggu, hubungan yang retak, atau tekanan pekerjaan yang tak kunjung reda. Di saat-saat seperti ini, di manakah kita dapat menemukan ketenangan?
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Renungan hari ini akan membawa kita memahami makna damai sejahtera Allah yang sesungguhnya - bukan sekadar ketiadaan masalah, tetapi ketenangan yang dalam di tengah badai yang mengamuk.
+        </p>
+      </section>
+
+      <!-- Ayat Pembuka -->
+      <blockquote
+        class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+        itemprop="citation">
+        <p class="mb-2 p-3">
+          "Janganlah hendaknya kamu kuatir tentang apapun juga, tetapi nyatakanlah dalam segala hal keinginanmu kepada Allah dalam doa dan permohonan dengan ucapan syukur. Damai sejahtera Allah, yang melampaui segala akal, akan memelihara hati dan pikiranmu dalam Kristus Yesus."
+        </p>
+        <cite class="text-sm not-italic text-gray-600" itemprop="source">- Filipi 4:6-7</cite>
+      </blockquote>
+
+      <!-- Bagian 1: Badai Kehidupan yang Tak Terelakkan -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Badai Kehidupan yang Tak Terelakkan
+        </h2>
+        
+        <p class="mb-4 leading-relaxed">
+          Seperti murid-murid Yesus yang menghadapi badai di danau Galilea, kita pun tidak bisa menghindari badai kehidupan. Badai itu bisa datang dalam berbagai bentuk:
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+            <h3 class="text-lg font-semibold text-red-800 mb-2">Badai Eksternal</h3>
+            <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+              <li>Masalah keuangan dan pekerjaan</li>
+              <li>Konflik dalam keluarga atau hubungan</li>
+              <li>Tekanan sosial dan lingkungan</li>
+              <li>Kondisi ekonomi yang tidak menentu</li>
+            </ul>
+          </div>
+
+          <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+            <h3 class="text-lg font-semibold text-blue-800 mb-2">Badai Internal</h3>
+            <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+              <li>Ketakutan dan kecemasan</li>
+              <li>Keputusasaan dan depresi</li>
+              <li>Rasa bersalah dan penyesalan</li>
+              <li>Krisis identitas dan tujuan hidup</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="mb-4 leading-relaxed">
+          Yang membedakan kita sebagai orang percaya bukanlah ketiadaan badai, tetapi bagaimana kita merespons badai tersebut. Apakah kita seperti murid-murid yang ketakutan, atau seperti Yesus yang tidur dengan tenang di perahu?
+        </p>
+      </section>
+
+      <!-- Bagian 2: Damai Sejahtera yang Berbeda -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Damai Sejahtera yang Berbeda dari Dunia
+        </h2>
+
+        <blockquote
+          class="border-l-4 border-green-500 pl-4 my-6 italic text-gray-700 bg-green-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Damai sejahtera Kutinggalkan bagimu. Damai sejahtera-Ku Kuberikan kepadamu, dan apa yang Kuberikan tidak seperti yang diberikan oleh dunia kepadamu. Janganlah gelisah dan gentar hatimu."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Yohanes 14:27</cite>
+        </blockquote>
+
+        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
+          <p class="text-gray-700">
+            <strong>Renungkan:</strong> Damai sejahtera dari dunia bergantung pada keadaan, sedangkan damai sejahtera dari Tuhan melampaui keadaan.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-white border border-gray-200 rounded-lg p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Damai Dunia</h3>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 text-sm">
+              <li>Bergantung pada kondisi eksternal</li>
+              <li>Sementara dan mudah hilang</li>
+              <li>Berdasarkan kemampuan diri sendiri</li>
+              <li>Fokus pada penyelesaian masalah</li>
+            </ul>
+          </div>
+
+          <div class="bg-white border border-gray-200 rounded-lg p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Damai Allah</h3>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 text-sm">
+              <li>Melampaui segala keadaan</li>
+              <li>Kekal dan tidak tergoyahkan</li>
+              <li>Berdasarkan janji Tuhan</li>
+              <li>Fokus pada kehadiran Tuhan</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bagian 3: Cara Mengalami Damai Sejahtera -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Tiga Kunci Mengalami Damai Sejahtera Allah
+        </h2>
+
+        <div class="space-y-6">
+          <div class="flex items-start">
+            <div class="flex-shrink-0 mt-1">
+              <div class="w-8 h-8 bg-sky-100 rounded-full flex items-center justify-center">
+                <span class="text-sky-600 text-sm font-bold">1</span>
+              </div>
+            </div>
+            <div class="ml-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Serahkan Segala Kekuatiran</h3>
+              <p class="text-gray-700 mb-2">
+                Filipi 4:6 mengajarkan kita untuk tidak kuatir tentang apapun, tetapi menyatakan segala keinginan kita kepada Allah. Ini bukan berarti masalah kita hilang, tetapi kita memindahkan beban tersebut dari pundak kita ke pundak Tuhan.
+              </p>
+              <p class="text-gray-600 text-sm italic">
+                "Serahkanlah kuatirmu kepada TUHAN, maka Ia akan memelihara engkau!" (Mazmur 55:23)
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="flex-shrink-0 mt-1">
+              <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                <span class="text-green-600 text-sm font-bold">2</span>
+              </div>
+            </div>
+            <div class="ml-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Pelihara Pikiran yang Tetap</h3>
+              <p class="text-gray-700 mb-2">
+                Yesaya 26:3 mengatakan, "Yang hatinya teguh Kaujagai dengan damai sejahtera, sebab kepada-Mulah ia percaya." Damai sejahtera datang ketika kita memusatkan pikiran kita pada Tuhan, bukan pada masalah.
+              </p>
+              <p class="text-gray-600 text-sm italic">
+                "Perhatikanlah perkara yang di atas, bukan yang di bumi." (Kolose 3:2)
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="flex-shrink-0 mt-1">
+              <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
+                <span class="text-purple-600 text-sm font-bold">3</span>
+              </div>
+            </div>
+            <div class="ml-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Ingat Kuasa Tuhan atas Badai</h3>
+              <p class="text-gray-700 mb-2">
+                Yesus yang tidur di perahu adalah gambaran sempurna tentang damai sejahtera. Dia tahu bahwa badai tidak berkuasa atas-Nya. Demikian pula, kita perlu mengingat bahwa Tuhan lebih besar dari badai apa pun yang kita hadapi.
+              </p>
+              <p class="text-gray-600 text-sm italic">
+                "Dan lihatlah, terjadilah gempa yang hebat, sebab seorang malaikat Tuhan turun dari langit..." (Matius 28:2)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bagian 4: Kesaksian dalam Badai -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Menjadi Kesaksian di Tengah Badai
+        </h2>
+
+        <p class="mb-4 leading-relaxed">
+          Ketika kita memiliki damai sejahtera di tengah badai, kita menjadi kesaksian yang hidup bagi orang lain. Dunia mungkin bertanya, "Bagaimana kamu bisa tetap tenang di tengah situasi seperti ini?"
+        </p>
+
+        <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-4">
+          <h3 class="text-lg font-semibold text-blue-800 mb-3">Kisah Nyata: Paulus di Penjara</h3>
+          <p class="text-gray-700 mb-3">
+            Bayangkan diri Anda sebagai penjaga penjara di Filipi. Anda melihat Paulus dan Silas, yang baru saja dicambuk dan dilemparkan ke penjara. Alih-alih mengeluh atau putus asa, mereka justru menyanyi dan memuji Tuhan di tengah malam.
+          </p>
+          <p class="text-gray-700">
+            Hasilnya? Gempa bumi membebaskan mereka, dan sang kepala penjara beserta seisi keluarganya menjadi percaya kepada Tuhan (Kisah Para Rasul 16:25-34). Damai sejahtera mereka di tengah penderitaan menjadi kesaksian yang powerful!
+          </p>
+        </div>
+      </section>
+
+      <!-- Bagian 5: Doa di Tengah Badai -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">Doa di Tengah Badai</h2>
+
+        <div class="bg-purple-50 border border-purple-200 rounded-lg p-6">
+          <p class="text-gray-700 italic leading-relaxed">
+            "Bapa yang penuh kasih dan damai sejahtera,<br><br>
+            Di tengah badai kehidupan yang kuhadapi saat ini, hatiku seringkali cemas dan takut. Masalah-masalah ini terasa begitu besar, dan kekuatanku begitu terbatas.<br><br>
+            Tuhan, aku datang kepada-Mu dengan segala kelemahanku. Aku serahkan semua kekuatiran, ketakutan, dan beban hidupku ke dalam tangan-Mu yang kuat. Penuhilah hatiku dengan damai sejahtera-Mu yang melampaui segala akal.<br><br>
+            Ingatkan aku bahwa Engkau lebih besar dari badai apa pun. Ajari aku untuk memandang kepada-Mu, bukan kepada gelombang yang mengamuk. Jadikan hidupku kesaksian bagi orang lain, bahwa dalam setiap keadaan, Engkau cukup bagiku.<br><br>
+            Dalam nama Yesus, yang berkuasa meneduhkan badai, amin."
+          </p>
+        </div>
+      </section>
+
+      <!-- Bagian 6: Ayat-ayat Penghiburan -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Ayat-ayat Penghiburan di Tengah Badai
+        </h2>
+
+        <div class="space-y-4">
+          <div class="bg-white border border-gray-200 rounded-lg p-4">
+            <p class="text-gray-700 mb-2">
+              "TUHAN itu dekat kepada orang-orang yang patah hati, dan Ia menyelamatkan orang-orang yang remuk jiwanya."
+            </p>
+            <p class="text-gray-600 text-sm font-semibold">Mazmur 34:19</p>
+          </div>
+
+          <div class="bg-white border border-gray-200 rounded-lg p-4">
+            <p class="text-gray-700 mb-2">
+              "Janganlah takut, sebab Aku menyertai engkau, janganlah bimbang, sebab Aku ini Allahmu; Aku akan meneguhkan, bahkan akan menolong engkau; Aku akan memegang engkau dengan tangan kanan-Ku yang membawa kemenangan."
+            </p>
+            <p class="text-gray-600 text-sm font-semibold">Yesaya 41:10</p>
+          </div>
+
+          <div class="bg-white border border-gray-200 rounded-lg p-4">
+            <p class="text-gray-700 mb-2">
+              "Semuanya itu Kukatakan kepadamu, supaya kamu beroleh damai sejahtera dalam Aku. Dalam dunia kamu menderita penganiayaan, tetapi kuatkanlah hatimu, Aku telah mengalahkan dunia."
+            </p>
+            <p class="text-gray-600 text-sm font-semibold">Yohanes 16:33</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <div class="bg-sky-50 border border-sky-200 rounded-lg p-6 text-center">
+        <h3 class="text-xl font-bold text-sky-800 mb-2">
+          Butuh Dukungan dan Doa?
+        </h3>
+        <p class="text-gray-700 mb-4">
+          Jika Anda sedang menghadapi badai kehidupan dan membutuhkan dukungan doa, jangan ragu untuk menghubungi komunitas gereja terdekat atau berbagi dengan saudara seiman.
+        </p>
+        <a
+          href="/renungan"
+          class="inline-block bg-sky-600 hover:bg-sky-700 text-white font-medium py-2 px-6 rounded-lg transition duration-200">
+          Temukan Renungan Penghiburan Lainnya
+        </a>
+      </div>
+    </div>
+
+    <!-- Penulis -->
+    <footer class="mt-8 pt-6 border-t border-gray-200">
+      <p class="text-gray-600 font-medium">Penulis: {renunganData.author}</p>
+      <p class="text-gray-600 font-medium mt-2">Tuhan Yesus Memberkati.</p>
+    </footer>
+  </article>
+</RenunganLayout>

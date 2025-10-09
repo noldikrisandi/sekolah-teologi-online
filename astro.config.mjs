@@ -61,10 +61,11 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   
-  redirects: {
-    '/home': '/',
-    '/index': '/',
-  },
+redirects: {
+  '/home': '/',
+  '/index': '/',
+},
+
   
   trailingSlash: 'never'
 });
