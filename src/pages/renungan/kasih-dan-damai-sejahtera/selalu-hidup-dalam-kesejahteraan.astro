@@ -1,0 +1,275 @@
+---
+// src/pages/renungan/kasih-dan-damai-sejahtera/selalu-hidup-dalam-kesejahteraan.astro
+import RenunganLayout from "../../../layouts/RenunganLayout.astro";
+
+const renunganData = {
+  title: "Renungan Harian, 6 November 2025 - Selalu Hidup dalam Kesejahteraan Sesuai Janji Tuhan",
+  author: "Noldi Krisandi",
+  image: "/images/banner/diberkati-tuhan.webp",
+  imageAlt: "seseorang yang mendapatkan berkat kesejahteraan dari Tuhan",
+  description: "Renungan hari ini, 6 November 2025 tentang bagaimana hidup dalam kesejahteraan sesuai janji Tuhan. Pelajari tiga langkah praktis: rajin bekerja, berdoa dengan pengharapan, dan menabung dengan hikmat Tuhan.",
+  publishedDate: "2025-11-06T08:00:00+07:00",
+  modifiedDate: "2025-11-06T08:00:00+07:00",
+  category: "renungan harian kristen",
+  scripture: ["Amsal 12:11", "Amsal 14:23", "2 Tesalonika 3:10", "Yeremia 29:11", "Filipi 4:6-7", "Amsal 6:6-8"]
+};
+---
+
+<RenunganLayout
+  title={renunganData.title}
+  description={renunganData.description}
+  url="renungan/kasih-dan-damai-sejahtera/selalu-hidup-dalam-kesejahteraan"
+  type="article"
+  articles={[{
+    headline: renunganData.title,
+    description: renunganData.description,
+    images: [renunganData.image],
+    datePublished: renunganData.publishedDate,
+    dateModified: renunganData.modifiedDate,
+    authorName: renunganData.author,
+    url: "/renungan/kasih-dan-damai-sejahtera/selalu-hidup-dalam-kesejahteraan",
+    keywords: ["kesejahteraan kristen", "janji Tuhan", "renungan harian", "hidup sejahtera"]
+  }]}
+  breadcrumbs={[
+    { name: "Home", url: "/" },
+    { name: "Renungan Harian", url: "/renungan" },
+    { name: "Kasih dan Damai Sejahtera", url: "/renungan/kasih-dan-damai-sejahtera" },
+    { name: "Selalu Hidup dalam Kesejahteraan", url: "/renungan/kasih-dan-damai-sejahtera/selalu-hidup-dalam-kesejahteraan" }
+  ]}
+>
+
+  <article class="bg-white rounded-lg shadow-sm md:p-8" itemscope itemtype="https://schema.org/Article">
+    <!-- Header dengan microdata -->
+    <header class="mb-8 border-l-4 border-sky-600 pl-4" itemprop="headline">
+      <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+        {renunganData.title}
+      </h1>
+      <div class="flex flex-wrap items-center gap-4 text-gray-600 text-lg">
+        <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+          Penulis: <span itemprop="name">{renunganData.author}</span>
+        </p>
+        <meta itemprop="datePublished" content={renunganData.publishedDate} />
+        <meta itemprop="dateModified" content={renunganData.modifiedDate} />
+      </div>
+      <h2 class="text-sky-700 text-lg">
+        Renungan Harian Kristen Hari ini,
+        <time datetime="2025-11-06" itemprop="datePublished">06 November 2025</time>
+      </h2>
+    </header>
+
+    <!-- Featured Image dengan schema -->
+    <div class="mb-8" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      <img
+        src={renunganData.image}
+        alt={renunganData.imageAlt}
+        width={800}
+        height={400}
+        class="w-full h-48 md:h-80 object-cover rounded-lg shadow-md"
+        itemprop="url"
+      />
+      <meta itemprop="width" content="800" />
+      <meta itemprop="height" content="400" />
+    </div>
+
+    <!-- Content dengan articleBody schema -->
+    <div class="prose prose-lg max-w-none text-gray-700" itemprop="articleBody">
+      <!-- Introduction -->
+      <section class="mb-8">
+        <p class="mb-4 leading-relaxed">Shalom saudara-saudari di dalam Yesus Kristus.</p>
+        <p class="mb-4 leading-relaxed">
+          Setiap orang pasti ingin hidup dalam kesejahteraan, khususnya dalam
+          hal finansial. Seseorang dikatakan sejahtera jika memiliki jumlah
+          aset yang jauh lebih banyak daripada utang dan tanggungannya. Lalu,
+          bagaimana kita dapat hidup dalam kesejahteraan menurut Alkitab?
+        </p>
+      </section>
+
+      <!-- Section 1 -->
+      <section class="mb-8">
+        <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Rajin dalam Bekerja
+        </h3>
+        <p class="mb-4 leading-relaxed">
+          Langkah pertama untuk hidup sejahtera adalah rajin dalam bekerja.
+          Alkitab menulis dengan sangat jelas bahwa kita harus rajin. Berikut
+          beberapa ayat yang menegaskan pentingnya bekerja dengan rajin:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Siapa yang bekerja tanahnya akan kenyang dengan roti, tetapi
+            siapa yang mengikuti orang yang malas menjadi bodoh."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Amsal 12:11</cite>
+        </blockquote>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Dalam segala jerih payah ada keuntungan, tetapi kata-kata
+            lidah hanya mendatangkan kekurangan."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Amsal 14:23</cite>
+        </blockquote>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Sebab, ketika kami berada bersama-sama dengan kamu, kami
+            memberi perintah ini kepada kamu: Jika ada orang yang tidak mau
+            bekerja, janganlah ia makan."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- 2 Tesalonika 3:10</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Ayat-ayat ini menunjukkan bahwa bekerja dengan rajin adalah perintah
+          Tuhan. Jika seseorang mengatakan dirinya mengikut Yesus tetapi malas
+          bekerja, ia menipu dirinya sendiri.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Sebaliknya, Alkitab juga menjelaskan mengapa seseorang bisa jatuh
+          dalam kemiskinan:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Tidur sebentar lagi, mengantuk sebentar lagi, melipat tangan
+            sebentar lagi untuk tinggal berbaring, maka datanglah kemiskinan
+            seperti seorang penyerbu, dan kekurangan seperti orang yang
+            bersenjata."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Amsal 24:33-34</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Jika saat ini hidupmu dalam kemiskinan dan kekurangan, pesan Firman
+          Tuhan sudah jelas <strong class="font-semibold text-gray-800">bekerjalah dengan rajin</strong>. Namun,
+          kerja keras saja tidak cukup. Kita juga perlu melibatkan Tuhan
+          melalui doa.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="mb-8">
+        <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Berdoa dengan Pengharapan
+        </h3>
+        <p class="mb-4 leading-relaxed">
+          Ketika kita sudah rajin bekerja, hal selanjutnya yang harus
+          dilakukan adalah berdoa kepada Tuhan dengan penuh pengharapan.
+          Mengapa kita harus berdoa?
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Sebab Aku ini mengetahui rancangan-rancangan apa yang ada
+            padaku mengenai kamu, demikianlah firman TUHAN, yaitu rancangan
+            damai sejahtera dan bukan rancangan kecelakaan, untuk memberikan
+            kepada kamu hari depan yang penuh harapan."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Yeremia 29:11</cite>
+        </blockquote>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Janganlah kamu khawatir tentang apapun juga, tetapi
+            nyatakanlah dalam doa dan permohonanmu dengan ucapan syukur
+            keinginanmu kepada Allah. Dan damai sejahtera Allah, yang melampaui
+            segala akal, akan memelihara hati dan pikiranmu dalam Kristus
+            Yesus."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Filipi 4:6-7</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Yeremia 29:11 menunjukkan bahwa Tuhan memiliki rancangan damai
+          sejahtera bagi hidup kita. Filipi 4:6-7 menegaskan agar kita tidak
+          khawatir, tetapi menyampaikan segala permohonan kepada Tuhan. Dengan
+          berdoa, kita memohon penyertaan Tuhan dalam pekerjaan kita, karena
+          jika Tuhan menyertai, segala sesuatu yang kita lakukan akan berhasil
+          (Mazmur 127:1).
+        </p>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="mb-8">
+        <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Menabung dengan Hikmat Tuhan
+        </h3>
+        <p class="mb-4 leading-relaxed">
+          Bekerja keras dan berdoa saja belum cukup untuk mencapai
+          kesejahteraan. Kita juga perlu menabung dengan bijaksana. Alkitab
+          mengajarkan hal ini dengan cara yang sangat sederhana namun
+          mendalam:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Hai pemalas, pergilah kepada semut, lihatlah bagaimana dia
+            bekerja dengan rajin dan bijaksana. Semut tidak mempunyai pemimpin,
+            pengatur, atau penguasa, tetapi dia menyediakan makanannya di musim
+            panas, dan mengumpulkan persediaannya pada waktu panen."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Amsal 6:6-8</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Dalam ayat ini, semut menjadi contoh bagaimana kita seharusnya
+          menabung di masa kelimpahan untuk persiapan di masa kekurangan.
+          Prinsip ini juga diterapkan oleh Yusuf ketika menafsirkan mimpi
+          Firaun dan menyarankan untuk mengumpulkan gandum selama tujuh tahun
+          masa kelimpahan agar cukup untuk menghadapi tujuh tahun masa
+          kelaparan (Kejadian 41:47-49).
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Jika berbicara mengenai cara menabung, tentu saat ini sudah sangat
+          modern. Ada orang yang menabung dalam bentuk aset seperti membuat
+          kos-kosan, kontrakan, atau menabung dalam aset properti lainnya yang
+          selalu menghasilkan uang kembali. Ada juga yang menabung emas karena
+          pertimbangan inflasi, dan lain sebagainya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Namun, kita perlu hikmat dari Tuhan untuk menabung dengan cara yang
+          benar dan sesuai kebutuhan.
+        </p>
+      </section>
+
+      <!-- Conclusion -->
+      <section class="mb-8">
+        <p class="mb-4 leading-relaxed">
+          Ketika saya membaca ulang renungan ini, saya seakan menjadi mentor
+          finansial, padahal saya sedang membagikan Firman Tuhan. Dari sini
+          dapat disimpulkan bahwa Tuhan juga menghendaki kita selalu hidup
+          dalam kesejahteraan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ketiga langkah ini harus dilakukan secara konsisten dan dengan iman
+          yang teguh. Tuhan menghendaki kita hidup dalam kesejahteraan dan
+          damai sejahtera, seperti yang tertulis dalam Yeremia 29:11. Mari
+          kita mulai menerapkan langkah-langkah ini dalam hidup kita
+          sehari-hari, agar kesejahteraan sejati yang Tuhan janjikan dapat
+          nyata dalam hidup kita.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Kiranya renungan ini membawa berkat dan memotivasi kita untuk hidup
+          menyenangkan hati Tuhan. Tuhan Yesus memberkati. Amin.
+        </p>
+        <p class="text-gray-600 font-medium">Penulis : {renunganData.author}</p>
+      </section>
+    </div>
+  </article>
+</RenunganLayout>
+```

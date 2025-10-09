@@ -15,19 +15,6 @@ const renunganData = {
   category: "renungan harian kristen",
   scripture: ["Efesus 2:8-9", "1 Korintus 15:10", "Ibrani 4:16"],
 };
-
-const breadcrumbs = [
-  { name: "Home", url: "https://sekolahteologi.com/" },
-  { name: "Renungan", url: "https://sekolahteologi.com/renungan" },
-  {
-    name: "Kasih dan Damai Sejahtera",
-    url: "https://sekolahteologi.com/renungan/kasih-dan-damai-sejahtera",
-  },
-  {
-    name: "Kasih Karunia Allah",
-    url: "https://sekolahteologi.com/renungan/kasih-dan-damai-sejahtera/kasih-karunia-allah",
-  },
-];
 ---
 
 <RenunganLayout
@@ -52,384 +39,411 @@ const breadcrumbs = [
       ],
     },
   ]}
-  breadcrumbs={breadcrumbs}
+  breadcrumbs={[
+  { name: "Home", url: "https://sekolahteologi.com/" },
+  { name: "Renungan", url: "https://sekolahteologi.com/renungan" },
+  {
+    name: "Kasih dan Damai Sejahtera",
+    url: "https://sekolahteologi.com/renungan/kasih-dan-damai-sejahtera",
+  },
+  {
+    name: "Kasih Karunia Allah",
+    url: "https://sekolahteologi.com/renungan/kasih-dan-damai-sejahtera/kasih-karunia-allah",
+  },
+]}>
   <article
-  class="bg-white rounded-lg shadow-sm p-6 md:p-8"
-  itemscope
-  itemtype="https://schema.org/Article">
-  <!-- Header dengan microdata -->
-  <header class="mb-8 border-l-4 border-sky-600 pl-4" itemprop="headline">
-    <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
-      {renunganData.title}
-    </h1>
-    <div class="flex flex-wrap items-center gap-4 text-gray-600 text-lg">
-      <p itemprop="author" itemscope itemtype="https://schema.org/Person">
-        Penulis: <span itemprop="name">{renunganData.author}</span>
-      </p>
-      <meta itemprop="datePublished" content={renunganData.publishedDate} />
-      <meta itemprop="dateModified" content={renunganData.modifiedDate} />
-    </div>
-    <h2 class="text-sky-700 text-lg">
-      Renungan Harian Kristen Hari ini, <time
-        datetime="2025-11-02"
-        itemprop="datePublished">02 November 2025</time
-      >
-    </h2>
-  </header>
-  <!-- Featured Image dengan schema -->
-  <div
-    class="mb-8"
-    itemprop="image"
+    class="bg-white rounded-lg shadow-sm md:p-8"
     itemscope
-    itemtype="https://schema.org/ImageObject">
-    <img
-      src={renunganData.image}
-      alt={renunganData.imageAlt}
-      width={800}
-      height={400}
-      class="w-full h-48 md:h-80 object-cover rounded-lg shadow-md"
-      itemprop="url"
-    />
-    <meta itemprop="width" content="800" />
-    <meta itemprop="height" content="400" />
-  </div>
-
-  <!-- Content dengan articleBody schema -->
-  <div class="prose prose-lg max-w-none text-gray-700" itemprop="articleBody">
-    <!-- Introduction -->
-    <section class="mb-8">
-      <p class="mb-4 leading-relaxed">
-        Shalom saudara-saudari yang dikasihi oleh Tuhan Yesus Kristus.<br />
-        Kiranya kasih karunia dan damai sejahtera dari Tuhan selalu menyertai kehidupan
-        saudara-saudari sekalian.
-      </p>
-      <p class="mb-4 leading-relaxed">
-        Renungan kita hari ini akan membahas tentang kasih karunia Allah -
-        sebuah konsep sentral dalam kekristenan yang sering kali kita gagal
-        memahami kedalamannya.
-      </p>
-      <p class="mb-4 leading-relaxed">
-        Banyak orang Kristen hidup seolah-olah keselamatan harus diperoleh
-        melalui usaha sendiri, padahal Alkitab dengan jelas menyatakan bahwa
-        keselamatan adalah anugerah. Mari kita menggali makna mendalam dari
-        kasih karunia Allah dan bagaimana anugerah ini mengubah seluruh
-        perspektif kita tentang hubungan dengan Tuhan.
-      </p>
-    </section>
-
-    <!-- Ayat Pembuka -->
-    <blockquote
-      class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
-      itemprop="citation">
-      <p class="mb-2 p-3">
-        "Sebab karena kasih karunia kamu diselamatkan oleh iman; itu bukan hasil
-        usahamu, tetapi pemberian Allah, itu bukan hasil pekerjaanmu: jangan ada
-        orang yang memegahkan diri."
-      </p>
-      <cite class="text-sm not-italic text-gray-600" itemprop="source"
-        >- Efesus 2:8-9</cite
-      >
-    </blockquote>
-
-    <!-- Bagian 1: Definisi Kasih Karunia -->
-    <section class="mb-8">
-      <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
-        Apa Itu Kasih Karunia?
-      </h2>
-
-      <div class="bg-gray-50 p-6 rounded-lg mb-4">
-        <h3 class="text-lg font-semibold text-gray-800 mb-3">
-          Kasih Karunia = Anugerah yang Tidak Layak Kita Terima
-        </h3>
-        <p class="text-gray-700 mb-3">
-          Kasih karunia (Yunani: <em>charis</em>) berarti pemberian yang baik
-          hati, kemurahan hati, atau bantuan yang diberikan kepada seseorang
-          yang tidak layak menerimanya.
-        </p>
-        <ul class="list-disc list-inside text-gray-700 space-y-2">
-          <li>
-            <strong>Bukan hadiah untuk yang berprestasi</strong> - Kasih karunia
-            diberikan kepada orang yang gagal, bukan yang sukses
-          </li>
-          <li>
-            <strong>Bukan upah untuk pekerjaan baik</strong> - Anugerah diberikan
-            meskipun kita tidak melakukan apa pun yang layak
-          </li>
-          <li>
-            <strong>Bukan balasan untuk kebaikan</strong> - Kasih karunia mendahului
-            segala respons kita
-          </li>
-        </ul>
+    itemtype="https://schema.org/Article">
+    <article
+      class="bg-white rounded-lg shadow-sm md:p-4"
+      itemscope
+      itemtype="https://schema.org/Article">
+      <!-- Header dengan microdata -->
+      <header class="mb-8 border-l-4 border-sky-600 pl-4" itemprop="headline">
+        <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+          {renunganData.title}
+        </h1>
+        <div class="flex flex-wrap items-center gap-4 text-gray-600 text-lg">
+          <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+            Penulis: <span itemprop="name">{renunganData.author}</span>
+          </p>
+          <meta itemprop="datePublished" content={renunganData.publishedDate} />
+          <meta itemprop="dateModified" content={renunganData.modifiedDate} />
+        </div>
+        <h2 class="text-sky-700 text-lg">
+          Renungan Harian Kristen Hari ini, <time
+            datetime="2025-11-02"
+            itemprop="datePublished">02 November 2025</time
+          >
+        </h2>
+      </header>
+      <!-- Featured Image dengan schema -->
+      <div
+        class="mb-8"
+        itemprop="image"
+        itemscope
+        itemtype="https://schema.org/ImageObject">
+        <img
+          src={renunganData.image}
+          alt={renunganData.imageAlt}
+          width={800}
+          height={400}
+          class="w-full h-48 md:h-80 object-cover rounded-lg shadow-md"
+          itemprop="url"
+        />
+        <meta itemprop="width" content="800" />
+        <meta itemprop="height" content="400" />
       </div>
 
-      <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
-        <p class="text-gray-700">
-          <strong>Renungkan:</strong> Apakah selama ini Anda lebih sering hidup berdasarkan
-          performa atau berdasarkan kasih karunia?
-        </p>
-      </div>
-    </section>
-
-    <!-- Bagian 2: Tiga Dimensi Kasih Karunia -->
-    <section class="mb-8">
-      <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
-        Tiga Dimensi Kasih Karunia Allah
-      </h2>
-
-      <div class="grid md:grid-cols-3 gap-6 mb-6">
-        <!-- Card 1 -->
-        <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
-          <div
-            class="w-12 h-12 bg-sky-100 rounded-lg flex items-center justify-center mb-4">
-            <svg
-              class="w-6 h-6 text-sky-600"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-              ></path>
-            </svg>
-          </div>
-          <h3 class="text-lg font-semibold text-gray-800 mb-2">
-            Kasih Karunia yang Menyelamatkan
-          </h3>
-          <p class="text-gray-600 text-sm">
-            Anugerah yang membawa kita dari kematian rohani kepada kehidupan
-            kekal melalui iman dalam Kristus.
+      <!-- Content dengan articleBody schema -->
+      <div
+        class="prose prose-lg max-w-none text-gray-700"
+        itemprop="articleBody">
+        <!-- Introduction -->
+        <section class="mb-8">
+          <p class="mb-4 leading-relaxed">
+            Shalom saudara-saudari yang dikasihi oleh Tuhan Yesus Kristus.<br />
+            Kiranya kasih karunia dan damai sejahtera dari Tuhan selalu menyertai
+            kehidupan saudara-saudari sekalian.
           </p>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
-          <div
-            class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-            <svg
-              class="w-6 h-6 text-green-600"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 15v2m-6 4h22a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-              ></path>
-            </svg>
-          </div>
-          <h3 class="text-lg font-semibold text-gray-800 mb-2">
-            Kasih Karunia yang Menguduskan
-          </h3>
-          <p class="text-gray-600 text-sm">
-            Kuasa Allah yang bekerja dalam kita untuk mengubah karakter dan
-            membuat kita semakin serupa dengan Kristus.
+          <p class="mb-4 leading-relaxed">
+            Renungan kita hari ini akan membahas tentang kasih karunia Allah -
+            sebuah konsep sentral dalam kekristenan yang sering kali kita gagal
+            memahami kedalamannya.
           </p>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
-          <div
-            class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-            <svg
-              class="w-6 h-6 text-purple-600"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-            </svg>
-          </div>
-          <h3 class="text-lg font-semibold text-gray-800 mb-2">
-            Kasih Karunia yang Memampukan
-          </h3>
-          <p class="text-gray-600 text-sm">
-            Anugerah yang memberi kita kekuatan dan kemampuan untuk melakukan
-            kehendak Allah dalam kehidupan sehari-hari.
+          <p class="mb-4 leading-relaxed">
+            Banyak orang Kristen hidup seolah-olah keselamatan harus diperoleh
+            melalui usaha sendiri, padahal Alkitab dengan jelas menyatakan bahwa
+            keselamatan adalah anugerah. Mari kita menggali makna mendalam dari
+            kasih karunia Allah dan bagaimana anugerah ini mengubah seluruh
+            perspektif kita tentang hubungan dengan Tuhan.
           </p>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- Bagian 3: Ayat-ayat Kunci -->
-    <section class="mb-8">
-      <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
-        Ayat-ayat Alkitab tentang Kasih Karunia
-      </h2>
-
-      <div class="space-y-4">
-        <div class="bg-white border border-gray-200 rounded-lg p-4">
-          <p class="text-gray-700 mb-2">
+        <!-- Ayat Pembuka -->
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
             "Sebab karena kasih karunia kamu diselamatkan oleh iman; itu bukan
-            hasil usahamu, tetapi pemberian Allah."
+            hasil usahamu, tetapi pemberian Allah, itu bukan hasil pekerjaanmu:
+            jangan ada orang yang memegahkan diri."
           </p>
-          <p class="text-gray-600 text-sm font-semibold">Efesus 2:8</p>
-        </div>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source"
+            >- Efesus 2:8-9</cite
+          >
+        </blockquote>
 
-        <div class="bg-white border border-gray-200 rounded-lg p-4">
-          <p class="text-gray-700 mb-2">
-            "Sebab karena kasih karunia Allah, aku adalah seperti yang aku
-            sekarang ini, dan kasih karunia yang dianugerahkan-Nya kepadaku
-            tidak sia-sia."
-          </p>
-          <p class="text-gray-600 text-sm font-semibold">1 Korintus 15:10</p>
-        </div>
+        <!-- Bagian 1: Definisi Kasih Karunia -->
+        <section class="mb-8">
+          <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+            Apa Itu Kasih Karunia?
+          </h2>
 
-        <div class="bg-white border border-gray-200 rounded-lg p-4">
-          <p class="text-gray-700 mb-2">
-            "Sebab itu marilah kita datang dengan penuh keberanian kepada takhta
-            kasih karunia, supaya kita menerima rahmat dan menemukan kasih
-            karunia untuk mendapat pertolongan kita pada waktunya."
-          </p>
-          <p class="text-gray-600 text-sm font-semibold">Ibrani 4:16</p>
-        </div>
-      </div>
-    </section>
+          <div class="bg-gray-50 p-6 rounded-lg mb-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-3">
+              Kasih Karunia = Anugerah yang Tidak Layak Kita Terima
+            </h3>
+            <p class="text-gray-700 mb-3">
+              Kasih karunia (Yunani: <em>charis</em>) berarti pemberian yang
+              baik hati, kemurahan hati, atau bantuan yang diberikan kepada
+              seseorang yang tidak layak menerimanya.
+            </p>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+              <li>
+                <strong>Bukan hadiah untuk yang berprestasi</strong> - Kasih karunia
+                diberikan kepada orang yang gagal, bukan yang sukses
+              </li>
+              <li>
+                <strong>Bukan upah untuk pekerjaan baik</strong> - Anugerah diberikan
+                meskipun kita tidak melakukan apa pun yang layak
+              </li>
+              <li>
+                <strong>Bukan balasan untuk kebaikan</strong> - Kasih karunia mendahului
+                segala respons kita
+              </li>
+            </ul>
+          </div>
 
-    <!-- Bagian 4: Penerapan Praktis -->
-    <section class="mb-8">
-      <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
-        Penerapan dalam Kehidupan Sehari-hari
-      </h2>
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
+            <p class="text-gray-700">
+              <strong>Renungkan:</strong> Apakah selama ini Anda lebih sering hidup
+              berdasarkan performa atau berdasarkan kasih karunia?
+            </p>
+          </div>
+        </section>
 
-      <div class="bg-green-50 border border-green-200 rounded-lg p-6 mb-6">
-        <h3 class="text-lg font-semibold text-green-800 mb-3">
-          Hidup dalam Kasih Karunia
-        </h3>
+        <!-- Bagian 2: Tiga Dimensi Kasih Karunia -->
+        <section class="mb-8">
+          <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+            Tiga Dimensi Kasih Karunia Allah
+          </h2>
 
-        <div class="space-y-4">
-          <div class="flex items-start">
-            <div class="flex-shrink-0 mt-1">
+          <div class="grid md:grid-cols-3 gap-6 mb-6">
+            <!-- Card 1 -->
+            <div
+              class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
               <div
-                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-                <span class="text-green-600 text-sm font-bold">1</span>
+                class="w-12 h-12 bg-sky-100 rounded-lg flex items-center justify-center mb-4">
+                <svg
+                  class="w-6 h-6 text-sky-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  ></path>
+                </svg>
               </div>
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                Kasih Karunia yang Menyelamatkan
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Anugerah yang membawa kita dari kematian rohani kepada kehidupan
+                kekal melalui iman dalam Kristus.
+              </p>
             </div>
-            <div class="ml-3">
-              <h4 class="font-semibold text-gray-800">
-                Berhenti Berusaha Membuktikan Diri
-              </h4>
-              <p class="text-gray-700 text-sm mt-1">
-                Berhentilah berusaha mendapatkan penerimaan Allah melalui
-                performa rohani. Terimalah bahwa Anda sudah diterima dalam
-                Kristus.
+
+            <!-- Card 2 -->
+            <div
+              class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
+              <div
+                class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                <svg
+                  class="w-6 h-6 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 15v2m-6 4h22a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                Kasih Karunia yang Menguduskan
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Kuasa Allah yang bekerja dalam kita untuk mengubah karakter dan
+                membuat kita semakin serupa dengan Kristus.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
+              <div
+                class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                <svg
+                  class="w-6 h-6 text-purple-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                Kasih Karunia yang Memampukan
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Anugerah yang memberi kita kekuatan dan kemampuan untuk
+                melakukan kehendak Allah dalam kehidupan sehari-hari.
               </p>
             </div>
           </div>
+        </section>
 
-          <div class="flex items-start">
-            <div class="flex-shrink-0 mt-1">
-              <div
-                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-                <span class="text-green-600 text-sm font-bold">2</span>
+        <!-- Bagian 3: Ayat-ayat Kunci -->
+        <section class="mb-8">
+          <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+            Ayat-ayat Alkitab tentang Kasih Karunia
+          </h2>
+
+          <div class="space-y-4">
+            <div class="bg-white border border-gray-200 rounded-lg p-4">
+              <p class="text-gray-700 mb-2">
+                "Sebab karena kasih karunia kamu diselamatkan oleh iman; itu
+                bukan hasil usahamu, tetapi pemberian Allah."
+              </p>
+              <p class="text-gray-600 text-sm font-semibold">Efesus 2:8</p>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-4">
+              <p class="text-gray-700 mb-2">
+                "Sebab karena kasih karunia Allah, aku adalah seperti yang aku
+                sekarang ini, dan kasih karunia yang dianugerahkan-Nya kepadaku
+                tidak sia-sia."
+              </p>
+              <p class="text-gray-600 text-sm font-semibold">
+                1 Korintus 15:10
+              </p>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-4">
+              <p class="text-gray-700 mb-2">
+                "Sebab itu marilah kita datang dengan penuh keberanian kepada
+                takhta kasih karunia, supaya kita menerima rahmat dan menemukan
+                kasih karunia untuk mendapat pertolongan kita pada waktunya."
+              </p>
+              <p class="text-gray-600 text-sm font-semibold">Ibrani 4:16</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Bagian 4: Penerapan Praktis -->
+        <section class="mb-8">
+          <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+            Penerapan dalam Kehidupan Sehari-hari
+          </h2>
+
+          <div class="bg-green-50 border border-green-200 rounded-lg p-6 mb-6">
+            <h3 class="text-lg font-semibold text-green-800 mb-3">
+              Hidup dalam Kasih Karunia
+            </h3>
+
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div class="flex-shrink-0 mt-1">
+                  <div
+                    class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                    <span class="text-green-600 text-sm font-bold">1</span>
+                  </div>
+                </div>
+                <div class="ml-3">
+                  <h4 class="font-semibold text-gray-800">
+                    Berhenti Berusaha Membuktikan Diri
+                  </h4>
+                  <p class="text-gray-700 text-sm mt-1">
+                    Berhentilah berusaha mendapatkan penerimaan Allah melalui
+                    performa rohani. Terimalah bahwa Anda sudah diterima dalam
+                    Kristus.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="flex-shrink-0 mt-1">
+                  <div
+                    class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                    <span class="text-green-600 text-sm font-bold">2</span>
+                  </div>
+                </div>
+                <div class="ml-3">
+                  <h4 class="font-semibold text-gray-800">
+                    Bergantung pada Kuasa Allah
+                  </h4>
+                  <p class="text-gray-700 text-sm mt-1">
+                    Akui ketidakmampuan Anda dan belajarlah bergantung
+                    sepenuhnya pada kasih karunia Allah untuk kekuatan dan
+                    hikmat.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="flex-shrink-0 mt-1">
+                  <div
+                    class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                    <span class="text-green-600 text-sm font-bold">3</span>
+                  </div>
+                </div>
+                <div class="ml-3">
+                  <h4 class="font-semibold text-gray-800">
+                    Bagikan Kasih Karunia
+                  </h4>
+                  <p class="text-gray-700 text-sm mt-1">
+                    Karena Anda telah menerima kasih karunia, berikan juga kasih
+                    karunia kepada orang lain dalam bentuk pengampunan dan
+                    penerimaan.
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="ml-3">
-              <h4 class="font-semibold text-gray-800">
-                Bergantung pada Kuasa Allah
-              </h4>
-              <p class="text-gray-700 text-sm mt-1">
-                Akui ketidakmampuan Anda dan belajarlah bergantung sepenuhnya
-                pada kasih karunia Allah untuk kekuatan dan hikmat.
+          </div>
+        </section>
+
+        <!-- Bagian 5: Doa Penutup -->
+        <section class="mb-8">
+          <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+            Doa Penutup
+          </h2>
+
+          <div class="bg-purple-50 border border-purple-200 rounded-lg p-6">
+            <p class="text-gray-700 italic leading-relaxed">
+              "Bapa yang penuh kasih karunia, terima kasih untuk anugerah-Mu
+              yang begitu besar dalam hidupku. Aku mengakui bahwa seringkali aku
+              berusaha membuktikan diriku layak di hadapan-Mu. Ampuni aku dan
+              ajari aku untuk hidup dalam kasih karunia-Mu setiap hari. Tolong
+              aku untuk bergantung sepenuhnya pada-Mu, bukan pada kekuatanku
+              sendiri. Jadikan aku saluran kasih karunia-Mu bagi orang-orang di
+              sekitarku. Dalam nama Yesus, amin."
+            </p>
+          </div>
+        </section>
+
+        <!-- Bagian 6: Pertanyaan Refleksi -->
+        <section class="mb-8">
+          <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+            Pertanyaan untuk Refleksi
+          </h2>
+
+          <div class="space-y-4">
+            <div class="bg-white border border-gray-200 rounded-lg p-4">
+              <p class="text-gray-700">
+                1. Apakah ada area dalam hidup Anda di mana Anda masih berusaha
+                "mendapatkan" kasih Allah melalui performa?
+              </p>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-4">
+              <p class="text-gray-700">
+                2. Bagaimana pemahaman tentang kasih karunia dapat mengubah cara
+                Anda menghadapi kegagalan?
+              </p>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-4">
+              <p class="text-gray-700">
+                3. Siapa yang perlu Anda beri kasih karunia
+                (pengampunan/penerimaan) seperti yang telah Allah berikan kepada
+                Anda?
               </p>
             </div>
           </div>
+        </section>
 
-          <div class="flex items-start">
-            <div class="flex-shrink-0 mt-1">
-              <div
-                class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-                <span class="text-green-600 text-sm font-bold">3</span>
-              </div>
-            </div>
-            <div class="ml-3">
-              <h4 class="font-semibold text-gray-800">Bagikan Kasih Karunia</h4>
-              <p class="text-gray-700 text-sm mt-1">
-                Karena Anda telah menerima kasih karunia, berikan juga kasih
-                karunia kepada orang lain dalam bentuk pengampunan dan
-                penerimaan.
-              </p>
-            </div>
-          </div>
+        <!-- Call to Action -->
+        <div class="bg-sky-50 border border-sky-200 rounded-lg p-6 text-center">
+          <h3 class="text-xl font-bold text-sky-800 mb-2">
+            Ingin Mendalami Lebih Lanjut?
+          </h3>
+          <p class="text-gray-700 mb-4">
+            Temukan lebih banyak renungan tentang kasih karunia Allah dalam seri
+            "Kasih dan Damai Sejahtera"
+          </p>
+          <a
+            href="/renungan"
+            class="inline-block bg-sky-600 hover:bg-sky-700 text-white font-medium py-2 px-6 rounded-lg transition duration-200">
+            Lihat Renungan Lainnya
+          </a>
         </div>
       </div>
-    </section>
 
-    <!-- Bagian 5: Doa Penutup -->
-    <section class="mb-8">
-      <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
-        Doa Penutup
-      </h2>
-
-      <div class="bg-purple-50 border border-purple-200 rounded-lg p-6">
-        <p class="text-gray-700 italic leading-relaxed">
-          "Bapa yang penuh kasih karunia, terima kasih untuk anugerah-Mu yang
-          begitu besar dalam hidupku. Aku mengakui bahwa seringkali aku berusaha
-          membuktikan diriku layak di hadapan-Mu. Ampuni aku dan ajari aku untuk
-          hidup dalam kasih karunia-Mu setiap hari. Tolong aku untuk bergantung
-          sepenuhnya pada-Mu, bukan pada kekuatanku sendiri. Jadikan aku saluran
-          kasih karunia-Mu bagi orang-orang di sekitarku. Dalam nama Yesus,
-          amin."
-        </p>
-      </div>
-    </section>
-
-    <!-- Bagian 6: Pertanyaan Refleksi -->
-    <section class="mb-8">
-      <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
-        Pertanyaan untuk Refleksi
-      </h2>
-
-      <div class="space-y-4">
-        <div class="bg-white border border-gray-200 rounded-lg p-4">
-          <p class="text-gray-700">
-            1. Apakah ada area dalam hidup Anda di mana Anda masih berusaha
-            "mendapatkan" kasih Allah melalui performa?
-          </p>
-        </div>
-
-        <div class="bg-white border border-gray-200 rounded-lg p-4">
-          <p class="text-gray-700">
-            2. Bagaimana pemahaman tentang kasih karunia dapat mengubah cara
-            Anda menghadapi kegagalan?
-          </p>
-        </div>
-
-        <div class="bg-white border border-gray-200 rounded-lg p-4">
-          <p class="text-gray-700">
-            3. Siapa yang perlu Anda beri kasih karunia (pengampunan/penerimaan)
-            seperti yang telah Allah berikan kepada Anda?
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to Action -->
-    <div class="bg-sky-50 border border-sky-200 rounded-lg p-6 text-center">
-      <h3 class="text-xl font-bold text-sky-800 mb-2">
-        Ingin Mendalami Lebih Lanjut?
-      </h3>
-      <p class="text-gray-700 mb-4">
-        Temukan lebih banyak renungan tentang kasih karunia Allah dalam seri
-        "Kasih dan Damai Sejahtera"
-      </p>
-      <a
-        href="/renungan"
-        class="inline-block bg-sky-600 hover:bg-sky-700 text-white font-medium py-2 px-6 rounded-lg transition duration-200">
-        Lihat Renungan Lainnya
-      </a>
-    </div>
-  </div>
-
-  <!-- Penulis -->
-  <footer class="mt-8 pt-6 border-t border-gray-200">
-    <p class="text-gray-600 font-medium">Penulis: {renunganData.author}</p>
-    <p class="text-gray-600 font-medium mt-2">Tuhan Yesus Memberkati.</p>
-  </footer>
+      <!-- Penulis -->
+      <footer class="mt-8 pt-6 border-t border-gray-200">
+        <p class="text-gray-600 font-medium">Penulis: {renunganData.author}</p>
+        <p class="text-gray-600 font-medium mt-2">Tuhan Yesus Memberkati.</p>
+      </footer>
+    </article>
   </article>
 </RenunganLayout>
