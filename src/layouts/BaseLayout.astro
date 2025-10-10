@@ -4,7 +4,7 @@ import "../styles/global.css";
 import Header from "../components/common/Header.astro";
 import Footer from "../components/common/Footer.astro";
 import MetaTags from "../components/seo/MetaTags.astro";
-import SchemaMarkup from "../components/seo/SchemaMarkup.astro";
+import JsonLd from "../components/seo/JsonLd.astro";
 
 export interface Props {
   title?: string;
@@ -12,9 +12,11 @@ export interface Props {
   image?: string;
   url?: string;
   type?: string;
-  // Tambah props untuk schema
+  // Props untuk JsonLd
   articles?: Array<any>;
   breadcrumbs?: Array<any>;
+  renungan?: any;
+  devotional?: any;
 }
 
 const {
@@ -25,7 +27,16 @@ const {
   type = "website",
   articles = [],
   breadcrumbs = [],
+  renungan = null,
+  devotional = null,
 } = Astro.props;
+
+// Helper variables di frontmatter
+const schemaType = type === "article" ? "Article" : "WebPage";
+const hasArticles = articles.length > 0;
+const hasBreadcrumbs = breadcrumbs.length > 0;
+const hasRenungan = renungan !== null;
+const hasDevotional = devotional !== null;
 ---
 
 <!doctype html>
@@ -44,13 +55,50 @@ const {
     />
     <link rel="canonical" href={`https://sekolahteologi.com/${url}`} />
 
-    <!-- Schema Markup -->
-    <SchemaMarkup
-      pageType={type === "article" ? "Article" : "WebPage"}
-      pageUrl={`https://sekolahteologi.com/${url}`}
-      articles={articles}
-      breadcrumbs={breadcrumbs}
-    />
+    <!-- JSON-LD Schema Markup - PENDEKATAN BARU -->
+    
+    <!-- 1. Organization Schema (WAJIB di semua halaman) -->
+    <JsonLd type="Organization" />
+    
+    <!-- 2. Website Schema (WAJIB di semua halaman) -->
+    <JsonLd type="WebSite" />
+    
+    <!-- 3. Page-specific Schemas -->
+    
+    <!-- Article Schema -->
+    {hasArticles && (
+      <JsonLd 
+        type="Article" 
+        article={articles[0]} 
+      />
+    )}
+    
+    <!-- Renungan Schema -->
+    {hasRenungan && (
+      <JsonLd 
+        type="Renungan" 
+        renungan={renungan} 
+      />
+    )}
+    
+    <!-- Devotional Schema -->
+    {hasDevotional && (
+      <JsonLd 
+        type="Devotional" 
+        devotional={devotional} 
+      />
+    )}
+    
+    <!-- Breadcrumb Schema -->
+    {hasBreadcrumbs && (
+      <JsonLd 
+        type="BreadcrumbList" 
+        breadcrumbItems={breadcrumbs} 
+      />
+    )}
+    
+    <!-- Slot untuk additional schemas dari child components -->
+    <slot name="additional-schemas" />
   </head>
 
   <body class="font-sans antialiased min-h-screen flex flex-col bg-gray-50">
