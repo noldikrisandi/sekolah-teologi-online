@@ -1,0 +1,242 @@
+---
+// src/pages/renungan/iman/iman-yang-teguh-di-tengah-guncangan.astro
+import RenunganLayout from "../../../layouts/RenunganLayout.astro";
+
+const renunganData = {
+  title: "Renungan Harian, 7 November 2025 - Iman yang Teguh di Tengah Guncangan",
+  author: "Noldi Krisandi",
+  image: "/images/banner/raja.webp",
+  imageAlt: "Ilustrasi seseorang berdiri teguh melihat kerajaan melambangkan iman yang kokoh kepada Kristus",
+  description: "Renungan hari ini, 7 November 2025 tentang bagaimana membangun iman yang teguh dan tidak tergoyahkan meskipun dunia di sekitar kita terus berubah dan berguncang. Pelajari rahasia memiliki fondasi iman yang kokoh dalam Kristus.",
+  publishedDate: "2025-11-07T08:00:00+07:00",
+  modifiedDate: "2025-11-07T08:00:00+07:00",
+  category: "renungan harian kristen",
+  scripture: ["Ibrani 11:1", "Matius 7:24-27", "Efesus 6:16", "1 Petrus 1:6-7", "Yesaya 26:3-4"]
+};
+---
+
+<RenunganLayout
+  title={renunganData.title}
+  description={renunganData.description}
+  url="renungan/iman/iman-yang-teguh-di-tengah-guncangan"
+  type="article"
+  articles={[{
+    headline: renunganData.title,
+    description: renunganData.description,
+    images: [renunganData.image],
+    datePublished: renunganData.publishedDate,
+    dateModified: renunganData.modifiedDate,
+    authorName: renunganData.author,
+    url: "/renungan/iman/iman-yang-teguh-di-tengah-guncangan",
+    keywords: ["iman yang teguh", "iman kristen", "renungan harian", "fondasi iman", "keteguhan iman"]
+  }]}
+  breadcrumbs={[
+    { name: "Home", url: "/" },
+    { name: "Renungan Harian", url: "/renungan" },
+    { name: "Iman", url: "/renungan/iman" },
+    { name: "Iman yang Teguh di Tengah Guncangan", url: "/renungan/iman/iman-yang-teguh-di-tengah-guncangan" }
+  ]}
+>
+
+  <article itemscope itemtype="https://schema.org/Article">
+    <!-- Header dengan microdata -->
+    <header class="mb-8 border-l-4 border-sky-600 pl-4" itemprop="headline">
+      <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+        {renunganData.title}
+      </h1>
+      <div class="flex flex-wrap items-center gap-4 text-gray-600 text-lg">
+        <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+          Penulis: <span itemprop="name">{renunganData.author}</span>
+        </p>
+        <meta itemprop="datePublished" content={renunganData.publishedDate} />
+        <meta itemprop="dateModified" content={renunganData.modifiedDate} />
+      </div>
+      <h2 class="text-sky-700 text-lg">
+        Renungan Harian Kristen Hari ini,
+        <time datetime="2025-11-07" itemprop="datePublished">07 November 2025</time>
+      </h2>
+    </header>
+
+    <!-- Featured Image dengan schema -->
+    <div class="mb-8" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      <img
+        src={renunganData.image}
+        alt={renunganData.imageAlt}
+        width={800}
+        height={400}
+        class="w-full h-48 md:h-80 object-cover rounded-lg shadow-md"
+        itemprop="url"
+      />
+      <meta itemprop="width" content="800" />
+      <meta itemprop="height" content="400" />
+    </div>
+
+    <!-- Content dengan articleBody schema -->
+    <div class="prose prose-lg max-w-none text-gray-700" itemprop="articleBody">
+      <!-- Introduction -->
+      <section class="mb-8">
+        <p class="mb-4 leading-relaxed">
+          Shalom saudara-saudari yang terkasih di dalam Yesus Kristus.<br />
+          Kiranya damai sejahtera dari Tuhan yang melampaui segala akal selalu menyertai kehidupan saudara-saudari sekalian.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Dunia tempat kita hidup saat ini penuh dengan ketidakpastian dan perubahan. Ekonomi yang fluktuatif, hubungan sosial yang kompleks, tantangan kesehatan, dan berbagai pergumulan hidup lainnya seringkali membuat kita merasa goyah dan tidak stabil.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Namun dalam segala guncangan ini, ada satu hal yang tidak boleh ikut terguncang: <strong class="font-semibold text-gray-800">iman kita kepada Tuhan</strong>. Renungan hari ini akan membahas bagaimana kita dapat membangun iman yang teguh dan tidak tergoyahkan.
+        </p>
+      </section>
+
+      <!-- Section 1 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Memahami Hakikat Iman yang Sejati
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Iman bukanlah sekadar perasaan positif atau optimisme buta. Iman yang sejati adalah keyakinan yang mendalam akan karakter dan janji-janji Tuhan, meskipun mata jasmani kita tidak melihat buktinya.
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Iman adalah dasar dari segala sesuatu yang kita harapkan dan bukti dari segala sesuatu yang tidak kita lihat."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Ibrani 11:1</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Ketika badai kehidupan datang, iman yang sejati tidak akan mudah goyah karena fondasinya bukan pada keadaan, tetapi pada Pribadi Tuhan yang tidak berubah. Iman yang teguh adalah iman yang tetap percaya bahwa Tuhan baik, meskipun keadaan tidak baik.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Banyak orang Kristen memiliki iman yang bergantung pada perasaan. Ketika merasa diberkati, imannya kuat. Ketika mengalami kesulitan, imannya lemah. Ini adalah iman yang dibangun di atas fondasi yang salah.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Membangun Fondasi Iman di Atas Batu Karang
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Yesus memberikan perumpamaan yang sangat jelas tentang pentingnya fondasi iman. Dua orang membangun rumah—satu di atas batu karang, satu di atas pasir.
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Setiap orang yang mendengar perkataan-Ku ini dan melakukannya, ia sama dengan orang yang bijaksana, yang mendirikan rumahnya di atas batu. Kemudian turunlah hujan dan datanglah banjir, lalu angin melanda rumah itu, tetapi rumah itu tidak rubuh sebab didirikan di atas batu."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Matius 7:24-25</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Fondasi iman kita harus dibangun di atas Firman Tuhan dan hubungan pribadi dengan Kristus. Ini berarti:
+        </p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li><strong class="font-semibold">Membaca dan merenungkan Firman Tuhan setiap hari</strong> - Firman Tuhan adalah makanan rohani yang menguatkan iman</li>
+          <li><strong class="font-semibold">Berdoa dengan tekun</strong> - Komunikasi dengan Tuhan memperkuat hubungan kita dengan Dia</li>
+          <li><strong class="font-semibold">Menaati perintah Tuhan</strong> - Ketaatan adalah bukti iman yang hidup</li>
+          <li><strong class="font-semibold">Mengingat kebaikan Tuhan di masa lalu</strong> - Ini menguatkan kita untuk percaya pada masa depan</li>
+        </ul>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Perisai Iman yang Memadamkan Panah Api
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Rasul Paulus dalam suratnya kepada jemaat di Efesus menggambarkan iman sebagai perisai yang dapat memadamkan semua panah api dari si jahat.
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Dalam segala keadaan, ambillah perisai iman, sebab dengan itu kamu akan dapat memadamkan semua panah api dari si jahat."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Efesus 6:16</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Panah api yang dimaksud adalah segala bentuk keraguan, ketakutan, keputusasaan, dan pencobaan yang datang menghampiri kita. Iman yang teguh akan melindungi kita dari serangan-serangan ini.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ketika masalah datang, iman berkata: "Tuhan sanggup menolong." Ketika masa depan tidak jelas, iman berkata: "Tuhan tahu rencana-Nya bagi saya." Ketika sakit penyakit menyerang, iman berkata: "Tuhan adalah penyembuhku."
+        </p>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Iman yang Diuji Lebih Berharga dari Emas
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Jangan heran jika iman kita diuji. Justru melalui ujianlah iman kita dimurnikan dan dikuatkan.
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Bergembiralah akan hal ini, sekalipun sekarang ini kamu seketika harus berdukacita oleh berbagai-bagai pencobaan. Maksud semuanya itu ialah untuk membuktikan kemurnian imanmu—yang jauh lebih tinggi nilainya dari pada emas yang fana, yang diuji kemurniannya dengan api—sehingga kamu memperoleh puji-pujian dan kemuliaan dan kehormatan pada hari Yesus Kristus menyatakan diri-Nya."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- 1 Petrus 1:6-7</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Emas dimurnikan melalui api untuk menghilangkan kotorannya. Demikian juga iman kita dimurnikan melalui pencobaan untuk menghilangkan ketergantungan pada diri sendiri dan mengalihkannya sepenuhnya kepada Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Setiap kali kita melewati pencobaan dengan iman yang teguh, kita keluar sebagai pemenang yang lebih kuat dan lebih dewasa secara rohani.
+        </p>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Damai Sejahtera yang Menjaga Hati dan Pikiran
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Iman yang teguh menghasilkan damai sejahtera yang melampaui segala akal. Ketika kita mempercayakan hidup kita sepenuhnya kepada Tuhan, Dia memberikan damai yang menjaga hati dan pikiran kita.
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Orang yang hatinya teguh Kaujagai dalam damai sejahtera, dalam damai sejahtera, sebab kepada-Mulah ia percaya. Percayalah kepada TUHAN selama-lamanya, sebab TUHAN ALLAH adalah gunung batu yang kekal."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Yesaya 26:3-4</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Damai sejahtera ini bukan berarti tidak ada masalah, tetapi ada ketenangan di tengah masalah. Bukan berarti tidak ada badai, tetapi ada penolong di tengah badai. Bukan berarti tidak ada ketakutan, tetapi ada keberanian yang mengatasi ketakutan.
+        </p>
+      </section>
+
+      <!-- Conclusion -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Menjadi Saksi Iman di Tengah Dunia yang Berguncang
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Ketika kita memiliki iman yang teguh, kita menjadi terang di dunia yang gelap dan penuh ketakutan. Orang-orang di sekitar kita akan melihat bahwa ada sesuatu yang berbeda dalam hidup kita—ada ketenangan, sukacita, dan pengharapan yang tidak dimiliki dunia.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Iman kita yang teguh menjadi kesaksian yang hidup tentang kuasa dan kasih Tuhan. Ketika kita tetap tenang di tengah badai, tetap bersukacita di tengah pencobaan, tetap mengasihi di tengah kebencian—orang akan melihat Kristus dalam hidup kita.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Mari kita bangun iman yang teguh hari ini. Mulailah dengan langkah-langkah kecil: percayalah Tuhan untuk hal-hal kecil, bersyukurlah dalam segala keadaan, dan ingatlah selalu kebaikan Tuhan di masa lalu.
+        </p>
+        <p class="mb-4 leading-relaxed font-semibold">
+          Tuhan Yesus Memberkati.
+        </p>
+        <p class="text-gray-600 font-medium">Penulis : {renunganData.author}</p>
+      </section>
+    </div>
+  </article>
+</RenunganLayout>
+```

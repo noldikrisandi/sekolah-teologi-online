@@ -1,0 +1,48 @@
+---
+// src/pages/renungan/index.astro
+import Card from "../../../components/ui/Card.astro";
+import RenunganLayout from "../../../layouts/RenunganLayout.astro";
+export const prerender = true;
+---
+
+<RenunganLayout
+  title="Renungan Harian Iman dan Kepercayaan"
+  description="Renungan harian untuk memperkuat iman">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+    <Card
+      img="/images/banner/raja.webp"
+      altText="Ilustrasi seseorang berdiri teguh melihat kerajaan melambangkan iman yang kokoh kepada Kristus"
+      title="Iman yang Teguh di Tengah Guncangan"
+      desc="Pelajari bagaimana tetap beriman kepada Tuhan meskipun dunia di sekitar kita terus berubah dan berguncang."
+      labelBtn="Baca Selengkapnya"
+      url="/renungan/iman/iman-yang-teguh-di-tengah-guncangan"
+    />
+
+    <Card
+      img="/images/banner/diberkati-tuhan.webp"
+      altText="Gambar tangan terangkat ke langit melambangkan kepercayaan penuh kepada Tuhan"
+      title="Percaya Saat Tidak Mengerti"
+      desc="Renungkan makna sejati dari percaya kepada Tuhan meskipun jalan yang kita tempuh belum kita pahami sepenuhnya."
+      labelBtn="Baca Selengkapnya"
+      url="/renungan/iman/percaya-saat-tidak-mengerti"
+    />
+
+    <Card
+      img="/images/banner/salib-ketenangan.svg"
+      altText="Ilustrasi salib dan burung-burung sebagai lambang kuasa iman yang mengalahkan ketakutan"
+      title="Kuasa Iman yang Mengalahkan Ketakutan"
+      desc="Temukan bagaimana iman dapat mengusir rasa takut dan memberi keberanian untuk melangkah sesuai kehendak Tuhan."
+      labelBtn="Baca Selengkapnya"
+      url="/renungan/iman/kuasa-iman-yang-mengalahkan-ketakutan"
+    />
+
+    <Card
+      img="/images/banner/renungan-kristen-tuhan-pikul-salib.svg"
+      altText="Gambar Tuhan Yesus memikul salib melambangkan perjalanan iman yang penuh proses dan pengharapan"
+      title="Tetap Percaya dalam Proses Tuhan"
+      desc="Belajar untuk tetap berserah dan percaya bahwa setiap proses yang Tuhan izinkan membawa kita semakin serupa dengan Kristus."
+      labelBtn="Baca Selengkapnya"
+      url="/renungan/iman/tetap-percaya-dalam-proses-tuhan"
+    />
+  </div>
+</RenunganLayout>

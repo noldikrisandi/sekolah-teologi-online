@@ -1,0 +1,259 @@
+---
+// src/pages/renungan/mengerti-maksud-tuhan/berkat-sesungguhnya-dari-tuhan.astro
+import RenunganLayout from "../../../layouts/RenunganLayout.astro";
+
+const renunganData = {
+  title: "Renungan Harian, 11 November 2025 - Berkat Sesungguhnya dari Tuhan",
+  author: "Noldi Krisandi",
+  image: "/images/banner/diberkati-tuhan.webp",
+  imageAlt: "seseorang yang diberkati Tuhan dari langit dengan Roh Kudus yang menyerupai burung merpati",
+  description: "Renungan harian Kristen 11 November 2025 tentang makna berkat sesungguhnya dari Tuhan. Pelajari bagaimana berkat Tuhan menghasilkan damai sejahtera dan 3 langkah praktis untuk menerimanya dalam kehidupan sehari-hari.",
+  publishedDate: "2025-11-11T08:00:00+07:00",
+  modifiedDate: "2025-11-11T08:00:00+07:00",
+  category: "renungan harian kristen",
+  scripture: ["Amsal 12:11", "Yeremia 29:11", "Filipi 4:6-7", "Amsal 6:6-8"]
+};
+---
+
+<RenunganLayout
+  title={renunganData.title}
+  description={renunganData.description}
+  url="renungan/mengerti-maksud-tuhan/berkat-sesungguhnya-dari-tuhan"
+  type="article"
+  articles={[{
+    headline: renunganData.title,
+    description: renunganData.description,
+    images: [renunganData.image],
+    datePublished: renunganData.publishedDate,
+    dateModified: renunganData.modifiedDate,
+    authorName: renunganData.author,
+    url: "/renungan/mengerti-maksud-tuhan/berkat-sesungguhnya-dari-tuhan",
+    keywords: ["berkat Tuhan", "damai sejahtera", "renungan harian", "hikmat Tuhan"]
+  }]}
+  breadcrumbs={[
+    { name: "Home", url: "/" },
+    { name: "Renungan Harian", url: "/renungan" },
+    { name: "Mengerti Maksud Tuhan", url: "/renungan/mengerti-maksud-tuhan" },
+    { name: "Berkat Sesungguhnya dari Tuhan", url: "/renungan/mengerti-maksud-tuhan/berkat-sesungguhnya-dari-tuhan" }
+  ]}
+>
+
+  <article itemscope itemtype="https://schema.org/Article">
+    <!-- Header dengan microdata -->
+    <header class="mb-8 border-l-4 border-sky-600 pl-4" itemprop="headline">
+      <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+        {renunganData.title}
+      </h1>
+      <div class="flex flex-wrap items-center gap-4 text-gray-600 text-lg">
+        <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+          Penulis: <span itemprop="name">{renunganData.author}</span>
+        </p>
+        <meta itemprop="datePublished" content={renunganData.publishedDate} />
+        <meta itemprop="dateModified" content={renunganData.modifiedDate} />
+      </div>
+      <h2 class="text-sky-700 text-lg">
+        Renungan Harian Kristen Hari ini,
+        <time datetime="2025-11-11" itemprop="datePublished">11 November 2025</time>
+      </h2>
+    </header>
+
+    <!-- Featured Image dengan schema -->
+    <div class="mb-8" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      <img
+        src={renunganData.image}
+        alt={renunganData.imageAlt}
+        width={800}
+        height={400}
+        class="w-full h-48 md:h-80 object-cover rounded-lg shadow-md"
+        itemprop="url"
+      />
+      <meta itemprop="width" content="800" />
+      <meta itemprop="height" content="400" />
+    </div>
+
+    <!-- Content dengan articleBody schema -->
+    <div class="prose prose-lg max-w-none text-gray-700" itemprop="articleBody">
+      <!-- Introduction -->
+      <section class="mb-8">
+        <p class="mb-4 leading-relaxed">
+          Shalom saudara-saudari yang terkasih di dalam Yesus Kristus.<br />
+          Kiranya berkat dan damai sejahtera Tuhan selalu menyertai kehidupan saudara-saudari sekalian.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Jika diminta menebak tema khotbah yang paling sering didengar, jawabannya kemungkinan 
+          besar adalah tema tentang berkat. Namun, sebenarnya, apa sih makna berkat dalam Alkitab?
+        </p>
+      </section>
+
+      <!-- Section 1 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Berkat Tuhan Menghasilkan Damai dan Sejahtera
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Berkat yang berasal dari Tuhan selalu menghasilkan <strong class="font-semibold text-gray-800">damai</strong> dan <strong class="font-semibold text-gray-800">sejahtera</strong>. 
+          Jika kita hanya merasakan sejahtera tanpa damai, maka perlu dipertanyakan apakah itu benar-benar berkat dari Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Sebagai contoh, seorang koruptor mungkin hidup sejahtera secara materi, tetapi kita tentu 
+          tidak bisa menyebutnya sebagai orang yang diberkati oleh Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ketika kita mendalami Firman Tuhan, kita akan menemukan bahwa berkat Tuhan merupakan hasil 
+          dari ketaatan kita dalam menjalankan Firman-Nya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Sebagai ilustrasi, seorang karyawan yang bekerja dengan sungguh-sungguh demi memuliakan Tuhan 
+          dalam pekerjaannya akan menerima berkat dari Tuhan, seperti promosi jabatan. Dalam hal ini, 
+          berkat tersebut disertai dengan rasa damai karena ia mencapainya melalui jalan yang benar.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Berbeda halnya dengan seseorang yang naik jabatan karena menjatuhkan orang lain. Meskipun 
+          ia mungkin menikmati sejahtera secara materi, rasa damai di hatinya akan hilang. Dengan mudah, 
+          kita dapat menyimpulkan bahwa kesuksesan seperti itu bukanlah berkat dari Tuhan, karena tidak membawa damai.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Berkat dari Tuhan bukanlah tentang apa yang orang lain katakan mengenai hidup kita, tetapi 
+          apa yang kita rasakan di hati. Misalnya, jika seseorang berkata, "Kamu sukses ya, hidupmu 
+          diberkati Tuhan," pujian itu belum tentu mencerminkan berkat Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Berkat Tuhan adalah sesuatu yang kita alami dan rasakan secara pribadi, bukan sekadar penilaian dari orang lain.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Cara untuk Mendapatkan Berkat Tuhan
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Sebelumnya, kita telah membahas bahwa berkat Tuhan adalah hasil dari melakukan Firman-Nya. 
+          Jadi, bagaimana cara kita mendapatkan berkat dari Tuhan? Jawabannya sederhana: lakukan Firman Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Mungkin muncul pertanyaan, Firman mana yang harus diikuti untuk mendapatkan berkat Tuhan? 
+          Saya sudah membahas hal ini dalam renungan sebelumnya tentang <a class="text-sky-700" href="/renungan/kasih-dan-damai-sejahtera/selalu-hidup-dalam-kesejahteraan">"Selalu Hidup dalam Kesejahteraan"</a>. 
+          Namun, jika kamu tidak membacanya, saya akan menjelaskan secara singkat 3 langkah penting untuk 
+          mendapatkan berkat Tuhan:
+        </p>
+
+        <h3 class="text-lg md:text-xl font-semibold text-gray-800 mb-3">
+          Langkah Pertama: Rajin dalam Bekerja
+        </h3>
+        <p class="mb-4 leading-relaxed">
+          Alkitab dengan jelas mengajarkan kita untuk rajin bekerja, seperti tertulis dalam:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Siapa yang bekerja tanahnya akan kenyang dengan roti, tetapi siapa yang mengikuti 
+            orang yang malas menjadi bodoh."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Amsal 12:11</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Ayat ini cukup menjadi alasan mengapa kita harus bekerja dengan rajin, karena ini adalah perintah Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Jika seseorang mengaku mengikuti Yesus tetapi malas bekerja, maka ia sedang menipu dirinya sendiri dan orang lain.
+        </p>
+
+        <h3 class="text-lg md:text-xl font-semibold text-gray-800 mb-3">
+          Langkah Kedua: Berdoa dengan Pengharapan
+        </h3>
+        <p class="mb-4 leading-relaxed">
+          Kenapa kita harus berdoa dengan penuh pengharapan kepada Tuhan? Karena Tuhan memiliki rancangan 
+          damai sejahtera untuk hidup kita, seperti tertulis dalam:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Sebab Aku ini mengetahui rancangan-rancangan apa yang ada pada-Ku mengenai kamu, demikianlah 
+            firman TUHAN, yaitu rancangan damai sejahtera dan bukan rancangan kecelakaan, untuk memberikan 
+            kepada kamu hari depan yang penuh harapan."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Yeremia 29:11</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Selain itu, Filipi 4:6-7 mengingatkan kita untuk menyerahkan segala kekhawatiran kepada Tuhan melalui doa:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Janganlah kamu khawatir tentang apa pun juga, tetapi nyatakanlah dalam doa dan permohonan 
+            dengan ucapan syukur keinginanmu kepada Allah. Dan damai sejahtera Allah, yang melampaui 
+            segala akal, akan memelihara hati dan pikiranmu dalam Kristus Yesus."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Filipi 4:6-7</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Berdoa sangat penting agar Tuhan menyertai setiap pekerjaan kita. Jika Tuhan menyertai, maka 
+          apa yang kita kerjakan akan berhasil. Namun, pastikan bahwa pekerjaan kita berkenan di hadapan Tuhan.
+        </p>
+
+        <h3 class="text-lg md:text-xl font-semibold text-gray-800 mb-3">
+          Langkah Ketiga: Menabung dengan Hikmat dari Tuhan
+        </h3>
+        <p class="mb-4 leading-relaxed">
+          Sebagian orang mungkin berpikir bahwa rajin bekerja dan berdoa saja sudah cukup untuk hidup dalam kesejahteraan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Namun, Alkitab menunjukkan bahwa hal ini belum cukup. Kita juga perlu menabung dengan hikmat, 
+          seperti yang diajarkan dalam:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Hai pemalas, pergilah kepada semut, lihatlah bagaimana dia bekerja dengan rajin dan bijaksana. 
+            Semut tidak mempunyai pemimpin, pengatur, atau penguasa, tetapi dia menyediakan makanannya di 
+            musim panas, dan mengumpulkan persediaannya pada waktu panen."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Amsal 6:6-8</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Semut memberi kita pelajaran penting: mereka mengumpulkan makanan saat kelimpahan agar tidak 
+          kekurangan di masa sulit. Begitu juga kita perlu menabung di masa kelimpahan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Mintalah hikmat dari Tuhan untuk menabung dengan cara yang bijak.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ketika kita rajin bekerja, berdoa dengan pengharapan, dan menabung dengan hikmat, maka kita 
+          dapat menerima berkat dari Tuhan dan hidup dalam damai sejahtera.
+        </p>
+      </section>
+
+      <!-- Conclusion -->
+      <section class="mb-8">
+        <p class="mb-4 leading-relaxed">
+          Melalui renungan ini kita mengetahui bahwa berkat Tuhan adalah hasil dari kita melakukan 
+          Firman Tuhan yang menghasilkan damai dan sejahtera.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Untuk mendapatkan berkat Tuhan kita bisa lakukan 3 langkah, yaitu; rajin dalam bekerja, 
+          berdoa dalam pengharapan kepada Tuhan, dan menabung dengan hikmat dari Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Kiranya melalui renungan ini kita selalu diberkati Tuhan dan terus hidup menyenangkan hati Tuhan. Amin.
+        </p>
+        <p class="mb-4 leading-relaxed font-semibold">
+          Tuhan Yesus Memberkati.
+        </p>
+        <p class="text-gray-600 font-medium">Penulis : {renunganData.author}</p>
+      </section>
+    </div>
+  </article>
+</RenunganLayout>

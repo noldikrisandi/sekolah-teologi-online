@@ -1,0 +1,306 @@
+---
+// src/pages/renungan/iman/tetap-percaya-dalam-proses-tuhan.astro
+import RenunganLayout from "../../../layouts/RenunganLayout.astro";
+
+const renunganData = {
+  title: "Renungan Harian, 10 November 2025 - Tetap Percaya dalam Proses Tuhan",
+  author: "Noldi Krisandi",
+  image: "/images/banner/renungan-kristen-tuhan-pikul-salib.svg",
+  imageAlt: "Gambar Tuhan Yesus memikul salib melambangkan perjalanan iman yang penuh proses dan pengharapan",
+  description: "Renungan hari ini, 10 November 2025 tentang arti penting tetap percaya dan berserah dalam setiap proses yang Tuhan izinkan. Pelajari bagaimana setiap proses membentuk kita semakin serupa dengan Kristus.",
+  publishedDate: "2025-11-10T08:00:00+07:00",
+  modifiedDate: "2025-11-10T08:00:00+07:00",
+  category: "renungan harian kristen",
+  scripture: ["Filipi 1:6", "Roma 8:28-29", "Yakobus 1:2-4", "2 Korintus 4:17-18", "Yesaya 64:8"]
+};
+---
+
+<RenunganLayout
+  title={renunganData.title}
+  description={renunganData.description}
+  url="renungan/iman/tetap-percaya-dalam-proses-tuhan"
+  type="article"
+  articles={[{
+    headline: renunganData.title,
+    description: renunganData.description,
+    images: [renunganData.image],
+    datePublished: renunganData.publishedDate,
+    dateModified: renunganData.modifiedDate,
+    authorName: renunganData.author,
+    url: "/renungan/iman/tetap-percaya-dalam-proses-tuhan",
+    keywords: ["proses Tuhan", "tetap percaya", "proses iman", "renungan harian", "pembentukan karakter"]
+  }]}
+  breadcrumbs={[
+    { name: "Home", url: "/" },
+    { name: "Renungan Harian", url: "/renungan" },
+    { name: "Iman", url: "/renungan/iman" },
+    { name: "Tetap Percaya dalam Proses Tuhan", url: "/renungan/iman/tetap-percaya-dalam-proses-tuhan" }
+  ]}
+>
+
+  <article itemscope itemtype="https://schema.org/Article">
+    <!-- Header dengan microdata -->
+    <header class="mb-8 border-l-4 border-sky-600 pl-4" itemprop="headline">
+      <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+        {renunganData.title}
+      </h1>
+      <div class="flex flex-wrap items-center gap-4 text-gray-600 text-lg">
+        <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+          Penulis: <span itemprop="name">{renunganData.author}</span>
+        </p>
+        <meta itemprop="datePublished" content={renunganData.publishedDate} />
+        <meta itemprop="dateModified" content={renunganData.modifiedDate} />
+      </div>
+      <h2 class="text-sky-700 text-lg">
+        Renungan Harian Kristen Hari ini,
+        <time datetime="2025-11-10" itemprop="datePublished">10 November 2025</time>
+      </h2>
+    </header>
+
+    <!-- Featured Image dengan schema -->
+    <div class="mb-8" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      <img
+        src={renunganData.image}
+        alt={renunganData.imageAlt}
+        width={800}
+        height={400}
+        class="w-full h-48 md:h-80 object-cover rounded-lg shadow-md"
+        itemprop="url"
+      />
+      <meta itemprop="width" content="800" />
+      <meta itemprop="height" content="400" />
+    </div>
+
+    <!-- Content dengan articleBody schema -->
+    <div class="prose prose-lg max-w-none text-gray-700" itemprop="articleBody">
+      <!-- Introduction -->
+      <section class="mb-8">
+        <p class="mb-4 leading-relaxed">
+          Shalom saudara-saudari yang terkasih di dalam Yesus Kristus.<br />
+          Kiranya kasih karunia dan damai sejahtera dari Bapa kita dan Tuhan Yesus Kristus menyertai kita semua.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Dalam perjalanan iman kita, seringkali kita menghadapi berbagai proses yang tidak mudah dipahami. Ada masa-masa di mana kita bertanya, "Mengapa harus melalui jalan ini, Tuhan? Mengapa prosesnya begitu panjang? Mengapa rasanya begitu sakit?"
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Hari ini, mari kita belajar untuk <strong class="font-semibold text-gray-800">tetap percaya dalam proses Tuhan</strong>. Seperti Yesus yang dengan setia memikul salib-Nya, kita pun dipanggil untuk percaya bahwa setiap proses yang Tuhan izinkan memiliki tujuan yang indah.
+        </p>
+      </section>
+
+      <!-- Section 1 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Tuhan yang Memulai akan Menyelesaikan
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Salah satu janji yang paling menghibur dalam proses kehidupan kita adalah kepastian bahwa Tuhan tidak setengah-setengah dalam bekerja:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Akan hal ini aku yakin sepenuhnya, yaitu Ia, yang memulai pekerjaan yang baik di antara kamu, akan meneruskannya sampai pada akhirnya pada hari Kristus Yesus."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Filipi 1:6</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Tuhan tidak pernah memulai sesuatu tanpa rencana untuk menyelesaikannya. Proses yang kita alami bukanlah tanda bahwa Tuhan telah meninggalkan kita, tetapi justru bukti bahwa Dia sedang aktif bekerja dalam hidup kita.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Seperti seorang pemahat yang perlahan-lahan membentuk sebuah patung dari batu marmer, Tuhan dengan sabar dan penuh ketelitian membentuk kita. Setiap pukulan pahat, setiap gesekan amplas—semuanya memiliki tujuan untuk mengeluarkan keindahan yang tersembunyi di dalamnya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ketika proses terasa berat, ingatlah: <strong class="font-semibold">Tuhan tidak sedang menghancurkanmu, Dia sedang membentukmu</strong>.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Segala Sesuata Bekerja untuk Kebaikan
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Kita seringkali memandang proses hanya dari sudut pandang sementara, tetapi Tuhan melihat dari perspektif kekal:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Kita tahu sekarang, bahwa Allah turut bekerja dalam segala sesuatu untuk mendatangkan kebaikan bagi mereka yang mengasihi Dia, yaitu bagi mereka yang terpanggil sesuai dengan rencana Allah. Sebab semua orang yang dipilih-Nya dari semula, mereka juga ditentukan-Nya dari semula untuk menjadi serupa dengan gambaran Anak-Nya, supaya Ia, Anak-Nya itu, menjadi yang sulung di antara banyak saudara."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Roma 8:28-29</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Perhatikan tujuan akhir dari segala proses yang Tuhan izinkan: <strong class="font-semibold">menjadi serupa dengan gambaran Anak-Nya</strong>. Setiap kesulitan, setiap pencobaan, setiap penantian—semuanya bekerja untuk membentuk karakter Kristus dalam hidup kita.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Proses Tuhan tidak selalu nyaman, tetapi selalu diperlukan. Tidak selalu mudah, tetapi selalu bermakna. Tidak selalu cepat, tetapi selalu tepat waktu.
+        </p>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Iman yang Diuji Menghasilkan Ketekunan
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Yakobus memberikan perspektif yang unik tentang proses dan pencobaan:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Saudara-saudaraku, anggaplah sebagai suatu kebahagiaan, apabila kamu jatuh ke dalam berbagai-bagai pencobaan, sebab kamu tahu, bahwa ujian terhadap imanmu itu menghasilkan ketekunan. Dan biarkanlah ketekunan itu memperoleh buah yang matang, supaya kamu menjadi sempurna dan utuh dan tak kekurangan suatu apapun."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Yakobus 1:2-4</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Tuhan mengizinkan proses dalam hidup kita bukan untuk menghancurkan kita, tetapi untuk membangun ketekunan. Ketekunan inilah yang kemudian menghasilkan buah kedewasaan rohani.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Bayangkan seorang atlet yang sedang berlatih. Proses latihan yang berat, repetitif, dan melelahkan bukanlah hukuman, tetapi persiapan untuk kemenangan. Demikian pula proses rohani yang kita alami mempersiapkan kita untuk warisan kekal yang Tuhan sediakan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          <strong class="font-semibold">Jangan sia-siakan prosesmu</strong>. Setiap tahap, setiap pelajaran, setiap kemenangan kecil—semuanya adalah bagian dari pembentukan karakter ilahi dalam hidupmu.
+        </p>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Penderitaan Ringan yang Sementara vs Kemuliaan Kekal
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Rasul Paulus memberikan kita perspektif yang benar tentang penderitaan dan proses:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Sebab penderitaan ringan yang sekarang ini, mengerjakan bagi kami kemuliaan kekal yang melebihi segala-galanya, jauh lebih besar dari pada penderitaan kami. Sebab kami tidak memperhatikan yang kelihatan, melainkan yang tak kelihatan, karena yang kelihatan adalah sementara, sedangkan yang tak kelihatan adalah kekal."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- 2 Korintus 4:17-18</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Paulus menyebut penderitaannya sebagai "ringan" dan "sementara" dibandingkan dengan kemuliaan kekal yang menantinya. Ini bukan berarti penderitaannya tidak nyata atau tidak sakit, tetapi dia memiliki perspektif kekal.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ketika kita fokus pada yang kelihatan—kesulitan, rasa sakit, ketidaknyamanan—proses terasa sangat berat. Tetapi ketika kita memfokuskan mata pada yang tak kelihatan—tujuan Tuhan, karakter Kristus, kemuliaan kekal—kita mendapatkan kekuatan untuk bertahan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          <strong class="font-semibold">Ubahlah fokusmu, ubahlah perspektifmu</strong>. Lihatlah setiap proses sebagai investasi untuk kekekalan.
+        </p>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Seperti Tanah Liat di Tangan Penjunan
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Yesaya memberikan gambaran yang indah tentang hubungan kita dengan Tuhan dalam proses pembentukan:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Tetapi sekarang, ya TUHAN, Engkaulah Bapa kami! Kamilah tanah liat dan Engkaulah yang membentuk kami, dan kami sekalian adalah buatan tangan-Mu."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Yesaya 64:8</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Sebagai tanah liat, kita memiliki dua pilihan dalam proses pembentukan:
+        </p>
+        
+        <div class="grid md:grid-cols-2 gap-6 mb-4">
+          <div class="bg-red-50 p-4 rounded-lg">
+            <h3 class="font-semibold text-red-700 mb-2">Tanah Liat yang Keras</h3>
+            <ul class="list-disc pl-4 space-y-1 text-sm">
+              <li>Melawan proses pembentukan</li>
+              <li>Tidak fleksibel di tangan Penjunan</li>
+              <li>Harus dihancurkan dan dibasahi ulang</li>
+              <li>Proses menjadi lebih menyakitkan</li>
+            </ul>
+          </div>
+          <div class="bg-green-50 p-4 rounded-lg">
+            <h3 class="font-semibold text-green-700 mb-2">Tanah Liat yang Lembut</h3>
+            <ul class="list-disc pl-4 space-y-1 text-sm">
+              <li>Berserah pada proses pembentukan</li>
+              <li>Fleksibel di tangan Penjunan</li>
+              <li>Mudah dibentuk sesuai kehendak-Nya</li>
+              <li>Proses berjalan dengan lancar</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="mb-4 leading-relaxed">
+          Pilihan ada di tangan kita: apakah kita akan menjadi tanah liat yang lembut dan berserah, atau tanah liat yang keras dan melawan? Ingatlah, <strong class="font-semibold">Penjunan kita tahu persis apa yang Dia buat</strong>. Dia tidak pernah membuat kesalahan.
+        </p>
+      </section>
+
+      <!-- Section 6 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Tetap Percaya Meski Tidak Mengerti
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Ada masa-masa dalam proses di mana kita sama sekali tidak mengerti apa yang Tuhan lakukan. Dalam momen-momen seperti inilah iman kita diuji.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Seperti Yusuf yang dijual oleh saudara-saudaranya, dipenjara karena fitnah, tetapi akhirnya memahami bahwa "Allah telah menyuruh aku mendahului kamu untuk menjamin kelanjutan keturunanmu di bumi ini dan untuk memelihara hidupmu sehingga sisa yang besar kamu lepaskan." (Kejadian 45:7)
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Yusuf tidak mengerti prosesnya ketika dia berada di dalamnya. Butuh bertahun-tahun baginya untuk melihat gambaran besarnya. Demikian pula dengan kita, kita mungkin tidak mengerti proses yang kita jalani sekarang, tetapi kita dapat percaya bahwa Tuhan sedang bekerja untuk kebaikan kita.
+        </p>
+        
+        <div class="bg-sky-50 p-6 rounded-lg mb-4">
+          <h3 class="text-lg font-semibold text-gray-800 mb-3">Kunci Tetap Percaya dalam Proses:</h3>
+          <ul class="list-disc pl-6 space-y-2">
+            <li><strong class="font-semibold">Ingatlah karakter Tuhan</strong> - Dia baik, setia, dan mengasihimu</li>
+            <li><strong class="font-semibold">Pegang janji-janji-Nya</strong> - Baca dan renungkan Firman Tuhan setiap hari</li>
+            <li><strong class="font-semibold">Bersyukur dalam segala hal</strong> - Ucapan syukur mengubah perspektif</li>
+            <li><strong class="font-semibold">Berbagi dengan komunitas</strong> - Jangan menjalani proses sendirian</li>
+            <li><strong class="font-semibold">Tetap melayani</strong> - Fokus pada orang lain dapat menguatkanmu</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Conclusion -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Hasil Akhir yang Indah
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Saudaraku, proses mungkin terasa berat, tetapi hasil akhirnya indah. Setiap tetes air mata, setiap doa yang tidak terjawab, setiap penantian yang panjang—semuanya sedang bekerja untuk mendatangkan kebaikan bagimu.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Tuhan tidak sedang menghukummu melalui proses yang kau alami. Dia sedang membentukmu, memurnikanmu, dan menyiapkanmu untuk warisan yang jauh lebih besar dari yang dapat kau bayangkan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Seperti emas yang dimurnikan dalam api, seperti permata yang dipotong dan diasah, seperti anggur yang diperas untuk menghasilkan minuman yang nikmat—demikianlah hidup kita di tangan Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed font-semibold text-sky-700">
+          Percayalah dalam proses-Nya. Berserahlah dalam pembentukan-Nya. Miliki pengharapan dalam janji-janji-Nya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Tuhan tidak pernah terlambat. Dia tidak pernah membuat kesalahan. Dan Dia tidak pernah berhenti mengasihimu, bahkan dalam proses yang paling sulit sekalipun.
+        </p>
+        <p class="mb-4 leading-relaxed font-semibold">
+          Tuhan Yesus Memberkati.
+        </p>
+        <p class="text-gray-600 font-medium">Penulis : {renunganData.author}</p>
+      </section>
+    </div>
+  </article>
+</RenunganLayout>
+```

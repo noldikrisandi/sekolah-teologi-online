@@ -1,0 +1,290 @@
+---
+// src/pages/renungan/iman/kuasa-iman-yang-mengalahkan-ketakutan.astro
+import RenunganLayout from "../../../layouts/RenunganLayout.astro";
+
+const renunganData = {
+  title: "Renungan Harian, 9 November 2025 - Kuasa Iman yang Mengalahkan Ketakutan",
+  author: "Noldi Krisandi",
+  image: "/images/banner/salib-ketenangan.svg",
+  imageAlt: "Ilustrasi salib dan burung-burung sebagai lambang kuasa iman yang mengalahkan ketakutan",
+  description: "Renungan hari ini, 9 November 2025 tentang bagaimana iman kepada Kristus dapat mengusir segala rasa takut dan memberi kita keberanian untuk melangkah dalam kehendak Tuhan. Pelajari kunci mengatasi ketakutan dengan iman.",
+  publishedDate: "2025-11-09T08:00:00+07:00",
+  modifiedDate: "2025-11-09T08:00:00+07:00",
+  category: "renungan harian kristen",
+  scripture: ["2 Timotius 1:7", "1 Yohanes 4:18", "Mazmur 27:1", "Yesaya 41:10", "Matius 14:27-31"]
+};
+---
+
+<RenunganLayout
+  title={renunganData.title}
+  description={renunganData.description}
+  url="renungan/iman/kuasa-iman-yang-mengalahkan-ketakutan"
+  type="article"
+  articles={[{
+    headline: renunganData.title,
+    description: renunganData.description,
+    images: [renunganData.image],
+    datePublished: renunganData.publishedDate,
+    dateModified: renunganData.modifiedDate,
+    authorName: renunganData.author,
+    url: "/renungan/iman/kuasa-iman-yang-mengalahkan-ketakutan",
+    keywords: ["kuasa iman", "mengalahkan ketakutan", "iman vs takut", "renungan harian", "keberanian iman"]
+  }]}
+  breadcrumbs={[
+    { name: "Home", url: "/" },
+    { name: "Renungan Harian", url: "/renungan" },
+    { name: "Iman", url: "/renungan/iman" },
+    { name: "Kuasa Iman yang Mengalahkan Ketakutan", url: "/renungan/iman/kuasa-iman-yang-mengalahkan-ketakutan" }
+  ]}
+>
+
+  <article itemscope itemtype="https://schema.org/Article">
+    <!-- Header dengan microdata -->
+    <header class="mb-8 border-l-4 border-sky-600 pl-4" itemprop="headline">
+      <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+        {renunganData.title}
+      </h1>
+      <div class="flex flex-wrap items-center gap-4 text-gray-600 text-lg">
+        <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+          Penulis: <span itemprop="name">{renunganData.author}</span>
+        </p>
+        <meta itemprop="datePublished" content={renunganData.publishedDate} />
+        <meta itemprop="dateModified" content={renunganData.modifiedDate} />
+      </div>
+      <h2 class="text-sky-700 text-lg">
+        Renungan Harian Kristen Hari ini,
+        <time datetime="2025-11-09" itemprop="datePublished">09 November 2025</time>
+      </h2>
+    </header>
+
+    <!-- Featured Image dengan schema -->
+    <div class="mb-8" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      <img
+        src={renunganData.image}
+        alt={renunganData.imageAlt}
+        width={800}
+        height={400}
+        class="w-full h-48 md:h-80 object-cover rounded-lg shadow-md"
+        itemprop="url"
+      />
+      <meta itemprop="width" content="800" />
+      <meta itemprop="height" content="400" />
+    </div>
+
+    <!-- Content dengan articleBody schema -->
+    <div class="prose prose-lg max-w-none text-gray-700" itemprop="articleBody">
+      <!-- Introduction -->
+      <section class="mb-8">
+        <p class="mb-4 leading-relaxed">
+          Shalom saudara-saudari yang terkasih di dalam Yesus Kristus.<br />
+          Kiranya damai sejahtera dari Tuhan yang mengatasi segala akal dan ketakutan menyertai kehidupan kita semua.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ketakutan adalah salah satu musuh terbesar yang sering menghambat pertumbuhan rohani kita. Takut akan masa depan, takut akan kegagalan, takut akan penolakan, takut akan sakit penyakit, dan berbagai ketakutan lainnya seringkali membuat kita lumpuh secara spiritual.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Namun hari ini, Firman Tuhan mengingatkan kita bahwa <strong class="font-semibold text-gray-800">iman memiliki kuasa untuk mengalahkan setiap ketakutan</strong>. Iman bukan hanya sekadar percaya, tetapi senjata rohani yang mampu menghancurkan setiap benteng ketakutan dalam hidup kita.
+        </p>
+      </section>
+
+      <!-- Section 1 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Roh yang Memberikan Kekuatan, Kasih, dan Ketertiban
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Seringkali kita membiarkan roh ketakutan menguasai hidup kita, padahal Tuhan telah memberikan kepada kita roh yang berbeda sama sekali:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Sebab Allah memberikan kepada kita bukan roh ketakutan, melainkan roh yang membangkitkan kekuatan, kasih dan ketertiban."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- 2 Timotius 1:7</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Perhatikan tiga karakteristik roh yang Tuhan berikan:
+        </p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li><strong class="font-semibold">Kekuatan</strong> - Bukan kelemahan atau ketakutan</li>
+          <li><strong class="font-semibold">Kasih</strong> - Yang mengusir ketakutan (1 Yohanes 4:18)</li>
+          <li><strong class="font-semibold">Ketertiban</strong> - Bukan kekacauan atau kebingungan</li>
+        </ul>
+        <p class="mb-4 leading-relaxed">
+          Ketika ketakutan datang, ingatlah bahwa itu bukan dari Tuhan. Setiap kali kita merasa takut, itu adalah serangan musuh yang berusaha mencurai damai sejahtera dan iman kita. Tuhan memberikan kita kuasa untuk melawan dan mengatasi setiap roh ketakutan.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Kasih yang Sempurna Mengusir Ketakutan
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Salah satu rahasia mengalahkan ketakutan adalah dengan mengalami kasih Allah yang sempurna:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Di dalam kasih tidak ada ketakutan: kasih yang sempurna melenyapkan ketakutan; sebab ketakutan mengandung hukuman dan barangsiapa takut, ia tidak sempurna di dalam kasih."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- 1 Yohanes 4:18</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Semakin kita mengerti dan mengalami kasih Tuhan yang tanpa syarat, semakin kecil ruang untuk ketakutan dalam hidup kita. Ketakutan seringkali muncul karena kita merasa tidak aman, tidak diterima, atau tidak dikasihi.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ketika kita benar-benar menyadari bahwa Tuhan mengasihi kita dengan kasih yang sempurna, bahwa Dia menerima kita apa adanya, bahwa Dia tidak akan pernah meninggalkan kita—maka ketakutan kehilangan kekuatannya atas hidup kita.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Luangkan waktu setiap hari untuk merenungkan kasih Tuhan. Baca Firman-Nya, berdoa, dan biarkan kasih-Nya memenuhi hati kita. Kasih Tuhan adalah penangkal terkuat terhadap ketakutan.
+        </p>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Tuhan adalah Terang dan Keselamatan Kita
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Daud, meskipun sering menghadapi bahaya dan ancaman kematian, memiliki rahasia mengatasi ketakutan:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "TUHAN adalah terangku dan keselamatanku, kepada siapakah aku harus takut? TUHAN adalah benteng hidupku, terhadap siapakah aku harus gemetar?"
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Mazmur 27:1</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Daud tidak mengatakan bahwa tidak ada hal yang menakutkan dalam hidupnya. Sebaliknya, dia mengakui bahwa ada banyak hal yang bisa ditakuti. Namun imannya kepada Tuhan yang lebih besar daripada ketakutannya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Perhatikan bagaimana Daud menggambarkan Tuhan:
+        </p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li><strong class="font-semibold">Terang</strong> - Yang menerangi kegelapan dan ketidaktahuan</li>
+          <li><strong class="font-semibold">Keselamatan</strong> - Yang menyelamatkan dari bahaya</li>
+          <li><strong class="font-semibold">Benteng hidup</strong> - Perlindungan yang kuat dan aman</li>
+        </ul>
+        <p class="mb-4 leading-relaxed">
+          Ketika kita fokus pada besarnya masalah, ketakutan kita akan membesar. Tetapi ketika kita fokus pada kebesaran Tuhan, iman kita yang akan membesar.
+        </p>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Jangan Takut, Sebab Aku Menyertai Engkau
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Salah janji Tuhan yang paling sering diulang dalam Alkitab adalah: "Jangan takut." Ini menunjukkan betapa Tuhan memahami kecenderungan kita untuk takut dan betapa Dia ingin melepaskan kita dari ketakutan.
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "janganlah takut, sebab Aku menyertai engkau, janganlah bimbang, sebab Aku ini Allahmu; Aku akan meneguhkan, bahkan akan menolong engkau; Aku akan memegang engkau dengan tangan kanan-Ku yang membawa kemenangan."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Yesaya 41:10</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Janji penyertaan Tuhan adalah dasar untuk mengalahkan ketakutan. Kita tidak perlu takut karena kita tidak sendirian. Tuhan tidak hanya mengawasi dari jauh, tetapi Dia menyertai kita, meneguhkan kita, menolong kita, dan memegang tangan kita.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ketakutan seringkali berkata: "Kamu sendirian, tidak ada yang menolongmu." Iman berkata: "Tuhan menyertai aku, Dia tidak pernah meninggalkanku."
+        </p>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Pelajaran dari Petrus Berjalan di Atas Air
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Kisah Petrus berjalan di atas air memberikan pelajaran berharga tentang hubungan antara iman dan ketakutan:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Tetapi Yesus segera berkata kepada mereka: 'Tenanglah! Aku ini, jangan takut!' Lalu Petrus berseru dan menjawab Dia: 'Tuhan, apabila Engkau itu, suruhlah aku datang kepada-Mu berjalan di atas air.' Kata Yesus: 'Datanglah!' Maka Petrus turun dari perahu dan berjalan di atas air mendapatkan Yesus. Tetapi ketika dirasanya tiupan angin, takutlah ia dan mulai tenggelam lalu berteriak: 'Tuhan, tolonglah aku!'"
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Matius 14:27-30</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Perhatikan pola yang terjadi:
+        </p>
+        <ol class="list-decimal pl-6 mb-4 space-y-2">
+          <li><strong class="font-semibold">Iman memampukan Petrus melakukan hal yang mustahil</strong> - Berjalan di atas air</li>
+          <li><strong class="font-semibold">Ketakutan membuatnya mulai tenggelam</strong> - Ketika fokus beralih dari Yesus ke angin</li>
+          <li><strong class="font-semibold">Yesus menyelamatkannya</strong> - Meskipun imannya kecil</li>
+        </ol>
+        <p class="mb-4 leading-relaxed">
+          Pelajaran pentingnya: <strong class="font-semibold">jaga fokus kita tetap pada Yesus, bukan pada badai</strong>. Ketika kita memandang kepada Yesus, iman kita tumbuh. Ketika kita memandang kepada masalah, ketakutan kita tumbuh.
+        </p>
+      </section>
+
+      <!-- Section 6 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Praktik Mengalahkan Ketakutan dengan Iman
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Bagaimana kita secara praktis dapat menggunakan iman untuk mengalahkan ketakutan?
+        </p>
+        
+        <div class="bg-sky-50 p-6 rounded-lg mb-4">
+          <h3 class="text-lg font-semibold text-gray-800 mb-3">Langkah-langkah Praktis:</h3>
+          <ul class="list-disc pl-6 space-y-2">
+            <li><strong class="font-semibold">Identifikasi ketakutanmu</strong> - Tuliskan secara spesifik apa yang kamu takuti</li>
+            <li><strong class="font-semibold">Cari janji Tuhan</strong> - Temukan ayat Alkitab yang menjawab ketakutanmu</li>
+            <li><strong class="font-semibold">Ucapkan janji itu dengan lantang</strong> - Iman timbul dari pendengaran akan Firman Tuhan</li>
+            <li><strong class="font-semibold">Bersyukurlah sebelumnya</strong> - Ucapan syukur mengalahkan roh ketakutan</li>
+            <li><strong class="font-semibold">Langkah dengan berani</strong> - Iman tanpa perbuatan adalah mati</li>
+          </ul>
+        </div>
+
+        <p class="mb-4 leading-relaxed">
+          Ingatlah: <strong class="font-semibold">iman bukanlah ketiadaan ketakutan, tetapi keberanian untuk bertindak meskipun takut</strong>. Setiap kali kita melangkah dengan iman meskipun merasa takut, kita memperkuat otot-otot iman kita dan melemahkan kuasa ketakutan.
+        </p>
+      </section>
+
+      <!-- Conclusion -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Hidup dalam Kemenangan Iman
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Saudaraku, ketakutan mungkin akan selalu mencoba untuk menyerang hidup kita. Tetapi kita memiliki senjata yang lebih kuat—iman kepada Yesus Kristus.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Iman berkata: "Tuhan sanggup." Iman berkata: "Tuhan menyertaiku." Iman berkata: "Tuhan yang memulai pekerjaan baik akan menyelesaikannya." Iman berkata: "Segala sesuatu mungkin bagi orang yang percaya."
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Hari ini, pilihlah untuk hidup oleh iman, bukan oleh ketakutan. Ketika ketakutan datang, hadapilah dengan Firman Tuhan. Ketika keraguan muncul, jawablah dengan janji-janji-Nya. Ketika kekhawatiran menyerang, lawanlah dengan doa dan ucapan syukur.
+        </p>
+        <p class="mb-4 leading-relaxed font-semibold text-sky-700">
+          Imanmu memiliki kuasa untuk mengalahkan setiap ketakutan. Percayalah dan berjalanlah dalam kemenangan!
+        </p>
+        <p class="mb-4 leading-relaxed font-semibold">
+          Tuhan Yesus Memberkati.
+        </p>
+        <p class="text-gray-600 font-medium">Penulis : {renunganData.author}</p>
+      </section>
+    </div>
+  </article>
+</RenunganLayout>

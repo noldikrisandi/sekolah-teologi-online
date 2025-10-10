@@ -1,0 +1,255 @@
+---
+import RenunganLayout from "../../../layouts/RenunganLayout.astro";
+// src/pages/renungan/iman/percaya-saat-tidak-mengerti.astro
+
+const renunganData = {
+  title: "Renungan Harian, 8 November 2025 - Percaya Saat Tidak Mengerti",
+  author: "Noldi Krisandi",
+  image: "/images/banner/diberkati-tuhan.webp",
+  imageAlt: "Gambar tangan terangkat ke langit melambangkan kepercayaan penuh kepada Tuhan",
+  description: "Renungan hari ini, 8 November 2025 tentang arti sejati percaya kepada Tuhan meskipun jalan yang kita tempuh belum kita pahami sepenuhnya. Pelajari bagaimana tetap percaya ketika kita tidak mengerti rencana Tuhan.",
+  publishedDate: "2025-11-08T08:00:00+07:00",
+  modifiedDate: "2025-11-08T08:00:00+07:00",
+  category: "renungan harian kristen",
+  scripture: ["Amsal 3:5-6", "Yesaya 55:8-9", "Yeremia 29:11", "Roma 8:28", "2 Korintus 5:7"]
+};
+---
+
+<RenunganLayout
+  title={renunganData.title}
+  description={renunganData.description}
+  url="renungan/iman/percaya-saat-tidak-mengerti"
+  type="article"
+  articles={[{
+    headline: renunganData.title,
+    description: renunganData.description,
+    images: [renunganData.image],
+    datePublished: renunganData.publishedDate,
+    dateModified: renunganData.modifiedDate,
+    authorName: renunganData.author,
+    url: "/renungan/iman/percaya-saat-tidak-mengerti",
+    keywords: ["percaya kepada Tuhan", "iman kristen", "tidak mengerti rencana Tuhan", "renungan harian", "kepercayaan"]
+  }]}
+  breadcrumbs={[
+    { name: "Home", url: "/" },
+    { name: "Renungan Harian", url: "/renungan" },
+    { name: "Iman", url: "/renungan/iman" },
+    { name: "Percaya Saat Tidak Mengerti", url: "/renungan/iman/percaya-saat-tidak-mengerti" }
+  ]}
+>
+
+  <article itemscope itemtype="https://schema.org/Article">
+    <!-- Header dengan microdata -->
+    <header class="mb-8 border-l-4 border-sky-600 pl-4" itemprop="headline">
+      <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+        {renunganData.title}
+      </h1>
+      <div class="flex flex-wrap items-center gap-4 text-gray-600 text-lg">
+        <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+          Penulis: <span itemprop="name">{renunganData.author}</span>
+        </p>
+        <meta itemprop="datePublished" content={renunganData.publishedDate} />
+        <meta itemprop="dateModified" content={renunganData.modifiedDate} />
+      </div>
+      <h2 class="text-sky-700 text-lg">
+        Renungan Harian Kristen Hari ini,
+        <time datetime="2025-11-08" itemprop="datePublished">08 November 2025</time>
+      </h2>
+    </header>
+
+    <!-- Featured Image dengan schema -->
+    <div class="mb-8" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      <img
+        src={renunganData.image}
+        alt={renunganData.imageAlt}
+        width={800}
+        height={400}
+        class="w-full h-48 md:h-80 object-cover rounded-lg shadow-md"
+        itemprop="url"
+      />
+      <meta itemprop="width" content="800" />
+      <meta itemprop="height" content="400" />
+    </div>
+
+    <!-- Content dengan articleBody schema -->
+    <div class="prose prose-lg max-w-none text-gray-700" itemprop="articleBody">
+      <!-- Introduction -->
+      <section class="mb-8">
+        <p class="mb-4 leading-relaxed">
+          Shalom saudara-saudari yang terkasih di dalam Yesus Kristus.<br />
+          Kiranya kasih karunia dan damai sejahtera dari Tuhan kita Yesus Kristus menyertai kita semua.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Pernahkah saudara mengalami situasi di mana segala sesuatu tampak tidak masuk akal? Di mana rencana-rencana yang sudah kita susun rapi tiba-tiba berantakan? Di mana doa-doa kita seolah tidak dijawab sesuai dengan harapan kita?
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Dalam momen-momen seperti itulah iman kita diuji. <strong class="font-semibold text-gray-800">Percaya saat tidak mengerti</strong> adalah tingkat kedewasaan rohani yang Tuhan inginkan untuk kita capai.
+        </p>
+      </section>
+
+      <!-- Section 1 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Percayalah dengan Segenap Hatimu
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Kita seringkali ingin mengerti segala sesuatu terlebih dahulu sebelum mempercayainya. Namun Firman Tuhan mengajarkan kita untuk melakukan yang sebaliknya:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Percayalah kepada TUHAN dengan segenap hatimu, dan janganlah bersandar kepada pengertianmu sendiri. Akuilah Dia dalam segala lakumu, maka Ia akan meluruskan jalanmu."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Amsal 3:5-6</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Perhatikan urutannya: <strong class="font-semibold">percaya dulu, mengerti kemudian</strong>. Bukan sebaliknya. Tuhan tidak meminta kita untuk memahami segala sesuatu terlebih dahulu, tetapi untuk mempercayai-Nya dengan segenap hati kita.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Bersandar pada pengertian kita sendiri sangat berbahaya karena pengertian kita terbatas. Kita hanya melihat sebagian kecil dari gambaran besar yang Tuhan lihat. Seperti anak kecil yang tidak mengerti mengapa orangtuanya melarangnya bermain di jalan raya, demikian pula kita sering tidak mengerti mengapa Tuhan mengizinkan atau tidak mengizinkan sesuatu dalam hidup kita.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Rencana Tuhan Melampaui Pemikiran Kita
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Salah satu alasan utama kita sulit percaya saat tidak mengerti adalah karena kita mencoba memahami Tuhan dengan standar manusia. Padahal, cara Tuhan bekerja jauh melampaui pemahaman kita.
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Sebab rancangan-Ku bukanlah rancanganmu, dan jalanmu bukanlah jalan-Ku, demikianlah firman TUHAN. Seperti tingginya langit dari bumi, demikianlah tingginya jalan-Ku dari jalanmu dan rancangan-Ku dari rancanganmu."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Yesaya 55:8-9</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Tuhan melihat dari perspektif kekekalan, sementara kita terbatas pada waktu dan ruang. Dia melihat akhir dari awal, sementara kita hanya melihat bagian demi bagian. Ketika kita tidak mengerti jalan-Nya, ingatlah bahwa Dia melihat gambaran yang lebih besar—gambaran yang mencakup kebaikan kekal kita dan kemuliaan nama-Nya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Rencana Tuhan bagi kita selalu baik:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Sebab Aku ini mengetahui rancangan-rancangan apa yang ada pada-Ku mengenai kamu, demikianlah firman TUHAN, yaitu rancangan damai sejahtera dan bukan rancangan kecelakaan, untuk memberikan kepadamu hari depan yang penuh harapan."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Yeremia 29:11</cite>
+        </blockquote>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Segala Sesuatu Bekerja untuk Mendatangkan Kebaikan
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Salah janji Tuhan yang paling menghibur adalah bahwa Dia bekerja dalam segala sesuatu untuk mendatangkan kebaikan bagi mereka yang mengasihi Dia.
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Kita tahu sekarang, bahwa Allah turut bekerja dalam segala sesuatu untuk mendatangkan kebaikan bagi mereka yang mengasihi Dia, yaitu bagi mereka yang terpanggil sesuai dengan rencana Allah."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Roma 8:28</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Perhatikan kata-kata kunci dalam ayat ini: <strong class="font-semibold">"segala sesuatu"</strong>. Bukan hanya hal-hal yang baik menurut kita, bukan hanya hal-hal yang menyenangkan, tetapi <strong class="font-semibold">segala sesuatu</strong>—termasuk hal-hal yang tidak kita mengerti, hal-hal yang menyakitkan, hal-hal yang membuat kita bertanya "mengapa, Tuhan?"
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ketika kita tidak mengerti, kita dapat berpegang pada janji ini. Kita mungkin tidak melihat bagaimana sesuatu bisa mendatangkan kebaikan, tetapi kita percaya bahwa Tuhan mampu mengubah bahkan situasi terburuk menjadi berkat bagi kita.
+        </p>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Hidup oleh Iman, Bukan oleh Penglihatan
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Iman sejati adalah ketika kita terus berjalan meskipun kita tidak melihat tujuan dengan jelas.
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Sebab hidup kami ini adalah hidup karena percaya, bukan karena melihat."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- 2 Korintus 5:7</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Hidup oleh penglihatan berarti kita hanya mau melangkah ketika kita bisa melihat dengan jelas ke mana kita akan pergi. Hidup oleh iman berarti kita melangkah karena kita percaya kepada Dia yang memimpin kita, meskipun kita tidak bisa melihat jalan di depan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Seperti Abraham yang pergi tanpa mengetahui ke mana ia pergi (Ibrani 11:8), kita pun dipanggil untuk mempercayai Pemandu kita lebih daripada jalan yang kita tempuh.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Praktik hidup oleh iman:
+        </p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li><strong class="font-semibold">Berdoa meskipun jawaban belum terlihat</strong> - Terus percaya Tuhan mendengar</li>
+          <li><strong class="font-semibold">Menaati meskipun alasannya tidak jelas</strong> - Percaya Tuhan tahu yang terbaik</li>
+          <li><strong class="font-semibold">Bersyukur meskipun dalam kesulitan</strong> - Percaya Tuhan bekerja untuk kebaikan</li>
+          <li><strong class="font-semibold">Melayani meskipun tidak dihargai</strong> - Percaya Tuhan yang memberi upah</li>
+        </ul>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Ketika Tuhan Diam
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Bagian tersulit dari percaya saat tidak mengerti adalah ketika Tuhan seolah diam. Ketika doa-doa kita seperti memantul ke langit-langit, ketika kita tidak merasakan kehadiran-Nya, ketika segala sesuatu tampak sunyi dan sepi.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Dalam momen-momen seperti ini, ingatlah bahwa diamnya Tuhan bukan berarti tidak pedulinya Tuhan. Terkadang Tuhan diam karena Dia sedang mengajar kita untuk percaya tanpa perlu bukti, untuk mengasihi tanpa perlu perasaan, untuk berharap tanpa perlu jaminan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Seperti Yesus yang tidur di perahu saat badai datang (Markus 4:35-41), Tuhan mungkin tampak diam dalam badai kehidupan kita. Namun Dia tidak pernah absen. Dia selalu mengawasi, selalu mengendalikan, dan selalu bekerja untuk kebaikan kita.
+        </p>
+      </section>
+
+      <!-- Conclusion -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Ketenangan dalam Ketidaktahuan
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Ketika kita belajar untuk percaya saat tidak mengerti, kita menemukan ketenangan yang ajaib. Ketenangan yang tidak bergantung pada pemahaman kita, tetapi pada karakter Tuhan yang kita percayai.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Kita boleh tidak mengerti jalan Tuhan, tetapi kita mengenal Pribadi Tuhan. Kita boleh tidak mengerti rencana Tuhan, tetapi kita tahu bahwa Dia baik. Kita boleh tidak mengerti waktu Tuhan, tetapi kita percaya bahwa Dia tepat waktu.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Hari ini, jika saudara sedang bergumul dengan ketidaktahuan, dengan pertanyaan yang tidak terjawab, dengan situasi yang tidak dimengerti—ingatlah:
+        </p>
+        <p class="mb-4 leading-relaxed font-semibold text-sky-700">
+          Tuhan tidak mengharuskan kita untuk mengerti segalanya. Dia hanya meminta kita untuk mempercayai-Nya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Percayalah bahwa Dia yang memulai pekerjaan baik dalam hidupmu akan menyelesaikannya juga (Filipi 1:6). Percayalah bahwa jalanmu ada dalam tangan-Nya. Percayalah bahwa yang tidak mungkin bagi manusia, mungkin bagi Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed font-semibold">
+          Tuhan Yesus Memberkati.
+        </p>
+        <p class="text-gray-600 font-medium">Penulis : {renunganData.author}</p>
+      </section>
+    </div>
+  </article>
+</RenunganLayout>

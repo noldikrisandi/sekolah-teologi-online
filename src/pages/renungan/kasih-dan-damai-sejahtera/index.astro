@@ -1,0 +1,62 @@
+---
+// src/pages/renungan/index.astro
+import Card from '../../../components/ui/Card.astro';
+import RenunganLayout from '../../../layouts/RenunganLayout.astro';
+export const prerender = true;
+---
+
+<RenunganLayout
+  title="Renungan Harian Kasih dan Damai Sejahtera"
+  description="Renungan harian untuk memperkuat iman">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+
+    <Card
+      img="/images/banner/renungan-rohani.webp"
+      altText="Ilustrasi damai sejahtera Allah yang melampaui segala akal di tengah badai kehidupan"
+      title="Damai Sejahtera di Tengah Badai"
+      desc="Temukan cara agar kita memiliki ketenangan dalam menghadapi masalah dan kesulitan yang sesuai Firman Tuhan"
+      labelBtn="Baca Selengkapnya"
+      url="/renungan/kasih-dan-damai-sejahtera/damai-sejahtera-di-tengah-badai"
+    />
+    <Card
+      img="/images/banner/salib-ketenangan.svg"
+      altText="Yesus memikul salib sebagai bukti kasih allah"
+      title="Kasih Karunia Allah"
+      desc="Alkitab dengan jelas menyatakan bahwa keselamatan adalah anugerah, bukan karena usaha manusia"
+      labelBtn="Baca Selengkapnya"
+      url="/renungan/kasih-dan-damai-sejahtera/kasih-karunia-allah"
+    />
+    <Card
+      img="/images/banner/renungan-kristen-tuhan-pikul-salib.svg"
+      altText="memberi karena kasih"
+      title="Memberi Karena Kasih"
+      desc="Dalam Alkitab dijelaskan bahwa kita harus memberi karena kasih bukan karena gengsi atau untuk investasi"
+      labelBtn="Baca Selengkapnya"
+      url="/renungan/kasih-dan-damai-sejahtera/memberi-karena-kasih"
+    />
+    <Card
+      img="/images/banner/renungan-kristen.webp"
+      altText="salib mejadi simbol pentingnya Menjadi Pribadi Penuh Damai"
+      title="Menjadi Pribadi Penuh Damai"
+      desc="Renungan tentang bagaimana menjadi pribadi yang penuh damai sesuai dengan firman Tuhan"
+      labelBtn="Baca Selengkapnya"
+      url="/renungan/kasih-dan-damai-sejahtera/menjadi-pribadi-penuh-damai"
+    />
+    <Card
+      img="/images/banner/mengasihi-diri-sendiri.svg"
+      altText="ilustrasi orang yang mengasihi diri sendiri"
+      title="Pentingnya Mengasihi Diri Sendiri"
+      desc="Pelajari makna sebenarnya dari mengasihi diri sendiri menurut pandangan Kristen, sebagai dasar untuk mengasihi sesama"
+      labelBtn="Baca Selengkapnya"
+      url="/renungan/kasih-dan-damai-sejahtera/pentingnya-mengasihi-diri"
+    />
+    <Card
+      img="/images/banner/diberkati-tuhan.webp"
+      altText="seseorang yang mendapatkan berkat kesejahteraan dari Tuhan"
+      title="Selalu Hidup dalam Kesejahteraan Sesuai Janji Tuhan"
+      desc="Temukan cara untuk selalu hidup dalam kesejahteraan sesuai janji Tuhan. Pelajari tiga langkah praktisnya"
+      labelBtn="Baca Selengkapnya"
+      url="/renungan/kasih-dan-damai-sejahtera/selalu-hidup-dalam-kesejahteraan"
+    />
+  </div>
+</RenunganLayout>
