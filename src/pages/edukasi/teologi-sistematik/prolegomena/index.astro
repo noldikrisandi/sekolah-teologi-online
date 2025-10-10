@@ -1,0 +1,737 @@
+---
+// src/pages/edukasi/teologi-sistematik/prolegomena/index.astro
+import EdukasiLayout from "../../../../layouts/EdukasiLayout.astro";
+
+const pageTitle = "Prolegomena - Fondasi Teologi Sistematik";
+const pageDescription = "Pelajari dasar-dasar metodologi teologi sistematik: pengertian, pentingnya, sumber otoritas, dan pendekatan alkitabiah dalam studi teologi";
+const pageImage = "/images/banner/prolegomena-teologi.webp";
+const pageUrl = "edukasi/teologi-sistematik/prolegomena";
+
+const breadcrumbs = [
+  { name: "Beranda", url: "https://sekolahteologi.com/" },
+  { name: "Edukasi", url: "https://sekolahteologi.com/edukasi" },
+  { name: "Teologi Sistematik", url: "https://sekolahteologi.com/edukasi/teologi-sistematik" },
+  { name: "Prolegomena", url: "https://sekolahteologi.com/edukasi/teologi-sistematik/prolegomena" }
+];
+
+// Data untuk bagian-bagian terkait
+const relatedSections = [
+  {
+    title: "Bibliologi - Doktrin Alkitab",
+    url: "/edukasi/teologi-sistematik/bibliologi",
+    description: "Memahami inspirasi, otoritas, kanonisasi, dan keandalan Kitab Suci",
+    icon: "📖"
+  },
+  {
+    title: "Hermeneutika - Ilmu Penafsiran",
+    url: "/edukasi/hermeneutika",
+    description: "Prinsip-prinsip menafsir Alkitab dengan benar dan kontekstual",
+    icon: "🔍"
+  },
+  {
+    title: "Teologi Proper - Doktrin Allah",
+    url: "/edukasi/teologi-sistematik/teologi-proper",
+    description: "Mengenal sifat, atribut, dan karya Allah Tritunggal",
+    icon: "✝️"
+  },
+  {
+    title: "Kristologi - Doktrin Kristus",
+    url: "/edukasi/teologi-sistematik/kristologi",
+    description: "Memahami pribadi dan karya Yesus Kristus",
+    icon: "🕊️"
+  }
+];
+---
+
+<EdukasiLayout 
+  title={pageTitle}
+  description={pageDescription}
+  image={pageImage}
+  url={pageUrl}
+  type="article"
+  breadcrumbs={breadcrumbs}
+>
+
+<div class="space-y-8">
+  <!-- Header Section -->
+  <header class="text-center py-12 bg-gradient-to-r from-sky-50 to-indigo-100 rounded-2xl shadow-sm">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Prolegomena</h1>
+      <p class="text-xl text-gray-700 mb-6 max-w-3xl mx-auto leading-relaxed">
+        Fondasi Metodologis dalam Teologi Sistematik - Memahami "Bagaimana" dan "Mengapa" Sebelum "Apa"
+      </p>
+      <div class="flex flex-wrap justify-center gap-2">
+        <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Epistemologi Teologis</span>
+        <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold">Metodologi</span>
+        <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold">Fondasi Teologis</span>
+        <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-semibold">Wahyu & Otoritas</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Quick Navigation -->
+  
+
+  <!-- Pengertian Prolegomena -->
+  <section id="pengertian" class="scroll-mt-24">
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+      <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+        <h2 class="text-2xl md:text-3xl font-bold text-white flex items-center">
+          <span class="bg-white/20 p-2 rounded-lg mr-4">📚</span>
+          Pengertian Prolegomena dalam Teologi Sistematik
+        </h2>
+      </div>
+      
+      <div class="p-6 md:p-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Definisi Etimologis & Konseptual</h3>
+            
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
+              <p class="text-yellow-700 font-medium">
+                <strong>Kata "prolegomena"</strong> berasal dari bahasa Yunani <em>prolegómena</em> (προλεγόμενα) yang secara harfiah berarti 
+                <strong>"hal-hal yang dikatakan sebelumnya"</strong> atau <strong>"pengantar/pendahuluan"</strong>.
+              </p>
+            </div>
+            
+            <p class="text-gray-700 mb-4 leading-relaxed">
+              Dalam konteks <strong>Teologi Sistematika</strong>, <strong>Prolegomena</strong> adalah disiplin fondasional yang membahas 
+              prasyarat-prasyarat metodologis, epistemologis, dan filosofis sebelum seseorang membangun sistem teologinya. 
+              Ini adalah "teologi tentang melakukan teologi."
+            </p>
+            
+            <div class="bg-sky-50 rounded-lg p-4 mb-6">
+              <h4 class="font-semibold text-sky-900 mb-3">Analogi Fondasi Bangunan</h4>
+              <p class="text-sky-800 text-sm">
+                <strong>Prolegomena</strong> ibarat proses <em>penggalian fondasi, pemeriksaan tanah, dan perencanaan skyprints</em> 
+                sebelum membangun gedung pencakar langit. Tanpa Prolegomena yang kuat, seluruh bangunan teologi rentan terhadap kerapuhan.
+              </p>
+            </div>
+          </div>
+          
+          <div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Pertanyaan-Pertanyaan Kunci Prolegomena</h3>
+            
+            <div class="space-y-4">
+              <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q1</span>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Apa itu Teologi?</h4>
+                  <p class="text-gray-700 text-sm mt-1">Sifat, definisi, dan lingkup studi teologi</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                <span class="bg-green-100 text-green-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q2</span>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Mungkinkah Mengenal Allah?</h4>
+                  <p class="text-gray-700 text-sm mt-1">Kemungkinan pengetahuan teologis (epistemologi)</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q3</span>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Bagaimana Kita Tahu?</h4>
+                  <p class="text-gray-700 text-sm mt-1">Sumber-sumber pengetahuan teologis (wahyu)</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                <span class="bg-red-100 text-red-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q4</span>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Apa Batasan Kita?</h4>
+                  <p class="text-gray-700 text-sm mt-1">Keterbatasan akal manusia yang berdosa</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Fungsi dan Cakupan -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+          <div class="bg-gradient-to-br from-sky-50 to-indigo-50 rounded-xl p-6">
+            <h4 class="font-bold text-sky-900 mb-3 text-lg">Fungsi Utama Prolegomena</h4>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <span class="bg-sky-500 text-white p-1 rounded mr-3 mt-1">✓</span>
+                <span class="text-gray-700">Menetapkan fondasi epistemologis yang alkitabiah</span>
+              </li>
+              <li class="flex items-start">
+                <span class="bg-sky-500 text-white p-1 rounded mr-3 mt-1">✓</span>
+                <span class="text-gray-700">Menjelaskan metodologi studi teologi yang tepat</span>
+              </li>
+              <li class="flex items-start">
+                <span class="bg-sky-500 text-white p-1 rounded mr-3 mt-1">✓</span>
+                <span class="text-gray-700">Mengidentifikasi sumber-sumber otoritatif teologi</span>
+              </li>
+              <li class="flex items-start">
+                <span class="bg-sky-500 text-white p-1 rounded mr-3 mt-1">✓</span>
+                <span class="text-gray-700">Menentukan lingkup, batasan, dan tujuan teologi</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6">
+            <h4 class="font-bold text-green-900 mb-3 text-lg">Cakupan Pembahasan</h4>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <span class="bg-green-500 text-white p-1 rounded mr-3 mt-1">•</span>
+                <span class="text-gray-700">Sifat dan definisi teologi sebagai disiplin ilmu</span>
+              </li>
+              <li class="flex items-start">
+                <span class="bg-green-500 text-white p-1 rounded mr-3 mt-1">•</span>
+                <span class="text-gray-700">Hubungan antara wahyu (revelation) dan akal budi (reason)</span>
+              </li>
+              <li class="flex items-start">
+                <span class="bg-green-500 text-white p-1 rounded mr-3 mt-1">•</span>
+                <span class="text-gray-700">Otoritas, inspirasi, dan kanonisasi Kitab Suci</span>
+              </li>
+              <li class="flex items-start">
+                <span class="bg-green-500 text-white p-1 rounded mr-3 mt-1">•</span>
+                <span class="text-gray-700">Peran tradisi, pengalaman, dan komunitas iman</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pentingnya Prolegomena -->
+  <section id="pentingnya" class="scroll-mt-24">
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+      <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+        <h2 class="text-2xl md:text-3xl font-bold text-white flex items-center">
+          <span class="bg-white/20 p-2 rounded-lg mr-4">⚡</span>
+          Signifikansi Prolegomena dalam Studi Teologi
+        </h2>
+      </div>
+      
+      <div class="p-6 md:p-8">
+        <div class="prose prose-lg max-w-none mb-8">
+          <p class="text-gray-700 text-lg leading-relaxed">
+            Dalam konteks <strong>modern</strong> dan <strong>postmodern</strong>, Prolegomena menjadi semakin krusial 
+            sebagai respons terhadap tantangan epistemologis dan filosofis terhadap iman Kristen.
+          </p>
+        </div>
+        
+        <!-- Alasan Pentingnya -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+          <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-14 h-14 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+              <span class="text-2xl">🏛️</span>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-3 text-lg">Menjawab Tantangan Epistemologi</h3>
+            <p class="text-gray-700 text-sm">
+              Menanggapi pertanyaan <em>"Bagaimana kau tahu?"</em> dengan membangun dasar yang kokoh 
+              untuk kemungkinan pengetahuan tentang Allah.
+            </p>
+          </div>
+          
+          <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center mb-4">
+              <span class="text-2xl">📜</span>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-3 text-lg">Menegaskan Otoritas Wahyu</h3>
+            <p class="text-gray-700 text-sm">
+              Di tengah relativisme postmodern, Prolegomena menegaskan Alkitab sebagai 
+              sumber otoritas tertinggi (Revelasi Khusus).
+            </p>
+          </div>
+          
+          <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mb-4">
+              <span class="text-2xl">🌍</span>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-3 text-lg">Kontekstualisasi yang Relevan</h3>
+            <p class="text-gray-700 text-sm">
+              Memahami konteks budaya dan pemikiran kontemporer agar teologi dapat 
+              berkomunikasi secara efektif dengan dunia modern.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Kutipan Penting -->
+        <blockquote class="border-l-4 mb-3 border-green-500 pl-6 py-4 bg-green-50 rounded-r-lg my-8">
+          <p class="text-gray-700 italic text-lg">
+            "Prolegomena adalah gerbang menuju rumah teologi. Jika gerbangnya salah atau rapuh, 
+            seluruh bangunan doktrin akan mudah goyah ketika datang badai kritik dan skeptisisme."
+          </p>
+          <footer class="text-gray-600 mt-3 font-semibold">— Prinsip Dasar Teologi Sistematik</footer>
+        </blockquote>
+        
+        <!-- Konsekuensi Tanpa Prolegomena -->
+        <div class="bg-red-50 border border-red-200 rounded-xl p-6">
+          <h3 class="font-bold text-red-900 mb-4 text-xl flex items-center">
+            <span class="bg-red-100 p-2 rounded-lg mr-3">⚠️</span>
+            Bahaya Mengabaikan Prolegomena
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <h4 class="font-semibold text-red-800 mb-2">Konsekuensi Teologis:</h4>
+              <ul class="text-red-700 space-y-2 text-sm">
+                <li class="flex items-start">
+                  <span class="mr-2">•</span>
+                  <span>Doktrin dibangun di atas fondasi yang rapuh</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-2">•</span>
+                  <span>Rentan terhadap kesalahan penafsiran dan bidat</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-2">•</span>
+                  <span>Tidak siap menghadapi tantangan intelektual</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-red-800 mb-2">Konsekuensi Praktis:</h4>
+              <ul class="text-red-700 space-y-2 text-sm">
+                <li class="flex items-start">
+                  <span class="mr-2">•</span>
+                  <span>Iman yang mudah goyah dalam badai keraguan</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-2">•</span>
+                  <span>Ketidakmampuan membela iman secara rasional</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-2">•</span>
+                  <span>Pemahaman teologi yang terfragmentasi</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sumber dan Otoritas -->
+  <section id="sumber-otoritas" class="scroll-mt-24">
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+      <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+        <h2 class="text-2xl md:text-3xl font-bold text-white flex items-center">
+          <span class="bg-white/20 p-2 rounded-lg mr-4">🏛️</span>
+          Sumber-Sumber dan Otoritas dalam Teologi
+        </h2>
+      </div>
+      
+      <div class="p-6 md:p-8">
+        <!-- Wahyu Umum dan Khusus -->
+        <div class="mb-12">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Dua Cara Allah Menyatakan Diri</h3>
+          
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Wahyu Umum -->
+            <div class="bg-sky-50 rounded-2xl p-6 border border-sky-200">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-sky-500 rounded-xl flex items-center justify-center mr-4">
+                  <span class="text-white text-xl">🌎</span>
+                </div>
+                <h4 class="text-xl font-bold text-sky-900">Wahyu Umum<br><span class="text-sm font-normal">(General Revelation)</span></h4>
+              </div>
+              
+              <p class="text-sky-800 mb-4">
+                Penyataan Allah melalui <strong>ciptaan, hati nurani, dan sejarah</strong> yang tersedia untuk semua manusia.
+              </p>
+            
+              <div class="bg-white rounded-lg p-4 mb-4">
+                <h5 class="font-semibold text-sky-900 mb-2">Basis Alkitabiah:</h5>
+                <p class="text-sky-700 text-sm italic">
+                  "Langit menceritakan kemuliaan Allah, dan cakrawala memberitakan pekerjaan tangan-Nya."<br>
+                  <strong class="not-italic">— Mazmur 19:2</strong>
+                </p>
+                <p class="text-sky-700 text-sm italic mt-2">
+                  "Sebab apa yang tidak nampak dari pada-Nya, yaitu kekuatan-Nya yang kekal dan keilahian-Nya, 
+                  dapat nampak kepada pikiran dari karya-Nya sejak dunia diciptakan."<br>
+                  <strong class="not-italic">— Roma 1:20</strong>
+                </p>
+              </div>
+              
+              <div class="space-y-2">
+                <div class="flex items-center">
+                  <span class="w-2 h-2 bg-sky-500 rounded-full mr-3"></span>
+                  <span class="text-sky-800 text-sm">Tersedia untuk semua orang</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="w-2 h-2 bg-sky-500 rounded-full mr-3"></span>
+                  <span class="text-sky-800 text-sm">Menunjukkan keberadaan dan sifat dasar Allah</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="w-2 h-2 bg-sky-500 rounded-full mr-3"></span>
+                  <span class="text-sky-800 text-sm">Tidak cukup untuk keselamatan</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Wahyu Khusus -->
+            <div class="bg-red-50 rounded-2xl p-6 border border-red-200">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center mr-4">
+                  <span class="text-white text-xl">✝️</span>
+                </div>
+                <h4 class="text-xl font-bold text-red-900">Wahyu Khusus<br><span class="text-sm font-normal">(Special Revelation)</span></h4>
+              </div>
+              
+              <p class="text-red-800 mb-4">
+                Penyataan Allah secara <strong>langsung dan personal</strong> yang puncaknya dalam <strong>Yesus Kristus dan Alkitab</strong>.
+              </p>
+            
+              <div class="bg-white rounded-lg p-4 mb-4">
+                <h5 class="font-semibold text-red-900 mb-2">Basis Alkitabiah:</h5>
+                <p class="text-red-700 text-sm italic">
+                  "Setelah pada zaman dahulu Allah berulang kali dan dalam pelbagai cara berbicara kepada nenek moyang kita 
+                  dengan perantaraan nabi-nabi, maka pada zaman akhir ini Ia telah berbicara kepada kita dengan perantaraan Anak-Nya."<br>
+                  <strong class="not-italic">— Ibrani 1:1-2</strong>
+                </p>
+                <p class="text-red-700 text-sm italic mt-2">
+                  "Segala tulisan yang diilhamkan Allah memang bermanfaat untuk mengajar, untuk menyatakan kesalahan, 
+                  untuk memperbaiki kelakuan dan untuk mendidik orang dalam kebenaran."<br>
+                  <strong class="not-italic">— 2 Timotius 3:16</strong>
+                </p>
+              </div>
+              
+              <div class="space-y-2">
+                <div class="flex items-center">
+                  <span class="w-2 h-2 bg-red-500 rounded-full mr-3"></span>
+                  <span class="text-red-800 text-sm">Diberikan secara khusus melalui Kristus dan Alkitab</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="w-2 h-2 bg-red-500 rounded-full mr-3"></span>
+                  <span class="text-red-800 text-sm">Menyediakan pengetahuan yang jelas tentang keselamatan</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="w-2 h-2 bg-red-500 rounded-full mr-3"></span>
+                  <span class="text-red-800 text-sm">Otoritatif dan menentukan untuk iman dan praktik</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Wesleyan Quadrilateral -->
+        <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-8 mb-8">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Wesleyan Quadrilateral<br>
+            <span class="text-lg font-normal text-gray-700">Empat Sumber Pemahaman Teologis</span>
+          </h3>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white rounded-xl p-6 text-center shadow-sm border border-red-200">
+              <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <span class="text-red-600 text-2xl">📖</span>
+              </div>
+              <h4 class="font-bold text-red-900 mb-3 text-lg">Kitab Suci<br><span class="text-sm font-normal">(Primer)</span></h4>
+              <p class="text-gray-700 text-sm mb-4">
+                Sumber utama dan otoritatif, penentu akhir kebenaran teologis
+              </p>
+              <div class="bg-red-50 rounded-lg p-3">
+                <p class="text-red-800 text-xs font-semibold">2 Timotius 3:16-17</p>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-xl p-6 text-center shadow-sm border border-sky-200">
+              <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <span class="text-sky-600 text-2xl">🏛️</span>
+              </div>
+              <h4 class="font-bold text-sky-900 mb-3 text-lg">Tradisi<br><span class="text-sm font-normal">(Sekunder)</span></h4>
+              <p class="text-gray-700 text-sm mb-4">
+                Pemahaman gereja sepanjang sejarah yang menginformasi penafsiran
+              </p>
+              <div class="bg-sky-50 rounded-lg p-3">
+                <p class="text-sky-800 text-xs font-semibold">2 Tesalonika 2:15</p>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-xl p-6 text-center shadow-sm border border-green-200">
+              <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <span class="text-green-600 text-2xl">💭</span>
+              </div>
+              <h4 class="font-bold text-green-900 mb-3 text-lg">Akal Budi<br><span class="text-sm font-normal">(Instrumental)</span></h4>
+              <p class="text-gray-700 text-sm mb-4">
+                Kapasitas berpikir dan menganalisis yang ditawan kepada Kristus
+              </p>
+              <div class="bg-green-50 rounded-lg p-3">
+                <p class="text-green-800 text-xs font-semibold">Roma 12:2</p>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-xl p-6 text-center shadow-sm border border-purple-200">
+              <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <span class="text-purple-600 text-2xl">❤️</span>
+              </div>
+              <h4 class="font-bold text-purple-900 mb-3 text-lg">Pengalaman<br><span class="text-sm font-normal">(Konfirmatif)</span></h4>
+              <p class="text-gray-700 text-sm mb-4">
+                Pengalaman pribadi dan komunal dengan Allah dalam hidup sehari-hari
+              </p>
+              <div class="bg-purple-50 rounded-lg p-3">
+                <p class="text-purple-800 text-xs font-semibold">Mazmur 34:9</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-6 rounded-r-lg">
+            <h4 class="font-bold text-yellow-900 mb-2">Catatan Penting:</h4>
+            <p class="text-yellow-800 text-sm">
+              Meskipun dikenal sebagai "Quadrilateral," dalam tradisi Wesleyan dan Reformed, <strong>Kitab Suci tetap menjadi otoritas tertinggi</strong> 
+              yang menilai dan mengoreksi ketiga sumber lainnya. Tradisi, akal budi, dan pengalaman berfungsi sebagai alat bantu 
+              yang tunduk kepada otoritas Alkitab.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Hierarki Otoritas -->
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Hierarki Otoritas dalam Teologi Reformed</h3>
+          
+          <div class="max-w-4xl mx-auto">
+            <div class="space-y-4">
+              <!-- Level 1 -->
+              <div class="flex items-center bg-red-50 p-6 rounded-xl border border-red-200 shadow-sm">
+                <div>
+                  <h4 class="font-bold text-red-900 text-xl mb-2">1. Otoritas Utama & Penentu<br>
+                    <span class="text-lg font-normal">Kitab Suci (Sola Scriptura)</span>
+                  </h4>
+                  <p class="text-red-800">
+                    Alkitab sebagai Firman Allah yang diilhamkan, tanpa salah dalam naskah aslinya, 
+                    dan menjadi standar tertinggi untuk semua doktrin dan praktik.
+                  </p>
+                </div>
+              </div>
+              
+              <!-- Level 2 -->
+              <div class="flex items-center bg-sky-50 p-6 rounded-xl border border-sky-200 shadow-sm ml-8">
+                <div>
+                  <h4 class="font-bold text-sky-900 text-xl mb-2">2. Otoritas Sekunder & Penuntun<br>
+                    <span class="text-lg font-normal">Tradisi & Pengakuan Iman</span>
+                  </h4>
+                  <p class="text-sky-800">
+                    Pemahaman gereja sepanjang sejarah, pengakuan iman, dan konsili ekumenis 
+                    yang membantu menuntun penafsiran namun tunduk kepada Kitab Suci.
+                  </p>
+                </div>
+              </div>
+              
+              <!-- Level 3 -->
+              <div class="flex items-center bg-green-50 p-6 rounded-xl border border-green-200 shadow-sm ml-16">
+                <div>
+                  <h4 class="font-bold text-green-900 text-xl mb-2">3. Otoritas Instrumental & Pelayan<br>
+                    <span class="text-lg font-normal">Akal Budi & Pengalaman</span>
+                  </h4>
+                  <p class="text-green-800">
+                    Akal budi yang diperbarui dan pengalaman iman sebagai alat untuk memahami, 
+                    menyusun, dan menghidupi kebenaran Alkitab, namun selalu diuji olehnya.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metodologi -->
+  <section id="metodologi" class="scroll-mt-24">
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+      <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+        <h2 class="text-2xl md:text-3xl font-bold text-white flex items-center">
+          <span class="bg-white/20 p-2 rounded-lg mr-4">🔬</span>
+          Metodologi Teologi Sistematik
+        </h2>
+      </div>
+      
+      <div class="p-6 md:p-8">
+        <div class="prose prose-lg max-w-none mb-8">
+          <p class="text-gray-700 text-lg leading-relaxed">
+            Teologi Sistematik mengikuti <strong>metode induktif</strong> yang dimulai dari pengamatan data Alkitab 
+            menuju formulasi doktrin yang koheren, kemudian diuji melalui aplikasi praktis.
+          </p>
+        </div>
+        
+        <!-- Proses Metodologis -->
+        <div class="bg-gray-50 rounded-2xl p-8 mb-8">
+          <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Proses Metodologis dalam Teologi Sistematik</h3>
+          
+          <div class="space-y-6">
+            <!-- Langkah 1 -->
+            <div class="flex flex-col md:flex-row items-start">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200 flex-1">
+                <h4 class="font-bold text-sky-900 text-xl mb-3">1. Eksposisi Teks Alkitab</h4>
+                <p class="text-gray-700 mb-4">
+                  Meneliti dan menafsirkan ayat-ayat Alkitab secara kontekstual, gramatikal, dan historis 
+                  dengan prinsip-prinsip hermeneutika yang sehat.
+                </p>
+                <div class="bg-sky-50 rounded-lg p-3">
+                  <p class="text-sky-800 text-sm font-semibold">Teknik: Exegesis, analisis bahasa asli, studi konteks</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Langkah 2 -->
+            <div class="flex flex-col md:flex-row items-start">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-green-200 flex-1">
+                <h4 class="font-bold text-green-900 text-xl mb-3">2. Sintesis Doktrinal</h4>
+                <p class="text-gray-700 mb-4">
+                  Menyatukan semua pengajaran Alkitab tentang topik tertentu secara komprehensif dan holistik, 
+                  mengidentifikasi tema-tema utama dan prinsip-prinsip alkitabiah.
+                </p>
+                <div class="bg-green-50 rounded-lg p-3">
+                  <p class="text-green-800 text-sm font-semibold">Teknik: Analisis tematik, perbandingan antar-ayat, identifikasi pola</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Langkah 3 -->
+            <div class="flex flex-col md:flex-row items-start">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-purple-200 flex-1">
+                <h4 class="font-bold text-purple-800 text-xl mb-3">3. Analisis Historis</h4>
+                <p class="text-gray-700 mb-4">
+                  Memahami perkembangan doktrin dalam sejarah gereja, mempelajari pengakuan iman, 
+                  konsili, dan kontroversi teologis untuk belajar dari kebijaksanaan dan kesalahan masa lalu.
+                </p>
+                <div class="bg-purple-50 rounded-lg p-3">
+                  <p class="text-purple-800 text-sm font-semibold">Teknik: Studi patristik, reformasi, perkembangan doktrin</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Langkah 4 -->
+            <div class="flex flex-col md:flex-row items-start">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-red-200 flex-1">
+                <h4 class="font-bold text-red-800 text-xl mb-3">4. Formulasi Sistemik</h4>
+                <p class="text-gray-700 mb-4">
+                  Menyusun pemahaman doktrinal yang koheren, konsisten, dan komprehensif 
+                  dalam kerangka sistematis yang mencerminkan keseluruhan pengajaran Alkitab.
+                </p>
+                <div class="bg-red-50 rounded-lg p-3">
+                  <p class="text-red-800 text-sm font-semibold">Teknik: Konstruksi sistem, uji konsistensi, integrasi doktrinal</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Langkah 5 -->
+            <div class="flex flex-col md:flex-row items-start">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200 flex-1">
+                <h4 class="font-bold text-sky-900 text-xl mb-3">5. Aplikasi Kontemporer</h4>
+                <p class="text-gray-700 mb-4">
+                  Menerapkan kebenaran doktrinal dalam konteks masa kini—kehidupan pribadi, gereja, 
+                  dan masyarakat—dengan relevansi dan transformatif.
+                </p>
+                <div class="bg-orange-50 rounded-lg p-3">
+                  <p class="text-orange-800 text-sm font-semibold">Teknik: Kontekstualisasi, penerapan praktis, transformasi hidup</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Perbandingan Pendekatan -->
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Perbandingan Pendekatan dalam Prolegomena</h3>
+          
+          <div class="overflow-x-auto">
+            <table class="w-full border-collapse">
+              <thead>
+                <tr class="bg-gray-100">
+                  <th class="border border-gray-300 p-4 text-left font-semibold text-gray-900">Pendekatan</th>
+                  <th class="border border-gray-300 p-4 text-left font-semibold text-gray-900">Otoritas Tertinggi</th>
+                  <th class="border border-gray-300 p-4 text-left font-semibold text-gray-900">Metodologi</th>
+                  <th class="border border-gray-300 p-4 text-left font-semibold text-gray-900">Penekanan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="hover:bg-gray-50">
+                  <td class="border border-gray-300 p-4 font-semibold text-sky-900">Reformed/Protestan</td>
+                  <td class="border border-gray-300 p-4 text-gray-700">Sola Scriptura (Alkitab)</td>
+                  <td class="border border-gray-300 p-4 text-gray-700">Induktif-sistematis dari teks</td>
+                  <td class="border border-gray-300 p-4 text-gray-700">Kedaulatan Allah dalam wahyu</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="border border-gray-300 p-4 font-semibold text-purple-800">Katolik Roma</td>
+                  <td class="border border-gray-300 p-4 text-gray-700">Alkitab + Tradisi + Magisterium</td>
+                  <td class="border border-gray-300 p-4 text-gray-700">Sintesis alkitabiah dan tradisi</td>
+                  <td class="border border-gray-300 p-4 text-gray-700">Kesinambungan tradisi gereja</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="border border-gray-300 p-4 font-semibold text-green-900">Liberal</td>
+                  <td class="border border-gray-300 p-4 text-gray-700">Akal budi modern & pengalaman</td>
+                  <td class="border border-gray-300 p-4 text-gray-700">Kritik historis & filosofis</td>
+                  <td class="border border-gray-300 p-4 text-gray-700">Relevansi dengan dunia modern</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="border border-gray-300 p-4 font-semibold text-red-800">Ekstrem Kharismatik</td>
+                  <td class="border border-gray-300 p-4 text-gray-700">Penyataan langsung & pengalaman</td>
+                  <td class="border border-gray-300 p-4 text-gray-700">Subjektif & pengalaman pribadi</td>
+                  <td class="border border-gray-300 p-4 text-gray-700">Pekerjaan Roh Kudus sekarang</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian-Bagian Terkait -->
+  <section class="mt-12">
+    <div class="bg-gradient-to-r from-sky-600 to-sky-800 text-white rounded-2xl p-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Lanjutkan Perjalanan Teologismu</h2>
+      <p class="mb-8 max-w-2xl mx-auto text-lg">
+        Setelah memahami fondasi Prolegomena, saatnya melanjutkan eksplorasi ke doktrin-doktrin sistematik berikutnya 
+        untuk membangun pemahaman teologis yang komprehensif dan alkitabiah.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/edukasi/teologi-sistematik/bibliologi" 
+           class="bg-white text-sky-900 px-8 py-4 rounded-xl font-bold hover:text-sky-700 transition-all shadow-lg hover:shadow-xl">
+          📖 Pelajari Bibliologi Selanjutnya
+        </a>
+        <a href="/edukasi/teologi-sistematik" 
+           class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-sky-600 transition-all">
+          🏠 Kembali ke Overview Teologi
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Link ke Bagian-Bagian Terkait -->
+  <section class="mt-8">
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-8">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Eksplorasi Lebih Lanjut tentang Prolegomena</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {relatedSections.map((section) => (
+          <a href={section.url} class="bg-gray-50 hover:bg-gray-100 p-6 rounded-xl border border-gray-200 transition-all group">
+            <div class="flex items-start">
+              <span class="text-3xl mr-4 group-hover:scale-110 transition-transform">{section.icon}</span>
+              <div>
+                <h3 class="font-bold text-gray-900 text-lg mb-2 group-hover:text-sky-600">{section.title}</h3>
+                <p class="text-gray-700 text-sm">{section.description}</p>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+      
+      <div class="text-center mt-8">
+        <a href="/edukasi/teologi-sistematik#kurikulum" 
+           class="inline-flex items-center text-sky-600 hover:text-sky-800 font-semibold">
+          <span>Lihat Kurikulum Lengkap Teologi Sistematik</span>
+          <span class="ml-2">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<style>
+.prose {
+  max-width: none;
+}
+.scroll-mt-24 {
+  scroll-margin-top: 6rem;
+}
+</style>
+
+</EdukasiLayout>

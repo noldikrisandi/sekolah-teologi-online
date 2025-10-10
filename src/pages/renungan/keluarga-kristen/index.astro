@@ -1,0 +1,48 @@
+---
+// src/pages/renungan/index.astro
+import Card from "../../../components/ui/Card.astro";
+import RenunganLayout from "../../../layouts/RenunganLayout.astro";
+export const prerender = true;
+---
+
+<RenunganLayout
+  title="Renungan Harian Keluarga Kristen"
+  description="Renungan harian untuk memperkuat iman">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+    <Card
+      img="/images/banner/ayah-dan-anak.svg"
+      altText="Ayah yang mengasihi anaknya dengan kasih Tuhan"
+      title="Menjadi Ayah yang Berkenan"
+      desc="Sukses menjadi ayah yang berkenan di hadapan Tuhan sehingga bisa menjadi teladan dalam keluarga yang diberkati Tuhan."
+      labelBtn="Renungan"
+      url="/renungan/keluarga-kristen/ayah-yang-berkenan"
+    />
+
+    <Card
+      img="/images/banner/keluarga-bahagia.svg"
+      altText="Ibu yang mengasihi anaknya sehingga berkenan kepada Tuhan"
+      title="Menjadi Ibu yang Berkenan"
+      desc="Belajar menjadi ibu yang berkenan di hadapan Tuhan, karena kedamaian dalam keluarga berasal dari seorang ibu yang berkenan dihadapan Tuhan."
+      labelBtn="Renungan"
+      url="/renungan/keluarga-kristen/ibu-dan-istri-yang-berkenan"
+    />
+
+    <Card
+      img="/images/banner/diberkati-tuhan.webp"
+      altText="Seorang anak yang diberkati dan berkenan dihadapan Tuhan"
+      title="Menjadi Anak yang Berkenan"
+      desc="Pentingnya menjadi anak yang berkenan di hadapan Tuhan dan orang tua sehingga hidup kita penuh damai dan sejahtera."
+      labelBtn="Renungan"
+      url="/renungan/keluarga-kristen/anak-yang-berkenan"
+    />
+
+    <Card
+      img="/images/banner/keluarga-penuh-kasih-sarapan-bersama.webp"
+      altText="Keluarga sarapan dengan bahagia menjadi contoh orang tua sebagai teladan"
+      title="Orang Tua Sebagai Teladan"
+      desc="Orang tua harus menjadi teladan bagi anak, karena anak adalah citra dari orang tua itu sendiri | Pentingnya perkenanan Tuhan"
+      labelBtn="Renungan"
+      url="/renungan/keluarga-kristen/orang-tua-sebagai-teladan"
+    />
+  </div>
+</RenunganLayout>

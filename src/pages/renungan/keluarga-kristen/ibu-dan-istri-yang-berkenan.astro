@@ -1,0 +1,364 @@
+---
+// src/pages/renungan/keluarga-kristen/ibu-dan-istri-yang-berkenan.astro
+import RenunganLayout from "../../../layouts/RenunganLayout.astro";
+
+const renunganData = {
+  title: "Renungan Harian, 16 November 2025 - Menjadi Ibu dan Istri yang Berkenan di Hadapan Tuhan",
+  author: "Noldi Krisandi",
+  image: "/images/banner/keluarga-bahagia.svg",
+  imageAlt: "seorang ibu Kristen yang menjalankan perannya sebagai istri dan ibu menurut pandangan Alkitab",
+  description: "Renungan harian Kristen 16 November 2025 tentang peran ibu dan istri yang berkenan di hadapan Tuhan. Pelajari makna menjadi penolong, penasihat bijaksana, pendidik anak, pengelola rumah tangga, dan pendoa bagi keluarga menurut Firman Tuhan.",
+  publishedDate: "2025-11-16T08:00:00+07:00",
+  modifiedDate: "2025-11-16T08:00:00+07:00",
+  category: "renungan harian kristen",
+  scripture: ["Kejadian 2:18", "Efesus 5:22", "Amsal 31:26", "Amsal 22:6", "Kolose 3:14", "Amsal 31:27", "Filipi 4:6-7"]
+};
+---
+
+<RenunganLayout
+  title={renunganData.title}
+  description={renunganData.description}
+  url="renungan/keluarga-kristen/ibu-dan-istri-yang-berkenan"
+  type="article"
+  articles={[{
+    headline: renunganData.title,
+    description: renunganData.description,
+    images: [renunganData.image],
+    datePublished: renunganData.publishedDate,
+    dateModified: renunganData.modifiedDate,
+    authorName: renunganData.author,
+    url: "/renungan/keluarga-kristen/ibu-dan-istri-yang-berkenan",
+    keywords: ["ibu Kristen", "istri berkenan", "keluarga Kristen", "peran istri", "renungan keluarga"]
+  }]}
+  breadcrumbs={[
+    { name: "Home", url: "/" },
+    { name: "Renungan Harian", url: "/renungan" },
+    { name: "Keluarga Kristen", url: "/renungan/keluarga-kristen" },
+    { name: "Ibu dan Istri yang Berkenan", url: "/renungan/keluarga-kristen/ibu-dan-istri-yang-berkenan" }
+  ]}
+>
+
+  <article itemscope itemtype="https://schema.org/Article">
+    <!-- Header dengan microdata -->
+    <header class="mb-8 border-l-4 border-sky-600 pl-4" itemprop="headline">
+      <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+        {renunganData.title}
+      </h1>
+      <div class="flex flex-wrap items-center gap-4 text-gray-600 text-lg">
+        <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+          Penulis: <span itemprop="name">{renunganData.author}</span>
+        </p>
+        <meta itemprop="datePublished" content={renunganData.publishedDate} />
+        <meta itemprop="dateModified" content={renunganData.modifiedDate} />
+      </div>
+      <h2 class="text-sky-700 text-lg">
+        Renungan Harian Kristen Hari ini,
+        <time datetime="2025-11-16" itemprop="datePublished">16 November 2025</time>
+      </h2>
+    </header>
+
+    <!-- Featured Image dengan schema -->
+    <div class="mb-8" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      <img
+        src={renunganData.image}
+        alt={renunganData.imageAlt}
+        width={800}
+        height={400}
+        class="w-full h-48 md:h-80 object-cover rounded-lg shadow-md"
+        itemprop="url"
+      />
+      <meta itemprop="width" content="800" />
+      <meta itemprop="height" content="400" />
+    </div>
+
+    <!-- Content dengan articleBody schema -->
+    <div class="prose prose-lg max-w-none text-gray-700" itemprop="articleBody">
+      <!-- Introduction -->
+      <section class="mb-8">
+        <p class="mb-4 leading-relaxed">
+          Shalom saudara-saudari yang terkasih di dalam Yesus Kristus.<br />
+          Kiranya kasih dan hikmat Tuhan menyertai setiap ibu dan istri dalam menjalankan panggilan mulianya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Kehidupan di dunia yang terus berubah, membuat banyak perempuan menghadapi tantangan besar dalam 
+          menjalani panggilan mulianya sebagai istri dan ibu.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Sering kali, peran ini dianggap sederhana atau bahkan diremehkan, padahal Tuhan telah merancang 
+          peran tersebut dengan tujuan yang sangat mulia.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Melalui renungan ini, kami ingin mengangkat kembali betapa pentingnya peran seorang ibu sebagai 
+          penolong suami dan pendidik bagi anak-anak dalam terang firman Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Dengan penjelasan yang berlandaskan Alkitab, pembaca diajak untuk melihat bagaimana peran seorang 
+          istri bukan sekadar pendamping, tetapi juga mitra yang sepadan, pengelola rumah tangga, pendidik 
+          rohani, dan pendoa bagi keluarga.
+        </p>
+      </section>
+
+      <!-- Section 1 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Menjadi Penolong bagi Kepala Keluarga
+        </h2>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Tidak baik kalau manusia itu seorang diri saja. Aku akan menjadikan penolong baginya, yang sepadan dengan dia"
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Kejadian 2:18</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Ayat ini menegaskan bahwa peran perempuan sebagai penolong adalah rancangan Allah sejak awal 
+          penciptaan. Perempuan diciptakan sebagai mitra yang sepadan untuk mendampingi suami dalam 
+          menjalani tugasnya, baik secara fisik, emosional, maupun rohani.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Kata <strong class="font-semibold text-gray-800">penolong</strong> yang digunakan dalam Alkitab 
+          berasal dari kata Ibrani <em>ezer</em>, yang juga digunakan untuk menggambarkan Allah sebagai 
+          penolong umat-Nya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Hal ini menunjukkan bahwa peran seorang istri, sekaligus ibu, bukanlah peran yang rendah atau 
+          sekadar pelengkap, melainkan peran penting yang setara dengan kepala keluarga.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Tanggung jawab seorang istri adalah menolong suami dalam membangun rumah tangga, dengan kasih dan hikmat Tuhan.
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Hai isteri, tunduklah kepada suamimu seperti kepada Tuhan"
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Efesus 5:22</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Selain sebagai pendukung emosional, istri juga berperan sebagai pendukung rohani bagi suaminya. 
+          Dalam Efesus 5:22, Paulus mengajarkan istri untuk tunduk kepada suami seperti kepada Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Tunduk bukan berarti menyerahkan seluruh haknya, tetapi menjadi mitra yang penuh kasih dan hormat, 
+          termasuk mendoakan suami agar tetap berjalan dalam kehendak Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Doa seorang istri menjadi kekuatan besar yang menopang perjalanan keluarga.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Semua ini menunjukkan bahwa menjadi penolong tidaklah mudah, tetapi seorang istri tidak menjalani 
+          perannya dengan kekuatannya sendiri. Ia bersandar pada Tuhan yang memberikan hikmat dan kekuatan 
+          untuk menjalani tanggung jawabnya.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Penasihat yang Bijaksana
+        </h2>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Ia membuka mulutnya dengan hikmat, pengajaran yang lemah lembut ada di lidahnya"
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Amsal 31:26</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Istri memiliki peran penting sebagai penasihat yang bijaksana dalam keluarga. Perannya ini tidak 
+          hanya terbatas pada memberi pendapat, tetapi juga memberikan pengaruh positif melalui kata-kata 
+          yang penuh hikmat dan kasih.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ayat ini menggambarkan bagaimana seorang istri menggunakan kebijaksanaan yang berasal dari Tuhan 
+          untuk membimbing suami dan keluarganya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Sebagai penasihat, seorang istri harus memiliki pemahaman yang baik tentang firman Tuhan. Nasihat 
+          yang ia berikan seharusnya didasarkan pada nilai-nilai Alkitab, bukan semata-mata pada opini pribadi.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Dengan bersandar pada hikmat Tuhan, ia mampu memberikan masukan yang membawa kedamaian dan solusi 
+          yang membangun.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Seorang istri yang bijaksana adalah berkat bagi suaminya, anak-anaknya, dan seluruh keluarganya. 
+          Hikmat yang ia miliki bersumber dari firman Tuhan dan doa, membuatnya menjadi tiang penyangga yang 
+          kuat dalam rumah tangga, sekaligus mencerminkan kasih Allah di dalam keluarganya.
+        </p>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Mendidik Anak dalam Tuhan
+        </h2>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Didiklah anakmu di jalan yang patut baginya, maka pada masa tuanya pun ia tidak akan menyimpang dari jalan itu"
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Amsal 22:6</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Sebagai penolong, seorang ibu memiliki peran penting dalam mendidik anak-anak dan membantu suami 
+          mewariskan nilai-nilai kekal kepada mereka.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Amsal 22:6 menekankan pentingnya pendidikan yang berlandaskan firman Tuhan, karena apa yang 
+          diajarkan kepada anak di masa kecil akan menjadi dasar yang kokoh bagi kehidupannya di masa depan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Pendidikan anak tidak hanya berbicara tentang aspek akademis, tetapi juga tentang penanaman 
+          nilai-nilai seperti kasih, kejujuran, ketaatan, dan tanggung jawab. Ibu berperan sebagai teladan 
+          bagi anak-anaknya melalui perkataan dan tindakan sehari-hari.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Kerja sama dengan suami sangat penting dalam mendidik anak. Seorang ibu tidak bekerja sendirian, 
+          tetapi bersama suami membentuk tim yang saling melengkapi.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Mendidik anak adalah panggilan mulia yang diberikan Tuhan kepada setiap ibu. Ketika seorang ibu 
+          menjalankan tugas ini dengan setia, ia tidak hanya membentuk generasi masa depan, tetapi juga 
+          menjalankan peran yang berkenan di hadapan Tuhan.
+        </p>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Sumber Kasih dan Ketenangan
+        </h2>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Dan di atas semuanya itu: kenakanlah kasih, sebagai pengikat yang mempersatukan dan menyempurnakan"
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Kolose 3:14</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Istri memiliki peran istimewa sebagai sumber kasih dan ketenangan dalam keluarga. Ia adalah 
+          penyalur utama kasih yang menciptakan suasana damai dan nyaman di rumah.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Kolose 3:14 menunjukkan bahwa kasih adalah fondasi utama dalam setiap hubungan keluarga, yang 
+          menjaga keharmonisan dan persatuan di tengah berbagai tantangan kehidupan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Kasih istri kepada suami dan anak-anaknya merupakan cerminan kasih Kristus. Kasih ini tidak 
+          bersyarat, tulus, dan penuh pengorbanan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Sebagai sumber kasih, istri juga memainkan peran penting dalam menjaga ketenangan di tengah 
+          situasi sulit. Ketika konflik atau masalah muncul dalam keluarga, ia dapat menjadi pendamai 
+          yang bijaksana.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ketika seorang istri hidup dalam kasih, ia menjadi teladan nyata bagi keluarganya. Kasih yang 
+          ia tunjukkan adalah pantulan dari hubungan pribadinya dengan Tuhan.
+        </p>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Pengelola Rumah Tangga
+        </h2>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Ia mengawasi jalannya rumah tangganya, dan roti kemalasan tidak dimakannya"
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Amsal 31:27</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Amsal 31:27 menggambarkan istri sebagai seorang yang rajin, bijaksana, dan penuh perhatian 
+          terhadap kebutuhan rumah tangga.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Sebagai pengelola rumah tangga, istri tidak hanya mengelola aspek fisik, seperti kebersihan dan 
+          keteraturan rumah, tetapi juga menciptakan lingkungan yang penuh kasih dan kedamaian.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Pengelolaan rumah tangga yang baik juga melibatkan pengelolaan keuangan. Istri yang bijaksana 
+          akan membantu suami dalam merencanakan anggaran keluarga, mengelola pengeluaran, dan menabung 
+          untuk masa depan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Sebagai pengelola rumah tangga, seorang istri juga berperan dalam menciptakan suasana rohani 
+          di rumah. Ia mendukung suami dalam mengarahkan keluarga kepada Tuhan melalui doa, ibadah, dan 
+          membaca firman Tuhan bersama.
+        </p>
+      </section>
+
+      <!-- Section 6 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Pendoa Bagi Keluarga
+        </h2>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Janganlah hendaknya kamu khawatir tentang apapun juga, tetapi nyatakanlah dalam segala hal 
+            keinginanmu kepada Allah dalam doa dan permohonan dengan ucapan syukur."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Filipi 4:6-7</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Istri memiliki peran yang sangat penting sebagai pendoa bagi keluarganya. Dalam 1 Tesalonika 5:17, 
+          kita diajak untuk <strong class="font-semibold text-gray-800">berdoa tanpa henti</strong>.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Doa seorang istri tidak hanya menjadi sarana untuk memohon berkat dan perlindungan Tuhan, tetapi 
+          juga sebagai cara untuk memperkuat hubungan keluarga dengan Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Melalui doa, seorang istri juga dapat mengatasi kecemasan dan kekhawatiran yang mungkin muncul 
+          dalam kehidupan sehari-hari. Ketika situasi sulit datang, doa menjadi sumber ketenangan dan 
+          penghiburan bagi seorang istri.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Doa seorang istri juga memberikan dampak spiritual bagi seluruh keluarga. Penting berdoa agar 
+          suami dan anak tetap teguh dalam iman, baik dalam pekerjaan maupun dalam kehidupan rohaninya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Seorang istri yang berdoa tanpa henti menjadi penjaga rohani dalam keluarga. Dengan doanya, ia 
+          mengajak keluarga untuk hidup dalam kehendak Tuhan, mengandalkan-Nya dalam segala aspek kehidupan, 
+          dan merasakan damai sejahtera yang datang dari Tuhan.
+        </p>
+      </section>
+
+      <!-- Conclusion -->
+      <section class="mb-8">
+        <p class="mb-4 leading-relaxed">
+          Kiranya kasih Kristus selalu hadir di keluarga kita semua. Amin.
+        </p>
+        <p class="mb-4 leading-relaxed font-semibold">
+          Tuhan Yesus Memberkati.
+        </p>
+        <p class="text-gray-600 font-medium">Penulis : {renunganData.author}</p>
+      </section>
+    </div>
+  </article>
+</RenunganLayout>

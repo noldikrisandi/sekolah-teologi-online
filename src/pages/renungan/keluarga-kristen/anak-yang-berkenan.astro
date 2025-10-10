@@ -1,0 +1,335 @@
+---
+// src/pages/renungan/keluarga-kristen/anak-yang-berkenan.astro
+import RenunganLayout from "../../../layouts/RenunganLayout.astro";
+
+const renunganData = {
+  title: "Renungan Harian, 17 November 2025 - Menjadi Anak yang Berkenan di Hadapan Tuhan",
+  author: "Noldi Krisandi",
+  image: "/images/banner/diberkati-tuhan.webp",
+  imageAlt: "Seorang anak yang diberkati dan berkenan dihadapan Tuhan",
+  description: "Renungan harian Kristen 17 November 2025 tentang bagaimana menjadi anak yang berkenan di hadapan Tuhan. Pelajari keseimbangan antara menghormati orang tua dan menaati Tuhan, serta prinsip-prinsip hidup yang memuliakan Allah.",
+  publishedDate: "2025-11-17T08:00:00+07:00",
+  modifiedDate: "2025-11-17T08:00:00+07:00",
+  category: "renungan harian kristen",
+  scripture: ["Kolose 3:23-24", "Keluaran 20:12", "Efesus 6:1-3", "1 Timotius 5:8", "Amsal 15:1"]
+};
+---
+
+<RenunganLayout
+  title={renunganData.title}
+  description={renunganData.description}
+  url="renungan/keluarga-kristen/anak-yang-berkenan"
+  type="article"
+  articles={[{
+    headline: renunganData.title,
+    description: renunganData.description,
+    images: [renunganData.image],
+    datePublished: renunganData.publishedDate,
+    dateModified: renunganData.modifiedDate,
+    authorName: renunganData.author,
+    url: "/renungan/keluarga-kristen/anak-yang-berkenan",
+    keywords: ["anak Kristen", "menghormati orang tua", "berkenan di hadapan Tuhan", "keluarga Kristen", "renungan anak"]
+  }]}
+  breadcrumbs={[
+    { name: "Home", url: "/" },
+    { name: "Renungan Harian", url: "/renungan" },
+    { name: "Keluarga Kristen", url: "/renungan/keluarga-kristen" },
+    { name: "Anak yang Berkenan", url: "/renungan/keluarga-kristen/anak-yang-berkenan" }
+  ]}
+>
+
+  <article itemscope itemtype="https://schema.org/Article">
+    <!-- Header dengan microdata -->
+    <header class="mb-8 border-l-4 border-sky-600 pl-4" itemprop="headline">
+      <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+        {renunganData.title}
+      </h1>
+      <div class="flex flex-wrap items-center gap-4 text-gray-600 text-lg">
+        <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+          Penulis: <span itemprop="name">{renunganData.author}</span>
+        </p>
+        <meta itemprop="datePublished" content={renunganData.publishedDate} />
+        <meta itemprop="dateModified" content={renunganData.modifiedDate} />
+      </div>
+      <h2 class="text-sky-700 text-lg">
+        Renungan Harian Kristen Hari ini,
+        <time datetime="2025-11-17" itemprop="datePublished">17 November 2025</time>
+      </h2>
+    </header>
+
+    <!-- Featured Image dengan schema -->
+    <div class="mb-8" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      <img
+        src={renunganData.image}
+        alt={renunganData.imageAlt}
+        width={800}
+        height={400}
+        class="w-full h-48 md:h-80 object-cover rounded-lg shadow-md"
+        itemprop="url"
+      />
+      <meta itemprop="width" content="800" />
+      <meta itemprop="height" content="400" />
+    </div>
+
+    <!-- Content dengan articleBody schema -->
+    <div class="prose prose-lg max-w-none text-gray-700" itemprop="articleBody">
+      <!-- Introduction -->
+      <section class="mb-8">
+        <p class="mb-4 leading-relaxed">
+          Shalom saudara-saudari yang terkasih di dalam Yesus Kristus.<br />
+          Kiranya hikmat dan kasih karunia Tuhan menyertai setiap anak dalam menjalani panggilannya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Menjadi anak yang berkenan di hadapan Tuhan dan orang tua adalah hal yang berbeda namun 
+          saling berkaitan. Berkenan di hadapan Tuhan belum tentu sama dengan berkenan di mata 
+          orang tua, begitu pula sebaliknya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Kisah Yakub dan Esau menunjukkan hal ini. Ishak, ayah mereka, menghendaki Esau menerima 
+          berkat keturunan Abraham, sementara Ribka, ibu mereka, menginginkan Yakub yang menerimanya. 
+          Ini menunjukkan bahwa pandangan ayah dan ibu tentang perkenanan bisa berbeda.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Pada akhirnya, Yakub menerima berkat dari Tuhan sebagai penerus Abraham, meskipun ia 
+          mendapatkannya dengan menipu Ishak. Ini menunjukkan bahwa pandangan perkenanan Tuhan 
+          dan manusia tidak selalu sama.
+        </p>
+      </section>
+
+      <!-- Section 1 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Perkenanan Tuhan Sebagai Prioritas Utama
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Pernahkah kamu mendengar seseorang dari agama lain memutuskan untuk mengikut Yesus? 
+          Keputusan ini sering kali membuatnya tidak berkenan di hadapan orang tua.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Dalam iman Kristen, meninggalkan agama lain untuk mengikut Yesus adalah hal yang berkenan 
+          di hadapan Tuhan. Namun, di sisi lain, hal tersebut mungkin tidak berkenan di mata orang tua.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Dari peristiwa ini, kita memahami bahwa berkenan di hadapan Tuhan tidak selalu berarti 
+          berkenan di hadapan orang tua. Jika kamu dihadapkan pada pilihan, mana yang akan kamu 
+          utamakan: berkenan di hadapan orang tua atau Tuhan?
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Tuhan tidak memerintahkan manusia untuk menuruti semua perintah orang tua, melainkan untuk 
+          menuruti perintah-Nya. <strong class="font-semibold text-gray-800">
+          Perkenanan Tuhan lebih besar daripada perkenanan orang tua.</strong>
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Meski begitu, menghormati orang tua tetaplah perintah Tuhan. Jadi, untuk berkenan di 
+          hadapan Tuhan, kamu juga harus menghormati orang tua.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Mengerti Perkenanan Tuhan
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Saya ingin berbagi cerita tentang seorang pemuda bernama Budi. Budi baru saja menjadi 
+          warga negara Indonesia (awalnya Budi adalah warga negara Inggris) dan berkomitmen untuk 
+          mematuhi semua aturan di negara Indonesia.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Suatu hari, Budi mengendarai sepeda motor dan mengambil jalur kanan. Akibatnya, ia 
+          bertabrakan dengan seorang tukang becak yang datang dari arah berlawanan. Budi memarahi 
+          tukang becak tersebut karena menganggapnya salah jalur, bahkan melaporkannya ke polisi 
+          yang sedang berpatroli. Karena selama dia di Inggris, kendaraan bermotor mengambil jalur kanan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Namun, Budi justru ditetapkan sebagai tersangka oleh polisi karena melanggar aturan lalu 
+          lintas dengan mengambil jalur kanan. Polisi menjelaskan bahwa di Indonesia, kendaraan 
+          harus berjalan di jalur kiri berbeda dengan negara Inggris.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Budi bersikeras bahwa ia tidak salah, karena kebiasaan sebelumnya selalu mengambil jalur 
+          kanan saat mengendarai kendaraan. Sayangnya, ketidaktahuannya tentang aturan tersebut 
+          membuatnya ditahan dan dipenjara. Budi yang berniat menjadi warga negara yang baik malah 
+          gagal karena tidak memahami aturan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Dari cerita Budi, kita dapat mengambil pelajaran penting: untuk berkenan di hadapan Tuhan, 
+          kita harus mengetahui aturan-Nya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Tidak mungkin kita dapat berkenan di hadapan Tuhan jika kita tidak tahu apa yang menjadi 
+          kehendak-Nya. Mulailah mempelajari Firman Tuhan dengan sungguh-sungguh agar kita memahami 
+          cara hidup yang sesuai dengan kehendak-Nya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Membaca seluruh isi Alkitab adalah kewajiban bagi kita yang ingin mengerti aturan Tuhan. 
+          Kita tidak akan mampu melakukan hal yang berkenan di hadapan Tuhan jika tidak mengetahui 
+          apa yang diperintahkan atau dilarang oleh-Nya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Adalah hal yang keliru jika kita berkata ingin melakukan kehendak Tuhan tanpa mengetahui 
+          apa saja yang menjadi kehendak-Nya. Hal ini dapat menyebabkan kita secara tidak sengaja 
+          melanggar aturan Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Sama seperti Budi yang gagal menjadi warga negara yang baik karena ketidaktahuan akan 
+          aturan lalu lintas, kita juga bisa gagal berkenan di hadapan Tuhan jika tidak memahami 
+          aturan-aturan-Nya. Oleh karena itu, belajarlah Firman Tuhan agar kita dapat hidup sesuai 
+          dengan kehendak-Nya.
+        </p>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Melakukan Segala Sesuatu untuk Tuhan
+        </h2>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Apa pun yang kamu perbuat, perbuatlah dengan segenap hatimu seperti untuk Tuhan dan 
+            bukan untuk manusia, karena kamu tahu, bahwa dari Tuhan kamu akan menerima bagian yang 
+            ditentukan bagimu sebagai upah. Kristus adalah Tuhan yang kamu layani."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Kolose 3:23-24</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Segala sesuatu yang kita lakukan, hendaknya dilakukan dengan segenap hati sebagai bentuk 
+          penghormatan dan persembahan kepada Tuhan. Dengan demikian, orang lain dapat melihat 
+          kemuliaan Tuhan melalui pekerjaan kita.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Tidak ada pekerjaan yang terlalu kecil di hadapan Tuhan jika dilakukan untuk memuliakan-Nya. 
+          Tuhan melihat hati kita, bukan sekadar apa yang kita kerjakan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Paulus mengingatkan bahwa Kristus adalah Tuhan yang kita layani. Ini berarti setiap 
+          tindakan kita seharusnya lebih dari sekadar menyelesaikan tugas, tetapi juga menjadi wujud 
+          nyata dalam memuliakan Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Anggaplah setiap pekerjaan sebagai pelayanan kepada Tuhan. Dengan sikap hati yang benar, 
+          penuh syukur dan ketulusan, kita dapat menjalankan setiap tugas dengan sukacita.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Prinsipnya sederhana: lakukan segala sesuatu, baik itu makan, minum, belajar, menyapu, 
+          atau pekerjaan lainnya, dengan tujuan memuliakan Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Dengan memahami prinsip ini, hidup kita akan dipenuhi semangat yang lebih tinggi, yaitu 
+          hidup untuk kemuliaan Tuhan, bukan untuk manusia.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ketika kita bekerja dengan komitmen dan integritas, kita tidak hanya menjadi pribadi yang 
+          lebih baik, tetapi juga anak yang berkenan di hadapan Tuhan, memuliakan-Nya dalam setiap 
+          aspek kehidupan.
+        </p>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Menghormati Orang Tua
+        </h2>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Hormatilah ayahmu dan ibumu, supaya lanjut umurmu di tanah yang diberikan TUHAN, Allahmu, kepadamu."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Keluaran 20:12</cite>
+        </blockquote>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Hai anak-anak, taatilah orang tuamu di dalam Tuhan, karena haruslah demikian. Hormatilah 
+            ayahmu dan ibumu, supaya kamu berbahagia dan panjang umurmu di negeri ini."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Efesus 6:1-3</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Menghormati orang tua adalah panggilan Tuhan yang melibatkan sikap hati, perkataan, dan 
+          tindakan. Ini mencakup ketaatan, mendengarkan nasihat, membantu mereka, dan menjaga hubungan yang baik.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Dalam 1 Timotius 5:8, kita diajarkan untuk merawat keluarga, termasuk orang tua. Merawat 
+          mereka adalah wujud kasih dan penghormatan, terutama saat mereka menua dan membutuhkan perhatian lebih.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Menghormati orang tua tidak hanya berlaku pada masa kecil, tetapi sepanjang hidup, termasuk 
+          dalam fase dewasa. Ini melibatkan menjaga komunikasi, menghargai keputusan mereka, dan 
+          memberikan perhatian, meskipun ada perbedaan pendapat.
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Jawaban yang lemah lembut meredakan kegeraman, tetapi perkataan yang pedas membangkitkan marah"
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Amsal 15:1</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Dalam Amsal 15:1, kita diingatkan bahwa jawaban lembut meredakan kegeraman. Menghormati 
+          orang tua berarti berbicara dengan bijak dan penuh kasih, bahkan saat ada ketidaksepakatan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Janji Tuhan dalam Keluaran 20:12 memberikan berkat bagi mereka yang menghormati orang tua, 
+          berupa umur panjang dan kehidupan yang penuh kedamaian.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Hal kecil seperti mendengarkan, membantu pekerjaan rumah, atau menghabiskan waktu bersama 
+          adalah cara sederhana namun penuh makna untuk menunjukkan rasa hormat.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Dengan menghormati orang tua, kita tidak hanya menunjukkan kasih kita kepada mereka, tetapi 
+          juga ketaatan kepada Tuhan.
+        </p>
+      </section>
+
+      <!-- Conclusion -->
+      <section class="mb-8">
+        <p class="mb-4 leading-relaxed">
+          Menjadi anak yang berkenan di hadapan Tuhan dan orang tua adalah panggilan mulia. Berkenan 
+          di hadapan Tuhan harus menjadi prioritas utama.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Untuk mengetahui apa yang berkenan di hadapan Tuhan, kita perlu membaca dan merenungkan 
+          Firman Tuhan. Dengan memahami kehendak Tuhan, kita dapat melakukan hal-hal yang memuliakan-Nya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Melakukan segala sesuatu untuk Tuhan, bukan untuk manusia, berarti selalu berusaha 
+          memuliakan Tuhan dalam setiap aktivitas kita, sehingga kemuliaan Tuhan terlihat oleh orang lain.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Menghormati orang tua adalah salah satu cara kita menunjukkan ketaatan kepada Tuhan. Orang 
+          tua adalah otoritas yang diberikan Tuhan dalam hidup kita. Penghormatan ini tercermin dalam 
+          perkataan, tindakan, dan sikap kita.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Tanggung jawab untuk menghormati dan merawat orang tua tidak berhenti ketika kita dewasa. 
+          Sebaliknya, ini menjadi kesempatan untuk menunjukkan kasih kita dalam hal-hal praktis.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Dengan menghormati orang tua, kita memenuhi perintah Tuhan, menunjukkan kasih yang nyata, 
+          dan menerima janji berkat berupa kedamaian dan kehidupan yang diberkati.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Kiranya renungan ini menjadi berkat bagi kita semua. Amin.
+        </p>
+        <p class="mb-4 leading-relaxed font-semibold">
+          Tuhan Yesus Memberkati.
+        </p>
+        <p class="text-gray-600 font-medium">Penulis : {renunganData.author}</p>
+      </section>
+    </div>
+  </article>
+</RenunganLayout>

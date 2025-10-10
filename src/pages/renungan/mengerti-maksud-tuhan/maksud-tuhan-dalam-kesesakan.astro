@@ -1,0 +1,351 @@
+---
+// src/pages/renungan/mengerti-maksud-tuhan/maksud-tuhan-dalam-kesesakan.astro
+import RenunganLayout from "../../../layouts/RenunganLayout.astro";
+
+const renunganData = {
+  title: "Renungan Harian, 13 November 2025 - Mengerti Maksud Tuhan dalam Kesesakan",
+  author: "Noldi Krisandi",
+  image: "/images/banner/renungan-rohani.webp",
+  imageAlt: "Salib Yesus di padang rumput berbukit membuat kita mengerti maksud Tuhan dalam kesesakan",
+  description: "Renungan harian Kristen 13 November 2025 tentang memahami maksud Tuhan dalam menghadapi kesesakan. Pelajari perbedaan antara kesesakan akibat kesalahan sendiri dan kesesakan yang diizinkan Tuhan untuk menguatkan iman.",
+  publishedDate: "2025-11-13T08:00:00+07:00",
+  modifiedDate: "2025-11-13T08:00:00+07:00",
+  category: "renungan harian kristen",
+  scripture: ["Amsal 6:9-11", "Amsal 6:6-8", "Yeremia 29:11", "Ayub 1:6-12", "Ayub 2:4-6", "Yakobus 1:13-14", "1 Korintus 6:19-20"]
+};
+---
+
+<RenunganLayout
+  title={renunganData.title}
+  description={renunganData.description}
+  url="renungan/mengerti-maksud-tuhan/maksud-tuhan-dalam-kesesakan"
+  type="article"
+  articles={[{
+    headline: renunganData.title,
+    description: renunganData.description,
+    images: [renunganData.image],
+    datePublished: renunganData.publishedDate,
+    dateModified: renunganData.modifiedDate,
+    authorName: renunganData.author,
+    url: "/renungan/mengerti-maksud-tuhan/maksud-tuhan-dalam-kesesakan",
+    keywords: ["maksud Tuhan", "kesesakan", "cobaan", "iman kristen", "renungan harian"]
+  }]}
+  breadcrumbs={[
+    { name: "Home", url: "/" },
+    { name: "Renungan Harian", url: "/renungan" },
+    { name: "Mengerti Maksud Tuhan", url: "/renungan/mengerti-maksud-tuhan" },
+    { name: "Maksud Tuhan dalam Kesesakan", url: "/renungan/mengerti-maksud-tuhan/maksud-tuhan-dalam-kesesakan" }
+  ]}
+>
+
+  <article itemscope itemtype="https://schema.org/Article">
+    <!-- Header dengan microdata -->
+    <header class="mb-8 border-l-4 border-sky-600 pl-4" itemprop="headline">
+      <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+        {renunganData.title}
+      </h1>
+      <div class="flex flex-wrap items-center gap-4 text-gray-600 text-lg">
+        <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+          Penulis: <span itemprop="name">{renunganData.author}</span>
+        </p>
+        <meta itemprop="datePublished" content={renunganData.publishedDate} />
+        <meta itemprop="dateModified" content={renunganData.modifiedDate} />
+      </div>
+      <h2 class="text-sky-700 text-lg">
+        Renungan Harian Kristen Hari ini,
+        <time datetime="2025-11-13" itemprop="datePublished">13 November 2025</time>
+      </h2>
+    </header>
+
+    <!-- Featured Image dengan schema -->
+    <div class="mb-8" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      <img
+        src={renunganData.image}
+        alt={renunganData.imageAlt}
+        width={800}
+        height={400}
+        class="w-full h-48 md:h-80 object-cover rounded-lg shadow-md"
+        itemprop="url"
+      />
+      <meta itemprop="width" content="800" />
+      <meta itemprop="height" content="400" />
+    </div>
+
+    <!-- Content dengan articleBody schema -->
+    <div class="prose prose-lg max-w-none text-gray-700" itemprop="articleBody">
+      <!-- Introduction -->
+      <section class="mb-8">
+        <p class="mb-4 leading-relaxed">
+          Shalom saudara-saudari yang terkasih di dalam Yesus Kristus.<br />
+          Kiranya damai sejahtera dan pengharapan dari Tuhan menyertai kita semua dalam menghadapi berbagai tantangan kehidupan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Dalam menjalani kehidupan ini, kita pasti pernah menghadapi kesesakan. Tidak jarang kita bertanya, 
+          "Kenapa Tuhan mengizinkan saya mengalami kesesakan?" Bahkan, sebagian orang sering kali menyalahkan 
+          Tuhan atas kesesakan yang mereka alami.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Saya sering mendengar khotbah dari pendeta yang mengatakan bahwa kesesakan adalah bagian dari pencobaan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Awalnya, saya 100% percaya pada hal ini. Namun, ketika saya membaca Alkitab lebih mendalam dan mempelajari 
+          Firman Tuhan, saya menyadari bahwa pernyataan tersebut tidak sepenuhnya benar.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Sering kali, manusia menyalahkan Tuhan atas kesesakan yang mereka alami. Padahal, Tuhan tidak pernah 
+          merencanakan kesesakan itu untuk mereka.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Tuhan selalu memiliki rencana yang baik bagi setiap manusia, dan kesesakan yang kita alami mungkin saja 
+          terjadi karena pilihan atau konsekuensi dari tindakan kita sendiri.
+        </p>
+      </section>
+
+      <!-- Section 1 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Kesesakan yang Bukan Berasal dari Tuhan
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Ada seorang pemalas yang hidup dalam kemiskinan dan marah kepada Tuhan. Dia berkata, "Tuhan, kenapa 
+          Engkau membuat aku miskin, sedangkan orang lain kaya dan hidup bahagia. Sementara aku hidup terpuruk 
+          dalam kemiskinan."
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Bagaimana pendapatmu tentang orang ini? Apakah dia benar atau salah? (Jawab dalam hati.)
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Hai pemalas, berapa lama lagi engkau berbaring? Bilakah engkau akan bangun dari tidurmu? 
+            'Tidur sebentar lagi, mengantuk sebentar lagi, melipat tangan sebentar lagi untuk berbaring' — 
+            maka datanglah kemiskinan kepadamu seperti seorang penyerbu, dan kekurangan seperti orang yang bersenjata."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Amsal 6:9-11</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Tuhan mengajarkan kita untuk tidak menjadi pemalas agar terhindar dari kemiskinan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ketika kita mengalami kesesakan akibat kemalasan, itu bukanlah cobaan dari Tuhan, melainkan hasil dari 
+          kebebalan kita yang tidak mengikuti Firman Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Sangat jelas bahwa Firman Tuhan menentang kemalasan yang menyebabkan kemiskinan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Sama halnya dengan sakit penyakit. Jangan terburu-buru menyalahkan Tuhan atau menganggapnya sebagai 
+          cobaan dari-Nya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Saya sering mendengar doa-doa untuk orang sakit agar mereka kuat menghadapi cobaan dari Tuhan. Namun, 
+          mari kita renungkan, apakah Tuhan merancangkan penyakit untuk manusia?
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Sering kali, penyakit muncul karena kelalaian kita menjaga kesehatan. Padahal, menjaga kesehatan adalah 
+          tanggung jawab kita, bukan tanggung jawab Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Sebagai contoh, ada seseorang yang menderita diabetes karena kebiasaan mengonsumsi gula secara berlebihan. 
+          Meski telah diingatkan oleh tenaga kesehatan dan orang-orang di sekitarnya, ia tetap mempertahankan pola 
+          hidup tidak sehat.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ketika penyakitnya memburuk dan harus diamputasi, dia menyalahkan Tuhan. Ironisnya, seorang pendeta berkata, 
+          "Sabar ya, itu adalah cobaan dari Tuhan, pasti ada maksud-Nya." Namun, Firman Tuhan tidak pernah mengajarkan 
+          bahwa kesesakan semacam ini berasal dari Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Sama halnya ketika kamu terserang flu. Sebelum menyalahkan Tuhan, periksalah apakah flu itu disebabkan 
+          oleh kelalaianmu menjaga kesehatan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Jika benar demikian, berdoalah dan bertobatlah, karena menjaga kesehatan adalah bagian dari mengasihi Tuhan:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Atau tidak tahukah kamu, bahwa tubuhmu adalah bait Roh Kudus yang diam di dalam kamu, Roh Kudus yang 
+            kamu peroleh dari Allah, — dan bahwa kamu bukan milik kamu sendiri? Sebab kamu telah dibeli dan 
+            harganya telah lunas dibayar: Karena itu muliakanlah Allah dengan tubuhmu!"
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- 1 Korintus 6:19-20</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Sebuah ironi lainnya adalah ketika seseorang merasa dicobai oleh Tuhan karena tidak memiliki tabungan 
+          yang cukup untuk keluarganya. Meski sudah bekerja keras dan menjaga kesehatan, ia tetap hidup dalam kekurangan.
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Hai pemalas, pergilah kepada semut, perhatikanlah lakunya dan jadilah bijak: biarpun tidak ada 
+            pemimpinnya, pengaturnya, atau penguasanya, ia menyediakan rotinya di musim panas, dan mengumpulkan 
+            makanannya pada waktu panen."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Amsal 6:6-8</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Tuhan mengajarkan kita untuk bijaksana dalam mengelola keuangan dan aset. Kita belajar bahwa perencanaan 
+          dan pengelolaan yang baik dapat mencegah kesesakan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Banyak kesesakan yang terjadi bukan berasal dari Tuhan, melainkan dari kesalahan manusia sendiri. 
+          Ingatlah bahwa menjaga kesehatan adalah tugasmu, bukan tugas Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Begitu pula dalam hal keuangan, jika kamu mengalami kekurangan, tanyakan pada dirimu sendiri: apakah 
+          itu karena kemalasan atau karena kurangnya keterampilan dalam mengelola uang dan aset? Jika jawabannya 
+          ya, maka kesesakan itu adalah hasil dari kesalahanmu sendiri.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Mulai sekarang, hiduplah dengan lebih sehat, rajin, dan terus belajar untuk mengelola keuangan serta 
+          asetmu. Ini bukan hanya perintah Tuhan, tetapi juga cara agar kamu terhindar dari kesesakan akibat 
+          kesalahanmu sendiri.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Kesesakan Karena Izin Tuhan, Bukan Rancangan Tuhan
+        </h2>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Sebab Aku ini mengetahui rancangan-rancangan apa yang ada pada-Ku mengenai kamu, demikianlah firman 
+            TUHAN, yaitu rancangan damai sejahtera dan bukan rancangan kecelakaan, untuk memberikan kepadamu hari 
+            depan yang penuh harapan."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Yeremia 29:11</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Ada seorang tokoh dalam Alkitab yang mengalami kesesakan bukan karena rancangan Tuhan, melainkan karena izin Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Penting untuk diingat bahwa rancangan Tuhan adalah damai sejahtera, bukan kecelakaan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ayub adalah contoh nyata dalam Alkitab. Ia mengalami berbagai pencobaan bukan karena rancangan Tuhan, 
+          tetapi karena iblis yang memintakan izin kepada Tuhan untuk mencobai Ayub.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Yang perlu diperhatikan adalah Tuhan tetap memberi batasan kepada iblis dalam mencobai Ayub, seperti 
+          yang dicatat dalam Ayub 1:6-12.
+        </p>
+
+        <blockquote
+          class="border-l-4 border-red-500 pl-4 my-6 text-gray-700 bg-red-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3 font-medium">
+            "Lalu jawab Iblis kepada TUHAN: 'Apakah dengan tidak mendapat apa-apa Ayub takut akan Allah? 
+            Bukankah Engkau yang membuat pagar sekeliling dia dan rumahnya serta segala yang dimilikinya? 
+            Apa yang dikerjakannya telah Kauberkati, dan ternaknya telah berkembang biak di negeri itu. 
+            Tetapi ulurkanlah tangan-Mu dan jamahlah segala yang dipunyainya, ia pasti mengutuki Engkau di 
+            hadapan-Mu.' Maka firman TUHAN kepada Iblis: 'Nah, segala yang dipunyainya ada dalam kuasamu; 
+            hanya janganlah engkau mengulurkan tanganmu terhadap dirinya.' Kemudian pergilah Iblis dari hadapan TUHAN."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Ayub 1:9-12</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Dari ayat di atas, terlihat bahwa Tuhan melindungi dan memberkati orang yang berkenan kepada-Nya, 
+          termasuk Ayub. Namun, iblis meminta izin kepada Tuhan untuk mencobai Ayub.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Tuhan tidak secara langsung mencobai Ayub, tetapi mengizinkan iblis untuk melakukannya dengan satu 
+          batasan: iblis tidak boleh menyentuh tubuh Ayub.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Meski iblis mencobai Ayub dengan mengambil semua miliknya, Ayub tetap setia dan tidak mengutuki Tuhan. 
+          Kemudian, iblis meminta izin lagi kepada Tuhan untuk mencobai tubuh Ayub:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-red-500 pl-4 my-6 text-gray-700 bg-red-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3 font-medium">
+            "Lalu jawab Iblis kepada TUHAN: 'Kulit ganti kulit! Orang akan memberikan segala yang dipunyainya 
+            ganti nyawanya. Tetapi ulurkanlah tangan-Mu dan jamahlah tulang dan dagingnya, ia pasti mengutuki 
+            Engkau di hadapan-Mu.' Maka firman TUHAN kepada Iblis: 'Nah, ia dalam kuasamu; hanya sayangkan nyawanya.'"
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Ayub 2:4-6</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Tuhan mengizinkan iblis menjamah tubuh Ayub, tetapi tetap dengan batasan: iblis tidak boleh mengambil nyawanya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Dalam pencobaan ini, Ayub tetap setia dan berhasil melalui semua ujian. Pada akhirnya, Tuhan memulihkan 
+          keadaan Ayub dan memberkati dia dengan dua kali lipat dari apa yang sebelumnya dimilikinya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Kisah Ayub mengajarkan kita bahwa kesesakan yang diizinkan Tuhan tidak dimaksudkan untuk mencelakakan, 
+          tetapi untuk menunjukkan kesetiaan dan ketaatan kita kepada-Nya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ayub menderita dalam kesesakan bukan karena cobaan dari Tuhan, melainkan cobaan dari iblis atas izin Tuhan.
+        </p>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Kesesakan Bukan Berasal dari Tuhan
+        </h2>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Apabila seorang dicobai, janganlah ia berkata: 'Pencobaan ini datang dari Allah!' Sebab Allah tidak 
+            dapat dicobai oleh yang jahat, dan Ia sendiri tidak mencobai siapa pun. Tetapi tiap-tiap orang 
+            dicobai oleh keinginannya sendiri, karena ia diseret dan dipikat olehnya."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Yakobus 1:13-14</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Tuhan tidak pernah merencanakan kesesakan kepada manusia. Ketika manusia mengalami kesesakan, hal itu 
+          disebabkan oleh dua hal, yaitu karena kesalahan manusia itu sendiri, atau cobaan yang diberikan oleh 
+          iblis atas izin Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Lalu, bagaimana dengan kesesakan yang dialami oleh para penginjil? Hal ini dibahas lebih detail dalam 
+          artikel lain di website ini. Namun, pada dasarnya, kesesakan yang dialami penginjil termasuk dalam 
+          kategori <em>Kesesakan Karena Izin Tuhan</em>, bukan karena rancangan Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Untuk memahami maksud Tuhan dalam kesesakan yang kita alami, kita harus terlebih dahulu mencari tahu 
+          penyebab kesesakan tersebut.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Jika kesesakan itu disebabkan oleh kesalahan kita sendiri, maka maksud Tuhan jelas: agar kita kembali 
+          membaca, merenungkan, dan melakukan Firman Tuhan supaya tidak lagi mengalami kesesakan yang sama.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Namun, jika kesesakan itu terjadi karena izin Tuhan, maksudnya adalah untuk menguji seberapa besar 
+          iman kita kepada-Nya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Kiranya melalui renungan ini kita semakin memahami maksud Tuhan dalam kehidupan kita. Tuhan Yesus memberkati. Amin.
+        </p>
+        <p class="mb-4 leading-relaxed font-semibold">
+          Tuhan Yesus Memberkati.
+        </p>
+        <p class="text-gray-600 font-medium">Penulis : {renunganData.author}</p>
+      </section>
+    </div>
+  </article>
+</RenunganLayout>

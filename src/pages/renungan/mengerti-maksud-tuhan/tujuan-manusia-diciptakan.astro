@@ -1,0 +1,282 @@
+---
+// src/pages/renungan/mengerti-maksud-tuhan/tujuan-manusia-diciptakan.astro
+import RenunganLayout from "../../../layouts/RenunganLayout.astro";
+
+const renunganData = {
+  title: "Renungan Harian, 14 November 2025 - Tujuan Tuhan Menciptakan Manusia",
+  author: "Noldi Krisandi",
+  image: "/images/banner/diberkati-tuhan.webp",
+  imageAlt: "seorang manusia memandang ke langit untuk mengerti tujuan Tuhan menciptakan manusia",
+  description: "Renungan harian Kristen 14 November 2025 tentang tujuan penciptaan manusia menurut Alkitab. Pelajari makna mendalam mengapa Tuhan menciptakan manusia menurut gambar dan rupa-Nya serta bagaimana hidup untuk memuliakan Tuhan.",
+  publishedDate: "2025-11-14T08:00:00+07:00",
+  modifiedDate: "2025-11-14T08:00:00+07:00",
+  category: "renungan harian kristen",
+  scripture: ["Kejadian 1:26", "Yesaya 43:7", "1 Korintus 10:31", "Kolose 3:23-24", "Kolose 3:17", "Amsal 13:4", "Amsal 6:6-11"]
+};
+---
+
+<RenunganLayout
+  title={renunganData.title}
+  description={renunganData.description}
+  url="renungan/mengerti-maksud-tuhan/tujuan-manusia-diciptakan"
+  type="article"
+  articles={[{
+    headline: renunganData.title,
+    description: renunganData.description,
+    images: [renunganData.image],
+    datePublished: renunganData.publishedDate,
+    dateModified: renunganData.modifiedDate,
+    authorName: renunganData.author,
+    url: "/renungan/mengerti-maksud-tuhan/tujuan-manusia-diciptakan",
+    keywords: ["tujuan penciptaan manusia", "gambar dan rupa Allah", "memuliakan Tuhan", "renungan harian", "pemahaman Alkitab"]
+  }]}
+  breadcrumbs={[
+    { name: "Home", url: "/" },
+    { name: "Renungan Harian", url: "/renungan" },
+    { name: "Pemahaman Alkitab", url: "/renungan/pemahaman-alkitab" },
+    { name: "Tujuan Tuhan Menciptakan Manusia", url: "/renungan/mengerti-maksud-tuhan/tujuan-manusia-diciptakan" }
+  ]}
+>
+
+  <article itemscope itemtype="https://schema.org/Article">
+    <!-- Header dengan microdata -->
+    <header class="mb-8 border-l-4 border-sky-600 pl-4" itemprop="headline">
+      <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+        {renunganData.title}
+      </h1>
+      <div class="flex flex-wrap items-center gap-4 text-gray-600 text-lg">
+        <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+          Penulis: <span itemprop="name">{renunganData.author}</span>
+        </p>
+        <meta itemprop="datePublished" content={renunganData.publishedDate} />
+        <meta itemprop="dateModified" content={renunganData.modifiedDate} />
+      </div>
+      <h2 class="text-sky-700 text-lg">
+        Renungan Harian Kristen Hari ini,
+        <time datetime="2025-11-14" itemprop="datePublished">14 November 2025</time>
+      </h2>
+    </header>
+
+    <!-- Featured Image dengan schema -->
+    <div class="mb-8" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      <img
+        src={renunganData.image}
+        alt={renunganData.imageAlt}
+        width={800}
+        height={400}
+        class="w-full h-48 md:h-80 object-cover rounded-lg shadow-md"
+        itemprop="url"
+      />
+      <meta itemprop="width" content="800" />
+      <meta itemprop="height" content="400" />
+    </div>
+
+    <!-- Content dengan articleBody schema -->
+    <div class="prose prose-lg max-w-none text-gray-700" itemprop="articleBody">
+      <!-- Introduction -->
+      <section class="mb-8">
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Berfirmanlah Allah: Baiklah Kita menjadikan manusia menurut gambar dan rupa Kita, 
+            supaya mereka berkuasa atas ikan-ikan di laut, burung-burung di udara, atas ternak 
+            dan atas seluruh bumi dan atas segala binatang melata yang merayap di bumi."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Kejadian 1:26</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Shalom saudara-saudari yang terkasih di dalam Yesus Kristus.<br />
+          Kiranya hikmat dan pengertian dari Tuhan menyertai kita dalam merenungkan tujuan penciptaan kita.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Dalam Kitab Kejadian 1:26, tertulis <strong class="font-semibold text-gray-800">
+          baiklah kita menjadikan manusia menurut gambar dan rupa Kita</strong>, kata "baiklah" dari kutipan 
+          ayat ini mempunyai makna tersirat bahwa Tuhan merencanakan penciptaan manusia sebelum Tuhan 
+          menciptakan hal lainnya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Manusia sangat spesial karena Tuhan menciptakan segala sesuatu yang dibutuhkan manusia terlebih 
+          dahulu, baru kemudian menciptakan manusia itu sendiri.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Bahkan, Tuhan menciptakan manusia sesuai dengan gambar dan rupa-Nya. Ini menunjukkan betapa 
+          luar biasanya persiapan Tuhan dalam menciptakan manusia.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Lalu, apa sebenarnya tujuan Tuhan menciptakan manusia?
+        </p>
+      </section>
+
+      <!-- Main Content -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Untuk Memuliakan Tuhan
+        </h2>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Semua orang yang disebutkan dengan nama-Ku, yang Kuciptakan untuk kemuliaan-Ku, 
+            yang Kubentuk dan juga Kujadikan!"
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Yesaya 43:7</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Tujuan Tuhan menciptakan manusia adalah untuk memuliakan-Nya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Rasul Paulus juga mengingatkan kita dalam 1 Korintus 10:31, "Segala sesuatu yang kamu lakukan, 
+          lakukanlah itu untuk kemuliaan Allah." Ayat ini menegaskan bahwa segala aktivitas kita harus 
+          diarahkan untuk memuliakan Tuhan.
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Apa pun yang kamu perbuat, perbuatlah dengan segenap hatimu, seperti untuk Tuhan dan 
+            bukan untuk manusia, karena kamu tahu, bahwa dari Tuhan kamu akan menerima bagian yang 
+            ditentukan bagimu sebagai upah. Kristus adalah Tuhan yang kamu layani."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Kolose 3:23-24</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Ayat ini lebih spesifik, mengingatkan kita bahwa segala sesuatu yang kita lakukan seharusnya 
+          untuk Tuhan, bukan untuk manusia. Karena tujuan utama Tuhan menciptakan kita adalah untuk memuliakan-Nya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Sudahkah kita menyadari bahwa kita diciptakan untuk memuliakan Tuhan? Apakah kita melakukan 
+          segala sesuatu dalam hidup kita untuk memuliakan Tuhan, atau sekadar untuk memuaskan keinginan kita sendiri?
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Saya memiliki sebuah cerita. Suatu hari, saat saya menjalankan misi di sebuah daerah terpencil, 
+          saya menyaksikan sesuatu yang sangat aneh.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Seorang anak muda di sana memiliki smartphone terjanggih pada masa itu. Saya pun bertanya-tanya, 
+          bagaimana bisa anak muda ini memiliki smartphone, padahal akses internet dan listrik saja belum 
+          tersedia di daerah tersebut?
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ternyata, seseorang memberi tahu saya bahwa anak muda itu sedang menjadi eksperimen seorang ahli IT. 
+          Dia sengaja diberikan smartphone untuk mengamati perilaku mereka saat menggunakannya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Kami sangat terkejut ketika melihat anak muda itu menggunakan smartphone untuk membuka buah pala 
+          dan bahkan meletakkannya untuk mengganjal pintu.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Alat secanggih itu digunakan untuk hal yang begitu sederhana. Padahal, pembuat smartphone tidak 
+          menciptakan perangkat itu untuk membuka buah pala atau mengganjal pintu. Namun, jika dipikirkan, 
+          tentu saja hal itu masih bisa dilakukan dengan perangkat tersebut.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Kejadian ini membuat saya teringat bagaimana Tuhan menciptakan manusia untuk tujuan memuliakan-Nya. 
+          Namun ironisnya, banyak manusia yang tidak sadar bahwa tujuan utama mereka adalah memuliakan Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Tuhan Yesus mengajarkan kita untuk mengasihi Allah dengan segenap hati, jiwa, dan akal budi. 
+          Artinya hati, jiwa, dan akal budi kita diciptakan untuk mengasihi Allah.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Jika kita gagal mengasihi Allah dengan segenap hati, jiwa, dan akal budi, artinya kita tidak 
+          berfungsi sebagaimana mestinya, seperti halnya smartphone yang tidak berfungsi sesuai tujuannya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Kembali ke cerita smartphone, karena anak muda itu tidak tahu cara menggunakan smartphone dengan 
+          benar, seorang ahli IT mengajarinya bagaimana cara menggunakannya dengan tepat. Setelah diajari, 
+          anak muda itu perlahan mulai menggunakan smartphone sesuai fungsinya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Hal ini mirip dengan kedatangan Tuhan Yesus ke dunia untuk mengajar manusia bagaimana hidup 
+          memuliakan Tuhan. Yesus mengajarkan dan memberi teladan kasih sebagai cara hidup dalam memuliakan Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Yesus datang ke dunia untuk memperbaiki hidup kita agar dapat berfungsi sebagaimana mestinya. 
+          Namun, hanya sebagian kecil dari manusia yang bersedia dan berusaha untuk hidup seperti Yesus.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Hidup serupa dengan Yesus sebenarnya adalah tujuan awal Tuhan menciptakan manusia. Jika kita 
+          melihat kehidupan Yesus, Dia selalu memuliakan Tuhan. Begitu pula seharusnya kehidupan kita sebagai manusia.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Hidup serupa dengan Yesus memiliki konsep yang sangat sederhana: lakukan segala sesuatu untuk Tuhan. 
+          Itu adalah kunci utamanya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ketika kita melakukan sesuatu, ingatlah bahwa hal itu harus memuliakan Tuhan. Misalnya, ketika 
+          kita makan, tujuan kita adalah untuk memuliakan Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Contoh lainnya, ketika kita menyapu, lakukanlah dengan sungguh-sungguh agar lingkungan menjadi 
+          bersih dan sehat. Hal yang sama berlaku saat kita bekerja, maka bekerjalah dengan sepenuh hati 
+          agar Tuhan dimuliakan melalui pekerjaan kita.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ingatlah bahwa Tuhan tidak menyukai orang malas:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Hati si pemalas penuh keinginan, tetapi sia-sia, sedangkan hati orang rajin diberi kelimpahan."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Amsal 13:4</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Bahkan, Tuhan memberi contoh semut merah yang rajin mengumpulkan makanan:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Hai pemalas, pergilah kepada semut, perhatikanlah lakunya dan jadilah bijak: biarpun tidak 
+            ada pemimpinnya, pengaturnya, atau penguasanya, ia menyediakan rotinya di musim panas, dan 
+            mengumpulkan makanannya pada waktu panen."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Amsal 6:6-8</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          <strong class="font-semibold text-gray-800">
+            Dengan tidak malas saja, kita sudah memuliakan Tuhan.
+          </strong>
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Kita juga bisa memuliakan Tuhan dengan cara mengasihi. Firman Tuhan dengan jelas mengajarkan 
+          bahwa kita harus mengasihi orang lain seperti diri kita sendiri.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ketika kita menunjukkan kasih kepada sesama, itu juga merupakan bentuk memuliakan Tuhan.
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Dan segala sesuatu yang kamu lakukan dengan perkataan atau perbuatan, lakukanlah semuanya 
+            itu dalam nama Tuhan Yesus, sambil mengucap syukur oleh Dia kepada Allah, Bapa kita."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Kolose 3:17</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Ayat ini menjadi penutup dari renungan kita kali ini. Kiranya Allah selalu dimuliakan dalam 
+          setiap perkataan dan perbuatan kita. Tuhan Yesus memberkati. Amin.
+        </p>
+        <p class="mb-4 leading-relaxed font-semibold">
+          Tuhan Yesus Memberkati.
+        </p>
+        <p class="text-gray-600 font-medium">Penulis : {renunganData.author}</p>
+      </section>
+    </div>
+  </article>
+</RenunganLayout>

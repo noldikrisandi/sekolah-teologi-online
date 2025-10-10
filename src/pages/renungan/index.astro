@@ -1,7 +1,7 @@
 ---
 // src/pages/renungan/index.astro
-import Card from '../../components/ui/Card.astro';
-import RenunganLayout from '../../layouts/RenunganLayout.astro';
+import Card from "../../components/ui/Card.astro";
+import RenunganLayout from "../../layouts/RenunganLayout.astro";
 export const prerender = true;
 ---
 
@@ -9,7 +9,44 @@ export const prerender = true;
   title="Renungan Harian"
   description="Renungan harian untuk memperkuat iman">
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+    <!-- Iman dan Kepercayaan -->
+    <Card
+      img="/images/banner/raja.webp"
+      altText="Ilustrasi seseorang berdiri teguh melihat kerajaan melambangkan iman yang kokoh kepada Kristus"
+      title="Iman yang Teguh di Tengah Guncangan"
+      desc="Pelajari bagaimana tetap beriman kepada Tuhan meskipun dunia di sekitar kita terus berubah dan berguncang."
+      labelBtn="Baca Selengkapnya"
+      url="/renungan/iman/iman-yang-teguh-di-tengah-guncangan"
+    />
 
+    <Card
+      img="/images/banner/diberkati-tuhan.webp"
+      altText="Gambar tangan terangkat ke langit melambangkan kepercayaan penuh kepada Tuhan"
+      title="Percaya Saat Tidak Mengerti"
+      desc="Renungkan makna sejati dari percaya kepada Tuhan meskipun jalan yang kita tempuh belum kita pahami sepenuhnya."
+      labelBtn="Baca Selengkapnya"
+      url="/renungan/iman/percaya-saat-tidak-mengerti"
+    />
+
+    <Card
+      img="/images/banner/salib-ketenangan.svg"
+      altText="Ilustrasi salib dan burung-burung sebagai lambang kuasa iman yang mengalahkan ketakutan"
+      title="Kuasa Iman yang Mengalahkan Ketakutan"
+      desc="Temukan bagaimana iman dapat mengusir rasa takut dan memberi keberanian untuk melangkah sesuai kehendak Tuhan."
+      labelBtn="Baca Selengkapnya"
+      url="/renungan/iman/kuasa-iman-yang-mengalahkan-ketakutan"
+    />
+
+    <Card
+      img="/images/banner/renungan-kristen-tuhan-pikul-salib.svg"
+      altText="Gambar Tuhan Yesus memikul salib melambangkan perjalanan iman yang penuh proses dan pengharapan"
+      title="Tetap Percaya dalam Proses Tuhan"
+      desc="Belajar untuk tetap berserah dan percaya bahwa setiap proses yang Tuhan izinkan membawa kita semakin serupa dengan Kristus."
+      labelBtn="Baca Selengkapnya"
+      url="/renungan/iman/tetap-percaya-dalam-proses-tuhan"
+    />
+
+    <!-- Kasih dan Damai Sejahtera -->
     <Card
       img="/images/banner/renungan-rohani.webp"
       altText="Ilustrasi damai sejahtera Allah yang melampaui segala akal di tengah badai kehidupan"
@@ -57,6 +94,80 @@ export const prerender = true;
       desc="Temukan cara untuk selalu hidup dalam kesejahteraan sesuai janji Tuhan. Pelajari tiga langkah praktisnya"
       labelBtn="Baca Selengkapnya"
       url="/renungan/kasih-dan-damai-sejahtera/selalu-hidup-dalam-kesejahteraan"
+    />
+
+    <!-- Keluarga Kristen -->
+    <Card
+      img="/images/banner/ayah-dan-anak.svg"
+      altText="Ayah yang mengasihi anaknya dengan kasih Tuhan"
+      title="Menjadi Ayah yang Berkenan"
+      desc="Sukses menjadi ayah yang berkenan di hadapan Tuhan sehingga bisa menjadi teladan dalam keluarga yang diberkati Tuhan."
+      labelBtn="Renungan"
+      url="/renungan/keluarga-kristen/ayah-yang-berkenan"
+    />
+
+    <Card
+      img="/images/banner/keluarga-bahagia.svg"
+      altText="Ibu yang mengasihi anaknya sehingga berkenan kepada Tuhan"
+      title="Menjadi Ibu yang Berkenan"
+      desc="Belajar menjadi ibu yang berkenan di hadapan Tuhan, karena kedamaian dalam keluarga berasal dari seorang ibu yang berkenan dihadapan Tuhan."
+      labelBtn="Renungan"
+      url="/renungan/keluarga-kristen/ibu-dan-istri-yang-berkenan"
+    />
+
+    <Card
+      img="/images/banner/diberkati-tuhan.webp"
+      altText="Seorang anak yang diberkati dan berkenan dihadapan Tuhan"
+      title="Menjadi Anak yang Berkenan"
+      desc="Pentingnya menjadi anak yang berkenan di hadapan Tuhan dan orang tua sehingga hidup kita penuh damai dan sejahtera."
+      labelBtn="Renungan"
+      url="/renungan/keluarga-kristen/anak-yang-berkenan"
+    />
+
+    <Card
+      img="/images/banner/keluarga-penuh-kasih-sarapan-bersama.webp"
+      altText="Keluarga sarapan dengan bahagia menjadi contoh orang tua sebagai teladan"
+      title="Orang Tua Sebagai Teladan"
+      desc="Orang tua harus menjadi teladan bagi anak, karena anak adalah citra dari orang tua itu sendiri | Pentingnya perkenanan Tuhan"
+      labelBtn="Renungan"
+      url="/renungan/keluarga-kristen/orang-tua-sebagai-teladan"
+    />
+
+    <!-- Mengerti Maksud Tuhan -->
+    <Card
+      img="/images/banner/diberkati-tuhan.webp"
+      altText="Seseorang sedang diberkati Tuhan"
+      title="Berkat Sesungguhnya dari Tuhan"
+      desc="Mengerti berkat sesungguhnya yang diberikan Tuhan. Semua berkat dari Tuhan menciptakan Kedamaian dan Kesejahteraan."
+      labelBtn="Renungan"
+      url="/renungan/mengerti-maksud-tuhan/berkat-sesungguhnya-dari-tuhan"
+    />
+
+    <Card
+      img="/images/banner/memuliakan-tuhan-dengan-memandang-salib.webp"
+      altText="Salib di padang rumput, menggambarkan makna salib Yesus"
+      title="Makna Salib Yesus bagi Manusia"
+      desc="mengerti makna salib Yesus dalam kehidupan sehari-hari, sehingga hidup kita selalu berkenan di hadapan Tuhan dan menjadi berkat."
+      labelBtn="Renungan"
+      url="/renungan/mengerti-maksud-tuhan/makna-salib-yesus"
+    />
+
+    <Card
+      img="/images/banner/salib-ketenangan.svg"
+      altText="Keadaan penuh ketenangan dengan gambar salib sebagai lambang maksud Tuhan"
+      title="Maksud Tuhan dalam Kesesakan"
+      desc="Intropeksi diri apakah kesesakan yang kita alami karena rancangan Tuhan atau kesalahan kita, sehingga dapat menemukan maksud Tuhan."
+      labelBtn="Renungan"
+      url="/renungan/mengerti-maksud-tuhan/maksud-tuhan-dalam-kesesakan"
+    />
+
+    <Card
+      img="/images/banner/ayah-dan-anak.svg"
+      altText="ayah dan anak perempuan adalah ciptaan Tuhan"
+      title="Tujuan Manusia Diciptakan"
+      desc="Mengerti tujuan Tuhan menciptakan manusia, sehingga hidup kita sesuai dengan rancangan Tuhan yang penuh Damai Sejahtera."
+      labelBtn="Renungan"
+      url="/renungan/mengerti-maksud-tuhan/tujuan-manusia-diciptakan"
     />
   </div>
 </RenunganLayout>

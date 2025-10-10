@@ -1,0 +1,317 @@
+---
+// src/pages/renungan/keluarga-kristen/ayah-yang-berkenan.astro
+import RenunganLayout from "../../../layouts/RenunganLayout.astro";
+
+const renunganData = {
+  title: "Renungan Harian, 15 November 2025 - Menjadi Ayah dan Suami yang Berkenan di Hadapan Tuhan",
+  author: "Noldi Krisandi",
+  image: "/images/banner/ayah-dan-anak.svg",
+  imageAlt: "Ayah yang mengasihi anaknya dengan kasih Tuhan",
+  description: "Renungan harian Kristen 15 November 2025 tentang peran ayah sebagai pemimpin keluarga menurut Alkitab. Pelajari prinsip-prinsip menjadi ayah dan suami yang berkenan di hadapan Tuhan melalui pemimpin dalam kebenaran, kasih Kristus, dan tanggung jawab rohani.",
+  publishedDate: "2025-11-15T08:00:00+07:00",
+  modifiedDate: "2025-11-15T08:00:00+07:00",
+  category: "renungan harian kristen",
+  scripture: ["Efesus 5:25", "Efesus 6:4", "Amsal 6:6-8", "Yeremia 29:12-13", "Kejadian 2:18"]
+};
+---
+
+<RenunganLayout
+  title={renunganData.title}
+  description={renunganData.description}
+  url="renungan/keluarga-kristen/ayah-yang-berkenan"
+  type="article"
+  articles={[{
+    headline: renunganData.title,
+    description: renunganData.description,
+    images: [renunganData.image],
+    datePublished: renunganData.publishedDate,
+    dateModified: renunganData.modifiedDate,
+    authorName: renunganData.author,
+    url: "/renungan/keluarga-kristen/ayah-yang-berkenan",
+    keywords: ["ayah Kristen", "pemimpin keluarga", "suami berkenan", "keluarga Kristen", "renungan keluarga"]
+  }]}
+  breadcrumbs={[
+    { name: "Home", url: "/" },
+    { name: "Renungan Harian", url: "/renungan" },
+    { name: "Keluarga Kristen", url: "/renungan/keluarga-kristen" },
+    { name: "Ayah yang Berkenan", url: "/renungan/keluarga-kristen/ayah-yang-berkenan" }
+  ]}
+>
+
+  <article itemscope itemtype="https://schema.org/Article">
+    <!-- Header dengan microdata -->
+    <header class="mb-8 border-l-4 border-sky-600 pl-4" itemprop="headline">
+      <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+        {renunganData.title}
+      </h1>
+      <div class="flex flex-wrap items-center gap-4 text-gray-600 text-lg">
+        <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+          Penulis: <span itemprop="name">{renunganData.author}</span>
+        </p>
+        <meta itemprop="datePublished" content={renunganData.publishedDate} />
+        <meta itemprop="dateModified" content={renunganData.modifiedDate} />
+      </div>
+      <h2 class="text-sky-700 text-lg">
+        Renungan Harian Kristen Hari ini,
+        <time datetime="2025-11-15" itemprop="datePublished">15 November 2025</time>
+      </h2>
+    </header>
+
+    <!-- Featured Image dengan schema -->
+    <div class="mb-8" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      <img
+        src={renunganData.image}
+        alt={renunganData.imageAlt}
+        width={800}
+        height={400}
+        class="w-full h-48 md:h-80 object-cover rounded-lg shadow-md"
+        itemprop="url"
+      />
+      <meta itemprop="width" content="800" />
+      <meta itemprop="height" content="400" />
+    </div>
+
+    <!-- Content dengan articleBody schema -->
+    <div class="prose prose-lg max-w-none text-gray-700" itemprop="articleBody">
+      <!-- Introduction -->
+      <section class="mb-8">
+        <p class="mb-4 leading-relaxed">
+          Shalom saudara-saudari yang terkasih di dalam Yesus Kristus.<br />
+          Kiranya kasih karunia dan damai sejahtera dari Tuhan menyertai setiap keluarga kita.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Sebagai seorang ayah, peran yang diemban tidak hanya sekadar sebagai pencari nafkah atau 
+          pelindung fisik, tetapi juga sebagai pemimpin yang membawa keluarga semakin dekat kepada Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Alkitab mengajarkan banyak prinsip tentang bagaimana menjadi ayah yang tidak hanya mengutamakan 
+          tugas-tugas duniawi, tetapi juga menjalankan panggilan Tuhan dengan penuh kesungguhan hati.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Seorang ayah harus hidup sesuai dengan kebenaran Firman Tuhan, sehingga hidupnya mencerminkan 
+          kasih Kristus. Peran ayah dalam keluarga sangatlah besar, oleh karena itu diperlukan kerja keras.
+        </p>
+      </section>
+
+      <!-- Section 1 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Memimpin dalam Kebenaran
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Sebelum menjadi kepala keluarga, penting untuk menjadikan Firman Tuhan sebagai dasar kehidupan 
+          keluarga. Tanpa pemahaman Firman, sulit bagi kepala keluarga dalam memimpin. Firman Tuhan harus 
+          menjadi pelita yang menerangi perjalanan hidup keluarga.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ayah perlu memahami dan menerapkan Firman Tuhan agar dapat membimbing keluarga sesuai kehendak 
+          Tuhan. Ketika keluarga hidup dalam kebenaran Firman Tuhan, penyertaan dan berkat Tuhan akan nyata. 
+          Berkat Tuhan itu ada dua, yaitu damai dan sejahtera.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Kedamaian menjadi sumber sukacita dalam keluarga, karena mencakup kasih sayang, rasa aman, dan 
+          kenyamanan. Jika keluargamu belum dipenuhi damai, evaluasi apakah kepemimpinanmu sudah sesuai 
+          dengan Firman Tuhan atau belum.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Sejahtera berarti keluargamu tidak mengalami kekurangan dalam sandang, pangan, dan papan. Tuhan 
+          tidak akan membiarkan anak-anak-Nya terpuruk dalam kekurangan, karena sejahtera adalah hasil dari 
+          kita mengikuti Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Tuhan mengajarkan kita untuk menabung saat berkelimpahan, agar kita tetap hidup layak saat masa 
+          sukar datang:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Hai pemalas, pergilah kepada semut, perhatikanlah lakunya dan jadilah bijak: biarpun tidak 
+            ada pemimpinnya, pengaturnya, atau penguasanya, ia menyediakan rotinya di musim panas, dan 
+            mengumpulkan makanannya pada waktu panen."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Amsal 6:6-8</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Selain itu, Tuhan juga memberikan petunjuk tentang cara-cara untuk hidup sejahtera. Apakah kamu 
+          sudah menjalankan perintah tersebut, sehingga hidup keluargamu tidak kekurangan?
+        </p>
+
+        <h3 class="text-lg md:text-xl font-semibold text-gray-800 mb-3">
+          Belajar Firman Tuhan Bersama Keluarga
+        </h3>
+        <p class="mb-4 leading-relaxed">
+          Salah satu cara memimpin keluarga dalam kebenaran adalah dengan belajar Firman Tuhan bersama. 
+          Banyak orang berpikir bahwa belajar Firman dalam keluarga hanya perlu dilakukan oleh pendeta 
+          atau orang penting lainnya di gereja. Ini jelas merupakan pemikiran yang salah.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Bagaimana mungkin sebuah keluarga bisa hidup menurut Firman Tuhan secara utuh jika tidak belajar 
+          Firman bersama di dalam keluarga? Parahnya, banyak orang hanya mengandalkan persekutuan gereja 
+          yang dilakukan satu atau dua kali seminggu, padahal itu sangat kurang.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Semakin paham kebenaran, sebuah keluarga akan semakin hidup dalam damai dan sejahtera di dalam 
+          Kristus. Tentu saja, memahami kebenaran saja tidak cukup jika tidak diterapkan dalam kehidupan sehari-hari.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Pimpinlah keluargamu dalam kebenaran Firman Tuhan, maka kamu dan keluargamu akan mengalami berkat 
+          damai dan sejahtera dari Tuhan Yesus Kristus.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Mengasihi Keluarga dengan Kasih Kristus
+        </h2>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Suami, kasihilah istrimu, sebagaimana Kristus telah mengasihi gereja dan telah menyerahkan diri-Nya baginya."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Efesus 5:25</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Tuhan mengingatkan kita bahwa suami harus mengasihi istrinya, seperti Kristus mengasihi jemaat 
+          dan menyerahkan diri-Nya untuk jemaat. Kasih ini bukan hanya tentang tindakan fisik, tetapi juga 
+          tentang kasih yang tidak egois, penuh pengorbanan, dan sabar.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Seorang ayah yang berkenan di hadapan Tuhan akan memprioritaskan kasih kepada keluarganya, baik 
+          dalam kata-kata maupun tindakan, serta meneladani Kristus dalam setiap aspek kehidupannya.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Sering kali, seorang anak tidak mengalami kasih Kristus dalam keluarganya, sehingga mereka 
+          mencari kasih yang lain di luar sana. Ini sangat berbahaya jika anak atau istri merasa lebih 
+          nyaman ketika tidak bersama ayah, karena dampaknya bisa sangat mengerikan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Seorang ayah harus memancarkan kasih Kristus dalam kehidupannya agar keluarga terus hidup dalam kasih Kristus.
+        </p>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Mengajarkan Firman Tuhan kepada Anak
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Sering kali, orang tua salah paham tentang pendidikan rohani anak, dengan menyerahkan tanggung 
+          jawab ini sepenuhnya kepada gereja atau guru sekolah Minggu. Padahal, pendidikan rohani adalah 
+          tanggung jawab utama orang tua, terutama ayah.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ayah memiliki peran penting dalam mengajarkan Firman Tuhan, karena anak cenderung lebih mendengarkan 
+          ayah. Sebagai pemimpin keluarga, ayah harus menjadi teladan dalam perkataan dan perbuatan yang 
+          mencerminkan Kristus. Firman Tuhan menegaskan:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Dan kamu, bapak-bapak, janganlah membangkitkan amarah anak-anakmu, tetapi didiklah mereka 
+            dalam ajaran dan nasihat Tuhan."
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Efesus 6:4</cite>
+        </blockquote>
+
+        <p class="mb-4 leading-relaxed">
+          Seorang ayah yang memahami dan menerapkan Firman Tuhan akan membimbing anak dalam kebenaran. 
+          Sebaliknya, ayah yang tidak memahami Firman Tuhan gagal memberikan dasar iman yang kuat bagi 
+          anak, sehingga anak mudah terpengaruh nilai dunia.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Jika ayahmu dulu gagal mengajarkan Firman Tuhan, jadikan itu motivasi untuk tidak mengulanginya. 
+          Jadilah teladan yang baik, karena anak akan menghormati ayah yang mengajarkan dan menjalankan 
+          kebenaran. <strong class="font-semibold text-gray-800">Jangan menuntut hormat tanpa memberikan teladan.</strong>
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ingatlah, karakter anak dibentuk oleh keluarga yang dipimpin dengan hikmat dan kasih berdasarkan 
+          Firman Tuhan. Sebagai pemimpin keluarga, jadilah pemimpin yang berhasil membimbing anak menjadi 
+          pribadi yang serupa dengan Kristus.
+        </p>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Mengutamakan Doa dan Kehadiran Tuhan dalam Keluarga
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Apakah keluargamu memiliki mezbah doa? Apakah keluargamu selalu mengharapkan kehadiran Tuhan 
+          dalam setiap situasi, atau hanya menjadikan Tuhan sebagai simbol dan tempat meminta-minta?
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Mezbah doa dalam keluarga sangat penting. Kepala keluarga harus memiliki inisiatif untuk 
+          membangun mezbah doa, karena melalui doa, menunjukkan bahwa kita selalu mengharapkan kehadiran 
+          Tuhan dalam setiap langkah kehidupan keluarga.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Jika kamu tidak membangun mezbah doa dalam keluarga, maka itu menunjukkan keluargamu belum 
+          sepenuhnya percaya dan bergantung pada Tuhan.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Kamu pasti menginginkan kehadiran Tuhan selalu ada dalam keluargamu, maka doa harus menjadi 
+          salah satu fondasi utama dalam kehidupan keluarga, seperti yang tertulis dalam Yeremia 29:12-13.
+        </p>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="mb-8">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+          Ayah yang Bertanggung jawab
+        </h2>
+        <p class="mb-4 leading-relaxed">
+          Jika di perusahaan ada CEO yang bertanggung jawab atas segala hal di kantor, maka dalam keluarga 
+          memiliki ayah yang tanggung jawab atas segala hal yang ada di dalam keluarga.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ketika istrimu sering mengomel, kamu memiliki tanggung jawab untuk menghentikan omelannya dengan 
+          kasih. Begitu juga ketika istri atau anakmu melakukan kesalahan, kamu memiliki tanggung jawab 
+          untuk menegur dan menuntunnya ke jalan yang benar. Semua tanggung jawab dalam keluarga ada pada 
+          kepala keluarga.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Banyak keluarga yang gagal karena ayah tidak berhasil membawa keluarganya semakin dekat kepada 
+          Tuhan. Jangan sampai hal ini terjadi pada keluargamu.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Ingat, semua yang terjadi dalam keluarga adalah tanggung jawab seorang ayah.
+        </p>
+        <p class="mb-4 leading-relaxed">
+          Jangan melempar tanggung jawab keluarga kepada orang lain, karena kamulah pemimpinnya. Kamu yang 
+          harus mengayomi, melindungi, mencukupi, dan menjadi teladan dalam keluarga. Sedangkan istri adalah 
+          penolongmu dalam memikul tanggung jawab itu. Ingat, istrimu adalah penolong, bukan penanggung:
+        </p>
+
+        <blockquote
+          class="border-l-4 border-sky-500 pl-4 my-6 italic text-gray-700 bg-sky-50 py-3 rounded-r"
+          itemprop="citation">
+          <p class="mb-2 p-3">
+            "Tuhan Allah berfirman: 'Tidak baik, kalau manusia itu seorang diri saja. Aku akan menjadikan 
+            penolong baginya, yang sepadan dengan dia.'"
+          </p>
+          <cite class="text-sm not-italic text-gray-600" itemprop="source">- Kejadian 2:18</cite>
+        </blockquote>
+      </section>
+
+      <!-- Conclusion -->
+      <section class="mb-8">
+        <p class="mb-4 leading-relaxed">
+          Kiranya Damai Sejahtera yang berasal dari Tuhan Yesus Kristus selalu menyertai keluargamu. Amin.
+        </p>
+        <p class="mb-4 leading-relaxed font-semibold">
+          Tuhan Yesus Memberkati.
+        </p>
+        <p class="text-gray-600 font-medium">Penulis : {renunganData.author}</p>
+      </section>
+    </div>
+  </article>
+</RenunganLayout>
