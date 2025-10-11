@@ -1,0 +1,991 @@
+---
+// src/pages/edukasi/teologi-sistematik/bibliologi/index.astro
+import EdukasiLayout from "../../../../layouts/EdukasiLayout.astro";
+
+const pageTitle = "Bibliologi - Doktrin Alkitab dalam Teologi Sistematik";
+const pageDescription = "Pelajari doktrin tentang Alkitab: inspirasi, kanonisasi, otoritas, keandalan, dan penafsiran Kitab Suci berdasarkan pendekatan teologi Reformed";
+const pageImage = "/images/banner/bibliologi-teologi.webp";
+const pageUrl = "edukasi/teologi-sistematik/bibliologi";
+
+const breadcrumbs = [
+  { name: "Beranda", url: "https://sekolahteologi.com/" },
+  { name: "Edukasi", url: "https://sekolahteologi.com/edukasi" },
+  {
+    name: "Teologi Sistematik",
+    url: "https://sekolahteologi.com/edukasi/teologi-sistematik",
+  },
+  {
+    name: "Bibliologi",
+    url: "https://sekolahteologi.com/edukasi/teologi-sistematik/bibliologi",
+  },
+];
+
+// Data untuk bagian-bagian terkait
+const relatedSections = [
+  {
+    title: "Prolegomena - Fondasi Teologi",
+    url: "/edukasi/teologi-sistematik/prolegomena",
+    description: "Memahami metodologi dan pendekatan dalam studi teologi sistematik",
+    icon: "🏛️",
+  },
+  {
+    title: "Hermeneutika - Ilmu Penafsiran",
+    url: "/edukasi/hermeneutika",
+    description: "Prinsip-prinsip menafsir Alkitab dengan benar dan kontekstual",
+    icon: "🔍",
+  },
+  {
+    title: "Teologi Proper - Doktrin Allah",
+    url: "/edukasi/teologi-sistematik/teologi-proper",
+    description: "Mengenal sifat, atribut, dan karya Allah Tritunggal",
+    icon: "✝️",
+  },
+  {
+    title: "Kristologi - Doktrin Kristus",
+    url: "/edukasi/teologi-sistematik/kristologi",
+    description: "Memahami pribadi dan karya Yesus Kristus",
+    icon: "🕊️",
+  },
+];
+---
+
+<EdukasiLayout
+  title={pageTitle}
+  description={pageDescription}
+  image={pageImage}
+  url={pageUrl}
+  type="article"
+  breadcrumbs={breadcrumbs}>
+  <div class="space-y-8">
+    <!-- Header Section -->
+    <header class="text-center py-12 bg-gradient-to-r from-sky-50 to-purple-100 rounded-2xl shadow-sm">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Bibliologi
+        </h1>
+        <p class="text-xl text-gray-700 mb-6 p-5 max-w-3xl mx-auto leading-relaxed">
+          Doktrin tentang Alkitab - Memahami Inspirasi, Otoritas, dan Keandalan Kitab Suci
+        </p>
+        <div class="flex flex-wrap justify-center gap-2">
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Inspirasi Alkitab</span>
+          <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold">Kanonisasi</span>
+          <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold">Otoritas Kitab Suci</span>
+          <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-semibold">Keandalan Historis</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Pengertian Bibliologi -->
+    <section id="pengertian" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center">
+            Pengertian Bibliologi dalam Teologi Sistematik
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                Definisi dan Ruang Lingkup
+              </h3>
+
+              <div class="bg-sky-50 border-l-4 border-sky-400 p-4 mb-6">
+                <p class="text-sky-700 font-medium">
+                  <strong>Bibliologi</strong> berasal dari bahasa Yunani <em>biblion</em> (βιβλίον) yang berarti "buku/kitab" dan <em>logos</em> (λόγος) yang berarti "studi/ilmu". Secara harfiah berarti <strong>"studi tentang Kitab"</strong>.
+                </p>
+              </div>
+
+              <p class="text-gray-700 mb-4 leading-relaxed">
+                Dalam <strong>Teologi Sistematika</strong>, <strong>Bibliologi</strong> adalah disiplin teologi yang mempelajari doktrin tentang Alkitab, sifat, otoritas, inspirasi, kanonisasi, keandalan, dan penafsirannya.
+              </p>
+
+              <div class="bg-yellow-50 rounded-lg p-4 mb-6">
+                <h4 class="font-semibold text-yellow-900 mb-3">
+                  Posisi Sentral Bibliologi
+                </h4>
+                <p class="text-yellow-800 text-sm">
+                  <strong>Bibliologi adalah fondasi bagi semua doktrin Kristen lainnya</strong>. Pemahaman yang benar tentang Alkitab menentukan kebenaran semua doktrin lain yang dibangun di atasnya.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                Pertanyaan-Pertanyaan Kunci Bibliologi
+              </h3>
+
+              <div class="space-y-4">
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q1</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900">Apa itu Inspirasi Alkitab?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Bagaimana Allah mengilhami penulis manusia</p>
+                    <a href="#inspirasi" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">📘 Pelajari Inspirasi</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-green-100 text-green-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q2</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900">Bagaimana Kanon Terbentuk?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Proses pengakuan kitab-kitab yang diilhami</p>
+                    <a href="#kanonisasi" class="inline-block mt-2 text-green-700 font-medium text-sm hover:text-green-900 hover:underline transition-colors duration-200">📘 Pelajari Kanonisasi</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-red-100 text-red-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q3</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900">Apa Otoritas Alkitab?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Kewenangan tertinggi Alkitab dalam iman dan praktik</p>
+                    <a href="#otoritas" class="inline-block mt-2 text-red-700 font-medium text-sm hover:text-red-900 hover:underline transition-colors duration-200">📘 Pelajari Otoritas</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q4</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900">Seberapa Andalkah Alkitab?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Keandalan historis dan ilmiah Kitab Suci</p>
+                    <a href="#keandalan" class="inline-block mt-2 text-orange-700 font-medium text-sm hover:text-orange-900 hover:underline transition-colors duration-200">📘 Pelajari Keandalan</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Doktrin Inspirasi -->
+    <section id="inspirasi" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center">
+            Doktrin Inspirasi Alkitab
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Inspirasi</strong> adalah karya supernatural Roh Kudus yang memampukan penulis manusia untuk menuliskan Firman Allah secara tepat dan tanpa salah dalam naskah aslinya, sambil tetap mempertahankan kepribadian, gaya, dan latar belakang mereka.
+            </p>
+          </div>
+
+          <!-- Ayat Kunci -->
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8 rounded-r-lg">
+            <h4 class="font-bold text-yellow-900 mb-2">Basis Alkitabiah Inspirasi:</h4>
+            <p class="text-yellow-800 text-lg italic">
+              "Segala tulisan yang diilhamkan Allah memang bermanfaat untuk mengajar, untuk menyatakan kesalahan, untuk memperbaiki kelakuan dan untuk mendidik orang dalam kebenaran."<br>
+              <strong class="not-italic">2 Timotius 3:16</strong>
+            </p>
+            <p class="text-yellow-800 text-lg italic mt-4">
+              "Yang terutama harus kamu ketahui, ialah bahwa nubuat-nubuat dalam Kitab Suci tidak boleh ditafsirkan menurut kehendak sendiri, sebab tidak pernah nubuat dihasilkan oleh kehendak manusia, tetapi oleh dorongan Roh Kudus orang-orang berbicara atas nama Allah."<br>
+              <strong class="not-italic">2 Petrus 1:20-21</strong>
+            </p>
+          </div>
+
+          <!-- Teori-teori Inspirasi -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">Teori-teori Inspirasi Alkitab</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-red-50 border border-red-200 rounded-xl p-6">
+                <h4 class="font-bold text-red-900 mb-3 text-lg">❌ Teori Natural/Inspirasi Umum</h4>
+                <p class="text-red-800 text-sm mb-4">Alkitab hanyalah karya sastra religius tingkat tinggi yang ditulis oleh orang-orang berbakat secara natural.</p>
+                <ul class="text-red-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Menyangkal supernaturalisme</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Dianut teologi liberal</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-orange-50 border border-orange-200 rounded-xl p-6">
+                <h4 class="font-bold text-orange-900 mb-3 text-lg">⚠️ Teori Mekanis/Diktasi</h4>
+                <p class="text-orange-800 text-sm mb-4">Penulis hanya sebagai mesin ketik yang pasif, tanpa kontribusi pribadi sama sekali.</p>
+                <ul class="text-orange-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Mengabaikan gaya penulis</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Tidak sesuai bukti internal</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">✅ Teori Dinamis/Organik</h4>
+                <p class="text-sky-800 text-sm mb-4">Roh Kudus mengawasi dan mengarahkan penulis dengan menggunakan kepribadian, gaya, dan latar belakang mereka untuk menghasilkan Firman Allah yang tanpa salah.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Pandangan evangelikal utama</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Seimbang antara ilahi dan manusiawi</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-green-50 border border-green-200 rounded-xl p-6">
+                <h4 class="font-bold text-green-900 mb-3 text-lg">✅ Teori Verbal Plenary</h4>
+                <p class="text-green-800 text-sm mb-4">Inspirasi meliputi setiap kata (verbal) dan seluruh bagian Alkitab (plenary), menjamin ketepatan baik dalam detail maupun keseluruhan.</p>
+                <ul class="text-green-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Pandangan Reformed konservatif</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Menjamin ineransi Alkitab</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Konsep Ineransi dan Infallibilitas -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Ineransi dan Infallibilitas Alkitab</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Ineransi<br><span class="text-lg font-normal">(Tidak Bersalah)</span></h4>
+                <p class="text-gray-700 mb-4 text-center">Alkitab bebas dari kesalahan dalam naskah aslinya dalam semua yang diajarkannya, termasuk hal-hal sejarah dan ilmiah.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Implikasi:</h5>
+                  <ul class="text-sky-800 space-y-2 text-sm">
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Dapat dipercaya secara mutlak</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Otoritas tertinggi dalam segala hal</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-green-200">
+                <h4 class="font-bold text-green-900 text-xl mb-4 text-center">Infallibilitas<br><span class="text-lg font-normal">(Tidak Dapat Salah)</span></h4>
+                <p class="text-gray-700 mb-4 text-center">Alkitab tidak mungkin menyesatkan dalam hal-hal yang berkaitan dengan iman dan keselamatan.</p>
+                <div class="bg-green-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-green-900 mb-2">Implikasi:</h5>
+                  <ul class="text-green-800 space-y-2 text-sm">
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Panduan yang pasti untuk keselamatan</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Pemimpin yang tidak mungkin keliru</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kanonisasi Alkitab -->
+    <section id="kanonisasi" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center">
+            Kanonisasi Alkitab
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Kanonisasi</strong> adalah proses pengakuan dan pengesahan kitab-kitab yang diilhami Roh Kudus menjadi kanon Alkitab. Gereja tidak <em>menciptakan</em> kanon, tetapi <em>mengakui</em> kanon yang sudah ditetapkan Allah.
+            </p>
+          </div>
+
+          <!-- Prinsip Kanonisasi -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">Prinsip-prinsip Kanonisasi</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="bg-white border border-purple-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-purple-600 text-2xl">✍️</span>
+                </div>
+                <h4 class="font-bold text-purple-900 mb-3">Otoritas Apostolik</h4>
+                <p class="text-gray-700 text-sm">Ditulis oleh rasul atau rekan dekat rasul dengan otoritas kerasulan</p>
+              </div>
+
+              <div class="bg-white border border-purple-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-purple-600 text-2xl">👑</span>
+                </div>
+                <h4 class="font-bold text-purple-900 mb-3">Ortodoksi Doktrinal</h4>
+                <p class="text-gray-700 text-sm">Kesesuaian dengan pengajaran apostolik dan doktrin yang sudah diterima</p>
+              </div>
+
+              <div class="bg-white border border-purple-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-purple-600 text-2xl">🌍</span>
+                </div>
+                <h4 class="font-bold text-purple-900 mb-3">Penerimaan Universal</h4>
+                <p class="text-gray-700 text-sm">Diterima dan digunakan secara luas oleh gereja-gereja mula-mula</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Kanonisasi -->
+          <div class="bg-gray-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Sejarah Kanonisasi Alkitab</h3>
+
+            <div class="space-y-8">
+              <!-- Perjanjian Lama -->
+              <div>
+                <h4 class="font-bold text-gray-900 text-xl mb-6 text-center bg-white py-3 rounded-lg shadow-sm">Kanon Perjanjian Lama</h4>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+                  <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                    <h5 class="font-bold text-sky-900 mb-3">Zaman Musa (≈ 1445 SM)</h5>
+                    <p class="text-gray-700 text-sm">Kelima kitab Taurat (Pentateukh) diakui sebagai Firman Allah</p>
+                    <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                      <p class="text-sky-800 text-xs font-semibold">Ulangan 31:24-26</p>
+                    </div>
+                  </div>
+
+                  <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                    <h5 class="font-bold text-sky-900 mb-3">Zaman Para Nabi (≈ 400 SM)</h5>
+                    <p class="text-gray-700 text-sm">Kitab para nabi dan tulisan diselesaikan dan dikumpulkan</p>
+                    <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                      <p class="text-sky-800 text-xs font-semibold">Zakharia 7:12</p>
+                    </div>
+                  </div>
+
+                  <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                    <h5 class="font-bold text-sky-900 mb-3">Konsili Jamnia (90 M)</h5>
+                    <p class="text-gray-700 text-sm">Penegasan kanon Ibrani 39 kitab, penolakan Apokrifa</p>
+                    <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                      <p class="text-sky-800 text-xs font-semibold">Pengakuan Resmi</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Perjanjian Baru -->
+              <div>
+                <h4 class="font-bold text-gray-900 text-xl mb-6 text-center bg-white py-3 rounded-lg shadow-sm">Kanon Perjanjian Baru</h4>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="bg-white rounded-xl p-6 shadow-sm border border-red-200">
+                    <h5 class="font-bold text-red-900 mb-3">Abad 1 M</h5>
+                    <p class="text-gray-700 text-sm">Surat-surat rasuli beredar dan dibacakan di jemaat-jemaat</p>
+                    <div class="bg-red-50 rounded-lg p-3 mt-3">
+                      <p class="text-red-800 text-xs font-semibold">Kolose 4:16</p>
+                    </div>
+                  </div>
+
+                  <div class="bg-white rounded-xl p-6 shadow-sm border border-red-200">
+                    <h5 class="font-bold text-red-900 mb-3">Marcion (144 M)</h5>
+                    <p class="text-gray-700 text-sm">Daftar kanon pertama (yang salah) memicu respons gereja</p>
+                    <div class="bg-red-50 rounded-lg p-3 mt-3">
+                      <p class="text-red-800 text-xs font-semibold">Reaksi Ortodoks</p>
+                    </div>
+                  </div>
+
+                  <div class="bg-white rounded-xl p-6 shadow-sm border border-red-200">
+                    <h5 class="font-bold text-red-900 mb-3">Muratori (170 M)</h5>
+                    <p class="text-gray-700 text-sm">Daftar kanon hampir lengkap, kecuali beberapa kitab</p>
+                    <div class="bg-red-50 rounded-lg p-3 mt-3">
+                      <p class="text-red-800 text-xs font-semibold">Fragmen Muratori</p>
+                    </div>
+                  </div>
+
+                  <div class="bg-white rounded-xl p-6 shadow-sm border border-red-200">
+                    <h5 class="font-bold text-red-900 mb-3">Athanasius (367 M)</h5>
+                    <p class="text-gray-700 text-sm">Daftar 27 kitab PB sama dengan kanon modern</p>
+                    <div class="bg-red-50 rounded-lg p-3 mt-3">
+                      <p class="text-red-800 text-xs font-semibold">Surat Paskah</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kitab-kitab yang Dipertanyakan -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Kitab-kitab yang Sempat Dipertanyakan</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Antilegomena (Awalnya Dipertanyakan)</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-yellow-50 p-4 rounded-lg">
+                    <span class="bg-yellow-500 text-white p-1 rounded mr-3">?</span>
+                    <span class="text-gray-700">Ibrani (anonim)</span>
+                  </div>
+                  <div class="flex items-center bg-yellow-50 p-4 rounded-lg">
+                    <span class="bg-yellow-500 text-white p-1 rounded mr-3">?</span>
+                    <span class="text-gray-700">Yakobus (penekanan perbuatan)</span>
+                  </div>
+                  <div class="flex items-center bg-yellow-50 p-4 rounded-lg">
+                    <span class="bg-yellow-500 text-white p-1 rounded mr-3">?</span>
+                    <span class="text-gray-700">2 Petrus (gaya berbeda)</span>
+                  </div>
+                  <div class="flex items-center bg-yellow-50 p-4 rounded-lg">
+                    <span class="bg-yellow-500 text-white p-1 rounded mr-3">?</span>
+                    <span class="text-gray-700">2 & 3 Yohanes (singkat)</span>
+                  </div>
+                  <div class="flex items-center bg-yellow-50 p-4 rounded-lg">
+                    <span class="bg-yellow-500 text-white p-1 rounded mr-3">?</span>
+                    <span class="text-gray-700">Wahyu (sulit dipahami)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Alasan Penerimaan Akhir</h4>
+                <div class="space-y-4">
+                  <div class="bg-green-50 p-4 rounded-lg">
+                    <h5 class="font-semibold text-green-900 mb-2">Bukti Internal</h5>
+                    <p class="text-green-800 text-sm">Kesaksian kitab-kitab sendiri tentang otoritas apostolik dan kesesuaian doktrinal</p>
+                  </div>
+                  <div class="bg-green-50 p-4 rounded-lg">
+                    <h5 class="font-semibold text-green-900 mb-2">Penerimaan Gereja Awal</h5>
+                    <p class="text-green-800 text-sm">Penggunaan luas dan penerimaan bertahap oleh mayoritas gereja</p>
+                  </div>
+                  <div class="bg-green-50 p-4 rounded-lg">
+                    <h5 class="font-semibold text-green-900 mb-2">Kesaksian Roh Kudus</h5>
+                    <p class="text-green-800 text-sm">Pengakuan internal umat Allah akan sifat ilahi kitab-kitab ini</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Otoritas Alkitab -->
+    <section id="otoritas" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center">
+            Otoritas Alkitab
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Otoritas Alkitab</strong> berarti Alkitab, sebagai Firman Allah yang diilhamkan, memiliki hak dan kuasa untuk menentukan apa yang harus dipercayai dan bagaimana harus hidup, baik secara individu maupun sebagai gereja.
+            </p>
+          </div>
+
+          <!-- Lima Sola -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Lima Sola Reformasi</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3 md:gap-1">
+              <div class="bg-white border border-red-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-12 h-12 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-red-600 text-xl">📖</span>
+                </div>
+                <h4 class="font-bold text-red-900 mb-2">Sola Scriptura</h4>
+                <p class="text-gray-700 text-xs">Hanya Alkitab sebagai otoritas tertinggi</p>
+              </div>
+
+              <div class="bg-white border border-red-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-12 h-12 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-red-600 text-xl">✝️</span>
+                </div>
+                <h4 class="font-bold text-red-900 mb-2">Solus Christus</h4>
+                <p class="text-gray-700 text-xs">Hanya Kristus sebagai Juruselamat</p>
+              </div>
+
+              <div class="bg-white border border-red-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-12 h-12 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-red-600 text-xl">💖</span>
+                </div>
+                <h4 class="font-bold text-red-900 mb-2">Sola Gratia</h4>
+                <p class="text-gray-700 text-xs">Hanya anugerah sebagai dasar keselamatan</p>
+              </div>
+
+              <div class="bg-white border border-red-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-12 h-12 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-red-600 text-xl">🙏</span>
+                </div>
+                <h4 class="font-bold text-red-900 mb-2">Sola Fide</h4>
+                <p class="text-gray-700 text-xs">Hanya iman sebagai sarana keselamatan</p>
+              </div>
+
+              <div class="bg-white border border-red-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-12 h-12 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-red-600 text-xl">🎯</span>
+                </div>
+                <h4 class="font-bold text-red-900 mb-2">Soli Deo Gloria</h4>
+                <p class="text-gray-700 text-xs">Hanya bagi Allah kemuliaan selama-lamanya</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sumber Otoritas -->
+          <div class="bg-gradient-to-r from-gray-50 to-red-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Sumber Otoritas Alkitab</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-red-200">
+                <h4 class="font-bold text-red-900 text-xl mb-4 text-center">Otoritas Derivatif<br><span class="text-lg font-normal">(Berasal dari Allah)</span></h4>
+                <p class="text-gray-700 mb-4 text-center">Otoritas Alkitab berasal dari Allah sebagai Pengarang utamanya. Karena Allah berkuasa, maka Firman-Nya pun berkuasa.</p>
+                <div class="bg-red-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-red-900 mb-2">Ayat Pendukung:</h5>
+                  <p class="text-red-800 text-sm italic">"Sebab aku tidak malu terhadap Injil, karena ia adalah kekuatan Allah yang menyelamatkan setiap orang yang percaya..."<br><strong class="not-italic">Roma 1:16</strong></p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-red-200">
+                <h4 class="font-bold text-red-900 text-xl mb-4 text-center">Otoritas Fungsional<br><span class="text-lg font-normal">(Bekerja secara Aktif)</span></h4>
+                <p class="text-gray-700 mb-4 text-center">Alkitab menjalankan otoritasnya secara aktif melalui karya Roh Kudus yang menghidupkan dan mengubah hidup.</p>
+                <div class="bg-red-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-red-900 mb-2">Ayat Pendukung:</h5>
+                  <p class="text-red-800 text-sm italic">"Sebab firman Allah hidup dan kuat dan lebih tajam dari pada pedang bermata dua manapun..."<br><strong class="not-italic">Ibrani 4:12</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Otoritas vs Sumber Lain -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Otoritas Alkitab vs Sumber Lain</h3>
+
+            <div class="overflow-x-auto">
+              <table class="w-full border-collapse">
+                <thead>
+                  <tr class="bg-gray-100">
+                    <th class="border border-gray-300 p-4 text-left font-semibold text-gray-900">Sumber Otoritas</th>
+                    <th class="border border-gray-300 p-4 text-left font-semibold text-gray-900">Protestan/Reformed</th>
+                    <th class="border border-gray-300 p-4 text-left font-semibold text-gray-900">Katolik Roma</th>
+                    <th class="border border-gray-300 p-4 text-left font-semibold text-gray-900">Ortodoks Timur</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 p-4 font-semibold text-gray-900">Alkitab</td>
+                    <td class="border border-gray-300 p-4 text-gray-700"><strong>Otoritas Tertinggi</strong> (Sola Scriptura)</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Otoritas tertinggi bersama Tradisi</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Bagian dari Tradisi yang hidup</td>
+                  </tr>
+                  <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 p-4 font-semibold text-gray-900">Tradisi</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Tunduk kepada Alkitab, bersifat penuntun</td>
+                    <td class="border border-gray-300 p-4 text-gray-700"><strong>Setara dengan Alkitab</strong></td>
+                    <td class="border border-gray-300 p-4 text-gray-700"><strong>Ekspresi iman yang hidup</strong></td>
+                  </tr>
+                  <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 p-4 font-semibold text-gray-900">Magisterium</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Tunduk kepada Alkitab</td>
+                    <td class="border border-gray-300 p-4 text-gray-700"><strong>Penafsir otoritatif</strong></td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Konsili ekumenis berotoritas</td>
+                  </tr>
+                  <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 p-4 font-semibold text-gray-900">Pengalaman</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Diuji oleh Alkitab</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Di bawah otoritas Gereja</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Bagian dari kehidupan mistik</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keandalan Alkitab -->
+    <section id="keandalan" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center">
+            Keandalan Alkitab
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Keandalan Alkitab</strong> mengacu pada ketepatan dan kebenaran Alkitab dalam catatan sejarah, geografi, dan faktanya, yang didukung oleh bukti-bukti arkeologi, naskah, dan ilmiah.
+            </p>
+          </div>
+
+          <!-- Bukti Naskah -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">Bukti Naskah Alkitab</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white border border-orange-200 rounded-xl p-6 shadow-sm">
+                <h4 class="font-bold text-orange-900 text-xl mb-4">Perjanjian Baru</h4>
+                <div class="space-y-4">
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-700">Naskah Yunani Lengkap</span>
+                    <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-bold">66+</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-700">Naskah Parsial</span>
+                    <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-bold">2,000+</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-700">Kutipan Bapa Gereja</span>
+                    <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-bold">36,000+</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-700">Jarak dengan Asli</span>
+                    <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-bold">25-50 tahun</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white border border-orange-200 rounded-xl p-6 shadow-sm">
+                <h4 class="font-bold text-orange-900 text-xl mb-4">Perbandingan dengan Klasik Lain</h4>
+                <div class="space-y-4">
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-700">Iliad (Homer)</span>
+                    <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-bold">643 naskah</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-700">Jarak dengan Asli</span>
+                    <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-bold">400 tahun</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-700">Galllic Wars (Caesar)</span>
+                    <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-bold">10 naskah</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-700">Jarak dengan Asli</span>
+                    <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-bold">900 tahun</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bukti Arkeologi -->
+          <div class="bg-gradient-to-r from-gray-50 to-orange-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Bukti Arkeologi Mendukung Alkitab</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-orange-200">
+                <h4 class="font-bold text-orange-900 mb-3">Penemuan Ebla</h4>
+                <p class="text-gray-700 text-sm mb-4">Tablet-tablet dari 2500 SM mengkonfirmasi nama-nama dan tempat dalam kitab Kejadian</p>
+                <div class="bg-orange-50 rounded-lg p-3">
+                  <p class="text-orange-800 text-xs font-semibold">Menguatkan Kejadian 14</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-orange-200">
+                <h4 class="font-bold text-orange-900 mb-3">Tel Dan Stele</h4>
+                <p class="text-gray-700 text-sm mb-4">Prasasti abad 9 SM menyebut "Rumah Daud", mengkonfirmasi dinasti Daud historis</p>
+                <div class="bg-orange-50 rounded-lg p-3">
+                  <p class="text-orange-800 text-xs font-semibold">Menguatkan 1 Raja-raja</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-orange-200">
+                <h4 class="font-bold text-orange-900 mb-3">Pool of Siloam</h4>
+                <p class="text-gray-700 text-sm mb-4">Ditemukan 2004, mengkonfirmasi lokasi Yesus menyembuhkan orang buta</p>
+                <div class="bg-orange-50 rounded-lg p-3">
+                  <p class="text-orange-800 text-xs font-semibold">Yohanes 9:7</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-orange-200">
+                <h4 class="font-bold text-orange-900 mb-3">Ossuary Yakobus</h4>
+                <p class="text-gray-700 text-sm mb-4">Tulang belulang bertuliskan "Yakobus, anak Yusuf, saudara Yesus"</p>
+                <div class="bg-orange-50 rounded-lg p-3">
+                  <p class="text-orange-800 text-xs font-semibold">Menguatkan Matius 13:55</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-orange-200">
+                <h4 class="font-bold text-orange-900 mb-3">Caiaphas Ossuary</h4>
+                <p class="text-gray-700 text-sm mb-4">Tempat tulang Imam Besar yang mengadili Yesus ditemukan 1990</p>
+                <div class="bg-orange-50 rounded-lg p-3">
+                  <p class="text-orange-800 text-xs font-semibold">Matius 26:57</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-orange-200">
+                <h4 class="font-bold text-orange-900 mb-3">Pontius Pilate Stone</h4>
+                <p class="text-gray-700 text-sm mb-4">Prasasti membuktikan historisitas Pontius Pilatus sebagai prefek Yudea</p>
+                <div class="bg-orange-50 rounded-lg p-3">
+                  <p class="text-orange-800 text-xs font-semibold">Lukas 3:1</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menanggapi Kritik -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Menanggapi Kritik terhadap Alkitab</h3>
+
+            <div class="space-y-6">
+              <div class="bg-red-50 border-l-4 border-red-400 p-4 rounded-r-lg">
+                <h4 class="font-bold text-red-900 mb-2">Kritik: "Alkitab Penuh Kontradiksi"</h4>
+                <p class="text-red-800 text-sm mb-3">Banyak yang disebut "kontradiksi" sebenarnya adalah:</p>
+                <ul class="text-red-700 space-y-1 text-sm ml-4">
+                  <li>• Perbedaan perspektif penulis</li>
+                  <li>• Pelengkapan informasi, bukan kontradiksi</li>
+                  <li>• Masalah terjemahan atau penyalinan</li>
+                  <li>• Kesalahpahaman konteks budaya</li>
+                </ul>
+              </div>
+
+              <div class="bg-sky-50 border-l-4 border-sky-400 p-4 rounded-r-lg">
+                <h4 class="font-bold text-sky-900 mb-2">Kritik: "Tidak Ada Bukti Arkeologi"</h4>
+                <p class="text-sky-800 text-sm">Sebaliknya, arkeologi berulang kali mengkonfirmasi keakuratan Alkitab. Tidak ada penemuan arkeologi yang membuktikan Alkitab salah.</p>
+              </div>
+
+              <div class="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-lg">
+                <h4 class="font-bold text-green-900 mb-2">Kritik: "Ditulis Terlalu Lama Setelah Peristiwa"</h4>
+                <p class="text-green-800 text-sm">Dokumen Perjanjian Baru ditulis dalam rentang 20-60 tahun setelah peristiwa, dalam masa ketika banyak saksi mata masih hidup (1 Korintus 15:6).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prinsip Penafsiran -->
+    <section id="penafsiran" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center">
+            Prinsip Penafsiran Alkitab
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Hermeneutika</strong> adalah ilmu dan seni menafsir Alkitab. Prinsip-prinsip penafsiran yang benar menjaga kita dari kesalahan interpretasi dan aplikasi Firman Tuhan.
+            </p>
+          </div>
+
+          <!-- Prinsip Dasar -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">Prinsip-prinsip Dasar Hermeneutika</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              <div class="bg-white border border-indigo-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-indigo-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-indigo-600 text-xl">📝</span>
+                </div>
+                <h4 class="font-bold text-indigo-900 mb-3">Prinsip Gramatikal</h4>
+                <p class="text-gray-700 text-sm">Memahami makna berdasarkan tata bahasa, struktur kalimat, dan kata-kata dalam bahasa asli.</p>
+              </div>
+
+              <div class="bg-white border border-indigo-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-indigo-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-indigo-600 text-xl">🏛️</span>
+                </div>
+                <h4 class="font-bold text-indigo-900 mb-3">Prinsip Historis</h4>
+                <p class="text-gray-700 text-sm">Memahami teks dalam konteks sejarah, budaya, dan situasi penulis serta pembaca aslinya.</p>
+              </div>
+
+              <div class="bg-white border border-indigo-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-indigo-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-indigo-600 text-xl">📖</span>
+                </div>
+                <h4 class="font-bold text-indigo-900 mb-3">Prinsip Kontekstual</h4>
+                <p class="text-gray-700 text-sm">Memahami ayat dalam konteks perikop, kitab, dan seluruh Alkitab (analogi iman).</p>
+              </div>
+
+              <div class="bg-white border border-indigo-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-indigo-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-indigo-600 text-xl">🎯</span>
+                </div>
+                <h4 class="font-bold text-indigo-900 mb-3">Prinsip Kristosentris</h4>
+                <p class="text-gray-700 text-sm">Melihat seluruh Alkitab menunjuk kepada Kristus dan karya keselamatan-Nya.</p>
+              </div>
+
+              <div class="bg-white border border-indigo-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-indigo-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-indigo-600 text-xl">💡</span>
+                </div>
+                <h4 class="font-bold text-indigo-900 mb-3">Prinsip Penerapan</h4>
+                <p class="text-gray-700 text-sm">Menerapkan kebenaran teks secara praktis dalam konteks kehidupan sekarang.</p>
+              </div>
+
+              <div class="bg-white border border-indigo-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-indigo-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-indigo-600 text-xl">🙏</span>
+                </div>
+                <h4 class="font-bold text-indigo-900 mb-3">Prinsip Ketergantungan</h4>
+                <p class="text-gray-700 text-sm">Bergantung pada pencerahan Roh Kudus untuk memahami dan menerapkan Firman.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Jenis-jenis Penafsiran -->
+          <div class="bg-gradient-to-r from-gray-50 to-indigo-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Jenis-jenis Penafsiran Alkitab</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-indigo-200">
+                <h4 class="font-bold text-indigo-900 text-xl mb-4 text-center">Penafsiran Literal<br><span class="text-lg font-normal">(Harfiah/Kontekstual)</span></h4>
+                <p class="text-gray-700 mb-4 text-center">Memahami teks sesuai dengan makna literalnya dalam konteks sastra dan historisnya.</p>
+                <div class="bg-indigo-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-indigo-900 mb-2">Contoh Penerapan:</h5>
+                  <p class="text-indigo-800 text-sm">Kisah penciptaan dalam Kejadian 1-2 dipahami sebagai catatan historis literal, bukan metafora.</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-indigo-200">
+                <h4 class="font-bold text-indigo-900 text-xl mb-4 text-center">Penafsiran Alegoris<br><span class="text-lg font-normal">(Mencari Makna Tersembunyi)</span></h4>
+                <p class="text-gray-700 mb-4 text-center">Mencari makna spiritual atau moral di balik teks literal, sering mengabaikan konteks historis.</p>
+                <div class="bg-indigo-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-indigo-900 mb-2">Contoh Penerapan:</h5>
+                  <p class="text-indigo-800 text-sm">Kitab Kidung Agung dipahami sebagai alegori hubungan Kristus dengan gereja.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tips Praktis -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Tips Praktis Menafsir Alkitab</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Yang Harus Dilakukan:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-green-50 p-4 rounded-lg">
+                    <span class="bg-green-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Baca konteks sebelum dan sesudah ayat</span>
+                  </div>
+                  <div class="flex items-center bg-green-50 p-4 rounded-lg">
+                    <span class="bg-green-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Perhatikan jenis sastra (puisi, narasi, dll)</span>
+                  </div>
+                  <div class="flex items-center bg-green-50 p-4 rounded-lg">
+                    <span class="bg-green-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Bandingkan dengan terjemahan lain</span>
+                  </div>
+                  <div class="flex items-center bg-green-50 p-4 rounded-lg">
+                    <span class="bg-green-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Gunakan alat studi (kamus, konkordansi)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Yang Harus Dihindari:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-red-50 p-4 rounded-lg">
+                    <span class="bg-red-500 text-white p-1 rounded mr-3">✗</span>
+                    <span class="text-gray-700">Mengambil ayat keluar dari konteks</span>
+                  </div>
+                  <div class="flex items-center bg-red-50 p-4 rounded-lg">
+                    <span class="bg-red-500 text-white p-1 rounded mr-3">✗</span>
+                    <span class="text-gray-700">Memaksakan interpretasi pribadi</span>
+                  </div>
+                  <div class="flex items-center bg-red-50 p-4 rounded-lg">
+                    <span class="bg-red-500 text-white p-1 rounded mr-3">✗</span>
+                    <span class="text-gray-700">Mengabaikan konteks historis-budaya</span>
+                  </div>
+                  <div class="flex items-center bg-red-50 p-4 rounded-lg">
+                    <span class="bg-red-500 text-white p-1 rounded mr-3">✗</span>
+                    <span class="text-gray-700">Tidak memeriksa bahasa asli</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian-Bagian Terkait -->
+    <section class="mt-12">
+      <div class="bg-gradient-to-r from-sky-600 to-sky-800 text-white rounded-2xl p-4 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">
+          Lanjutkan Perjalanan Teologismu
+        </h2>
+        <p class="mb-8 max-w-2xl mx-auto text-lg">
+          Setelah memahami Bibliologi, saatnya melanjutkan eksplorasi ke doktrin-doktrin sistematik berikutnya untuk membangun pemahaman teologis yang komprehensif dan alkitabiah.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/edukasi/teologi-sistematik/teologi-proper"
+            class="bg-white text-sky-900 px-8 py-4 rounded-xl font-bold hover:text-sky-700 transition-all shadow-lg hover:shadow-xl">
+            ✝️ Pelajari Teologi Proper Selanjutnya
+          </a>
+          <a
+            href="/edukasi/teologi-sistematik"
+            class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-sky-600 transition-all">
+            🏠 Kembali ke Overview Teologi
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Link ke Bagian-Bagian Terkait -->
+    <section class="mt-8">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-4">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+          Eksplorasi Lebih Lanjut tentang Bibliologi
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {relatedSections.map((section) => (
+            <a
+              href={section.url}
+              class="bg-gray-50 hover:bg-gray-100 p-6 rounded-xl border border-gray-200 transition-all group">
+              <div class="flex items-start">
+                <span class="text-3xl mr-4 group-hover:scale-110 transition-transform">
+                  {section.icon}
+                </span>
+                <div>
+                  <h3 class="font-bold text-gray-900 text-lg mb-2 group-hover:text-sky-600">
+                    {section.title}
+                  </h3>
+                  <p class="text-gray-700 text-sm">{section.description}</p>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <div class="text-center mt-8">
+          <a
+            href="/edukasi/teologi-sistematik#kurikulum"
+            class="inline-flex items-center text-sky-600 hover:text-sky-800 font-semibold">
+            <span>Lihat Kurikulum Lengkap Teologi Sistematik</span>
+            <span class="ml-2">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <style>
+    .prose {
+      max-width: none;
+    }
+    .scroll-mt-24 {
+      scroll-margin-top: 6rem;
+    }
+  </style>
+</EdukasiLayout>
