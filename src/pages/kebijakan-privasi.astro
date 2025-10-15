@@ -1,0 +1,78 @@
+---
+// src/pages/kebijakan-privasi.astro
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout 
+  title="Kebijakan Privasi - Sekolah Teologi"
+  description="Kebijakan privasi Sekolah Teologi. Kami tidak mengumpulkan data pribadi pengguna dan berkomitmen melindungi privasi Anda."
+  url="/kebijakan-privasi"
+  type="article"
+>
+
+<div class="min-h-screen bg-gray-50 py-12">
+  <div class="container mx-auto px-4 max-w-4xl">
+    <div class="bg-white rounded-lg shadow-lg p-8">
+      <!-- Header -->
+      <div class="text-center mb-8">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          Kebijakan Privasi
+        </h1>
+        <p class="text-gray-600">Terakhir diperbarui: {new Date().toLocaleDateString('id-ID')}</p>
+      </div>
+
+      <!-- Content -->
+      <div class="prose prose-lg max-w-none">
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">1. Pengumpulan Data</h2>
+          <p class="text-gray-700 mb-4">
+            Kami dengan tegas menyatakan bahwa <strong>Sekolah Teologi tidak mengumpulkan, menyimpan, atau memproses data pribadi apa pun dari pengguna</strong>. Website ini sepenuhnya bersifat informatif dan tidak memerlukan pendaftaran, login, atau pengisian formulir.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">2. Cookie dan Pelacakan</h2>
+          <p class="text-gray-700 mb-4">
+            Website ini tidak menggunakan cookie untuk pelacakan pengguna. Namun, mungkin terdapat cookie teknis yang diperlukan untuk fungsi dasar website, tetapi tidak mengumpulkan informasi pribadi.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">3. Server Log</h2>
+          <p class="text-gray-700 mb-4">
+            Seperti kebanyakan website, server kami mungkin secara otomatis mencatat informasi teknis seperti alamat IP, jenis browser, dan waktu akses. Informasi ini digunakan hanya untuk keperluan administrasi server dan analisis traffic anonim.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">4. Tautan Eksternal</h2>
+          <p class="text-gray-700 mb-4">
+            Website kami mungkin berisi tautan ke situs eksternal. Kami tidak bertanggung jawab atas praktik privasi atau konten dari situs-situs tersebut.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">5. Perubahan Kebijakan</h2>
+          <p class="text-gray-700 mb-4">
+            Jika di masa depan kami memutuskan untuk mengumpulkan data, kebijakan privasi ini akan diperbarui dan pengguna akan diberitahukan.
+          </p>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">6. Kontak</h2>
+          <p class="text-gray-700">
+            Jika Anda memiliki pertanyaan tentang kebijakan privasi ini, silakan hubungi kami melalui informasi kontak yang tersedia di website.
+          </p>
+        </section>
+
+        <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mt-8">
+          <p class="text-blue-700">
+            <strong>Komitmen Kami:</strong> Kami berkomitmen untuk memberikan pengalaman browsing yang aman dan privasi yang terjamin bagi semua pengguna Sekolah Teologi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</BaseLayout>
