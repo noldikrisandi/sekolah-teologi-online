@@ -1,0 +1,223 @@
+---
+// src/layouts/PemrogramanWebLayout.astro
+import "../styles/global.css";
+import MobileMenuPemrogramanWeb from "../components/common/MobileMenuPemrogramanWeb.astro";
+import SidebarPemrogramanWeb from "../components/common/SidebarPemrogramanWeb.astro";
+import MetaTags from "../components/seo/MetaTags.astro";
+import SchemaMarkup from "../components/seo/SchemaMarkup.astro"; 
+
+export interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  url?: string;
+  type?: string;
+  // Tambah props untuk schema
+  articles?: Array<any>;
+  breadcrumbs?: Array<any>;
+}
+
+const {
+  title = "Pemrograman Web - Universitas Contoh",
+  description = "Materi pembelajaran mata kuliah Pemrograman Web untuk program studi Teknik Informatika",
+  image = "/images/banner/pemrograman-web.webp",
+  url = "pemrograman-web",
+  type = "website",
+  articles = [],
+  breadcrumbs = [],
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Meta Tags -->
+    <MetaTags
+      title={title}
+      description={description}
+      image={image}
+      url={`https://sekolahteologi.com/${url}`}
+      type={type}
+    />
+    <link rel="canonical" href={`https://sekolahteologi.com/${url}`} />
+
+    <!-- Schema Markup -->
+    <SchemaMarkup
+      pageType={type === "article" ? "Article" : "WebPage"}
+      pageUrl={`https://sekolahteologi.com/${url}`}
+      articles={articles}
+      breadcrumbs={breadcrumbs}
+    />
+  </head>
+
+  <body class="bg-gray-50">
+    <div class="flex min-h-screen">
+      <!-- Sidebar untuk desktop -->
+      <div class="hidden lg:flex lg:w-64 lg:flex-col lg:fixed lg:inset-y-0">
+        <SidebarPemrogramanWeb />
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="lg:hidden fixed top-4 left-4 z-50">
+        <MobileMenuPemrogramanWeb />
+      </div>
+
+      <!-- Main content -->
+      <main class="lg:pl-64 flex-1 w-full">
+        <div class="py-6 px-4 sm:px-6 lg:px-8">
+          <div class="max-w-4xl mx-auto">
+            <!-- Header Content -->
+            <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+              <div class="flex items-center justify-between">
+                <div>
+                  <h1 class="text-2xl font-bold text-gray-900 mb-2">
+                    Pemrograman Web
+                  </h1>
+                  <p class="text-gray-600">
+                    Mata kuliah pemrograman web untuk program studi Teknik Informatika
+                  </p>
+                </div>
+                <div class="hidden md:flex items-center space-x-2 text-sm text-gray-500">
+                  <span>STMIK</span>
+                  <span class="font-medium">Bina Mulia Palu</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Main Content Slot -->
+            <div class="bg-white rounded-lg shadow-sm p-6">
+              <slot />
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      // Mobile sidebar functionality dengan scroll behavior
+      document.addEventListener('DOMContentLoaded', function() {
+        const sidebar = document.getElementById('mobile-sidebar');
+        const menuButton = document.querySelector('[data-menu-button]');
+        const closeButtons = document.querySelectorAll('[data-close-sidebar]');
+        
+        // Scroll threshold (pixel berapa scroll untuk menampilkan button)
+        const SCROLL_THRESHOLD = 100;
+        let isScrolled = false;
+
+        // Function to handle scroll
+        function handleScroll() {
+          const scrollY = window.scrollY || window.pageYOffset;
+          
+          if (scrollY > SCROLL_THRESHOLD && !isScrolled) {
+            // Show button
+            menuButton.classList.add('menu-button-visible');
+            isScrolled = true;
+          } else if (scrollY <= SCROLL_THRESHOLD && isScrolled) {
+            // Hide button
+            menuButton.classList.remove('menu-button-visible');
+            isScrolled = false;
+          }
+        }
+
+        // Function to open sidebar
+        function openSidebar() {
+          if (sidebar) {
+            sidebar.classList.remove('hidden');
+            document.body.classList.add('menu-open');
+            // Trigger animation
+            setTimeout(() => {
+              const panel = sidebar.querySelector('div > div:last-child');
+              if (panel) panel.classList.remove('-translate-x-full');
+            }, 10);
+          }
+        }
+        
+        // Function to close sidebar
+        function closeSidebar() {
+          if (sidebar) {
+            const panel = sidebar.querySelector('div > div:last-child');
+            if (panel) panel.classList.add('-translate-x-full');
+            document.body.classList.remove('menu-open');
+            
+            setTimeout(() => {
+              sidebar.classList.add('hidden');
+            }, 300);
+          }
+        }
+        
+        // Function to toggle sidebar
+        function toggleSidebar() {
+          if (sidebar.classList.contains('hidden')) {
+            openSidebar();
+          } else {
+            closeSidebar();
+          }
+        }
+        
+        // Initialize scroll behavior
+        function initScrollBehavior() {
+          // Throttle scroll events untuk performance
+          let ticking = false;
+          
+          function updateScroll() {
+            handleScroll();
+            ticking = false;
+          }
+          
+          function requestTick() {
+            if (!ticking) {
+              requestAnimationFrame(updateScroll);
+              ticking = true;
+            }
+          }
+          
+          window.addEventListener('scroll', requestTick, { passive: true });
+          
+          // Initial check
+          handleScroll();
+        }
+
+        // Event listeners
+        if (menuButton) {
+          menuButton.addEventListener('click', toggleSidebar);
+        }
+        
+        if (closeButtons) {
+          closeButtons.forEach(button => {
+            button.addEventListener('click', closeSidebar);
+          });
+        }
+        
+        // Close on escape key
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'Escape' && sidebar && !sidebar.classList.contains('hidden')) {
+            closeSidebar();
+          }
+        });
+        
+        // Close on outside click
+        document.addEventListener('click', function(event) {
+          if (sidebar && !sidebar.classList.contains('hidden') && 
+              !sidebar.contains(event.target) && 
+              event.target !== menuButton && 
+              !menuButton.contains(event.target)) {
+            closeSidebar();
+          }
+        });
+        
+        // Close on resize to desktop
+        window.addEventListener('resize', function() {
+          if (window.innerWidth >= 1024 && sidebar && !sidebar.classList.contains('hidden')) {
+            closeSidebar();
+          }
+        });
+        
+        // Initialize scroll behavior
+        initScrollBehavior();
+      });
+    </script>
+  </body>
+</html>

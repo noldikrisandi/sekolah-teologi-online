@@ -1,0 +1,63 @@
+---
+// src/pages/pemrograman-web/index.astro
+import PemrogramanWebLayout from "../../layouts/PemrogramanWebLayout.astro";
+
+const title = "Pemrograman Web 1-3 - Universitas Contoh";
+const description =
+  "Halaman pembelajaran untuk mata kuliah Pemrograman Web 1, 2, dan 3. Pelajari dasar hingga lanjutan pengembangan website menggunakan HTML, CSS, JavaScript, dan framework modern.";
+const url = "pemrograman-web";
+---
+
+<PemrogramanWebLayout title={title} description={description} url={url}>
+  <section class="space-y-6">
+    <h2 class="text-2xl font-semibold text-gray-800">
+      Selamat datang di Halaman Pembelajaran Pemrograman Web
+    </h2>
+
+    <p class="text-gray-700 leading-relaxed">
+      Halaman ini merupakan pusat pembelajaran untuk mata kuliah
+      <strong> Pemrograman Web 1</strong>, <strong>2</strong>, dan
+      <strong>3</strong> yang diajarkan di Program Studi Teknik Informatika.
+      Mahasiswa akan mempelajari berbagai konsep penting mulai dari dasar hingga
+      pengembangan website modern berbasis framework.
+    </p>
+
+    <div class="grid gap-6 md:grid-cols-3">
+      <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 hover:shadow transition">
+        <h3 class="text-lg font-semibold text-gray-800 mb-2">
+          Pemrograman Web 1
+        </h3>
+        <p class="text-gray-600 text-sm">
+          Mempelajari dasar-dasar HTML, CSS, dan pengenalan JavaScript untuk
+          membangun struktur dan tampilan halaman web.
+        </p>
+      </div>
+
+      <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 hover:shadow transition">
+        <h3 class="text-lg font-semibold text-gray-800 mb-2">
+          Pemrograman Web 2
+        </h3>
+        <p class="text-gray-600 text-sm">
+          Fokus pada pemrograman JavaScript lanjutan, DOM manipulation,
+          penggunaan API, dan dasar pengembangan sisi server.
+        </p>
+      </div>
+
+      <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 hover:shadow transition">
+        <h3 class="text-lg font-semibold text-gray-800 mb-2">
+          Pemrograman Web 3
+        </h3>
+        <p class="text-gray-600 text-sm">
+          Mempelajari framework modern seperti React, integrasi backend,
+          optimasi website, dan konsep deployment untuk aplikasi web.
+        </p>
+      </div>
+    </div>
+
+    <p class="text-gray-700 leading-relaxed">
+      Setiap bagian memiliki materi, latihan, dan proyek akhir yang membantu
+      mahasiswa memahami bagaimana teknologi web bekerja secara utuh — dari
+      tampilan hingga server.
+    </p>
+  </section>
+</PemrogramanWebLayout>

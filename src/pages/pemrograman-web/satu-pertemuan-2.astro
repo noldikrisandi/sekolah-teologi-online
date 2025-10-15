@@ -1,0 +1,596 @@
+---
+// src/pages/pemrograman-web/satu-pertemuan-2.astro
+
+import PemrogramanWebLayout from "../../layouts/PemrogramanWebLayout.astro";
+
+const pageTitle = "Pertemuan 2: Heading, Paragraph, dan Formatting Text - Pemrograman Web 1";
+const pageDescription = "Materi lengkap tentang penggunaan heading, paragraf, dan formatting text dalam HTML. Pelajari tag H1-H6, p, br, hr, dan styling dasar dengan CSS inline.";
+const pageUrl = "pemrograman-web/satu-pertemuan-2";
+
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Pemrograman Web", url: "/pemrograman-web" },
+  { name: "Pemrograman Web 1", url: "/pemrograman-web/satu" },
+  { name: "Pertemuan 2", url: "/pemrograman-web/satu-pertemuan-2" }
+];
+---
+
+<PemrogramanWebLayout 
+  title={pageTitle}
+  description={pageDescription}
+  url={pageUrl}
+  breadcrumbs={breadcrumbs}
+>
+
+<article class="max-w-none">
+  <!-- Header Section -->
+  <div class="text-center mb-8">
+    <span class="inline-block px-4 py-2 bg-sky-100 text-sky-800 rounded-full text-sm font-semibold mb-4">
+      Pertemuan 2 - Struktur Teks HTML
+    </span>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-6">
+      <div class="w-12 h-12 bg-sky-500 rounded-full flex items-center justify-center">
+        <span class="text-white text-2xl">📝</span>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900">
+        Heading, Paragraph, dan Formatting Text
+      </h1>
+    </div>
+    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+      Menguasai struktur teks dasar dalam HTML dan teknik formatting untuk membuat konten yang terorganisir, 
+      mudah dibaca, dan SEO-friendly.
+    </p>
+  </div>
+
+  <!-- Video Embed -->
+  <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl mb-8">
+    <div class="aspect-w-16 aspect-h-9">
+      <iframe
+        src="https://www.youtube.com/embed/3MnKn97erAo?si=QHf3brvJL677-7DL"
+        title="Struktur Teks HTML"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        class="w-full h-64 md:h-96"></iframe>
+    </div>
+    <div class="p-4 bg-gray-800">
+      <div class="flex items-center text-gray-300">
+        <span class="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
+        <span class="text-sm">Durasi: 13 menit</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Table of Contents -->
+  <div class="bg-gradient-to-r from-sky-50 to-blue-50 rounded-2xl p-6 mb-8 border border-sky-200">
+    <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+      <span class="w-2 h-2 bg-sky-500 rounded-full mr-3"></span>
+      📚 Daftar Isi Materi
+    </h2>
+    <div class="grid md:grid-cols-2 gap-2 text-sm">
+      <a href="#pengenalan" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
+        <span class="mr-2">→</span> Pengenalan Struktur Teks HTML
+      </a>
+      <a href="#heading" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
+        <span class="mr-2">→</span> Heading (H1-H6) & Best Practices
+      </a>
+      <a href="#paragraph" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
+        <span class="mr-2">→</span> Paragraph & Line Breaks
+      </a>
+      <a href="#formatting" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
+        <span class="mr-2">→</span> Text Formatting Tags
+      </a>
+      <a href="#styling" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
+        <span class="mr-2">→</span> CSS Inline Styling
+      </a>
+      <a href="#best-practices" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
+        <span class="mr-2">→</span> Best Practices & Tips
+      </a>
+    </div>
+  </div>
+
+  <!-- Pengenalan Section -->
+  <section id="pengenalan" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">1</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">📝 Pengenalan Struktur Teks HTML</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <p class="text-lg mb-6">
+        <strong>Struktur teks</strong> adalah fondasi dasar dalam pembuatan konten web yang terorganisir. 
+        HTML menyediakan berbagai elemen untuk mengatur hierarki dan format teks dengan semantik yang tepat.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-6">
+        <div class="text-center p-6 bg-sky-50 rounded-xl border-2 border-sky-200 hover:border-sky-300 transition-colors">
+          <div class="text-4xl mb-3">🏗️</div>
+          <h3 class="font-bold text-gray-900 mb-2">Struktur Hierarki</h3>
+          <p class="text-sm text-gray-600">
+            Heading H1-H6 untuk membuat outline yang jelas dan terstruktur
+          </p>
+        </div>
+        <div class="text-center p-6 bg-sky-50 rounded-xl border-2 border-sky-200 hover:border-sky-300 transition-colors">
+          <div class="text-4xl mb-3">🎨</div>
+          <h3 class="font-bold text-gray-900 mb-2">Formatting</h3>
+          <p class="text-sm text-gray-600">
+            Berbagai tag untuk penekanan, importance, dan styling teks
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-sky-50 border-l-4 border-sky-500 p-4 rounded-r-lg">
+        <p class="text-sky-800 font-semibold">💡 Fakta Penting:</p>
+        <p class="text-sky-700 text-sm">
+          Struktur heading yang baik meningkatkan SEO hingga 36% dan aksesibilitas untuk semua pengguna!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Heading Section -->
+  <section id="heading" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">2</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">🏷️ Heading (H1 - H6)</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <h3 class="text-xl font-semibold text-gray-800 mb-4">Apa itu Heading?</h3>
+      <p class="text-gray-700 mb-6">
+        Heading digunakan untuk membuat judul dan subjudul dalam halaman web. HTML menyediakan 
+        6 level heading dari <code>&lt;h1&gt;</code> hingga <code>&lt;h6&gt;</code> dengan ukuran dan importance yang berbeda.
+      </p>
+
+      <!-- Code Example -->
+      <div class="bg-gray-800 rounded-xl p-6 mb-8">
+        <h4 class="font-semibold text-gray-100 mb-4 flex items-center">
+          <span class="text-sky-400 mr-2">📋</span>
+          Contoh Kode HTML:
+        </h4>
+        <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto text-sm"><code>&lt;h1&gt;Judul Utama Website&lt;/h1&gt;
+&lt;h2&gt;Bab 1: Pengenalan HTML&lt;/h2&gt;
+&lt;h3&gt;1.1 Sejarah HTML&lt;/h3&gt;
+&lt;h4&gt;Perkembangan Versi HTML&lt;/h4&gt;
+&lt;h5&gt;HTML5 Features&lt;/h5&gt;
+&lt;h6&gt;Detail Teknis&lt;/h6&gt;</code></pre>
+      </div>
+
+      <!-- Live Demo -->
+      <h3 class="text-xl font-semibold text-gray-800 mb-4">Hasil Tampilan:</h3>
+      <div class="border-2 border-sky-200 rounded-xl p-8 bg-gradient-to-br from-sky-50 to-white mb-8">
+        <div class="space-y-4 text-center">
+          <h1 class="text-4xl font-bold text-gray-900 mb-2">Judul Utama Website</h1>
+          <h2 class="text-2xl font-bold text-gray-800 mb-2">Bab 1: Pengenalan HTML</h2>
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">1.1 Sejarah HTML</h3>
+          <h4 class="text-lg font-medium text-gray-600 mb-2">Perkembangan Versi HTML</h4>
+          <h5 class="text-base font-medium text-gray-500 mb-2">HTML5 Features</h5>
+          <h6 class="text-sm font-medium text-gray-400">Detail Teknis</h6>
+        </div>
+      </div>
+
+      <!-- Best Practices -->
+      <div class="bg-sky-50 border-2 border-sky-200 rounded-xl p-6">
+        <h4 class="font-semibold text-sky-800 mb-4 flex items-center">
+          <span class="text-sky-600 mr-2">💡</span>
+          Best Practices Heading:
+        </h4>
+        <div class="grid md:grid-cols-2 gap-4 text-sm">
+          <div class="flex items-start">
+            <span class="text-sky-500 mr-3 mt-1">✓</span>
+            <div>
+              <strong>One H1 Per Page</strong>
+              <p class="text-sky-700 mt-1">Gunakan hanya satu H1 sebagai judul utama</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <span class="text-sky-500 mr-3 mt-1">✓</span>
+            <div>
+              <strong>Logical Order</strong>
+              <p class="text-sky-700 mt-1">Jangan melompat level (H1 → H3)</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <span class="text-sky-500 mr-3 mt-1">✓</span>
+            <div>
+              <strong>Descriptive Content</strong>
+              <p class="text-sky-700 mt-1">Heading harus relevan dengan konten</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <span class="text-sky-500 mr-3 mt-1">✓</span>
+            <div>
+              <strong>SEO Friendly</strong>
+              <p class="text-sky-700 mt-1">Gunakan keyword yang tepat</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paragraph Section -->
+  <section id="paragraph" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">3</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">📄 Paragraph & Line Breaks</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <h3 class="text-xl font-semibold text-gray-800 mb-4">Tag &lt;p&gt; untuk Paragraf</h3>
+      <p class="text-gray-700 mb-6">
+        Tag <code>&lt;p&gt;</code> digunakan untuk membuat paragraf teks. Browser secara otomatis 
+        menambahkan margin sebelum dan setelah paragraf untuk pemisahan visual.
+      </p>
+
+      <!-- Code Example -->
+      <div class="bg-gray-800 rounded-xl p-6 mb-8">
+        <h4 class="font-semibold text-gray-100 mb-4 flex items-center">
+          <span class="text-sky-400 mr-2">📋</span>
+          Contoh Penggunaan Paragraph:
+        </h4>
+        <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto text-sm"><code>&lt;p&gt;Ini adalah paragraf pertama. HTML adalah bahasa markup 
+yang digunakan untuk membuat halaman web.&lt;/p&gt;
+&lt;p&gt;Ini adalah paragraf kedua. Setiap paragraf akan 
+ditampilkan dengan jarak dari paragraf lainnya.&lt;/p&gt;</code></pre>
+      </div>
+
+      <!-- Live Demo -->
+      <h3 class="text-xl font-semibold text-gray-800 mb-4">Hasil Tampilan:</h3>
+      <div class="border-2 border-sky-200 rounded-xl p-8 bg-gradient-to-br from-sky-50 to-white">
+        <div class="space-y-6">
+          <p class="text-gray-700 leading-relaxed">
+            Ini adalah paragraf pertama. HTML adalah bahasa markup yang digunakan untuk membuat halaman web. 
+            Paragraf ini menunjukkan bagaimana teks akan ditampilkan dengan spacing yang sesuai.
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            Ini adalah paragraf kedua. Setiap paragraf akan ditampilkan dengan jarak dari paragraf lainnya. 
+            Perhatikan margin yang secara otomatis ditambahkan oleh browser.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formatting Text Section -->
+  <section id="formatting" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">4</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">🎨 Text Formatting Tags</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <!-- Basic Formatting -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Tag Formatting Dasar</h3>
+          <div class="space-y-3 text-sm">
+            <div class="flex items-center justify-between p-3 bg-sky-50 rounded-lg">
+              <code>&lt;b&gt;</code>
+              <span class="font-bold text-gray-700">Teks tebal (visual)</span>
+            </div>
+            <div class="flex items-center justify-between p-3 bg-sky-50 rounded-lg">
+              <code>&lt;strong&gt;</code>
+              <strong class="text-gray-700">Teks penting (semantik)</strong>
+            </div>
+            <div class="flex items-center justify-between p-3 bg-sky-50 rounded-lg">
+              <code>&lt;i&gt;</code>
+              <i class="text-gray-700">Teks miring (visual)</i>
+            </div>
+            <div class="flex items-center justify-between p-3 bg-sky-50 rounded-lg">
+              <code>&lt;em&gt;</code>
+              <em class="text-gray-700">Teks emphasized (semantik)</em>
+            </div>
+            <div class="flex items-center justify-between p-3 bg-sky-50 rounded-lg">
+              <code>&lt;mark&gt;</code>
+              <mark class="text-gray-700 bg-yellow-200 px-1">Teks ditandai</mark>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Tags -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Tag Lainnya</h3>
+          <div class="space-y-3 text-sm">
+            <div class="flex items-center justify-between p-3 bg-sky-50 rounded-lg">
+              <code>&lt;small&gt;</code>
+              <small class="text-gray-700">Teks kecil</small>
+            </div>
+            <div class="flex items-center justify-between p-3 bg-sky-50 rounded-lg">
+              <code>&lt;del&gt;</code>
+              <del class="text-gray-700">Teks dihapus</del>
+            </div>
+            <div class="flex items-center justify-between p-3 bg-sky-50 rounded-lg">
+              <code>&lt;ins&gt;</code>
+              <ins class="text-gray-700">Teks disisipkan</ins>
+            </div>
+            <div class="flex items-center justify-between p-3 bg-sky-50 rounded-lg">
+              <code>&lt;sub&gt;</code>
+              <span class="text-gray-700">Teks<sub>subscript</sub></span>
+            </div>
+            <div class="flex items-center justify-between p-3 bg-sky-50 rounded-lg">
+              <code>&lt;sup&gt;</code>
+              <span class="text-gray-700">Teks<sup>superscript</sup></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Complete Example -->
+      <div class="bg-gray-800 rounded-xl p-6">
+        <h4 class="font-semibold text-gray-100 mb-4 flex items-center">
+          <span class="text-sky-400 mr-2">🔧</span>
+          Contoh Kode Lengkap Formatting:
+        </h4>
+        <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto text-sm"><code>&lt;p&gt;
+  Ini teks &lt;b&gt;tebal&lt;/b&gt; dan &lt;strong&gt;penting&lt;/strong&gt;. 
+  Ini &lt;i&gt;miring&lt;/i&gt; dan &lt;em&gt;emphasis&lt;/em&gt;.
+  &lt;mark&gt;Teks ditandai&lt;/mark&gt; dan &lt;small&gt;kecil&lt;/small&gt;.
+  H&lt;sub&gt;2&lt;/sub&gt;O dan E=mc&lt;sup&gt;2&lt;/sup&gt;.
+  &lt;code&gt;console.log()&lt;/code&gt; untuk kode.
+&lt;/p&gt;</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- CSS Inline Styling -->
+  <section id="styling" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">5</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">🎯 CSS Inline Styling</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <p class="text-gray-700 mb-6">
+        CSS inline memungkinkan kita menambahkan style langsung ke elemen HTML menggunakan atribut <code>style</code>. 
+        Cocok untuk styling cepat dan spesifik, namun tidak recommended untuk project besar.
+      </p>
+
+      <!-- Code Example -->
+      <div class="bg-gray-800 rounded-xl p-6 mb-8">
+        <h4 class="font-semibold text-gray-100 mb-4 flex items-center">
+          <span class="text-sky-400 mr-2">🎨</span>
+          Contoh CSS Inline:
+        </h4>
+        <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto text-sm"><code>&lt;h1 style="color: blue; text-align: center;"&gt;
+  Judul Biru Tengah
+&lt;/h1&gt;
+
+&lt;p style="color: green; font-size: 18px; background-color: #f0f0f0;"&gt;
+  Paragraf dengan style custom
+&lt;/p&gt;
+
+&lt;span style="color: red; font-weight: bold;"&gt;
+  Teks merah tebal
+&lt;/span&gt;</code></pre>
+      </div>
+
+      <!-- Live Demo -->
+      <h3 class="text-xl font-semibold text-gray-800 mb-4">Demo Live Styling:</h3>
+      <div class="border-2 border-sky-200 rounded-xl p-8 bg-gradient-to-br from-sky-50 to-white space-y-6">
+        <div>
+          <h1 style="color: #2563eb; text-align: center; margin: 0; font-size: 2.5rem;">
+            Judul Biru Tengah
+          </h1>
+        </div>
+        
+        <div>
+          <p style="color: #059669; font-size: 18px; background-color: #f0f9ff; padding: 16px; border-radius: 8px; margin: 0; border-left: 4px solid #059669;">
+            Paragraf dengan style custom - font hijau, background biru muda, dan ukuran font 18px.
+          </p>
+        </div>
+        
+        <div>
+          <span style="color: #dc2626; font-weight: bold; font-size: 1.1rem;">
+            Teks merah tebal menggunakan span
+          </span>
+        </div>
+
+        <div>
+          <h2 style="color: #7c3aed; border-left: 4px solid #7c3aed; padding-left: 12px; margin: 0;">
+            Heading dengan border kiri ungu
+          </h2>
+        </div>
+      </div>
+
+      <!-- Warning -->
+      <div class="mt-6 p-4 bg-amber-50 border-l-4 border-amber-500 rounded-r-lg">
+        <h4 class="font-semibold text-amber-800 mb-2 flex items-center">
+          <span class="text-amber-600 mr-2">⚠️</span>
+          Perhatian:
+        </h4>
+        <p class="text-amber-700 text-sm">
+          Meskipun CSS inline mudah digunakan, untuk project yang besar disarankan menggunakan 
+          external CSS file atau CSS-in-JS untuk memisahkan konten dan styling, serta memudahkan maintenance.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Practices -->
+  <section id="best-practices" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">6</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">🚀 Best Practices & Tips</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Tips Cepat -->
+      <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+        <h3 class="text-xl font-bold text-gray-900 mb-4">⚡ Tips Cepat</h3>
+        <div class="space-y-4">
+          <div class="p-4 bg-sky-50 rounded-xl border border-sky-200">
+            <p class="text-sky-800 font-semibold">Shortcut VS Code</p>
+            <p class="text-sky-700 text-sm mt-1">h1 + Tab = &lt;h1&gt;&lt;/h1&gt;</p>
+          </div>
+          <div class="p-4 bg-green-50 rounded-xl border border-green-200">
+            <p class="text-green-800 font-semibold">SEO Tip</p>
+            <p class="text-green-700 text-sm mt-1">Gunakan H1 untuk judul utama halaman</p>
+          </div>
+          <div class="p-4 bg-purple-50 rounded-xl border border-purple-200">
+            <p class="text-purple-800 font-semibold">Aksesibilitas</p>
+            <p class="text-purple-700 text-sm mt-1">Jangan melompat level heading</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kompetensi -->
+      <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+        <h3 class="text-xl font-bold text-gray-900 mb-4">🎯 Kompetensi</h3>
+        <ul class="space-y-3">
+          <li class="flex items-start p-3 bg-sky-50 rounded-lg">
+            <span class="text-green-500 mr-3 mt-1">✓</span>
+            <span class="text-gray-700">Memahami struktur heading HTML H1-H6</span>
+          </li>
+          <li class="flex items-start p-3 bg-sky-50 rounded-lg">
+            <span class="text-green-500 mr-3 mt-1">✓</span>
+            <span class="text-gray-700">Membuat paragraf dengan tag &lt;p&gt; yang benar</span>
+          </li>
+          <li class="flex items-start p-3 bg-sky-50 rounded-lg">
+            <span class="text-green-500 mr-3 mt-1">✓</span>
+            <span class="text-gray-700">Mengaplikasikan formatting text dengan semantik tepat</span>
+          </li>
+          <li class="flex items-start p-3 bg-sky-50 rounded-lg">
+            <span class="text-green-500 mr-3 mt-1">✓</span>
+            <span class="text-gray-700">Menggunakan CSS inline styling dengan efektif</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latihan Section -->
+  <div class="bg-gradient-to-r from-sky-500 to-blue-600 rounded-2xl p-8 text-white text-center mb-12">
+    <h3 class="text-2xl font-bold mb-4">💪 Latihan Praktikum</h3>
+    <p class="text-sky-100 mb-6 text-lg">
+      Buat halaman HTML dengan struktur heading yang benar dan gunakan CSS inline untuk styling.
+      Praktikkan semua tag formatting yang telah dipelajari.
+    </p>
+    <button class="bg-white text-sky-600 px-8 py-3 rounded-xl font-semibold hover:bg-sky-50 transition-colors">
+      📥 Download Materi Latihan
+    </button>
+  </div>
+
+  <!-- Summary -->
+  <div class="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+    <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+      📝 Ringkasan Materi
+    </h3>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <h4 class="font-semibold text-gray-800 mb-4 text-lg">
+          ✅ Yang Telah Dipelajari:
+        </h4>
+        <ul class="space-y-3 text-gray-700">
+          <li class="flex items-start">
+            <span class="text-sky-500 mr-3 mt-1">•</span>
+            Struktur heading HTML H1-H6 dan best practices
+          </li>
+          <li class="flex items-start">
+            <span class="text-sky-500 mr-3 mt-1">•</span>
+            Penggunaan tag &lt;p&gt; untuk paragraf
+          </li>
+          <li class="flex items-start">
+            <span class="text-sky-500 mr-3 mt-1">•</span>
+            Berbagai tag formatting text dan perbedaannya
+          </li>
+          <li class="flex items-start">
+            <span class="text-sky-500 mr-3 mt-1">•</span>
+            CSS inline styling untuk kustomisasi cepat
+          </li>
+          <li class="flex items-start">
+            <span class="text-sky-500 mr-3 mt-1">•</span>
+            Tips SEO dan aksesibilitas untuk struktur teks
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-gray-800 mb-4 text-lg">
+          🎯 Langkah Selanjutnya:
+        </h4>
+        <ul class="space-y-3 text-gray-700">
+          <li class="flex items-start">
+            <span class="text-blue-500 mr-3 mt-1">•</span>
+            Praktekkan dengan membuat halaman HTML lengkap
+          </li>
+          <li class="flex items-start">
+            <span class="text-blue-500 mr-3 mt-1">•</span>
+            Eksplor CSS external untuk styling yang terorganisir
+          </li>
+          <li class="flex items-start">
+            <span class="text-blue-500 mr-3 mt-1">•</span>
+            Pelajari semantic HTML untuk aksesibilitas
+          </li>
+          <li class="flex items-start">
+            <span class="text-blue-500 mr-3 mt-1">•</span>
+            Pahami konsep CSS Box Model
+          </li>
+          <li class="flex items-start">
+            <span class="text-blue-500 mr-3 mt-1">•</span>
+            Ikuti perkembangan HTML5 semantic elements
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mt-12 pt-6 border-t border-gray-200">
+    <a href="/pemrograman-web/satu-pertemuan-1" class="flex items-center px-6 py-3 bg-sky-50 text-sky-700 rounded-xl border border-sky-200 hover:bg-sky-100 transition-colors w-full sm:w-auto justify-center">
+      <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+      </svg>
+      Sebelumnya: Pertemuan 1
+    </a>
+    <a href="/pemrograman-web/satu-pertemuan-3" class="flex items-center px-6 py-3 bg-sky-500 text-white rounded-xl hover:bg-sky-600 transition-colors w-full sm:w-auto justify-center">
+      Selanjutnya: Pertemuan 3
+      <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </a>
+  </div>
+</article>
+
+<style>
+  /* Custom styles untuk code blocks */
+  pre code {
+    font-family: 'Fira Code', 'Courier New', monospace;
+    line-height: 1.5;
+  }
+  
+  /* Style untuk inline code */
+  code:not(pre code) {
+    background-color: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.875em;
+    color: #0c4a6e;
+    border: 1px solid #bae6fd;
+  }
+  
+  /* Smooth scrolling untuk anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Custom selection color */
+  ::selection {
+    background-color: #bae6fd;
+    color: #0c4a6e;
+  }
+</style>
+
+</PemrogramanWebLayout>

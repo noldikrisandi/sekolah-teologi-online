@@ -1,19 +1,29 @@
 ---
 // src/components/seo/MetaTags.astro
-const { 
-  title = 'Sekolah Teologi - Mendalami Firman Tuhan',
-  description = 'Sekolah Teologi yang mengajarkan pendalaman alkitabiah dan kontekstual untuk membentuk pelayan Tuhan yang berkualitas',
-  image = '/images/og-image.jpg',
-  url = 'https://sekolahteologi.com',
-  type = 'website'
+const {
+  title = "Sekolah Teologi - Mendalami Firman Tuhan",
+  description = "Sekolah Teologi yang mengajarkan pendalaman alkitabiah dan kontekstual untuk membentuk pelayan Tuhan yang berkualitas",
+  image = "/images/og-image.jpg",
+  url = "https://sekolahteologi.com",
+  type = "website",
 } = Astro.props;
 ---
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
+
+<!-- validasi iklan google -->
+<script
+  async
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2850813437272595"
+  crossorigin="anonymous"></script>
+
 <meta name="title" content={title} />
 <meta name="description" content={description} />
-<meta name="keywords" content="teologi, sekolah teologi, alkitab, pendidikan kristen" />
+<meta
+  name="keywords"
+  content="teologi, sekolah teologi, alkitab, pendidikan kristen"
+/>
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content={type} />

@@ -1,0 +1,1043 @@
+---
+// src/pages/pemrograman-web/satu-pertemuan-3.astro
+
+import PemrogramanWebLayout from "../../layouts/PemrogramanWebLayout.astro";
+
+const pageTitle = "Pertemuan 3: Hyperlink dan Navigasi HTML - Pemrograman Web 1";
+const pageDescription = "Materi lengkap tentang hyperlink, sistem navigasi website, absolute vs relative URL, anchor links, dan best practices untuk UX dan SEO.";
+const pageUrl = "pemrograman-web/satu-pertemuan-3";
+
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Pemrograman Web", url: "/pemrograman-web" },
+  { name: "Pemrograman Web 1", url: "/pemrograman-web/satu" },
+  { name: "Pertemuan 3", url: "/pemrograman-web/satu-pertemuan-3" }
+];
+---
+
+<PemrogramanWebLayout 
+  title={pageTitle}
+  description={pageDescription}
+  url={pageUrl}
+  breadcrumbs={breadcrumbs}
+>
+
+<article class="max-w-none">
+  <!-- Header Section -->
+  <div class="text-center mb-8">
+    <span class="inline-block px-4 py-2 bg-sky-100 text-sky-800 rounded-full text-sm font-semibold mb-4">
+      Pertemuan 3 - Hyperlink & Navigasi
+    </span>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-6">
+      <div class="w-12 h-12 bg-sky-500 rounded-full flex items-center justify-center">
+        <span class="text-white text-2xl">🔗</span>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900">
+        Hyperlink dan Sistem Navigasi HTML
+      </h1>
+    </div>
+    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+      Menguasai teknik pembuatan hyperlink yang efektif, sistem navigasi website yang intuitif, 
+      dan best practices untuk pengalaman pengguna yang optimal.
+    </p>
+  </div>
+
+  <!-- Video Embed -->
+  <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl mb-8">
+    <div class="aspect-w-16 aspect-h-9">
+      <iframe
+        src="https://www.youtube.com/embed/a65-EFoGCeA?si=mWUM1pHgszFUwOKY"
+        title="Hyperlink dan Navigasi HTML"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        class="w-full h-64 md:h-96"></iframe>
+    </div>
+    <div class="p-4 bg-gray-800">
+      <div class="flex items-center text-gray-300">
+        <span class="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
+        <span class="text-sm">Durasi: 11 menit</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Table of Contents -->
+  <div class="bg-gradient-to-r from-sky-50 to-blue-50 rounded-2xl p-6 mb-8 border border-sky-200">
+    <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+      <span class="w-2 h-2 bg-sky-500 rounded-full mr-3"></span>
+      📚 Daftar Isi Materi
+    </h2>
+    <div class="grid md:grid-cols-2 gap-2 text-sm">
+      <a href="#pengenalan-hyperlink" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
+        <span class="mr-2">→</span> Pengenalan Hyperlink
+      </a>
+      <a href="#jenis-url" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
+        <span class="mr-2">→</span> Jenis URL & Path
+      </a>
+      <a href="#atribut-link" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
+        <span class="mr-2">→</span> Atribut Hyperlink Lengkap
+      </a>
+      <a href="#jenis-hyperlink" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
+        <span class="mr-2">→</span> Jenis-jenis Hyperlink
+      </a>
+      <a href="#navigasi" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
+        <span class="mr-2">→</span> Sistem Navigasi Website
+      </a>
+      <a href="#anchor-links" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
+        <span class="mr-2">→</span> Anchor Links & Page Navigation
+      </a>
+      <a href="#best-practices" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
+        <span class="mr-2">→</span> Best Practices
+      </a>
+      <a href="#advanced-techniques" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
+        <span class="mr-2">→</span> Advanced Techniques
+      </a>
+    </div>
+  </div>
+
+  <!-- Pengenalan Hyperlink -->
+  <section id="pengenalan-hyperlink" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">1</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">🔗 Pengenalan Hyperlink</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <p class="text-lg mb-6">
+        <strong>Hyperlink</strong> adalah jantung dari World Wide Web yang memungkinkan pengguna 
+        berpindah antara halaman web, dokumen, dan resource lainnya. Tag <code>&lt;a&gt;</code> 
+        (anchor) adalah fondasi navigasi internet.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-6 mb-6">
+        <div class="text-center p-6 bg-sky-50 rounded-xl border-2 border-sky-200 hover:border-sky-300 transition-colors">
+          <div class="text-4xl mb-3">🌐</div>
+          <h3 class="font-bold text-gray-900 mb-2">External Links</h3>
+          <p class="text-sm text-gray-600">
+            Menghubungkan ke website eksternal atau domain lain
+          </p>
+        </div>
+        <div class="text-center p-6 bg-sky-50 rounded-xl border-2 border-sky-200 hover:border-sky-300 transition-colors">
+          <div class="text-4xl mb-3">📄</div>
+          <h3 class="font-bold text-gray-900 mb-2">Internal Links</h3>
+          <p class="text-sm text-gray-600">
+            Menghubungkan ke halaman dalam website yang sama
+          </p>
+        </div>
+        <div class="text-center p-6 bg-sky-50 rounded-xl border-2 border-sky-200 hover:border-sky-300 transition-colors">
+          <div class="text-4xl mb-3">📍</div>
+          <h3 class="font-bold text-gray-900 mb-2">Anchor Links</h3>
+          <p class="text-sm text-gray-600">
+            Menghubungkan ke bagian spesifik dalam halaman
+          </p>
+        </div>
+      </div>
+
+      <!-- Basic Link Example -->
+      <div class="bg-gray-800 rounded-xl p-6 mb-6">
+        <h4 class="font-semibold text-gray-100 mb-4 flex items-center">
+          <span class="text-sky-400 mr-2">📋</span>
+          Struktur Dasar Hyperlink:
+        </h4>
+        <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto text-sm"><code>&lt;a href="url_destination"&gt;Teks Tampilan Link&lt;/a&gt;</code></pre>
+      </div>
+
+      <div class="bg-sky-50 border-l-4 border-sky-500 p-4 rounded-r-lg">
+        <p class="text-sky-800 font-semibold">💡 Fakta Sejarah:</p>
+        <p class="text-sky-700 text-sm">
+          Konsep hyperlink pertama kali diperkenalkan oleh Ted Nelson pada tahun 1965 dalam proyek Xanadu, 
+          dan menjadi fondasi World Wide Web yang dikembangkan oleh Tim Berners-Lee pada tahun 1989.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jenis URL -->
+  <section id="jenis-url" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">2</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">🌐 Jenis URL & Path</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <h3 class="text-xl font-semibold text-gray-800 mb-4">Absolute vs Relative URL</h3>
+      
+      <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <!-- Absolute URL -->
+        <div class="border-2 border-sky-200 rounded-xl p-6 bg-gradient-to-br from-sky-50 to-white">
+          <h4 class="text-lg font-bold text-sky-900 mb-4 text-center">📍 Absolute URL</h4>
+          <p class="text-gray-700 mb-4 text-sm">
+            Menentukan alamat lengkap termasuk protocol, domain, dan path. 
+            <strong>Digunakan untuk link ke website eksternal.</strong>
+          </p>
+          <div class="bg-gray-800 rounded-lg p-4 mb-4">
+            <pre class="text-sky-300 text-sm overflow-auto"><code>https://www.example.com/about/us</code></pre>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-4">
+            <pre class="text-sky-300 text-sm overflow-auto"><code>&lt;a href="https://www.google.com"&gt;
+  Kunjungi Google
+&lt;/a&gt;
+
+&lt;a href="https://github.com/user/project"&gt;
+  Lihat Project di GitHub
+&lt;/a&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- Relative URL -->
+        <div class="border-2 border-green-200 rounded-xl p-6 bg-gradient-to-br from-green-50 to-white">
+          <h4 class="text-lg font-bold text-green-900 mb-4 text-center">📁 Relative URL</h4>
+          <p class="text-gray-700 mb-4 text-sm">
+            Menentukan path relatif terhadap halaman saat ini. 
+            <strong>Digunakan untuk link internal dalam website.</strong>
+          </p>
+          <div class="bg-gray-800 rounded-lg p-4 mb-4">
+            <pre class="text-green-300 text-sm"><code>about/us.html
+../contact.html
+/images/logo.png</code></pre>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-4">
+            <pre class="text-green-300 text-sm"><code>&lt;a href="about.html"&gt;
+  Halaman About
+&lt;/a&gt;
+
+&lt;a href="../contact/index.html"&gt;
+  Contact Us
+&lt;/a&gt;
+
+&lt;a href="/assets/images/photo.jpg"&gt;
+  Lihat Foto
+&lt;/a&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Path Examples -->
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-6">
+        <h4 class="font-semibold text-amber-800 mb-4 flex items-center">
+          <span class="text-amber-600 mr-2">📁</span>
+          Contoh Struktur Folder & Relative Path:
+        </h4>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-lg p-4 border border-amber-200">
+            <div class="font-mono text-sm text-gray-700 space-y-2">
+              <div class="font-bold">📦 website-root/</div>
+              <div class="ml-4">📄 index.html</div>
+              <div class="ml-4">📁 about/</div>
+              <div class="ml-8">📄 index.html</div>
+              <div class="ml-8">📄 team.html</div>
+              <div class="ml-4">📁 blog/</div>
+              <div class="ml-8">📄 post-1.html</div>
+              <div class="ml-4">📁 assets/</div>
+              <div class="ml-8">📁 images/</div>
+              <div class="ml-12">🖼️ logo.png</div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-4 border border-amber-200">
+            <div class="space-y-3 text-sm">
+              <div>
+                <strong class="text-amber-700">Dari index.html:</strong>
+                <p class="text-amber-600">about/index.html</p>
+                <p class="text-amber-600">blog/post-1.html</p>
+                <p class="text-amber-600">assets/images/logo.png</p>
+              </div>
+              <div>
+                <strong class="text-amber-700">Dari about/index.html:</strong>
+                <p class="text-amber-600">../index.html</p>
+                <p class="text-amber-600">../blog/post-1.html</p>
+                <p class="text-amber-600">../assets/images/logo.png</p>
+              </div>
+              <div>
+                <strong class="text-amber-700">Dari blog/post-1.html:</strong>
+                <p class="text-amber-600">../index.html</p>
+                <p class="text-amber-600">../about/team.html</p>
+                <p class="text-amber-600">../assets/images/logo.png</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Atribut Hyperlink -->
+  <section id="atribut-link" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">3</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">⚙️ Atribut Hyperlink Lengkap</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <!-- Basic Attributes -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Atribut Dasar</h3>
+          <div class="space-y-4">
+            <div class="p-4 bg-sky-50 rounded-lg border border-sky-200">
+              <code class="text-sky-700 font-bold">href</code>
+              <p class="text-gray-700 text-sm mt-1">URL tujuan link (wajib)</p>
+              <pre class="bg-gray-800 text-gray-100 p-2 rounded mt-2 text-xs"><code>href="https://example.com"
+href="about.html"
+href="#section"</code></pre>
+            </div>
+            <div class="p-4 bg-sky-50 rounded-lg border border-sky-200">
+              <code class="text-sky-700 font-bold">target</code>
+              <p class="text-gray-700 text-sm mt-1">Menentukan cara membuka link</p>
+              <pre class="bg-gray-800 text-gray-100 p-2 rounded mt-2 text-xs"><code>target="_blank"    // New tab
+target="_self"     // Same tab (default)
+target="_parent"   // Parent frame
+target="_top"      // Top frame</code></pre>
+            </div>
+            <div class="p-4 bg-sky-50 rounded-lg border border-sky-200">
+              <code class="text-sky-700 font-bold">title</code>
+              <p class="text-gray-700 text-sm mt-1">Tooltip informasi saat hover</p>
+              <pre class="bg-gray-800 text-gray-100 p-2 rounded mt-2 text-xs"><code>title="Klik untuk info lebih lanjut"
+title="Buka di tab baru"</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- Advanced Attributes -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Atribut Lanjutan</h3>
+          <div class="space-y-4">
+            <div class="p-4 bg-purple-50 rounded-lg border border-purple-200">
+              <code class="text-purple-700 font-bold">rel</code>
+              <p class="text-gray-700 text-sm mt-1">Relationship dengan dokumen tujuan</p>
+              <pre class="bg-gray-800 text-gray-100 p-2 rounded mt-2 text-xs"><code>rel="nofollow"         // SEO
+rel="noopener"        // Security
+rel="noreferrer"      // Privacy
+rel="external"        // External site
+rel="stylesheet"      // CSS file</code></pre>
+            </div>
+            <div class="p-4 bg-green-50 rounded-lg border border-green-200">
+              <code class="text-green-700 font-bold">download</code>
+              <p class="text-gray-700 text-sm mt-1">Memaksa download file</p>
+              <pre class="bg-gray-800 text-gray-100 p-2 rounded mt-2 text-xs"><code>download                    // Default filename
+download="document.pdf"     // Custom filename</code></pre>
+            </div>
+            <div class="p-4 bg-amber-50 rounded-lg border border-amber-200">
+              <code class="text-amber-700 font-bold">id & class</code>
+              <p class="text-gray-700 text-sm mt-1">Untuk styling dan JavaScript</p>
+              <pre class="bg-gray-800 text-gray-100 p-2 rounded mt-2 text-xs"><code>id="main-navigation-link"
+class="btn btn-primary nav-link"</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Complete Example -->
+      <div class="bg-gray-800 rounded-xl p-6">
+        <h4 class="font-semibold text-gray-100 mb-4 flex items-center">
+          <span class="text-sky-400 mr-2">🔧</span>
+          Contoh Lengkap Penggunaan Atribut:
+        </h4>
+        <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto text-sm"><code>&lt;!-- External Link dengan Security --&gt;
+&lt;a href="https://external-site.com" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   title="Buka situs eksternal di tab baru"
+   class="external-link"&gt;
+  Kunjungi Situs Partner
+&lt;/a&gt;
+
+&lt;!-- Download Link --&gt;
+&lt;a href="/documents/brochure.pdf"
+   download="Company_Brochure.pdf"
+   title="Download brochure perusahaan"
+   class="download-link"&gt;
+  📥 Download Brochure
+&lt;/a&gt;
+
+&lt;!-- Internal Link dengan Styling --&gt;
+&lt;a href="/about/team.html"
+   title="Lihat tim kami"
+   id="team-link"
+   class="nav-link active"&gt;
+  👥 Meet Our Team
+&lt;/a&gt;</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jenis-jenis Hyperlink -->
+  <section id="jenis-hyperlink" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">4</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">🎯 Jenis-jenis Hyperlink</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <!-- Standard Links -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Standard Links</h3>
+          <div class="space-y-4">
+            <div class="p-4 bg-sky-50 rounded-lg border border-sky-200">
+              <h4 class="font-semibold text-sky-800">🌐 External Links</h4>
+              <p class="text-gray-700 text-sm mt-1">Link ke website eksternal</p>
+              <pre class="bg-gray-800 text-sky-300 p-2 rounded mt-2 text-xs"><code>&lt;a href="https://google.com"&gt;Google&lt;/a&gt;</code></pre>
+            </div>
+            <div class="p-4 bg-green-50 rounded-lg border border-green-200">
+              <h4 class="font-semibold text-green-800">📄 Internal Links</h4>
+              <p class="text-gray-700 text-sm mt-1">Link dalam website yang sama</p>
+              <pre class="bg-gray-800 text-green-300 p-2 rounded mt-2 text-xs"><code>&lt;a href="about.html"&gt;About Us&lt;/a&gt;</code></pre>
+            </div>
+            <div class="p-4 bg-purple-50 rounded-lg border border-purple-200">
+              <h4 class="font-semibold text-purple-800">📍 Anchor Links</h4>
+              <p class="text-gray-700 text-sm mt-1">Link ke section dalam halaman</p>
+              <pre class="bg-gray-800 text-purple-300 p-2 rounded mt-2 text-xs"><code>&lt;a href="#contact"&gt;Contact&lt;/a&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- Special Links -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Special Links</h3>
+          <div class="space-y-4">
+            <div class="p-4 bg-amber-50 rounded-lg border border-amber-200">
+              <h4 class="font-semibold text-amber-800">📧 Email Links</h4>
+              <p class="text-gray-700 text-sm mt-1">Membuka aplikasi email</p>
+              <pre class="bg-gray-800 text-amber-300 p-2 rounded mt-2 text-xs"><code>&lt;a href="mailto:info@company.com"&gt;
+  Email Kami
+&lt;/a&gt;</code></pre>
+            </div>
+            <div class="p-4 bg-red-50 rounded-lg border border-red-200">
+              <h4 class="font-semibold text-red-800">📞 Phone Links</h4>
+              <p class="text-gray-700 text-sm mt-1">Menelepon nomor telepon</p>
+              <pre class="bg-gray-800 text-red-300 p-2 rounded mt-2 text-xs"><code>&lt;a href="tel:+628123456789"&gt;
+  Hubungi Kami
+&lt;/a&gt;</code></pre>
+            </div>
+            <div class="p-4 bg-indigo-50 rounded-lg border border-indigo-200">
+              <h4 class="font-semibold text-indigo-800">💬 SMS Links</h4>
+              <p class="text-gray-700 text-sm mt-1">Mengirim SMS</p>
+              <pre class="bg-gray-800 text-indigo-300 p-2 rounded mt-2 text-xs"><code>&lt;a href="sms:+628123456789"&gt;
+  Kirim SMS
+&lt;/a&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Complete Examples -->
+      <div class="bg-gray-800 rounded-xl p-6">
+        <h4 class="font-semibold text-gray-100 mb-4 flex items-center">
+          <span class="text-sky-400 mr-2">🎨</span>
+          Contoh Lengkap Semua Jenis Hyperlink:
+        </h4>
+        <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto text-sm"><code>&lt;!-- External Link --&gt;
+&lt;a href="https://github.com" target="_blank" rel="noopener"&gt;
+  GitHub
+&lt;/a&gt;
+
+&lt;!-- Internal Link --&gt;
+&lt;a href="/about/team.html"&gt;
+  Our Team
+&lt;/a&gt;
+
+&lt;!-- Anchor Link --&gt;
+&lt;a href="#contact-form"&gt;
+  Contact Form
+&lt;/a&gt;
+
+&lt;!-- Email Link --&gt;
+&lt;a href="mailto:support@company.com?subject=Question"&gt;
+  support@company.com
+&lt;/a&gt;
+
+&lt;!-- Phone Link --&gt;
+&lt;a href="tel:+1-555-0123"&gt;
+  +1 (555) 0123
+&lt;/a&gt;
+
+&lt;!-- SMS Link --&gt;
+&lt;a href="sms:+628123456789?body=Hello"&gt;
+  Send SMS
+&lt;/a&gt;
+
+&lt;!-- Download Link --&gt;
+&lt;a href="/files/document.pdf" download&gt;
+  Download PDF
+&lt;/a&gt;
+
+&lt;!-- Protocol-specific Links --&gt;
+&lt;a href="ftp://files.example.com"&gt;FTP Server&lt;/a&gt;
+&lt;a href="javascript:void(0)" onclick="myFunction()"&gt;
+  JavaScript Link
+&lt;/a&gt;</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sistem Navigasi -->
+  <section id="navigasi" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">5</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">🧭 Sistem Navigasi Website</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <p class="text-gray-700 mb-6">
+        <strong>Sistem Navigasi</strong> adalah struktur yang memungkinkan pengguna berpindah antara 
+        halaman-halaman dalam website. Navigasi yang baik sangat penting untuk user experience dan SEO.
+      </p>
+
+      <!-- Navigation Types -->
+      <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <!-- Main Navigation -->
+        <div class="border-2 border-sky-200 rounded-xl p-6 bg-gradient-to-br from-sky-50 to-white">
+          <h4 class="text-lg font-bold text-sky-900 mb-4">🍔 Main Navigation</h4>
+          <p class="text-gray-700 mb-4 text-sm">
+            Menu utama website yang biasanya berada di header. Menggunakan semantic <code>&lt;nav&gt;</code> tag.
+          </p>
+          <div class="bg-gray-800 rounded-lg p-4">
+            <pre class="text-sky-300 text-sm overflow-auto"><code>&lt;nav class="main-navigation"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/about"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/services"&gt;Services&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/portfolio"&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- Footer Navigation -->
+        <div class="border-2 border-purple-200 rounded-xl p-6 bg-gradient-to-br from-purple-50 to-white">
+          <h4 class="text-lg font-bold text-purple-900 mb-4">🦶 Footer Navigation</h4>
+          <p class="text-gray-700 mb-4 text-sm">
+            Menu tambahan di footer website untuk links penting seperti privacy policy, terms, dll.
+          </p>
+          <div class="bg-gray-800 rounded-lg p-4">
+            <pre class="text-purple-300 text-sm overflow-auto"><code>&lt;footer&gt;
+  &lt;nav class="footer-navigation"&gt;
+    &lt;a href="/privacy-policy"&gt;Privacy Policy&lt;/a&gt;
+    &lt;a href="/terms-of-service"&gt;Terms of Service&lt;/a&gt;
+    &lt;a href="/sitemap"&gt;Sitemap&lt;/a&gt;
+    &lt;a href="/contact"&gt;Contact&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/footer&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Breadcrumb Navigation -->
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-8">
+        <h4 class="font-semibold text-amber-800 mb-4">🍞 Breadcrumb Navigation</h4>
+        <p class="text-amber-700 mb-4">
+          Menunjukkan hirarki lokasi pengguna dalam website. Sangat penting untuk UX dan SEO.
+        </p>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-lg p-4 border border-amber-200">
+            <pre class="bg-gray-800 text-amber-300 p-4 rounded text-sm overflow-auto"><code>&lt;nav class="breadcrumb" aria-label="Breadcrumb"&gt;
+  &lt;ol&gt;
+    &lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/products"&gt;Products&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/products/electronics"&gt;Electronics&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;span aria-current="page"&gt;Smartphones&lt;/span&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;</code></pre>
+          </div>
+          <div class="bg-white rounded-lg p-4 border border-amber-200">
+            <div class="text-sm text-gray-700">
+              <strong>Hasil Tampilan:</strong>
+              <div class="flex items-center space-x-2 mt-2 text-sm">
+                <a href="#" class="text-sky-600 hover:text-sky-800">Home</a>
+                <span class="text-gray-400">›</span>
+                <a href="#" class="text-sky-600 hover:text-sky-800">Products</a>
+                <span class="text-gray-400">›</span>
+                <a href="#" class="text-sky-600 hover:text-sky-800">Electronics</a>
+                <span class="text-gray-400">›</span>
+                <span class="text-gray-600">Smartphones</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Navigation Demo -->
+      <h3 class="text-xl font-semibold text-gray-800 mb-4">Demo Navigasi Live:</h3>
+      <div class="border-2 border-sky-200 rounded-xl p-8 bg-gradient-to-br from-sky-50 to-white">
+        <!-- Main Nav Demo -->
+        <div class="mb-8">
+          <h4 class="font-semibold text-gray-700 mb-3">Main Navigation Bar:</h4>
+          <nav class="bg-white rounded-lg shadow-sm p-4 border border-gray-200">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+              <div class="font-bold text-lg text-gray-800 mb-4 md:mb-0">MyWebsite</div>
+              <ul class="flex flex-wrap gap-6">
+                <li><a href="#" class="text-sky-600 hover:text-sky-800 font-medium border-b-2 border-sky-500 pb-1">Home</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-sky-800 font-medium">About</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-sky-800 font-medium">Services</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-sky-800 font-medium">Portfolio</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-sky-800 font-medium">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <!-- Breadcrumb Demo -->
+        <div class="mb-6">
+          <h4 class="font-semibold text-gray-700 mb-3">Breadcrumb Navigation:</h4>
+          <nav class="bg-white rounded-lg shadow-sm p-4 border border-gray-200">
+            <div class="flex items-center space-x-2 text-sm">
+              <a href="#" class="text-sky-600 hover:text-sky-800 flex items-center">
+                <span>🏠</span>
+                <span class="ml-1">Home</span>
+              </a>
+              <span class="text-gray-400">›</span>
+              <a href="#" class="text-sky-600 hover:text-sky-800">Blog</a>
+              <span class="text-gray-400">›</span>
+              <a href="#" class="text-sky-600 hover:text-sky-800">Web Development</a>
+              <span class="text-gray-400">›</span>
+              <span class="text-gray-600">HTML Navigation</span>
+            </div>
+          </nav>
+        </div>
+
+        <!-- Footer Nav Demo -->
+        <div>
+          <h4 class="font-semibold text-gray-700 mb-3">Footer Navigation:</h4>
+          <footer class="bg-gray-800 rounded-lg shadow-sm p-6 text-white">
+            <div class="grid md:grid-cols-3 gap-6 text-sm">
+              <div>
+                <h5 class="font-semibold mb-3">Quick Links</h5>
+                <div class="space-y-2">
+                  <a href="#" class="block text-gray-300 hover:text-white">Home</a>
+                  <a href="#" class="block text-gray-300 hover:text-white">About</a>
+                  <a href="#" class="block text-gray-300 hover:text-white">Services</a>
+                </div>
+              </div>
+              <div>
+                <h5 class="font-semibold mb-3">Legal</h5>
+                <div class="space-y-2">
+                  <a href="#" class="block text-gray-300 hover:text-white">Privacy Policy</a>
+                  <a href="#" class="block text-gray-300 hover:text-white">Terms of Service</a>
+                  <a href="#" class="block text-gray-300 hover:text-white">Cookie Policy</a>
+                </div>
+              </div>
+              <div>
+                <h5 class="font-semibold mb-3">Connect</h5>
+                <div class="space-y-2">
+                  <a href="#" class="block text-gray-300 hover:text-white">Contact Us</a>
+                  <a href="#" class="block text-gray-300 hover:text-white">Support</a>
+                  <a href="#" class="block text-gray-300 hover:text-white">Careers</a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Anchor Links & Page Navigation -->
+  <section id="anchor-links" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">6</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">📍 Anchor Links & Page Navigation</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <p class="text-gray-700 mb-6">
+        <strong>Anchor Links</strong> memungkinkan navigasi dalam halaman yang sama. Sangat berguna 
+        untuk halaman panjang dengan multiple sections.
+      </p>
+
+      <!-- Basic Anchor Example -->
+      <div class="bg-gray-800 rounded-xl p-6 mb-8">
+        <h4 class="font-semibold text-gray-100 mb-4 flex items-center">
+          <span class="text-sky-400 mr-2">📋</span>
+          Struktur Dasar Anchor Links:
+        </h4>
+        <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto text-sm"><code>&lt;!-- Anchor Target --&gt;
+&lt;section id="section1"&gt;
+  &lt;h2&gt;Section 1&lt;/h2&gt;
+  &lt;p&gt;Content here...&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;!-- Anchor Link --&gt;
+&lt;a href="#section1"&gt;Go to Section 1&lt;/a&gt;</code></pre>
+      </div>
+
+      <!-- Complete Page Navigation Example -->
+      <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <div class="border-2 border-green-200 rounded-xl p-6 bg-gradient-to-br from-green-50 to-white">
+          <h4 class="text-lg font-bold text-green-900 mb-4">📑 Table of Contents</h4>
+          <p class="text-gray-700 mb-4 text-sm">
+            Membuat daftar isi dengan anchor links untuk navigasi halaman panjang.
+          </p>
+          <div class="bg-gray-800 rounded-lg p-4">
+            <pre class="text-green-300 text-sm overflow-auto"><code>&lt;nav class="toc"&gt;
+  &lt;h3&gt;Daftar Isi&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#intro"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#features"&gt;Features&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#installation"&gt;Installation&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#usage"&gt;Usage&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#conclusion"&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+          </div>
+        </div>
+
+        <div class="border-2 border-purple-200 rounded-xl p-6 bg-gradient-to-br from-purple-50 to-white">
+          <h4 class="text-lg font-bold text-purple-900 mb-4">🔝 Back to Top</h4>
+          <p class="text-gray-700 mb-4 text-sm">
+            Link untuk kembali ke atas halaman. Essential untuk UX.
+          </p>
+          <div class="bg-gray-800 rounded-lg p-4">
+            <pre class="text-purple-300 text-sm"><code>&lt;!-- Top of page --&gt;
+&lt;header id="top"&gt;
+  &lt;h1&gt;Page Title&lt;/h1&gt;
+&lt;/header&gt;
+
+&lt;!-- Bottom of page --&gt;
+&lt;a href="#top" class="back-to-top"&gt;
+  ↑ Back to Top
+&lt;/a&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Anchor Demo -->
+      <h3 class="text-xl font-semibold text-gray-800 mb-4">Demo Anchor Navigation:</h3>
+      <div class="border-2 border-sky-200 rounded-xl p-6 bg-gradient-to-br from-sky-50 to-white">
+        <div class="bg-white rounded-lg p-6 shadow-sm">
+          <h4 class="font-semibold text-gray-800 mb-4">Quick Navigation:</h4>
+          <div class="flex flex-wrap gap-4 mb-6">
+            <a href="#pengenalan-hyperlink" class="px-4 py-2 bg-sky-100 text-sky-700 rounded-lg hover:bg-sky-200 transition-colors text-sm">
+              🔗 Pengenalan
+            </a>
+            <a href="#jenis-url" class="px-4 py-2 bg-sky-100 text-sky-700 rounded-lg hover:bg-sky-200 transition-colors text-sm">
+              🌐 Jenis URL
+            </a>
+            <a href="#navigasi" class="px-4 py-2 bg-sky-100 text-sky-700 rounded-lg hover:bg-sky-200 transition-colors text-sm">
+              🧭 Navigasi
+            </a>
+            <a href="#best-practices" class="px-4 py-2 bg-sky-100 text-sky-700 rounded-lg hover:bg-sky-200 transition-colors text-sm">
+              🚀 Best Practices
+            </a>
+          </div>
+          
+          <div class="flex justify-center">
+            <a href="#top" class="px-6 py-3 bg-sky-500 text-white rounded-lg hover:bg-sky-600 transition-colors font-semibold">
+              ⬆️ Back to Top
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Practices -->
+  <section id="best-practices" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">7</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">🚀 Best Practices Hyperlink & Navigasi</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 mb-8">
+      <!-- Hyperlink Best Practices -->
+      <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+        <h3 class="text-xl font-bold text-gray-900 mb-4">🔗 Best Practices Hyperlink</h3>
+        <div class="space-y-4">
+          <div class="p-4 bg-green-50 rounded-xl border border-green-200">
+            <p class="text-green-800 font-semibold">📝 Descriptive Link Text</p>
+            <p class="text-green-700 text-sm mt-1">Gunakan teks yang jelas dan deskriptif, hindari "click here"</p>
+            <div class="mt-2 text-xs">
+              <span class="text-red-600">❌ Click here for more info</span><br>
+              <span class="text-green-600">✅ Learn more about our services</span>
+            </div>
+          </div>
+          <div class="p-4 bg-sky-50 rounded-xl border border-sky-200">
+            <p class="text-sky-800 font-semibold">🛡️ Security for External Links</p>
+            <p class="text-sky-700 text-sm mt-1">Selalu gunakan rel="noopener noreferrer" untuk external links</p>
+            <pre class="bg-gray-800 text-sky-300 p-2 rounded mt-2 text-xs"><code>rel="noopener noreferrer"</code></pre>
+          </div>
+          <div class="p-4 bg-amber-50 rounded-xl border border-amber-200">
+            <p class="text-amber-800 font-semibold">♿ Accessibility</p>
+            <p class="text-amber-700 text-sm mt-1">Tambahkan title attribute untuk screen readers dan tooltips</p>
+            <pre class="bg-gray-800 text-amber-300 p-2 rounded mt-2 text-xs"><code>title="Learn about our company history"</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Best Practices -->
+      <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+        <h3 class="text-xl font-bold text-gray-900 mb-4">🧭 Best Practices Navigasi</h3>
+        <div class="space-y-4">
+          <div class="p-4 bg-purple-50 rounded-xl border border-purple-200">
+            <p class="text-purple-800 font-semibold">🏗️ Semantic Structure</p>
+            <p class="text-purple-700 text-sm mt-1">Gunakan &lt;nav&gt; tag untuk navigation blocks</p>
+            <pre class="bg-gray-800 text-purple-300 p-2 rounded mt-2 text-xs"><code>&lt;nav aria-label="Main navigation"&gt;</code></pre>
+          </div>
+          <div class="p-4 bg-sky-50 rounded-xl border border-sky-200">
+            <p class="text-sky-800 font-semibold">📱 Mobile-Friendly</p>
+            <p class="text-sky-700 text-sm mt-1">Desain navigasi yang responsive untuk semua device</p>
+            <pre class="bg-gray-800 text-sky-300 p-2 rounded mt-2 text-xs"><code>@media (max-width: 768px)  ...  </code></pre>
+          </div>
+          <div class="p-4 bg-green-50 rounded-xl border border-green-200">
+            <p class="text-green-800 font-semibold">🔍 SEO Optimization</p>
+            <p class="text-green-700 text-sm mt-1">Gunakan breadcrumbs dan internal linking untuk SEO</p>
+            <pre class="bg-gray-800 text-green-300 p-2 rounded mt-2 text-xs"><code>&lt;nav class="breadcrumb"&gt;...&lt;/nav&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kompetensi -->
+    <div class="bg-sky-50 rounded-2xl p-6 border-2 border-sky-200">
+      <h3 class="text-xl font-bold text-gray-900 mb-4">🎯 Kompetensi yang Dikuasai</h3>
+      <div class="grid md:grid-cols-2 gap-4">
+        <ul class="space-y-2 text-gray-700">
+          <li class="flex items-start">
+            <span class="text-green-500 mr-3 mt-1">✓</span>
+            Membuat semua jenis hyperlink (external, internal, anchor)
+          </li>
+          <li class="flex items-start">
+            <span class="text-green-500 mr-3 mt-1">✓</span>
+            Memahami perbedaan absolute vs relative URL
+          </li>
+          <li class="flex items-start">
+            <span class="text-green-500 mr-3 mt-1">✓</span>
+            Menggunakan atribut hyperlink dengan tepat dan aman
+          </li>
+          <li class="flex items-start">
+            <span class="text-green-500 mr-3 mt-1">✓</span>
+            Membuat email, phone, dan SMS links
+          </li>
+        </ul>
+        <ul class="space-y-2 text-gray-700">
+          <li class="flex items-start">
+            <span class="text-green-500 mr-3 mt-1">✓</span>
+            Membuat sistem navigasi website yang lengkap
+          </li>
+          <li class="flex items-start">
+            <span class="text-green-500 mr-3 mt-1">✓</span>
+            Implementasi breadcrumb navigation
+          </li>
+          <li class="flex items-start">
+            <span class="text-green-500 mr-3 mt-1">✓</span>
+            Membuat anchor links untuk page navigation
+          </li>
+          <li class="flex items-start">
+            <span class="text-green-500 mr-3 mt-1">✓</span>
+            Menerapkan best practices untuk UX dan SEO
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advanced Techniques -->
+  <section id="advanced-techniques" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">8</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">⚡ Advanced Techniques</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Advanced Link Techniques -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">🔗 Advanced Link Techniques</h3>
+          <div class="space-y-4">
+            <div class="p-4 bg-sky-50 rounded-lg border border-sky-200">
+              <h4 class="font-semibold text-sky-800">🎯 Link to Specific Text Fragment</h4>
+              <p class="text-gray-700 text-sm mt-1">Highlight specific text on page load</p>
+              <pre class="bg-gray-800 text-sky-300 p-2 rounded mt-2 text-xs"><code>#:~:text=highlight%20this%20text</code></pre>
+            </div>
+            <div class="p-4 bg-green-50 rounded-lg border border-green-200">
+              <h4 class="font-semibold text-green-800">📧 Advanced Email Links</h4>
+              <p class="text-gray-700 text-sm mt-1">Pre-fill email subject, body, cc, bcc</p>
+              <pre class="bg-gray-800 text-green-300 p-2 rounded mt-2 text-xs"><code>mailto:email@domain.com?
+subject=Hello&body=Message&cc=other@domain.com</code></pre>
+            </div>
+            <div class="p-4 bg-purple-50 rounded-lg border border-purple-200">
+              <h4 class="font-semibold text-purple-800">🔗 Telephone with Extension</h4>
+              <p class="text-gray-700 text-sm mt-1">Include phone extensions</p>
+              <pre class="bg-gray-800 text-purple-300 p-2 rounded mt-2 text-xs"><code>tel:+1-555-0123,123</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- Performance & SEO -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">🚀 Performance & SEO</h3>
+          <div class="space-y-4">
+            <div class="p-4 bg-amber-50 rounded-lg border border-amber-200">
+              <h4 class="font-semibold text-amber-800">⚡ Prefetching Links</h4>
+              <p class="text-gray-700 text-sm mt-1">Preload resources for better performance</p>
+              <pre class="bg-gray-800 text-amber-300 p-2 rounded mt-2 text-xs"><code>rel="prefetch" href="page.html"</code></pre>
+            </div>
+            <div class="p-4 bg-red-50 rounded-lg border border-red-200">
+              <h4 class="font-semibold text-red-800">🔍 SEO Link Attributes</h4>
+              <p class="text-gray-700 text-sm mt-1">Attributes for search engine optimization</p>
+              <pre class="bg-gray-800 text-red-300 p-2 rounded mt-2 text-xs"><code>rel="nofollow"
+rel="sponsored"
+rel="ugc"</code></pre>
+            </div>
+            <div class="p-4 bg-indigo-50 rounded-lg border border-indigo-200">
+              <h4 class="font-semibold text-indigo-800">🎨 CSS Styling States</h4>
+              <p class="text-gray-700 text-sm mt-1">Style different link states</p>
+              <pre class="bg-gray-800 text-indigo-300 p-2 rounded mt-2 text-xs"><code>a:link, a:visited,
+a:hover, a:active</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latihan Section -->
+  <div class="bg-gradient-to-r from-sky-500 to-blue-600 rounded-2xl p-8 text-white text-center mb-12">
+    <h3 class="text-2xl font-bold mb-4">💪 Latihan Praktikum</h3>
+    <p class="text-sky-100 mb-6 text-lg">
+      Buat website multi-halaman dengan sistem navigasi lengkap, berbagai jenis hyperlink, 
+      breadcrumb navigation, dan implementasikan semua best practices yang telah dipelajari.
+    </p>
+    <button class="bg-white text-sky-600 px-8 py-3 rounded-xl font-semibold hover:bg-sky-50 transition-colors">
+      📥 Download Materi Latihan
+    </button>
+  </div>
+
+  <!-- Summary -->
+  <div class="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+    <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+      📝 Ringkasan Materi
+    </h3>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <h4 class="font-semibold text-gray-800 mb-4 text-lg">
+          ✅ Yang Telah Dipelajari:
+        </h4>
+        <ul class="space-y-3 text-gray-700">
+          <li class="flex items-start">
+            <span class="text-sky-500 mr-3 mt-1">•</span>
+            Konsep hyperlink dan semua jenis-jenisnya
+          </li>
+          <li class="flex items-start">
+            <span class="text-sky-500 mr-3 mt-1">•</span>
+            Perbedaan absolute vs relative URL dengan contoh nyata
+          </li>
+          <li class="flex items-start">
+            <span class="text-sky-500 mr-3 mt-1">•</span>
+            Semua atribut hyperlink dan penggunaannya
+          </li>
+          <li class="flex items-start">
+            <span class="text-sky-500 mr-3 mt-1">•</span>
+            Sistem navigasi website yang lengkap dan semantic
+          </li>
+          <li class="flex items-start">
+            <span class="text-sky-500 mr-3 mt-1">•</span>
+            Anchor links untuk navigasi dalam halaman
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-gray-800 mb-4 text-lg">
+          🎯 Langkah Selanjutnya:
+        </h4>
+        <ul class="space-y-3 text-gray-700">
+          <li class="flex items-start">
+            <span class="text-blue-500 mr-3 mt-1">•</span>
+            Praktekkan dengan membuat website portfolio
+          </li>
+          <li class="flex items-start">
+            <span class="text-blue-500 mr-3 mt-1">•</span>
+            Eksplor CSS styling untuk navigasi yang menarik
+          </li>
+          <li class="flex items-start">
+            <span class="text-blue-500 mr-3 mt-1">•</span>
+            Pelajari responsive navigation patterns
+          </li>
+          <li class="flex items-start">
+            <span class="text-blue-500 mr-3 mt-1">•</span>
+            Pahami accessible navigation untuk semua pengguna
+          </li>
+          <li class="flex items-start">
+            <span class="text-blue-500 mr-3 mt-1">•</span>
+            Implementasikan advanced linking techniques
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mt-12 pt-6 border-t border-gray-200">
+    <a href="/pemrograman-web/satu-pertemuan-2" class="flex items-center px-6 py-3 bg-sky-50 text-sky-700 rounded-xl border border-sky-200 hover:bg-sky-100 transition-colors w-full sm:w-auto justify-center">
+      <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+      </svg>
+      Sebelumnya: Pertemuan 2
+    </a>
+    <a href="/pemrograman-web/satu-pertemuan-4" class="flex items-center px-6 py-3 bg-sky-500 text-white rounded-xl hover:bg-sky-600 transition-colors w-full sm:w-auto justify-center">
+      Selanjutnya: Pertemuan 4
+      <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </a>
+  </div>
+</article>
+
+<style>
+  /* Custom styles untuk code blocks */
+  pre code {
+    font-family: 'Fira Code', 'Courier New', monospace;
+    line-height: 1.5;
+  }
+  
+  /* Style untuk inline code */
+  code:not(pre code) {
+    background-color: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.875em;
+    color: #0c4a6e;
+    border: 1px solid #bae6fd;
+  }
+  
+  /* Smooth scrolling untuk anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Custom selection color */
+  ::selection {
+    background-color: #bae6fd;
+    color: #0c4a6e;
+  }
+
+  /* Style untuk demo navigation */
+  .demo-nav a {
+    transition: color 0.2s ease;
+  }
+
+  /* Style untuk live demo boxes */
+  .live-demo {
+    border-left: 4px solid #0ea5e9;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  }
+</style>
+
+</PemrogramanWebLayout>

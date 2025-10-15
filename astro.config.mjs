@@ -56,16 +56,15 @@ export default defineConfig({
     }
   })],
   
-  // HAPUS build.format - pakai default
   vite: {
     plugins: [tailwindcss()],
   },
   
-redirects: {
-  '/home': '/',
-  '/index': '/',
-},
-
+  // REDIRECTS YANG BENAR - di dalam defineConfig
+  redirects: {
+    '/home': '/',
+    '/index': '/',
+  },
   
   trailingSlash: 'never'
 });
