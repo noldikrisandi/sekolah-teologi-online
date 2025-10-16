@@ -1,0 +1,1296 @@
+---
+// src/pages/pemrograman-web/satu-pertemuan-4.astro
+
+import PemrogramanWebLayout from "../../layouts/PemrogramanWebLayout.astro";
+
+const pageTitle = "Pertemuan 4: Element CSS dan Kegunaannya - Pemrograman Web 1";
+const pageDescription = "Materi lengkap tentang semua element CSS: display, position, flexbox, grid, typography, colors, background, border, spacing, dan responsive properties.";
+const pageUrl = "pemrograman-web/satu-pertemuan-4";
+
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Pemrograman Web", url: "/pemrograman-web" },
+  { name: "Pemrograman Web 1", url: "/pemrograman-web/satu" },
+  { name: "Pertemuan 4", url: "/pemrograman-web/satu-pertemuan-4" }
+];
+---
+
+<PemrogramanWebLayout 
+  title={pageTitle}
+  description={pageDescription}
+  url={pageUrl}
+  breadcrumbs={breadcrumbs}
+>
+
+<article class="max-w-none">
+  <!-- Header Section -->
+  <div class="text-center mb-8">
+    <span class="inline-block px-4 py-2 bg-sky-100 text-sky-800 rounded-full text-sm font-semibold mb-4">
+      Pertemuan 4 - CSS Properties
+    </span>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-6">
+      <div class="w-12 h-12 bg-sky-500 rounded-full flex items-center justify-center">
+        <span class="text-white text-2xl">🎨</span>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900">
+        Element CSS dan Kegunaannya
+      </h1>
+    </div>
+    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+      Panduan lengkap semua property CSS yang sering digunakan beserta contoh implementasinya.
+    </p>
+  </div>
+
+  <!-- Table of Contents -->
+  <div class="bg-gradient-to-r from-sky-50 to-indigo-50 rounded-2xl p-6 mb-8 border border-sky-200">
+    <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+      <span class="w-2 h-2 bg-sky-500 rounded-full mr-3"></span>
+      Kategori Property CSS
+    </h2>
+    <div class="grid md:grid-cols-3 gap-2 text-sm">
+      <a href="#layout-display" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
+        <span class="mr-2">→</span> Layout & Display
+      </a>
+      <a href="#flexbox" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
+        <span class="mr-2">→</span> Flexbox
+      </a>
+      <a href="#grid" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
+        <span class="mr-2">→</span> CSS Grid
+      </a>
+      <a href="#spacing" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
+        <span class="mr-2">→</span> Spacing & Sizing
+      </a>
+      <a href="#typography" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
+        <span class="mr-2">→</span> Typography
+      </a>
+      <a href="#colors" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
+        <span class="mr-2">→</span> Colors & Background
+      </a>
+      <a href="#borders" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
+        <span class="mr-2">→</span> Borders & Effects
+      </a>
+      <a href="#position" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
+        <span class="mr-2">→</span> Positioning
+      </a>
+      <a href="#responsive" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
+        <span class="mr-2">→</span> Responsive
+      </a>
+    </div>
+  </div>
+
+  <!-- Layout & Display Section -->
+  <section id="layout-display" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">1</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">📐 Layout & Display</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Display Property -->
+        <div class="space-y-4">
+          <h3 class="text-lg font-semibold text-gray-800">display</h3>
+          <div class="space-y-2 text-sm">
+            <div class="flex justify-between p-3 bg-sky-50 rounded-lg">
+              <code>block</code>
+              <span class="text-gray-600">Elemen mengambil full width</span>
+            </div>
+            <div class="flex justify-between p-3 bg-sky-50 rounded-lg">
+              <code>inline</code>
+              <span class="text-gray-600">Elemen sebaris dengan content</span>
+            </div>
+            <div class="flex justify-between p-3 bg-sky-50 rounded-lg">
+              <code>inline-block</code>
+              <span class="text-gray-600">Inline tapi bisa set width/height</span>
+            </div>
+            <div class="flex justify-between p-3 bg-sky-50 rounded-lg">
+              <code>flex</code>
+              <span class="text-gray-600">Flexbox layout</span>
+            </div>
+            <div class="flex justify-between p-3 bg-sky-50 rounded-lg">
+              <code>grid</code>
+              <span class="text-gray-600">CSS Grid layout</span>
+            </div>
+            <div class="flex justify-between p-3 bg-sky-50 rounded-lg">
+              <code>none</code>
+              <span class="text-gray-600">Sembunyikan elemen</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Box Sizing -->
+        <div class="space-y-4">
+          <h3 class="text-lg font-semibold text-gray-800">box-sizing</h3>
+          <div class="space-y-2 text-sm">
+            <div class="flex justify-between p-3 bg-blue-50 rounded-lg">
+              <code>content-box</code>
+              <span class="text-gray-600">Default - padding & border ditambahkan</span>
+            </div>
+            <div class="flex justify-between p-3 bg-blue-50 rounded-lg">
+              <code>border-box</code>
+              <span class="text-gray-600">Padding & border termasuk dalam width/height</span>
+            </div>
+          </div>
+
+          <h3 class="text-lg font-semibold text-gray-800 mt-6">overflow</h3>
+          <div class="space-y-2 text-sm">
+            <div class="flex justify-between p-3 bg-green-50 rounded-lg">
+              <code>visible</code>
+              <span class="text-gray-600">Konten tidak dipotong</span>
+            </div>
+            <div class="flex justify-between p-3 bg-green-50 rounded-lg">
+              <code>hidden</code>
+              <span class="text-gray-600">Konten dipotong</span>
+            </div>
+            <div class="flex justify-between p-3 bg-green-50 rounded-lg">
+              <code>scroll</code>
+              <span class="text-gray-600">Scrollbar selalu tampil</span>
+            </div>
+            <div class="flex justify-between p-3 bg-green-50 rounded-lg">
+              <code>auto</code>
+              <span class="text-gray-600">Scrollbar tampil jika perlu</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Demo Area -->
+      <div class="mt-6 p-4 bg-gray-50 rounded-lg">
+        <h4 class="font-semibold text-gray-800 mb-3">Demo Display Properties:</h4>
+        <div class="space-y-2">
+          <div class="p-2 bg-blue-500 text-white text-center">display: block</div>
+          <div class="space-x-2">
+            <span class="p-2 bg-green-500 text-white">display: inline</span>
+            <span class="p-2 bg-green-500 text-white">inline element</span>
+          </div>
+          <div class="space-x-2">
+            <span class="inline-block p-2 bg-sky-500 text-white w-24">inline-block</span>
+            <span class="inline-block p-2 bg-sky-500 text-white w-32">bisa set width</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flexbox Section -->
+  <section id="flexbox" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">2</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">🎯 Flexbox Properties</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Container Properties -->
+        <div class="space-y-6">
+          <h3 class="text-lg font-semibold text-gray-800">Flex Container</h3>
+          
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">flex-direction</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-orange-50 rounded">
+                <code>row</code>
+                <span class="text-gray-600">Horizontal (default)</span>
+              </div>
+              <div class="flex justify-between p-2 bg-orange-50 rounded">
+                <code>row-reverse</code>
+                <span class="text-gray-600">Horizontal terbalik</span>
+              </div>
+              <div class="flex justify-between p-2 bg-orange-50 rounded">
+                <code>column</code>
+                <span class="text-gray-600">Vertikal</span>
+              </div>
+              <div class="flex justify-between p-2 bg-orange-50 rounded">
+                <code>column-reverse</code>
+                <span class="text-gray-600">Vertikal terbalik</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">justify-content</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-red-50 rounded">
+                <code>flex-start</code>
+                <span class="text-gray-600">Rata kiri</span>
+              </div>
+              <div class="flex justify-between p-2 bg-red-50 rounded">
+                <code>flex-end</code>
+                <span class="text-gray-600">Rata kanan</span>
+              </div>
+              <div class="flex justify-between p-2 bg-red-50 rounded">
+                <code>center</code>
+                <span class="text-gray-600">Tengah</span>
+              </div>
+              <div class="flex justify-between p-2 bg-red-50 rounded">
+                <code>space-between</code>
+                <span class="text-gray-600">Jarak merata</span>
+              </div>
+              <div class="flex justify-between p-2 bg-red-50 rounded">
+                <code>space-around</code>
+                <span class="text-gray-600">Jarak sekitar</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">align-items</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>stretch</code>
+                <span class="text-gray-600">Regang (default)</span>
+              </div>
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>flex-start</code>
+                <span class="text-gray-600">Atas</span>
+              </div>
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>flex-end</code>
+                <span class="text-gray-600">Bawah</span>
+              </div>
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>center</code>
+                <span class="text-gray-600">Tengah vertikal</span>
+              </div>
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>baseline</code>
+                <span class="text-gray-600">Berdasar baseline</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item Properties -->
+        <div class="space-y-6">
+          <h3 class="text-lg font-semibold text-gray-800">Flex Items</h3>
+          
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">flex-grow</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-blue-50 rounded">
+                <code>0</code>
+                <span class="text-gray-600">Tidak berkembang (default)</span>
+              </div>
+              <div class="flex justify-between p-2 bg-blue-50 rounded">
+                <code>1</code>
+                <span class="text-gray-600">Isi space tersisa</span>
+              </div>
+              <div class="flex justify-between p-2 bg-blue-50 rounded">
+                <code>2</code>
+                <span class="text-gray-600">2x lebih besar dari 1</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">flex-shrink</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-sky-50 rounded">
+                <code>1</code>
+                <span class="text-gray-600">Bisa mengecil (default)</span>
+              </div>
+              <div class="flex justify-between p-2 bg-sky-50 rounded">
+                <code>0</code>
+                <span class="text-gray-600">Tidak bisa mengecil</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">flex-basis</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-indigo-50 rounded">
+                <code>auto</code>
+                <span class="text-gray-600">Berdasar content (default)</span>
+              </div>
+              <div class="flex justify-between p-2 bg-indigo-50 rounded">
+                <code>200px</code>
+                <span class="text-gray-600">Width awal 200px</span>
+              </div>
+              <div class="flex justify-between p-2 bg-indigo-50 rounded">
+                <code>50%</code>
+                <span class="text-gray-600">50% dari container</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">align-self</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-pink-50 rounded">
+                <code>auto</code>
+                <span class="text-gray-600">Ikuti align-items</span>
+              </div>
+              <div class="flex justify-between p-2 bg-pink-50 rounded">
+                <code>flex-start</code>
+                <span class="text-gray-600">Atas</span>
+              </div>
+              <div class="flex justify-between p-2 bg-pink-50 rounded">
+                <code>center</code>
+                <span class="text-gray-600">Tengah</span>
+              </div>
+              <div class="flex justify-between p-2 bg-pink-50 rounded">
+                <code>flex-end</code>
+                <span class="text-gray-600">Bawah</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flexbox Demo -->
+      <div class="mt-6 p-4 bg-gray-50 rounded-lg">
+        <h4 class="font-semibold text-gray-800 mb-3">Demo Flexbox:</h4>
+        <div class="flex justify-between space-x-2 mb-4 p-4 bg-blue-100 rounded">
+          <div class="p-3 bg-blue-500 text-white text-center flex-1">Item 1</div>
+          <div class="p-3 bg-blue-600 text-white text-center flex-1">Item 2</div>
+          <div class="p-3 bg-blue-700 text-white text-center flex-1">Item 3</div>
+        </div>
+        <div class="flex justify-center space-x-2 p-4 bg-green-100 rounded">
+          <div class="p-3 bg-green-500 text-white">Center 1</div>
+          <div class="p-3 bg-green-500 text-white">Center 2</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CSS Grid Section -->
+  <section id="grid" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">3</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">🔲 CSS Grid Properties</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Container Properties -->
+        <div class="space-y-6">
+          <h3 class="text-lg font-semibold text-gray-800">Grid Container</h3>
+          
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">grid-template-columns</h4>
+            <div class="space-y-2 text-sm">
+              <div class="p-2 bg-yellow-50 rounded">
+                <code>1fr 1fr 1fr</code>
+                <p class="text-gray-600 text-xs mt-1">3 kolom equal width</p>
+              </div>
+              <div class="p-2 bg-yellow-50 rounded">
+                <code>repeat(3, 100px)</code>
+                <p class="text-gray-600 text-xs mt-1">3 kolom @100px</p>
+              </div>
+              <div class="p-2 bg-yellow-50 rounded">
+                <code>200px 1fr 2fr</code>
+                <p class="text-gray-600 text-xs mt-1">Mixed widths</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">grid-template-rows</h4>
+            <div class="space-y-2 text-sm">
+              <div class="p-2 bg-orange-50 rounded">
+                <code>100px 200px</code>
+                <p class="text-gray-600 text-xs mt-1">2 rows dengan height</p>
+              </div>
+              <div class="p-2 bg-orange-50 rounded">
+                <code>repeat(4, 1fr)</code>
+                <p class="text-gray-600 text-xs mt-1">4 rows equal</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">gap</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-red-50 rounded">
+                <code>10px</code>
+                <span class="text-gray-600">Gap 10px</span>
+              </div>
+              <div class="flex justify-between p-2 bg-red-50 rounded">
+                <code>1rem 2rem</code>
+                <span class="text-gray-600">Row 1rem, column 2rem</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item Properties -->
+        <div class="space-y-6">
+          <h3 class="text-lg font-semibold text-gray-800">Grid Items</h3>
+          
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">grid-column</h4>
+            <div class="space-y-2 text-sm">
+              <div class="p-2 bg-green-50 rounded">
+                <code>1 / 3</code>
+                <p class="text-gray-600 text-xs mt-1">Dari line 1 sampai 3</p>
+              </div>
+              <div class="p-2 bg-green-50 rounded">
+                <code>span 2</code>
+                <p class="text-gray-600 text-xs mt-1">Lebar 2 kolom</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">grid-row</h4>
+            <div class="space-y-2 text-sm">
+              <div class="p-2 bg-blue-50 rounded">
+                <code>2 / 4</code>
+                <p class="text-gray-600 text-xs mt-1">Dari row 2 sampai 4</p>
+              </div>
+              <div class="p-2 bg-blue-50 rounded">
+                <code>span 3</code>
+                <p class="text-gray-600 text-xs mt-1">Tinggi 3 rows</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">grid-area</h4>
+            <div class="space-y-2 text-sm">
+              <div class="p-2 bg-sky-50 rounded">
+                <code>1 / 1 / 3 / 3</code>
+                <p class="text-gray-600 text-xs mt-1">row-start/col-start/row-end/col-end</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">place-items</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-indigo-50 rounded">
+                <code>center</code>
+                <span class="text-gray-600">Tengah kedua arah</span>
+              </div>
+              <div class="flex justify-between p-2 bg-indigo-50 rounded">
+                <code>start end</code>
+                <span class="text-gray-600">Start vertikal, end horizontal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grid Demo -->
+      <div class="mt-6 p-4 bg-gray-50 rounded-lg">
+        <h4 class="font-semibold text-gray-800 mb-3">Demo CSS Grid:</h4>
+        <div class="grid grid-cols-3 gap-2 mb-4">
+          <div class="p-4 bg-sky-500 text-white text-center">1</div>
+          <div class="p-4 bg-sky-600 text-white text-center">2</div>
+          <div class="p-4 bg-sky-700 text-white text-center">3</div>
+          <div class="p-4 bg-sky-400 text-white text-center col-span-2">4 (span 2)</div>
+          <div class="p-4 bg-sky-800 text-white text-center">5</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Spacing & Sizing Section -->
+  <section id="spacing" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">4</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">📏 Spacing & Sizing</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Margin & Padding -->
+        <div class="space-y-6">
+          <h3 class="text-lg font-semibold text-gray-800">Margin & Padding</h3>
+          
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">margin</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-blue-50 rounded">
+                <code>10px</code>
+                <span class="text-gray-600">All sides 10px</span>
+              </div>
+              <div class="flex justify-between p-2 bg-blue-50 rounded">
+                <code>10px 20px</code>
+                <span class="text-gray-600">Top/bottom 10px, left/right 20px</span>
+              </div>
+              <div class="flex justify-between p-2 bg-blue-50 rounded">
+                <code>auto</code>
+                <span class="text-gray-600">Auto center</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">padding</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>1rem</code>
+                <span class="text-gray-600">All sides 1rem</span>
+              </div>
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>10px 20px 30px 40px</code>
+                <span class="text-gray-600">Top, right, bottom, left</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Width & Height -->
+        <div class="space-y-6">
+          <h3 class="text-lg font-semibold text-gray-800">Width & Height</h3>
+          
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">width / height</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-sky-50 rounded">
+                <code>100px</code>
+                <span class="text-gray-600">Fixed pixel value</span>
+              </div>
+              <div class="flex justify-between p-2 bg-sky-50 rounded">
+                <code>50%</code>
+                <span class="text-gray-600">Percentage of parent</span>
+              </div>
+              <div class="flex justify-between p-2 bg-sky-50 rounded">
+                <code>100vw</code>
+                <span class="text-gray-600">100% viewport width</span>
+              </div>
+              <div class="flex justify-between p-2 bg-sky-50 rounded">
+                <code>auto</code>
+                <span class="text-gray-600">Browser calculated</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">min/max-width/height</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-indigo-50 rounded">
+                <code>min-width: 300px</code>
+                <span class="text-gray-600">Minimum width</span>
+              </div>
+              <div class="flex justify-between p-2 bg-indigo-50 rounded">
+                <code>max-height: 500px</code>
+                <span class="text-gray-600">Maximum height</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spacing Demo -->
+      <div class="mt-6 p-4 bg-gray-50 rounded-lg">
+        <h4 class="font-semibold text-gray-800 mb-3">Demo Spacing:</h4>
+        <div class="space-y-4">
+          <div class="p-4 bg-blue-100 m-2 border-2 border-blue-300">Margin 0.5rem</div>
+          <div class="p-6 bg-green-100 m-4 border-2 border-green-300">Margin 1rem, Padding 1.5rem</div>
+          <div class="w-1/2 h-20 bg-sky-100 border-2 border-sky-300">Width 50%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Typography Section -->
+  <section id="typography" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">5</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">🔤 Typography Properties</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Font Properties -->
+        <div class="space-y-6">
+          <h3 class="text-lg font-semibold text-gray-800">Font & Text</h3>
+          
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">font-family</h4>
+            <div class="space-y-2 text-sm">
+              <div class="p-2 bg-blue-50 rounded">
+                <code>Arial, sans-serif</code>
+                <p class="text-gray-600 text-xs mt-1">Fallback font stack</p>
+              </div>
+              <div class="p-2 bg-blue-50 rounded">
+                <code>'Times New Roman', serif</code>
+                <p class="text-gray-600 text-xs mt-1">Serif font family</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">font-size</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>16px</code>
+                <span class="text-gray-600">Fixed pixel size</span>
+              </div>
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>1rem</code>
+                <span class="text-gray-600">Relative to root</span>
+              </div>
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>120%</code>
+                <span class="text-gray-600">Percentage of parent</span>
+              </div>
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>larger</code>
+                <span class="text-gray-600">Relative larger</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">font-weight</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-sky-50 rounded">
+                <code>normal</code>
+                <span class="text-gray-600">400 - Normal weight</span>
+              </div>
+              <div class="flex justify-between p-2 bg-sky-50 rounded">
+                <code>bold</code>
+                <span class="text-gray-600">700 - Bold weight</span>
+              </div>
+              <div class="flex justify-between p-2 bg-sky-50 rounded">
+                <code>lighter</code>
+                <span class="text-gray-600">Lighter than parent</span>
+              </div>
+              <div class="flex justify-between p-2 bg-sky-50 rounded">
+                <code>900</code>
+                <span class="text-gray-600">Heaviest weight</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Properties -->
+        <div class="space-y-6">
+          <h3 class="text-lg font-semibold text-gray-800">Text Styling</h3>
+          
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">text-align</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-red-50 rounded">
+                <code>left</code>
+                <span class="text-gray-600">Rata kiri (default)</span>
+              </div>
+              <div class="flex justify-between p-2 bg-red-50 rounded">
+                <code>center</code>
+                <span class="text-gray-600">Tengah</span>
+              </div>
+              <div class="flex justify-between p-2 bg-red-50 rounded">
+                <code>right</code>
+                <span class="text-gray-600">Rata kanan</span>
+              </div>
+              <div class="flex justify-between p-2 bg-red-50 rounded">
+                <code>justify</code>
+                <span class="text-gray-600">Rata kiri-kanan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">text-decoration</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-orange-50 rounded">
+                <code>none</code>
+                <span class="text-gray-600">No decoration</span>
+              </div>
+              <div class="flex justify-between p-2 bg-orange-50 rounded">
+                <code>underline</code>
+                <span class="text-gray-600">Garis bawah</span>
+              </div>
+              <div class="flex justify-between p-2 bg-orange-50 rounded">
+                <code>line-through</code>
+                <span class="text-gray-600">Coret tengah</span>
+              </div>
+              <div class="flex justify-between p-2 bg-orange-50 rounded">
+                <code>overline</code>
+                <span class="text-gray-600">Garis atas</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">line-height</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-indigo-50 rounded">
+                <code>1.5</code>
+                <span class="text-gray-600">1.5x font size</span>
+              </div>
+              <div class="flex justify-between p-2 bg-indigo-50 rounded">
+                <code>normal</code>
+                <span class="text-gray-600">Browser default</span>
+              </div>
+              <div class="flex justify-between p-2 bg-indigo-50 rounded">
+                <code>24px</code>
+                <span class="text-gray-600">Fixed pixel value</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Typography Demo -->
+      <div class="mt-6 p-4 bg-gray-50 rounded-lg">
+        <h4 class="font-semibold text-gray-800 mb-3">Demo Typography:</h4>
+        <div class="space-y-3">
+          <p class="text-lg font-bold text-gray-900">Bold Large Text</p>
+          <p class="text-base italic text-gray-700">Italic Regular Text</p>
+          <p class="text-sm underline text-gray-600">Small Underlined Text</p>
+          <p class="text-center text-gray-800 bg-blue-100 p-2">Centered Text with Background</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Colors & Background Section -->
+  <section id="colors" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">6</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">🎨 Colors & Background</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Color Properties -->
+        <div class="space-y-6">
+          <h3 class="text-lg font-semibold text-gray-800">Color Properties</h3>
+          
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">color</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-red-50 rounded">
+                <code>#ff0000</code>
+                <span class="text-gray-600">Hex color red</span>
+              </div>
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>rgb(0, 255, 0)</code>
+                <span class="text-gray-600">RGB green</span>
+              </div>
+              <div class="flex justify-between p-2 bg-blue-50 rounded">
+                <code>rgba(0, 0, 255, 0.5)</code>
+                <span class="text-gray-600">Blue with opacity</span>
+              </div>
+              <div class="flex justify-between p-2 bg-sky-50 rounded">
+                <code>hsl(270, 100%, 50%)</code>
+                <span class="text-gray-600">HSL sky</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">opacity</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-gray-50 rounded">
+                <code>1</code>
+                <span class="text-gray-600">Fully opaque</span>
+              </div>
+              <div class="flex justify-between p-2 bg-gray-50 rounded">
+                <code>0.5</code>
+                <span class="text-gray-600">50% transparent</span>
+              </div>
+              <div class="flex justify-between p-2 bg-gray-50 rounded">
+                <code>0</code>
+                <span class="text-gray-600">Fully transparent</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Background Properties -->
+        <div class="space-y-6">
+          <h3 class="text-lg font-semibold text-gray-800">Background Properties</h3>
+          
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">background-color</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-yellow-50 rounded">
+                <code>white</code>
+                <span class="text-gray-600">Named color</span>
+              </div>
+              <div class="flex justify-between p-2 bg-yellow-50 rounded">
+                <code>transparent</code>
+                <span class="text-gray-600">No background</span>
+              </div>
+              <div class="flex justify-between p-2 bg-yellow-50 rounded">
+                <code>#000000</code>
+                <span class="text-gray-600">Black hex</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">background-image</h4>
+            <div class="space-y-2 text-sm">
+              <div class="p-2 bg-orange-50 rounded">
+                <code>url('image.jpg')</code>
+                <p class="text-gray-600 text-xs mt-1">Image from URL</p>
+              </div>
+              <div class="p-2 bg-orange-50 rounded">
+                <code>linear-gradient(red, blue)</code>
+                <p class="text-gray-600 text-xs mt-1">Gradient background</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">background-size</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>cover</code>
+                <span class="text-gray-600">Cover entire area</span>
+              </div>
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>contain</code>
+                <span class="text-gray-600">Fit entirely</span>
+              </div>
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>100% 100%</code>
+                <span class="text-gray-600">Stretch to fit</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Colors Demo -->
+      <div class="mt-6 p-4 bg-gray-50 rounded-lg">
+        <h4 class="font-semibold text-gray-800 mb-3">Demo Colors & Background:</h4>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <div class="p-4 bg-red-500 text-white text-center rounded">Red</div>
+          <div class="p-4 bg-green-500 text-white text-center rounded">Green</div>
+          <div class="p-4 bg-blue-500 text-white text-center rounded">Blue</div>
+          <div class="p-4 bg-gradient-to-r from-sky-500 to-pink-500 text-white text-center rounded">Gradient</div>
+        </div>
+        <div class="mt-3 flex space-x-2">
+          <div class="p-3 bg-black text-white opacity-100 rounded">Opacity 100%</div>
+          <div class="p-3 bg-black text-white opacity-50 rounded">Opacity 50%</div>
+          <div class="p-3 bg-black text-white opacity-25 rounded">Opacity 25%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Borders & Effects Section -->
+  <section id="borders" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">7</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">🖼️ Borders & Effects</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Border Properties -->
+        <div class="space-y-6">
+          <h3 class="text-lg font-semibold text-gray-800">Border Properties</h3>
+          
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">border</h4>
+            <div class="space-y-2 text-sm">
+              <div class="p-2 bg-blue-50 rounded">
+                <code>1px solid black</code>
+                <p class="text-gray-600 text-xs mt-1">Width style color</p>
+              </div>
+              <div class="p-2 bg-blue-50 rounded">
+                <code>2px dashed #ccc</code>
+                <p class="text-gray-600 text-xs mt-1">Dashed border</p>
+              </div>
+              <div class="p-2 bg-blue-50 rounded">
+                <code>none</code>
+                <p class="text-gray-600 text-xs mt-1">No border</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">border-radius</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>5px</code>
+                <span class="text-gray-600">Small radius</span>
+              </div>
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>50%</code>
+                <span class="text-gray-600">Circle</span>
+              </div>
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>10px 20px</code>
+                <span class="text-gray-600">Elliptical</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Effects Properties -->
+        <div class="space-y-6">
+          <h3 class="text-lg font-semibold text-gray-800">Effects Properties</h3>
+          
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">box-shadow</h4>
+            <div class="space-y-2 text-sm">
+              <div class="p-2 bg-sky-50 rounded">
+                <code>2px 2px 5px gray</code>
+                <p class="text-gray-600 text-xs mt-1">X Y blur color</p>
+              </div>
+              <div class="p-2 bg-sky-50 rounded">
+                <code>0 0 10px rgba(0,0,0,0.1)</code>
+                <p class="text-gray-600 text-xs mt-1">Soft shadow</p>
+              </div>
+              <div class="p-2 bg-sky-50 rounded">
+                <code>inset 0 0 5px black</code>
+                <p class="text-gray-600 text-xs mt-1">Inner shadow</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">transform</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-red-50 rounded">
+                <code>scale(1.1)</code>
+                <span class="text-gray-600">Scale up 10%</span>
+              </div>
+              <div class="flex justify-between p-2 bg-red-50 rounded">
+                <code>rotate(45deg)</code>
+                <span class="text-gray-600">Rotate 45°</span>
+              </div>
+              <div class="flex justify-between p-2 bg-red-50 rounded">
+                <code>translateX(50px)</code>
+                <span class="text-gray-600">Move right 50px</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">transition</h4>
+            <div class="space-y-2 text-sm">
+              <div class="p-2 bg-orange-50 rounded">
+                <code>all 0.3s ease</code>
+                <p class="text-gray-600 text-xs mt-1">All properties 0.3s</p>
+              </div>
+              <div class="p-2 bg-orange-50 rounded">
+                <code>transform 0.5s</code>
+                <p class="text-gray-600 text-xs mt-1">Only transform</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Borders & Effects Demo -->
+      <div class="mt-6 p-4 bg-gray-50 rounded-lg">
+        <h4 class="font-semibold text-gray-800 mb-3">Demo Borders & Effects:</h4>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="p-4 bg-white border-2 border-gray-300 rounded text-center">Default</div>
+          <div class="p-4 bg-white border-2 border-blue-500 rounded-lg text-center">Rounded</div>
+          <div class="p-4 bg-white border-2 border-green-500 rounded-full text-center">Circle</div>
+          <div class="p-4 bg-white shadow-md text-center">Shadow</div>
+          <div class="p-4 bg-white shadow-lg text-center">Large Shadow</div>
+          <div class="p-4 bg-blue-500 text-white transform hover:scale-105 transition-transform text-center cursor-pointer">Hover Me</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Positioning Section -->
+  <section id="position" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">8</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">📍 Positioning</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Position Properties -->
+        <div class="space-y-6">
+          <h3 class="text-lg font-semibold text-gray-800">Position Properties</h3>
+          
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">position</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-blue-50 rounded">
+                <code>static</code>
+                <span class="text-gray-600">Default flow</span>
+              </div>
+              <div class="flex justify-between p-2 bg-blue-50 rounded">
+                <code>relative</code>
+                <span class="text-gray-600">Relative to normal position</span>
+              </div>
+              <div class="flex justify-between p-2 bg-blue-50 rounded">
+                <code>absolute</code>
+                <span class="text-gray-600">Relative to parent</span>
+              </div>
+              <div class="flex justify-between p-2 bg-blue-50 rounded">
+                <code>fixed</code>
+                <span class="text-gray-600">Relative to viewport</span>
+              </div>
+              <div class="flex justify-between p-2 bg-blue-50 rounded">
+                <code>sticky</code>
+                <span class="text-gray-600">Scroll then fixed</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">z-index</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>auto</code>
+                <span class="text-gray-600">Browser default</span>
+              </div>
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>1</code>
+                <span class="text-gray-600">Above normal</span>
+              </div>
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>999</code>
+                <span class="text-gray-600">Very high</span>
+              </div>
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>-1</code>
+                <span class="text-gray-600">Below normal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Offset Properties -->
+        <div class="space-y-6">
+          <h3 class="text-lg font-semibold text-gray-800">Offset Properties</h3>
+          
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">top / right / bottom / left</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-sky-50 rounded">
+                <code>top: 10px</code>
+                <span class="text-gray-600">10px from top</span>
+              </div>
+              <div class="flex justify-between p-2 bg-sky-50 rounded">
+                <code>left: 50%</code>
+                <span class="text-gray-600">50% from left</span>
+              </div>
+              <div class="flex justify-between p-2 bg-sky-50 rounded">
+                <code>right: 0</code>
+                <span class="text-gray-600">Align to right</span>
+              </div>
+              <div class="flex justify-between p-2 bg-sky-50 rounded">
+                <code>bottom: -10px</code>
+                <span class="text-gray-600">Move down 10px</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">float</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-red-50 rounded">
+                <code>left</code>
+                <span class="text-gray-600">Float left</span>
+              </div>
+              <div class="flex justify-between p-2 bg-red-50 rounded">
+                <code>right</code>
+                <span class="text-gray-600">Float right</span>
+              </div>
+              <div class="flex justify-between p-2 bg-red-50 rounded">
+                <code>none</code>
+                <span class="text-gray-600">No float</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Positioning Demo -->
+      <div class="mt-6 p-4 bg-gray-50 rounded-lg relative h-40">
+        <h4 class="font-semibold text-gray-800 mb-3">Demo Positioning:</h4>
+        <div class="absolute top-4 right-4 p-2 bg-red-500 text-white rounded">Absolute</div>
+        <div class="relative left-10 p-2 bg-blue-500 text-white rounded w-32">Relative</div>
+        <div class="float-right p-2 bg-green-500 text-white rounded mt-2">Float Right</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Responsive Section -->
+  <section id="responsive" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">9</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">📱 Responsive Design</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Media Queries -->
+        <div class="space-y-6">
+          <h3 class="text-lg font-semibold text-gray-800">Media Queries</h3>
+          
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">@media</h4>
+            <div class="space-y-2 text-sm">
+              <div class="p-2 bg-blue-50 rounded">
+                <code>@media (max-width: 768px)</code>
+                <p class="text-gray-600 text-xs mt-1">Mobile devices</p>
+              </div>
+              <div class="p-2 bg-blue-50 rounded">
+                <code>@media (min-width: 1024px)</code>
+                <p class="text-gray-600 text-xs mt-1">Desktop devices</p>
+              </div>
+              <div class="p-2 bg-blue-50 rounded">
+                <code>@media (orientation: landscape)</code>
+                <p class="text-gray-600 text-xs mt-1">Landscape mode</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">Viewport Units</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>100vw</code>
+                <span class="text-gray-600">100% viewport width</span>
+              </div>
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>100vh</code>
+                <span class="text-gray-600">100% viewport height</span>
+              </div>
+              <div class="flex justify-between p-2 bg-green-50 rounded">
+                <code>50vmin</code>
+                <span class="text-gray-600">50% of smaller dimension</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Responsive Properties -->
+        <div class="space-y-6">
+          <h3 class="text-lg font-semibold text-gray-800">Responsive Properties</h3>
+          
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">Responsive Units</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-sky-50 rounded">
+                <code>rem</code>
+                <span class="text-gray-600">Relative to root font</span>
+              </div>
+              <div class="flex justify-between p-2 bg-sky-50 rounded">
+                <code>em</code>
+                <span class="text-gray-600">Relative to parent font</span>
+              </div>
+              <div class="flex justify-between p-2 bg-sky-50 rounded">
+                <code>%</code>
+                <span class="text-gray-600">Percentage of parent</span>
+              </div>
+              <div class="flex justify-between p-2 bg-sky-50 rounded">
+                <code>ch</code>
+                <span class="text-gray-600">Width of "0" character</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-gray-700">Object Fit</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between p-2 bg-red-50 rounded">
+                <code>contain</code>
+                <span class="text-gray-600">Fit within container</span>
+              </div>
+              <div class="flex justify-between p-2 bg-red-50 rounded">
+                <code>cover</code>
+                <span class="text-gray-600">Cover container</span>
+              </div>
+              <div class="flex justify-between p-2 bg-red-50 rounded">
+                <code>fill</code>
+                <span class="text-gray-600">Stretch to fill</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Responsive Demo -->
+      <div class="mt-6 p-4 bg-gray-50 rounded-lg">
+        <h4 class="font-semibold text-gray-800 mb-3">Demo Responsive:</h4>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="p-4 bg-blue-100 text-center">Mobile: 1 col</div>
+          <div class="p-4 bg-green-100 text-center">Tablet: 2 cols</div>
+          <div class="p-4 bg-sky-100 text-center">Desktop: 3 cols</div>
+        </div>
+        <div class="mt-4 text-sm text-gray-600">
+          <p>Resize browser window to see responsive behavior</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Summary Section -->
+  <div class="bg-gradient-to-r from-sky-500 to-indigo-600 rounded-2xl p-8 text-white text-center mb-12">
+    <h3 class="text-2xl font-bold mb-4">💪 Latihan Praktikum</h3>
+    <p class="text-sky-100 mb-6 text-lg">
+      Buat layout website menggunakan kombinasi Flexbox dan Grid. Implementasikan semua property CSS 
+      yang telah dipelajari untuk membuat design yang responsif dan menarik.
+    </p>
+    <button class="bg-white text-sky-600 px-8 py-3 rounded-xl font-semibold hover:bg-sky-50 transition-colors">
+      📥 Download Cheat Sheet CSS
+    </button>
+  </div>
+
+  <!-- Navigation -->
+  <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mt-12 pt-6 border-t border-gray-200">
+    <a href="/pemrograman-web/satu-pertemuan-3" class="flex items-center px-6 py-3 bg-sky-50 text-sky-700 rounded-xl border border-sky-200 hover:bg-sky-100 transition-colors w-full sm:w-auto justify-center">
+      <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+      </svg>
+      Sebelumnya: Pertemuan 3
+    </a>
+    <a href="/pemrograman-web/satu-pertemuan-5" class="flex items-center px-6 py-3 bg-sky-500 text-white rounded-xl hover:bg-sky-600 transition-colors w-full sm:w-auto justify-center">
+      Selanjutnya: Pertemuan 5
+      <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </a>
+  </div>
+</article>
+
+<style>
+  /* Custom styles untuk code blocks */
+  pre code {
+    font-family: 'Fira Code', 'Courier New', monospace;
+    line-height: 1.5;
+  }
+  
+  /* Style untuk inline code */
+  code:not(pre code) {
+    background-color: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.875em;
+    color: #0c4a6e;
+    border: 1px solid #bae6fd;
+  }
+  
+  /* Smooth scrolling untuk anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Custom selection color */
+  ::selection {
+    background-color: #e9d5ff;
+    color: #0c4a6e;
+  }
+</style>
+
+</PemrogramanWebLayout>
