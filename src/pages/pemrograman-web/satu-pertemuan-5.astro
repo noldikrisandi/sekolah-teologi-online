@@ -1,124 +1,1153 @@
 ---
+// src/pages/pemrograman-web/satu-pertemuan-5.astro
+
 import PemrogramanWebLayout from "../../layouts/PemrogramanWebLayout.astro";
 
-const currentUrl = Astro.url.pathname;
-const invalidPath = currentUrl.replace('/pemrograman-web/', '');
+const pageTitle = "Pertemuan 5: Gambar dan Styling di HTML - Pemrograman Web 1";
+const pageDescription = "Materi lengkap tentang penggunaan gambar di HTML, format gambar yang didukung, teknik styling dengan CSS inline, responsive images, dan best practices untuk performa dan aksesibilitas.";
+const pageUrl = "pemrograman-web/satu-pertemuan-5";
+
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Pemrograman Web", url: "/pemrograman-web" },
+  { name: "Pemrograman Web 1", url: "/pemrograman-web/satu" },
+  { name: "Pertemuan 5", url: "/pemrograman-web/satu-pertemuan-5" }
+];
 ---
 
-<PemrogramanWebLayout
-  title="Materi Sedang Dalam Pengembangan - Pemrograman Web"
-  description="Materi pembelajaran Pemrograman Web ini sedang dalam proses pengembangan dan akan segera hadir."
+<PemrogramanWebLayout 
+  title={pageTitle}
+  description={pageDescription}
+  url={pageUrl}
+  breadcrumbs={breadcrumbs}
 >
-  <section class="items-center justify-center px-4 py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
 
-    <!-- Main Content -->
-    <div class="relative z-10 max-w-2xl mx-auto text-center">
-      <!-- Animated Icon -->
-      <div class="relative mb-8">
-        <div class="w-32 h-32 mx-auto bg-white rounded-2xl shadow-2xl flex items-center justify-center border-2 border-blue-200">
-          <div class="relative">
-            <span class="text-6xl">🚧</span>
-            <div class="absolute -top-2 -right-2">
-              <span class="flex h-4 w-4">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-4 w-4 bg-yellow-500"></span>
-              </span>
-            </div>
-          </div>
-        </div>
+<article class="max-w-none">
+  <!-- Header Section -->
+  <div class="text-center mb-8">
+    <span class="inline-block px-4 py-2 bg-emerald-100 text-emerald-800 rounded-full text-sm font-semibold mb-4">
+      Pertemuan 5 - Gambar & Styling
+    </span>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-6">
+      <div class="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center">
+        <span class="text-white text-2xl">🖼️</span>
       </div>
-
-      <!-- Status Badge -->
-      <div class="inline-flex items-center px-4 py-2 rounded-full bg-yellow-100 border border-yellow-200 mb-6">
-        <span class="w-2 h-2 bg-yellow-500 rounded-full mr-2 animate-pulse"></span>
-        <span class="text-yellow-800 font-medium text-sm">SEDANG DALAM PENGEMBANGAN</span>
-      </div>
-
-      <!-- Main Message -->
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4 leading-tight">
-        Materi Sedang
-        <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-          Disusun
-        </span>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900">
+        Gambar dan CSS Styling di HTML
       </h1>
+    </div>
+    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+      Menguasai teknik penggunaan gambar di HTML, berbagai format gambar yang optimal, 
+      styling dengan CSS inline, dan membuat gambar responsif untuk semua perangkat.
+    </p>
+  </div>
 
-      <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-        Kami sedang bekerja keras untuk menyiapkan materi 
-        <span class="font-semibold text-gray-700">"{invalidPath.replace(/-/g, ' ')}"</span> 
-        yang berkualitas untuk Anda.
+  <!-- Video Embed -->
+  <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl mb-8">
+    <div class="aspect-w-16 aspect-h-9">
+      <iframe
+        src="https://www.youtube.com/embed/CfJhUylhXiY?si=mG1G7PkpVgXx213H"
+        title="Gambar dan Styling di HTML"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        class="w-full h-64 md:h-96"></iframe>
+    </div>
+    <div class="p-4 bg-gray-800">
+      <div class="flex items-center text-gray-300">
+        <span class="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
+        <span class="text-sm">Durasi: 7 menit</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Table of Contents -->
+  <div class="bg-gradient-to-r from-emerald-50 to-green-50 rounded-2xl p-6 mb-8 border border-emerald-200 overflow-hidden">
+    <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+      <span class="w-2 h-2 bg-emerald-500 rounded-full mr-3"></span>
+      📚 Daftar Isi Materi
+    </h2>
+    <div class="grid md:grid-cols-2 gap-2 text-sm overflow-hidden">
+      <a href="#pengenalan-gambar" class="flex items-center text-gray-700 hover:text-emerald-600 transition-colors">
+        <span class="mr-2">→</span> Pengenalan Gambar HTML
+      </a>
+      <a href="#format-gambar" class="flex items-center text-gray-700 hover:text-emerald-600 transition-colors">
+        <span class="mr-2">→</span> Format Gambar Web
+      </a>
+      <a href="#atribut-gambar" class="flex items-center text-gray-700 hover:text-emerald-600 transition-colors">
+        <span class="mr-2">→</span> Atribut Gambar Lengkap
+      </a>
+      <a href="#styling-inline" class="flex items-center text-gray-700 hover:text-emerald-600 transition-colors">
+        <span class="mr-2">→</span> Styling CSS Inline
+      </a>
+      <a href="#gambar-responsif" class="flex items-center text-gray-700 hover:text-emerald-600 transition-colors">
+        <span class="mr-2">→</span> Gambar Responsif
+      </a>
+      <a href="#background-image" class="flex items-center text-gray-700 hover:text-emerald-600 transition-colors">
+        <span class="mr-2">→</span> Background Image
+      </a>
+      <a href="#best-practices" class="flex items-center text-gray-700 hover:text-emerald-600 transition-colors">
+        <span class="mr-2">→</span> Best Practices
+      </a>
+      <a href="#advanced-techniques" class="flex items-center text-gray-700 hover:text-emerald-600 transition-colors">
+        <span class="mr-2">→</span> Advanced Techniques
+      </a>
+    </div>
+  </div>
+
+  <!-- Pengenalan Gambar HTML -->
+  <section id="pengenalan-gambar" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">1</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">🖼️ Pengenalan Gambar di HTML</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <p class="text-lg mb-6">
+        <strong>Gambar</strong> adalah elemen visual penting dalam website yang meningkatkan engagement, 
+        menjelaskan konten, dan mempercantik tampilan. Tag <code>&lt;img&gt;</code> digunakan untuk menampilkan gambar di HTML.
       </p>
 
-      <!-- Progress Info -->
-      <div class="bg-white rounded-2xl shadow-lg p-6 mb-8 border border-gray-200">
-        <div class="flex items-center justify-between mb-3">
-          <span class="text-sm font-medium text-gray-700">Status Pengembangan</span>
-          <span class="text-sm font-bold text-blue-600">75%</span>
+      <div class="grid md:grid-cols-3 gap-6 mb-6">
+        <div class="text-center p-6 bg-emerald-50 rounded-xl border-2 border-emerald-200 hover:border-emerald-300 transition-colors">
+          <div class="text-4xl mb-3">📷</div>
+          <h3 class="font-bold text-gray-900 mb-2">Content Images</h3>
+          <p class="text-sm text-gray-600">
+            Gambar yang merupakan bagian dari konten utama
+          </p>
         </div>
-        <div class="w-full bg-gray-200 rounded-full h-2">
-          <div class="bg-gradient-to-r from-blue-500 to-purple-600 h-2 rounded-full w-3/4 animate-pulse"></div>
+        <div class="text-center p-6 bg-emerald-50 rounded-xl border-2 border-emerald-200 hover:border-emerald-300 transition-colors">
+          <div class="text-4xl mb-3">🎨</div>
+          <h3 class="font-bold text-gray-900 mb-2">Decorative Images</h3>
+          <p class="text-sm text-gray-600">
+            Gambar untuk keperluan estetika dan dekorasi
+          </p>
         </div>
-        <p class="text-sm text-gray-500 mt-3">
-          Estimasi selesai: <span class="font-medium">2 minggu lagi</span>
-        </p>
-      </div>
-
-      <!-- Features Coming Soon -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-        <div class="bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-blue-100">
-          <span class="text-2xl mb-2 block">📚</span>
-          <h3 class="font-semibold text-gray-800 mb-1">Materi Lengkap</h3>
-          <p class="text-sm text-gray-600">Dari dasar hingga advanced</p>
-        </div>
-        <div class="bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-green-100">
-          <span class="text-2xl mb-2 block">💻</span>
-          <h3 class="font-semibold text-gray-800 mb-1">Praktikum</h3>
-          <p class="text-sm text-gray-600">Contoh code & project</p>
-        </div>
-        <div class="bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-purple-100">
-          <span class="text-2xl mb-2 block">🎯</span>
-          <h3 class="font-semibold text-gray-800 mb-1">Quiz Interaktif</h3>
-          <p class="text-sm text-gray-600">Test pemahaman Anda</p>
+        <div class="text-center p-6 bg-emerald-50 rounded-xl border-2 border-emerald-200 hover:border-emerald-300 transition-colors">
+          <div class="text-4xl mb-3">⚡</div>
+          <h3 class="font-bold text-gray-900 mb-2">Functional Images</h3>
+          <p class="text-sm text-gray-600">
+            Gambar dengan fungsi khusus seperti icons, buttons
+          </p>
         </div>
       </div>
 
-      <!-- Action Buttons -->
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <a
-          href="/pemrograman-web"
-          class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-        >
-          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
-          </svg>
-          Kembali ke Materi Lainnya
-        </a>
-        
-        <button
-          onclick="alert('Fitur notifikasi akan tersedia soon!')"
-          class="inline-flex items-center px-6 py-4 bg-white text-gray-700 font-medium rounded-xl border-2 border-gray-300 hover:border-blue-500 hover:text-blue-600 transition-all duration-300 shadow-md hover:shadow-lg"
-        >
-          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
-          </svg>
-          Notifikasi Saat Rilis
-        </button>
+      <!-- Basic Image Example -->
+      <div class="bg-gray-800 rounded-xl p-6 mb-6">
+        <h4 class="font-semibold text-gray-100 mb-4 flex items-center">
+          <span class="text-emerald-400 mr-2">📋</span>
+          Struktur Dasar Gambar HTML:
+        </h4>
+        <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto text-sm"><code>&lt;img src="path/to/image.jpg" alt="deskripsi gambar"&gt;</code></pre>
       </div>
 
-      <!-- Countdown Timer (Optional) -->
-      <div class="mt-8 text-center">
-        <p class="text-sm text-gray-500">
-          ⏰ Tetap pantau untuk update terbaru!
+      <div class="bg-emerald-50 border-l-4 border-emerald-500 p-4 rounded-r-lg">
+        <p class="text-emerald-800 font-semibold">💡 Fakta Penting:</p>
+        <p class="text-emerald-700 text-sm">
+          Tag <code>&lt;img&gt;</code> adalah self-closing tag (tidak memerlukan tag penutup). 
+          Gambar yang tidak ditemukan akan menampilkan teks alternatif dari atribut alt.
         </p>
       </div>
     </div>
   </section>
 
-  <style>
-    .animation-delay-2000 {
-      animation-delay: 2s;
-    }
-    .animation-delay-4000 {
-      animation-delay: 4s;
-    }
-  </style>
+  <!-- Format Gambar Web -->
+  <section id="format-gambar" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">2</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">📊 Format Gambar untuk Web</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <h3 class="text-xl font-semibold text-gray-800 mb-4">Pemilihan Format Gambar yang Tepat</h3>
+      
+      <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <!-- Common Formats -->
+        <div class="border-2 border-emerald-200 rounded-xl p-6 bg-gradient-to-br from-emerald-50 to-white">
+          <h4 class="text-lg font-bold text-emerald-900 mb-4 text-center">🎯 Format Umum</h4>
+          <div class="space-y-4">
+            <div class="p-4 bg-white rounded-lg border border-emerald-200">
+              <h5 class="font-semibold text-emerald-800">JPEG/JPG</h5>
+              <p class="text-gray-700 text-sm">Foto dengan banyak warna, kompresi lossy</p>
+              <div class="flex justify-between items-center mt-2 text-xs">
+                <span class="text-emerald-600">✅ Foto, gradient</span>
+                <span class="text-red-600">❌ Logo, teks</span>
+              </div>
+            </div>
+            <div class="p-4 bg-white rounded-lg border border-emerald-200">
+              <h5 class="font-semibold text-emerald-800">PNG</h5>
+              <p class="text-gray-700 text-sm">Gambar dengan transparansi, kompresi lossless</p>
+              <div class="flex justify-between items-center mt-2 text-xs">
+                <span class="text-emerald-600">✅ Logo, screenshot</span>
+                <span class="text-red-600">❌ Foto besar</span>
+              </div>
+            </div>
+            <div class="p-4 bg-white rounded-lg border border-emerald-200">
+              <h5 class="font-semibold text-emerald-800">GIF</h5>
+              <p class="text-gray-700 text-sm">Animasi sederhana, warna terbatas (256)</p>
+              <div class="flex justify-between items-center mt-2 text-xs">
+                <span class="text-emerald-600">✅ Animasi, icon</span>
+                <span class="text-red-600">❌ Foto, gradient</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modern Formats -->
+        <div class="border-2 border-blue-200 rounded-xl p-6 bg-gradient-to-br from-blue-50 to-white">
+          <h4 class="text-lg font-bold text-blue-900 mb-4 text-center">🚀 Format Modern</h4>
+          <div class="space-y-4">
+            <div class="p-4 bg-white rounded-lg border border-blue-200">
+              <h5 class="font-semibold text-blue-800">WebP</h5>
+              <p class="text-gray-700 text-sm">Format Google, ukuran kecil, kualitas tinggi</p>
+              <div class="flex justify-between items-center mt-2 text-xs">
+                <span class="text-blue-600">✅ Semua jenis gambar</span>
+                <span class="text-red-600">❌ Browser lama</span>
+              </div>
+            </div>
+            <div class="p-4 bg-white rounded-lg border border-blue-200">
+              <h5 class="font-semibold text-blue-800">SVG</h5>
+              <p class="text-gray-700 text-sm">Vector graphics, scalable tanpa quality loss</p>
+              <div class="flex justify-between items-center mt-2 text-xs">
+                <span class="text-blue-600">✅ Logo, icon, ilustrasi</span>
+                <span class="text-red-600">❌ Foto kompleks</span>
+              </div>
+            </div>
+            <div class="p-4 bg-white rounded-lg border border-blue-200">
+              <h5 class="font-semibold text-blue-800">AVIF</h5>
+              <p class="text-gray-700 text-sm">Format terbaru, kompresi sangat efisien</p>
+              <div class="flex justify-between items-center mt-2 text-xs">
+                <span class="text-blue-600">✅ High performance</span>
+                <span class="text-red-600">❌ Support terbatas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Format Comparison -->
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-6">
+        <h4 class="font-semibold text-amber-800 mb-4 flex items-center">
+          <span class="text-amber-600 mr-2">📈</span>
+          Perbandingan Format Gambar:
+        </h4>
+        <div class="overflow-x-auto">
+          <table class="w-full bg-white rounded-lg overflow-hidden text-sm">
+            <thead class="bg-amber-100">
+              <tr>
+                <th class="p-3 text-left">Format</th>
+                <th class="p-3 text-center">Transparansi</th>
+                <th class="p-3 text-center">Animasi</th>
+                <th class="p-3 text-center">Ukuran</th>
+                <th class="p-3 text-center">Browser Support</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-amber-200">
+                <td class="p-3 font-semibold">JPEG</td>
+                <td class="p-3 text-center">❌</td>
+                <td class="p-3 text-center">❌</td>
+                <td class="p-3 text-center">Kecil</td>
+                <td class="p-3 text-center">✅ Semua</td>
+              </tr>
+              <tr class="border-b border-amber-200">
+                <td class="p-3 font-semibold">PNG</td>
+                <td class="p-3 text-center">✅</td>
+                <td class="p-3 text-center">❌</td>
+                <td class="p-3 text-center">Sedang-Besar</td>
+                <td class="p-3 text-center">✅ Semua</td>
+              </tr>
+              <tr class="border-b border-amber-200">
+                <td class="p-3 font-semibold">GIF</td>
+                <td class="p-3 text-center">✅</td>
+                <td class="p-3 text-center">✅</td>
+                <td class="p-3 text-center">Besar</td>
+                <td class="p-3 text-center">✅ Semua</td>
+              </tr>
+              <tr class="border-b border-amber-200">
+                <td class="p-3 font-semibold">WebP</td>
+                <td class="p-3 text-center">✅</td>
+                <td class="p-3 text-center">✅</td>
+                <td class="p-3 text-center">Sangat Kecil</td>
+                <td class="p-3 text-center">✅ Modern</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-semibold">SVG</td>
+                <td class="p-3 text-center">✅</td>
+                <td class="p-3 text-center">✅</td>
+                <td class="p-3 text-center">Tergantung kompleksitas</td>
+                <td class="p-3 text-center">✅ Semua</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Atribut Gambar Lengkap -->
+  <section id="atribut-gambar" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">3</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">⚙️ Atribut Gambar Lengkap</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <!-- Required Attributes -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Atribut Wajib</h3>
+          <div class="space-y-4">
+            <div class="p-4 bg-emerald-50 rounded-lg border border-emerald-200">
+              <code class="text-emerald-700 font-bold">src</code>
+              <p class="text-gray-700 text-sm mt-1">Source/path menuju file gambar</p>
+              <pre class="bg-gray-800 text-emerald-300 p-2 rounded mt-2 text-xs"><code>src="images/photo.jpg"
+src="../assets/logo.png"
+src="https://example.com/image.jpg"</code></pre>
+            </div>
+            <div class="p-4 bg-emerald-50 rounded-lg border border-emerald-200">
+              <code class="text-emerald-700 font-bold">alt</code>
+              <p class="text-gray-700 text-sm mt-1">Teks alternatif untuk aksesibilitas</p>
+              <pre class="bg-gray-800 text-emerald-300 p-2 rounded mt-2 text-xs"><code>alt="Logo perusahaan ABC"
+alt="Gambar landscape gunung"
+alt=""  // untuk decorative images</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- Optional Attributes -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Atribut Opsional</h3>
+          <div class="space-y-4">
+            <div class="p-4 bg-blue-50 rounded-lg border border-blue-200">
+              <code class="text-blue-700 font-bold">width & height</code>
+              <p class="text-gray-700 text-sm mt-1">Dimensi gambar (pixels)</p>
+              <pre class="bg-gray-800 text-blue-300 p-2 rounded mt-2 text-xs"><code>width="800"
+height="600"</code></pre>
+            </div>
+            <div class="p-4 bg-purple-50 rounded-lg border border-purple-200">
+              <code class="text-purple-700 font-bold">title</code>
+              <p class="text-gray-700 text-sm mt-1">Tooltip saat hover</p>
+              <pre class="bg-gray-800 text-purple-300 p-2 rounded mt-2 text-xs"><code>title="Foto kantor utama"</code></pre>
+            </div>
+            <div class="p-4 bg-amber-50 rounded-lg border border-amber-200">
+              <code class="text-amber-700 font-bold">loading</code>
+              <p class="text-gray-700 text-sm mt-1">Kontrol lazy loading</p>
+              <pre class="bg-gray-800 text-amber-300 p-2 rounded mt-2 text-xs"><code>loading="lazy"
+loading="eager"</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Complete Example -->
+      <div class="bg-gray-800 rounded-xl p-6">
+        <h4 class="font-semibold text-gray-100 mb-4 flex items-center">
+          <span class="text-emerald-400 mr-2">🔧</span>
+          Contoh Lengkap Penggunaan Atribut:
+        </h4>
+        <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto text-sm"><code>&lt;img 
+  src="images/company-team.jpg" 
+  alt="Tim perusahaan ABC sedang rapat di ruang konferensi"
+  width="1200"
+  height="800"
+  title="Foto tim management 2024"
+  loading="lazy"
+  class="team-photo"
+&gt;</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Styling CSS Inline -->
+  <section id="styling-inline" class="mb-12 overflow-hidden">
+    <div class="flex items-center mb-6 overflow-hidden">
+      <div class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center mr-3 overflow-hidden">
+        <span class="text-white font-bold text-sm">4</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">🎨 Styling CSS Inline untuk Gambar</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm overflow-hidden">
+      <p class="text-gray-700 mb-6">
+        <strong>CSS Inline</strong> memungkinkan styling langsung pada elemen gambar menggunakan atribut <code>style</code>. 
+        Cocok untuk styling cepat dan spesifik.
+      </p>
+
+      <!-- Basic Styling Examples -->
+      <div class="grid md:grid-cols-2 gap-8 mb-8 overflow-hidden">
+        <!-- Size & Border -->
+        <div class="border-2 border-emerald-200 rounded-xl p-6 bg-gradient-to-br from-emerald-50 to-white overflow-hidden">
+          <h4 class="text-lg font-bold text-emerald-900 mb-4">📏 Size & Border</h4>
+          <div class="space-y-4 overflow-hidden">
+            <div class="bg-gray-800 rounded-lg p-4 overflow-hidden">
+              <pre class="text-emerald-300 text-sm overflow-auto"><code>&lt;img src="photo.jpg" alt="Contoh" 
+  style="width: 300px; height: 200px;"&gt;</code></pre>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-4 overflow-hidden">
+              <pre class="text-emerald-300 text-sm overflow-auto"><code>&lt;img src="photo.jpg" alt="Contoh"
+  style="width: 100%; max-width: 600px;"&gt;</code></pre>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-4 overflow-hidden">
+              <pre class="text-emerald-300 text-sm overflow-auto"><code>&lt;img src="photo.jpg" alt="Contoh"
+  style="border: 2px solid #e5e7eb;
+         border-radius: 8px;"&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- Effects & Layout -->
+        <div class="border-2 border-blue-200 rounded-xl p-6 bg-gradient-to-br from-blue-50 to-white overflow-hidden">
+          <h4 class="text-lg font-bold text-blue-900 mb-4">✨ Effects & Layout</h4>
+          <div class="space-y-4 overflow-hidden">
+            <div class="bg-gray-800 rounded-lg p-4 overflow-hidden">
+              <pre class="text-blue-300 text-sm overflow-auto"><code>&lt;img src="photo.jpg" alt="Contoh"
+  style="border-radius: 50%; 
+         object-fit: cover;"&gt;</code></pre>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-4 overflow-hidden">
+              <pre class="text-blue-300 text-sm overflow-auto"><code>&lt;img src="photo.jpg" alt="Contoh"
+  style="box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+         filter: brightness(1.1);"&gt;</code></pre>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-4 overflow-hidden">
+              <pre class="text-blue-300 text-sm overflow-auto"><code>&lt;img src="photo.jpg" alt="Contoh"
+  style="opacity: 0.9;
+         transition: all 0.3s ease;"&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Styling Demo -->
+      <h3 class="text-xl font-semibold text-gray-800 mb-4">Demo Styling Langsung:</h3>
+      <div class="border-2 border-emerald-200 rounded-xl p-6 bg-gradient-to-br from-emerald-50 to-white">
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- Rounded Image -->
+          <div class="text-center">
+            <h4 class="font-semibold text-gray-700 mb-3">Rounded Corners</h4>
+            <img 
+              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face" 
+              alt="Portrait photo"
+              style="width: 150px; height: 150px; border-radius: 16px; object-fit: cover; border: 3px solid #10b981;"
+              class="mx-auto"
+            >
+            <pre class="bg-gray-800 text-emerald-300 p-2 rounded mt-3 text-xs"><code>style="width: 150px; height: 150px; 
+border-radius: 16px; object-fit: cover;
+border: 3px solid #10b981;"</code></pre>
+          </div>
+
+          <!-- Circular Image -->
+          <div class="text-center">
+            <h4 class="font-semibold text-gray-700 mb-3">Circular Avatar</h4>
+            <img 
+              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&h=200&fit=crop&crop=face" 
+              alt="User avatar"
+              style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; box-shadow: 0 8px 16px rgba(0,0,0,0.2);"
+              class="mx-auto"
+            >
+            <pre class="bg-gray-800 text-emerald-300 p-2 rounded mt-3 text-xs"><code>style="width: 150px; height: 150px; 
+border-radius: 50%; object-fit: cover;
+box-shadow: 0 8px 16px rgba(0,0,0,0.2);"</code></pre>
+          </div>
+        </div>
+
+        <!-- Advanced Effects -->
+        <div class="grid md:grid-cols-3 gap-4 mt-6">
+          <div class="text-center">
+            <img 
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop&crop=face" 
+              alt="Effect 1"
+              style="width: 100px; height: 100px; border-radius: 12px; filter: grayscale(100%); border: 2px dashed #6b7280;"
+              class="mx-auto"
+            >
+            <p class="text-xs mt-2 text-gray-600">Grayscale + Dashed Border</p>
+          </div>
+          <div class="text-center">
+            <img 
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop&crop=face" 
+              alt="Effect 2"
+              style="width: 100px; height: 100px; border-radius: 8px; opacity: 0.8; transform: rotate(5deg); box-shadow: 4px 4px 0px #f59e0b;"
+              class="mx-auto"
+            >
+            <p class="text-xs mt-2 text-gray-600">Rotate + Shadow</p>
+          </div>
+          <div class="text-center">
+            <img 
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop&crop=face" 
+              alt="Effect 3"
+              style="width: 100px; height: 100px; border-radius: 20px 0 20px 0; border: 3px solid #8b5cf6; padding: 4px; background: white;"
+              class="mx-auto"
+            >
+            <p class="text-xs mt-2 text-gray-600">Custom Border Radius</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Common CSS Properties -->
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-6 mt-6">
+        <h4 class="font-semibold text-amber-800 mb-4 flex items-center">
+          <span class="text-amber-600 mr-2">🎯</span>
+          Properti CSS Umum untuk Gambar:
+        </h4>
+        <div class="grid md:grid-cols-3 gap-4 text-sm">
+          <div>
+            <strong class="text-amber-700">Layout & Size:</strong>
+            <ul class="text-amber-600 mt-1 space-y-1">
+              <li>width, height</li>
+              <li>max-width, max-height</li>
+              <li>object-fit</li>
+              <li>object-position</li>
+            </ul>
+          </div>
+          <div>
+            <strong class="text-amber-700">Border & Shape:</strong>
+            <ul class="text-amber-600 mt-1 space-y-1">
+              <li>border</li>
+              <li>border-radius</li>
+              <li>box-shadow</li>
+              <li>outline</li>
+            </ul>
+          </div>
+          <div>
+            <strong class="text-amber-700">Effects & Filters:</strong>
+            <ul class="text-amber-600 mt-1 space-y-1">
+              <li>opacity</li>
+              <li>filter</li>
+              <li>transform</li>
+              <li>transition</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gambar Responsif -->
+  <section id="gambar-responsif" class="mb-12 overflow-hidden">
+    <div class="flex items-center mb-6 overflow-hidden">
+      <div class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center mr-3 overflow-hidden">
+        <span class="text-white font-bold text-sm">5</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">📱 Gambar Responsif</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm overflow-hidden">
+      <p class="text-gray-700 mb-6">
+        <strong>Gambar responsif</strong> menyesuaikan ukuran dan kualitas berdasarkan perangkat pengguna. 
+        Essential untuk performance dan user experience di semua device.
+      </p>
+
+      <!-- Basic Responsive Techniques -->
+      <div class="grid md:grid-cols-2 gap-8 mb-8 overflow-hidden">
+        <!-- Fluid Images -->
+        <div class="border-2 border-emerald-200 rounded-xl p-6 bg-gradient-to-br from-emerald-50 to-white overflow-hidden">
+          <h4 class="text-lg font-bold text-emerald-900 mb-4">💧 Fluid Images</h4>
+          <p class="text-gray-700 mb-4 text-sm">
+            Gambar mengikuti lebar container parent-nya
+          </p>
+          <div class="bg-gray-800 rounded-lg p-4 overflow-hidden">
+            <pre class="text-emerald-300 text-sm overflow-auto"><code>&lt;img src="photo.jpg" alt="Responsif"
+  style="width: 100%; height: auto;"&gt;</code></pre>
+          </div>
+          <div class="mt-4 p-4 bg-white rounded-lg border border-emerald-200 overflow-hidden">
+            <p class="text-emerald-700 text-sm font-semibold">Hasil:</p>
+            <div class="w-full bg-gray-100 rounded p-2 mt-2">
+              <div class="bg-emerald-200 rounded h-4"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Max Width Technique -->
+        <div class="border-2 border-blue-200 rounded-xl p-6 bg-gradient-to-br from-blue-50 to-white overflow-hidden">
+          <h4 class="text-lg font-bold text-blue-900 mb-4">📏 Max Width Technique</h4>
+          <p class="text-gray-700 mb-4 text-sm">
+            Gambar tidak melebihi ukuran aslinya, tapi bisa mengecil
+          </p>
+          <div class="bg-gray-800 rounded-lg p-4 overflow-hidden">
+            <pre class="text-blue-300 text-sm overflow-auto"><code>&lt;img src="photo.jpg" alt="Responsif"
+  style="max-width: 100%; height: auto;"&gt;</code></pre>
+          </div>
+          <div class="mt-4 p-4 bg-white rounded-lg border border-blue-200 overflow-hidden">
+            <p class="text-blue-700 text-sm font-semibold">Hasil:</p>
+            <div class="w-full bg-gray-100 rounded p-2 mt-2 overflow-hidden">
+              <div class="bg-blue-200 rounded h-4" style="width: 80%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Advanced Responsive -->
+      <div class="bg-purple-50 border border-purple-200 rounded-xl p-6 mb-6">
+        <h4 class="font-semibold text-purple-800 mb-4">🚀 Advanced Responsive Techniques</h4>
+        
+        <!-- srcset & sizes -->
+        <div class="mb-6">
+          <h5 class="font-semibold text-purple-700 mb-3">srcset & sizes</h5>
+          <p class="text-purple-600 text-sm mb-3">
+            Menyediakan multiple resolution untuk different screen sizes
+          </p>
+          <div class="bg-gray-800 rounded-lg p-4">
+            <pre class="text-purple-300 text-sm overflow-auto"><code>&lt;img
+  src="image-800.jpg"
+  srcset="image-400.jpg 400w,
+          image-800.jpg 800w,
+          image-1200.jpg 1200w"
+  sizes="(max-width: 600px) 400px,
+         (max-width: 1200px) 800px,
+         1200px"
+  alt="Responsive image"
+  style="width: 100%; height: auto;"&gt;</code></pre>
+          </div>
+        </div>
+
+        <!-- Picture Element -->
+        <div class="overflow-hidden">
+          <h5 class="font-semibold text-purple-700 mb-3">Picture Element</h5>
+          <p class="text-purple-600 text-sm mb-3">
+            Different images for different conditions (art direction)
+          </p>
+          <div class="bg-gray-800 rounded-lg p-4 overflow-hidden">
+            <pre class="text-purple-300 text-sm overflow-auto"><code>&lt;picture&gt;
+  &lt;source media="(min-width: 1200px)" 
+          srcset="large.jpg"&gt;
+  &lt;source media="(min-width: 768px)" 
+          srcset="medium.jpg"&gt;
+  &lt;img src="small.jpg" alt="Responsive"
+       style="width: 100%; height: auto;"&gt;
+&lt;/picture&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Responsive Demo -->
+      <h3 class="text-xl font-semibold text-gray-800 mb-4">Demo Gambar Responsif:</h3>
+      <div class="border-2 border-emerald-200 rounded-xl p-6 bg-gradient-to-br from-emerald-50 to-white">
+        <div class="space-y-6">
+          <!-- Fluid Image Demo -->
+          <div class=" overflow-hidden">
+            <h4 class="font-semibold text-gray-700 mb-3">Fluid Image (width: 100%)</h4>
+            <div class="border-2 border-dashed border-gray-300 rounded-lg p-4 bg-white overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1682687221363-72518513620e?w=800&h=400&fit=crop" 
+                alt="Landscape demo"
+                style="width: 100%; height: auto; border-radius: 8px;"
+              >
+            </div>
+            <pre class="bg-gray-800 text-emerald-300 p-2 rounded mt-2 text-xs overflow-auto"><code>style="width: 100%; height: auto; border-radius: 8px;"</code></pre>
+          </div>
+
+          <!-- Constrained Image Demo -->
+          <div>
+            <h4 class="font-semibold text-gray-700 mb-3">Constrained Image (max-width: 100%)</h4>
+            <div class="border-2 border-dashed border-gray-300 rounded-lg p-4 bg-white text-center">
+              <img 
+                src="https://images.unsplash.com/photo-1682687221363-72518513620e?w=400&h=300&fit=crop" 
+                alt="Constrained demo"
+                style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
+              >
+            </div>
+            <pre class="bg-gray-800 text-emerald-300 p-2 rounded mt-2 text-xs overflow-auto"><code>style="max-width: 100%; height: auto; border-radius: 8px;"</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Background Image -->
+  <section id="background-image" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">6</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">🎨 Background Image dengan Inline CSS</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm overflow-hidden">
+      <p class="text-gray-700 mb-6">
+        <strong>Background image</strong> menggunakan CSS inline pada elemen div atau section 
+        untuk membuat hero sections, banners, atau decorative backgrounds.
+      </p>
+
+      <!-- Basic Background Examples -->
+      <div class="grid md:grid-cols-2 gap-8 mb-8 overflow-hidden">
+        <!-- Simple Background -->
+        <div class="border-2 border-emerald-200 rounded-xl p-6 bg-gradient-to-br from-emerald-50 to-white overflow-hidden">
+          <h4 class="text-lg font-bold text-emerald-900 mb-4">🖼️ Simple Background</h4>
+          <div class="bg-gray-800 rounded-lg p-4 mb-4 overflow-hidden">
+            <pre class="text-emerald-300 text-sm overflow-auto"><code>&lt;div style="
+  background-image: url('hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+"&gt;&lt;/div&gt;</code></pre>
+          </div>
+          <div class="h-32 rounded-lg bg-gradient-to-r from-blue-400 to-purple-500 flex items-center justify-center text-white font-semibold">
+            Background Demo
+          </div>
+        </div>
+
+        <!-- Advanced Background -->
+        <div class="border-2 border-blue-200 rounded-xl p-6 bg-gradient-to-br from-blue-50 to-white">
+          <h4 class="text-lg font-bold text-blue-900 mb-4">🎭 Advanced Background</h4>
+          <div class="bg-gray-800 rounded-lg p-4 mb-4">
+            <pre class="text-blue-300 text-sm overflow-auto"><code>&lt;div style="
+  background: linear-gradient(
+      rgba(0,0,0,0.5), 
+      rgba(0,0,0,0.5)
+    ), url('banner.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+"&gt;
+  &lt;h2&gt;Hero Section&lt;/h2&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+          <div class="h-32 rounded-lg bg-gradient-to-r from-gray-700 to-gray-900 flex items-center justify-center text-white font-semibold">
+            Gradient Overlay
+          </div>
+        </div>
+      </div>
+
+      <!-- Background Properties Guide -->
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-6">
+        <h4 class="font-semibold text-amber-800 mb-4 flex items-center">
+          <span class="text-amber-600 mr-2">📚</span>
+          Properti Background CSS:
+        </h4>
+        <div class="grid md:grid-cols-2 gap-6 text-sm">
+          <div>
+            <strong class="text-amber-700">Basic Properties:</strong>
+            <ul class="text-amber-600 mt-1 space-y-1">
+              <li><code>background-image: url()</code></li>
+              <li><code>background-size: cover/contain</code></li>
+              <li><code>background-position: center</code></li>
+              <li><code>background-repeat: no-repeat</code></li>
+            </ul>
+          </div>
+          <div>
+            <strong class="text-amber-700">Advanced Properties:</strong>
+            <ul class="text-amber-600 mt-1 space-y-1">
+              <li><code>background-attachment: fixed</code></li>
+              <li><code>background-blend-mode</code></li>
+              <li><code>background: linear-gradient()</code></li>
+              <li><code>backdrop-filter: blur()</code></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Background Demo -->
+      <h3 class="text-xl font-semibold text-gray-800 mb-4 mt-8">Demo Background Image:</h3>
+      <div class="border-2 border-emerald-200 rounded-xl overflow-hidden">
+        <!-- Hero Section Demo -->
+        <div 
+          style="
+            background: linear-gradient(135deg, rgba(59,130,246,0.8), rgba(147,51,234,0.8)), 
+                       url('https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=800&h=400&fit=crop');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 20px;
+            text-align: center;
+            color: white;
+          "
+          class="relative"
+        >
+          <h3 class="text-3xl font-bold mb-4">Hero Section dengan Background</h3>
+          <p class="text-xl opacity-90 mb-6">Menggunakan gradient overlay dan background image</p>
+          <button 
+            style="
+              background: white;
+              color: #6366f1;
+              padding: 12px 32px;
+              border-radius: 8px;
+              border: none;
+              font-weight: bold;
+              cursor: pointer;
+            "
+          >
+            Call to Action
+          </button>
+        </div>
+        
+        <div class="p-6 bg-gray-800">
+          <pre class="text-emerald-300 text-sm overflow-auto"><code>&lt;div style="
+  background: linear-gradient(135deg, 
+      rgba(59,130,246,0.8), 
+      rgba(147,51,234,0.8)
+    ), url('hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+"&gt;
+  &lt;h3&gt;Hero Section dengan Background&lt;/h3&gt;
+  &lt;button style="
+    background: white;
+    color: #6366f1;
+    padding: 12px 32px;
+    border-radius: 8px;
+  "&gt;Call to Action&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Practices -->
+  <section id="best-practices" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">7</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">🚀 Best Practices Gambar & Styling</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 mb-8">
+      <!-- Performance Best Practices -->
+      <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+        <h3 class="text-xl font-bold text-gray-900 mb-4">⚡ Performance & Optimization</h3>
+        <div class="space-y-4">
+          <div class="p-4 bg-green-50 rounded-xl border border-green-200">
+            <p class="text-green-800 font-semibold">📐 Optimize Image Size</p>
+            <p class="text-green-700 text-sm mt-1">Gunakan ukuran yang tepat, kompres gambar sebelum upload</p>
+            <pre class="bg-gray-800 text-green-300 p-2 rounded mt-2 text-xs"><code>// Before upload
+width: 1200px (max for web)
+quality: 70-80% for JPEG</code></pre>
+          </div>
+          <div class="p-4 bg-blue-50 rounded-xl border border-blue-200">
+            <p class="text-blue-800 font-semibold">🔄 Modern Formats</p>
+            <p class="text-blue-700 text-sm mt-1">Prioritaskan WebP, fallback untuk browser lama</p>
+            <pre class="bg-gray-800 text-blue-300 p-2 rounded mt-2 text-xs"><code>&lt;picture&gt;
+  &lt;source srcset="image.webp"&gt;
+  &lt;img src="image.jpg" alt=""&gt;
+&lt;/picture&gt;</code></pre>
+          </div>
+          <div class="p-4 bg-amber-50 rounded-xl border border-amber-200">
+            <p class="text-amber-800 font-semibold">😴 Lazy Loading</p>
+            <p class="text-amber-700 text-sm mt-1">Gunakan loading="lazy" untuk gambar di bawah fold</p>
+            <pre class="bg-gray-800 text-amber-300 p-2 rounded mt-2 text-xs"><code>loading="lazy"</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accessibility & SEO Best Practices -->
+      <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+        <h3 class="text-xl font-bold text-gray-900 mb-4">♿ Accessibility & SEO</h3>
+        <div class="space-y-4">
+          <div class="p-4 bg-purple-50 rounded-xl border border-purple-200">
+            <p class="text-purple-800 font-semibold">📝 Descriptive Alt Text</p>
+            <p class="text-purple-700 text-sm mt-1">Alt text yang jelas dan deskriptif</p>
+            <div class="mt-2 text-xs">
+              <span class="text-red-600">❌ alt="image1"</span><br>
+              <span class="text-green-600">✅ alt="Team meeting in conference room"</span>
+            </div>
+          </div>
+          <div class="p-4 bg-sky-50 rounded-xl border border-sky-200">
+            <p class="text-sky-800 font-semibold">🎨 Color Contrast</p>
+            <p class="text-sky-700 text-sm mt-1">Pastikan teks di atas gambar mudah dibaca</p>
+            <pre class="bg-gray-800 text-sky-300 p-2 rounded mt-2 text-xs"><code>background: rgba(0,0,0,0.6);
+color: white;
+text-shadow: 1px 1px 2px black;</code></pre>
+          </div>
+          <div class="p-4 bg-emerald-50 rounded-xl border border-emerald-200">
+            <p class="text-emerald-800 font-semibold">📏 Proper Dimensions</p>
+            <p class="text-emerald-700 text-sm mt-1">Selalu set width dan height untuk prevent layout shift</p>
+            <pre class="bg-gray-800 text-emerald-300 p-2 rounded mt-2 text-xs"><code>width="800" height="600"
+style="width: 100%; height: auto;"</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kompetensi -->
+    <div class="bg-emerald-50 rounded-2xl p-6 border-2 border-emerald-200">
+      <h3 class="text-xl font-bold text-gray-900 mb-4">🎯 Kompetensi yang Dikuasai</h3>
+      <div class="grid md:grid-cols-2 gap-4">
+        <ul class="space-y-2 text-gray-700">
+          <li class="flex items-start">
+            <span class="text-emerald-500 mr-3 mt-1">✓</span>
+            Memahami semua format gambar dan penggunaannya
+          </li>
+          <li class="flex items-start">
+            <span class="text-emerald-500 mr-3 mt-1">✓</span>
+            Menggunakan atribut gambar dengan tepat
+          </li>
+          <li class="flex items-start">
+            <span class="text-emerald-500 mr-3 mt-1">✓</span>
+            Styling gambar dengan CSS inline
+          </li>
+          <li class="flex items-start">
+            <span class="text-emerald-500 mr-3 mt-1">✓</span>
+            Membuat gambar responsif untuk semua device
+          </li>
+        </ul>
+        <ul class="space-y-2 text-gray-700">
+          <li class="flex items-start">
+            <span class="text-emerald-500 mr-3 mt-1">✓</span>
+            Membuat background image dengan CSS inline
+          </li>
+          <li class="flex items-start">
+            <span class="text-emerald-500 mr-3 mt-1">✓</span>
+            Optimasi performa gambar untuk web
+          </li>
+          <li class="flex items-start">
+            <span class="text-emerald-500 mr-3 mt-1">✓</span>
+            Menerapkan aksesibilitas untuk gambar
+          </li>
+          <li class="flex items-start">
+            <span class="text-emerald-500 mr-3 mt-1">✓</span>
+            Best practices untuk SEO dan user experience
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advanced Techniques -->
+  <section id="advanced-techniques" class="mb-12">
+    <div class="flex items-center mb-6">
+      <div class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center mr-3">
+        <span class="text-white font-bold text-sm">8</span>
+      </div>
+      <h2 class="text-2xl font-bold text-gray-900">⚡ Advanced Techniques</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Advanced Image Techniques -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">🖼️ Advanced Image Techniques</h3>
+          <div class="space-y-4">
+            <div class="p-4 bg-sky-50 rounded-lg border border-sky-200">
+              <h4 class="font-semibold text-sky-800">🎭 Image Overlays</h4>
+              <p class="text-gray-700 text-sm mt-1">Text overlay dengan gradient</p>
+              <pre class="bg-gray-800 text-sky-300 p-2 rounded mt-2 text-xs"><code>background: linear-gradient(
+  to bottom,
+  transparent 0%,
+  rgba(0,0,0,0.8) 100%
+);</code></pre>
+            </div>
+            <div class="p-4 bg-purple-50 rounded-lg border border-purple-200">
+              <h4 class="font-semibold text-purple-800">🔄 Image Filters</h4>
+              <p class="text-gray-700 text-sm mt-1">CSS filters untuk efek visual</p>
+              <pre class="bg-gray-800 text-purple-300 p-2 rounded mt-2 text-xs"><code>filter: brightness(1.2) 
+        contrast(1.1) 
+        saturate(1.1);</code></pre>
+            </div>
+            <div class="p-4 bg-green-50 rounded-lg border border-green-200">
+              <h4 class="font-semibold text-green-800">🎯 Object Fit & Position</h4>
+              <p class="text-gray-700 text-sm mt-1">Kontrol bagaimana gambar mengisi container</p>
+              <pre class="bg-gray-800 text-green-300 p-2 rounded mt-2 text-xs"><code>object-fit: cover;
+object-position: top center;</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- Performance & Optimization -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">🚀 Performance & Optimization</h3>
+          <div class="space-y-4">
+            <div class="p-4 bg-amber-50 rounded-lg border border-amber-200">
+              <h4 class="font-semibold text-amber-800">⚡ LQIP Technique</h4>
+              <p class="text-gray-700 text-sm mt-1">Low Quality Image Placeholder</p>
+              <pre class="bg-gray-800 text-amber-300 p-2 rounded mt-2 text-xs"><code>// Small blurry version first
+// Load high quality after</code></pre>
+            </div>
+            <div class="p-4 bg-red-50 rounded-lg border border-red-200">
+              <h4 class="font-semibold text-red-800">📦 Image CDN</h4>
+              <p class="text-gray-700 text-sm mt-1">Gunakan CDN untuk optimasi otomatis</p>
+              <pre class="bg-gray-800 text-red-300 p-2 rounded mt-2 text-xs"><code>https://images.unsplash.com/
+https://res.cloudinary.com/
+?w=400&q=80&fm=webp</code></pre>
+            </div>
+            <div class="p-4 bg-indigo-50 rounded-lg border border-indigo-200">
+              <h4 class="font-semibold text-indigo-800">🎨 CSS Blending</h4>
+              <p class="text-gray-700 text-sm mt-1">Advanced background blending</p>
+              <pre class="bg-gray-800 text-indigo-300 p-2 rounded mt-2 text-xs"><code>background-blend-mode: multiply;
+mix-blend-mode: overlay;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Complete Advanced Example -->
+      <div class="bg-gray-800 rounded-xl p-6 mt-8">
+        <h4 class="font-semibold text-gray-100 mb-4 flex items-center">
+          <span class="text-emerald-400 mr-2">💎</span>
+          Contoh Lengkap Advanced Techniques:
+        </h4>
+        <pre class="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto text-sm"><code>&lt;!-- Advanced Hero Section --&gt;
+&lt;div style="
+  background: linear-gradient(
+      45deg,
+      rgba(139, 92, 246, 0.9),
+      rgba(59, 130, 246, 0.9)
+    ), url('hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+"&gt;
+  
+  &lt;div style="
+    backdrop-filter: blur(10px);
+    padding: 60px 40px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+  "&gt;
+    &lt;h1 style="font-size: 3rem; margin-bottom: 1rem;"&gt;
+      Advanced Hero
+    &lt;/h1&gt;
+    &lt;p style="font-size: 1.2rem; opacity: 0.9;"&gt;
+      Dengan background fixed dan glass effect
+    &lt;/p&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Summary -->
+  <div class="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+    <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+      📝 Ringkasan Materi
+    </h3>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <h4 class="font-semibold text-gray-800 mb-4 text-lg">
+          ✅ Yang Telah Dipelajari:
+        </h4>
+        <ul class="space-y-3 text-gray-700">
+          <li class="flex items-start">
+            <span class="text-emerald-500 mr-3 mt-1">•</span>
+            Semua format gambar web dan penggunaan yang tepat
+          </li>
+          <li class="flex items-start">
+            <span class="text-emerald-500 mr-3 mt-1">•</span>
+            Atribut gambar lengkap untuk aksesibilitas dan SEO
+          </li>
+          <li class="flex items-start">
+            <span class="text-emerald-500 mr-3 mt-1">•</span>
+            Styling CSS inline untuk berbagai efek visual
+          </li>
+          <li class="flex items-start">
+            <span class="text-emerald-500 mr-3 mt-1">•</span>
+            Teknik gambar responsif untuk semua device
+          </li>
+          <li class="flex items-start">
+            <span class="text-emerald-500 mr-3 mt-1">•</span>
+            Background images dengan CSS inline
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-gray-800 mb-4 text-lg">
+          🎯 Langkah Selanjutnya:
+        </h4>
+        <ul class="space-y-3 text-gray-700">
+          <li class="flex items-start">
+            <span class="text-blue-500 mr-3 mt-1">•</span>
+            Praktekkan dengan project website nyata
+          </li>
+          <li class="flex items-start">
+            <span class="text-blue-500 mr-3 mt-1">•</span>
+            Eksplor CSS external untuk styling yang lebih kompleks
+          </li>
+          <li class="flex items-start">
+            <span class="text-blue-500 mr-3 mt-1">•</span>
+            Pelajari image optimization tools
+          </li>
+          <li class="flex items-start">
+            <span class="text-blue-500 mr-3 mt-1">•</span>
+            Pahami advanced responsive images dengan srcset
+          </li>
+          <li class="flex items-start">
+            <span class="text-blue-500 mr-3 mt-1">•</span>
+            Implementasikan lazy loading dan performance optimization
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mt-12 pt-6 border-t border-gray-200">
+    <a href="/pemrograman-web/satu-pertemuan-4" class="flex items-center px-6 py-3 bg-emerald-50 text-emerald-700 rounded-xl border border-emerald-200 hover:bg-emerald-100 transition-colors w-full sm:w-auto justify-center">
+      <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+      </svg>
+      Sebelumnya: Pertemuan 4
+    </a>
+    <a href="/pemrograman-web/satu-pertemuan-6" class="flex items-center px-6 py-3 bg-emerald-500 text-white rounded-xl hover:bg-emerald-600 transition-colors w-full sm:w-auto justify-center">
+      Selanjutnya: Pertemuan 6
+      <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </a>
+  </div>
+</article>
+
+<style>
+  /* Custom styles untuk code blocks */
+  pre code {
+    font-family: 'Fira Code', 'Courier New', monospace;
+    line-height: 1.5;
+  }
+  
+  /* Style untuk inline code */
+  code:not(pre code) {
+    background-color: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.875em;
+    color: #0c4a6e;
+    border: 1px solid #bae6fd;
+  }
+  
+  /* Smooth scrolling untuk anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Custom selection color */
+  ::selection {
+    background-color: #bae6fd;
+    color: #0c4a6e;
+  }
+
+  /* Style untuk demo images */
+  .demo-image {
+    transition: transform 0.3s ease;
+  }
+
+  .demo-image:hover {
+    transform: scale(1.05);
+  }
+
+  /* Style untuk live demo boxes */
+  .live-demo {
+    border-left: 4px solid #10b981;
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  }
+</style>
+
 </PemrogramanWebLayout>

@@ -1,15 +1,109 @@
 ---
 // src/components/common/SidebarPemrogramanWeb.astro
+
+// Define props
+export interface Props {
+  logoUrl?: string;
+  title?: string;
+  subtitle?: string;
+  menuItems?: Array<{
+    title: string;
+    dropdownId: string;
+    items: Array<{
+      title: string;
+      href: string;
+    }>;
+  }>;
+}
+
+// Default props
+const {
+  logoUrl = "https://upload.wikimedia.org/wikipedia/commons/2/21/Logo-stmik-bina-mulia-palu.png",
+  title = "Pemrograman",
+  subtitle = "Web",
+  menuItems = [
+    {
+      title: "Pemrograman Web 1",
+      dropdownId: "pw1",
+      items: [
+        {
+          title: "Pertemuan 1: Pengenalan Website",
+          href: "/pemrograman-web/satu-pertemuan-1"
+        },
+        {
+          title: "Pertemuan 2: Heading, Paragraph, dan Style",
+          href: "/pemrograman-web/satu-pertemuan-2"
+        },
+        {
+          title: "Pertemuan 3: Link dan Anchor",
+          href: "/pemrograman-web/satu-pertemuan-3"
+        },
+        {
+          title: "Pertemuan 4: Style - CSS",
+          href: "/pemrograman-web/satu-pertemuan-4"
+        },
+        {
+          title: "Pertemuan 5: Gambar",
+          href: "/pemrograman-web/satu-pertemuan-5"
+        },
+        {
+          title: "Pertemuan 6: Tabel",
+          href: "/pemrograman-web/satu-pertemuan-6"
+        },
+        {
+          title: "Pertemuan 7: Form dan Input Elements",
+          href: "/pemrograman-web/satu-pertemuan-7"
+        },
+        {
+          title: "Pertemuan 8: UTS - Project HTML Dasar",
+          href: "/pemrograman-web/satu-pertemuan-8"
+        },
+        {
+          title: "Pertemuan 9: Pengenalan CSS & Selector Dasar",
+          href: "/pemrograman-web/satu-pertemuan-9"
+        },
+        {
+          title: "Pertemuan 10: Color, Background, dan Font",
+          href: "/pemrograman-web/satu-pertemuan-10"
+        },
+        {
+          title: "Pertemuan 11: Box Model (Margin, Border, Padding)",
+          href: "/pemrograman-web/satu-pertemuan-11"
+        },
+        {
+          title: "Pertemuan 12: Layout dengan Float",
+          href: "/pemrograman-web/satu-pertemuan-12"
+        },
+        {
+          title: "Pertemuan 13: Position (Static, Relative, Absolute, Fixed)",
+          href: "/pemrograman-web/satu-pertemuan-13"
+        },
+        {
+          title: "Pertemuan 14: Flexbox Dasar",
+          href: "/pemrograman-web/satu-pertemuan-14"
+        },
+        {
+          title: "Pertemuan 15: Responsive Design & Media Query",
+          href: "/pemrograman-web/satu-pertemuan-15"
+        },
+        {
+          title: "Pertemuan 16: UAS - Project Website Sederhana",
+          href: "/pemrograman-web/satu-pertemuan-16"
+        }
+      ]
+    }
+  ]
+} = Astro.props;
 ---
 
 <aside class="w-64 bg-white border-r border-gray-200 h-screen overflow-y-auto">
   <div class="px-6 py-4">
     <!-- Logo -->
     <div class="flex items-center space-x-3">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Logo-stmik-bina-mulia-palu.png" alt="Logo STMIK Bina Mulia Palu" class="h-8 w-8" />
+      <img src={logoUrl} alt="Logo STMIK Bina Mulia Palu" class="h-8 w-8" />
       <div>
-        <h2 class="text-xl font-semibold text-gray-800">Pemrograman</h2>
-        <p class="text-gray-700">Web</p>
+        <h2 class="text-xl font-semibold text-gray-800">{title}</h2>
+        <p class="text-gray-700">{subtitle}</p>
       </div>
     </div>
   </div>
@@ -18,375 +112,37 @@
     <!-- Divider -->
     <div class="my-6 border-t border-gray-200"></div>
 
-    <!-- Pemrograman Web 1 -->
-    <div class="mb-4">
-      <button 
-        id="dropdown-pw1" 
-        class="flex justify-between items-center w-full px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider hover:bg-gray-50 rounded transition-colors"
-        onclick="toggleDropdown('pw1')"
-      >
-        <span>Pemrograman Web 1</span>
-        <svg id="icon-pw1" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-        </svg>
-      </button>
-      <div id="content-pw1" class="mt-2 space-y-1 hidden">
-        <a
-          href="/pemrograman-web/satu-pertemuan-1"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
+    <!-- Menu Items -->
+    {menuItems.map((menuItem) => (
+      <div class="mb-4">
+        <button 
+          id={`dropdown-${menuItem.dropdownId}`}
+          class="flex justify-between items-center w-full px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider hover:bg-gray-50 rounded transition-colors"
+          onclick={`toggleDropdown('${menuItem.dropdownId}')`}
         >
-          Pertemuan 1: Pengenalan Website
-        </a>
-        <a
-          href="/pemrograman-web/satu-pertemuan-2"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 2: Heading, Paragraph, dan Style
-        </a>
-        <a
-          href="/pemrograman-web/satu-pertemuan-3"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 3: Link dan Anchor
-        </a>
-        <a
-          href="/pemrograman-web/satu-pertemuan-4"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 4: Style - CSS
-        </a>
-        <a
-          href="/pemrograman-web/satu-pertemuan-5"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 5: List (Ordered & Unordered)
-        </a>
-        <a
-          href="/pemrograman-web/satu-pertemuan-6"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 6: Tabel
-        </a>
-        <a
-          href="/pemrograman-web/satu-pertemuan-7"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 7: Form dan Input Elements
-        </a>
-        <a
-          href="/pemrograman-web/satu-pertemuan-8"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 8: UTS - Project HTML Dasar
-        </a>
-        <a
-          href="/pemrograman-web/satu-pertemuan-9"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 9: Pengenalan CSS & Selector Dasar
-        </a>
-        <a
-          href="/pemrograman-web/satu-pertemuan-10"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 10: Color, Background, dan Font
-        </a>
-        <a
-          href="/pemrograman-web/satu-pertemuan-11"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 11: Box Model (Margin, Border, Padding)
-        </a>
-        <a
-          href="/pemrograman-web/satu-pertemuan-12"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 12: Layout dengan Float
-        </a>
-        <a
-          href="/pemrograman-web/satu-pertemuan-13"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 13: Position (Static, Relative, Absolute, Fixed)
-        </a>
-        <a
-          href="/pemrograman-web/satu-pertemuan-14"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 14: Flexbox Dasar
-        </a>
-        <a
-          href="/pemrograman-web/satu-pertemuan-15"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 15: Responsive Design & Media Query
-        </a>
-        <a
-          href="/pemrograman-web/satu-pertemuan-16"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 16: UAS - Project Website Sederhana
-        </a>
+          <span>{menuItem.title}</span>
+          <svg id={`icon-${menuItem.dropdownId}`} class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id={`content-${menuItem.dropdownId}`} class="mt-2 space-y-1">
+          {menuItem.items.map((item) => (
+            <a
+              href={item.href}
+              class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
+            >
+              {item.title}
+            </a>
+          ))}
+        </div>
       </div>
-    </div>
-
-    <!-- Divider -->
-    <div class="my-4 border-t border-gray-200"></div>
-
-    <!-- Pemrograman Web 2 -->
-    <div class="mb-4">
-      <button 
-        id="dropdown-pw2" 
-        class="flex justify-between items-center w-full px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider hover:bg-gray-50 rounded transition-colors"
-        onclick="toggleDropdown('pw2')"
-      >
-        <span>Pemrograman Web 2</span>
-        <svg id="icon-pw2" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-        </svg>
-      </button>
-      <div id="content-pw2" class="mt-2 space-y-1 hidden">
-        <a
-          href="/pemrograman-web/dua-pertemuan-1"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 1: Review HTML & CSS
-        </a>
-        <a
-          href="/pemrograman-web/dua-pertemuan-2"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 2: CSS Grid Layout
-        </a>
-        <a
-          href="/pemrograman-web/dua-pertemuan-3"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 3: Advanced Flexbox
-        </a>
-        <a
-          href="/pemrograman-web/dua-pertemuan-4"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 4: CSS Transform & Transition
-        </a>
-        <a
-          href="/pemrograman-web/dua-pertemuan-5"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 5: CSS Animation
-        </a>
-        <a
-          href="/pemrograman-web/dua-pertemuan-6"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 6: Preprocessor CSS (SASS/SCSS)
-        </a>
-        <a
-          href="/pemrograman-web/dua-pertemuan-7"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 7: Framework CSS (Bootstrap/Tailwind)
-        </a>
-        <a
-          href="/pemrograman-web/dua-pertemuan-8"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 8: UTS - Project CSS Advanced
-        </a>
-        <a
-          href="/pemrograman-web/dua-pertemuan-9"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 9: JavaScript Dasar - Variabel & Tipe Data
-        </a>
-        <a
-          href="/pemrograman-web/dua-pertemuan-10"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 10: Operator & Kondisional
-        </a>
-        <a
-          href="/pemrograman-web/dua-pertemuan-11"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 11: Looping & Function
-        </a>
-        <a
-          href="/pemrograman-web/dua-pertemuan-12"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 12: DOM Manipulation
-        </a>
-        <a
-          href="/pemrograman-web/dua-pertemuan-13"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 13: Event Handling
-        </a>
-        <a
-          href="/pemrograman-web/dua-pertemuan-14"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 14: Form Validation dengan JavaScript
-        </a>
-        <a
-          href="/pemrograman-web/dua-pertemuan-15"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 15: Local Storage & Session Storage
-        </a>
-        <a
-          href="/pemrograman-web/dua-pertemuan-16"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 16: UAS - Project Website Interaktif
-        </a>
-      </div>
-    </div>
-
-    <!-- Divider -->
-    <div class="my-4 border-t border-gray-200"></div>
-
-    <!-- Pemrograman Web 3 -->
-    <div class="mb-4">
-      <button 
-        id="dropdown-pw3" 
-        class="flex justify-between items-center w-full px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider hover:bg-gray-50 rounded transition-colors"
-        onclick="toggleDropdown('pw3')"
-      >
-        <span>Pemrograman Web 3</span>
-        <svg id="icon-pw3" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-        </svg>
-      </button>
-      <div id="content-pw3" class="mt-2 space-y-1 hidden">
-        <a
-          href="/pemrograman-web/tiga-pertemuan-1"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 1: Advanced JavaScript - ES6+ Features
-        </a>
-        <a
-          href="/pemrograman-web/tiga-pertemuan-2"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 2: Async JavaScript & Promises
-        </a>
-        <a
-          href="/pemrograman-web/tiga-pertemuan-3"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 3: Fetch API & AJAX
-        </a>
-        <a
-          href="/pemrograman-web/tiga-pertemuan-4"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 4: Introduction to React/Vue
-        </a>
-        <a
-          href="/pemrograman-web/tiga-pertemuan-5"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 5: Components & Props
-        </a>
-        <a
-          href="/pemrograman-web/tiga-pertemuan-6"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 6: State & Lifecycle
-        </a>
-        <a
-          href="/pemrograman-web/tiga-pertemuan-7"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 7: Event Handling in Framework
-        </a>
-        <a
-          href="/pemrograman-web/tiga-pertemuan-8"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 8: UTS - Project Framework Dasar
-        </a>
-        <a
-          href="/pemrograman-web/tiga-pertemuan-9"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 9: Routing in SPA
-        </a>
-        <a
-          href="/pemrograman-web/tiga-pertemuan-10"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 10: State Management
-        </a>
-        <a
-          href="/pemrograman-web/tiga-pertemuan-11"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 11: HTTP Client & API Integration
-        </a>
-        <a
-          href="/pemrograman-web/tiga-pertemuan-12"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 12: Form Handling in Framework
-        </a>
-        <a
-          href="/pemrograman-web/tiga-pertemuan-13"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 13: Authentication & Authorization
-        </a>
-        <a
-          href="/pemrograman-web/tiga-pertemuan-14"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 14: Deployment & Build Process
-        </a>
-        <a
-          href="/pemrograman-web/tiga-pertemuan-15"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 15: Testing Web Applications
-        </a>
-        <a
-          href="/pemrograman-web/tiga-pertemuan-16"
-          class="block px-4 py-2 text-sm text-gray-600 rounded hover:bg-gray-100 transition-colors"
-        >
-          Pertemuan 16: UAS - Project Final Web Application
-        </a>
-      </div>
-    </div>
+    ))}
   </nav>
 </aside>
 
-<script>
-  // Fungsi untuk toggle dropdown
-  function toggleDropdown(id) {
-    const content = document.getElementById(`content-${id}`);
-    const icon = document.getElementById(`icon-${id}`);
-    
-    if (content.classList.contains('hidden')) {
-      content.classList.remove('hidden');
-      icon.classList.add('rotate-180');
-    } else {
-      content.classList.add('hidden');
-      icon.classList.remove('rotate-180');
-    }
-  }
-
-  // Opsional: Buka dropdown pertama secara default
-  document.addEventListener('DOMContentLoaded', function() {
-    // Buka dropdown pertama (Pemrograman Web 1) secara default
-    toggleDropdown('pw1');
-  });
-</script>
-
 <style>
   /* Tambahkan animasi smooth untuk dropdown */
-  #content-pw1, #content-pw2, #content-pw3 {
+  [id^="content-"] {
     transition: all 0.3s ease-in-out;
   }
   
@@ -395,3 +151,31 @@
     transform: rotate(180deg);
   }
 </style>
+
+<script>
+  // Function untuk toggle dropdown
+  function toggleDropdown(dropdownId) {
+    const content = document.getElementById(`content-${dropdownId}`);
+    const icon = document.getElementById(`icon-${dropdownId}`);
+    
+    // Toggle display content
+    if (content.style.display === 'none' || content.style.display === '') {
+      content.style.display = 'block';
+      icon.classList.add('rotate-180');
+    } else {
+      content.style.display = 'none';
+      icon.classList.remove('rotate-180');
+    }
+  }
+
+  // Initialize dropdown states on page load
+  document.addEventListener('DOMContentLoaded', function() {
+    // Sembunyikan semua dropdown content secara default
+    {menuItems.map((menuItem) => (
+      `const content${menuItem.dropdownId} = document.getElementById('content-${menuItem.dropdownId}');
+      if (content${menuItem.dropdownId}) {
+        content${menuItem.dropdownId}.style.display = 'none';
+      }`
+    )).join('')}
+  });
+</script>

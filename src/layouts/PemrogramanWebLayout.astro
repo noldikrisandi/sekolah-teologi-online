@@ -67,7 +67,7 @@ const {
 
       <!-- Main content -->
       <main class="lg:pl-64 flex-1 w-full">
-        <div class="py-6 px-4 sm:px-6 lg:px-8">
+        <div class="py-6 px-1 md:px-6 lg:px-8">
           <div class="max-w-4xl mx-auto">
             <!-- Header Content -->
             <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
@@ -88,7 +88,7 @@ const {
             </div>
 
             <!-- Main Content Slot -->
-            <div class="bg-white rounded-lg shadow-sm p-6">
+            <div class="bg-white rounded-lg shadow-sm p-2 lg:p-6 overflow-hidden">
               <slot />
             </div>
           </div>
@@ -97,31 +97,12 @@ const {
     </div>
 
     <script>
-      // Mobile sidebar functionality dengan scroll behavior
+      // Mobile sidebar functionality TANPA scroll behavior
       document.addEventListener('DOMContentLoaded', function() {
         const sidebar = document.getElementById('mobile-sidebar');
         const menuButton = document.querySelector('[data-menu-button]');
         const closeButtons = document.querySelectorAll('[data-close-sidebar]');
         
-        // Scroll threshold (pixel berapa scroll untuk menampilkan button)
-        const SCROLL_THRESHOLD = 100;
-        let isScrolled = false;
-
-        // Function to handle scroll
-        function handleScroll() {
-          const scrollY = window.scrollY || window.pageYOffset;
-          
-          if (scrollY > SCROLL_THRESHOLD && !isScrolled) {
-            // Show button
-            menuButton.classList.add('menu-button-visible');
-            isScrolled = true;
-          } else if (scrollY <= SCROLL_THRESHOLD && isScrolled) {
-            // Hide button
-            menuButton.classList.remove('menu-button-visible');
-            isScrolled = false;
-          }
-        }
-
         // Function to open sidebar
         function openSidebar() {
           if (sidebar) {
@@ -157,29 +138,6 @@ const {
           }
         }
         
-        // Initialize scroll behavior
-        function initScrollBehavior() {
-          // Throttle scroll events untuk performance
-          let ticking = false;
-          
-          function updateScroll() {
-            handleScroll();
-            ticking = false;
-          }
-          
-          function requestTick() {
-            if (!ticking) {
-              requestAnimationFrame(updateScroll);
-              ticking = true;
-            }
-          }
-          
-          window.addEventListener('scroll', requestTick, { passive: true });
-          
-          // Initial check
-          handleScroll();
-        }
-
         // Event listeners
         if (menuButton) {
           menuButton.addEventListener('click', toggleSidebar);
@@ -214,10 +172,9 @@ const {
             closeSidebar();
           }
         });
-        
-        // Initialize scroll behavior
-        initScrollBehavior();
       });
     </script>
+  </body>
+</html>
   </body>
 </html>

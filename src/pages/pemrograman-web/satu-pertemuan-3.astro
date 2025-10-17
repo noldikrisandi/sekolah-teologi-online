@@ -10,7 +10,6 @@ const pageUrl = "pemrograman-web/satu-pertemuan-3";
 const breadcrumbs = [
   { name: "Home", url: "/" },
   { name: "Pemrograman Web", url: "/pemrograman-web" },
-  { name: "Pemrograman Web 1", url: "/pemrograman-web/satu" },
   { name: "Pertemuan 3", url: "/pemrograman-web/satu-pertemuan-3" }
 ];
 ---
@@ -63,12 +62,12 @@ const breadcrumbs = [
   </div>
 
   <!-- Table of Contents -->
-  <div class="bg-gradient-to-r from-sky-50 to-blue-50 rounded-2xl p-6 mb-8 border border-sky-200">
+  <div class="bg-gradient-to-r from-sky-50 to-blue-50 rounded-2xl p-6 mb-8 border border-sky-200 overflow-hidden">
     <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
       <span class="w-2 h-2 bg-sky-500 rounded-full mr-3"></span>
       📚 Daftar Isi Materi
     </h2>
-    <div class="grid md:grid-cols-2 gap-2 text-sm">
+    <div class="grid md:grid-cols-2 gap-2 text-sm overflow-hidden">
       <a href="#pengenalan-hyperlink" class="flex items-center text-gray-700 hover:text-sky-600 transition-colors">
         <span class="mr-2">→</span> Pengenalan Hyperlink
       </a>
@@ -156,7 +155,7 @@ const breadcrumbs = [
   </section>
 
   <!-- Jenis URL -->
-  <section id="jenis-url" class="mb-12">
+  <section id="jenis-url" class="mb-12 overflow-hidden">
     <div class="flex items-center mb-6">
       <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
         <span class="text-white font-bold text-sm">2</span>
@@ -164,18 +163,18 @@ const breadcrumbs = [
       <h2 class="text-2xl font-bold text-gray-900">🌐 Jenis URL & Path</h2>
     </div>
 
-    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm overflow-hidden">
       <h3 class="text-xl font-semibold text-gray-800 mb-4">Absolute vs Relative URL</h3>
       
-      <div class="grid md:grid-cols-2 gap-8 mb-8">
+      <div class="grid md:grid-cols-2 gap-8 mb-8 overflow-hidden">
         <!-- Absolute URL -->
-        <div class="border-2 border-sky-200 rounded-xl p-6 bg-gradient-to-br from-sky-50 to-white">
+        <div class="border-2 border-sky-200 rounded-xl p-3 lg:p-6 bg-gradient-to-br from-sky-50 to-white overflow-hidden">
           <h4 class="text-lg font-bold text-sky-900 mb-4 text-center">📍 Absolute URL</h4>
           <p class="text-gray-700 mb-4 text-sm">
             Menentukan alamat lengkap termasuk protocol, domain, dan path. 
             <strong>Digunakan untuk link ke website eksternal.</strong>
           </p>
-          <div class="bg-gray-800 rounded-lg p-4 mb-4">
+          <div class="bg-gray-800 rounded-lg p-4 mb-4 overflow-hidden">
             <pre class="text-sky-300 text-sm overflow-auto"><code>https://www.example.com/about/us</code></pre>
           </div>
           <div class="bg-gray-800 rounded-lg p-4">
@@ -190,19 +189,19 @@ const breadcrumbs = [
         </div>
 
         <!-- Relative URL -->
-        <div class="border-2 border-green-200 rounded-xl p-6 bg-gradient-to-br from-green-50 to-white">
+        <div class="border-2 border-green-200 rounded-xl p-6 bg-gradient-to-br from-green-50 to-white overflow-hidden">
           <h4 class="text-lg font-bold text-green-900 mb-4 text-center">📁 Relative URL</h4>
           <p class="text-gray-700 mb-4 text-sm">
             Menentukan path relatif terhadap halaman saat ini. 
             <strong>Digunakan untuk link internal dalam website.</strong>
           </p>
-          <div class="bg-gray-800 rounded-lg p-4 mb-4">
-            <pre class="text-green-300 text-sm"><code>about/us.html
+          <div class="bg-gray-800 rounded-lg p-4 mb-4 overflow-hidden">
+            <pre class="text-green-300 text-sm overflow-auto"><code>about/us.html
 ../contact.html
 /images/logo.png</code></pre>
           </div>
           <div class="bg-gray-800 rounded-lg p-4">
-            <pre class="text-green-300 text-sm"><code>&lt;a href="about.html"&gt;
+            <pre class="text-green-300 text-sm overflow-auto"><code>&lt;a href="about.html"&gt;
   Halaman About
 &lt;/a&gt;
 
@@ -274,7 +273,7 @@ const breadcrumbs = [
       <h2 class="text-2xl font-bold text-gray-900">⚙️ Atribut Hyperlink Lengkap</h2>
     </div>
 
-    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+    <div class="bg-white rounded-2xl p-2 lg:p-6 border border-gray-200 shadow-sm overflow-hidden">
       <div class="grid md:grid-cols-2 gap-8 mb-8">
         <!-- Basic Attributes -->
         <div>
@@ -317,11 +316,11 @@ rel="noreferrer"      // Privacy
 rel="external"        // External site
 rel="stylesheet"      // CSS file</code></pre>
             </div>
-            <div class="p-4 bg-green-50 rounded-lg border border-green-200">
+            <div class="p-4 bg-green-50 rounded-lg border border-green-200 overflow-auto">
               <code class="text-green-700 font-bold">download</code>
               <p class="text-gray-700 text-sm mt-1">Memaksa download file</p>
-              <pre class="bg-gray-800 text-gray-100 p-2 rounded mt-2 text-xs"><code>download                    // Default filename
-download="document.pdf"     // Custom filename</code></pre>
+              <pre class="bg-gray-800 text-gray-100 p-2 rounded mt-2 text-xs"><code>download                  // Default filename
+download="document.pdf"   // Custom filename</code></pre>
             </div>
             <div class="p-4 bg-amber-50 rounded-lg border border-amber-200">
               <code class="text-amber-700 font-bold">id & class</code>
@@ -480,7 +479,7 @@ class="btn btn-primary nav-link"</code></pre>
   </section>
 
   <!-- Sistem Navigasi -->
-  <section id="navigasi" class="mb-12">
+  <section id="navigasi" class="mb-12 overflow-hidden">
     <div class="flex items-center mb-6">
       <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
         <span class="text-white font-bold text-sm">5</span>
@@ -495,14 +494,14 @@ class="btn btn-primary nav-link"</code></pre>
       </p>
 
       <!-- Navigation Types -->
-      <div class="grid md:grid-cols-2 gap-8 mb-8">
+      <div class="grid md:grid-cols-2 gap-8 mb-8 overflow-hidden">
         <!-- Main Navigation -->
-        <div class="border-2 border-sky-200 rounded-xl p-6 bg-gradient-to-br from-sky-50 to-white">
+        <div class="border-2 border-sky-200 rounded-xl p-6 bg-gradient-to-br from-sky-50 to-white overflow-hidden">
           <h4 class="text-lg font-bold text-sky-900 mb-4">🍔 Main Navigation</h4>
           <p class="text-gray-700 mb-4 text-sm">
             Menu utama website yang biasanya berada di header. Menggunakan semantic <code>&lt;nav&gt;</code> tag.
           </p>
-          <div class="bg-gray-800 rounded-lg p-4">
+          <div class="bg-gray-800 rounded-lg p-4 overflow-hidden">
             <pre class="text-sky-300 text-sm overflow-auto"><code>&lt;nav class="main-navigation"&gt;
   &lt;ul&gt;
     &lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;
@@ -516,7 +515,7 @@ class="btn btn-primary nav-link"</code></pre>
         </div>
 
         <!-- Footer Navigation -->
-        <div class="border-2 border-purple-200 rounded-xl p-6 bg-gradient-to-br from-purple-50 to-white">
+        <div class="border-2 border-purple-200 rounded-xl p-6 bg-gradient-to-br from-purple-50 to-white overflow-hidden">
           <h4 class="text-lg font-bold text-purple-900 mb-4">🦶 Footer Navigation</h4>
           <p class="text-gray-700 mb-4 text-sm">
             Menu tambahan di footer website untuk links penting seperti privacy policy, terms, dll.
@@ -535,13 +534,13 @@ class="btn btn-primary nav-link"</code></pre>
       </div>
 
       <!-- Breadcrumb Navigation -->
-      <div class="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-8">
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-8 overflow-hidden">
         <h4 class="font-semibold text-amber-800 mb-4">🍞 Breadcrumb Navigation</h4>
         <p class="text-amber-700 mb-4">
           Menunjukkan hirarki lokasi pengguna dalam website. Sangat penting untuk UX dan SEO.
         </p>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-white rounded-lg p-4 border border-amber-200">
+        <div class="grid md:grid-cols-2 gap-6 overflow-hidden">
+          <div class="bg-white rounded-lg p-4 border border-amber-200 overflow-hidden">
             <pre class="bg-gray-800 text-amber-300 p-4 rounded text-sm overflow-auto"><code>&lt;nav class="breadcrumb" aria-label="Breadcrumb"&gt;
   &lt;ol&gt;
     &lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;
@@ -551,7 +550,7 @@ class="btn btn-primary nav-link"</code></pre>
   &lt;/ol&gt;
 &lt;/nav&gt;</code></pre>
           </div>
-          <div class="bg-white rounded-lg p-4 border border-amber-200">
+          <div class="bg-white rounded-lg p-4 border border-amber-200 overflow-auto">
             <div class="text-sm text-gray-700">
               <strong>Hasil Tampilan:</strong>
               <div class="flex items-center space-x-2 mt-2 text-sm">
@@ -592,7 +591,7 @@ class="btn btn-primary nav-link"</code></pre>
         <div class="mb-6">
           <h4 class="font-semibold text-gray-700 mb-3">Breadcrumb Navigation:</h4>
           <nav class="bg-white rounded-lg shadow-sm p-4 border border-gray-200">
-            <div class="flex items-center space-x-2 text-sm">
+            <div class="flex items-center space-x-2 text-sm overflow-auto">
               <a href="#" class="text-sky-600 hover:text-sky-800 flex items-center">
                 <span>🏠</span>
                 <span class="ml-1">Home</span>
@@ -644,7 +643,7 @@ class="btn btn-primary nav-link"</code></pre>
   </section>
 
   <!-- Anchor Links & Page Navigation -->
-  <section id="anchor-links" class="mb-12">
+  <section id="anchor-links" class="mb-12 overflow-hidden">
     <div class="flex items-center mb-6">
       <div class="w-8 h-8 bg-sky-500 rounded-full flex items-center justify-center mr-3">
         <span class="text-white font-bold text-sm">6</span>
@@ -675,13 +674,13 @@ class="btn btn-primary nav-link"</code></pre>
       </div>
 
       <!-- Complete Page Navigation Example -->
-      <div class="grid md:grid-cols-2 gap-8 mb-8">
-        <div class="border-2 border-green-200 rounded-xl p-6 bg-gradient-to-br from-green-50 to-white">
+      <div class="grid md:grid-cols-2 gap-8 mb-8 overflow-hidden">
+        <div class="border-2 border-green-200 rounded-xl p-6 bg-gradient-to-br from-green-50 to-white overflow-hidden">
           <h4 class="text-lg font-bold text-green-900 mb-4">📑 Table of Contents</h4>
           <p class="text-gray-700 mb-4 text-sm">
             Membuat daftar isi dengan anchor links untuk navigasi halaman panjang.
           </p>
-          <div class="bg-gray-800 rounded-lg p-4">
+          <div class="bg-gray-800 rounded-lg p-4 overflow-hidden">
             <pre class="text-green-300 text-sm overflow-auto"><code>&lt;nav class="toc"&gt;
   &lt;h3&gt;Daftar Isi&lt;/h3&gt;
   &lt;ul&gt;
@@ -695,13 +694,13 @@ class="btn btn-primary nav-link"</code></pre>
           </div>
         </div>
 
-        <div class="border-2 border-purple-200 rounded-xl p-6 bg-gradient-to-br from-purple-50 to-white">
+        <div class="border-2 border-purple-200 rounded-xl p-6 bg-gradient-to-br from-purple-50 to-white overflow-hidden">
           <h4 class="text-lg font-bold text-purple-900 mb-4">🔝 Back to Top</h4>
           <p class="text-gray-700 mb-4 text-sm">
             Link untuk kembali ke atas halaman. Essential untuk UX.
           </p>
-          <div class="bg-gray-800 rounded-lg p-4">
-            <pre class="text-purple-300 text-sm"><code>&lt;!-- Top of page --&gt;
+          <div class="bg-gray-800 rounded-lg p-4 overflow-hidden">
+            <pre class="text-purple-300 text-sm overflow-auto"><code>&lt;!-- Top of page --&gt;
 &lt;header id="top"&gt;
   &lt;h1&gt;Page Title&lt;/h1&gt;
 &lt;/header&gt;
@@ -780,10 +779,10 @@ class="btn btn-primary nav-link"</code></pre>
       </div>
 
       <!-- Navigation Best Practices -->
-      <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+      <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm overflow-hidden">
         <h3 class="text-xl font-bold text-gray-900 mb-4">🧭 Best Practices Navigasi</h3>
-        <div class="space-y-4">
-          <div class="p-4 bg-purple-50 rounded-xl border border-purple-200">
+        <div class="space-y-4 overflow-hidden">
+          <div class="p-4 bg-purple-50 rounded-xl border border-purple-200 overflow-hidden">
             <p class="text-purple-800 font-semibold">🏗️ Semantic Structure</p>
             <p class="text-purple-700 text-sm mt-1">Gunakan &lt;nav&gt; tag untuk navigation blocks</p>
             <pre class="bg-gray-800 text-purple-300 p-2 rounded mt-2 text-xs"><code>&lt;nav aria-label="Main navigation"&gt;</code></pre>
@@ -855,27 +854,27 @@ class="btn btn-primary nav-link"</code></pre>
       <h2 class="text-2xl font-bold text-gray-900">⚡ Advanced Techniques</h2>
     </div>
 
-    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
-      <div class="grid md:grid-cols-2 gap-8">
+    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm overflow-hidden">
+      <div class="grid md:grid-cols-2 gap-8 overflow-hidden">
         <!-- Advanced Link Techniques -->
-        <div>
+        <div class="overflow-hidden">
           <h3 class="text-xl font-semibold text-gray-800 mb-4">🔗 Advanced Link Techniques</h3>
-          <div class="space-y-4">
-            <div class="p-4 bg-sky-50 rounded-lg border border-sky-200">
+          <div class="space-y-4 overflow-hidden">
+            <div class="p-4 bg-sky-50 rounded-lg border border-sky-200 overflow-hidden">
               <h4 class="font-semibold text-sky-800">🎯 Link to Specific Text Fragment</h4>
               <p class="text-gray-700 text-sm mt-1">Highlight specific text on page load</p>
-              <pre class="bg-gray-800 text-sky-300 p-2 rounded mt-2 text-xs"><code>#:~:text=highlight%20this%20text</code></pre>
+              <pre class="bg-gray-800 text-sky-300 p-2 rounded mt-2 text-xs overflow-auto"><code>#:~:text=highlight%20this%20text</code></pre>
             </div>
-            <div class="p-4 bg-green-50 rounded-lg border border-green-200">
+            <div class="p-4 bg-green-50 rounded-lg border border-green-200 overflow-hidden">
               <h4 class="font-semibold text-green-800">📧 Advanced Email Links</h4>
               <p class="text-gray-700 text-sm mt-1">Pre-fill email subject, body, cc, bcc</p>
-              <pre class="bg-gray-800 text-green-300 p-2 rounded mt-2 text-xs"><code>mailto:email@domain.com?
+              <pre class="bg-gray-800 text-green-300 p-2 rounded mt-2 text-xs overflow-auto"><code>mailto:email@domain.com?
 subject=Hello&body=Message&cc=other@domain.com</code></pre>
             </div>
-            <div class="p-4 bg-purple-50 rounded-lg border border-purple-200">
+            <div class="p-4 bg-purple-50 rounded-lg border border-purple-200 overflow-hidden">
               <h4 class="font-semibold text-purple-800">🔗 Telephone with Extension</h4>
               <p class="text-gray-700 text-sm mt-1">Include phone extensions</p>
-              <pre class="bg-gray-800 text-purple-300 p-2 rounded mt-2 text-xs"><code>tel:+1-555-0123,123</code></pre>
+              <pre class="bg-gray-800 text-purple-300 p-2 rounded mt-2 text-xs overflow-auto"><code>tel:+1-555-0123,123</code></pre>
             </div>
           </div>
         </div>
@@ -907,18 +906,6 @@ a:hover, a:active</code></pre>
       </div>
     </div>
   </section>
-
-  <!-- Latihan Section -->
-  <div class="bg-gradient-to-r from-sky-500 to-blue-600 rounded-2xl p-8 text-white text-center mb-12">
-    <h3 class="text-2xl font-bold mb-4">💪 Latihan Praktikum</h3>
-    <p class="text-sky-100 mb-6 text-lg">
-      Buat website multi-halaman dengan sistem navigasi lengkap, berbagai jenis hyperlink, 
-      breadcrumb navigation, dan implementasikan semua best practices yang telah dipelajari.
-    </p>
-    <button class="bg-white text-sky-600 px-8 py-3 rounded-xl font-semibold hover:bg-sky-50 transition-colors">
-      📥 Download Materi Latihan
-    </button>
-  </div>
 
   <!-- Summary -->
   <div class="bg-gray-50 rounded-2xl p-8 border border-gray-200">
