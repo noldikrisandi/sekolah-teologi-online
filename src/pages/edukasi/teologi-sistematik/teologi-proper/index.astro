@@ -1,0 +1,950 @@
+---
+// src/pages/edukasi/teologi-sistematik/teologi-proper/index.astro
+import EdukasiLayout from "../../../../layouts/EdukasiLayout.astro";
+
+const pageTitle = "Teologi Proper - Doktrin Allah dalam Teologi Sistematik";
+const pageDescription = "Pelajari doktrin tentang Allah: sifat-sifat Allah, Tritunggal, providensia, predestinasi, dan karya Allah berdasarkan pendekatan teologi Reformed";
+const pageImage = "/images/banner/teologi-proper-allah.webp";
+const pageUrl = "edukasi/teologi-sistematik/teologi-proper";
+
+const breadcrumbs = [
+  { name: "Beranda", url: "https://sekolahteologi.com/" },
+  { name: "Edukasi", url: "https://sekolahteologi.com/edukasi" },
+  {
+    name: "Teologi Sistematik",
+    url: "https://sekolahteologi.com/edukasi/teologi-sistematik",
+  },
+  {
+    name: "Teologi Proper",
+    url: "https://sekolahteologi.com/edukasi/teologi-sistematik/teologi-proper",
+  },
+];
+
+// Data untuk bagian-bagian terkait
+const relatedSections = [
+  {
+    title: "Bibliologi - Doktrin Alkitab",
+    url: "/edukasi/teologi-sistematik/bibliologi",
+    description: "Memahami inspirasi, otoritas, dan keandalan Kitab Suci",
+    icon: "📖",
+  },
+  {
+    title: "Kristologi - Doktrin Kristus",
+    url: "/edukasi/teologi-sistematik/kristologi",
+    description: "Mengenal pribadi, natur, dan karya Yesus Kristus",
+    icon: "✝️",
+  },
+  {
+    title: "Pneumatologi - Doktrin Roh Kudus",
+    url: "/edukasi/teologi-sistematik/pneumatologi",
+    description: "Memahami pribadi dan karya Roh Kudus",
+    icon: "🕊️",
+  },
+  {
+    title: "Antropologi - Doktrin Manusia",
+    url: "/edukasi/teologi-sistematik/antropologi",
+    description: "Mempelajari penciptaan, kejatuhan, dan natur manusia",
+    icon: "👤",
+  },
+];
+---
+
+<EdukasiLayout
+  title={pageTitle}
+  description={pageDescription}
+  image={pageImage}
+  url={pageUrl}
+  type="article"
+  breadcrumbs={breadcrumbs}>
+  <div class="space-y-8">
+    <!-- Header Section -->
+    <header class="text-center py-12 bg-gradient-to-r from-sky-50 to-blue-100 rounded-2xl shadow-sm">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Teologi Proper
+        </h1>
+        <p class="text-xl text-gray-700 mb-6 p-5 max-w-3xl mx-auto leading-relaxed">
+          Doktrin tentang Allah - Mengenal Sifat, Tritunggal, dan Karya Allah yang Mahakuasa
+        </p>
+        <div class="flex flex-wrap justify-center gap-2">
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Sifat-sifat Allah</span>
+          <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold">Doktrin Tritunggal</span>
+          <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold">Providensia Ilahi</span>
+          <span class="bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-semibold">Predestinasi</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Pengertian Teologi Proper -->
+    <section id="pengertian" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+        <div class="bg-gradient-to-r from-sky-600 to-blue-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Pengertian Teologi Proper dalam Teologi Sistematik
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                Definisi dan Ruang Lingkup
+              </h3>
+
+              <div class="bg-sky-50 border-l-4 border-sky-400 p-4 mb-6">
+                <p class="text-sky-700 font-medium">
+                  <strong>Teologi Proper</strong> berasal dari bahasa Yunani <em>theos</em> (θεός) yang berarti "Allah" dan <em>logos</em> (λόγος) yang berarti "studi/ilmu". Secara khusus mempelajari <strong>"doktrin tentang Allah sendiri"</strong>.
+                </p>
+              </div>
+
+              <p class="text-gray-700 mb-4 leading-relaxed">
+                Dalam <strong>Teologi Sistematika</strong>, <strong>Teologi Proper</strong> adalah disiplin teologi yang mempelajari hakikat, sifat-sifat, keberadaan, dan karya Allah, termasuk doktrin Tritunggal, providensia, dan predestinasi.
+              </p>
+
+              <div class="bg-yellow-50 rounded-lg p-4 mb-6">
+                <h4 class="font-semibold text-yellow-900 mb-3">
+                  Fondasi Iman Kristen
+                </h4>
+                <p class="text-yellow-800 text-sm">
+                  <strong>Pemahaman yang benar tentang Allah adalah jantung iman Kristen</strong>. Semua doktrin lain bergantung pada pemahaman kita tentang siapa Allah itu.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                Pertanyaan-Pertanyaan Kunci Teologi Proper
+              </h3>
+
+              <div class="space-y-4">
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q1</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900">Siapa itu Allah?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Mengenal sifat-sifat dan karakter Allah</p>
+                    <a href="#sifat-allah" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">👑 Pelajari Sifat Allah</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q2</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900">Apa itu Tritunggal?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami Allah yang Esa dalam tiga Pribadi</p>
+                    <a href="#tritunggal" class="inline-block mt-2 text-blue-700 font-medium text-sm hover:text-blue-900 hover:underline transition-colors duration-200">☘️ Pelajari Tritunggal</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q3</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900">Bagaimana Allah Berkarya?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Providensia dan pemeliharaan Allah</p>
+                    <a href="#providensia" class="inline-block mt-2 text-indigo-700 font-medium text-sm hover:text-indigo-900 hover:underline transition-colors duration-200">🌍 Pelajari Providensia</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-red-100 text-red-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q4</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900">Apa itu Predestinasi?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Pemahaman tentang pemilihan Allah</p>
+                    <a href="#predestinasi" class="inline-block mt-2 text-red-700 font-medium text-sm hover:text-red-900 hover:underline transition-colors duration-200">🎯 Pelajari Predestinasi</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sifat-sifat Allah -->
+    <section id="sifat-allah" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-blue-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Sifat-sifat Allah
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Sifat-sifat Allah</strong> adalah karakteristik hakikat Allah yang mengungkapkan siapa Dia sebenarnya. Sifat-sifat ini tidak terpisah dari diri-Nya tetapi merupakan esensi keberadaan-Nya.
+            </p>
+          </div>
+
+          <!-- Ayat Kunci -->
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8 rounded-r-lg">
+            <h4 class="font-bold text-yellow-900 mb-2">Basis Alkitabiah Pengenalan Allah:</h4>
+            <p class="text-yellow-800 text-lg italic">
+              "Sebab sejak dunia dijadikan, sifat-sifat Allah yang tidak kelihatan, yaitu kekuatan-Nya yang kekal dan keilahian-Nya, dapat nampak kepada pikiran dari karya-Nya..."<br>
+              <strong class="not-italic">Roma 1:20</strong>
+            </p>
+            <p class="text-yellow-800 text-lg italic mt-4">
+              "Barangsiapa tidak mengasihi, ia tidak mengenal Allah, sebab Allah adalah kasih."<br>
+              <strong class="not-italic">1 Yohanes 4:8</strong>
+            </p>
+          </div>
+
+          <!-- Klasifikasi Sifat Allah -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">Klasifikasi Sifat-sifat Allah</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-left text-lg text-left">🏛️ Sifat-sifat Tidak Berkomunikasi<br><span class="text-sm font-normal">(Incommunicable Attributes)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Sifat-sifat yang hanya dimiliki Allah dan tidak dibagikan kepada ciptaan.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span><strong>Kekekalan</strong> - Tidak terikat waktu</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span><strong>Ketidakterubahan</strong> - Tidak berubah</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span><strong>Kehadiran di Segala Tempat</strong> - Mahahadir</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span><strong>Kemandirian</strong> - Tidak bergantung pada siapapun</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-blue-50 border border-blue-200 rounded-xl p-6">
+                <h4 class="font-bold text-blue-900 mb-3 text-left text-lg">👥 Sifat-sifat Berkomunikasi<br><span class="text-sm font-normal">(Communicable Attributes)</span></h4>
+                <p class="text-blue-800 text-sm mb-4">Sifat-sifat yang dalam tingkat terbatas dapat dibagikan kepada manusia.</p>
+                <ul class="text-blue-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span><strong>Kasih</strong> - Sifat relasional Allah</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span><strong>Keadilan</strong> - Kebenaran dan keadilan-Nya</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span><strong>Kekudusan</strong> - Kemurnian moral sempurna</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span><strong>Hikmat</strong> - Pengetahuan dan penerapannya</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Detail Sifat-sifat Allah -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Penjelasan Detail Sifat-sifat Allah</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4">Kekudusan Allah</h4>
+                <p class="text-gray-700 mb-4">Sifat Allah yang membedakan Dia dari semua ciptaan dan menekankan kemurnian moral-Nya yang sempurna.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Ayat Pendukung:</h5>
+                  <p class="text-sky-800 text-sm italic">"Kuduslah kamu, sebab Aku, TUHAN, Allahmu, kudus."<br><strong class="not-italic">Imamat 19:2</strong></p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4">Kasih Allah</h4>
+                <p class="text-gray-700 mb-4">Sifat esensial Allah yang menggerakkan-Nya untuk berkomunikasi dan berbagi kehidupan dengan ciptaan-Nya.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Ayat Pendukung:</h5>
+                  <p class="text-sky-800 text-sm italic">"Karena begitu besar kasih Allah akan dunia ini..."<br><strong class="not-italic">Yohanes 3:16</strong></p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-blue-200">
+                <h4 class="font-bold text-blue-900 text-xl mb-4">Keadilan Allah</h4>
+                <p class="text-gray-700 mb-4">Sifat Allah yang menjamin bahwa Dia selalu bertindak benar dan adil sesuai dengan karakter-Nya.</p>
+                <div class="bg-blue-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-blue-900 mb-2">Ayat Pendukung:</h5>
+                  <p class="text-blue-800 text-sm italic">"Sebab TUHAN adalah Allah yang adil..."<br><strong class="not-italic">Yesaya 30:18</strong></p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-blue-200">
+                <h4 class="font-bold text-blue-900 text-xl mb-4">Kemahatahuan Allah</h4>
+                <p class="text-gray-700 mb-4">Allah mengetahui segala sesuatu secara sempurna, masa lalu, sekarang, dan masa depan.</p>
+                <div class="bg-blue-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-blue-900 mb-2">Ayat Pendukung:</h5>
+                  <p class="text-blue-800 text-sm italic">"Sebab Engkau sendirilah yang mengetahui hatiku..."<br><strong class="not-italic">1 Tawarikh 28:9</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Doktrin Tritunggal -->
+    <section id="tritunggal" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-blue-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Doktrin Tritunggal
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Doktrin Tritunggal</strong> adalah kebenaran sentral iman Kristen yang mengajarkan bahwa Allah adalah satu dalam esensi tetapi tiga dalam pribadi: Bapa, Anak, dan Roh Kudus.
+            </p>
+          </div>
+
+          <!-- Definisi Tritunggal -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">Definisi Tritunggal</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="bg-white border border-indigo-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-indigo-600 text-2xl">1</span>
+                </div>
+                <h4 class="font-bold text-indigo-900 mb-3">Satu Esensi</h4>
+                <p class="text-gray-700 text-sm">Allah adalah satu dalam hakikat, substansi, dan keberadaan-Nya</p>
+              </div>
+
+              <div class="bg-white border border-indigo-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-indigo-600 text-2xl">3</span>
+                </div>
+                <h4 class="font-bold text-indigo-900 mb-3">Tiga Pribadi</h4>
+                <p class="text-gray-700 text-sm">Bapa, Anak, dan Roh Kudus adalah pribadi-pribadi yang berbeda</p>
+              </div>
+
+              <div class="bg-white border border-indigo-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-indigo-600 text-2xl">=</span>
+                </div>
+                <h4 class="font-bold text-indigo-900 mb-3">Setara Kekal</h4>
+                <p class="text-gray-700 text-sm">Setiap pribadi sepenuhnya Allah dan setara dalam kekekalan</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bukti Alkitabiah -->
+          <div class="bg-gradient-to-r from-gray-50 to-indigo-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Bukti Alkitabiah Tritunggal</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-indigo-200">
+                <h4 class="font-bold text-indigo-900 text-xl mb-4 text-center">Perjanjian Lama<br><span class="text-lg font-normal">(Bayangan Tritunggal)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-indigo-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-indigo-900 mb-2">Kejadian 1:26</h5>
+                    <p class="text-indigo-800 text-sm italic">"Baiklah Kita menjadikan manusia menurut gambar dan rupa Kita..."</p>
+                  </div>
+                  <div class="bg-indigo-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-indigo-900 mb-2">Yesaya 48:16</h5>
+                    <p class="text-indigo-800 text-sm italic">"Dari dahulu Aku tidak berkata-kata dengan sembunyi... dan sekarang Tuhan ALLAH mengutus Aku dengan Roh-Nya."</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-indigo-200">
+                <h4 class="font-bold text-indigo-900 text-xl mb-4 text-center">Perjanjian Baru<br><span class="text-lg font-normal">(Penggenapan Tritunggal)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-indigo-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-indigo-900 mb-2">Matius 28:19</h5>
+                    <p class="text-indigo-800 text-sm italic">"Karena itu pergilah, jadikanlah semua bangsa murid-Ku dan baptislah mereka dalam nama Bapa dan Anak dan Roh Kudus."</p>
+                  </div>
+                  <div class="bg-indigo-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-indigo-900 mb-2">2 Korintus 13:13</h5>
+                    <p class="text-indigo-800 text-sm italic">"Kasih karunia Tuhan Yesus Kristus, dan kasih Allah, dan persekutuan Roh Kudus..."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pribadi-pribadi Tritunggal -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Pribadi-pribadi dalam Tritunggal</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
+                <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span class="text-blue-600 text-3xl">👑</span>
+                </div>
+                <h4 class="font-bold text-blue-900 text-xl mb-4">Allah Bapa</h4>
+                <div class="space-y-3 text-left">
+                  <div class="bg-white p-3 rounded-lg">
+                    <h5 class="font-semibold text-blue-900 mb-1">Peran</h5>
+                    <p class="text-gray-700 text-sm">Perencana keselamatan, Sumber segala sesuatu</p>
+                  </div>
+                  <div class="bg-white p-3 rounded-lg">
+                    <h5 class="font-semibold text-blue-900 mb-1">Karya</h5>
+                    <p class="text-gray-700 text-sm">Mengutus Anak, memilih orang percaya</p>
+                  </div>
+                  <div class="bg-white p-3 rounded-lg">
+                    <h5 class="font-semibold text-blue-900 mb-1">Ayat Kunci</h5>
+                    <p class="text-gray-700 text-sm">Efesus 1:3-6</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-red-50 border border-red-200 rounded-xl p-6 text-center">
+                <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span class="text-red-600 text-3xl">✝️</span>
+                </div>
+                <h4 class="font-bold text-red-900 text-xl mb-4">Allah Anak</h4>
+                <div class="space-y-3 text-left">
+                  <div class="bg-white p-3 rounded-lg">
+                    <h5 class="font-semibold text-red-900 mb-1">Peran</h5>
+                    <p class="text-gray-700 text-sm">Pelaksana keselamatan, Pengantara</p>
+                  </div>
+                  <div class="bg-white p-3 rounded-lg">
+                    <h5 class="font-semibold text-red-900 mb-1">Karya</h5>
+                    <p class="text-gray-700 text-sm">Penebusan, pengajaran, pemerintahan</p>
+                  </div>
+                  <div class="bg-white p-3 rounded-lg">
+                    <h5 class="font-semibold text-red-900 mb-1">Ayat Kunci</h5>
+                    <p class="text-gray-700 text-sm">Kolose 1:15-20</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
+                <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span class="text-green-600 text-3xl">🕊️</span>
+                </div>
+                <h4 class="font-bold text-green-900 text-xl mb-4">Roh Kudus</h4>
+                <div class="space-y-3 text-left">
+                  <div class="bg-white p-3 rounded-lg">
+                    <h5 class="font-semibold text-green-900 mb-1">Peran</h5>
+                    <p class="text-gray-700 text-sm">Penerap keselamatan, Penghibur</p>
+                  </div>
+                  <div class="bg-white p-3 rounded-lg">
+                    <h5 class="font-semibold text-green-900 mb-1">Karya</h5>
+                    <p class="text-gray-700 text-sm">Menginsafkan, menguduskan, memampukan</p>
+                  </div>
+                  <div class="bg-white p-3 rounded-lg">
+                    <h5 class="font-semibold text-green-900 mb-1">Ayat Kunci</h5>
+                    <p class="text-gray-700 text-sm">Yohanes 16:7-15</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Providensia Allah -->
+    <section id="providensia" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-blue-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Providensia Allah
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Providensia Allah</strong> adalah karya Allah yang berkelanjutan dalam memelihara ciptaan-Nya, mengarahkan semua peristiwa dan makhluk, serta bekerja dalam segala sesuatu untuk mencapai tujuan-tujuan ilahi-Nya.
+            </p>
+          </div>
+
+          <!-- Tiga Aspek Providensia -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">Tiga Aspek Providensia</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="bg-white border border-orange-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-orange-600 text-2xl">🌱</span>
+                </div>
+                <h4 class="font-bold text-orange-900 mb-3">Pemeliharaan<br><span class="text-sm font-normal">(Preservation)</span></h4>
+                <p class="text-gray-700 text-sm">Allah mempertahankan keberadaan dan fungsi ciptaan-Nya</p>
+                <div class="bg-orange-50 rounded-lg p-3 mt-3">
+                  <p class="text-orange-800 text-xs font-semibold">Kolose 1:17</p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-orange-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-orange-600 text-2xl">🤝</span>
+                </div>
+                <h4 class="font-bold text-orange-900 mb-3">Kerjasama<br><span class="text-sm font-normal">(Concurrence)</span></h4>
+                <p class="text-gray-700 text-sm">Allah bekerja bersama dengan kehendak bebas makhluk</p>
+                <div class="bg-orange-50 rounded-lg p-3 mt-3">
+                  <p class="text-orange-800 text-xs font-semibold">Filipi 2:13</p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-orange-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-orange-600 text-2xl">👑</span>
+                </div>
+                <h4 class="font-bold text-orange-900 mb-3">Pemerintahan<br><span class="text-sm font-normal">(Government)</span></h4>
+                <p class="text-gray-700 text-sm">Allah mengarahkan segala sesuatu untuk tujuan-Nya</p>
+                <div class="bg-orange-50 rounded-lg p-3 mt-3">
+                  <p class="text-orange-800 text-xs font-semibold">Efesus 1:11</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contoh-contoh Providensia -->
+          <div class="bg-gradient-to-r from-gray-50 to-orange-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Contoh-contoh Providensia dalam Alkitab</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-orange-200">
+                <h4 class="font-bold text-orange-900 mb-3">Yusuf di Mesir</h4>
+                <p class="text-gray-700 text-sm mb-4">Allah mengubah kejahatan saudara-saudara Yusuf menjadi kebaikan untuk menyelamatkan banyak orang</p>
+                <div class="bg-orange-50 rounded-lg p-3">
+                  <p class="text-orange-800 text-xs font-semibold">Kejadian 50:20</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-orange-200">
+                <h4 class="font-bold text-orange-900 mb-3">Ester dan Mordekhai</h4>
+                <p class="text-gray-700 text-sm mb-4">Allah bekerja melalui peristiwa-peristiwa untuk menyelamatkan bangsa Yahudi</p>
+                <div class="bg-orange-50 rounded-lg p-3">
+                  <p class="text-orange-800 text-xs font-semibold">Ester 4:14</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-orange-200">
+                <h4 class="font-bold text-orange-900 mb-3">Salib Kristus</h4>
+                <p class="text-gray-700 text-sm mb-4">Tindakan jahat manusia dalam menyalibkan Yesus menjadi rencana keselamatan Allah</p>
+                <div class="bg-orange-50 rounded-lg p-3">
+                  <p class="text-orange-800 text-xs font-semibold">Kisah 2:23-24</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Providensia dan Kejahatan -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Providensia dan Masalah Kejahatan</h3>
+
+            <div class="space-y-6">
+              <div class="bg-red-50 border-l-4 border-red-400 p-4 rounded-r-lg">
+                <h4 class="font-bold text-red-900 mb-2">Pertanyaan: "Jika Allah baik dan berkuasa, mengapa ada kejahatan?"</h4>
+                <p class="text-red-800 text-sm mb-3">Ini adalah pertanyaan teodisi klasik. Pandangan Reformed menjawab:</p>
+                <ul class="text-red-700 space-y-1 text-sm ml-4">
+                  <li>• Allah mengizinkan kejahatan tetapi tidak menjadi penyebabnya</li>
+                  <li>• Allah berdaulat atas kejahatan tanpa menjadi penjahat</li>
+                  <li>• Allah dapat menghasilkan kebaikan dari kejahatan</li>
+                  <li>• Kejahatan ada dalam kerangka tujuan Allah yang lebih besar</li>
+                </ul>
+              </div>
+
+              <div class="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-lg">
+                <h4 class="font-bold text-green-900 mb-2 text-left">Keseimbangan Alkitabiah</h4>
+                <p class="text-green-800 text-sm">Alkitab mengajarkan kedaulatan Allah dan tanggung jawab manusia secara bersamaan. Kedua kebenaran ini harus dipegang dalam ketegangan yang sehat.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Predestinasi -->
+    <section id="predestinasi" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-blue-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Predestinasi dan Pemilihan
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Predestinasi</strong> adalah doktrin yang mengajarkan bahwa sebelum dunia dijadikan, Allah dalam kedaulatan-Nya telah memilih orang-orang tertentu untuk diselamatkan berdasarkan kasih karunia-Nya semata.
+            </p>
+          </div>
+
+          <!-- Ayat Kunci -->
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8 rounded-r-lg">
+            <h4 class="font-bold text-yellow-900 mb-2">Basis Alkitabiah Predestinasi:</h4>
+            <p class="text-yellow-800 text-lg italic">
+              "Sebab semua orang yang dipilih-Nya dari semula, mereka juga ditentukan-Nya dari semula untuk menjadi serupa dengan gambaran Anak-Nya..."<br>
+              <strong class="not-italic">Roma 8:29</strong>
+            </p>
+            <p class="text-yellow-800 text-lg italic mt-4">
+              "Sebab di dalam Dia Allah telah memilih kita sebelum dunia dijadikan, supaya kita kudus dan tak bercacat di hadapan-Nya."<br>
+              <strong class="not-italic">Efesus 1:4</strong>
+            </p>
+          </div>
+
+          <!-- Pandangan tentang Predestinasi -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">Pandangan tentang Predestinasi</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-red-50 border border-red-200 rounded-xl p-6">
+                <h4 class="font-bold text-red-900 mb-3 text-lg text-left">❌ Pelagianisme/Semi-Pelagianisme</h4>
+                <p class="text-red-800 text-sm mb-4">Manusia dapat mengambil inisiatif pertama dalam keselamatan berdasarkan kehendak bebasnya.</p>
+                <ul class="text-red-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Menolak kerusakan total</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Anugerah bersifat menolong</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-orange-50 border border-orange-200 rounded-xl p-6">
+                <h4 class="font-bold text-orange-900 mb-3 text-lg">⚠️ Arminianisme</h4>
+                <p class="text-orange-800 text-sm mb-4">Allah mempredestinasikan berdasarkan pra-pengetahuan-Nya tentang siapa yang akan percaya.</p>
+                <ul class="text-orange-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Pemilihan bersyarat</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Anugerah dapat ditolak</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-green-50 border border-green-200 rounded-xl p-6">
+                <h4 class="font-bold text-green-900 mb-3 text-lg">✅ Calvinisme/Reformed</h4>
+                <p class="text-green-800 text-sm mb-4">Allah memilih secara berdaulat berdasarkan kehendak-Nya semata, bukan karena melihat iman manusia.</p>
+                <ul class="text-green-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Pemilihan tanpa syarat</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Anugerah tak tertolakkan</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-blue-50 border border-blue-200 rounded-xl p-6">
+                <h4 class="font-bold text-blue-900 mb-3 text-left text-lg">ℹ️ Lutheranism</h4>
+                <p class="text-blue-800 text-sm mb-4">Menekankan anugerah semata melalui iman, dengan pandangan moderat tentang predestinasi.</p>
+                <ul class="text-blue-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Fokus pada anugerah</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Keseimbangan kedaulatan</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lima Poin Calvinisme -->
+          <div class="bg-gradient-to-r from-gray-50 to-green-50 rounded-2xl p-4">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Lima Poin Calvinisme (TULIP)</h3>
+
+            <div class="space-y-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-green-200">
+                <div class="flex items-start">
+                  <span class="bg-green-100 text-green-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">T</span>
+                  <div>
+                    <h4 class="font-bold text-green-900 mb-2 text-left">Total Depravity<br><span class="text-sm font-normal">(Kerusakan Total)</span></h4>
+                    <p class="text-gray-700 text-sm">Dosa mempengaruhi seluruh aspek manusia, termasuk kemampuannya untuk datang kepada Allah.</p>
+                    <div class="bg-green-50 rounded-lg p-3 mt-3">
+                      <p class="text-green-800 text-xs font-semibold">Roma 3:10-12</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-green-200">
+                <div class="flex items-start">
+                  <span class="bg-green-100 text-green-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">U</span>
+                  <div>
+                    <h4 class="font-bold text-green-900 mb-2 text-left">Unconditional Election<br><span class="text-sm font-normal">(Pemilihan Tanpa Syarat)</span></h4>
+                    <p class="text-gray-700 text-sm">Allah memilih orang untuk diselamatkan berdasarkan kehendak-Nya, bukan karena melihat iman atau perbuatan baik.</p>
+                    <div class="bg-green-50 rounded-lg p-3 mt-3">
+                      <p class="text-green-800 text-xs font-semibold">Efesus 1:4-5</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-green-200">
+                <div class="flex items-start">
+                  <span class="bg-green-100 text-green-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">L</span>
+                  <div>
+                    <h4 class="font-bold text-green-900 mb-2 text-left">Limited Atonement<br><span class="text-sm font-normal">(Penebusan Terbatas)</span></h4>
+                    <p class="text-gray-700 text-sm">Kristus mati untuk menyelamatkan orang pilihan secara efektif, meskipun tawaran keselamatan bersifat universal.</p>
+                    <div class="bg-green-50 rounded-lg p-3 mt-3">
+                      <p class="text-green-800 text-xs font-semibold">Yohanes 10:11,15</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-green-200">
+                <div class="flex items-start">
+                  <span class="bg-green-100 text-green-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">I</span>
+                  <div>
+                    <h4 class="font-bold text-green-900 mb-2 text-left">Irresistible Grace<br><span class="text-sm font-normal">(Anugerah Tak Tertolakkan)</span></h4>
+                    <p class="text-gray-700 text-sm">Ketika Allah memanggil orang pilihan kepada keselamatan, mereka tidak dapat menolak anugerah-Nya.</p>
+                    <div class="bg-green-50 rounded-lg p-3 mt-3">
+                      <p class="text-green-800 text-xs font-semibold">Yohanes 6:37,44</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-green-200">
+                <div class="flex items-start">
+                  <span class="bg-green-100 text-green-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">P</span>
+                  <div>
+                    <h4 class="font-bold text-green-900 mb-2 text-left">Perseverance of the Saints<br><span class="text-sm font-normal">(Ketekunan Orang-orang Kudus)</span></h4>
+                    <p class="text-gray-700 text-sm">Orang yang benar-benar dipilih akan bertahan dalam iman sampai akhir dan tidak dapat kehilangan keselamatannya.</p>
+                    <div class="bg-green-50 rounded-lg p-3 mt-3">
+                      <p class="text-green-800 text-xs font-semibold">Yohanes 10:28-29</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aplikasi Praktis -->
+    <section id="aplikasi" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-blue-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Aplikasi Praktis Teologi Proper
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              Pemahaman yang benar tentang doktrin Allah tidak hanya untuk pengetahuan akademis, tetapi harus mengubah cara kita hidup, beribadah, dan melayani.
+            </p>
+          </div>
+
+          <!-- Aplikasi dalam Hidup -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">Aplikasi dalam Kehidupan Sehari-hari</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">🙏</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3 text-left">Ibadah yang Benar</h4>
+                <p class="text-gray-700 text-sm">Menyembah Allah sesuai dengan sifat-sifat-Nya yang sejati, bukan menurut gambaran kita sendiri.</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">💖</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3 text-left">Kehidupan Doa</h4>
+                <p class="text-gray-700 text-sm">Berdoa dengan keyakinan bahwa Allah berdaulat, baik, dan mendengar doa kita.</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">🌪️</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3 text-left">Damai dalam Kesulitan</h4>
+                <p class="text-gray-700 text-sm">Percaya bahwa Allah berdaulat atas segala keadaan dan bekerja untuk kebaikan kita.</p>
+              </div>
+
+              <div class="bg-white border border-blue-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-blue-600 text-xl">🎯</span>
+                </div>
+                <h4 class="font-bold text-blue-900 mb-3 text-left">Pelayanan dengan Keyakinan</h4>
+                <p class="text-gray-700 text-sm">Melayani dengan percaya bahwa keselamatan bergantung pada anugerah Allah, bukan kemampuan kita.</p>
+              </div>
+
+              <div class="bg-white border border-blue-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-blue-600 text-xl">🕊️</span>
+                </div>
+                <h4 class="font-bold text-blue-900 mb-3 text-left">Kepastian Keselamatan</h4>
+                <p class="text-gray-700 text-sm">Berdasar pada karya Kristus dan pemilihan Allah, bukan perasaan atau performa kita.</p>
+              </div>
+
+              <div class="bg-white border border-blue-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-blue-600 text-xl">👑</span>
+                </div>
+                <h4 class="font-bold text-blue-900 mb-3 text-left">Hidup untuk Kemuliaan Allah</h4>
+                <p class="text-gray-700 text-sm">Mengakui bahwa segala sesuatu ada untuk kemuliaan Allah, bukan untuk kepuasan kita.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kesalahan yang Harus Dihindari -->
+          <div class="bg-gradient-to-r from-gray-50 to-red-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Kesalahan-kesalahan dalam Memahami Allah</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-red-200">
+                <h4 class="font-bold text-red-900 text-xl mb-4 text-center">Deisme<br><span class="text-lg font-normal">(Allah yang Jauh)</span></h4>
+                <p class="text-gray-700 mb-4 text-center">Allah menciptakan dunia tetapi tidak terlibat lagi. Dia seperti arloji yang membuat jam lalu meninggalkannya.</p>
+                <div class="bg-red-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-red-900 mb-2">Koreksi Alkitabiah:</h5>
+                  <p class="text-red-800 text-sm">Allah aktif memelihara dan berinteraksi dengan ciptaan-Nya (Kolose 1:17).</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-red-200">
+                <h4 class="font-bold text-red-900 text-xl mb-4 text-center">Panteisme<br><span class="text-lg font-normal">(Allah adalah Segala sesuatu)</span></h4>
+                <p class="text-gray-700 mb-4 text-center">Allah identik dengan alam semesta. Segala sesuatu adalah Allah dan Allah adalah segala sesuatu.</p>
+                <div class="bg-red-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-red-900 mb-2">Koreksi Alkitabiah:</h5>
+                  <p class="text-red-800 text-sm">Allah transenden dan terpisah dari ciptaan-Nya, meskipun imanen (Yesaya 55:8-9).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tips Pertumbuhan -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Tips untuk Bertumbuh dalam Pengenalan akan Allah</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Disiplin Rohani:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-green-50 p-4 rounded-lg">
+                    <span class="bg-green-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Baca Alkitab secara sistematis untuk mengenal karakter Allah</span>
+                  </div>
+                  <div class="flex items-center bg-green-50 p-4 rounded-lg">
+                    <span class="bg-green-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Renungkan sifat-sifat Allah dalam doa dan penyembahan</span>
+                  </div>
+                  <div class="flex items-center bg-green-50 p-4 rounded-lg">
+                    <span class="bg-green-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Pelajari teologi yang sehat melalui buku dan pengajaran</span>
+                  </div>
+                  <div class="flex items-center bg-green-50 p-4 rounded-lg">
+                    <span class="bg-green-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Refleksikan providensia Allah dalam hidup sehari-hari</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Komunitas dan Pertanggungjawaban:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Diskusikan kebenaran tentang Allah dengan sesama percaya</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Ikuti pengajaran yang setia kepada Alkitab di gereja lokal</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Baca biografi orang-orang yang mengenal Allah dengan dalam</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Praktikkan kebenaran tentang Allah dalam pelayanan dan misi</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian-Bagian Terkait -->
+    <section class="mt-12">
+      <div class="bg-gradient-to-r from-sky-600 to-blue-800 text-white rounded-2xl p-4 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">
+          Lanjutkan Perjalanan Teologismu
+        </h2>
+        <p class="mb-8 max-w-2xl mx-auto text-lg">
+          Setelah memahami Teologi Proper, saatnya melanjutkan eksplorasi ke doktrin-doktrin sistematik berikutnya untuk membangun pemahaman teologis yang komprehensif dan alkitabiah.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/edukasi/teologi-sistematik/kristologi"
+            class="bg-white text-sky-900 px-8 py-4 rounded-xl font-bold hover:text-sky-700 transition-all shadow-lg hover:shadow-xl">
+            ✝️ Pelajari Kristologi Selanjutnya
+          </a>
+          <a
+            href="/edukasi/teologi-sistematik"
+            class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-sky-600 transition-all">
+            🏠 Kembali ke Overview Teologi
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Link ke Bagian-Bagian Terkait -->
+    <section class="mt-8">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-4">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+          Eksplorasi Lebih Lanjut tentang Allah
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {relatedSections.map((section) => (
+            <a
+              href={section.url}
+              class="bg-gray-50 hover:bg-gray-100 p-6 rounded-xl border border-gray-200 transition-all group text-left">
+              <div class="flex items-start">
+                <span class="text-3xl mr-4 group-hover:scale-110 transition-transform">
+                  {section.icon}
+                </span>
+                <div>
+                  <h3 class="font-bold text-gray-900 text-lg mb-2 group-hover:text-sky-600">
+                    {section.title}
+                  </h3>
+                  <p class="text-gray-700 text-sm">{section.description}</p>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <div class="text-center mt-8">
+          <a
+            href="/edukasi/teologi-sistematik#kurikulum"
+            class="inline-flex items-center text-sky-600 hover:text-sky-800 font-semibold">
+            <span>Lihat Kurikulum Lengkap Teologi Sistematik</span>
+            <span class="ml-2">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <style>
+    .prose {
+      max-width: none;
+    }
+    .scroll-mt-24 {
+      scroll-margin-top: 6rem;
+    }
+  </style>
+</EdukasiLayout>

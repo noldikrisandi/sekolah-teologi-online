@@ -1,0 +1,999 @@
+---
+// src/pages/edukasi/teologi-sistematik/kristologi/index.astro
+import EdukasiLayout from "../../../../layouts/EdukasiLayout.astro";
+
+const pageTitle = "Kristologi - Doktrin tentang Kristus dalam Teologi Sistematik";
+const pageDescription = "Pelajari doktrin tentang Pribadi dan karya Kristus: keilahian, kemanusiaan, natur ganda, penebusan, dan kedudukan-Nya berdasarkan pendekatan teologi Reformed";
+const pageImage = "/images/banner/kristologi-yesus.webp";
+const pageUrl = "edukasi/teologi-sistematik/kristologi";
+
+const breadcrumbs = [
+  { name: "Beranda", url: "https://sekolahteologi.com/" },
+  { name: "Edukasi", url: "https://sekolahteologi.com/edukasi" },
+  {
+    name: "Teologi Sistematik",
+    url: "https://sekolahteologi.com/edukasi/teologi-sistematik",
+  },
+  {
+    name: "Kristologi",
+    url: "https://sekolahteologi.com/edukasi/teologi-sistematik/kristologi",
+  },
+];
+
+// Data untuk bagian-bagian terkait
+const relatedSections = [
+  {
+    title: "Teologi Proper - Doktrin Allah",
+    url: "/edukasi/teologi-sistematik/teologi-proper",
+    description: "Memahami sifat, atribut, dan karya Allah Tritunggal",
+    icon: "👑",
+  },
+  {
+    title: "Soteriologi - Doktrin Keselamatan",
+    url: "/edukasi/teologi-sistematik/soteriologi",
+    description: "Mengenal karya keselamatan Allah dalam Kristus",
+    icon: "🕊️",
+  },
+  {
+    title: "Pneumatologi - Doktrin Roh Kudus",
+    url: "/edukasi/teologi-sistematik/pneumatologi",
+    description: "Mempelajari Pribadi dan karya Roh Kudus",
+    icon: "🔥",
+  },
+  {
+    title: "Eskatologi - Doktrin Akhir Zaman",
+    url: "/edukasi/teologi-sistematik/eskatalogi",
+    description: "Memahami kedatangan Kristus kedua kali dan akhir zaman",
+    icon: "📯",
+  },
+];
+---
+
+<EdukasiLayout
+  title={pageTitle}
+  description={pageDescription}
+  image={pageImage}
+  url={pageUrl}
+  type="article"
+  breadcrumbs={breadcrumbs}>
+  <div class="space-y-8">
+    <!-- Header Section -->
+    <header class="text-center py-12 bg-gradient-to-r from-sky-50 to-sky-100 rounded-2xl shadow-sm">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Kristologi
+        </h1>
+        <p class="text-xl text-gray-700 mb-6 p-5 max-w-3xl mx-auto leading-relaxed">
+          Doktrin tentang Kristus - Memahami Pribadi, Natur, dan Karya Penebusan Yesus Kristus sebagai Allah dan Manusia
+        </p>
+        <div class="flex flex-wrap justify-center gap-2">
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Keilahian Kristus</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Kemanusiaan Kristus</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Penebusan</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Pengantaraan</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Pengertian Kristologi -->
+    <section id="pengertian" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Pengertian Kristologi dalam Teologi Sistematik
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 text-left mb-4 text-left">
+                Definisi dan Signifikansi
+              </h3>
+
+              <div class="bg-sky-50 border-l-4 border-sky-400 p-4 mb-6">
+                <p class="text-sky-700 font-medium">
+                  <strong>Kristologi</strong> berasal dari bahasa Yunani <em>Christos</em> (Χριστός) yang berarti "Yang Diurapi" dan <em>logos</em> (λόγος) yang berarti "studi/ilmu". Secara teologis berarti <strong>"studi tentang Pribadi dan karya Yesus Kristus"</strong>.
+                </p>
+              </div>
+
+              <p class="text-gray-700 mb-4 leading-relaxed">
+                Dalam <strong>Teologi Sistematika</strong>, <strong>Kristologi</strong> adalah disiplin teologi yang mempelajari natur, Pribadi, dan karya Yesus Kristus, termasuk keilahian-Nya, kemanusiaan-Nya, hubungan kedua natur tersebut, dan karya penebusan-Nya.
+              </p>
+
+              <div class="bg-yellow-50 rounded-lg p-4 mb-6">
+                <h4 class="font-semibold text-yellow-900 mb-3">
+                  Signifikansi Kristologi
+                </h4>
+                <p class="text-yellow-800 text-sm">
+                  <strong>Pemahaman yang benar tentang Kristus menentukan keselamatan kita</strong>. "Tidak ada keselamatan di dalam siapapun juga selain di dalam Dia, sebab di bawah kolong langit ini tidak ada nama lain yang diberikan kepada manusia yang olehnya kita dapat diselamatkan." (Kisah Para Rasul 4:12)
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 text-left mb-4 text-left">
+                Pertanyaan-Pertanyaan Kunci Kristologi
+              </h3>
+
+              <div class="space-y-4">
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q1</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Siapakah Yesus Kristus?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami identitas-Nya sebagai Allah dan manusia</p>
+                    <a href="#pribadi-kristus" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">👑 Pelajari Pribadi Kristus</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q2</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Apa Hubungan Natur Ilahi dan Manusiawi-Nya?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami persatuan kedua natur dalam satu Pribadi</p>
+                    <a href="#natur-kristus" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">⚖️ Pelajari Natur Kristus</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q3</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Apa yang Dicapai Karya-Nya?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami penebusan, pendamaian, dan pengantaraan</p>
+                    <a href="#karya-kristus" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">✝️ Pelajari Karya Kristus</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q4</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Bagaimana Kedudukan-Nya Sekarang?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami pelayanan-Nya sebagai Pengantara dan Imam Besar</p>
+                    <a href="#kedudukan-kristus" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">👑 Pelajari Kedudukan Kristus</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pribadi Kristus -->
+    <section id="pribadi-kristus" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Pribadi Kristus
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Pribadi Kristus</strong> mengacu pada identitas esensial Yesus sebagai Allah yang menjadi manusia. Pemahaman yang benar tentang Pribadi Kristus adalah fondasi iman Kristen.
+            </p>
+          </div>
+
+          <!-- Ayat Kunci -->
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8 rounded-r-lg">
+            <h4 class="font-bold text-yellow-900 mb-2 text-left">Basis Alkitabiah Pribadi Kristus:</h4>
+            <p class="text-yellow-800 text-lg italic">
+              "Pada mulanya adalah Firman; Firman itu bersama-sama dengan Allah dan Firman itu adalah Allah."<br>
+              <strong class="not-italic">Yohanes 1:1</strong>
+            </p>
+            <p class="text-yellow-800 text-lg italic mt-4">
+              "Firman itu telah menjadi manusia, dan diam di antara kita, dan kita telah melihat kemuliaan-Nya, yaitu kemuliaan yang diberikan kepada-Nya sebagai Anak Tunggal Bapa, penuh kasih karunia dan kebenaran."<br>
+              <strong class="not-italic">Yohanes 1:14</strong>
+            </p>
+          </div>
+
+          <!-- Gelar-Gelar Kristus -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Gelar-Gelar Kristus yang Menunjukkan Pribadi-Nya</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">👑 Anak Allah<br><span class="text-sm font-normal">(The Son of God)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Menunjukkan hubungan kekal-Nya dengan Bapa dan natur ilahi-Nya.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Hubungan kekal dalam Tritunggal (Yohanes 1:1)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Kesetaraan dengan Bapa (Yohanes 5:18)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Pengakuan ilahi (Matius 16:16)</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">🙌 Anak Manusia<br><span class="text-sm font-normal">(The Son of Man)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Menunjukkan natur manusiawi-Nya dan peran Mesianik-Nya.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Identifikasi dengan manusia (Matius 8:20)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Otoritas ilahi (Markus 2:10)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Kedatangan kedua dalam kemuliaan (Matius 26:64)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pra-Eksistensi Kristus -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Pra-Eksistensi dan Inkarnasi Kristus</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Pra-Eksistensi Kekal<br><span class="text-lg font-normal">(Eternal Pre-existence)</span></h4>
+                <p class="text-gray-700 mb-4 text-center">Kristus telah ada sebelum inkarnasi, dari kekal sampai kekal, sebagai Pribadi kedua Tritunggal.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Bukti Alkitab:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Yohanes 1:1 - "Pada mulanya adalah Firman"</li>
+                    <li>• Yohanes 8:58 - "Sebelum Abraham jadi, Aku telah ada"</li>
+                    <li>• Kolose 1:17 - "Ia ada terlebih dahulu dari segala sesuatu"</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Inkarnasi<br><span class="text-lg font-normal">(The Incarnation)</span></h4>
+                <p class="text-gray-700 mb-4 text-center">Allah Putra mengambil natur manusiawi tanpa meninggalkan natur ilahi-Nya.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Makna Teologis:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Penyataan Allah yang sempurna</li>
+                    <li>• Penggenapan rencana penebusan</li>
+                    <li>• Pengidentifikasian dengan manusia</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Natur Kristus -->
+    <section id="natur-kristus" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Natur Ganda Kristus
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Natur ganda Kristus</strong> mengacu pada kebenaran bahwa Yesus Kristus adalah sepenuhnya Allah dan sepenuhnya manusia dalam satu Pribadi. Doktrin ini adalah misteri yang melampaui akal manusia tetapi dinyatakan dalam Alkitab.
+            </p>
+          </div>
+
+          <!-- Keilahian Kristus -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Keilahian Kristus</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">∞</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Atribut Ilahi</h4>
+                <p class="text-gray-700 text-sm">Kristus memiliki semua atribut keilahian: kekekalan, mahatahu, mahakuasa, mahahadir</p>
+                <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Kolose 2:9</p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">🙏</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Penyembahan Ilahi</h4>
+                <p class="text-gray-700 text-sm">Kristus menerima penyembahan yang hanya layak diberikan kepada Allah</p>
+                <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Yohanes 20:28</p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">⚖️</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Otoritas Ilahi</h4>
+                <p class="text-gray-700 text-sm">Kristus memiliki otoritas untuk mengampuni dosa dan menghakimi dunia</p>
+                <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Markus 2:5-7</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kemanusiaan Kristus -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Kemanusiaan Kristus yang Sejati</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Bukti Kemanusiaan<br><span class="text-lg font-normal">(Evidence of Humanity)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Tubuh Fisik</h5>
+                    <p class="text-sky-800 text-sm">Lahir, tumbuh, lapar, haus, lelah, menderita, dan mati</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Yohanes 4:6; 19:28</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Emosi Manusiawi</h5>
+                    <p class="text-sky-800 text-sm">Bergembira, marah, sedih, terharu, takut</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Yohanes 11:35; Matius 26:38</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pikiran Manusiawi</h5>
+                    <p class="text-sky-800 text-sm">Belajar, bertanya, berkembang dalam hikmat</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Lukas 2:52</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Kemanusiaan tanpa Dosa<br><span class="text-lg font-normal">(Sinless Humanity)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Kelahiran dari Perawan</h5>
+                    <p class="text-sky-800 text-sm">Terhindar dari natur berdosa yang diturunkan Adam</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Lukas 1:35</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Ketidakberdosaan</h5>
+                    <p class="text-sky-800 text-sm">Tidak pernah berbuat dosa atau memiliki natur berdosa</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Ibrani 4:15; 1 Petrus 2:22</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pencobaan Sejati</h5>
+                    <p class="text-sky-800 text-sm">Dicobai dalam segala hal seperti kita, tetapi tidak berdosa</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Ibrani 4:15</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Persatuan Hypostatic -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Persatuan Hypostatic (Hypostatic Union)</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">Definisi<br><span class="text-sm font-normal">(Definition)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Persatuan hypostatic adalah doktrin bahwa dua natur (ilahi dan manusiawi) bersatu dalam satu Pribadi (hypostasis) Yesus Kristus, tanpa pencampuran, perubahan, pembagian, atau pemisahan.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Ditetapkan dalam Konsili Kalsedon (451 M)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Dua natur dalam satu Pribadi</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Komunikasi atribut (communicatio idiomatum)</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg text-left">Implikasi<br><span class="text-sm font-normal">(Implications)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Persatuan hypostatic memungkinkan Kristus menjadi Pengantara yang sempurna antara Allah dan manusia.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Sebagai Allah: dapat menyelamatkan sepenuhnya</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Sebagai manusia: dapat mewakili manusia sepenuhnya</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Sebagai Allah-manusia: dapat mendamaikan sepenuhnya</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-6 rounded-r-lg">
+              <h4 class="font-bold text-yellow-900 mb-2 text-left">Rumusan Kalsedon:</h4>
+              <p class="text-yellow-800 text-sm">
+                <strong>"Kami mengakui satu dan sama Anak, Tuhan kita Yesus Kristus, sempurna dalam keilahian dan sempurna dalam kemanusiaan, sungguh-sungguh Allah dan sungguh-sungguh manusia... dikenali dalam dua natur tanpa pencampuran, tanpa perubahan, tanpa pembagian, tanpa pemisahan."</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Karya Kristus -->
+    <section id="karya-kristus" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Karya Penebusan Kristus
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Karya penebusan Kristus</strong> mencakup seluruh hidup, kematian, kebangkitan, dan kenaikan-Nya untuk keselamatan umat manusia. Karya ini bersifat penuh, final, dan cukup untuk menyelamatkan semua yang percaya.
+            </p>
+          </div>
+
+          <!-- Ayat Kunci -->
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8 rounded-r-lg">
+            <h4 class="font-bold text-yellow-900 mb-2 text-left">Basis Alkitabiah Penebusan:</h4>
+            <p class="text-yellow-800 text-lg italic">
+              "Karena Anak Manusia juga datang bukan untuk dilayani, melainkan untuk melayani dan untuk memberikan nyawa-Nya menjadi tebusan bagi banyak orang."<br>
+              <strong class="not-italic">Markus 10:45</strong>
+            </p>
+            <p class="text-yellow-800 text-lg italic mt-4">
+              "Sebab itu, sama seperti oleh satu pelanggaran semua orang beroleh penghukuman, demikian pula oleh satu perbuatan kebenaran semua orang beroleh pembenaran untuk hidup. Jadi sama seperti oleh ketidaktaatan satu orang semua orang telah menjadi orang berdosa, demikian pula oleh ketaatan satu orang semua orang menjadi orang benar."<br>
+              <strong class="not-italic">Roma 5:18-19</strong>
+            </p>
+          </div>
+
+          <!-- Tahapan Karya Penebusan -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Tahapan Karya Penebusan Kristus</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-3">
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">👼</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-2">Inkarnasi</h4>
+                <p class="text-gray-700 text-xs">Allah menjadi manusia untuk mengidentifikasi dengan kita dan menjadi Pengantara</p>
+                <div class="bg-sky-50 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Filipi 2:6-8</p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">✝️</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-2">Penebusan</h4>
+                <p class="text-gray-700 text-xs">Kematian di kayu salib sebagai korban penebusan dosa</p>
+                <div class="bg-sky-50 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">1 Petrus 2:24</p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">🕊️</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-2">Kebangkitan</h4>
+                <p class="text-gray-700 text-xs">Kemenangan atas dosa dan maut, penggenapan penebusan</p>
+                <div class="bg-sky-50 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">1 Korintus 15:20</p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">👑</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-2">Kenaikan</h4>
+                <p class="text-gray-700 text-xs">Pemuliaan dan pelayanan pengantaraan di sorga</p>
+                <div class="bg-sky-50 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Ibrani 4:14-16</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Teori-teori Penebusan -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Teori-teori tentang Penebusan</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 mb-3">Teori Tebusan<br><span class="text-sm font-normal">(Ransom Theory)</span></h4>
+                <p class="text-gray-700 text-sm mb-4">Kematian Kristus sebagai tebusan yang dibayarkan kepada Iblis untuk membebaskan manusia</p>
+                <div class="bg-sky-50 rounded-lg p-3">
+                  <p class="text-sky-800 text-xs font-semibold">Markus 10:45</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 mb-3">Teori Pengaruh Moral<br><span class="text-sm font-normal">(Moral Influence)</span></h4>
+                <p class="text-gray-700 text-sm mb-4">Kematian Kristus sebagai demonstrasi kasih Allah untuk menggerakkan pertobatan</p>
+                <div class="bg-sky-50 rounded-lg p-3">
+                  <p class="text-sky-800 text-xs font-semibold">Roma 5:8</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 mb-3">Teori Kristus Victor<br><span class="text-sm font-normal">(Christus Victor)</span></h4>
+                <p class="text-gray-700 text-sm mb-4">Kristus mengalahkan kuasa dosa, maut, dan Iblis melalui kematian dan kebangkitan</p>
+                <div class="bg-sky-50 rounded-lg p-3">
+                  <p class="text-sky-800 text-xs font-semibold">Kolose 2:15</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 mb-3">Teori Pengantaraan<br><span class="text-sm font-normal">(Satisfaction Theory)</span></h4>
+                <p class="text-gray-700 text-sm mb-4">Kematian Kristus memuaskan keadilan Allah yang dilanggar oleh dosa manusia</p>
+                <div class="bg-sky-50 rounded-lg p-3">
+                  <p class="text-sky-800 text-xs font-semibold">Roma 3:25-26</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 mb-3">Teori Penggantian Hukuman<br><span class="text-sm font-normal">(Penal Substitution)</span></h4>
+                <p class="text-gray-700 text-sm mb-4">Kristus menanggung hukuman dosa yang seharusnya ditanggung manusia</p>
+                <div class="bg-sky-50 rounded-lg p-3">
+                  <p class="text-sky-800 text-xs font-semibold">Yesaya 53:5-6</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 mb-3">Teori Pemerintahan<br><span class="text-sm font-normal">(Governmental Theory)</span></h4>
+                <p class="text-gray-700 text-sm mb-4">Kematian Kristus menunjukkan keadilan pemerintahan Allah tanpa perlu pembayaran penuh</p>
+                <div class="bg-sky-50 rounded-lg p-3">
+                  <p class="text-sky-800 text-xs font-semibold">Roma 3:25-26</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aspek-aspek Penebusan -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Aspek-aspek Karya Penebusan</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Kematian Kristus:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Penggantian hukuman (substitutionary atonement)</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Pendamaian (propitiation) - memuaskan murka Allah</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Penebusan (skyemption) - membayar harga dosa</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Rekonsiliasi (reconciliation) - memulihkan hubungan</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Kebangkitan Kristus:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Pembenaran (justification) - membuktikan penerimaan korban</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Kemenangan (victory) - mengalahkan maut dan dosa</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Jaminan (guarantee) - menjamin kebangkitan orang percaya</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Pengangkatan (exaltation) - pemuliaan sebagai Tuhan</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kedudukan Kristus -->
+    <section id="kedudukan-kristus" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Kedudukan dan Pelayanan Kristus Sekarang
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Kedudukan Kristus</strong> setelah kenaikan-Nya mencakup peran-Nya sebagai Pengantara, Imam Besar, Raja, dan Tuhan. Pelayanan-Nya yang sekarang di sorga adalah jaminan keselamatan dan pertolongan bagi orang percaya.
+            </p>
+          </div>
+
+          <!-- Tiga Jabatan Kristus -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Tiga Jabatan Mesianik Kristus (<em>Munus Triplex</em>)</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">👑</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Nabi<br><span class="text-sm font-normal">(Prophet)</span></h4>
+                <p class="text-gray-700 text-sm">Menyatakan kehendak dan firman Allah kepada manusia</p>
+                <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Ulangan 18:15; Kisah 3:22</p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">⛪</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Imam<br><span class="text-sm font-normal">(Priest)</span></h4>
+                <p class="text-gray-700 text-sm">Mewakili manusia kepada Allah dan mempersembahkan korban</p>
+                <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Mazmur 110:4; Ibrani 7-10</p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">⚖️</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Raja<br><span class="text-sm font-normal">(King)</span></h4>
+                <p class="text-gray-700 text-sm">Memerintah atas umat-Nya dan seluruh ciptaan</p>
+                <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Mazmur 2; Wahyu 19:16</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pelayanan Pengantaraan -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Pelayanan Pengantaraan Kristus di Sorga</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Perantaraan Doa<br><span class="text-lg font-normal">(Intercessory Prayer)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Doa Syafaat</h5>
+                    <p class="text-sky-800 text-sm">Kristus berdoa untuk orang percaya di hadapan Bapa</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Roma 8:34; Ibrani 7:25</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Jaminan Keselamatan</h5>
+                    <p class="text-sky-800 text-sm">Doa syafaat-Nya menjamin keselamatan orang percaya</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Yohanes 17:9-12</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pertolongan dalam Pencobaan</h5>
+                    <p class="text-sky-800 text-sm">Memahami pergumulan kita dan memberikan pertolongan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Ibrani 2:18; 4:15-16</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Pelayanan Imam Besar<br><span class="text-lg font-normal">(High Priestly Ministry)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Korban yang Sempurna</h5>
+                    <p class="text-sky-800 text-sm">Telah mempersembahkan diri sekali untuk selamanya</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Ibrani 9:11-14</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Akses kepada Allah</h5>
+                    <p class="text-sky-800 text-sm">Membuka jalan masuk ke hadirat Allah dengan penuh keberanian</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Ibrani 10:19-22</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pengudusan yang Berkelanjutan</h5>
+                    <p class="text-sky-800 text-sm">Terus menguduskan orang percaya melalui pelayanan-Nya</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Ibrani 2:11; 10:14</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kedatangan Kristus Kedua Kali -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Kedatangan Kristus Kedua Kali</h3>
+
+            <div class="space-y-6">
+              <div class="bg-sky-50 border-l-4 border-sky-400 p-4 rounded-r-lg">
+                <h4 class="font-bold text-sky-900 mb-2">Pengharapan Gereja</h4>
+                <p class="text-sky-800 text-sm mb-3">Kedatangan Kristus kedua kali adalah pengharapan yang memberdayakan dan memurnikan kehidupan orang percaya.</p>
+                <ul class="text-sky-700 space-y-1 text-sm ml-4">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Penyempurnaan keselamatan (1 Petrus 1:5)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Kebangkitan tubuh (1 Korintus 15:52-53)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Penghakiman akhir (2 Timotius 4:1)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Pemuliaan ciptaan (Roma 8:19-21)</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Wahyu 22:20; Titus 2:13</p>
+                </div>
+              </div>
+
+              <div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-lg">
+                <h4 class="font-bold text-blue-900 mb-2">Pemuliaan Akhir Kristus</h4>
+                <p class="text-blue-800 text-sm">Pada akhir zaman, Kristus akan diserahkan kerajaan kepada Bapa setelah menaklukkan semua musuh, dan Allah akan menjadi semua di dalam semua.</p>
+                <div class="bg-blue-100 rounded-lg p-3 mt-3">
+                  <p class="text-blue-800 text-xs font-semibold">1 Korintus 15:24-28; Filipi 2:9-11</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aplikasi Praktis -->
+    <section id="aplikasi" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Aplikasi Praktis Kristologi
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              Pemahaman kristologi yang benar memiliki implikasi praktis yang mendalam bagi kehidupan ibadah, etika, pelayanan, dan pengharapan orang percaya.
+            </p>
+          </div>
+
+          <!-- Aplikasi dalam Hidup -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Aplikasi dalam Kehidupan Sehari-hari</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">🙌</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Penyembahan yang Benar</h4>
+                <p class="text-gray-700 text-sm">Menyembah Kristus sebagai Allah yang layak menerima penyembahan.</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">💖</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Keamanan Spiritual</h4>
+                <p class="text-gray-700 text-sm">Percaya pada keselamatan yang pasti karena karya Kristus yang sempurna.</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">🤝</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Pengantaraan dalam Doa</h4>
+                <p class="text-gray-700 text-sm">Berdoa dalam nama Yesus dengan keyakinan didengar Bapa.</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">📖</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Otoritas Firman</h4>
+                <p class="text-gray-700 text-sm">Menerima pengajaran Kristus sebagai kebenaran final.</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">👑</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Ketaatan kepada Raja</h4>
+                <p class="text-gray-700 text-sm">Hidup dalam ketaatan kepada Kristus sebagai Tuhan dan Raja.</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">🕊️</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Pengharapan Eskatologis</h4>
+                <p class="text-gray-700 text-sm">Hidup dengan pengharapan kedatangan Kristus kedua kali.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Implikasi bagi Pelayanan -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Implikasi bagi Penginjilan dan Pemuridan</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Pusat Penginjilan<br><span class="text-lg font-normal">(Center of Evangelism)</span></h4>
+                <p class="text-gray-700 mb-4 text-center">Kristus dan karya-Nya harus menjadi pusat pemberitaan Injil.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Praktik:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Beritakan Kristus yang disalibkan dan bangkit</li>
+                    <li>• Tawarkan keselamatan hanya dalam nama-Nya</li>
+                    <li>• Jelaskan natur ganda-Nya yang penting untuk pengantaraan</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Model Pemuridan<br><span class="text-lg font-normal">(Model for Discipleship)</span></h4>
+                <p class="text-gray-700 mb-4 text-center">Kristus sebagai contoh sempurna kehidupan yang berkenan kepada Allah.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Praktik:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Teladani kerendahan hati dan ketaatan-Nya</li>
+                    <li>• Ikuti teladan pelayanan dan kasih-Nya</li>
+                    <li>• Tumbuh dalam keserupaan dengan karakter-Nya</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tips Pertumbuhan -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Tips untuk Bertumbuh dalam Pemahaman Kristologi</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Studi Pribadi:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Pelajari kitab-kitab Injil untuk mengenal kehidupan Kristus</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Baca surat-surat untuk memahami teologi tentang Kristus</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Renungkan nubuat Mesianik dalam Perjanjian Lama</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Hafalkan ayat-ayat kunci tentang Pribadi dan karya Kristus</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Praktik Iman:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Kembangkan hubungan pribadi dengan Kristus melalui doa</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Praktikkan penyembahan yang berpusat pada Kristus</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Hidup dalam ketaatan kepada Kristus sebagai Tuhan</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Beritakan Kristus kepada orang lain dengan berani</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian-Bagian Terkait -->
+    <section class="mt-12">
+      <div class="bg-gradient-to-r from-sky-600 to-sky-800 text-white rounded-2xl p-4 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">
+          Lanjutkan Perjalanan Teologismu
+        </h2>
+        <p class="mb-8 max-w-2xl mx-auto text-lg">
+          Setelah memahami Kristologi, saatnya melanjutkan eksplorasi ke doktrin-doktrin sistematik berikutnya untuk membangun pemahaman teologis yang komprehensif dan alkitabiah.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/edukasi/teologi-sistematik/soteriologi"
+            class="bg-white text-sky-900 px-8 py-4 rounded-xl font-bold hover:text-sky-700 transition-all shadow-lg hover:shadow-xl">
+            🕊️ Pelajari Soteriologi Selanjutnya
+          </a>
+          <a
+            href="/edukasi/teologi-sistematik"
+            class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-sky-600 transition-all">
+            🏠 Kembali ke Overview Teologi
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Link ke Bagian-Bagian Terkait -->
+    <section class="mt-8">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-4">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">
+          Eksplorasi Lebih Lanjut tentang Kristus
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {relatedSections.map((section) => (
+            <a
+              href={section.url}
+              class="bg-gray-50 hover:bg-gray-100 p-6 rounded-xl border border-gray-200 transition-all group">
+              <div class="flex items-start">
+                <span class="text-3xl mr-4 group-hover:scale-110 transition-transform">
+                  {section.icon}
+                </span>
+                <div>
+                  <h3 class="font-bold text-gray-900 text-lg mb-2 group-hover:text-sky-600">
+                    {section.title}
+                  </h3>
+                  <p class="text-gray-700 text-sm">{section.description}</p>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <div class="text-center mt-8">
+          <a
+            href="/edukasi/teologi-sistematik#kurikulum"
+            class="inline-flex items-center text-sky-600 hover:text-sky-800 font-semibold">
+            <span>Lihat Kurikulum Lengkap Teologi Sistematik</span>
+            <span class="ml-2">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <style>
+    .prose {
+      max-width: none;
+    }
+    .scroll-mt-24 {
+      scroll-margin-top: 6rem;
+    }
+  </style>
+</EdukasiLayout>

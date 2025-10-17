@@ -1,0 +1,1132 @@
+---
+// src/pages/edukasi/teologi-sistematik/antropologi/index.astro
+import EdukasiLayout from "../../../../layouts/EdukasiLayout.astro";
+
+const pageTitle = "Antropologi - Doktrin Manusia dalam Teologi Sistematik";
+const pageDescription = "Pelajari doktrin tentang manusia: penciptaan, gambar Allah, kejatuhan dalam dosa, natur manusia, dan pemulihan berdasarkan pendekatan teologi Reformed";
+const pageImage = "/images/banner/antropologi-manusia.webp";
+const pageUrl = "edukasi/teologi-sistematik/antropologi";
+
+const breadcrumbs = [
+  { name: "Beranda", url: "https://sekolahteologi.com/" },
+  { name: "Edukasi", url: "https://sekolahteologi.com/edukasi" },
+  {
+    name: "Teologi Sistematik",
+    url: "https://sekolahteologi.com/edukasi/teologi-sistematik",
+  },
+  {
+    name: "Antropologi",
+    url: "https://sekolahteologi.com/edukasi/teologi-sistematik/antropologi",
+  },
+];
+
+// Data untuk bagian-bagian terkait
+const relatedSections = [
+  {
+    title: "Teologi Proper - Doktrin Allah",
+    url: "/edukasi/teologi-sistematik/teologi-proper",
+    description: "Memahami sifat, atribut, dan karya Allah Tritunggal",
+    icon: "👑",
+  },
+  {
+    title: "Hamartologi - Doktrin Dosa",
+    url: "/edukasi/teologi-sistematik/hamartologi",
+    description: "Mempelajari asal-usul, natur, dan konsekuensi dosa",
+    icon: "⚫",
+  },
+  {
+    title: "Soteriologi - Doktrin Keselamatan",
+    url: "/edukasi/teologi-sistematik/soteriologi",
+    description: "Mengenal karya keselamatan Allah dalam Kristus",
+    icon: "🕊️",
+  },
+  {
+    title: "Eklesiologi - Doktrin Gereja",
+    url: "/edukasi/teologi-sistematik/eklesiologi",
+    description: "Memahami natur, tujuan, dan fungsi gereja",
+    icon: "⛪",
+  },
+];
+---
+
+<EdukasiLayout
+  title={pageTitle}
+  description={pageDescription}
+  image={pageImage}
+  url={pageUrl}
+  type="article"
+  breadcrumbs={breadcrumbs}>
+  <div class="space-y-8">
+    <!-- Header Section -->
+    <header class="text-center py-12 bg-gradient-to-r from-sky-50 to-sky-100 rounded-2xl shadow-sm">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Antropologi
+        </h1>
+        <p class="text-xl text-gray-700 mb-6 p-5 max-w-3xl mx-auto leading-relaxed">
+          Doktrin tentang Manusia - Memahami Penciptaan, Kejatuhan, dan Pemulihan Manusia dalam Rencana Allah
+        </p>
+        <div class="flex flex-wrap justify-center gap-2">
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Gambar Allah</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Kejatuhan dalam Dosa</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Natur Manusia</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Pemulihan</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Pengertian Antropologi -->
+    <section id="pengertian" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Pengertian Antropologi dalam Teologi Sistematik
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 text-left mb-4 text-left">
+                Definisi dan Ruang Lingkup
+              </h3>
+
+              <div class="bg-sky-50 border-l-4 border-sky-400 p-4 mb-6">
+                <p class="text-sky-700 font-medium">
+                  <strong>Antropologi</strong> berasal dari bahasa Yunani <em>anthropos</em> (ἄνθρωπος) yang berarti "manusia" dan <em>logos</em> (λόγος) yang berarti "studi/ilmu". Secara teologis berarti <strong>"studi tentang manusia dari perspektif Allah"</strong>.
+                </p>
+              </div>
+
+              <p class="text-gray-700 mb-4 leading-relaxed">
+                Dalam <strong>Teologi Sistematika</strong>, <strong>Antropologi</strong> adalah disiplin teologi yang mempelajari asal-usul, natur, tujuan, dan nasib akhir manusia, termasuk doktrin gambar Allah, kejatuhan dalam dosa, dan pemulihan melalui Kristus.
+              </p>
+
+              <div class="bg-yellow-50 rounded-lg p-4 mb-6">
+                <h4 class="font-semibold text-yellow-900 mb-3">
+                  Signifikansi Antropologi
+                </h4>
+                <p class="text-yellow-800 text-sm">
+                  <strong>Pemahaman yang benar tentang manusia menentukan pemahaman kita tentang keselamatan</strong>. Kita tidak dapat memahami mengapa kita perlu diselamatkan tanpa memahami siapa kita sebenarnya.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 text-left mb-4 text-left">
+                Pertanyaan-Pertanyaan Kunci Antropologi
+              </h3>
+
+              <div class="space-y-4">
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q1</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Siapa Manusia Sebenarnya?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami identitas sebagai gambar Allah</p>
+                    <a href="#gambar-allah" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">🖼️ Pelajari Gambar Allah</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q2</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Apa yang Terjadi dalam Kejatuhan?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Dampak dosa terhadap natur manusia</p>
+                    <a href="#kejatuhan" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">🍎 Pelajari Kejatuhan</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q3</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Bagaimana Kondisi Manusia Sekarang?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Natur manusia setelah kejatuhan</p>
+                    <a href="#natur-manusia" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">👥 Pelajari Natur Manusia</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q4</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Bagaimana Pemulihan Terjadi?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Proses pembaruan dalam Kristus</p>
+                    <a href="#pemulihan" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">🔄 Pelajari Pemulihan</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Penciptaan Manusia -->
+    <section id="penciptaan" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Penciptaan Manusia
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Penciptaan manusia</strong> adalah karya khusus Allah yang membedakan manusia dari semua ciptaan lainnya. Manusia diciptakan dengan martabat, tujuan, dan hubungan khusus dengan Penciptanya.
+            </p>
+          </div>
+
+          <!-- Ayat Kunci -->
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8 rounded-r-lg">
+            <h4 class="font-bold text-yellow-900 mb-2 text-left">Basis Alkitabiah Penciptaan Manusia:</h4>
+            <p class="text-yellow-800 text-lg italic">
+              "Maka Allah menciptakan manusia itu menurut gambar-Nya, menurut gambar Allah diciptakan-Nya dia; laki-laki dan perempuan diciptakan-Nya mereka."<br>
+              <strong class="not-italic">Kejadian 1:27</strong>
+            </p>
+            <p class="text-yellow-800 text-lg italic mt-4">
+              "TUHAN Allah membentuk manusia itu dari debu tanah dan menghembuskan nafas hidup ke dalam hidungnya; demikianlah manusia itu menjadi makhluk yang hidup."<br>
+              <strong class="not-italic">Kejadian 2:7</strong>
+            </p>
+          </div>
+
+          <!-- Aspek Penciptaan -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Aspek-aspek Penciptaan Manusia</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">🌱 Penciptaan Langsung<br><span class="text-sm font-normal">(Direct Creation)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Manusia diciptakan secara langsung oleh Allah, bukan melalui proses evolusi.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Diciptakan dari debu tanah (Kejadian 2:7)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Menerima nafas hidup dari Allah</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Bukan hasil perkembangan dari makhluk lain</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">👫 Penciptaan sebagai Laki-laki dan Perempuan<br><span class="text-sm font-normal">(Gender Distinction)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Allah menciptakan manusia sebagai laki-laki dan perempuan dengan kesetaraan martabat namun perbedaan peran.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Keduanya sama-sama gambar Allah</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Diciptakan untuk saling melengkapi</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Perbedaan biologis dan fungsional</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pandangan tentang Asal Usul -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Pandangan tentang Asal Usul Manusia</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Penciptaanisme<br><span class="text-lg font-normal">(Creationism)</span></h4>
+                <p class="text-gray-700 mb-4 text-center">Allah menciptakan segala sesuatu secara langsung dalam enam hari literal, termasuk Adam dan Hawa sebagai manusia pertama.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Keyakinan:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Penciptaan dalam 6x24 jam</li>
+                    <li>• Adam dan Hawa historis</li>
+                    <li>• Tidak ada kematian sebelum kejatuhan</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Teistik Evolution<br><span class="text-lg font-normal">(Theistic Evolution)</span></h4>
+                <p class="text-gray-700 mb-4 text-center">Allah menggunakan proses evolusi sebagai alat penciptaan, dengan intervensi khusus untuk menciptakan jiwa manusia.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Keyakinan:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Allah mengarahkan evolusi</li>
+                    <li>• Gambar Allah diberikan pada titik tertentu</li>
+                    <li>• Bumi berusia miliaran tahun</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gambar Allah -->
+    <section id="gambar-allah" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Gambar Allah dalam Manusia
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Gambar Allah</strong> (<em>Imago Dei</em>) adalah konsep teologis yang menyatakan bahwa manusia diciptakan untuk mencerminkan dan mewakili Allah di dunia. Inilah yang memberikan martabat dan nilai tertinggi pada setiap manusia.
+            </p>
+          </div>
+
+          <!-- Pandangan tentang Gambar Allah -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Pandangan tentang Gambar Allah</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">🏛️</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Pandangan Substansial</h4>
+                <p class="text-gray-700 text-sm">Gambar Allah terletak pada kualitas atau kapasitas tertentu dalam diri manusia</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">🤝</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Pandangan Relasional</h4>
+                <p class="text-gray-700 text-sm">Gambar Allah terletak pada kemampuan manusia untuk berelasi dengan Allah dan sesama</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">👑</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Pandangan Fungsional</h4>
+                <p class="text-gray-700 text-sm">Gambar Allah terletak pada peran manusia sebagai wakil Allah di bumi</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Elemen-elemen Gambar Allah -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Elemen-elemen Gambar Allah</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Kapasitas Spiritual<br><span class="text-lg font-normal">(Spiritual Capacity)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Kesadaran Moral</h5>
+                    <p class="text-sky-800 text-sm">Kemampuan membedakan baik dan jahat, memiliki hati nurani</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Kapasitas Religius</h5>
+                    <p class="text-sky-800 text-sm">Kebutuhan dan kemampuan untuk beribadah dan berkomunikasi dengan Allah</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Kehendak Bebas</h5>
+                    <p class="text-sky-800 text-sm">Kemampuan membuat pilihan moral yang sesungguhnya</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Kapasitas Rasional & Relasional<br><span class="text-lg font-normal">(Rational & Relational Capacity)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Akal Budi</h5>
+                    <p class="text-sky-800 text-sm">Kemampuan berpikir abstrak, bernalar, dan berkreativitas</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Emosi</h5>
+                    <p class="text-sky-800 text-sm">Kemampuan merasakan dan mengekspresikan perasaan</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Relasionalitas</h5>
+                    <p class="text-sky-800 text-sm">Kebutuhan dan kemampuan untuk membangun hubungan</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dampak Gambar Allah -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Implikasi Praktis Gambar Allah</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Martabat Manusia:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Setiap manusia memiliki nilai intrinsik yang sama</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Penghormatan terhadap kehidupan dari konsepsi sampai kematian</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Penolakan terhadap segala bentuk diskriminasi dan rasisme</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Perlindungan terhadap yang lemah dan rentan</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Tanggung Jawab Manusia:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Pemeliharaan dan pengelolaan ciptaan yang bertanggung jawab</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Pengembangan potensi dan talenta untuk kemuliaan Allah</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Pencarian kebenaran dan pengejaran kekudusan</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Pelayanan kepada sesama sebagai wakil Kristus</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kejatuhan dalam Dosa -->
+    <section id="kejatuhan" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Kejatuhan dalam Dosa
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Kejatuhan</strong> adalah peristiwa historis ketika manusia pertama, Adam dan Hawa, memberontak terhadap Allah dengan melanggar perintah-Nya. Peristiwa ini membawa dosa dan kematian ke dalam dunia serta merusak gambar Allah dalam manusia.
+            </p>
+          </div>
+
+          <!-- Proses Kejatuhan -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Proses Kejatuhan Manusia</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-3">
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">🐍</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-2">Pencobaan</h4>
+                <p class="text-gray-700 text-xs">Iblis menggoda Hawa untuk meragukan firman dan karakter Allah</p>
+                <div class="bg-sky-50 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Kejadian 3:1-5</p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">🍎</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-2">Pelanggaran</h4>
+                <p class="text-gray-700 text-xs">Hawa dan Adam memakan buah yang dilarang Allah</p>
+                <div class="bg-sky-50 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Kejadian 3:6</p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">😨</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-2">Kesadaran</h4>
+                <p class="text-gray-700 text-xs">Mereka menyadari ketelanjangan dan bersembunyi dari Allah</p>
+                <div class="bg-sky-50 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Kejadian 3:7-8</p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">⚖️</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-2">Penghakiman</h4>
+                <p class="text-gray-700 text-xs">Allah menyatakan konsekuensi dosa atas manusia dan ciptaan</p>
+                <div class="bg-sky-50 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Kejadian 3:14-19</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dampak Kejatuhan -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Dampak-dampak Kejatuhan</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 mb-3">Dosa Asal<br><span class="text-sm font-normal">(Original Sin)</span></h4>
+                <p class="text-gray-700 text-sm mb-4">Dosa Adam diturunkan kepada semua manusia, membuat semua orang lahir dengan natur berdosa</p>
+                <div class="bg-sky-50 rounded-lg p-3">
+                  <p class="text-sky-800 text-xs font-semibold">Roma 5:12</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 mb-3">Pencemaran Moral<br><span class="text-sm font-normal">(Moral Pollution)</span></h4>
+                <p class="text-gray-700 text-sm mb-4">Seluruh aspek manusia dirusak oleh dosa: pikiran, emosi, kehendak, dan tubuh</p>
+                <div class="bg-sky-50 rounded-lg p-3">
+                  <p class="text-sky-800 text-xs font-semibold">Roma 3:10-18</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 mb-3">Keterpisahan dari Allah<br><span class="text-sm font-normal">(Separation from God)</span></h4>
+                <p class="text-gray-700 text-sm mb-4">Hubungan dengan Allah terputus, menyebabkan kematian spiritual</p>
+                <div class="bg-sky-50 rounded-lg p-3">
+                  <p class="text-sky-800 text-xs font-semibold">Yesaya 59:2</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 mb-3">Keterasingan Sosial<br><span class="text-sm font-normal">(Social Alienation)</span></h4>
+                <p class="text-gray-700 text-sm mb-4">Hubungan dengan sesama menjadi rusak oleh egoisme dan konflik</p>
+                <div class="bg-sky-50 rounded-lg p-3">
+                  <p class="text-sky-800 text-xs font-semibold">Kejadian 3:12,16</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 mb-3">Penderitaan dan Kematian<br><span class="text-sm font-normal">(Suffering & Death)</span></h4>
+                <p class="text-gray-700 text-sm mb-4">Penderitaan, penyakit, dan kematian fisik menjadi bagian dari pengalaman manusia</p>
+                <div class="bg-sky-50 rounded-lg p-3">
+                  <p class="text-sky-800 text-xs font-semibold">Roma 6:23</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 mb-3">Kutuk atas Ciptaan<br><span class="text-sm font-normal">(Curse on Creation)</span></h4>
+                <p class="text-gray-700 text-sm mb-4">Seluruh ciptaan terkena dampak dosa, mengalami kerusakan dan kesia-siaan</p>
+                <div class="bg-sky-50 rounded-lg p-3">
+                  <p class="text-sky-800 text-xs font-semibold">Roma 8:20-22</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Status Gambar Allah Setelah Kejatuhan -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Status Gambar Allah Setelah Kejatuhan</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">❌ Pandangan Rusak Total<br><span class="text-sm font-normal">(Total Corruption)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Gambar Allah telah rusak total sehingga tidak ada sisa kebaikan dalam manusia yang belum dilahirbarukan.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Dianut Calvinisme konservatif</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Manusia mati secara spiritual</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Tidak mampu mencari Allah</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg text-left">⚠️ Pandangan Rusak Sebagian<br><span class="text-sm font-normal">(Partial Corruption)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Gambar Allah rusak tetapi tidak hancur total. Masih ada sisa kebaikan yang memungkinkan respons terhadap Allah.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Dianut Katolik dan beberapa Protestan</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Manusia sakit secara spiritual</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Masih mampu merespons anugerah</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-6 rounded-r-lg">
+              <h4 class="font-bold text-yellow-900 mb-2 text-left">Konsensus Reformed:</h4>
+              <p class="text-yellow-800 text-sm">
+                <strong>Gambar Allah secara struktural</strong> (kapasitas rasional, moral, relasional) tetap ada tetapi <strong>secara fungsional</strong> (penggunaan kapasitas tersebut untuk kemuliaan Allah) rusak total. Manusia masih memiliki martabat sebagai gambar Allah tetapi tidak mampu datang kepada Allah tanpa anugerah.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Natur Manusia -->
+    <section id="natur-manusia" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Natur Manusia
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Natur manusia</strong> mengacu pada hakikat dan komposisi dasar manusia. Pemahaman tentang natur manusia membantu kita memahami siapa kita, mengapa kita berperilaku tertentu, dan bagaimana kita dapat dipulihkan.
+            </p>
+          </div>
+
+          <!-- Pandangan tentang Komposisi Manusia -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Pandangan tentang Komposisi Manusia</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">3</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Trikotomi<br><span class="text-sm font-normal">(Three Parts)</span></h4>
+                <p class="text-gray-700 text-sm">Manusia terdiri dari tubuh, jiwa, dan roh sebagai tiga entitas terpisah</p>
+                <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">1 Tesalonika 5:23</p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">2</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Dikotomi<br><span class="text-sm font-normal">(Two Parts)</span></h4>
+                <p class="text-gray-700 text-sm">Manusia terdiri dari materi (tubuh) dan immateri (jiwa/roh) yang tak terpisahkan</p>
+                <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Kejadian 2:7</p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">1</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Monisme<br><span class="text-sm font-normal">(One Entity)</span></h4>
+                <p class="text-gray-700 text-sm">Manusia adalah satu kesatuan holistik yang tidak dapat dipisahkan</p>
+                <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Pandangan Modern</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kondisi Manusia Setelah Kejatuhan -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Kondisi Manusia Setelah Kejatuhan</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Kondisi Spiritual<br><span class="text-lg font-normal">(Spiritual Condition)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Keterpisahan dari Allah</h5>
+                    <p class="text-sky-800 text-sm">Manusia mati secara spiritual dan terpisah dari sumber kehidupan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Efesus 2:1</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Kebutaan Spiritual</h5>
+                    <p class="text-sky-800 text-sm">Tidak mampu memahami kebenaran spiritual tanpa pencerahan Roh</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">1 Korintus 2:14</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Perhambaan kepada Dosa</h5>
+                    <p class="text-sky-800 text-sm">Tidak memiliki kebebasan sejati untuk memilih yang baik</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Roma 6:17</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Kondisi Psikologis & Sosial<br><span class="text-lg font-normal">(Psychological & Social Condition)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pikiran yang Rusak</h5>
+                    <p class="text-sky-800 text-sm">Akal budi tercemar oleh dosa dan kecenderungan egois</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Roma 1:28</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Emosi yang Kacau</h5>
+                    <p class="text-sky-800 text-sm">Perasaan takut, malu, marah, dan cemas mendominasi</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Kejadian 3:10</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Relasi yang Retak</h5>
+                    <p class="text-sky-800 text-sm">Konflik, manipulasi, dan egoisme merusak hubungan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Yakobus 4:1-2</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Teori tentang Dosa Asal -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Teori tentang Dosa Asal (<em>Original Sin</em>)</h3>
+
+            <div class="overflow-x-auto">
+              <table class="w-full border-collapse text-left">
+                <thead>
+                  <tr class="bg-gray-100">
+                    <th class="border border-gray-300 p-4 font-semibold text-gray-900 text-left">Teori</th>
+                    <th class="border border-gray-300 p-4 font-semibold text-gray-900 text-left">Penjelasan</th>
+                    <th class="border border-gray-300 p-4 font-semibold text-gray-900 text-left">Penganut</th>
+                    <th class="border border-gray-300 p-4 font-semibold text-gray-900 text-left">Kritik</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 p-4 font-semibold text-gray-900 text-left">Realistis</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Semua manusia hadir secara semiotomatis dalam Adam, sehingga ikut bersalah dalam dosanya</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Augustinus, Calvinis</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Konsep metafisik yang sulit dipahami</td>
+                  </tr>
+                  <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 p-4 font-semibold text-gray-900 text-left">Federal</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Adam bertindak sebagai wakil seluruh umat manusia, dosanya ditimpakan kepada semua</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Reformed, Covenant Theology</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Tampak tidak adil secara moral</td>
+                  </tr>
+                  <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 p-4 font-semibold text-gray-900 text-left">Mediasi Sosial</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Dosa ditularkan melalui pengaruh sosial dan lingkungan yang berdosa</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Pandangan Modern</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Tidak menjelaskan sumber kecenderungan berdosa</td>
+                  </tr>
+                  <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 p-4 font-semibold text-gray-900 text-left">Natural</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Manusia mewarisi natur berdosa dari Adam melalui kelahiran biologis</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Katolik, Arminian</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Tidak menjelaskan asal mula kesalahan moral</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pemulihan dalam Kristus -->
+    <section id="pemulihan" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Pemulihan dalam Kristus
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Pemulihan dalam Kristus</strong> adalah karya penebusan Allah yang memulihkan gambar Allah dalam manusia melalui kelahiran baru, pengudusan, dan pemuliaan akhir. Kristus sebagai Adam terakhir membawa pemulihan yang lebih besar daripada kerusakan yang ditimbulkan Adam pertama.
+            </p>
+          </div>
+
+          <!-- Ayat Kunci -->
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8 rounded-r-lg">
+            <h4 class="font-bold text-yellow-900 mb-2 text-left">Basis Alkitabiah Pemulihan:</h4>
+            <p class="text-yellow-800 text-lg italic">
+              "Sebab sama seperti semua orang mati dalam persekutuan dengan Adam, demikian pula semua orang akan dihidupkan kembali dalam persekutuan dengan Kristus."<br>
+              <strong class="not-italic">1 Korintus 15:22</strong>
+            </p>
+            <p class="text-yellow-800 text-lg italic mt-4">
+              "Kita tahu, bahwa seluruh dunia ini berada di bawah kuasa si jahat. Akan tetapi, kita tahu juga, bahwa Anak Allah telah datang dan telah mengaruniakan pengertian kepada kita, supaya kita mengenal Yang Benar; dan kita ada di dalam Yang Benar, di dalam Anak-Nya Yesus Kristus. Dia adalah Allah yang benar dan hidup yang kekal."<br>
+              <strong class="not-italic">1 Yohanes 5:19-20</strong>
+            </p>
+          </div>
+
+          <!-- Proses Pemulihan -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Proses Pemulihan Gambar Allah</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">🔄</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Regenerasi<br><span class="text-sm font-normal">(Kelahiran Baru)</span></h4>
+                <p class="text-gray-700 text-sm">Dimulainya pemulihan melalui karya Roh Kudus yang menghidupkan roh manusia</p>
+                <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Yohanes 3:3-8</p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">⛪</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Pengudusan<br><span class="text-sm font-normal">(Progresif)</span></h4>
+                <p class="text-gray-700 text-sm">Proses seumur hidup di mana gambar Allah semakin dipulihkan melalui transformasi karakter</p>
+                <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Roma 12:1-2</p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">👑</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Pemuliaan<br><span class="text-sm font-normal">(Glorification)</span></h4>
+                <p class="text-gray-700 text-sm">Penyempurnaan akhir pemulihan gambar Allah dalam kebangkitan tubuh</p>
+                <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">1 Yohanes 3:2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aspek-aspek Pemulihan -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Aspek-aspek Pemulihan dalam Kristus</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Pemulihan Relasional<br><span class="text-lg font-normal">(Relational Restoration)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Rekonsiliasi dengan Allah</h5>
+                    <p class="text-sky-800 text-sm">Hubungan dengan Allah dipulihkan melalui pendamaian dalam Kristus</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">2 Korintus 5:18-19</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Persekutuan dengan Roh</h5>
+                    <p class="text-sky-800 text-sm">Komunikasi dan persekutuan dengan Allah dipulihkan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Galatia 4:6</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Doa dan Penyembahan</h5>
+                    <p class="text-sky-800 text-sm">Kemampuan untuk menyembah Allah dalam roh dan kebenaran</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Yohanes 4:23-24</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Pemulihan Fungsional<br><span class="text-lg font-normal">(Functional Restoration)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pelayanan sebagai Wakil</h5>
+                    <p class="text-sky-800 text-sm">Dipulihkan sebagai wakil Allah untuk mengelola ciptaan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">2 Korintus 5:20</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Penggunaan Karunia</h5>
+                    <p class="text-sky-800 text-sm">Talenta dan karunia digunakan untuk kemuliaan Allah</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">1 Petrus 4:10-11</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pemberitaan Injil</h5>
+                    <p class="text-sky-800 text-sm">Berpartisipasi dalam misi Allah untuk memulihkan ciptaan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Matius 28:19-20</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Eskatologi Antropologi -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Perspektif Eskatologis Antropologi</h3>
+
+            <div class="space-y-6">
+              <div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-lg">
+                <h4 class="font-bold text-blue-900 mb-2">Kebangkitan Tubuh</h4>
+                <p class="text-blue-800 text-sm mb-3">Pemulihan akhir mencakup kebangkitan tubuh yang diubah menjadi tubuh kemuliaan, bukan hanya jiwa yang diselamatkan.</p>
+                <ul class="text-blue-700 space-y-1 text-sm ml-4">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Tubuh kebangkitan seperti tubuh Kristus yang bangkit</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Kontinuitas dan diskontinuitas dengan tubuh sekarang</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Penyempurnaan gambar Allah secara utuh</span>
+                  </li>
+                </ul>
+                <div class="bg-blue-100 rounded-lg p-3 mt-3">
+                  <p class="text-blue-800 text-xs font-semibold">1 Korintus 15:42-44</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border-l-4 border-sky-400 p-4 rounded-r-lg">
+                <h4 class="font-bold text-sky-900 mb-2">Pemuliaan Akhir</h4>
+                <p class="text-sky-800 text-sm">Pada kedatangan Kristus kedua kali, orang percaya akan diubah menjadi serupa dengan Kristus secara sempurna, menyelesaikan pemulihan gambar Allah.</p>
+                <div class="bg-sky-100 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">1 Yohanes 3:2; Filipi 3:20-21</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aplikasi Praktis -->
+    <section id="aplikasi" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Aplikasi Praktis Antropologi
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              Pemahaman antropologi teologis yang benar memiliki implikasi praktis yang mendalam bagi kehidupan individu, gereja, dan masyarakat.
+            </p>
+          </div>
+
+          <!-- Aplikasi dalam Hidup -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Aplikasi dalam Kehidupan Sehari-hari</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">💖</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Harga Diri yang Sehat</h4>
+                <p class="text-gray-700 text-sm">Menghargai diri dan orang lain sebagai gambar Allah, bukan berdasarkan penampilan atau prestasi.</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">🙏</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Kerendahan Hati</h4>
+                <p class="text-gray-700 text-sm">Mengakui keterbatasan dan ketergantungan pada anugerah Allah karena natur yang berdosa.</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">🤝</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Rekonsiliasi</h4>
+                <p class="text-gray-700 text-sm">Mempraktikkan pengampunan dan rekonsiliasi dalam hubungan yang rusak.</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">🌍</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Keadilan Sosial</h4>
+                <p class="text-gray-700 text-sm">Memperjuangkan keadilan bagi semua orang karena setiap manusia adalah gambar Allah.</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">🎯</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Pelayanan Holistik</h4>
+                <p class="text-gray-700 text-sm">Melayani kebutuhan fisik, emosional, dan spiritual manusia secara utuh.</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">🕊️</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Pengharapan Eskatologis</h4>
+                <p class="text-gray-700 text-sm">Hidup dengan pengharapan pemulihan sempurna pada kedatangan Kristus.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Implikasi bagi Pelayanan -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Implikasi bagi Pelayanan dan Konseling</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Pendekatan yang Seimbang<br><span class="text-lg font-normal">(Balanced Approach)</span></h4>
+                <p class="text-gray-700 mb-4 text-center">Mengakui baik martabat manusia sebagai gambar Allah maupun realitas kerusakan akibat dosa.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Praktik:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Menghargai klien tanpa mengabaikan dosa</li>
+                    <li>• Menawarkan anugerah dan pertobatan</li>
+                    <li>• Mengintegrasikan kebenaran dan kasih</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Pemulihan Holistik<br><span class="text-lg font-normal">(Holistic Restoration)</span></h4>
+                <p class="text-gray-700 mb-4 text-center">Memulihkan manusia secara utuh: spiritual, psikologis, relasional, dan fisik.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Praktik:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Pelayanan yang mengintegrasikan iman dan ilmu</li>
+                    <li>• Perhatian pada seluruh aspek kehidupan</li>
+                    <li>• Kerjasama dengan profesional lain</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tips Pertumbuhan -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Tips untuk Bertumbuh dalam Pemahaman Antropologi</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Refleksi Pribadi:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Renungkan makna menjadi gambar Allah dalam konteks sehari-hari</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Akui area-area kehidupan yang masih perlu dipulihkan</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Praktikkan pengampunan dan rekonsiliasi dalam hubungan</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Kembangkan talenta dan karunia untuk kemuliaan Allah</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Komunitas dan Pelayanan:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Diskusikan implikasi antropologi dengan kelompok kecil</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Terlibat dalam pelayanan yang menghargai martabat manusia</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Advokasi untuk keadilan dan perlindungan kehidupan</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Bantu orang lain menemukan identitas mereka dalam Kristus</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian-Bagian Terkait -->
+    <section class="mt-12">
+      <div class="bg-gradient-to-r from-sky-600 to-sky-800 text-white rounded-2xl p-4 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">
+          Lanjutkan Perjalanan Teologismu
+        </h2>
+        <p class="mb-8 max-w-2xl mx-auto text-lg">
+          Setelah memahami Antropologi, saatnya melanjutkan eksplorasi ke doktrin-doktrin sistematik berikutnya untuk membangun pemahaman teologis yang komprehensif dan alkitabiah.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/edukasi/teologi-sistematik/hamartologi"
+            class="bg-white text-sky-900 px-8 py-4 rounded-xl font-bold hover:text-sky-700 transition-all shadow-lg hover:shadow-xl">
+            ⚫ Pelajari Hamartologi Selanjutnya
+          </a>
+          <a
+            href="/edukasi/teologi-sistematik"
+            class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-sky-600 transition-all">
+            🏠 Kembali ke Overview Teologi
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Link ke Bagian-Bagian Terkait -->
+    <section class="mt-8">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-4">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">
+          Eksplorasi Lebih Lanjut tentang Manusia
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {relatedSections.map((section) => (
+            <a
+              href={section.url}
+              class="bg-gray-50 hover:bg-gray-100 p-6 rounded-xl border border-gray-200 transition-all group">
+              <div class="flex items-start">
+                <span class="text-3xl mr-4 group-hover:scale-110 transition-transform">
+                  {section.icon}
+                </span>
+                <div>
+                  <h3 class="font-bold text-gray-900 text-lg mb-2 group-hover:text-sky-600">
+                    {section.title}
+                  </h3>
+                  <p class="text-gray-700 text-sm">{section.description}</p>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <div class="text-center mt-8">
+          <a
+            href="/edukasi/teologi-sistematik#kurikulum"
+            class="inline-flex items-center text-sky-600 hover:text-sky-800 font-semibold">
+            <span>Lihat Kurikulum Lengkap Teologi Sistematik</span>
+            <span class="ml-2">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <style>
+    .prose {
+      max-width: none;
+    }
+    .scroll-mt-24 {
+      scroll-margin-top: 6rem;
+    }
+  </style>
+</EdukasiLayout>

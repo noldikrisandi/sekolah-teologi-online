@@ -1,0 +1,1060 @@
+---
+// src/pages/edukasi/teologi-sistematik/soteriologi/index.astro
+import EdukasiLayout from "../../../../layouts/EdukasiLayout.astro";
+
+const pageTitle = "Soteriologi - Doktrin Keselamatan dalam Teologi Sistematik";
+const pageDescription = "Pelajari doktrin tentang keselamatan: anugerah, iman, pembenaran, pengudusan, pemuliaan, dan pemeliharaan keselamatan berdasarkan pendekatan teologi Reformed";
+const pageImage = "/images/banner/soteriologi-keselamatan.webp";
+const pageUrl = "edukasi/teologi-sistematik/soteriologi";
+
+const breadcrumbs = [
+  { name: "Beranda", url: "https://sekolahteologi.com/" },
+  { name: "Edukasi", url: "https://sekolahteologi.com/edukasi" },
+  {
+    name: "Teologi Sistematik",
+    url: "https://sekolahteologi.com/edukasi/teologi-sistematik",
+  },
+  {
+    name: "Soteriologi",
+    url: "https://sekolahteologi.com/edukasi/teologi-sistematik/soteriologi",
+  },
+];
+
+// Data untuk bagian-bagian terkait
+const relatedSections = [
+  {
+    title: "Kristologi - Doktrin Kristus",
+    url: "/edukasi/teologi-sistematik/kristologi",
+    description: "Memahami Pribadi dan karya Yesus Kristus sang Penebus",
+    icon: "✝️",
+  },
+  {
+    title: "Pneumatologi - Doktrin Roh Kudus",
+    url: "/edukasi/teologi-sistematik/pneumatologi",
+    description: "Mempelajari peran Roh Kudus dalam keselamatan",
+    icon: "🔥",
+  },
+  {
+    title: "Antropologi - Doktrin Manusia",
+    url: "/edukasi/teologi-sistematik/antropologi",
+    description: "Memahami kondisi manusia yang perlu diselamatkan",
+    icon: "👥",
+  },
+  {
+    title: "Eklesiologi - Doktrin Gereja",
+    url: "/edukasi/teologi-sistematik/eklesiologi",
+    description: "Memahami komunitas orang yang diselamatkan",
+    icon: "⛪",
+  },
+];
+---
+
+<EdukasiLayout
+  title={pageTitle}
+  description={pageDescription}
+  image={pageImage}
+  url={pageUrl}
+  type="article"
+  breadcrumbs={breadcrumbs}>
+  <div class="space-y-8">
+    <!-- Header Section -->
+    <header class="text-center py-12 bg-gradient-to-r from-sky-50 to-sky-100 rounded-2xl shadow-sm">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Soteriologi
+        </h1>
+        <p class="text-xl text-gray-700 mb-6 p-5 max-w-3xl mx-auto leading-relaxed">
+          Doktrin tentang Keselamatan - Memahami Anugerah, Iman, dan Proses Pemulihan Manusia oleh Karya Kristus
+        </p>
+        <div class="flex flex-wrap justify-center gap-2">
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Anugerah</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Pembenaran</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Pengudusan</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Pemuliaan</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Pengertian Soteriologi -->
+    <section id="pengertian" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Pengertian Soteriologi dalam Teologi Sistematik
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 text-left mb-4 text-left">
+                Definisi dan Ruang Lingkup
+              </h3>
+
+              <div class="bg-sky-50 border-l-4 border-sky-400 p-4 mb-6">
+                <p class="text-sky-700 font-medium">
+                  <strong>Soteriologi</strong> berasal dari bahasa Yunani <em>soteria</em> (σωτηρία) yang berarti "keselamatan" dan <em>logos</em> (λόγος) yang berarti "studi/ilmu". Secara teologis berarti <strong>"studi tentang keselamatan yang disediakan Allah melalui Kristus"</strong>.
+                </p>
+              </div>
+
+              <p class="text-gray-700 mb-4 leading-relaxed">
+                Dalam <strong>Teologi Sistematika</strong>, <strong>Soteriologi</strong> adalah disiplin teologi yang mempelajari karya Allah dalam menyelamatkan manusia dari dosa dan akibat-akibatnya, termasuk pemilihan, panggilan, regenerasi, pertobatan, iman, pembenaran, pengudusan, dan pemuliaan.
+              </p>
+
+              <div class="bg-yellow-50 rounded-lg p-4 mb-6">
+                <h4 class="font-semibold text-yellow-900 mb-3">
+                  Signifikansi Soteriologi
+                </h4>
+                <p class="text-yellow-800 text-sm">
+                  <strong>Pemahaman yang benar tentang keselamatan menentukan kepastian dan sukacita iman kita</strong>. "Sebab karena kasih karunia kamu diselamatkan oleh iman; itu bukan hasil usahamu, tetapi pemberian Allah, itu bukan hasil pekerjaanmu: jangan ada orang yang memegahkan diri." (Efesus 2:8-9)
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 text-left mb-4 text-left">
+                Pertanyaan-Pertanyaan Kunci Soteriologi
+              </h3>
+
+              <div class="space-y-4">
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q1</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Bagaimana Keselamatan Dimulai?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami inisiatif Allah dalam pemilihan dan panggilan</p>
+                    <a href="#inisiatif-allah" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">👑 Pelajari Inisiatif Allah</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q2</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Apa yang Terjadi Saat Pertobatan?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami regenerasi, iman, dan pembenaran</p>
+                    <a href="#pengalaman-awal" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">🔄 Pelajari Pengalaman Awal</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q3</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Bagaimana Proses Pertumbuhan?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami pengudusan dan pemeliharaan keselamatan</p>
+                    <a href="#pertumbuhan-rohani" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">🌱 Pelajari Pertumbuhan Rohani</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q4</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Bagaimana Kesudahan Keselamatan?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami pemuliaan dan keselamatan yang sempurna</p>
+                    <a href="#penyempurnaan" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">👑 Pelajari Penyempurnaan</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rencana Keselamatan -->
+    <section id="rencana-keselamatan" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Rencana Keselamatan Allah
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Rencana keselamatan</strong> Allah telah ditetapkan sebelum dunia dijadikan, dilaksanakan dalam sejarah melalui Kristus, dan diterapkan dalam hidup orang percaya oleh Roh Kudus. Keselamatan sepenuhnya bersumber dari inisiatif dan anugerah Allah.
+            </p>
+          </div>
+
+          <!-- Ayat Kunci -->
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8 rounded-r-lg">
+            <h4 class="font-bold text-yellow-900 mb-2 text-left">Basis Alkitabiah Rencana Keselamatan:</h4>
+            <p class="text-yellow-800 text-lg italic">
+              "Sebab semua orang yang dipilih-Nya dari semula, mereka juga ditentukan-Nya dari semula untuk menjadi serupa dengan gambaran Anak-Nya, supaya Ia, Anak-Nya itu, menjadi yang sulung di antara banyak saudara."<br>
+              <strong class="not-italic">Roma 8:29</strong>
+            </p>
+            <p class="text-yellow-800 text-lg italic mt-4">
+              "Sebab karena kasih karunia kamu diselamatkan oleh iman; itu bukan hasil usahamu, tetapi pemberian Allah, itu bukan hasil pekerjaanmu: jangan ada orang yang memegahkan diri."<br>
+              <strong class="not-italic">Efesus 2:8-9</strong>
+            </p>
+          </div>
+
+          <!-- Ordo Salutis -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Ordo Salutis (Urutan Keselamatan)</h3>
+
+            <div class="bg-sky-50 rounded-2xl p-6 mb-6">
+              <h4 class="font-bold text-sky-900 mb-4 text-center">Alur Keselamatan dalam Teologi Reformed</h4>
+              
+              <div class="flex flex-wrap justify-center gap-3 mb-6">
+                <div class="bg-white border border-sky-200 rounded-xl p-4 text-center shadow-sm min-w-[120px]">
+                  <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                    <span class="text-sky-600 text-xl">👑</span>
+                  </div>
+                  <h5 class="font-semibold text-sky-900 text-sm">Pemilihan</h5>
+                  <p class="text-gray-600 text-xs">Efesus 1:4-5</p>
+                </div>
+
+                <div class="text-sky-400 text-xl flex items-center">→</div>
+
+                <div class="bg-white border border-sky-200 rounded-xl p-4 text-center shadow-sm min-w-[120px]">
+                  <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                    <span class="text-sky-600 text-xl">📞</span>
+                  </div>
+                  <h5 class="font-semibold text-sky-900 text-sm">Panggilan</h5>
+                  <p class="text-gray-600 text-xs">Roma 8:30</p>
+                </div>
+
+                <div class="text-sky-400 text-xl flex items-center">→</div>
+
+                <div class="bg-white border border-sky-200 rounded-xl p-4 text-center shadow-sm min-w-[120px]">
+                  <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                    <span class="text-sky-600 text-xl">🔄</span>
+                  </div>
+                  <h5 class="font-semibold text-sky-900 text-sm">Regenerasi</h5>
+                  <p class="text-gray-600 text-xs">Yohanes 3:3</p>
+                </div>
+
+                <div class="text-sky-400 text-xl flex items-center">→</div>
+
+                <div class="bg-white border border-sky-200 rounded-xl p-4 text-center shadow-sm min-w-[120px]">
+                  <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                    <span class="text-sky-600 text-xl">🙏</span>
+                  </div>
+                  <h5 class="font-semibold text-sky-900 text-sm">Pertobatan & Iman</h5>
+                  <p class="text-gray-600 text-xs">Kisah 20:21</p>
+                </div>
+              </div>
+
+              <div class="flex flex-wrap justify-center gap-3">
+                <div class="bg-white border border-sky-200 rounded-xl p-4 text-center shadow-sm min-w-[120px]">
+                  <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                    <span class="text-sky-600 text-xl">⚖️</span>
+                  </div>
+                  <h5 class="font-semibold text-sky-900 text-sm">Pembenaran</h5>
+                  <p class="text-gray-600 text-xs">Roma 5:1</p>
+                </div>
+
+                <div class="text-sky-400 text-xl flex items-center">→</div>
+
+                <div class="bg-white border border-sky-200 rounded-xl p-4 text-center shadow-sm min-w-[120px]">
+                  <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                    <span class="text-sky-600 text-xl">⛪</span>
+                  </div>
+                  <h5 class="font-semibold text-sky-900 text-sm">Pengudusan</h5>
+                  <p class="text-gray-600 text-xs">1 Tesalonika 4:3</p>
+                </div>
+
+                <div class="text-sky-400 text-xl flex items-center">→</div>
+
+                <div class="bg-white border border-sky-200 rounded-xl p-4 text-center shadow-sm min-w-[120px]">
+                  <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                    <span class="text-sky-600 text-xl">👑</span>
+                  </div>
+                  <h5 class="font-semibold text-sky-900 text-sm">Pemuliaan</h5>
+                  <p class="text-gray-600 text-xs">Roma 8:30</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dasar Keselamatan -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Dasar dan Sumber Keselamatan</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Kedaulatan Allah<br><span class="text-lg font-normal">(God's Sovereignty)</span></h4>
+                <p class="text-gray-700 mb-4 text-center">Keselamatan bersumber dari inisiatif, pemilihan, dan anugerah Allah yang berdaulat.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Keyakinan Reformed:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Pemilihan berdasarkan kedaulatan Allah</li>
+                    <li>• Anugerah yang mendahului respons manusia</li>
+                    <li>• Keselamatan untuk kemuliaan Allah</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Karya Kristus<br><span class="text-lg font-normal">(Christ's Work)</span></h4>
+                <p class="text-gray-700 mb-4 text-center">Keselamatan dilaksanakan melalui hidup, kematian, dan kebangkitan Kristus.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Dasar Objektif:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Kematian pengganti di kayu salib</li>
+                    <li>• Kebangkitan sebagai jaminan</li>
+                    <li>• Pengantaraan di sorga</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inisiatif Allah dalam Keselamatan -->
+    <section id="inisiatif-allah" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Inisiatif Allah dalam Keselamatan
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Inisiatif keselamatan</strong> sepenuhnya berasal dari Allah. Sebelum manusia mampu merespons, Allah telah memilih, memanggil, dan memberikan hidup baru melalui karya Roh Kudus.
+            </p>
+          </div>
+
+          <!-- Pemilihan -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Pemilihan (Election)</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">👑 Pemilihan dalam Kekekalan<br><span class="text-sm font-normal">(Eternal Election)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Allah dalam kedaulatan-Nya memilih sebagian manusia untuk diselamatkan sebelum dunia dijadikan.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Berdasarkan pengetahuan dan kehendak-Nya (Efesus 1:4-5)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Untuk kemuliaan kasih karunia-Nya (Efesus 1:6)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Tidak berdasarkan perbuatan manusia (Roma 9:11)</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Roma 8:29-30; Efesus 1:4-5; 2 Tesalonika 2:13</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">📞 Panggilan Efektif<br><span class="text-sm font-normal">(Effectual Calling)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Allah melalui Injil dan Roh Kudus memanggil orang pilihan-Nya dengan kuasa sehingga mereka merespons dengan iman.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Panggilan internal oleh Roh Kudus (Yohanes 6:44)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Tidak dapat ditolak oleh orang pilihan (Kisah 13:48)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Menghasilkan regenerasi dan iman (Roma 8:30)</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Roma 8:30; 1 Korintus 1:9; 2 Timotius 1:9</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pandangan tentang Pemilihan -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Pandangan tentang Pemilihan</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Calvinisme<br><span class="text-lg font-normal">(Pemilihan Tidak Bersyarat)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pemilihan Tidak Bersyarat</h5>
+                    <p class="text-sky-800 text-sm">Allah memilih berdasarkan kedaulatan-Nya, bukan karena melihat iman atau perbuatan manusia</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Penebusan Terbatas</h5>
+                    <p class="text-sky-800 text-sm">Kristus mati dengan maksud menyelamatkan orang pilihan secara efektif</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Anugerah yang Tak Ditolak</h5>
+                    <p class="text-sky-800 text-sm">Roh Kudus bekerja secara efektif dalam hati orang pilihan</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Arminianisme<br><span class="text-lg font-normal">(Pemilihan Bersyarat)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pemilihan Bersyarat</h5>
+                    <p class="text-sky-800 text-sm">Allah memilih berdasarkan pengetahuan sebelumnya tentang iman manusia</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Penebusan Umum</h5>
+                    <p class="text-sky-800 text-sm">Kristus mati untuk semua manusia, tetapi hanya efektif bagi yang percaya</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Anugerah yang Dapat Ditolak</h5>
+                    <p class="text-sky-800 text-sm">Manusia dapat menerima atau menolak anugerah keselamatan</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Anugerah -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Anugerah Allah dalam Keselamatan</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">🔄</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Anugerah Mendahului<br><span class="text-sm font-normal">(Prevenient Grace)</span></h4>
+                <p class="text-sky-800 text-sm">Anugerah yang mendahului dan memampukan respons iman manusia</p>
+                <div class="bg-sky-100 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Yohanes 6:44</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">💖</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Anugerah Membenarkan<br><span class="text-sm font-normal">(Justifying Grace)</span></h4>
+                <p class="text-sky-800 text-sm">Anugerah yang mengaruniakan pembenaran melalui iman dalam Kristus</p>
+                <div class="bg-sky-100 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Roma 3:24</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">⛪</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Anugerah Menguduskan<br><span class="text-sm font-normal">(Sanctifying Grace)</span></h4>
+                <p class="text-sky-800 text-sm">Anugerah yang bekerja dalam orang percaya untuk pertumbuhan dalam kekudusan</p>
+                <div class="bg-sky-100 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Filipi 2:13</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pengalaman Awal Keselamatan -->
+    <section id="pengalaman-awal" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Pengalaman Awal Keselamatan
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Pengalaman awal keselamatan</strong> mencakup karya Roh Kudus yang membawa seseorang kepada kelahiran baru, pertobatan, iman, dan pembenaran. Ini adalah titik awal kehidupan Kristen yang sejati.
+            </p>
+          </div>
+
+          <!-- Regenerasi -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Regenerasi (Kelahiran Baru)</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">🔄 Hakikat Regenerasi</h4>
+                <p class="text-gray-700 text-sm mb-4">Karya Roh Kudus yang memberikan hidup spiritual baru, mengubah hati, dan membangkitkan dari kematian spiritual.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Ciri-ciri Kelahiran Baru:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Perubahan natur dan keinginan (2 Korintus 5:17)</li>
+                    <li>• Kasih akan Allah dan kebenaran (1 Yohanes 4:7)</li>
+                    <li>• Kemenangan atas dosa (1 Yohanes 3:9)</li>
+                    <li>• Buah Roh dalam kehidupan (Galatia 5:22-23)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">⚡ Kuasa dan Sumber Regenerasi</h4>
+                <p class="text-gray-700 text-sm mb-4">Regenerasi adalah karya supernatural Roh Kudus, bukan hasil usaha manusia atau respons manusia terhadap panggilan.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Sumber Regenerasi:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Firman Allah (1 Petrus 1:23)</li>
+                    <li>• Roh Kudus (Yohanes 3:5-8)</li>
+                    <li>• Kehendak Allah (Yohanes 1:13)</li>
+                    <li>• Untuk pekerjaan baik (Efesus 2:10)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pertobatan dan Iman -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Pertobatan dan Iman</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Pertobatan<br><span class="text-lg font-normal">(Repentance)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pertobatan Sejati</h5>
+                    <p class="text-sky-800 text-sm">Perubahan pikiran yang menghasilkan perubahan hidup, berbalik dari dosa kepada Allah</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Kisah 26:20; 2 Korintus 7:10</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Unsur-unsur Pertobatan</h5>
+                    <p class="text-sky-800 text-sm">Pengenalan dosa, kesedihan ilahi, pengakuan, berbalik dari dosa, berbalik kepada Allah</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">2 Korintus 7:9-10</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Buah Pertobatan</h5>
+                    <p class="text-sky-800 text-sm">Perubahan perilaku, restitusi, kerinduan akan kekudusan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Lukas 3:8; Kisah 26:20</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Iman Menyelamatkan<br><span class="text-lg font-normal">(Saving Faith)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Hakikat Iman</h5>
+                    <p class="text-sky-800 text-sm">Persetujuan pikiran, kepercayaan hati, dan penyerahan kehendak kepada Kristus</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Ibrani 11:1; Roma 10:9-10</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Unsur-unsur Iman</h5>
+                    <p class="text-sky-800 text-sm">Pengetahuan (notitia), persetujuan (assensus), kepercayaan (fiducia)</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Roma 10:14,17</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Obyek Iman</h5>
+                    <p class="text-sky-800 text-sm">Pribadi dan karya Kristus, janji-janji Allah, kebenaran firman</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Yohanes 3:16; Roma 3:22</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pembenaran -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Pembenaran (Justification)</h3>
+
+            <div class="space-y-6">
+              <div class="bg-sky-50 border-l-4 border-sky-400 p-4 rounded-r-lg">
+                <h4 class="font-bold text-sky-900 mb-2">Definisi Pembenaran</h4>
+                <p class="text-sky-800 text-sm mb-3">Tindakan legal Allah yang menyatakan orang berdosa dibenarkan dan diterima sebagai benar di hadapan-Nya, berdasarkan kebenaran Kristus yang diperhitungkan kepada mereka melalui iman.</p>
+                <ul class="text-sky-700 space-y-1 text-sm ml-4">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Tindakan deklaratif, bukan proses transformatif</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Berdasarkan kebenaran Kristus, bukan kebenaran sendiri</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Diterima melalui iman, bukan perbuatan</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Roma 3:24-28; 4:5; 5:1</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-white border border-sky-200 rounded-xl p-6">
+                  <h4 class="font-bold text-sky-900 mb-3 text-lg">Pengampunan Dosa<br><span class="text-sm font-normal">(Forgiveness of Sins)</span></h4>
+                  <p class="text-sky-800 text-sm mb-4">Allah tidak memperhitungkan dosa dan menghapus hutang dosa karena penebusan Kristus.</p>
+                  <ul class="text-sky-700 space-y-2 text-sm">
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Penghapusan kesalahan dan hukuman</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Rekonsiliasi dengan Allah</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Kedamaian dengan Allah</span>
+                    </li>
+                  </ul>
+                  <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                    <p class="text-sky-800 text-xs font-semibold">Kisah 10:43; Roma 4:7-8</p>
+                  </div>
+                </div>
+
+                <div class="bg-white border border-sky-200 rounded-xl p-6">
+                  <h4 class="font-bold text-sky-900 mb-3 text-lg">Pemberian Kebenaran<br><span class="text-sm font-normal">(Imputation of Righteousness)</span></h4>
+                  <p class="text-sky-800 text-sm mb-4">Allah memperhitungkan kebenaran Kristus kepada orang percaya sehingga mereka diterima sebagai benar.</p>
+                  <ul class="text-sky-700 space-y-2 text-sm">
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Kebenaran aktif dan pasif Kristus</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Penerimaan di hadapan Allah</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Hak untuk hidup kekal</span>
+                    </li>
+                  </ul>
+                  <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                    <p class="text-sky-800 text-xs font-semibold">Roma 4:6,11; 5:17-19</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pertumbuhan Rohani -->
+    <section id="pertumbuhan-rohani" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Pertumbuhan dan Pemeliharaan dalam Keselamatan
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Pertumbuhan rohani</strong> mencakup proses pengudusan, pemeliharaan keselamatan, dan persekutuan dengan Allah yang mengubah orang percaya semakin serupa dengan Kristus.
+            </p>
+          </div>
+
+          <!-- Pengudusan -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Pengudusan (Sanctification)</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">⛪</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Pengudusan Posisional<br><span class="text-sm font-normal">(Positional)</span></h4>
+                <p class="text-gray-700 text-sm">Status kudus yang diberikan saat pembenaran, dipisahkan untuk Allah</p>
+                <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">1 Korintus 1:2; 6:11</p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">🌱</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Pengudusan Progresif<br><span class="text-sm font-normal">(Progressive)</span></h4>
+                <p class="text-gray-700 text-sm">Proses seumur hidup menjadi semakin kudus melalui karya Roh Kudus</p>
+                <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">2 Korintus 3:18; 1 Tesalonika 4:3</p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">👑</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Pengudusan Sempurna<br><span class="text-sm font-normal">(Perfect)</span></h4>
+                <p class="text-gray-700 text-sm">Penyempurnaan kekudusan pada kedatangan Kristus atau kematian</p>
+                <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">1 Yohanes 3:2; Filipi 3:12</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pemeliharaan Keselamatan -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Pemeliharaan Keselamatan</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Ketekunan Orang Kudus<br><span class="text-lg font-normal">(Perseverance of Saints)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Keyakinan Reformed</h5>
+                    <p class="text-sky-800 text-sm">Semua orang yang benar-benar dilahirbarukan akan dipelihara oleh kuasa Allah dan bertahan dalam iman sampai akhir</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Yohanes 10:27-29; Filipi 1:6</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Jaminan Pemeliharaan</h5>
+                    <p class="text-sky-800 text-sm">Berdasarkan kesetiaan Allah, karya Kristus, dan meterai Roh Kudus</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Efesus 1:13-14; 4:30</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Cara Pemeliharaan</h5>
+                    <p class="text-sky-800 text-sm">Melalui iman, pertobatan, doa, firman, dan persekutuan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Kisah 11:23; Kolose 1:23</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Jaminan Keselamatan<br><span class="text-lg font-normal">(Assurance of Salvation)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Dasar Jaminan</h5>
+                    <p class="text-sky-800 text-sm">Janji-janji Allah, karya Kristus, kesaksian Roh, dan buah kehidupan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Roma 8:16; 1 Yohanes 5:13</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Tanda-tanda Keselamatan</h5>
+                    <p class="text-sky-800 text-sm">Iman akan Kristus, pertobatan, kasih akan Allah dan sesama, buah Roh</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">1 Yohanes 2:3-6; 3:14</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pertumbuhan Jaminan</h5>
+                    <p class="text-sky-800 text-sm">Melalui pertumbuhan dalam kasih karunia dan pengenalan akan Kristus</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">2 Petrus 1:5-11; 3:18</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sarana Anugerah -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Sarana-sarana Anugerah</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">📖</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Firman Allah</h4>
+                <p class="text-sky-800 text-sm">Alat utama Roh Kudus untuk regenerasi, pengudusan, dan pertumbuhan</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Yohanes 17:17; 2 Timotius 3:16-17</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">🙏</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Doa</h4>
+                <p class="text-sky-800 text-sm">Komunikasi dengan Allah yang mengubah hati dan memperdalam hubungan</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Filipi 4:6-7; 1 Tesalonika 5:17</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">⛪</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Sakramen</h4>
+                <p class="text-sky-800 text-sm">Baptisan dan Perjamuan Kudus sebagai meterai dan sarana anugerah</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Roma 6:3-4; 1 Korintus 11:23-26</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">🤝</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Persekutuan</h4>
+                <p class="text-sky-800 text-sm">Komunitas orang percaya untuk saling meneguhkan dan bertumbuh</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Ibrani 10:24-25; Kisah 2:42</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Penyempurnaan Keselamatan -->
+    <section id="penyempurnaan" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Penyempurnaan Keselamatan
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Penyempurnaan keselamatan</strong> mencapai puncaknya dalam pemuliaan - ketika orang percaya diubah menjadi serupa dengan Kristus secara sempurna, baik jiwa maupun tubuh, untuk selama-lamanya.
+            </p>
+          </div>
+
+          <!-- Pemuliaan -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Pemuliaan (Glorification)</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">👑 Hakikat Pemuliaan</h4>
+                <p class="text-sky-800 text-sm mb-4">Tahap akhir keselamatan ketika orang percaya menerima tubuh kebangkitan yang mulia dan disempurnakan dalam kekudusan, menjadi serupa dengan Kristus sepenuhnya.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Penyempurnaan pengudusan (1 Yohanes 3:2)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Kebangkitan tubuh yang mulia (1 Korintus 15:42-44)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Kemuliaan yang kekal (2 Korintus 4:17)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Persekutuan sempurna dengan Allah (Wahyu 21:3-4)</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Roma 8:17,30; 1 Korintus 15:51-53</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">🕊️ Pengharapan Pemuliaan</h4>
+                <p class="text-sky-800 text-sm mb-4">Pemuliaan memberikan pengharapan yang memurnikan dan menguatkan orang percaya dalam perjalanan mereka di dunia.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Motivasi untuk hidup kudus (1 Yohanes 3:3)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Penghiburan dalam penderitaan (Roma 8:18)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Keyakinan dalam pelayanan (1 Korintus 15:58)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Sukacita yang tak terkatakan (1 Petrus 1:8-9)</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Filipi 3:20-21; Kolose 3:4</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ringkasan Ordo Salutis -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Ringkasan Ordo Salutis dalam Perspektif Reformed</h3>
+
+            <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+              <div class="overflow-x-auto">
+                <table class="w-full border-collapse text-left">
+                  <thead>
+                    <tr class="bg-gray-100">
+                      <th class="border border-gray-300 p-4 font-semibold text-gray-900 text-left">Tahap</th>
+                      <th class="border border-gray-300 p-4 font-semibold text-gray-900 text-left">Definisi</th>
+                      <th class="border border-gray-300 p-4 font-semibold text-gray-900 text-left">Ayat Kunci</th>
+                      <th class="border border-gray-300 p-4 font-semibold text-gray-900 text-left">Pekerja Utama</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="hover:bg-gray-50">
+                      <td class="border border-gray-300 p-4 font-semibold text-sky-900 text-left">Pemilihan</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Pemilihan kekal oleh Bapa dalam Kristus</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Efesus 1:4-5</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Allah Bapa</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td class="border border-gray-300 p-4 font-semibold text-sky-900 text-left">Panggilan Efektif</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Panggilan internal oleh Roh melalui Firman</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Roma 8:30</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Roh Kudus</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td class="border border-gray-300 p-4 font-semibold text-sky-900 text-left">Regenerasi</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Kelahiran baru oleh Roh Kudus</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Yohanes 3:3</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Roh Kudus</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td class="border border-gray-300 p-4 font-semibold text-sky-900 text-left">Pertobatan & Iman</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Respons manusia yang diberi kemampuan</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Kisah 20:21</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Manusia & Roh</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td class="border border-gray-300 p-4 font-semibold text-sky-900 text-left">Pembenaran</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Dinyatakan benar berdasarkan Kristus</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Roma 5:1</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Allah Bapa</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td class="border border-gray-300 p-4 font-semibold text-sky-900 text-left">Pengudusan</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Proses menjadi serupa dengan Kristus</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">1 Tesalonika 4:3</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Roh Kudus</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td class="border border-gray-300 p-4 font-semibold text-sky-900 text-left">Pemuliaan</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Penyempurnaan akhir dalam kemuliaan</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Roma 8:30</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Allah Tritunggal</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aplikasi Praktis -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Aplikasi Praktis Soteriologi</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Untuk Kepastian Iman:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Keselamatan bersumber dari anugerah, bukan usaha sendiri</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Pembenaran memberikan status yang tak berubah di hadapan Allah</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Pemeliharaan Allah menjamin keselamatan sampai akhir</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Pengharapan pemuliaan menguatkan dalam pencobaan</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Untuk Pertumbuhan Rohani:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Gunakan sarana anugerah untuk pertumbuhan</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Bersyukur untuk anugerah yang menyelamatkan</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Hidup dalam kekudusan sebagai respons atas kasih karunia</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Beritakan Injil anugerah kepada orang lain</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian-Bagian Terkait -->
+    <section class="mt-12">
+      <div class="bg-gradient-to-r from-sky-600 to-sky-800 text-white rounded-2xl p-4 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">
+          Lanjutkan Perjalanan Teologismu
+        </h2>
+        <p class="mb-8 max-w-2xl mx-auto text-lg">
+          Setelah memahami Soteriologi, saatnya melanjutkan eksplorasi ke doktrin-doktrin sistematik berikutnya untuk membangun pemahaman teologis yang komprehensif dan alkitabiah.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/edukasi/teologi-sistematik/pneumatologi"
+            class="bg-white text-sky-900 px-8 py-4 rounded-xl font-bold hover:text-sky-700 transition-all shadow-lg hover:shadow-xl">
+            🔥 Pelajari Pneumatologi Selanjutnya
+          </a>
+          <a
+            href="/edukasi/teologi-sistematik"
+            class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-sky-600 transition-all">
+            🏠 Kembali ke Overview Teologi
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Link ke Bagian-Bagian Terkait -->
+    <section class="mt-8">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-4">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">
+          Eksplorasi Lebih Lanjut tentang Keselamatan
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {relatedSections.map((section) => (
+            <a
+              href={section.url}
+              class="bg-gray-50 hover:bg-gray-100 p-6 rounded-xl border border-gray-200 transition-all group">
+              <div class="flex items-start">
+                <span class="text-3xl mr-4 group-hover:scale-110 transition-transform">
+                  {section.icon}
+                </span>
+                <div>
+                  <h3 class="font-bold text-gray-900 text-lg mb-2 group-hover:text-sky-600">
+                    {section.title}
+                  </h3>
+                  <p class="text-gray-700 text-sm">{section.description}</p>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <div class="text-center mt-8">
+          <a
+            href="/edukasi/teologi-sistematik#kurikulum"
+            class="inline-flex items-center text-sky-600 hover:text-sky-800 font-semibold">
+            <span>Lihat Kurikulum Lengkap Teologi Sistematik</span>
+            <span class="ml-2">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <style>
+    .prose {
+      max-width: none;
+    }
+    .scroll-mt-24 {
+      scroll-margin-top: 6rem;
+    }
+  </style>
+</EdukasiLayout>
