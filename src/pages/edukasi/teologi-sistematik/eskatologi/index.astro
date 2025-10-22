@@ -1,0 +1,1065 @@
+---
+// src/pages/edukasi/teologi-sistematik/eskatologi/index.astro
+import EdukasiLayout from "../../../../layouts/EdukasiLayout.astro";
+
+const pageTitle = "Eskatologi - Doktrin Akhir Zaman dalam Teologi Sistematik";
+const pageDescription = "Pelajari doktrin tentang akhir zaman: kedatangan Kristus kembali, kebangkitan, pengadilan, langit dan bumi baru berdasarkan pendekatan teologi Reformed";
+const pageImage = "/images/banner/eskatologi-akhir-zaman.webp";
+const pageUrl = "edukasi/teologi-sistematik/eskatologi";
+
+const breadcrumbs = [
+  { name: "Beranda", url: "https://sekolahteologi.com/" },
+  { name: "Edukasi", url: "https://sekolahteologi.com/edukasi" },
+  {
+    name: "Teologi Sistematik",
+    url: "https://sekolahteologi.com/edukasi/teologi-sistematik",
+  },
+  {
+    name: "Eskatologi",
+    url: "https://sekolahteologi.com/edukasi/teologi-sistematik/eskatologi",
+  },
+];
+
+// Data untuk bagian-bagian terkait
+const relatedSections = [
+  {
+    title: "Kristologi - Doktrin Kristus",
+    url: "/edukasi/teologi-sistematik/kristologi",
+    description: "Memahami Kristus yang akan datang kembali dalam kemuliaan",
+    icon: "✝️",
+  },
+  {
+    title: "Soteriologi - Doktrin Keselamatan",
+    url: "/edukasi/teologi-sistematik/soteriologi",
+    description: "Mempelajari penyempurnaan keselamatan dalam kemuliaan",
+    icon: "🕊️",
+  },
+  {
+    title: "Eklesiologi - Doktrin Gereja",
+    url: "/edukasi/teologi-sistematik/eklesiologi",
+    description: "Memahami penyempurnaan Gereja sebagai mempelai Kristus",
+    icon: "⛪",
+  },
+  {
+    title: "Antropologi - Doktrin Manusia",
+    url: "/edukasi/teologi-sistematik/antropologi",
+    description: "Memahami kebangkitan tubuh dan kehidupan kekal",
+    icon: "👥",
+  },
+];
+---
+
+<EdukasiLayout
+  title={pageTitle}
+  description={pageDescription}
+  image={pageImage}
+  url={pageUrl}
+  type="article"
+  breadcrumbs={breadcrumbs}>
+  <div class="space-y-8">
+    <!-- Header Section -->
+    <header class="text-center py-12 bg-gradient-to-r from-sky-50 to-sky-100 rounded-2xl shadow-sm">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Eskatologi
+        </h1>
+        <p class="text-xl text-gray-700 mb-6 p-5 max-w-3xl mx-auto leading-relaxed">
+          Doktrin tentang Akhir Zaman - Memahami Pengharapan Kedatangan Kristus, Kebangkitan, Pengadilan, dan Penyempurnaan Segala Sesuatu
+        </p>
+        <div class="flex flex-wrap justify-center gap-2">
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Kedatangan Kristus</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Kebangkitan</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Pengadilan Terakhir</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Langit & Bumi Baru</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Pengertian Eskatologi -->
+    <section id="pengertian" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Pengertian Eskatologi dalam Teologi Sistematik
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 text-left mb-4 text-left">
+                Definisi dan Ruang Lingkup
+              </h3>
+
+              <div class="bg-sky-50 border-l-4 border-sky-400 p-4 mb-6">
+                <p class="text-sky-700 font-medium">
+                  <strong>Eskatologi</strong> berasal dari bahasa Yunani <em>eschatos</em> (ἔσχατος) yang berarti "terakhir/akhir" dan <em>logos</em> (λόγος) yang berarti "studi/ilmu". Secara teologis berarti <strong>"studi tentang peristiwa-peristiwa akhir zaman dan penyempurnaan rencana keselamatan Allah"</strong>.
+                </p>
+              </div>
+
+              <p class="text-gray-700 mb-4 leading-relaxed">
+                Dalam <strong>Teologi Sistematika</strong>, <strong>Eskatologi</strong> adalah disiplin teologi yang mempelajari kedatangan Kristus kembali, kebangkitan orang mati, pengadilan terakhir, dan penyempurnaan langit dan bumi baru.
+              </p>
+
+              <div class="bg-yellow-50 rounded-lg p-4 mb-6">
+                <h4 class="font-semibold text-yellow-900 mb-3">
+                  Signifikansi Eskatologi
+                </h4>
+                <p class="text-yellow-800 text-sm">
+                  <strong>Pengharapan eskatologis memberikan makna dan tujuan bagi kehidupan Kristen</strong>. "Sebab jika kita percaya, bahwa Yesus telah mati dan telah bangkit, maka kita percaya juga bahwa mereka yang telah meninggal dalam Yesus akan dikumpulkan Allah bersama-sama dengan Dia." (1 Tesalonika 4:14)
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 text-left mb-4 text-left">
+                Pertanyaan-Pertanyaan Kunci Eskatologi
+              </h3>
+
+              <div class="space-y-4">
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q1</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Bagaimana Kristus Akan Kembali?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami kedatangan Kristus kedua kali dan tanda-tandanya</p>
+                    <a href="#kedatangan-kristus" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">👑 Pelajari Kedatangan Kristus</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q2</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Apa yang Terjadi Setelah Kematian?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami keadaan antara dan kebangkitan tubuh</p>
+                    <a href="#keadaan-antara" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">⚡ Pelajari Keadaan Antara</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q3</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Bagaimana Pengadilan Terakhir?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami pengadilan Allah atas semua manusia</p>
+                    <a href="#pengadilan" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">⚖️ Pelajari Pengadilan</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q4</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Apa Masa Depan Kekal?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami langit dan bumi baru serta kehidupan kekal</p>
+                    <a href="#masa-depan-kekal" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">🌟 Pelajari Masa Depan Kekal</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kedatangan Kristus Kembali -->
+    <section id="kedatangan-kristus" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Kedatangan Kristus Kembali
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Kedatangan Kristus kedua kali</strong> adalah pengharapan utama Gereja, peristiwa yang akan terjadi secara tiba-tiba, personal, fisik, dan terlihat oleh semua orang.
+            </p>
+          </div>
+
+          <!-- Ayat Kunci -->
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8 rounded-r-lg">
+            <h4 class="font-bold text-yellow-900 mb-2 text-left">Janji Kedatangan Kristus:</h4>
+            <p class="text-yellow-800 text-lg italic">
+              "Dan apabila Aku pergi ke situ dan telah menyediakan tempat bagimu, Aku akan datang kembali dan membawa kamu ke tempat-Ku, supaya di tempat di mana Aku berada, kamupun berada."<br>
+              <strong class="not-italic">Yohanes 14:3</strong>
+            </p>
+            <p class="text-yellow-800 text-lg italic mt-4">
+              "Mereka melihat Dia terangkat ke sorga. Pada waktu mereka sedang menatap ke langit waktu Ia naik itu, tiba-tiba berdirilah dua orang yang berpakaian putih dekat mereka, dan berkata kepada mereka: 'Hai orang-orang Galilea, mengapakah kamu berdiri melihat ke langit? Yesus ini, yang terangkat ke sorga meninggalkan kamu, akan datang kembali dengan cara yang sama seperti kamu melihat Dia naik ke sorga.'"<br>
+              <strong class="not-italic">Kisah Para Rasul 1:10-11</strong>
+            </p>
+          </div>
+
+          <!-- Sifat Kedatangan Kristus -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Sifat-sifat Kedatangan Kristus</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">👑</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Personal</h4>
+                <p class="text-sky-800 text-sm">Yesus sendiri yang akan datang kembali, bukan malaikat atau wakil</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">1 Tesalonika 4:16</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">👀</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Terlihat</h4>
+                <p class="text-sky-800 text-sm">Setiap mata akan melihat Dia datang dalam kemuliaan</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Wahyu 1:7</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">⚡</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Tiba-tiba</h4>
+                <p class="text-sky-800 text-sm">Seperti kilat yang menyambar, tidak terduga waktunya</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Matius 24:27</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">🎉</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Kemenangan</h4>
+                <p class="text-sky-800 text-sm">Menyelesaikan rencana keselamatan dan mengalahkan musuh</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">1 Korintus 15:24-25</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pandangan tentang Rapture -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Pandangan tentang Pengangkatan (Rapture)</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Pra-Tribulasi<br><span class="text-lg font-normal">(Pre-Trib)</span></h4>
+                <div class="space-y-3">
+                  <div class="bg-sky-50 rounded-lg p-3">
+                    <h5 class="font-semibold text-sky-900 mb-1">Waktu</h5>
+                    <p class="text-sky-800 text-sm">Sebelum masa tribulasi 7 tahun</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-3">
+                    <h5 class="font-semibold text-sky-900 mb-1">Keyakinan</h5>
+                    <p class="text-sky-800 text-sm">Gereja tidak mengalami murka Allah</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-3">
+                    <h5 class="font-semibold text-sky-900 mb-1">Ayat</h5>
+                    <p class="text-sky-800 text-sm">1 Tesalonika 4:13-18</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Mid-Tribulasi<br><span class="text-lg font-normal">(Mid-Trib)</span></h4>
+                <div class="space-y-3">
+                  <div class="bg-sky-50 rounded-lg p-3">
+                    <h5 class="font-semibold text-sky-900 mb-1">Waktu</h5>
+                    <p class="text-sky-800 text-sm">Pertengahan tribulasi (3,5 tahun)</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-3">
+                    <h5 class="font-semibold text-sky-900 mb-1">Keyakinan</h5>
+                    <p class="text-sky-800 text-sm">Gereja mengalami separuh tribulasi</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-3">
+                    <h5 class="font-semibold text-sky-900 mb-1">Ayat</h5>
+                    <p class="text-sky-800 text-sm">Wahyu 11:3-12</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Post-Tribulasi<br><span class="text-lg font-normal">(Post-Trib)</span></h4>
+                <div class="space-y-3">
+                  <div class="bg-sky-50 rounded-lg p-3">
+                    <h5 class="font-semibold text-sky-900 mb-1">Waktu</h5>
+                    <p class="text-sky-800 text-sm">Setelah tribulasi, saat kedatangan</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-3">
+                    <h5 class="font-semibold text-sky-900 mb-1">Keyakinan</h5>
+                    <p class="text-sky-800 text-sm">Gereja mengalami seluruh tribulasi</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-3">
+                    <h5 class="font-semibold text-sky-900 mb-1">Ayat</h5>
+                    <p class="text-sky-800 text-sm">Matius 24:29-31</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pandangan Reformed -->
+            <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200 mt-6">
+              <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Pandangan Reformed Klasik</h4>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Satu Kedatangan</h5>
+                  <p class="text-sky-800 text-sm">Tidak ada pemisahan antara rapture dan kedatangan dalam kemuliaan</p>
+                  <p class="text-sky-700 text-xs font-semibold mt-2">Kedatangan Kristus adalah satu peristiwa tunggal</p>
+                </div>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Amilenialisme</h5>
+                  <p class="text-sky-800 text-sm">Tidak ada kerajaan 1000 tahun harfiah, gereja adalah kerajaan sekarang</p>
+                  <p class="text-sky-700 text-xs font-semibold mt-2">Wahyu 20:1-6 bersifat simbolis</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tanda-tanda Akhir Zaman -->
+    <section id="tanda-akhir-zaman" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Tanda-tanda Akhir Zaman
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Tanda-tanda akhir zaman</strong> diberikan dalam Alkitab untuk memperingatkan dan mempersiapkan umat Allah, bukan untuk menentukan tanggal pasti kedatangan Kristus.
+            </p>
+          </div>
+
+          <!-- Tanda-tanda Umum -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Tanda-tanda Umum Kedatangan Kristus</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">📖 Tanda-tanda Spiritual</h4>
+                <p class="text-gray-700 text-sm mb-4">Tanda-tanda yang berkaitan dengan kondisi rohani manusia dan Gereja.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Berdasarkan Matius 24:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Banyak penyesat (ayat 5,11)</li>
+                    <li>• Penyangkalan iman (ayat 10)</li>
+                    <li>• Kasih menjadi dingin (ayat 12)</li>
+                    <li>• Injil diberitakan di seluruh dunia (ayat 14)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">🌍 Tanda-tanda Alam & Sosial</h4>
+                <p class="text-gray-700 text-sm mb-4">Tanda-tanda yang berkaitan dengan kondisi alam dan masyarakat.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Berdasarkan Matius 24 & Wahyu:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Peperangan dan kabar perang (Matius 24:6-7)</li>
+                    <li>• Kelaparan dan gempa bumi (Matius 24:7)</li>
+                    <li>• Penganiayaan orang percaya (Matius 24:9)</li>
+                    <li>• Bencana alam meningkat (Wahyu 6:12)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tanda-tanda Khusus -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Tanda-tanda Khusus Menurut Kitab Wahyu</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Meterai-meterai<br><span class="text-lg font-normal">(Wahyu 6)</span></h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-sky-50 p-3 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3 text-sm">1</span>
+                    <span class="text-sky-800 text-sm">Penunggang kuda putih - penaklukan</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-3 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3 text-sm">2</span>
+                    <span class="text-sky-800 text-sm">Penunggang kuda merah - peperangan</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-3 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3 text-sm">3</span>
+                    <span class="text-sky-800 text-sm">Penunggang kuda hitam - kelaparan</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-3 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3 text-sm">4</span>
+                    <span class="text-sky-800 text-sm">Penunggang kuda pucat - kematian</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Sangkakala & Cawan<br><span class="text-lg font-normal">(Wahyu 8-16)</span></h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-sky-50 p-3 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3 text-sm">🎺</span>
+                    <span class="text-sky-800 text-sm">7 Sangkakala - penghakiman parsial</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-3 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3 text-sm">🍷</span>
+                    <span class="text-sky-800 text-sm">7 Cawan - penghakiman final</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-3 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3 text-sm">🐉</span>
+                    <span class="text-sky-800 text-sm">Kekuatan antikristus muncul</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-3 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3 text-sm">✝️</span>
+                    <span class="text-sky-800 text-sm">Kemenangan akhir Kristus</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Peringatan Alkitab -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Peringatan tentang Menetapkan Tanggal</h3>
+
+            <div class="bg-red-50 border-l-4 border-red-400 p-4 rounded-r-lg">
+              <h4 class="font-bold text-red-900 mb-2">Tentang Hari dan Saat</h4>
+              <p class="text-red-800 text-sm mb-3">
+                "Tetapi tentang hari dan saat itu tidak seorangpun yang tahu, malaikat-malaikat di sorga tidak, dan Anakpun tidak, hanya Bapa sendiri."<br>
+                <strong class="text-red-700">Matius 24:36</strong>
+              </p>
+              <p class="text-red-800 text-sm">
+                "Tuhan tidak lalai menepati janji-Nya, sekalipun ada orang yang menganggapnya sebagai kelalaian, tetapi Ia sabar terhadap kamu, karena Ia menghendaki supaya jangan ada yang binasa, melainkan supaya semua orang berbalik dan bertobat."<br>
+                <strong class="text-red-700">2 Petrus 3:9</strong>
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+              <div class="bg-sky-50 rounded-lg p-4">
+                <h5 class="font-semibold text-sky-900 mb-2">Tugas Umat Allah</h5>
+                <ul class="text-sky-800 space-y-1 text-sm">
+                  <li>• Berjaga-jaga dan berdoa (Matius 24:42)</li>
+                  <li>• Setia melayani sampai Tuhan datang (Matius 24:45-46)</li>
+                  <li>• Memberitakan Injil kepada semua bangsa (Matius 24:14)</li>
+                  <li>• Hidup kudus dan tak bercacat (2 Petrus 3:11-14)</li>
+                </ul>
+              </div>
+
+              <div class="bg-sky-50 rounded-lg p-4">
+                <h5 class="font-semibold text-sky-900 mb-2">Sikap yang Benar</h5>
+                <ul class="text-sky-800 space-y-1 text-sm">
+                  <li>• Pengharapan aktif, bukan spekulasi pasif</li>
+                  <li>• Kewaspadaan, bukan perhitungan tanggal</li>
+                  <li>• Kesetiaan dalam pelayanan, bukan pengamatan tanda</li>
+                  <li>• Persiapan rohani, bukan prediksi kronologis</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keadaan Antara dan Kebangkitan -->
+    <section id="keadaan-antara" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Keadaan Antara dan Kebangkitan
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Keadaan antara</strong> adalah kondisi jiwa orang percaya setelah kematian dan sebelum kebangkitan tubuh, sementara <strong>kebangkitan</strong> adalah penyatuan kembali jiwa dengan tubuh yang dimuliakan.
+            </p>
+          </div>
+
+          <!-- Keadaan Antara -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Keadaan Antara (Intermediate State)</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">😇 Orang Percaya<br><span class="text-sm font-normal">(With Christ)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Jiwa orang percaya langsung berada bersama Kristus dalam kesadaran penuh.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Bebas dari dosa dan penderitaan (Wahyu 14:13)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Bersama Kristus dalam sukacita (Filipi 1:23)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Menantikan kebangkitan tubuh (2 Korintus 5:1-4)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Dalam keadaan bahagia dan sadar (Lukas 23:43)</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">2 Korintus 5:8; Filipi 1:21-23</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">😞 Orang Tidak Percaya<br><span class="text-sm font-normal">(In Torment)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Jiwa orang tidak percaya berada dalam penderitaan sambil menanti pengadilan.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Dalam siksaan dan penderitaan (Lukas 16:23-24)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Terpisah dari hadirat Allah (2 Tesalonika 1:9)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Menantikan kebangkitan untuk penghakiman (Yohanes 5:29)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Dalam keadaan sadar dan menderita (Lukas 16:25)</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Lukas 16:19-31; Wahyu 20:13</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kebangkitan Tubuh -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Kebangkitan Tubuh</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Kebangkitan Orang Percaya<br><span class="text-lg font-normal">(The First Resurrection)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Tubuh yang Dimuliakan</h5>
+                    <p class="text-sky-800 text-sm">Tubuh rohani yang tidak dapat binasa, mulia, dan penuh kuasa</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">1 Korintus 15:42-44</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Serupa dengan Kristus</h5>
+                    <p class="text-sky-800 text-sm">Tubuh kita akan diubah menjadi serupa dengan tubuh kemuliaan-Nya</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Filipi 3:20-21</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Kemenangan atas Kematian</h5>
+                    <p class="text-sky-800 text-sm">Kematian ditelan dalam kemenangan oleh kebangkitan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">1 Korintus 15:54-55</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Kebangkitan Orang Tidak Percaya<br><span class="text-lg font-normal">(The Second Resurrection)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Kebangkitan untuk Penghakiman</h5>
+                    <p class="text-sky-800 text-sm">Kebangkitan tubuh untuk menghadapi pengadilan terakhir</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Yohanes 5:28-29</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Tubuh untuk Kebinasaan</h5>
+                    <p class="text-sky-800 text-sm">Tubuh yang cocok untuk hukuman kekal</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Daniel 12:2</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Kebangkitan Kedua</h5>
+                    <p class="text-sky-800 text-sm">Setelah kerajaan 1000 tahun (dalam pandangan premilenial)</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Wahyu 20:5-6</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sifat Tubuh Kebangkitan -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Sifat-sifat Tubuh Kebangkitan Orang Percaya</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">💎</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Tidak Dapat Binasa</h4>
+                <p class="text-sky-800 text-sm">Bebas dari penyakit, kerusakan, dan kematian</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">1 Korintus 15:42</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">👑</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Mulia</h4>
+                <p class="text-sky-800 text-sm">Mencerminkan kemuliaan Allah dan Kristus</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">1 Korintus 15:43</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">💪</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Penuh Kuasa</h4>
+                <p class="text-sky-800 text-sm">Tidak terbatas oleh ruang dan waktu</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">1 Korintus 15:43</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">🌬️</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Rohani</h4>
+                <p class="text-sky-800 text-sm">Dikuasai oleh Roh, bukan oleh daging</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">1 Korintus 15:44</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pengadilan Terakhir -->
+    <section id="pengadilan" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Pengadilan Terakhir
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Pengadilan terakhir</strong> adalah peristiwa ketika semua manusia akan berdiri di hadapan takhta Kristus untuk memberi pertanggungjawaban atas hidup mereka.
+            </p>
+          </div>
+
+          <!-- Hakikat Pengadilan -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Hakikat Pengadilan Terakhir</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">⚖️ Sifat Pengadilan</h4>
+                <p class="text-gray-700 text-sm mb-4">Pengadilan yang universal, final, adil, dan tidak dapat banding.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Karakteristik:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Dilakukan oleh Kristus sendiri (Yohanes 5:22)</li>
+                    <li>• Atas semua manusia tanpa kecuali (2 Korintus 5:10)</li>
+                    <li>• Berdasarkan perbuatan dan hati (Roma 2:16)</li>
+                    <li>• Final dan kekal (Ibrani 9:27)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">👑 Hakim dan Saksi</h4>
+                <p class="text-gray-700 text-sm mb-4">Kristus sebagai Hakim, dengan para malaikat dan orang kudus sebagai saksi.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Pihak-pihak:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Hakim: Yesus Kristus (2 Timotius 4:1)</li>
+                    <li>• Terdakwa: Semua manusia (Wahyu 20:12)</li>
+                    <li>• Saksi: Para malaikat (Matius 25:31)</li>
+                    <li>• Orang kudus ikut menghakimi (1 Korintus 6:2-3)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dasar Pengadilan -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Dasar Pengadilan</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Orang Percaya<br><span class="text-lg font-normal">(The Saved)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Dasar Pembenaran</h5>
+                    <p class="text-sky-800 text-sm">Kebenaran Kristus yang diperhitungkan melalui iman</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Roma 3:21-26; 8:1</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Penghargaan atas Perbuatan</h5>
+                    <p class="text-sky-800 text-sm">Upah untuk pelayanan dan kesetiaan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">1 Korintus 3:12-15</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Bebas dari Penghukuman</h5>
+                    <p class="text-sky-800 text-sm">Tidak ada penghukuman bagi yang di dalam Kristus</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Roma 8:1; Yohanes 5:24</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Orang Tidak Percaya<br><span class="text-lg font-normal">(The Unsaved)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Dasar Penghukuman</h5>
+                    <p class="text-sky-800 text-sm">Perbuatan mereka sendiri yang tercatat dalam kitab</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Wahyu 20:12-13</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Penolakan terhadap Kristus</h5>
+                    <p class="text-sky-800 text-sm">Menolak kasih karunia dan Injil keselamatan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Yohanes 3:18,36</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Hidup dalam Dosa</h5>
+                    <p class="text-sky-800 text-sm">Tetap dalam pemberontakan dan ketidaktaatan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Roma 2:5-8</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hasil Pengadilan -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Hasil Pengadilan Terakhir</h3>
+
+            <div class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-green-50 border-l-4 border-green-400 p-6 rounded-r-lg">
+                  <h4 class="font-bold text-green-900 mb-3 text-lg">✅ Orang Percaya</h4>
+                  <ul class="text-green-800 space-y-2 text-sm">
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Masuk dalam kehidupan kekal (Matius 25:34,46)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Menerima upah untuk perbuatan baik (1 Korintus 3:14)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Bersekutu dengan Allah selamanya (Wahyu 21:3)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Memerintah bersama Kristus (2 Timotius 2:12)</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg">
+                  <h4 class="font-bold text-red-900 mb-3 text-lg">❌ Orang Tidak Percaya</h4>
+                  <ul class="text-red-800 space-y-2 text-sm">
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Masuk dalam hukuman kekal (Matius 25:41,46)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Terpisah dari hadirat Allah (2 Tesalonika 1:9)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Dalam lautan api dan belerang (Wahyu 20:14-15)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Penderitaan yang kekal (Wahyu 14:11)</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 rounded-lg p-4 text-center">
+                <h4 class="font-bold text-sky-900 mb-2">Keadilan dan Kasih Karunia</h4>
+                <p class="text-sky-800 text-sm">
+                  "Dalam pengadilan terakhir, keadilan Allah dinyatakan sepenuhnya dalam menghakimi orang tidak percaya, dan kasih karunia Allah dinyatakan sepenuhnya dalam menyelamatkan orang percaya melalui Kristus."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Masa Depan Kekal -->
+    <section id="masa-depan-kekal" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Masa Depan Kekal - Langit dan Bumi Baru
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Langit dan bumi baru</strong> adalah penyempurnaan akhir rencana Allah, di mana ciptaan ditebus sepenuhnya dari kutuk dosa dan Allah berdiam di tengah umat-Nya untuk selama-lamanya.
+            </p>
+          </div>
+
+          <!-- Langit dan Bumi Baru -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Langit dan Bumi Baru (Wahyu 21-22)</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">🌌 Ciptaan Baru</h4>
+                <p class="text-sky-800 text-sm mb-4">Transformasi total alam semesta menjadi keadaan yang sempurna dan kekal.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Langit dan bumi yang baru (Wahyu 21:1)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Tidak ada lagi laut - simbol kekacauan (Wahyu 21:1)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Bebas dari kutuk dosa (Wahyu 22:3)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Tidak ada lagi maut dan dukacita (Wahyu 21:4)</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">2 Petrus 3:13; Yesaya 65:17</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">🏙️ Yerusalem Baru</h4>
+                <p class="text-sky-800 text-sm mb-4">Kota surgawi yang turun dari Allah, tempat kediaman umat tebusan.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Dipersiapkan sebagai mempelai (Wahyu 21:2)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Ukuran yang sempurna (Wahyu 21:16)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Dibangun dari emas dan permata (Wahyu 21:18-21)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Tidak perlu matahari dan bulan (Wahyu 21:23)</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Wahyu 21:9-27</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kehidupan dalam Kekekalan -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Kehidupan dalam Kekekalan</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Persekutuan dengan Allah<br><span class="text-lg font-normal">(Divine Fellowship)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Allah Berdiam di Tengah</h5>
+                    <p class="text-sky-800 text-sm">Kemah Allah di tengah manusia, hubungan langsung</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Wahyu 21:3</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Melihat Wajah Allah</h5>
+                    <p class="text-sky-800 text-sm">Penglihatan akan Allah secara langsung</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Wahyu 22:4; 1 Korintus 13:12</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Ibadah Kekal</h5>
+                    <p class="text-sky-800 text-sm">Penyembahan dan pujian tanpa henti</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Wahyu 7:9-12</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Kehidupan Umat Tebusan<br><span class="text-lg font-normal">(Redeemed Life)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pelayanan dan Pemerintahan</h5>
+                    <p class="text-sky-800 text-sm">Melayani Allah dan memerintah bersama Kristus</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Wahyu 22:3,5</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Persekutuan Sempurna</h5>
+                    <p class="text-sky-800 text-sm">Hubungan dengan Allah dan sesama tanpa halangan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Wahyu 21:3-4</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Penyempurnaan Diri</h5>
+                    <p class="text-sky-800 text-sm">Tubuh, jiwa, dan roh yang sempurna dalam kekudusan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">1 Yohanes 3:2</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aplikasi Praktis Eskatologi -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Aplikasi Praktis Eskatologi</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Untuk Hidup Sekarang:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Hidup dalam pengharapan dan penantian aktif</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Setia dalam pelayanan dan panggilan</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Hidup kudus dan tak bercacat</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Bersukacita dalam pengharapan kemuliaan</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Untuk Pelayanan dan Misi:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Memberitakan Injil dengan urgensi</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Membangun gereja yang siap menyambut Mempelai</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Bekerja untuk kemuliaan Allah yang kekal</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Menghibur yang berduka dengan pengharapan kebangkitan</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-sky-50 border-l-4 border-sky-400 p-4 rounded-r-lg mt-6">
+              <h4 class="font-bold text-sky-900 mb-2">Pengharapan Eskatologis</h4>
+              <p class="text-sky-800 text-sm">
+                "Sebab penderitaan ringan yang sekarang ini, mengerjakan bagi kami kemuliaan kekal yang melebihi segala-galanya, jauh lebih besar dari pada penderitaan kami. Sebab kami tidak memperhatikan yang kelihatan, melainkan yang tak kelihatan, karena yang kelihatan adalah sementara, sedangkan yang tak kelihatan adalah kekal."<br>
+                <strong class="text-sky-700">2 Korintus 4:17-18</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian-Bagian Terkait -->
+    <section class="mt-12">
+      <div class="bg-gradient-to-r from-sky-600 to-sky-800 text-white rounded-2xl p-4 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">
+          Selesaikan Perjalanan Teologismu
+        </h2>
+        <p class="mb-8 max-w-2xl mx-auto text-lg">
+          Setelah memahami Eskatologi, Anda telah menyelesaikan perjalanan melalui doktrin-doktrin utama Teologi Sistematik. Kini saatnya mereview dan mengintegrasikan seluruh pemahaman teologis Anda.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/edukasi/teologi-sistematik"
+            class="bg-white text-sky-900 px-8 py-4 rounded-xl font-bold hover:text-sky-700 transition-all shadow-lg hover:shadow-xl">
+            📚 Review Seluruh Teologi Sistematik
+          </a>
+          <a
+            href="/edukasi"
+            class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-sky-600 transition-all">
+            🎓 Jelajahi Bidang Edukasi Lainnya
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Link ke Bagian-Bagian Terkait -->
+    <section class="mt-8">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-4">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">
+          Eksplorasi Lebih Lanjut tentang Akhir Zaman
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {relatedSections.map((section) => (
+            <a
+              href={section.url}
+              class="bg-gray-50 hover:bg-gray-100 p-6 rounded-xl border border-gray-200 transition-all group">
+              <div class="flex items-start">
+                <span class="text-3xl mr-4 group-hover:scale-110 transition-transform">
+                  {section.icon}
+                </span>
+                <div>
+                  <h3 class="font-bold text-gray-900 text-lg mb-2 group-hover:text-sky-600">
+                    {section.title}
+                  </h3>
+                  <p class="text-gray-700 text-sm">{section.description}</p>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <div class="text-center mt-8">
+          <a
+            href="/edukasi/teologi-sistematik#kurikulum"
+            class="inline-flex items-center text-sky-600 hover:text-sky-800 font-semibold">
+            <span>Lihat Kurikulum Lengkap Teologi Sistematik</span>
+            <span class="ml-2">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <style>
+    .prose {
+      max-width: none;
+    }
+    .scroll-mt-24 {
+      scroll-margin-top: 6rem;
+    }
+  </style>
+</EdukasiLayout>

@@ -1,0 +1,1054 @@
+---
+// src/pages/edukasi/teologi-sistematik/pneumatologi/index.astro
+import EdukasiLayout from "../../../../layouts/EdukasiLayout.astro";
+
+const pageTitle = "Pneumatologi - Doktrin Roh Kudus dalam Teologi Sistematik";
+const pageDescription = "Pelajari doktrin tentang Roh Kudus: Pribadi, karya, karunia, buah, dan peran-Nya dalam keselamatan berdasarkan pendekatan teologi Reformed";
+const pageImage = "/images/banner/pneumatologi-roh-kudus.webp";
+const pageUrl = "edukasi/teologi-sistematik/pneumatologi";
+
+const breadcrumbs = [
+  { name: "Beranda", url: "https://sekolahteologi.com/" },
+  { name: "Edukasi", url: "https://sekolahteologi.com/edukasi" },
+  {
+    name: "Teologi Sistematik",
+    url: "https://sekolahteologi.com/edukasi/teologi-sistematik",
+  },
+  {
+    name: "Pneumatologi",
+    url: "https://sekolahteologi.com/edukasi/teologi-sistematik/pneumatologi",
+  },
+];
+
+// Data untuk bagian-bagian terkait
+const relatedSections = [
+  {
+    title: "Kristologi - Doktrin Kristus",
+    url: "/edukasi/teologi-sistematik/kristologi",
+    description: "Memahami Pribadi dan karya Yesus Kristus sang Pengutus Roh",
+    icon: "✝️",
+  },
+  {
+    title: "Soteriologi - Doktrin Keselamatan",
+    url: "/edukasi/teologi-sistematik/soteriologi",
+    description: "Mempelajari peran Roh Kudus dalam penerapan keselamatan",
+    icon: "🕊️",
+  },
+  {
+    title: "Trinitas - Doktrin Allah Tritunggal",
+    url: "/edukasi/teologi-sistematik/trinitas",
+    description: "Memahami Roh Kudus sebagai Pribadi ketiga dalam Trinitas",
+    icon: "☀️",
+  },
+  {
+    title: "Eklesiologi - Doktrin Gereja",
+    url: "/edukasi/teologi-sistematik/eklesiologi",
+    description: "Memahami peran Roh Kudus dalam membangun dan memimpin Gereja",
+    icon: "⛪",
+  },
+];
+---
+
+<EdukasiLayout
+  title={pageTitle}
+  description={pageDescription}
+  image={pageImage}
+  url={pageUrl}
+  type="article"
+  breadcrumbs={breadcrumbs}>
+  <div class="space-y-8">
+    <!-- Header Section -->
+    <header class="text-center py-12 bg-gradient-to-r from-sky-50 to-sky-100 rounded-2xl shadow-sm">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Pneumatologi
+        </h1>
+        <p class="text-xl text-gray-700 mb-6 p-5 max-w-3xl mx-auto leading-relaxed">
+          Doktrin tentang Roh Kudus - Memahami Pribadi, Karya, dan Pelayanan Roh Allah dalam Sejarah Keselamatan
+        </p>
+        <div class="flex flex-wrap justify-center gap-2">
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Pribadi Roh Kudus</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Karunia Roh</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Buah Roh</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Baptisan Roh</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Pengertian Pneumatologi -->
+    <section id="pengertian" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Pengertian Pneumatologi dalam Teologi Sistematik
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 text-left mb-4 text-left">
+                Definisi dan Ruang Lingkup
+              </h3>
+
+              <div class="bg-sky-50 border-l-4 border-sky-400 p-4 mb-6">
+                <p class="text-sky-700 font-medium">
+                  <strong>Pneumatologi</strong> berasal dari bahasa Yunani <em>pneuma</em> (πνεῦμα) yang berarti "roh/nafas" dan <em>logos</em> (λόγος) yang berarti "studi/ilmu". Secara teologis berarti <strong>"studi tentang Roh Kudus sebagai Pribadi ketiga Allah Tritunggal"</strong>.
+                </p>
+              </div>
+
+              <p class="text-gray-700 mb-4 leading-relaxed">
+                Dalam <strong>Teologi Sistematika</strong>, <strong>Pneumatologi</strong> adalah disiplin teologi yang mempelajari Pribadi, sifat, karya, dan pelayanan Roh Kudus dalam keselamatan, pengudusan, dan pembangunan Gereja.
+              </p>
+
+              <div class="bg-yellow-50 rounded-lg p-4 mb-6">
+                <h4 class="font-semibold text-yellow-900 mb-3">
+                  Signifikansi Pneumatologi
+                </h4>
+                <p class="text-yellow-800 text-sm">
+                  <strong>Pemahaman yang benar tentang Roh Kudus sangat penting untuk kehidupan Kristen yang sehat</strong>. "Tetapi Penghibur, yaitu Roh Kudus, yang akan diutus oleh Bapa dalam nama-Ku, Dialah yang akan mengajarkan segala sesuatu kepadamu dan akan mengingatkan kamu akan semua yang telah Kukatakan kepadamu." (Yohanes 14:26)
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 text-left mb-4 text-left">
+                Pertanyaan-Pertanyaan Kunci Pneumatologi
+              </h3>
+
+              <div class="space-y-4">
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q1</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Siapakah Roh Kudus?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami Pribadi dan keilahian Roh Kudus</p>
+                    <a href="#pribadi-roh-kudus" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">🔥 Pelajari Pribadi Roh Kudus</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q2</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Apa Karya Roh dalam Keselamatan?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami regenerasi, pengudusan, dan pemeteraian</p>
+                    <a href="#karya-keselamatan" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">💖 Pelajari Karya Keselamatan</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q3</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Apa Karunia dan Buah Roh?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami karunia pelayanan dan buah karakter</p>
+                    <a href="#karunia-buah" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">🎁 Pelajari Karunia & Buah</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q4</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Bagaimana Hubungan dengan Gereja?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami peran Roh dalam memimpin dan membangun Gereja</p>
+                    <a href="#gereja" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">⛪ Pelajari Peran dalam Gereja</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pribadi Roh Kudus -->
+    <section id="pribadi-roh-kudus" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Pribadi dan Keilahian Roh Kudus
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Roh Kudus</strong> adalah Pribadi ketiga dalam Allah Tritunggal, setara dengan Bapa dan Anak dalam hakikat, kekuatan, dan kemuliaan, namun berbeda dalam peran dan hubungan.
+            </p>
+          </div>
+
+          <!-- Ayat Kunci -->
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8 rounded-r-lg">
+            <h4 class="font-bold text-yellow-900 mb-2 text-left">Basis Alkitabiah Keilahian Roh Kudus:</h4>
+            <p class="text-yellow-800 text-lg italic">
+              "Tetapi Petrus berkata: 'Ananias, mengapa Iblis mengisi hatimu, sehingga engkau mendustai Roh Kudus dan menahan sebagian dari hasil tanah itu?'... Engkau bukan mendustai manusia, tetapi mendustai Allah."<br>
+              <strong class="not-italic">Kisah Para Rasul 5:3-4</strong>
+            </p>
+          </div>
+
+          <!-- Sifat-sifat Roh Kudus -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Sifat-sifat Keilahian Roh Kudus</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">∞</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Kekal</h4>
+                <p class="text-sky-800 text-sm">Tidak memiliki awal dan akhir</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Ibrani 9:14</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">🌎</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Maha Hadir</h4>
+                <p class="text-sky-800 text-sm">Hadir di semua tempat secara bersamaan</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Mazmur 139:7-10</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">💪</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Maha Kuasa</h4>
+                <p class="text-sky-800 text-sm">Memiliki semua kuasa Allah</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Roma 15:19</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">📚</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Maha Tahu</h4>
+                <p class="text-sky-800 text-sm">Mengetahui segala sesuatu</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">1 Korintus 2:10-11</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bukti Ke-Pribadi-an -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Bukti-bukti Roh Kudus sebagai Pribadi</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Sifat-sifat Pribadi</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-sky-50 p-3 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3 text-sm">🧠</span>
+                    <span class="text-sky-800 text-sm">Memiliki akal budi (Roma 8:27)</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-3 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3 text-sm">💖</span>
+                    <span class="text-sky-800 text-sm">Memiliki perasaan (Efesus 4:30)</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-3 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3 text-sm">💪</span>
+                    <span class="text-sky-800 text-sm">Memiliki kehendak (1 Korintus 12:11)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Tindakan-tindakan Pribadi</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-sky-50 p-3 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3 text-sm">🗣️</span>
+                    <span class="text-sky-800 text-sm">Berkata-kata (Kisah 13:2)</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-3 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3 text-sm">👥</span>
+                    <span class="text-sky-800 text-sm">Mengajar (Yohanes 14:26)</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-3 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3 text-sm">🙏</span>
+                    <span class="text-sky-800 text-sm">Berdoa (Roma 8:26)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Karya Roh Kudus dalam Sejarah -->
+    <section id="sejarah-karya" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Karya Roh Kudus dalam Sejarah Keselamatan
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Roh Kudus</strong> aktif bekerja sepanjang sejarah keselamatan, dari penciptaan hingga penyempurnaan segala sesuatu, dengan peran khusus dalam setiap zaman.
+            </p>
+          </div>
+
+          <!-- Timeline Karya Roh -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Perkembangan Karya Roh Kudus</h3>
+
+            <div class="bg-sky-50 rounded-2xl p-6">
+              <div class="flex flex-col space-y-6">
+                <!-- Perjanjian Lama -->
+                <div class="flex items-start">
+                  <div class="bg-sky-100 text-sky-800 px-4 py-2 rounded-lg font-bold mr-4 min-w-[120px] text-center">
+                    Perjanjian Lama
+                  </div>
+                  <div class="bg-white rounded-xl p-4 shadow-sm border border-sky-200 flex-1">
+                    <h4 class="font-bold text-sky-900 mb-2">Karya Terbatas dan Sementara</h4>
+                    <ul class="text-sky-800 space-y-1 text-sm">
+                      <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Penciptaan dan pemeliharaan alam (Kejadian 1:2)</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Pengilhaman para nabi (2 Petrus 1:21)</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Pemberian kuasa untuk pelayanan khusus (Hakim-hakim 6:34)</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Pembentukan karakter (Mazmur 51:13)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Pelayanan Yesus -->
+                <div class="flex items-start">
+                  <div class="bg-sky-200 text-sky-900 px-4 py-2 rounded-lg font-bold mr-4 min-w-[120px] text-center">
+                    Zaman Yesus
+                  </div>
+                  <div class="bg-white rounded-xl p-4 shadow-sm border border-sky-200 flex-1">
+                    <h4 class="font-bold text-sky-900 mb-2">Karya dalam Hidup dan Pelayanan Kristus</h4>
+                    <ul class="text-sky-800 space-y-1 text-sm">
+                      <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Kelahiran Yesus dari perawan (Lukas 1:35)</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Pencurahan pada baptisan Yesus (Matius 3:16)</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Memimpin dan memampukan pelayanan (Lukas 4:14)</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Kebangkitan Yesus (Roma 8:11)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Zaman Gereja -->
+                <div class="flex items-start">
+                  <div class="bg-sky-600 text-white px-4 py-2 rounded-lg font-bold mr-4 min-w-[120px] text-center">
+                    Zaman Gereja
+                  </div>
+                  <div class="bg-white rounded-xl p-4 shadow-sm border border-sky-200 flex-1">
+                    <h4 class="font-bold text-sky-900 mb-2">Karya Universal dan Permanen</h4>
+                    <ul class="text-sky-800 space-y-1 text-sm">
+                      <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Pencurahan pada Hari Pentakosta (Kisah 2:1-4)</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Diam dalam setiap orang percaya (1 Korintus 6:19)</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Pembaptisan ke dalam tubuh Kristus (1 Korintus 12:13)</span>
+                      </li>
+                      <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Penyataan karunia untuk pembangunan Gereja (1 Korintus 12:7)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Perjanjian Lama vs Baru -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Perbandingan Karya Roh dalam Perjanjian Lama dan Baru</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Perjanjian Lama</h4>
+                <div class="space-y-3">
+                  <div class="bg-sky-50 rounded-lg p-3">
+                    <h5 class="font-semibold text-sky-900 mb-1">Sifat Karya</h5>
+                    <p class="text-sky-800 text-sm">Selektif dan sementara</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-3">
+                    <h5 class="font-semibold text-sky-900 mb-1">Penerima</h5>
+                    <p class="text-sky-800 text-sm">Para pemimpin, nabi, raja</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-3">
+                    <h5 class="font-semibold text-sky-900 mb-1">Tujuan</h5>
+                    <p class="text-sky-800 text-sm">Pelayanan khusus</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-3">
+                    <h5 class="font-semibold text-sky-900 mb-1">Kehadiran</h5>
+                    <p class="text-sky-800 text-sm">Datang dan pergi</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Perjanjian Baru</h4>
+                <div class="space-y-3">
+                  <div class="bg-sky-50 rounded-lg p-3">
+                    <h5 class="font-semibold text-sky-900 mb-1">Sifat Karya</h5>
+                    <p class="text-sky-800 text-sm">Universal dan permanen</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-3">
+                    <h5 class="font-semibold text-sky-900 mb-1">Penerima</h5>
+                    <p class="text-sky-800 text-sm">Semua orang percaya</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-3">
+                    <h5 class="font-semibold text-sky-900 mb-1">Tujuan</h5>
+                    <p class="text-sky-800 text-sm">Pembentukan karakter dan pelayanan</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-3">
+                    <h5 class="font-semibold text-sky-900 mb-1">Kehadiran</h5>
+                    <p class="text-sky-800 text-sm">Tinggal selamanya</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Karya Roh dalam Keselamatan -->
+    <section id="karya-keselamatan" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Karya Roh Kudus dalam Penerapan Keselamatan
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Roh Kudus</strong> adalah Pribadi yang menerapkan karya keselamatan yang telah diselesaikan Kristus dalam hidup orang percaya, dari awal hingga akhir.
+            </p>
+          </div>
+
+          <!-- Ordo Salutis Rohani -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Peran Roh Kudus dalam Ordo Salutis</h3>
+
+            <div class="bg-sky-50 rounded-2xl p-6">
+              <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3">
+                <div class="bg-white border border-sky-200 rounded-xl p-4 text-center shadow-sm">
+                  <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                    <span class="text-sky-600 text-xl">📞</span>
+                  </div>
+                  <h5 class="font-semibold text-sky-900 text-sm">Panggilan</h5>
+                  <p class="text-gray-600 text-xs">Yohanes 6:44</p>
+                </div>
+
+                <div class="text-sky-400 text-xl flex items-center justify-center">→</div>
+
+                <div class="bg-white border border-sky-200 rounded-xl p-4 text-center shadow-sm">
+                  <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                    <span class="text-sky-600 text-xl">🔄</span>
+                  </div>
+                  <h5 class="font-semibold text-sky-900 text-sm">Regenerasi</h5>
+                  <p class="text-gray-600 text-xs">Yohanes 3:5-8</p>
+                </div>
+
+                <div class="text-sky-400 text-xl flex items-center justify-center">→</div>
+
+                <div class="bg-white border border-sky-200 rounded-xl p-4 text-center shadow-sm">
+                  <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                    <span class="text-sky-600 text-xl">🙏</span>
+                  </div>
+                  <h5 class="font-semibold text-sky-900 text-sm">Pertobatan & Iman</h5>
+                  <p class="text-gray-600 text-xs">1 Korintus 12:3</p>
+                </div>
+
+                <div class="text-sky-400 text-xl flex items-center justify-center">→</div>
+
+                <div class="bg-white border border-sky-200 rounded-xl p-4 text-center shadow-sm">
+                  <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                    <span class="text-sky-600 text-xl">💧</span>
+                  </div>
+                  <h5 class="font-semibold text-sky-900 text-sm">Baptisan Roh</h5>
+                  <p class="text-gray-600 text-xs">1 Korintus 12:13</p>
+                </div>
+
+                <div class="text-sky-400 text-xl flex items-center justify-center">→</div>
+
+                <div class="bg-white border border-sky-200 rounded-xl p-4 text-center shadow-sm">
+                  <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                    <span class="text-sky-600 text-xl">⛪</span>
+                  </div>
+                  <h5 class="font-semibold text-sky-900 text-sm">Pengudusan</h5>
+                  <p class="text-gray-600 text-xs">2 Tesalonika 2:13</p>
+                </div>
+
+                <div class="text-sky-400 text-xl flex items-center justify-center">→</div>
+
+                <div class="bg-white border border-sky-200 rounded-xl p-4 text-center shadow-sm">
+                  <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                    <span class="text-sky-600 text-xl">🛡️</span>
+                  </div>
+                  <h5 class="font-semibold text-sky-900 text-sm">Pemeteraian</h5>
+                  <p class="text-gray-600 text-xs">Efesus 1:13-14</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Karya-karya Penting -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+              <h4 class="font-bold text-sky-900 mb-3 text-lg">🔄 Regenerasi (Kelahiran Baru)</h4>
+              <p class="text-gray-700 text-sm mb-4">Karya supernatural Roh Kudus yang memberikan hidup spiritual baru, mengubah hati dari batu menjadi daging.</p>
+              <div class="bg-sky-50 rounded-lg p-4">
+                <h5 class="font-semibold text-sky-900 mb-2">Ciri-ciri:</h5>
+                <ul class="text-sky-800 space-y-1 text-sm">
+                  <li>• Dilakukan oleh Roh (Yohanes 3:5-8)</li>
+                  <li>• Melalui Firman (1 Petrus 1:23)</li>
+                  <li>• Menghasilkan natur baru (2 Korintus 5:17)</li>
+                  <li>• Dasar untuk semua karya berikutnya</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+              <h4 class="font-bold text-sky-900 mb-3 text-lg">💧 Baptisan Roh Kudus</h4>
+              <p class="text-gray-700 text-sm mb-4">Karya Roh yang membaptis orang percaya ke dalam tubuh Kristus, terjadi sekali pada saat kelahiran baru.</p>
+              <div class="bg-sky-50 rounded-lg p-4">
+                <h5 class="font-semibold text-sky-900 mb-2">Karakteristik:</h5>
+                <ul class="text-sky-800 space-y-1 text-sm">
+                  <li>• Untuk semua orang percaya (1 Korintus 12:13)</li>
+                  <li>• Menjadikan satu dengan Kristus</li>
+                  <li>• Dasar persatuan Gereja</li>
+                  <li>• Berbeda dengan kepenuhan Roh</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pemeteraian dan Jaminan -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Pemeteraian dan Jaminan Roh</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Pemeteraian Roh<br><span class="text-lg font-normal">(Sealing of the Spirit)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Makna Pemeteraian</h5>
+                    <p class="text-sky-800 text-sm">Tanda kepemilikan, otentikasi, dan perlindungan oleh Allah</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Efesus 1:13; 4:30</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Waktu Pemeteraian</h5>
+                    <p class="text-sky-800 text-sm">Pada saat percaya, bersamaan dengan baptisan Roh</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Efesus 1:13-14</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Tujuan Pemeteraian</h5>
+                    <p class="text-sky-800 text-sm">Jaminan keselamatan sampai hari penebusan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Efesus 4:30</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Kepenuhan Roh<br><span class="text-lg font-normal">(Filling of the Spirit)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Makna Kepenuhan</h5>
+                    <p class="text-sky-800 text-sm">Dikuasai dan dipimpin oleh Roh untuk hidup dan pelayanan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Efesus 5:18</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pengalaman Berulang</h5>
+                    <p class="text-sky-800 text-sm">Dapat terjadi berulang kali, berbeda dengan baptisan Roh</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Kisah 2:4; 4:31</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Hasil Kepenuhan</h5>
+                    <p class="text-sky-800 text-sm">Kuasa untuk bersaksi, penyembahan, dan ketaatan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Kisah 1:8; Efesus 5:19-21</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Karunia dan Buah Roh -->
+    <section id="karunia-buah" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Karunia dan Buah Roh Kudus
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Roh Kudus</strong> memberikan karunia-karunia untuk pelayanan dan menghasilkan buah-buah untuk karakter, semuanya untuk kemuliaan Allah dan pembangunan Gereja.
+            </p>
+          </div>
+
+          <!-- Karunia-karunia Roh -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Karunia-karunia Roh (Charismata)</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">🎁 Karunia Pelayanan<br><span class="text-sm font-normal">(Ministry Gifts)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Karunia yang diberikan untuk memimpin dan membangun Gereja</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Rasul-rasul (Efesus 4:11)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Nabi-nabi (Efesus 4:11)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Penginjil-penginjil (Efesus 4:11)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Gembala-pengajar (Efesus 4:11)</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">💫 Karunia Manifestasi<br><span class="text-sm font-normal">(Manifestation Gifts)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Karunia yang menyatakan kuasa dan kehadiran Roh</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Berkata-kata dengan hikmat (1 Korintus 12:8)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Berkata-kata dengan pengetahuan (1 Korintus 12:8)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Iman (1 Korintus 12:9)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Kesembuhan (1 Korintus 12:9)</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">🤝 Karunia Pelayanan<br><span class="text-sm font-normal">(Service Gifts)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Karunia untuk melayani dan menguatkan tubuh Kristus</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Melayani (Roma 12:7)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Mengajar (Roma 12:7)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Membimbing (Roma 12:8)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Berkemurahan (Roma 12:8)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Buah Roh -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Buah Roh (Galatia 5:22-23)</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Terhadap Allah</h4>
+                <div class="space-y-3">
+                  <div class="bg-sky-50 rounded-lg p-3 text-center">
+                    <h5 class="font-semibold text-sky-900">Kasih</h5>
+                    <p class="text-sky-800 text-xs">(Agape)</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-3 text-center">
+                    <h5 class="font-semibold text-sky-900">Sukacita</h5>
+                    <p class="text-sky-800 text-xs">(Chara)</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-3 text-center">
+                    <h5 class="font-semibold text-sky-900">Damai Sejahtera</h5>
+                    <p class="text-sky-800 text-xs">(Eirene)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Terhadap Sesama</h4>
+                <div class="space-y-3">
+                  <div class="bg-sky-50 rounded-lg p-3 text-center">
+                    <h5 class="font-semibold text-sky-900">Kesabaran</h5>
+                    <p class="text-sky-800 text-xs">(Makrothumia)</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-3 text-center">
+                    <h5 class="font-semibold text-sky-900">Kemurahan</h5>
+                    <p class="text-sky-800 text-xs">(Chrestotes)</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-3 text-center">
+                    <h5 class="font-semibold text-sky-900">Kebaikan</h5>
+                    <p class="text-sky-800 text-xs">(Agathosune)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Terhadap Diri Sendiri</h4>
+                <div class="space-y-3">
+                  <div class="bg-sky-50 rounded-lg p-3 text-center">
+                    <h5 class="font-semibold text-sky-900">Kesetiaan</h5>
+                    <p class="text-sky-800 text-xs">(Pistis)</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-3 text-center">
+                    <h5 class="font-semibold text-sky-900">Kelemahlembutan</h5>
+                    <p class="text-sky-800 text-xs">(Prautes)</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-3 text-center">
+                    <h5 class="font-semibold text-sky-900">Penguasaan Diri</h5>
+                    <p class="text-sky-800 text-xs">(Egkrateia)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Perbandingan Karunia dan Buah -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Perbandingan Karunia dan Buah Roh</h3>
+
+            <div class="overflow-x-auto">
+              <table class="w-full border-collapse text-left">
+                <thead>
+                  <tr class="bg-gray-100">
+                    <th class="border border-gray-300 p-4 font-semibold text-gray-900 text-left">Aspek</th>
+                    <th class="border border-gray-300 p-4 font-semibold text-gray-900 text-left">Karunia Roh</th>
+                    <th class="border border-gray-300 p-4 font-semibold text-gray-900 text-left">Buah Roh</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 p-4 font-semibold text-sky-900 text-left">Sumber</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Diberikan secara supernatural</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Dihasilkan melalui pertumbuhan</td>
+                  </tr>
+                  <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 p-4 font-semibold text-sky-900 text-left">Tujuan</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Untuk pelayanan (1 Korintus 12:7)</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Untuk karakter (Galatia 5:22-23)</td>
+                  </tr>
+                  <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 p-4 font-semibold text-sky-900 text-left">Waktu</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Dapat segera dimanifestasikan</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Dikembangkan seumur hidup</td>
+                  </tr>
+                  <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 p-4 font-semibold text-sky-900 text-left">Ketersediaan</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Tidak semua memiliki karunia sama</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Semua harus memiliki buah lengkap</td>
+                  </tr>
+                  <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 p-4 font-semibold text-sky-900 text-left">Prioritas</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Kasih lebih utama (1 Korintus 13)</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Kasih adalah buah pertama</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roh Kudus dan Gereja -->
+    <section id="gereja" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Roh Kudus dan Gereja
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Roh Kudus</strong> adalah Pribadi yang memimpin, mempersatukan, menguduskan, dan memperlengkapi Gereja untuk melaksanakan misi Allah di dunia.
+            </p>
+          </div>
+
+          <!-- Peran Roh dalam Gereja -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Peran Roh Kudus dalam Gereja</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">🏗️</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Pembangun Gereja</h4>
+                <p class="text-sky-800 text-sm">Membangun tubuh Kristus melalui karunia-karunia</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">1 Korintus 12:7; Efesus 4:12</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">🤝</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Pemersatu Gereja</h4>
+                <p class="text-sky-800 text-sm">Menciptakan persatuan dalam keanekaragaman</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Efesus 4:3-4</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">👑</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Pemimpin Gereja</h4>
+                <p class="text-sky-800 text-sm">Memimpin melalui firman dan hikmat</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Kisah 13:2; 16:6-7</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">🔥</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Pengutus Gereja</h4>
+                <p class="text-sky-800 text-sm">Memberi kuasa untuk bersaksi dan melayani</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Kisah 1:8; 13:4</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Roh dan Sakramen -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Roh Kudus dan Sakramen</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Baptisan Air</h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Tanda dan Meterai</h5>
+                    <p class="text-sky-800 text-sm">Baptisan air adalah tanda luar dari karya Roh dalam baptisan Roh</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">1 Korintus 12:13</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pengakuan Iman</h5>
+                    <p class="text-sky-800 text-sm">Menyatakan identitas baru dalam Kristus oleh karya Roh</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Roma 6:3-4</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Inisiasi</h5>
+                    <p class="text-sky-800 text-sm">Masuk ke dalam persekutuan Gereja yang dipimpin Roh</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">1 Korintus 12:13</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Perjamuan Kudus</h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Persekutuan Roh</h5>
+                    <p class="text-sky-800 text-sm">Roh mempersatukan kita dengan Kristus dan sesama percaya</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">1 Korintus 10:16-17</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Penyegaran Rohani</h5>
+                    <p class="text-sky-800 text-sm">Roh memperbarui dan menguatkan melalui perjamuan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Kisah 2:42; 9:31</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Penantian Kedatangan</h5>
+                    <p class="text-sky-800 text-sm">Roh memberi jaminan dan pengharapan akan penyempurnaan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">1 Korintus 11:26</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aplikasi Praktis -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Aplikasi Praktis Pneumatologi</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Untuk Kehidupan Pribadi:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Bergantung pada Roh untuk pertumbuhan rohani</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Berdoa dalam Roh untuk penyegaran dan bimbingan</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Mengembangkan buah Roh dalam karakter</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Mencari kepenuhan Roh untuk kuasa pelayanan</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Untuk Kehidupan Gereja:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Mengakui dan menghargai berbagai karunia Roh</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Mencari persatuan yang dipelihara Roh</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Tunduk pada pimpinan Roh dalam keputusan</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Bersaksi dengan kuasa Roh Kudus</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian-Bagian Terkait -->
+    <section class="mt-12">
+      <div class="bg-gradient-to-r from-sky-600 to-sky-800 text-white rounded-2xl p-4 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">
+          Lanjutkan Perjalanan Teologismu
+        </h2>
+        <p class="mb-8 max-w-2xl mx-auto text-lg">
+          Setelah memahami Pneumatologi, saatnya melanjutkan eksplorasi ke doktrin-doktrin sistematik berikutnya untuk membangun pemahaman teologis yang komprehensif dan alkitabiah.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/edukasi/teologi-sistematik/eklesiologi"
+            class="bg-white text-sky-900 px-8 py-4 rounded-xl font-bold hover:text-sky-700 transition-all shadow-lg hover:shadow-xl">
+            ⛪ Pelajari Eklesiologi Selanjutnya
+          </a>
+          <a
+            href="/edukasi/teologi-sistematik"
+            class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-sky-600 transition-all">
+            🏠 Kembali ke Overview Teologi
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Link ke Bagian-Bagian Terkait -->
+    <section class="mt-8">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-4">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">
+          Eksplorasi Lebih Lanjut tentang Roh Kudus
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {relatedSections.map((section) => (
+            <a
+              href={section.url}
+              class="bg-gray-50 hover:bg-gray-100 p-6 rounded-xl border border-gray-200 transition-all group">
+              <div class="flex items-start">
+                <span class="text-3xl mr-4 group-hover:scale-110 transition-transform">
+                  {section.icon}
+                </span>
+                <div>
+                  <h3 class="font-bold text-gray-900 text-lg mb-2 group-hover:text-sky-600">
+                    {section.title}
+                  </h3>
+                  <p class="text-gray-700 text-sm">{section.description}</p>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <div class="text-center mt-8">
+          <a
+            href="/edukasi/teologi-sistematik#kurikulum"
+            class="inline-flex items-center text-sky-600 hover:text-sky-800 font-semibold">
+            <span>Lihat Kurikulum Lengkap Teologi Sistematik</span>
+            <span class="ml-2">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <style>
+    .prose {
+      max-width: none;
+    }
+    .scroll-mt-24 {
+      scroll-margin-top: 6rem;
+    }
+  </style>
+</EdukasiLayout>

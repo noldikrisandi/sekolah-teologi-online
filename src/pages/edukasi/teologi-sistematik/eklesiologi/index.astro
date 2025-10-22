@@ -1,0 +1,1022 @@
+---
+// src/pages/edukasi/teologi-sistematik/eklesiologi/index.astro
+import EdukasiLayout from "../../../../layouts/EdukasiLayout.astro";
+
+const pageTitle = "Eklesiologi - Doktrin Gereja dalam Teologi Sistematik";
+const pageDescription = "Pelajari doktrin tentang Gereja: hakikat, sifat, tugas, pemerintahan, dan peran Gereja dalam rencana keselamatan Allah berdasarkan pendekatan teologi Reformed";
+const pageImage = "/images/banner/eklesiologi-gereja.webp";
+const pageUrl = "edukasi/teologi-sistematik/eklesiologi";
+
+const breadcrumbs = [
+  { name: "Beranda", url: "https://sekolahteologi.com/" },
+  { name: "Edukasi", url: "https://sekolahteologi.com/edukasi" },
+  {
+    name: "Teologi Sistematik",
+    url: "https://sekolahteologi.com/edukasi/teologi-sistematik",
+  },
+  {
+    name: "Eklesiologi",
+    url: "https://sekolahteologi.com/edukasi/teologi-sistematik/eklesiologi",
+  },
+];
+
+// Data untuk bagian-bagian terkait
+const relatedSections = [
+  {
+    title: "Kristologi - Doktrin Kristus",
+    url: "/edukasi/teologi-sistematik/kristologi",
+    description: "Memahami Kristus sebagai Kepala Gereja dan Fondasi",
+    icon: "✝️",
+  },
+  {
+    title: "Pneumatologi - Doktrin Roh Kudus",
+    url: "/edukasi/teologi-sistematik/pneumatologi",
+    description: "Mempelajari peran Roh Kudus dalam membangun Gereja",
+    icon: "🔥",
+  },
+  {
+    title: "Soteriologi - Doktrin Keselamatan",
+    url: "/edukasi/teologi-sistematik/soteriologi",
+    description: "Memahami Gereja sebagai komunitas orang yang diselamatkan",
+    icon: "🕊️",
+  },
+  {
+    title: "Eskatologi - Doktrin Akhir Zaman",
+    url: "/edukasi/teologi-sistematik/eskatologi",
+    description: "Memahami penyempurnaan Gereja dalam kemuliaan",
+    icon: "🌟",
+  },
+];
+---
+
+<EdukasiLayout
+  title={pageTitle}
+  description={pageDescription}
+  image={pageImage}
+  url={pageUrl}
+  type="article"
+  breadcrumbs={breadcrumbs}>
+  <div class="space-y-8">
+    <!-- Header Section -->
+    <header class="text-center py-12 bg-gradient-to-r from-sky-50 to-sky-100 rounded-2xl shadow-sm">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Eklesiologi
+        </h1>
+        <p class="text-xl text-gray-700 mb-6 p-5 max-w-3xl mx-auto leading-relaxed">
+          Doktrin tentang Gereja - Memahami Hakikat, Misi, dan Panggilan Umat Allah dalam Rencana Keselamatan
+        </p>
+        <div class="flex flex-wrap justify-center gap-2">
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Tubuh Kristus</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Umat Allah</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Bait Roh Kudus</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Sakramen</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Pengertian Eklesiologi -->
+    <section id="pengertian" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Pengertian Eklesiologi dalam Teologi Sistematik
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 text-left mb-4 text-left">
+                Definisi dan Ruang Lingkup
+              </h3>
+
+              <div class="bg-sky-50 border-l-4 border-sky-400 p-4 mb-6">
+                <p class="text-sky-700 font-medium">
+                  <strong>Eklesiologi</strong> berasal dari bahasa Yunani <em>ekklesia</em> (ἐκκλησία) yang berarti "jemaat/pertemuan" dan <em>logos</em> (λόγος) yang berarti "studi/ilmu". Secara teologis berarti <strong>"studi tentang Gereja sebagai umat Allah yang dipanggil keluar dari dunia"</strong>.
+                </p>
+              </div>
+
+              <p class="text-gray-700 mb-4 leading-relaxed">
+                Dalam <strong>Teologi Sistematika</strong>, <strong>Eklesiologi</strong> adalah disiplin teologi yang mempelajari hakikat, sifat, tugas, struktur, dan misi Gereja dalam rencana keselamatan Allah.
+              </p>
+
+              <div class="bg-yellow-50 rounded-lg p-4 mb-6">
+                <h4 class="font-semibold text-yellow-900 mb-3">
+                  Signifikansi Eklesiologi
+                </h4>
+                <p class="text-yellow-800 text-sm">
+                  <strong>Pemahaman yang benar tentang Gereja penting untuk identitas dan misi umat Allah</strong>. "Dan segala sesuatu telah diletakkan-Nya di bawah kaki Kristus dan Dia telah diberikan-Nya kepada jemaat sebagai Kepala dari segala yang ada. Jemaat yang adalah tubuh-Nya, yaitu kepenuhan Dia, yang memenuhi semua dan segala sesuatu." (Efesus 1:22-23)
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 text-left mb-4 text-left">
+                Pertanyaan-Pertanyaan Kunci Eklesiologi
+              </h3>
+
+              <div class="space-y-4">
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q1</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Apa Hakikat Gereja?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami identitas dan sifat-sifat Gereja</p>
+                    <a href="#hakikat-gereja" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">⛪ Pelajari Hakikat Gereja</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q2</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Bagaimana Struktur Gereja?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami pemerintahan dan organisasi Gereja</p>
+                    <a href="#struktur-gereja" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">🏛️ Pelajari Struktur Gereja</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q3</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Apa Misi Gereja?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami panggilan dan tugas Gereja di dunia</p>
+                    <a href="#misi-gereja" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">🎯 Pelajari Misi Gereja</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q4</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Apa Tanda-tanda Gereja?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami sakramen dan ciri-ciri Gereja sejati</p>
+                    <a href="#tanda-gereja" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">💒 Pelajari Tanda Gereja</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hakikat dan Sifat Gereja -->
+    <section id="hakikat-gereja" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Hakikat dan Sifat-sifat Gereja
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Gereja</strong> bukan sekadar organisasi manusia, tetapi merupakan ciptaan Allah melalui Roh Kudus, tubuh mistik Kristus, dan komunitas orang percaya yang dipanggil untuk misi ilahi.
+            </p>
+          </div>
+
+          <!-- Ayat Kunci -->
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8 rounded-r-lg">
+            <h4 class="font-bold text-yellow-900 mb-2 text-left">Basis Alkitabiah Hakikat Gereja:</h4>
+            <p class="text-yellow-800 text-lg italic">
+              "Kamu adalah bangsa yang terpilih, imamat yang rajani, bangsa yang kudus, umat kepunyaan Allah sendiri, supaya kamu memberitakan perbuatan-perbuatan yang besar dari Dia, yang telah memanggil kamu keluar dari kegelapan kepada terang-Nya yang ajaib."<br>
+              <strong class="not-italic">1 Petrus 2:9</strong>
+            </p>
+          </div>
+
+          <!-- Gambar-gambar Gereja -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Gambar-gambar Alkitab tentang Gereja</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">👥</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Tubuh Kristus</h4>
+                <p class="text-sky-800 text-sm">Kesatuan organik dengan Kristus sebagai Kepala</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">1 Korintus 12:27; Efesus 1:22-23</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">🏠</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Bait Allah</h4>
+                <p class="text-sky-800 text-sm">Tempat kediaman Roh Kudus yang kudus</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">1 Korintus 3:16; Efesus 2:21-22</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">👑</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Umat Allah</h4>
+                <p class="text-sky-800 text-sm">Komunitas perjanjian yang dipilih dan dikuduskan</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">1 Petrus 2:9-10</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">💒</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Mempelai Kristus</h4>
+                <p class="text-sky-800 text-sm">Hubungan kasih dan kesetiaan dengan Kristus</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Efesus 5:25-27; Wahyu 19:7</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sifat-sifat Gereja -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Sifat-sifat Gereja (Notae Ecclesiae)</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Sifat-sifat Esensial<br><span class="text-lg font-normal">(Reformed Tradition)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">1. Kesatuan (Unity)</h5>
+                    <p class="text-sky-800 text-sm">Satu tubuh, satu Roh, satu pengharapan, satu Tuhan, satu iman, satu baptisan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Efesus 4:4-6</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">2. Kekudusan (Holiness)</h5>
+                    <p class="text-sky-800 text-sm">Dipisahkan untuk Allah dan dikuduskan oleh Roh</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">1 Petrus 2:9</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">3. Katolisitas (Catholicity)</h5>
+                    <p class="text-sky-800 text-sm">Universal, untuk semua orang dan sepanjang zaman</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Wahyu 7:9</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">4. Apostolisitas (Apostolicity)</h5>
+                    <p class="text-sky-800 text-sm">Berlandaskan pengajaran para rasul dan kesaksian mereka</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Efesus 2:20</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Sifat-sifat Operasional</h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pemberitaan Firman</h5>
+                    <p class="text-sky-800 text-sm">Pengajaran yang setia kepada Alkitab</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">2 Timotius 4:2</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pelaksanaan Sakramen</h5>
+                    <p class="text-sky-800 text-sm">Baptisan dan Perjamuan Kudus yang benar</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">1 Korintus 11:23-26</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Disiplin Gereja</h5>
+                    <p class="text-sky-800 text-sm">Pemeliharaan kekudusan dan ketertiban</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Matius 18:15-17</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pelayanan Kasih</h5>
+                    <p class="text-sky-800 text-sm">Pelayanan diakonia kepada yang membutuhkan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Kisah 6:1-7</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gereja Universal dan Lokal -->
+    <section id="gereja-universal-lokal" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Gereja Universal dan Gereja Lokal
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Gereja</strong> memiliki dimensi universal (invisible church) yang mencakup semua orang percaya sepanjang masa, dan dimensi lokal (visible church) yang terwujud dalam jemaat-jemaat setempat.
+            </p>
+          </div>
+
+          <!-- Perbandingan Gereja Universal dan Lokal -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Perbandingan Gereja Universal dan Lokal</h3>
+
+            <div class="bg-sky-50 rounded-2xl p-6">
+              <div class="overflow-x-auto">
+                <table class="w-full border-collapse text-left">
+                  <thead>
+                    <tr class="bg-gray-100">
+                      <th class="border border-gray-300 p-4 font-semibold text-gray-900 text-left">Aspek</th>
+                      <th class="border border-gray-300 p-4 font-semibold text-gray-900 text-left">Gereja Universal</th>
+                      <th class="border border-gray-300 p-4 font-semibold text-gray-900 text-left">Gereja Lokal</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="hover:bg-gray-50">
+                      <td class="border border-gray-300 p-4 font-semibold text-sky-900 text-left">Definisi</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Seluruh tubuh Kristus sepanjang masa</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Perwujudan lokal Gereja universal</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td class="border border-gray-300 p-4 font-semibold text-sky-900 text-left">Keanggotaan</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Semua orang pilihan Allah (invisible)</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Yang mengaku percaya dan dibaptis (visible)</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td class="border border-gray-300 p-4 font-semibold text-sky-900 text-left">Kepemimpinan</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Kristus sebagai Kepala</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Penatua, diaken, gembala</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td class="border border-gray-300 p-4 font-semibold text-sky-900 text-left">Fungsi</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Penyataan kemuliaan Allah</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Pemuridan, persekutuan, ibadah</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td class="border border-gray-300 p-4 font-semibold text-sky-900 text-left">Ayat Kunci</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">Efesus 1:22-23; 5:25-27</td>
+                      <td class="border border-gray-300 p-4 text-gray-700">1 Korintus 1:2; Kisah 14:23</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hubungan Gereja Universal dan Lokal -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Hubungan Gereja Universal dan Lokal</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Gereja Universal<br><span class="text-lg font-normal">(Invisible Church)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Realitas Spiritual</h5>
+                    <p class="text-sky-800 text-sm">Terdiri dari semua orang yang benar-benar dilahirbarukan</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Tidak Terbatas</h5>
+                    <p class="text-sky-800 text-sm">Melampaui batas denominasi, waktu, dan geografi</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Diketahui Allah</h5>
+                    <p class="text-sky-800 text-sm">Hanya Allah yang mengetahui keanggotaan sejati</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Gereja Lokal<br><span class="text-lg font-normal">(Visible Church)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Manifestasi Nyata</h5>
+                    <p class="text-sky-800 text-sm">Perwujudan konkret Gereja universal di tempat tertentu</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Campuran</h5>
+                    <p class="text-sky-800 text-sm">Berisi orang percaya sejati dan nominal</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Alat Anugerah</h5>
+                    <p class="text-sky-800 text-sm">Sarana Allah untuk memelihara dan memuridkan orang percaya</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200 mt-6 text-center">
+              <h4 class="font-bold text-sky-900 text-xl mb-4">Hubungan Saling Melengkapi</h4>
+              <p class="text-gray-700 mb-4">
+                Gereja lokal adalah ekspresi nyata dari Gereja universal, dan Gereja universal memberikan makna dan tujuan bagi Gereja lokal. Keduanya tidak dapat dipisahkan dalam rencana Allah.
+              </p>
+              <div class="bg-sky-50 rounded-lg p-4 inline-block">
+                <p class="text-sky-800 font-semibold">
+                  "Karena di mana dua atau tiga orang berkumpul dalam Nama-Ku, di situ Aku ada di tengah-tengah mereka."<br>
+                  <span class="text-sky-700">Matius 18:20</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Struktur dan Pemerintahan Gereja -->
+    <section id="struktur-gereja" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Struktur dan Pemerintahan Gereja
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Pemerintahan Gereja</strong> ditetapkan oleh Kristus untuk memelihara ketertiban, pengajaran, dan disiplin dalam tubuh-Nya, dengan berbagai model yang berkembang dalam tradisi Kristen.
+            </p>
+          </div>
+
+          <!-- Model-model Pemerintahan -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Model-model Pemerintahan Gereja</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">🏛️ Episcopal<br><span class="text-sm font-normal">(Uskup)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Pemerintahan oleh uskup-uskup dalam hierarki terstruktur</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Otoritas melalui suksesi apostolik</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Hirarki: Uskup - Imam - Diaken</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Contoh: Katolik Roma, Anglikan, Ortodoks</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">1 Timotius 3:1-7; Titus 1:5-9</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">🤝 Presbyterian<br><span class="text-sm font-normal">(Penatua)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Pemerintahan oleh majelis penatua yang mewakili jemaat</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Otoritas kolegial penatua</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Hirarki: Sinode - Presbiteri - Session</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Contoh: Gereja Reformed, Presbyterian</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Kisah 14:23; 20:17; 1 Petrus 5:1-4</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">👥 Congregational<br><span class="text-sm font-normal">(Jemaat)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Pemerintahan oleh jemaat lokal secara demokratis</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Otoritas pada jemaat lokal</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Otonomi jemaat dengan asosiasi sukarela</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Contoh: Baptis, Kongregasional</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Matius 18:15-17; Kisah 6:3-5</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Jabatan-jabatan Gereja -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Jabatan-jabatan dalam Gereja</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Jabatan Biasa<br><span class="text-lg font-normal">(Ordinary Offices)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Penatua Pengajar (Teaching Elder)</h5>
+                    <p class="text-sky-800 text-sm">Berkhotbah, mengajar, memimpin sakramen</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">1 Timotius 3:1-7; 5:17</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Penatua Pengurus (Ruling Elder)</h5>
+                    <p class="text-sky-800 text-sm">Memimpin, mengawasi, mendisiplin jemaat</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">1 Timotius 3:1-7; 5:17</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Diaken (Deacon)</h5>
+                    <p class="text-sky-800 text-sm">Melayani kebutuhan fisik dan material jemaat</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">1 Timotius 3:8-13; Kisah 6:1-6</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Jabatan Luar Biasa<br><span class="text-lg font-normal">(Extraordinary Offices)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Rasul (Apostle)</h5>
+                    <p class="text-sky-800 text-sm">Saksi mata kebangkitan, dasar Gereja</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Efesus 2:20; Kisah 1:21-22</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Nabi (Prophet)</h5>
+                    <p class="text-sky-800 text-sm">Menyampaikan pesan langsung dari Allah</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Efesus 4:11; 1 Korintus 12:28</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Penginjil (Evangelist)</h5>
+                    <p class="text-sky-800 text-sm">Pemberita Injil kepada yang belum percaya</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Efesus 4:11; 2 Timotius 4:5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Prinsip Pemerintahan Reformed -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Prinsip-prinsip Pemerintahan Gereja Reformed</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">👑</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Kepala Gereja</h4>
+                <p class="text-sky-800 text-sm">Kristus satu-satunya Kepala Gereja yang berdaulat</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Efesus 1:22; Kolose 1:18</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">📖</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Otoritas Alkitab</h4>
+                <p class="text-sky-800 text-sm">Alkitab sebagai standar tertinggi iman dan hidup</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">2 Timotius 3:16-17</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">🤝</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Kolegialitas</h4>
+                <p class="text-sky-800 text-sm">Pemerintahan oleh majelis, bukan individu</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Kisah 15:6-29</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">⚖️</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Akuntabilitas</h4>
+                <p class="text-sky-800 text-sm">Pemimpin bertanggungjawab kepada Allah dan jemaat</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Ibrani 13:17</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Misi dan Tugas Gereja -->
+    <section id="misi-gereja" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Misi dan Tugas Gereja
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Gereja</strong> dipanggil untuk melaksanakan misi Allah di dunia melalui pemberitaan Injil, pemuridan, pelayanan kasih, dan penyembahan yang memuliakan Allah.
+            </p>
+          </div>
+
+          <!-- Tugas-tugas Utama Gereja -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Tugas-tugas Utama Gereja</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">📢 Pemberitaan Injil (Kerygma)</h4>
+                <p class="text-gray-700 text-sm mb-4">Proklamasi kabar baik tentang keselamatan dalam Kristus kepada dunia.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Bentuk-bentuk:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Berkhotbah dan mengajar (2 Timotius 4:2)</li>
+                    <li>• Penginjilan pribadi (1 Petrus 3:15)</li>
+                    <li>• Misi lintas budaya (Matius 28:19-20)</li>
+                    <li>• Kesaksian hidup (Filipi 2:15)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">👥 Pemuridan (Didache)</h4>
+                <p class="text-gray-700 text-sm mb-4">Pembinaan orang percaya untuk bertumbuh dalam Kristus dan melayani.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Proses:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Pengajaran doktrin (Kisah 2:42)</li>
+                    <li>• Disiplin rohani (1 Timotius 4:7-8)</li>
+                    <li>• Pelatihan pelayanan (Efesus 4:11-12)</li>
+                    <li>• Akuntabilitas (Galatia 6:1-2)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ibadah dan Persekutuan -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Ibadah dan Persekutuan</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Ibadah Korporat<br><span class="text-lg font-normal">(Corporate Worship)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Elemen Ibadah</h5>
+                    <p class="text-sky-800 text-sm">Pujian, doa, pemberitaan firman, sakramen</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Kisah 2:42; Kolose 3:16</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Prinsip Ibadah</h5>
+                    <p class="text-sky-800 text-sm">Berdasarkan Alkitab, berpusat pada Allah, untuk kemuliaan-Nya</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Yohanes 4:23-24</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Hari Tuhan</h5>
+                    <p class="text-sky-800 text-sm">Perhentian dan ibadah pada hari kebangkitan Kristus</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Kisah 20:7; Wahyu 1:10</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Persekutuan<br><span class="text-lg font-normal">(Koinonia)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Hakikat Persekutuan</h5>
+                    <p class="text-sky-800 text-sm">Berbagi hidup dalam Kristus dan saling mendukung</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">1 Yohanes 1:3,7</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Ekspresi Praktis</h5>
+                    <p class="text-sky-800 text-sm">Doa bersama, berbagi kebutuhan, saling menguatkan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Kisah 2:44-45; 4:32</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Perjamuan Kudus</h5>
+                    <p class="text-sky-800 text-sm">Puncak persekutuan dengan Kristus dan sesama percaya</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">1 Korintus 10:16-17</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pelayanan Diakonia -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Pelayanan Kasih (Diakonia) dan Keadilan</h3>
+
+            <div class="space-y-6">
+              <div class="bg-sky-50 border-l-4 border-sky-400 p-4 rounded-r-lg">
+                <h4 class="font-bold text-sky-900 mb-2">Panggilan untuk Melayani</h4>
+                <p class="text-sky-800 text-sm mb-3">Gereja dipanggil untuk mencerminkan kasih Kristus melalui pelayanan praktis kepada mereka yang membutuhkan dan memperjuangkan keadilan dalam masyarakat.</p>
+                <ul class="text-sky-700 space-y-1 text-sm ml-4">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Meneladani Kristus yang melayani (Markus 10:45)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Menjadi garam dan terang dunia (Matius 5:13-16)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Memperhatikan orang miskin dan tertindas (Yakobus 1:27)</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-white border border-sky-200 rounded-xl p-6">
+                  <h4 class="font-bold text-sky-900 mb-3 text-lg">Pelayanan Diakonia<br><span class="text-sm font-normal">(Service Ministry)</span></h4>
+                  <p class="text-sky-800 text-sm mb-4">Pelayanan kasih praktis kepada anggota jemaat dan komunitas.</p>
+                  <ul class="text-sky-700 space-y-2 text-sm">
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Memenuhi kebutuhan material (Kisah 6:1-6)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Menjenguk yang sakit dan terpenjara (Matius 25:36)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Menolong janda dan yatim piatu (Yakobus 1:27)</span>
+                    </li>
+                  </ul>
+                  <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                    <p class="text-sky-800 text-xs font-semibold">Galatia 6:10; 1 Yohanes 3:17-18</p>
+                  </div>
+                </div>
+
+                <div class="bg-white border border-sky-200 rounded-xl p-6">
+                  <h4 class="font-bold text-sky-900 mb-3 text-lg">Keadilan Sosial<br><span class="text-sm font-normal">(Social Justice)</span></h4>
+                  <p class="text-sky-800 text-sm mb-4">Memperjuangkan keadilan dan kebenaran dalam struktur masyarakat.</p>
+                  <ul class="text-sky-700 space-y-2 text-sm">
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Membela yang tertindas (Amsal 31:8-9)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Menghadirkan nilai-nilai Kerajaan Allah</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Transformasi masyarakat melalui Injil</span>
+                    </li>
+                  </ul>
+                  <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                    <p class="text-sky-800 text-xs font-semibold">Mikha 6:8; Amos 5:24</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tanda-tanda dan Sakramen -->
+    <section id="tanda-gereja" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Tanda-tanda Gereja dan Sakramen
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Sakramen</strong> adalah tanda dan meterai anugerah Allah yang ditetapkan oleh Kristus, yang menyatakan dan menerapkan manfaat perjanjian kasih karunia dalam hidup orang percaya.
+            </p>
+          </div>
+
+          <!-- Sakramen Baptisan -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Sakramen Baptisan</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">💧 Makna Baptisan</h4>
+                <p class="text-gray-700 text-sm mb-4">Baptisan adalah tanda inisiasi ke dalam perjanjian kasih karunia dan penggabungan ke dalam tubuh Kristus.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Signifikansi:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Pembersihan dari dosa (Kisah 22:16)</li>
+                    <li>• Identifikasi dengan kematian dan kebangkitan Kristus (Roma 6:3-4)</li>
+                    <li>• Penggabungan ke dalam Gereja (1 Korintus 12:13)</li>
+                    <li>• Meterai perjanjian kasih karunia (Kolose 2:11-12)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">🏊 Praktik Baptisan</h4>
+                <p class="text-gray-700 text-sm mb-4">Berbagai tradisi Kristen memiliki pemahaman dan praktik yang berbeda mengenai baptisan.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Pandangan Reformed:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Baptisan bayi berdasarkan perjanjian</li>
+                    <li>• Percik atau selam sama sahnya</li>
+                    <li>• Baptisan sekali untuk selamanya</li>
+                    <li>• Baptisan dalam nama Tritunggal</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sakramen Perjamuan Kudus -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Sakramen Perjamuan Kudus</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Makna Perjamuan Kudus<br><span class="text-lg font-normal">(The Lord's Supper)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Peringatan (Memorial)</h5>
+                    <p class="text-sky-800 text-sm">Mengingat pengorbanan Kristus sampai Ia datang</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">1 Korintus 11:24-26</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Persekutuan (Communion)</h5>
+                    <p class="text-sky-800 text-sm">Bersekutu dengan Kristus dan sesama orang percaya</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">1 Korintus 10:16-17</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Penyataan (Proclamation)</h5>
+                    <p class="text-sky-800 text-sm">Menyatakan kematian Tuhan sampai Ia datang</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">1 Korintus 11:26</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Pandangan tentang Kehadiran Kristus</h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Transubstansiasi (Katolik)</h5>
+                    <p class="text-sky-800 text-sm">Roti dan anggur berubah menjadi tubuh dan darah Kristus</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Konsubstansiasi (Lutheran)</h5>
+                    <p class="text-sky-800 text-sm">Tubuh dan darah Kristus hadir bersama dengan roti dan anggur</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Spiritual Presence (Reformed)</h5>
+                    <p class="text-sky-800 text-sm">Kristus hadir secara spiritual melalui Roh Kudus</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Peringatan (Zwinglian)</h5>
+                    <p class="text-sky-800 text-sm">Hanya simbol peringatan tanpa kehadiran khusus</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aplikasi Praktis -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Aplikasi Praktis Eklesiologi</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Untuk Kehidupan Bergereja:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Setia dalam ibadah dan persekutuan</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Menggunakan karunia untuk membangun tubuh Kristus</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Tunduk pada pimpinan dan disiplin gereja</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Berpartisipasi dalam sakramen dengan hormat</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Untuk Misi dan Pelayanan:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Terlibat dalam pemberitaan Injil dan pemuridan</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Melayani mereka yang membutuhkan dalam kasih</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Mendoakan dan mendukung pekerjaan misi</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Menjadi garam dan terang dalam masyarakat</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-sky-50 border-l-4 border-sky-400 p-4 rounded-r-lg mt-6">
+              <h4 class="font-bold text-sky-900 mb-2">Panggilan Setiap Anggota</h4>
+              <p class="text-sky-800 text-sm">
+                "Dan Ialah yang memberikan baik rasul-rasul maupun nabi-nabi, baik pemberita-pemberita Injil maupun gembala-gembala dan pengajar-pengajar, untuk memperlengkapi orang-orang kudus bagi pekerjaan pelayanan, bagi pembangunan tubuh Kristus."<br>
+                <strong class="text-sky-700">Efesus 4:11-12</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian-Bagian Terkait -->
+    <section class="mt-12">
+      <div class="bg-gradient-to-r from-sky-600 to-sky-800 text-white rounded-2xl p-4 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">
+          Lanjutkan Perjalanan Teologismu
+        </h2>
+        <p class="mb-8 max-w-2xl mx-auto text-lg">
+          Setelah memahami Eklesiologi, saatnya melanjutkan eksplorasi ke doktrin-doktrin sistematik berikutnya untuk membangun pemahaman teologis yang komprehensif dan alkitabiah.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/edukasi/teologi-sistematik/eskatologi"
+            class="bg-white text-sky-900 px-8 py-4 rounded-xl font-bold hover:text-sky-700 transition-all shadow-lg hover:shadow-xl">
+            🌟 Pelajari Eskatologi Selanjutnya
+          </a>
+          <a
+            href="/edukasi/teologi-sistematik"
+            class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-sky-600 transition-all">
+            🏠 Kembali ke Overview Teologi
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Link ke Bagian-Bagian Terkait -->
+    <section class="mt-8">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-4">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">
+          Eksplorasi Lebih Lanjut tentang Gereja
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {relatedSections.map((section) => (
+            <a
+              href={section.url}
+              class="bg-gray-50 hover:bg-gray-100 p-6 rounded-xl border border-gray-200 transition-all group">
+              <div class="flex items-start">
+                <span class="text-3xl mr-4 group-hover:scale-110 transition-transform">
+                  {section.icon}
+                </span>
+                <div>
+                  <h3 class="font-bold text-gray-900 text-lg mb-2 group-hover:text-sky-600">
+                    {section.title}
+                  </h3>
+                  <p class="text-gray-700 text-sm">{section.description}</p>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <div class="text-center mt-8">
+          <a
+            href="/edukasi/teologi-sistematik#kurikulum"
+            class="inline-flex items-center text-sky-600 hover:text-sky-800 font-semibold">
+            <span>Lihat Kurikulum Lengkap Teologi Sistematik</span>
+            <span class="ml-2">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <style>
+    .prose {
+      max-width: none;
+    }
+    .scroll-mt-24 {
+      scroll-margin-top: 6rem;
+    }
+  </style>
+</EdukasiLayout>
