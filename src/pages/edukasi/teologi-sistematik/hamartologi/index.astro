@@ -1,0 +1,1075 @@
+---
+// src/pages/edukasi/teologi-sistematik/hamartologi/index.astro
+import EdukasiLayout from "../../../../layouts/EdukasiLayout.astro";
+
+const pageTitle = "Hamartologi - Doktrin Dosa dalam Teologi Sistematik";
+const pageDescription = "Pelajari doktrin tentang dosa: asal-usul, natur, konsekuensi, dan pemulihan dari dosa berdasarkan pendekatan teologi Reformed";
+const pageImage = "/images/banner/hamartologi-dosa.webp";
+const pageUrl = "edukasi/teologi-sistematik/hamartologi";
+
+const breadcrumbs = [
+  { name: "Beranda", url: "https://sekolahteologi.com/" },
+  { name: "Edukasi", url: "https://sekolahteologi.com/edukasi" },
+  {
+    name: "Teologi Sistematik",
+    url: "https://sekolahteologi.com/edukasi/teologi-sistematik",
+  },
+  {
+    name: "Hamartologi",
+    url: "https://sekolahteologi.com/edukasi/teologi-sistematik/hamartologi",
+  },
+];
+
+// Data untuk bagian-bagian terkait
+const relatedSections = [
+  {
+    title: "Antropologi - Doktrin Manusia",
+    url: "/edukasi/teologi-sistematik/antropologi",
+    description: "Memahami natur manusia yang telah jatuh dalam dosa",
+    icon: "👥",
+  },
+  {
+    title: "Soteriologi - Doktrin Keselamatan",
+    url: "/edukasi/teologi-sistematik/soteriologi",
+    description: "Mengenal karya keselamatan Allah dari dosa",
+    icon: "🕊️",
+  },
+  {
+    title: "Kristologi - Doktrin Kristus",
+    url: "/edukasi/teologi-sistematik/kristologi",
+    description: "Mempelajari Kristus yang menyelamatkan dari dosa",
+    icon: "✝️",
+  },
+  {
+    title: "Angelologi - Doktrin Malaikat",
+    url: "/edukasi/teologi-sistematik/angelologi",
+    description: "Memahami asal-usul dosa dari kejatuhan malaikat",
+    icon: "👼",
+  },
+];
+---
+
+<EdukasiLayout
+  title={pageTitle}
+  description={pageDescription}
+  image={pageImage}
+  url={pageUrl}
+  type="article"
+  breadcrumbs={breadcrumbs}>
+  <div class="space-y-8">
+    <!-- Header Section -->
+    <header class="text-center py-12 bg-gradient-to-r from-sky-50 to-sky-100 rounded-2xl shadow-sm">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Hamartologi
+        </h1>
+        <p class="text-xl text-gray-700 mb-6 p-5 max-w-3xl mx-auto leading-relaxed">
+          Doktrin tentang Dosa - Memahami Asal-usul, Natur, dan Konsekuensi Dosa serta Pemulihan Melalui Kristus
+        </p>
+        <div class="flex flex-wrap justify-center gap-2">
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Dosa Asal</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Akibat Dosa</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Pembenaran</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Pengudusan</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Pengertian Hamartologi -->
+    <section id="pengertian" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Pengertian Hamartologi dalam Teologi Sistematik
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 text-left mb-4 text-left">
+                Definisi dan Signifikansi
+              </h3>
+
+              <div class="bg-sky-50 border-l-4 border-sky-400 p-4 mb-6">
+                <p class="text-sky-700 font-medium">
+                  <strong>Hamartologi</strong> berasal dari bahasa Yunani <em>hamartia</em> (ἁμαρτία) yang berarti "dosa" atau "melenceng dari sasaran" dan <em>logos</em> (λόγος) yang berarti "studi/ilmu". Secara teologis berarti <strong>"studi tentang dosa: asal-usul, natur, dan konsekuensinya"</strong>.
+                </p>
+              </div>
+
+              <p class="text-gray-700 mb-4 leading-relaxed">
+                Dalam <strong>Teologi Sistematika</strong>, <strong>Hamartologi</strong> adalah disiplin teologi yang mempelajari hakikat dosa, asal-usulnya, dampaknya terhadap manusia dan ciptaan, serta pemulihan dari dosa melalui karya Kristus.
+              </p>
+
+              <div class="bg-yellow-50 rounded-lg p-4 mb-6">
+                <h4 class="font-semibold text-yellow-900 mb-3">
+                  Signifikansi Hamartologi
+                </h4>
+                <p class="text-yellow-800 text-sm">
+                  <strong>Pemahaman yang benar tentang dosa menentukan pemahaman kita tentang keselamatan</strong>. "Karena semua orang telah berbuat dosa dan telah kehilangan kemuliaan Allah." (Roma 3:23). Tanpa memahami kedalaman dosa, kita tidak dapat menghargai kedalaman kasih karunia.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 text-left mb-4 text-left">
+                Pertanyaan-Pertanyaan Kunci Hamartologi
+              </h3>
+
+              <div class="space-y-4">
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q1</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Apa Hakikat Dosa?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami definisi dan natur dosa yang sebenarnya</p>
+                    <a href="#hakikat-dosa" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">🎯 Pelajari Hakikat Dosa</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q2</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Bagaimana Dosa Masuk ke Dunia?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami asal-usul dan kejatuhan manusia dalam dosa</p>
+                    <a href="#asal-usul-dosa" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">🍎 Pelajari Asal-usul Dosa</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q3</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Apa Konsekuensi Dosa?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami dampak dosa terhadap manusia dan ciptaan</p>
+                    <a href="#konsekuensi-dosa" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">⚡ Pelajari Konsekuensi Dosa</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q4</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Bagaimana Pemulihan dari Dosa?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami penebusan dan kemenangan atas dosa</p>
+                    <a href="#pemulihan-dosa" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">🕊️ Pelajari Pemulihan Dosa</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hakikat Dosa -->
+    <section id="hakikat-dosa" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Hakikat dan Definisi Dosa
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Dosa</strong> bukan hanya sekadar pelanggaran moral, tetapi merupakan pemberontakan terhadap Allah, ketidaktaatan kepada kehendak-Nya, dan kegagalan mencapai standar kekudusan-Nya.
+            </p>
+          </div>
+
+          <!-- Ayat Kunci -->
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8 rounded-r-lg">
+            <h4 class="font-bold text-yellow-900 mb-2 text-left">Basis Alkitabiah tentang Dosa:</h4>
+            <p class="text-yellow-800 text-lg italic">
+              "Karena semua orang telah berbuat dosa dan telah kehilangan kemuliaan Allah."<br>
+              <strong class="not-italic">Roma 3:23</strong>
+            </p>
+            <p class="text-yellow-800 text-lg italic mt-4">
+              "Sebab upah dosa ialah maut; tetapi karunia Allah ialah hidup yang kekal dalam Kristus Yesus, Tuhan kita."<br>
+              <strong class="not-italic">Roma 6:23</strong>
+            </p>
+          </div>
+
+          <!-- Definisi Dosa -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Definisi Dosa dalam Alkitab</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">🎯 Melenceng dari Sasaran<br><span class="text-sm font-normal">(Missing the Mark)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Dosa sebagai kegagalan mencapai standar kekudusan Allah yang sempurna.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Berasal dari kata Yunani <em>hamartia</em></span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Gagal mencapai kemuliaan Allah (Roma 3:23)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Tidak memenuhi tujuan penciptaan</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Roma 3:23; 1 Yohanes 1:8</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">⚖️ Pelanggaran Hukum<br><span class="text-sm font-normal">(Transgression of Law)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Dosa sebagai pelanggaran terhadap hukum dan perintah Allah.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Melanggar hukum Taurat (1 Yohanes 3:4)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Ketidaktaatan kepada perintah Allah</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Pemberontakan terhadap otoritas Ilahi</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">1 Yohanes 3:4; Roma 4:15</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Konsep Dosa Lainnya -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Konsep-konsep Lain tentang Dosa</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Ketidakadilan<br><span class="text-lg font-normal">(Injustice)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Ketidakbenaran</h5>
+                    <p class="text-sky-800 text-sm">Dosa sebagai ketidakadilan dan ketidakbenaran</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">1 Yohanes 5:17</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pelanggaran Keadilan</h5>
+                    <p class="text-sky-800 text-sm">Mengabaikan keadilan dan kebenaran Allah</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Mikha 6:8</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Pemberontakan<br><span class="text-lg font-normal">(Rebellion)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pembangkangan</h5>
+                    <p class="text-sky-800 text-sm">Dosa sebagai pemberontakan terhadap Allah</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Yesaya 1:2</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pengkhianatan</h5>
+                    <p class="text-sky-800 text-sm">Mengkhianati perjanjian dengan Allah</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Hosea 6:7</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Pencemaran<br><span class="text-lg font-normal">(Defilement)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Kenajisan Moral</h5>
+                    <p class="text-sky-800 text-sm">Dosa menajiskan manusia di hadapan Allah</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Yesaya 6:5</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Ketercemaran</h5>
+                    <p class="text-sky-800 text-sm">Mengotori ciptaan yang baik dari Allah</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Roma 1:24</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Asal-usul Dosa -->
+    <section id="asal-usul-dosa" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Asal-usul dan Kejatuhan dalam Dosa
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Dosa</strong> memasuki dunia melalui pemberontakan malaikat dan kemudian manusia. Kejatuhan Adam dan Hawa membawa seluruh umat manusia ke dalam natur berdosa dan pemisahan dari Allah.
+            </p>
+          </div>
+
+          <!-- Kejatuhan Malaikat -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Asal-usul Dosa dalam Dunia Spiritual</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">😈 Pemberontakan Setan<br><span class="text-sm font-normal">(Satan's Rebellion)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Dosa pertama terjadi di alam spiritual ketika Setan dan malaikat-malaikatnya memberontak melawan Allah.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Kesombongan Setan (Yesaya 14:12-15)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Keinginan menyamai Allah (Yehezkiel 28:12-17)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Sepertiga malaikat mengikutinya (Wahyu 12:4)</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Yesaya 14:12-15; Yehezkiel 28:12-17</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">🌍 Dosa Masuk ke Dunia<br><span class="text-sm font-normal">(Sin Enters the World)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Setan membawa dosa ke dunia dengan menggoda manusia pertama di Taman Eden.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Pencobaan terhadap Hawa (Kejadian 3:1-5)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Keraguan akan firman Allah</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Keinginan menjadi seperti Allah</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Kejadian 3:1-6; Roma 5:12</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proses Kejatuhan Manusia -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Proses Kejatuhan Manusia dalam Dosa</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-3">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200 text-center">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">🤔</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-2">Keraguan</h4>
+                <p class="text-gray-700 text-xs">Mempertanyakan firman dan karakter Allah</p>
+                <div class="bg-sky-50 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Kejadian 3:1</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200 text-center">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">🚫</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-2">Penyangkalan</h4>
+                <p class="text-gray-700 text-xs">Menyangkal kebenaran firman Allah</p>
+                <div class="bg-sky-50 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Kejadian 3:4</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200 text-center">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">👑</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-2">Ambisi</h4>
+                <p class="text-gray-700 text-xs">Keinginan menjadi seperti Allah</p>
+                <div class="bg-sky-50 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Kejadian 3:5</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200 text-center">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">🍎</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-2">Ketidaktaatan</h4>
+                <p class="text-gray-700 text-xs">Melanggar perintah Allah secara langsung</p>
+                <div class="bg-sky-50 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Kejadian 3:6</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dosa Asal -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Dosa Asal (Original Sin)</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">👥 Dosa yang Diturunkan<br><span class="text-sm font-normal">(Imputed Sin)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Dosa Adam diperhitungkan kepada semua keturunannya, membuat semua manusia lahir dengan status berdosa.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>"Oleh ketidaktaatan satu orang" (Roma 5:19)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Dosa masuk ke dalam dunia (Roma 5:12)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Keterpisahan dari Allah sejak lahir</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Roma 5:12-19; 1 Korintus 15:22</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">🧬 Natur Berdosa<br><span class="text-sm font-normal">(Sinful Nature)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Manusia mewarisi natur berdosa dari Adam, menyebabkan kecenderungan alami untuk berbuat dosa.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Lahir dalam kesalahan (Mazmur 51:7)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Daging yang cenderung kepada dosa (Roma 7:18)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Kebutuhan akan kelahiran baru (Yohanes 3:3)</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Mazmur 51:7; Roma 7:18; Efesus 2:3</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-6 rounded-r-lg">
+              <h4 class="font-bold text-yellow-900 mb-2 text-left">Pandangan Reformed tentang Dosa Asal:</h4>
+              <p class="text-yellow-800 text-sm">
+                <strong>Total Depravity</strong> - Dosa mempengaruhi seluruh aspek manusia: pikiran, emosi, kehendak, dan tubuh. Manusia sepenuhnya tidak mampu datang kepada Allah tanpa anugerah-Nya yang mendahului. Bukan berarti manusia sejahat mungkin, tetapi bahwa tidak ada area dalam hidupnya yang tidak terpengaruh oleh dosa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Konsekuensi Dosa -->
+    <section id="konsekuensi-dosa" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Konsekuensi dan Dampak Dosa
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Dosa</strong> membawa konsekuensi yang menghancurkan bagi manusia, hubungan, dan seluruh ciptaan. Dampaknya bersifat menyeluruh dan mempengaruhi setiap aspek keberadaan.
+            </p>
+          </div>
+
+          <!-- Dampak terhadap Manusia -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Dampak Dosa terhadap Manusia</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">⚰️ Kematian Spiritual<br><span class="text-sm font-normal">(Spiritual Death)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Pemisahan dari Allah, sumber kehidupan, yang mengakibatkan kematian spiritual.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Terpisah dari hidup Allah (Efesus 4:18)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Buta secara spiritual (2 Korintus 4:4)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Tidak mampu memahami hal rohani (1 Korintus 2:14)</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Efesus 2:1; Kolose 2:13</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">💔 Kerusakan Internal<br><span class="text-sm font-normal">(Internal Corruption)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Dosa merusak seluruh aspek natur manusia: pikiran, emosi, dan kehendak.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Pikiran yang gelap (Roma 1:21)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Hati yang jahat (Yeremia 17:9)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Kehendak yang diperhamba dosa (Roma 6:17)</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Roma 1:21-32; 3:10-18</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dampak terhadap Hubungan -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Dampak Dosa terhadap Hubungan</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200 text-center">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">🙏</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Dengan Allah</h4>
+                <p class="text-gray-700 text-sm">Pemisahan dan permusuhan dengan Pencipta</p>
+                <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Yesaya 59:2; Roma 5:10</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200 text-center">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">👥</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Dengan Sesama</h4>
+                <p class="text-gray-700 text-sm">Konflik, egoisme, dan ketidakpercayaan</p>
+                <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Kejadian 3:12; Yakobus 4:1-2</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200 text-center">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">🌍</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Dengan Ciptaan</h4>
+                <p class="text-gray-700 text-sm">Kesusahan, kutuk, dan kerusakan alam</p>
+                <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Roma 8:20-22; Kejadian 3:17-19</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Klasifikasi Dosa -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Klasifikasi dan Tingkatan Dosa</h3>
+
+            <div class="overflow-x-auto">
+              <table class="w-full border-collapse text-left">
+                <thead>
+                  <tr class="bg-gray-100">
+                    <th class="border border-gray-300 p-4 font-semibold text-gray-900 text-left">Jenis Dosa</th>
+                    <th class="border border-gray-300 p-4 font-semibold text-gray-900 text-left">Definisi</th>
+                    <th class="border border-gray-300 p-4 font-semibold text-gray-900 text-left">Contoh</th>
+                    <th class="border border-gray-300 p-4 font-semibold text-gray-900 text-left">Ayat</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 p-4 font-semibold text-sky-900 text-left">Dosa Asal</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Natur berdosa yang diwarisi dari Adam</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Kecenderungan untuk berbuat dosa</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Mazmur 51:7; Roma 5:12</td>
+                  </tr>
+                  <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 p-4 font-semibold text-sky-900 text-left">Dosa Pribadi</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Tindakan dosa yang dilakukan individu</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Bohong, mencuri, membunuh</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">1 Yohanes 1:8-10</td>
+                  </tr>
+                  <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 p-4 font-semibold text-sky-900 text-left">Dosa Komisi</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Melakukan apa yang dilarang Allah</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Menyembah berhala, berzinah</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">1 Yohanes 3:4</td>
+                  </tr>
+                  <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 p-4 font-semibold text-sky-900 text-left">Dosa Omission</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Tidak melakukan apa yang diperintahkan</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Tidak mengasihi, tidak berdoa</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Yakobus 4:17</td>
+                  </tr>
+                  <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 p-4 font-semibold text-sky-900 text-left">Dosa Pikiran</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Dosa dalam hati dan pikiran</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Iri, benci, kesombongan</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Matius 5:28; 15:19</td>
+                  </tr>
+                  <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 p-4 font-semibold text-sky-900 text-left">Dosa Sengaja</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Dosa dengan pengetahuan dan rencana</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Rencana jahat, konspirasi</td>
+                    <td class="border border-gray-300 p-4 text-gray-700">Bilangan 15:30-31</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bg-sky-50 border-l-4 border-sky-400 p-4 mt-6 rounded-r-lg">
+              <h4 class="font-bold text-sky-900 mb-2">Catatan Penting:</h4>
+              <p class="text-sky-800 text-sm">
+                <strong>Di mata Allah, semua dosa sama-sama serius</strong> karena melanggar kekudusan-Nya. Meskipun konsekuensi duniawi mungkin berbeda, setiap dosa layak mendapat hukuman kekal karena melanggar kekudusan Allah yang tak terbatas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pemulihan dari Dosa -->
+    <section id="pemulihan-dosa" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Pemulihan dan Kemenangan atas Dosa
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Pemulihan dari dosa</strong> hanya mungkin melalui karya penebusan Kristus. Melalui kematian dan kebangkitan-Nya, Yesus memberikan jalan bagi pengampunan, pembenaran, dan pengudusan.
+            </p>
+          </div>
+
+          <!-- Karya Kristus -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Karya Kristus Mengatasi Dosa</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">✝️ Penebusan<br><span class="text-sm font-normal">(skyemption)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Kristus membayar harga dosa dengan kematian-Nya di kayu salib, menebus kita dari kutuk hukum Taurat.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Tebusan bagi banyak orang (Markus 10:45)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Dibebaskan dari perhambaan dosa (Roma 6:18)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Pengampunan melalui darah-Nya (Efesus 1:7)</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Roma 3:24-25; Galatia 3:13; Efesus 1:7</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">⚖️ Pembenaran<br><span class="text-sm font-normal">(Justification)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Allah menyatakan orang berdosa dibenarkan berdasarkan kebenaran Kristus yang diperhitungkan melalui iman.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Dibenarkan oleh iman (Roma 5:1)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Kebenaran Kristus diperhitungkan (Roma 4:5-8)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Rekonsiliasi dengan Allah (2 Korintus 5:18-19)</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Roma 3:21-26; 4:5-8; 5:1</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proses Pengudusan -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Proses Pengudusan dan Kemenangan atas Dosa</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Pengudusan<br><span class="text-lg font-normal">(Sanctification)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Proses Seumur Hidup</h5>
+                    <p class="text-sky-800 text-sm">Proses menjadi semakin serupa dengan Kristus dan bebas dari kuasa dosa</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Roma 6:1-14; 2 Korintus 3:18</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Peran Roh Kudus</h5>
+                    <p class="text-sky-800 text-sm">Roh Kudus memampukan orang percaya untuk hidup dalam kekudusan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Roma 8:13; Galatia 5:16-25</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Tanggung Jawab Manusia</h5>
+                    <p class="text-sky-800 text-sm">Orang percaya aktif berjuang melawan dosa dan mengejar kekudusan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Filipi 2:12-13; Ibrani 12:14</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Kemenangan Praktis<br><span class="text-lg font-normal">(Practical Victory)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Senjata Rohani</h5>
+                    <p class="text-sky-800 text-sm">Firman Allah, doa, iman, dan persekutuan untuk melawan dosa</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Efesus 6:10-18</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pertobatan Berkelanjutan</h5>
+                    <p class="text-sky-800 text-sm">Pengakuan dosa dan penerimaan pengampunan secara rutin</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">1 Yohanes 1:9</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Akuntabilitas</h5>
+                    <p class="text-sky-800 text-sm">Persekutuan dengan orang percaya untuk saling menegur dan mendukung</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Galatia 6:1-2; Yakobus 5:16</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pengharapan Eskatologis -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Pengharapan Eskatologis: Kemenangan Akhir atas Dosa</h3>
+
+            <div class="space-y-6">
+              <div class="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-lg">
+                <h4 class="font-bold text-green-900 mb-2">Pemuliaan dan Penyempurnaan</h4>
+                <p class="text-green-800 text-sm mb-3">Pada kedatangan Kristus kedua kali, orang percaya akan dibebaskan sepenuhnya dari kehadiran dosa dan disempurnakan dalam kekudusan.</p>
+                <ul class="text-green-700 space-y-1 text-sm ml-4">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Tubuh yang mulia dan tanpa dosa (Filipi 3:20-21)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Serupa dengan Kristus (1 Yohanes 3:2)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Bebas dari kehadiran dosa (Wahyu 21:4)</span>
+                  </li>
+                </ul>
+                <div class="bg-green-100 rounded-lg p-3 mt-3">
+                  <p class="text-green-800 text-xs font-semibold">Roma 8:18-25; 1 Korintus 15:51-57</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-white border border-sky-200 rounded-xl p-6">
+                  <h4 class="font-bold text-sky-900 mb-3 text-lg">Penghakiman Terakhir<br><span class="text-sm font-normal">(Final Judgment)</span></h4>
+                  <p class="text-sky-800 text-sm mb-4">Dosa akan dihakimi secara permanen dan orang percaya akan dibebaskan selamanya dari akibat dosa.</p>
+                  <ul class="text-sky-700 space-y-2 text-sm">
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Setan dan malaikat jahat dilemparkan ke lautan api (Wahyu 20:10)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Maut dan kerajaan maut dimusnahkan (1 Korintus 15:26)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Langit dan bumi baru (Wahyu 21:1)</span>
+                    </li>
+                  </ul>
+                  <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                    <p class="text-sky-800 text-xs font-semibold">Wahyu 20:11-15; 21:1-4</p>
+                  </div>
+                </div>
+
+                <div class="bg-white border border-sky-200 rounded-xl p-6">
+                  <h4 class="font-bold text-sky-900 mb-3 text-lg">Pemulihan Ciptaan<br><span class="text-sm font-normal">(Creation Restoration)</span></h4>
+                  <p class="text-sky-800 text-sm mb-4">Seluruh ciptaan akan dibebaskan dari kutuk dosa dan dipulihkan kepada kemuliaan semula.</p>
+                  <ul class="text-sky-700 space-y-2 text-sm">
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Ciptaan dimerdekakan dari perhambaan kebinasaan (Roma 8:21)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Tidak ada lagi kutuk (Wahyu 22:3)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Pemulihan hubungan yang sempurna</span>
+                    </li>
+                  </ul>
+                  <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                    <p class="text-sky-800 text-xs font-semibold">Roma 8:19-22; Wahyu 21:1-5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aplikasi Praktis -->
+    <section id="aplikasi" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Aplikasi Praktis Hamartologi
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              Pemahaman hamartologi yang benar memiliki implikasi praktis yang mendalam bagi kehidupan rohani, etika, dan pelayanan kita.
+            </p>
+          </div>
+
+          <!-- Aplikasi dalam Hidup -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Aplikasi dalam Kehidupan Sehari-hari</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">🙏</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Kerendahan Hati</h4>
+                <p class="text-gray-700 text-sm">Mengakui natur berdosa dan ketergantungan pada anugerah Allah.</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">💖</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Rasa Syukur</h4>
+                <p class="text-gray-700 text-sm">Bersyukur untuk pengampunan dan pembenaran dalam Kristus.</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">🛡️</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Kewaspadaan</h4>
+                <p class="text-gray-700 text-sm">Waspada terhadap pencobaan dan tipu muslihat dosa.</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">🤝</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Pengampunan</h4>
+                <p class="text-gray-700 text-sm">Mengampuni orang lain seperti Kristus mengampuni kita.</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">⚔️</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Peperangan Rohani</h4>
+                <p class="text-gray-700 text-sm">Aktif melawan dosa dengan senjata rohani.</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">🎯</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Pengharapan</h4>
+                <p class="text-gray-700 text-sm">Hidup dalam pengharapan kemenangan akhir atas dosa.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Implikasi bagi Pelayanan -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Implikasi bagi Penginjilan dan Pemuridan</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Penginjilan yang Alkitabiah<br><span class="text-lg font-normal">(Biblical Evangelism)</span></h4>
+                <p class="text-gray-700 mb-4 text-center">Menyampaikan kabar buruk tentang dosa sebelum kabar baik tentang kasih karunia.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Praktik:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Jelaskan realitas dan konsekuensi dosa</li>
+                    <li>• Tunjukkan kebutuhan akan Juruselamat</li>
+                    <li>• Beritakan pembenaran melalui Kristus</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Pemuridan yang Seimbang<br><span class="text-lg font-normal">(Balanced Discipleship)</span></h4>
+                <p class="text-gray-700 mb-4 text-center">Menyeimbangkan anugerah dan kebenaran dalam pertumbuhan rohani.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Praktik:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Ajarkan tentang pengudusan progresif</li>
+                    <li>• Dorong pertobatan dan pengakuan dosa</li>
+                    <li>• Tanamkan pengharapan akan kemenangan</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tips Pertumbuhan -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Tips untuk Bertumbuh dalam Pemahaman Hamartologi yang Sehat</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Pemahaman yang Seimbang:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Akui realitas dosa tanpa putus asa</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Pahami anugerah tanpa meremehkan dosa</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Hidup dalam kebenaran dengan kerendahan hati</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Tolak perfectionism dan antinomianisme</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Praktik Rohani:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Rutin mengaku dosa dan menerima pengampunan</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Gunakan senjata rohani melawan pencobaan</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Cari akuntabilitas dalam persekutuan</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Hidup dalam pengharapan akan pemuliaan</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian-Bagian Terkait -->
+    <section class="mt-12">
+      <div class="bg-gradient-to-r from-sky-600 to-sky-800 text-white rounded-2xl p-4 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">
+          Lanjutkan Perjalanan Teologismu
+        </h2>
+        <p class="mb-8 max-w-2xl mx-auto text-lg">
+          Setelah memahami Hamartologi, saatnya melanjutkan eksplorasi ke doktrin-doktrin sistematik berikutnya untuk membangun pemahaman teologis yang komprehensif dan alkitabiah.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/edukasi/teologi-sistematik/soteriologi"
+            class="bg-white text-sky-900 px-8 py-4 rounded-xl font-bold hover:text-sky-700 transition-all shadow-lg hover:shadow-xl">
+            🕊️ Pelajari Soteriologi Selanjutnya
+          </a>
+          <a
+            href="/edukasi/teologi-sistematik"
+            class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-sky-600 transition-all">
+            🏠 Kembali ke Overview Teologi
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Link ke Bagian-Bagian Terkait -->
+    <section class="mt-8">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-4">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">
+          Eksplorasi Lebih Lanjut tentang Dosa dan Keselamatan
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {relatedSections.map((section) => (
+            <a
+              href={section.url}
+              class="bg-gray-50 hover:bg-gray-100 p-6 rounded-xl border border-gray-200 transition-all group">
+              <div class="flex items-start">
+                <span class="text-3xl mr-4 group-hover:scale-110 transition-transform">
+                  {section.icon}
+                </span>
+                <div>
+                  <h3 class="font-bold text-gray-900 text-lg mb-2 group-hover:text-sky-600">
+                    {section.title}
+                  </h3>
+                  <p class="text-gray-700 text-sm">{section.description}</p>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <div class="text-center mt-8">
+          <a
+            href="/edukasi/teologi-sistematik#kurikulum"
+            class="inline-flex items-center text-sky-600 hover:text-sky-800 font-semibold">
+            <span>Lihat Kurikulum Lengkap Teologi Sistematik</span>
+            <span class="ml-2">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <style>
+    .prose {
+      max-width: none;
+    }
+    .scroll-mt-24 {
+      scroll-margin-top: 6rem;
+    }
+  </style>
+</EdukasiLayout>

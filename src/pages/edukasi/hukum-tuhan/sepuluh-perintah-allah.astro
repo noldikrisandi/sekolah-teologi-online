@@ -1,0 +1,471 @@
+---
+// src/pages/edukasi/hukum-tuhan/sepuluh-perintah-allah.astro
+import EdukasiLayout from "../../../layouts/EdukasiLayout.astro";
+
+// Data untuk SEO dan konten
+const pageData = {
+  title: "Sepuluh Perintah Allah - Makna dan Relevansi bagi Orang Kristen",
+  description: "Kajian mendalam tentang Sepuluh Perintah Allah (Dekalog) - memahami makna, konteks historis, dan penerapannya dalam kehidupan Kristen masa kini.",
+  image: "/images/banner/sepuluh-perintah.webp",
+  url: "edukasi/hukum-tuhan/sepuluh-perintah-allah",
+  type: "article",
+  breadcrumbs: [
+    { name: "Home", url: "https://sekolahteologi.com/" },
+    { name: "Edukasi Teologi", url: "https://sekolahteologi.com/edukasi" },
+    { name: "Hukum Tuhan", url: "https://sekolahteologi.com/edukasi/hukum-tuhan" },
+    { name: "Sepuluh Perintah Allah", url: "https://sekolahteologi.com/edukasi/hukum-tuhan/sepuluh-perintah-allah" },
+  ],
+};
+
+// Data untuk Sepuluh Perintah
+const commandments = [
+  {
+    number: 1,
+    title: "Tidak Ada Allah Lain",
+    scripture: "Keluaran 20:3",
+    content: "Jangan ada padamu allah lain di hadapan-Ku.",
+    explanation: "Perintah pertama menegaskan monoteisme dan kesetiaan mutlak kepada Allah. Ini merupakan fondasi dari semua perintah lainnya.",
+    application: "Mengutamakan Allah dalam segala aspek kehidupan, menolak penyembahan berhala modern seperti uang, kekuasaan, atau kesenangan.",
+    category: "Hubungan dengan Allah"
+  },
+  {
+    number: 2,
+    title: "Jangan Membuat Patung",
+    scripture: "Keluaran 20:4-6",
+    content: "Jangan membuat bagimu patung yang menyerupai apapun yang ada di langit di atas, atau yang ada di bumi di bawah, atau yang ada di dalam air di bawah bumi.",
+    explanation: "Melarang penyembahan melalui gambar atau representasi fisik Allah, menekankan penyembahan dalam roh dan kebenaran.",
+    application: "Menghindari reduksi Allah menjadi konsep atau gambar yang terbatas, menyembah Allah sebagaimana Ia menyatakan diri-Nya.",
+    category: "Hubungan dengan Allah"
+  },
+  {
+    number: 3,
+    title: "Jangan Menyebut Nama Allah Sembarangan",
+    scripture: "Keluaran 20:7",
+    content: "Jangan menyebut nama TUHAN, Allahmu, dengan sembarangan, sebab TUHAN akan memandang bersalah orang yang menyebut nama-Nya dengan sembarangan.",
+    explanation: "Menekankan kekudusan nama Allah dan pentingnya menghormati otoritas dan karakter-Nya.",
+    application: "Menggunakan nama Allah dengan hormat, menghindari sumpah palsu, dan hidup sesuai dengan pengakuan iman kita.",
+    category: "Hubungan dengan Allah"
+  },
+  {
+    number: 4,
+    title: "Kuduskan Hari Sabat",
+    scripture: "Keluaran 20:8-11",
+    content: "Ingatlah dan kuduskanlah hari Sabat.",
+    explanation: "Mengatur ritme kerja dan istirahat, mengakui Allah sebagai Pencipta dan Pemelihara.",
+    application: "Mengambil waktu untuk beristirahat, beribadah, dan memulihkan hubungan dengan Allah dan sesama.",
+    category: "Hubungan dengan Allah"
+  },
+  {
+    number: 5,
+    title: "Hormati Orang Tua",
+    scripture: "Keluaran 20:12",
+    content: "Hormatilah ayahmu dan ibumu, supaya lanjut umurmu di tanah yang diberikan TUHAN, Allahmu, kepadamu.",
+    explanation: "Perintah pertama yang berhubungan dengan hubungan horizontal, menjadi jembatan antara hubungan dengan Allah dan dengan sesama.",
+    application: "Menghormati otoritas, menghargai orang tua, dan menjaga keutuhan keluarga.",
+    category: "Hubungan dengan Sesama"
+  },
+  {
+    number: 6,
+    title: "Jangan Membunuh",
+    scripture: "Keluaran 20:13",
+    content: "Jangan membunuh.",
+    explanation: "Melindungi sanctity of life (kekudusan hidup) karena manusia diciptakan menurut gambar Allah.",
+    application: "Menghargai kehidupan, menghindari kebencian, dan mengupayakan perdamaian.",
+    category: "Hubungan dengan Sesama"
+  },
+  {
+    number: 7,
+    title: "Jangan Berzinah",
+    scripture: "Keluaran 20:14",
+    content: "Jangan berzinah.",
+    explanation: "Melindungi kesucian pernikahan dan keintiman seksual dalam ikatan perjanjian.",
+    application: "Menjaga kemurnian seksual, setia dalam pernikahan, dan menghormati tubuh sebagai bait Roh Kudus.",
+    category: "Hubungan dengan Sesama"
+  },
+  {
+    number: 8,
+    title: "Jangan Mencuri",
+    scripture: "Keluaran 20:15",
+    content: "Jangan mencuri.",
+    explanation: "Melindungi hak milik dan menegakkan keadilan ekonomi.",
+    application: "Menghormati hak properti orang lain, bekerja dengan jujur, dan berbagi dengan yang membutuhkan.",
+    category: "Hubungan dengan Sesama"
+  },
+  {
+    number: 9,
+    title: "Jangan Mengucapkan Saksi Dusta",
+    scripture: "Keluaran 20:16",
+    content: "Jangan mengucapkan saksi dusta tentang sesamamu.",
+    explanation: "Menjaga integritas kebenaran dalam hubungan sosial dan sistem peradilan.",
+    application: "Berbicara jujur, menjaga reputasi orang lain, dan menegakkan keadilan.",
+    category: "Hubungan dengan Sesama"
+  },
+  {
+    number: 10,
+    title: "Jangan Mengingini",
+    scripture: "Keluaran 20:17",
+    content: "Jangan mengingini rumah sesamamu, jangan mengingini isterinya, atau apapun yang dipunyai sesamamu.",
+    explanation: "Menangani akar dosa dalam hati dan pikiran, sebelum diekspresikan dalam tindakan.",
+    application: "Mengembangkan rasa syukur, mengendalikan keinginan, dan belajar merasa cukup dalam Kristus.",
+    category: "Hubungan dengan Sesama"
+  }
+];
+---
+
+<EdukasiLayout {...pageData}>
+  <div class="space-y-10">
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-sky-600 to-sky-800 rounded-2xl p-8 md:p-12 text-white overflow-hidden">
+      <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cGF0aCBkPSJNMCA0MGg0MFYwaC00MCIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xNSA0MGgxMHYtNDBoLTEwdjQwem0yMC0yMGgxMHYtNDBoLTEwdjQweiIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgZmlsbD0idXJsKCNhKSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg==')] opacity-20"></div>
+      <div class="relative z-10 max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Sepuluh Perintah Allah</h1>
+        <p class="text-xl md:text-2xl text-sky-100 max-w-3xl mx-auto mb-6">
+          Memahami Makna Mendalam Dekalog dan Relevansinya dalam Kehidupan Kristen Masa Kini
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 mt-8">
+          <span class="bg-sky-500/30 backdrop-blur-sm text-sky-100 px-4 py-2 rounded-full text-sm font-medium">
+            Keluaran 20:1-17
+          </span>
+          <span class="bg-sky-500/30 backdrop-blur-sm text-sky-100 px-4 py-2 rounded-full text-sm font-medium">
+            Ulangan 5:6-21
+          </span>
+          <span class="bg-sky-500/30 backdrop-blur-sm text-sky-100 px-4 py-2 rounded-full text-sm font-medium">
+            Hukum Moral Allah
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-sky-100">
+      <div class="flex items-start mb-6">
+        <div class="bg-sky-100 p-3 rounded-full mr-4">
+          <svg class="w-6 h-6 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </div>
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Pengantar Sepuluh Perintah</h2>
+          <p class="text-gray-600">Dasar Moral Universal dari Allah yang Kudus</p>
+        </div>
+      </div>
+      
+      <div class="prose prose-lg max-w-none text-gray-700">
+        <p class="text-lg">
+          <strong>Sepuluh Perintah Allah</strong>, juga dikenal sebagai <strong>Dekalog</strong> (dari bahasa Yunani δέκα λόγοι, "sepuluh firman"), 
+          merupakan wahyu moral langsung dari Allah kepada umat Israel di Gunung Sinai. Perintah-perintah ini tidak hanya menjadi 
+          fondasi hukum Israel kuno, tetapi juga merupakan ekspresi kehendak moral Allah yang universal dan abadi.
+        </p>
+        
+        <div class="bg-sky-50 border-l-4 border-sky-500 p-6 my-6 rounded-r-lg">
+          <p class="text-sky-800 font-medium mb-2">Konteks Historis dan Teologis</p>
+          <p class="text-sky-700">
+            Sepuluh Perintah diberikan dalam konteks perjanjian antara Allah dengan umat-Nya. Ini bukan sekadar daftar peraturan, 
+            tetapi merupakan respons terhadap kasih karunia penyelamatan Allah yang telah membebaskan Israel dari perbudakan Mesir.
+          </p>
+        </div>
+
+        <h3 class="text-xl font-bold text-gray-800 mt-8 mb-4">Struktur dan Pola</h3>
+        <p>
+          Sepuluh Perintah secara tradisional dibagi menjadi dua loh batu:
+        </p>
+        <ul class="grid md:grid-cols-2 gap-4 my-6">
+          <li class="flex items-start">
+            <div class="bg-sky-100 p-2 rounded-lg mr-3 mt-1">
+              <svg class="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <strong>Perintah 1-4</strong>: Hubungan vertikal dengan Allah
+            </div>
+          </li>
+          <li class="flex items-start">
+            <div class="bg-sky-100 p-2 rounded-lg mr-3 mt-1">
+              <svg class="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <strong>Perintah 5-10</strong>: Hubungan horizontal dengan sesama
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Commandments Grid -->
+    <section class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-sky-100">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Penjelasan Sepuluh Perintah</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Kajian mendalam setiap perintah dengan penjelasan teologis dan aplikasi praktis
+        </p>
+      </div>
+
+      <div class="space-y-8">
+        {commandments.map((commandment) => (
+          <div class={`group border-l-4 ${commandment.category === 'Hubungan dengan Allah' ? 'border-sky-500' : 'border-blue-500'} rounded-r-lg p-6 hover:shadow-lg transition-all duration-300 bg-gradient-to-r from-white to-${commandment.category === 'Hubungan dengan Allah' ? 'sky' : 'blue'}-50`}>
+            <div class="flex flex-col lg:flex-row lg:items-start gap-6">
+              <!-- Number and Header -->
+              <div class="flex-shrink-0">
+                <div class={`w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-xl ${commandment.category === 'Hubungan dengan Allah' ? 'bg-sky-500' : 'bg-blue-500'}`}>
+                  {commandment.number}
+                </div>
+              </div>
+              
+              <!-- Content -->
+              <div class="flex-grow">
+                <div class="flex flex-wrap items-center gap-3 mb-4">
+                  <h3 class="text-xl font-bold text-gray-800">{commandment.title}</h3>
+                  <span class={`text-xs font-semibold px-3 py-1 rounded-full ${commandment.category === 'Hubungan dengan Allah' ? 'bg-sky-100 text-sky-700' : 'bg-blue-100 text-blue-700'}`}>
+                    {commandment.category}
+                  </span>
+                </div>
+                
+                <div class="bg-white rounded-lg p-4 mb-4 border">
+                  <p class="text-lg font-medium text-gray-800 italic mb-2">"{commandment.content}"</p>
+                  <p class="text-sm text-gray-600">{commandment.scripture}</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 class="font-semibold text-gray-800 mb-2 flex items-center">
+                      <svg class="w-4 h-4 text-sky-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                      </svg>
+                      Penjelasan Teologis
+                    </h4>
+                    <p class="text-gray-600 text-sm">{commandment.explanation}</p>
+                  </div>
+                  
+                  <div>
+                    <h4 class="font-semibold text-gray-800 mb-2 flex items-center">
+                      <svg class="w-4 h-4 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                      </svg>
+                      Aplikasi Praktis
+                    </h4>
+                    <p class="text-gray-600 text-sm">{commandment.application}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Theological Significance -->
+    <section class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-sky-100">
+      <div class="flex items-start mb-6">
+        <div class="bg-sky-100 p-3 rounded-full mr-4">
+          <svg class="w-6 h-6 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+          </svg>
+        </div>
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Signifikansi Teologis</h2>
+          <p class="text-gray-600">Makna Mendalam Sepuluh Perintah dalam Teologi Kristen</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="space-y-6">
+          <div class="bg-gradient-to-br from-sky-50 to-white border border-sky-100 rounded-xl p-6">
+            <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+              <svg class="w-5 h-5 text-sky-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+              Fungsi Hukum
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Sepuluh Perintah berfungsi sebagai cermin yang menunjukkan dosa, pengendali sosial yang mencegah kekacauan, 
+              dan pedoman hidup bagi orang percaya yang telah ditebus.
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-xl p-6">
+            <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+              <svg class="w-5 h-5 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+              Penggenapan dalam Kristus
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Yesus menggenapi hukum Taurat (Matius 5:17) dan meringkas seluruh hukum dalam dua perintah kasih 
+              (Matius 22:37-40), memberikan perspektif yang lebih dalam tentang maksud hukum.
+            </p>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <div class="bg-gradient-to-br from-purple-50 to-white border border-purple-100 rounded-xl p-6">
+            <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+              <svg class="w-5 h-5 text-purple-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              </svg>
+              Relevansi Abadi
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Sebagai ekspresi karakter moral Allah, Sepuluh Perintah tetap relevan sebagai standar kebenaran 
+              dan pedoman untuk hubungan yang benar dengan Allah dan sesama.
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-br from-orange-50 to-white border border-orange-100 rounded-xl p-6">
+            <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+              <svg class="w-5 h-5 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+              Hubungan Perjanjian
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Sepuluh Perintah diberikan dalam konteks perjanjian, menekankan bahwa ketaatan adalah respons 
+              terhadap kasih karunia Allah, bukan sarana untuk memperoleh keselamatan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Practical Application -->
+    <section class="bg-gradient-to-br from-sky-600 to-sky-800 rounded-2xl p-8 md:p-10 text-white">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-6">Penerapan dalam Kehidupan Kristen</h2>
+        
+        <div class="grid md:grid-cols-3 gap-6 mb-8">
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+            <div class="bg-white/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg mb-2">Sebagai Cermin</h3>
+            <p class="text-sky-100 text-sm">
+              Gunakan Sepuluh Perintah untuk menyadari kebutuhan akan kasih karunia dan pengampunan Allah
+            </p>
+          </div>
+
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+            <div class="bg-white/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg mb-2">Sebagai Pedoman</h3>
+            <p class="text-sky-100 text-sm">
+              Jadikan prinsip-prinsipnya sebagai standar untuk pertumbuhan dalam kekudusan dan kasih
+            </p>
+          </div>
+
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+            <div class="bg-white/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg mb-2">Dalam Komunitas</h3>
+            <p class="text-sky-100 text-sm">
+              Terapkan prinsip-prinsipnya dalam hubungan keluarga, gereja, dan masyarakat
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 max-w-2xl mx-auto">
+          <p class="text-sky-100 italic text-center">
+            "Kasihilah Tuhan, Allahmu, dengan segenap hatimu dan dengan segenap jiwamu dan dengan segenap akal budimu. 
+            Itulah hukum yang terutama dan yang pertama. Dan hukum yang kedua, yang sama dengan itu, ialah: 
+            Kasihilah sesamamu manusia seperti dirimu sendiri. Pada kedua hukum inilah tergantung seluruh hukum Taurat dan kitab para nabi."
+          </p>
+          <p class="text-white font-semibold text-center mt-4">Matius 22:37-40</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="bg-white rounded-2xl shadow-lg p-8 border border-sky-100">
+      <div class="grid md:grid-cols-2 gap-6">
+        <a href="/edukasi/hukum-tuhan" class="group bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-left">
+          <div class="flex items-center justify-between mb-4">
+            <svg class="w-6 h-6 text-gray-400 group-hover:text-gray-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+            <span class="bg-gray-100 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">Sebelumnya</span>
+          </div>
+          <h3 class="text-lg font-bold text-gray-800 mb-2">Kembali ke Hukum Tuhan</h3>
+          <p class="text-gray-600 text-sm">Pelajari lebih lanjut tentang berbagai aspek hukum Allah</p>
+        </a>
+
+        <a href="/edukasi/hukum-tuhan/hukum-dan-kasih-karunia" class="group bg-gradient-to-br from-sky-50 to-white border border-sky-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-left">
+          <div class="flex items-center justify-between mb-4">
+            <span class="bg-sky-100 text-sky-600 text-xs font-semibold px-3 py-1 rounded-full">Selanjutnya</span>
+            <svg class="w-6 h-6 text-sky-400 group-hover:text-sky-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-gray-800 mb-2">Hukum dan Kasih Karunia</h3>
+          <p class="text-gray-600 text-sm">Memahami hubungan antara hukum Taurat dan kasih karunia dalam Perjanjian Baru</p>
+        </a>
+      </div>
+    </section>
+  </div>
+</EdukasiLayout>
+
+<style>
+/* Custom styles untuk halaman sepuluh perintah */
+.prose {
+  line-height: 1.7;
+}
+
+.prose p {
+  margin-bottom: 1.2em;
+}
+
+/* Smooth transitions untuk semua interactive elements */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+/* Gradient text effect */
+.gradient-text {
+  background: linear-gradient(135deg, #10b981, #047857);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Animation for commandment cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.group {
+  animation: fadeInUp 0.6s ease-out;
+}
+</style>

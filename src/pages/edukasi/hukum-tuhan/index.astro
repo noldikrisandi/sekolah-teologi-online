@@ -1,0 +1,638 @@
+---
+// src/pages/edukasi/hukum-tuhan/index.astro
+import EdukasiLayout from "../../../layouts/EdukasiLayout.astro";
+
+// Data untuk SEO dan konten
+const pageData = {
+  title: "Hukum Tuhan - Pemahaman Hukum Allah dalam Iman Kristen",
+  description:
+    "Pelajari hukum-hukum Allah dalam Perjanjian Lama dan relevansinya bagi orang Kristen masa kini. Kajian mendalam tentang Sepuluh Perintah Allah, hukum moral, seremonial, dan sipil.",
+  image: "/images/banner/hukum-tuhan.webp",
+  url: "edukasi/hukum-tuhan",
+  type: "website",
+  articles: [
+    {
+      title: "Sepuluh Perintah Allah: Makna dan Relevansi Masa Kini",
+      description:
+        "Memahami makna mendalam Sepuluh Perintah Allah dan penerapannya dalam kehidupan Kristen modern",
+      url: "/edukasi/hukum-tuhan/sepuluh-perintah-allah",
+      datePublished: "2024-02-15",
+      author: "Tim Sekolah Teologi",
+    },
+    {
+      title: "Hukum Taurat dan Kasih Karunia: Hubungan dalam Perjanjian Baru",
+      description: "Menjelajahi hubungan antara hukum Taurat dan kasih karunia dalam terang Perjanjian Baru",
+      url: "/edukasi/hukum-taurat-dan-kasih-karunia",
+      datePublished: "2024-02-10",
+      author: "Tim Sekolah Teologi",
+    },
+    {
+      title: "Klasifikasi Hukum dalam Perjanjian Lama: Moral, Seremonial, Sipil",
+      description: "Memahami pembagian hukum Perjanjian Lama dan implikasinya bagi orang Kristen",
+      url: "/edukasi/klasifikasi-hukum-perjanjian-lama",
+      datePublished: "2024-02-05",
+      author: "Tim Sekolah Teologi",
+    },
+  ],
+  breadcrumbs: [
+    { name: "Home", url: "https://sekolahteologi.com/" },
+    { name: "Edukasi Teologi", url: "https://sekolahteologi.com/edukasi" },
+    { name: "Hukum Tuhan", url: "https://sekolahteologi.com/edukasi/hukum-tuhan" },
+  ],
+};
+---
+
+<EdukasiLayout {...pageData}>
+  <div class="space-y-10">
+    <!-- Hero Section -->
+    <section
+      class="relative bg-gradient-to-br from-sky-600 to-sky-800 rounded-2xl p-8 md:p-12 text-white overflow-hidden">
+      <div
+        class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cGF0aCBkPSJNMCA0MGg0MFYwaC00MCIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xNSA0MGgxMHYtNDBoLTEwdjQwem0yMC0yMGgxMHYtNDBoLTEwdjQweiIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgZmlsbD0idXJsKCNhKSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg==')] opacity-20">
+      </div>
+      <div class="relative z-10 max-w-3xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Hukum Tuhan</h1>
+        <p class="text-xl md:text-2xl text-sky-100 max-w-3xl mx-auto mb-6">
+          Memahami Hukum Allah dalam Terang Kasih Karunia dan Kebenaran
+        </p>
+        <div class="mt-8">
+          <a
+            href="/edukasi/hukum-tuhan/sepuluh-perintah-allah"
+            class="inline-flex items-center bg-white text-sky-700 px-6 py-3 rounded-lg hover:bg-sky-50 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl">
+            Mulai Belajar Sekarang
+            <svg
+              class="w-5 h-5 ml-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section
+      class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-sky-100">
+      <div class="flex items-start mb-6">
+        <div class="bg-sky-100 p-3 rounded-full mr-4">
+          <svg
+            class="w-6 h-6 text-sky-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+            ></path>
+          </svg>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-left">
+          Mengapa Mempelajari Hukum Tuhan?
+        </h2>
+      </div>
+      <div class="prose prose-lg max-w-none text-gray-700">
+        <p class="text-lg">
+          Hukum Tuhan bukan sekadar aturan kuno, tetapi merupakan ekspresi karakter dan kehendak Allah yang kekal. 
+          Melalui pemahaman yang benar tentang hukum Allah, kita dapat mengenal sifat-Nya yang kudus, 
+          memahami standar kebenaran-Nya, dan mengalami kasih karunia yang memampukan kita untuk hidup sesuai kehendak-Nya.
+        </p>
+        <p class="text-lg">
+          Di <strong class="text-sky-600">SekolahTeologi.com</strong>, kami menyajikan kajian mendalam tentang 
+          hukum Tuhan dalam perspektif alkitabiah yang seimbang, menghubungkan Perjanjian Lama dan Baru, 
+          serta menunjukkan relevansinya bagi kehidupan Kristen masa kini.
+        </p>
+      </div>
+    </section>
+
+    <!-- Categories Grid -->
+    <section
+      class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-sky-100">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-left mb-3">
+          Area Pembelajaran Hukum Tuhan
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Jelajahi berbagai aspek hukum Allah untuk memperdalam pengertian akan kehendak-Nya
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 2xl:grid-cols-3 gap-6 text-left">
+        <!-- Sepuluh Perintah Allah -->
+        <div
+          class="group bg-gradient-to-br from-white to-sky-50 border border-sky-100 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div
+            class="bg-sky-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-sky-200 transition-colors">
+            <svg
+              class="w-6 h-6 text-sky-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3 text-left">Sepuluh Perintah Allah</h3>
+          <p class="text-gray-600 mb-4">
+            Kajian mendalam tentang Dekalog - Sepuluh Firman Allah yang menjadi fondasi moral universal.
+          </p>
+          <a
+            href="/edukasi/hukum-tuhan/sepuluh-perintah-allah"
+            class="inline-flex items-center text-sky-600 hover:text-sky-700 font-semibold group-hover:translate-x-1 transition-transform">
+            Pelajari Selengkapnya
+            <svg
+              class="w-4 h-4 ml-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Klasifikasi Hukum -->
+        <div
+          class="group bg-gradient-to-br from-white to-sky-50 border border-sky-100 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div
+            class="bg-sky-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-sky-200 transition-colors">
+            <svg
+              class="w-6 h-6 text-sky-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3 text-left">
+            Klasifikasi Hukum Taurat
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Memahami pembagian hukum Taurat: moral, seremonial, dan sipil serta relevansinya bagi orang Kristen.
+          </p>
+          <a
+            href="/edukasi/hukum-tuhan/klasifikasi-hukum-taurat"
+            class="inline-flex items-center text-sky-600 hover:text-sky-700 font-semibold group-hover:translate-x-1 transition-transform">
+            Pelajari Selengkapnya
+            <svg
+              class="w-4 h-4 ml-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Hukum dan Kasih Karunia -->
+        <div
+          class="group bg-gradient-to-br from-white to-sky-50 border border-sky-100 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div
+            class="bg-sky-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-sky-200 transition-colors">
+            <svg
+              class="w-6 h-6 text-sky-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3 text-left">
+            Hukum dan Kasih Karunia
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Menjelajahi hubungan antara hukum Taurat dan kasih karunia dalam terang Perjanjian Baru.
+          </p>
+          <a
+            href="/edukasi/hukum-tuhan/hukum-dan-kasih-karunia"
+            class="inline-flex items-center text-sky-600 hover:text-sky-700 font-semibold group-hover:translate-x-1 transition-transform">
+            Pelajari Selengkapnya
+            <svg
+              class="w-4 h-4 ml-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Hukum dalam Khotbah Yesus -->
+        <div
+          class="group bg-gradient-to-br from-white to-sky-50 border border-sky-100 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div
+            class="bg-sky-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-sky-200 transition-colors">
+            <svg
+              class="w-6 h-6 text-sky-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3 text-left">
+            Hukum dalam Khotbah Yesus
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Memahami penggenapan hukum Taurat oleh Yesus dalam Khotbah di Bukit dan pengajaran-Nya.
+          </p>
+          <a
+            href="/edukasi/hukum-tuhan/hukum-dalam-khotbah-yesus"
+            class="inline-flex items-center text-sky-600 hover:text-sky-700 font-semibold group-hover:translate-x-1 transition-transform">
+            Pelajari Selengkapnya
+            <svg
+              class="w-4 h-4 ml-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Hukum dan Roh Kudus -->
+        <div
+          class="group bg-gradient-to-br from-white to-sky-50 border border-sky-100 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div
+            class="bg-sky-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-sky-200 transition-colors">
+            <svg
+              class="w-6 h-6 text-sky-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 10V3L4 14h7v7l9-11h-7z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3 text-left">
+            Hukum dan Roh Kudus
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Peran Roh Kudus dalam menuliskan hukum Allah di hati dan memampukan ketaatan.
+          </p>
+          <a
+            href="/edukasi/hukum-tuhan/hukum-dan-roh-kudus"
+            class="inline-flex items-center text-sky-600 hover:text-sky-700 font-semibold group-hover:translate-x-1 transition-transform">
+            Pelajari Selengkapnya
+            <svg
+              class="w-4 h-4 ml-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Etika Kristen -->
+        <div
+          class="group bg-gradient-to-br from-white to-sky-50 border border-sky-100 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div
+            class="bg-sky-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-sky-200 transition-colors">
+            <svg
+              class="w-6 h-6 text-sky-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3 text-left">
+            Etika Kristen Berdasarkan Hukum
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Penerapan prinsip-prinsip hukum Allah dalam etika dan moralitas Kristen kontemporer.
+          </p>
+          <a
+            href="/edukasi/hukum-tuhan/etika-kristen"
+            class="inline-flex items-center text-sky-600 hover:text-sky-700 font-semibold group-hover:translate-x-1 transition-transform">
+            Pelajari Selengkapnya
+            <svg
+              class="w-4 h-4 ml-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Concepts Section -->
+    <section
+      class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-sky-100">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-left mb-3">
+          Konsep Utama Hukum Tuhan
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Memahami prinsip-prinsip dasar yang mendasari pemahaman alkitabiah tentang hukum Allah
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 text-left">
+        <div class="space-y-6">
+          <div class="flex items-start">
+            <div class="bg-sky-100 p-2 rounded-lg mr-4 mt-1">
+              <svg class="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-800 mb-2">Hukum sebagai Cermin</h3>
+              <p class="text-gray-600">
+                Hukum Tuhan berfungsi sebagai cermin yang menunjukkan dosa dan kebutuhan kita akan Juruselamat.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="bg-sky-100 p-2 rounded-lg mr-4 mt-1">
+              <svg class="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-800 mb-2">Tiga Penggunaan Hukum</h3>
+              <p class="text-gray-600">
+                Hukum berfungsi secara politis, teologis, dan sebagai pedoman hidup bagi orang percaya.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="bg-sky-100 p-2 rounded-lg mr-4 mt-1">
+              <svg class="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-800 mb-2">Hukum dan Injil</h3>
+              <p class="text-gray-600">
+                Hubungan dialektis antara hukum yang menuntut dan Injil yang memberikan.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <div class="flex items-start">
+            <div class="bg-sky-100 p-2 rounded-lg mr-4 mt-1">
+              <svg class="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-800 mb-2">Kontinuitas dan Diskontinuitas</h3>
+              <p class="text-gray-600">
+                Memahami elemen hukum yang tetap berlaku dan yang digenapi dalam Kristus.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="bg-sky-100 p-2 rounded-lg mr-4 mt-1">
+              <svg class="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-800 mb-2">Hukum Kasih</h3>
+              <p class="text-gray-600">
+                Yesus meringkas seluruh hukum dalam dua perintah kasih kepada Allah dan sesama.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="bg-sky-100 p-2 rounded-lg mr-4 mt-1">
+              <svg class="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-800 mb-2">Kebebasan Kristen</h3>
+              <p class="text-gray-600">
+                Memahami kebebasan sejati dalam Kristus yang menghasilkan ketaatan yang sukarela.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section
+      class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-sky-100">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-left mb-3">
+          Artikel Hukum Tuhan Terbaru
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Temukan wawasan mendalam tentang hukum Allah dan penerapannya dalam kehidupan
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 text-left">
+        {
+          pageData.articles.map((article) => (
+            <article class="group bg-gradient-to-br from-white to-sky-50 border border-sky-100 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div class="flex justify-between items-start mb-4">
+                <span class="bg-sky-100 text-sky-700 text-xs font-semibold px-3 py-1 rounded-full">
+                  Artikel Baru
+                </span>
+                <span class="text-xs text-gray-500">
+                  {new Date(article.datePublished).toLocaleDateString("id-ID")}
+                </span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800 mb-3 group-hover:text-sky-600 transition-colors">
+                <a href={article.url}>{article.title}</a>
+              </h3>
+              <p class="text-gray-600 mb-4">{article.description}</p>
+              <div class="flex justify-between items-center text-sm text-gray-500 pt-4 border-t border-sky-100">
+                <span>Oleh: {article.author}</span>
+                <a
+                  href={article.url}
+                  class="inline-flex items-center text-sky-600 hover:text-sky-700 font-medium group-hover:translate-x-1 transition-transform">
+                  Baca Artikel
+                  <svg
+                    class="w-4 h-4 ml-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+
+      <div class="text-center mt-8">
+        <a
+          href="/artikel?kategori=hukum-tuhan"
+          class="inline-flex items-center bg-sky-600 text-white px-6 py-3 rounded-lg hover:bg-sky-700 transition-colors font-semibold shadow-md hover:shadow-lg">
+          Lihat Semua Artikel Hukum Tuhan
+          <svg
+            class="w-5 h-5 ml-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section
+      class="bg-gradient-to-r from-sky-600 to-sky-800 rounded-2xl p-10 text-center text-white relative overflow-hidden">
+      <div
+        class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cGF0aCBkPSJNMCA0MGg0MFYwaC00MCIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xNSA0MGgxMHYtNDBoLTEwdjQwem0yMC0yMGgxMHYtNDBoLTEwdjQweiIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgZmlsbD0idXJsKCNhKSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg==')] opacity-10">
+      </div>
+      <div class="relative z-10">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">
+          Dalami Pemahaman Anda Tentang Hukum Tuhan
+        </h2>
+        <p class="text-sky-100 text-lg mb-8 max-w-2xl mx-auto">
+          Bergabunglah dengan komunitas pembelajar yang ingin memahami kehendak Allah 
+          melalui kajian mendalam tentang hukum-Nya yang kudus dan sempurna.
+        </p>
+        <div>
+          <a
+            href="/edukasi/hukum-tuhan/sepuluh-perintah-allah"
+            class="bg-white text-sky-600 text-sm px-4 py-3 rounded-lg hover:bg-sky-50 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl">
+            Mulai dengan Sepuluh Perintah
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+</EdukasiLayout>
+
+<style>
+/* Custom styles untuk halaman hukum tuhan */
+.prose {
+  line-height: 1.7;
+}
+
+.prose p {
+  margin-bottom: 1.2em;
+}
+
+/* Smooth transitions untuk semua interactive elements */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+/* Gradient text effect */
+.gradient-text {
+  background: linear-gradient(135deg, #10b981, #047857);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+</style>

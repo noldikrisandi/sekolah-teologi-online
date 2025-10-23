@@ -1,0 +1,491 @@
+---
+// src/pages/edukasi/hukum-tuhan/hukum-dan-kasih-karunia.astro
+import EdukasiLayout from "../../../layouts/EdukasiLayout.astro";
+
+// Data untuk SEO dan konten
+const pageData = {
+  title: "Hukum dan Kasih Karunia - Hubungan dalam Terang Perjanjian Baru",
+  description: "Kajian teologis tentang hubungan dinamis antara hukum Taurat dan kasih karunia Allah. Memahami bagaimana keduanya bekerja bersama dalam rencana keselamatan.",
+  image: "/images/banner/hukum-kasih-karunia.webp",
+  url: "edukasi/hukum-tuhan/hukum-dan-kasih-karunia",
+  type: "article",
+  breadcrumbs: [
+    { name: "Home", url: "https://sekolahteologi.com/" },
+    { name: "Edukasi Teologi", url: "https://sekolahteologi.com/edukasi" },
+    { name: "Hukum Tuhan", url: "https://sekolahteologi.com/edukasi/hukum-tuhan" },
+    { name: "Hukum dan Kasih Karunia", url: "https://sekolahteologi.com/edukasi/hukum-tuhan/hukum-dan-kasih-karunia" },
+  ],
+};
+
+// Data untuk konten
+const theologicalConcepts = [
+  {
+    title: "Hukum sebagai Penuntun kepada Kristus",
+    scripture: "Galatia 3:24",
+    content: "Hukum Taurat adalah penuntun bagi kita sampai Kristus datang, supaya kita dibenarkan karena iman.",
+    explanation: "Hukum berfungsi menunjukkan dosa dan kebutuhan akan Juruselamat, mempersiapkan hati untuk menerima kasih karunia.",
+    icon: "M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1H5C3.9 1 3 1.9 3 3V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V9ZM19 9H14V4L19 9Z"
+  },
+  {
+    title: "Kasih Karunia Menggenapi Hukum",
+    scripture: "Roma 8:3-4",
+    content: "Allah telah mengutus Anak-Nya untuk menggenapi tuntutan hukum Taurat di dalam kita.",
+    explanation: "Kristus menggenapi tuntutan hukum yang sempurna, memungkinkan kita hidup oleh Roh sesuai dengan kehendak Allah.",
+    icon: "M9 12L11 14L15 10M12 3C13.1 3 14 3.9 14 5C14 6.1 13.1 7 12 7C10.9 7 10 6.1 10 5C10 3.9 10.9 3 12 3ZM19 21V19C19 17.1 17.9 16 16 16H8C6.1 16 5 17.1 5 19V21H19Z"
+  },
+  {
+    title: "Kebebasan dalam Kasih Karunia",
+    scripture: "Roma 6:14",
+    content: "Kamu tidak berada di bawah hukum Taurat, tetapi di bawah kasih karunia.",
+    explanation: "Kasih karunia membebaskan dari kutuk hukum, tetapi bukan dari tanggung jawab moral untuk hidup sesuai dengan kehendak Allah.",
+    icon: "M4 5C4 4.4 4.4 4 5 4H19C19.6 4 20 4.4 20 5V7C20 7.6 19.6 8 19 8H5C4.4 8 4 7.6 4 7V5ZM4 13C4 12.4 4.4 12 5 12H19C19.6 12 20 12.4 20 13V15C20 15.6 19.6 16 19 16H5C4.4 16 4 15.6 4 15V13ZM4 21C4 20.4 4.4 20 5 20H19C19.6 20 20 20.4 20 21V23C20 23.6 19.6 24 19 24H5C4.4 24 4 23.6 4 23V21Z"
+  }
+];
+
+const biblicalExamples = [
+  {
+    reference: "Roma 3:20-24",
+    title: "Hukum Menunjukkan Dosa",
+    content: "Tidak seorangpun yang dibenarkan di hadapan Allah oleh karena melakukan hukum Taurat, karena justru oleh hukum Taurat orang mengenal dosa.",
+    point: "Hukum berfungsi sebagai diagnosa, kasih karunia sebagai penyembuhan"
+  },
+  {
+    reference: "Galatia 2:16",
+    title: "Pembenaran oleh Iman",
+    content: "Manusia tidak dibenarkan oleh karena melakukan hukum Taurat, tetapi hanya oleh karena iman dalam Kristus Yesus.",
+    point: "Iman, bukan perbuatan, menjadi dasar pembenaran"
+  },
+  {
+    reference: "Roma 7:6",
+    title: "Hidup oleh Roh",
+    content: "Sekarang kita telah dibebaskan dari hukum Taurat, kita melayani dalam keadaan baru menurut Roh.",
+    point: "Perpindahan dari legalisme kepada kehidupan oleh Roh"
+  },
+  {
+    reference: "Matius 5:17",
+    title: "Penggenapan oleh Kristus",
+    content: "Janganlah kamu menyangka, bahwa Aku datang untuk meniadakan hukum Taurat atau kitab para nabi. Aku datang bukan untuk meniadakannya, melainkan untuk menggenapinya.",
+    point: "Kristus menggenapi, bukan menghapus hukum"
+  }
+];
+
+const practicalApplications = [
+  {
+    title: "Hidup dalam Keseimbangan",
+    points: [
+      "Menghindari legalisme yang membelenggu",
+      "Menjauhi antinomianisme yang mengabaikan moralitas",
+      "Menemukan kebebasan sejati dalam batas-batas kasih"
+    ]
+  },
+  {
+    title: "Motivasi yang Benar",
+    points: [
+      "Bukan karena takut hukuman",
+      "Bukan untuk mendapatkan keselamatan",
+      "Sebagai respons syukur atas kasih karunia"
+    ]
+  },
+  {
+    title: "Pertumbuhan Rohani",
+    points: [
+      "Hukum menunjukkan area yang perlu pertumbuhan",
+      "Kasih karunia memberikan kuasa untuk perubahan",
+      "Roh Kudus memampukan ketaatan yang sukarela"
+    ]
+  }
+];
+---
+
+<EdukasiLayout {...pageData}>
+  <div class="space-y-10">
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-sky-600 to-sky-800 rounded-2xl p-8 md:p-12 text-white overflow-hidden">
+      <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cGF0aCBkPSJNMCA0MGg0MFYwaC00MCIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xNSA0MGgxMHYtNDBoLTEwdjQwem0yMC0yMGgxMHYtNDBoLTEwdjQweiIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgZmlsbD0idXJsKCNhKSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg==')] opacity-20"></div>
+      <div class="relative z-10 max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Hukum dan Kasih Karunia</h1>
+        <p class="text-xl md:text-2xl text-sky-100 max-w-3xl mx-auto mb-6">
+          Memahami Hubungan Dinamis Antara Hukum Taurat dan Anugerah Allah dalam Rencana Keselamatan
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 mt-8">
+          <span class="bg-sky-500/30 backdrop-blur-sm text-sky-100 px-4 py-2 rounded-full text-sm font-medium">
+            Roma 6:14
+          </span>
+          <span class="bg-sky-500/30 backdrop-blur-sm text-sky-100 px-4 py-2 rounded-full text-sm font-medium">
+            Galatia 3:24
+          </span>
+          <span class="bg-sky-500/30 backdrop-blur-sm text-sky-100 px-4 py-2 rounded-full text-sm font-medium">
+            Teologi Paulus
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-sky-100">
+      <div class="flex items-start mb-6">
+        <div class="bg-sky-100 p-3 rounded-full mr-4">
+          <svg class="w-6 h-6 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </div>
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Pengantar: Hukum dan Kasih Karunia</h2>
+          <p class="text-gray-600">Dua Pilar dalam Rencana Keselamatan Allah</p>
+        </div>
+      </div>
+      
+      <div class="prose prose-lg max-w-none text-gray-700">
+        <p class="text-lg">
+          Hubungan antara <strong>hukum Taurat</strong> dan <strong>kasih karunia</strong> merupakan salah satu tema sentral 
+          dalam teologi Perjanjian Baru, khususnya dalam tulisan-tulisan Rasul Paulus. Pemahaman yang seimbang tentang 
+          kedua konsep ini sangat penting untuk menghindari ekstrem legalisme di satu sisi dan antinomianisme di sisi lain.
+        </p>
+        
+        <div class="grid md:grid-cols-2 gap-6 my-8">
+          <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg">
+            <h4 class="font-bold text-red-800 mb-2">Bahaya Legalisme</h4>
+            <p class="text-red-700 text-sm">
+              Menekankan hukum tanpa kasih karunia dapat menghasilkan ketaatan legalistik yang kehilangan roh dan makna,
+              serta mengabaikan kebutuhan akan kasih karunia.
+            </p>
+          </div>
+
+          <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
+            <h4 class="font-bold text-blue-800 mb-2">Bahaya Antinomianisme</h4>
+            <p class="text-blue-700 text-sm">
+              Menekankan kasih karunia tanpa hukum dapat menghasilkan kehidupan yang sembrono terhadap kekudusan 
+              dan mengabaikan standar moral Allah.
+            </p>
+          </div>
+        </div>
+
+        <h3 class="text-xl font-bold text-gray-800 mt-8 mb-4">Pandangan yang Seimbang</h3>
+        <p>
+          Alkitab menyajikan hubungan yang dinamis dan saling melengkapi antara hukum dan kasih karunia. 
+          Hukum menunjukkan standar kekudusan Allah dan kebutuhan akan Juruselamat, sementara kasih karunia 
+          memberikan pengampunan dan kuasa untuk hidup sesuai dengan kehendak Allah.
+        </p>
+      </div>
+    </section>
+
+    <!-- Theological Concepts -->
+    <section class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-sky-100">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Konsep Teologis Utama</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Memahami peran dan fungsi hukum serta kasih karunia dalam rencana keselamatan
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-4">
+        {theologicalConcepts.map((concept, index) => (
+          <div class="group bg-gradient-to-br from-white to-sky-50 border border-sky-100 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="bg-sky-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:bg-sky-200 transition-colors">
+              <svg class="w-6 h-6 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={concept.icon}></path>
+              </svg>
+            </div>
+            
+            <h3 class="text-xl font-bold text-gray-800 mb-3">{concept.title}</h3>
+            
+            <div class="bg-white rounded-lg p-4 mb-4 border">
+              <p class="text-lg font-medium text-gray-800 italic mb-2">"{concept.content}"</p>
+              <p class="text-sm text-sky-400 font-semibold">{concept.scripture}</p>
+            </div>
+            
+            <p class="text-gray-600 text-sm">{concept.explanation}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Biblical Foundation -->
+    <section class="bg-gradient-to-br from-sky-600 to-sky-800 rounded-2xl p-8 md:p-10 text-white">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">Dasar Alkitabiah</h2>
+        
+        <div class="space-y-6">
+          {biblicalExamples.map((example, index) => (
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all duration-300">
+              <div class="flex flex-col md:flex-row md:items-start gap-4">
+                <div class="flex-shrink-0">
+                  <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">{index + 1}</span>
+                  </div>
+                </div>
+                
+                <div class="flex-grow text-left">
+                  <div class="flex flex-wrap items-center gap-3 mb-3">
+                    <h3 class="text-lg font-bold">{example.title}</h3>
+                    <span class="bg-white/20 text-sky-100 text-xs font-semibold px-3 py-1 rounded-full">
+                      {example.reference}
+                    </span>
+                  </div>
+                  
+                  <p class="text-sky-100 italic mb-4">"{example.content}"</p>
+                  
+                  <div class="bg-white/10 rounded-lg p-4">
+                    <p class="text-white font-semibold text-sm">{example.point}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparative Analysis -->
+    <section class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-sky-100">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Analisis Perbandingan</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Memahami perbedaan dan hubungan antara hukum dan kasih karunia
+        </p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm text-left text-gray-700">
+          <thead class="text-xs text-gray-700 uppercase bg-sky-50">
+            <tr>
+              <th class="px-6 py-3">Aspek</th>
+              <th class="px-6 py-3">Hukum Taurat</th>
+              <th class="px-6 py-3">Kasih Karunia</th>
+              <th class="px-6 py-3">Hubungan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-white border-b hover:bg-gray-50">
+              <td class="px-6 py-4 font-medium">Fungsi Utama</td>
+              <td class="px-6 py-4">Menunjukkan dosa dan standar Allah</td>
+              <td class="px-6 py-4">Memberikan pengampunan dan kuasa</td>
+              <td class="px-6 py-4">Diagnosa dan penyembuhan</td>
+            </tr>
+            <tr class="bg-gray-50 border-b hover:bg-gray-100">
+              <td class="px-6 py-4 font-medium">Dasar Keselamatan</td>
+              <td class="px-6 py-4">Perbuatan (tidak mungkin sempurna)</td>
+              <td class="px-6 py-4">Iman dalam Kristus</td>
+              <td class="px-6 py-4">Hukum menuntun kepada Kristus</td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-50">
+              <td class="px-6 py-4 font-medium">Motivasi</td>
+              <td class="px-6 py-4">Takut akan hukuman</td>
+              <td class="px-6 py-4">Syukur dan kasih</td>
+              <td class="px-6 py-4">Dari eksternal ke internal</td>
+            </tr>
+            <tr class="bg-gray-50 border-b hover:bg-gray-100">
+              <td class="px-6 py-4 font-medium">Kuasa</td>
+              <td class="px-6 py-4">Menuntut, tidak memberi kuasa</td>
+              <td class="px-6 py-4">Memberi kuasa melalui Roh Kudus</td>
+              <td class="px-6 py-4">Perintah vs pemampuan</td>
+            </tr>
+            <tr class="bg-white hover:bg-gray-50">
+              <td class="px-6 py-4 font-medium">Hasil</td>
+              <td class="px-6 py-4">Kutuk bagi yang gagal</td>
+              <td class="px-6 py-4">Hidup dan damai sejahtera</td>
+              <td class="px-6 py-4">Kematian vs kehidupan</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-8 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-lg">
+        <p class="text-yellow-800 font-medium">
+          💡 <strong>Penting:</strong> Hukum dan kasih karunia bukanlah musuh, tetapi partner dalam rencana Allah. 
+          Hukum menunjukkan "apa" yang harus dilakukan, kasih karunia memberikan "bagaimana" dan "mengapa".
+        </p>
+      </div>
+    </section>
+
+    <!-- Practical Applications -->
+    <section class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-sky-100">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Penerapan Praktis</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Bagaimana hidup dalam keseimbangan antara hukum dan kasih karunia
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 text-left gap-6">
+        {practicalApplications.map((application, index) => (
+          <div class="group bg-gradient-to-br from-white to-sky-50 border border-sky-100 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="flex items-center mb-4">
+              <div class="bg-sky-100 w-10 h-10 rounded-lg flex items-center justify-center mr-4">
+                <span class="text-sky-400 font-bold text-lg">{index + 1}</span>
+              </div>
+              <h3 class="text-lg font-bold text-gray-800">{application.title}</h3>
+            </div>
+            
+            <ul class="space-y-3">
+              {application.points.map((point) => (
+                <li class="flex items-start text-gray-600 text-sm">
+                  <svg class="w-4 h-4 text-sky-400 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  {point}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+
+      <div class="mt-8 bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg">
+        <h4 class="font-bold text-green-800 mb-3">Keseimbangan yang Sehat</h4>
+        <p class="text-green-700">
+          Hidup dalam kasih karunia bukan berarti mengabaikan hukum, tetapi memenuhi hukum melalui kasih (Roma 13:10). 
+          Kasih karunia memampukan kita untuk melakukan apa yang hukum tuntut tetapi tidak dapat berikan kuasa untuk melakukannya.
+        </p>
+      </div>
+    </section>
+
+    <!-- Key Takeaways -->
+    <section class="bg-gradient-to-br from-sky-600 to-sky-800 rounded-2xl p-8 md:p-10 text-white">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">Kesimpulan Utama</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+            <h3 class="font-bold text-lg mb-4 flex items-center">
+              <svg class="w-5 h-5 text-white mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+              Bukan Hukum ATAU Kasih Karunia
+            </h3>
+            <p class="text-sky-100">
+              Alkitab tidak mempresentasikan pilihan antara hukum dan kasih karunia, 
+              tetapi hubungan yang saling melengkapi antara keduanya dalam rencana keselamatan Allah.
+            </p>
+          </div>
+
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+            <h3 class="font-bold text-lg mb-4 flex items-center">
+              <svg class="w-5 h-5 text-white mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+              Tetapi Hukum DAN Kasih Karunia
+            </h3>
+            <p class="text-sky-100">
+              Kasih karunia adalah konteks di mana hukum dipahami dan dilakukan. 
+              Hukum menunjukkan kehendak Allah, kasih karunia memberikan kemampuan untuk melakukannya.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-6 bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
+          <p class="text-sky-100 italic text-lg">
+            "Sebab karena kasih karunia kamu diselamatkan oleh iman; itu bukan hasil usahamu, tetapi pemberian Allah, 
+            itu bukan hasil pekerjaanmu: jangan ada orang yang memegahkan diri."
+          </p>
+          <p class="text-white font-semibold mt-4">Efesus 2:8-9</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="bg-white rounded-2xl shadow-lg p-8 border border-sky-100">
+      <div class="grid md:grid-cols-2 gap-6">
+        <a href="/edukasi/hukum-tuhan/sepuluh-perintah-allah" class="group bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-left">
+          <div class="flex items-center justify-between mb-4">
+            <svg class="w-6 h-6 text-gray-400 group-hover:text-gray-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+            <span class="bg-gray-100 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">Sebelumnya</span>
+          </div>
+          <h3 class="text-lg font-bold text-gray-800 mb-2">Sepuluh Perintah Allah</h3>
+          <p class="text-gray-600 text-sm">Memahami makna mendalam Dekalog dan penerapannya</p>
+        </a>
+
+        <a href="/edukasi/hukum-tuhan/klasifikasi-hukum-taurat" class="group bg-gradient-to-br from-sky-50 to-white border border-sky-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-left">
+          <div class="flex items-center justify-between mb-4">
+            <span class="bg-sky-100 text-sky-500 text-xs font-semibold px-3 py-1 rounded-full">Selanjutnya</span>
+            <svg class="w-6 h-6 text-sky-400 group-hover:text-sky-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-gray-800 mb-2">Klasifikasi Hukum Taurat</h3>
+          <p class="text-gray-600 text-sm">Memahami pembagian hukum moral, seremonial, dan sipil</p>
+        </a>
+      </div>
+    </section>
+  </div>
+</EdukasiLayout>
+
+<style>
+/* Custom styles untuk halaman hukum dan kasih karunia */
+.prose {
+  line-height: 1.7;
+}
+
+.prose p {
+  margin-bottom: 1.2em;
+}
+
+/* Smooth transitions untuk semua interactive elements */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+/* Gradient text effect */
+.gradient-text {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Animation for cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.group {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Table responsive styles */
+@media (max-width: 768px) {
+  .overflow-x-auto {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* sky theme enhancements */
+.bg-sky-50 {
+  background-color: #faf5ff;
+}
+
+.border-sky-100 {
+  border-color: #e9d5ff;
+}
+
+.text-sky-500 {
+  color: #9333ea;
+}
+</style>

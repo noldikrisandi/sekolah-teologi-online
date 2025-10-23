@@ -1,0 +1,1256 @@
+---
+// src/pages/edukasi/teologi-sistematik/angelologi/index.astro
+import EdukasiLayout from "../../../../layouts/EdukasiLayout.astro";
+
+const pageTitle = "Angelologi - Doktrin Malaikat dalam Teologi Sistematik";
+const pageDescription = "Pelajari doktrin tentang malaikat: natur, hierarki, pelayanan malaikat baik, kejatuhan setan dan iblis, serta peran mereka dalam rencana Allah berdasarkan pendekatan teologi Reformed";
+const pageImage = "/images/banner/angelologi-malaikat.webp";
+const pageUrl = "edukasi/teologi-sistematik/angelologi";
+
+const breadcrumbs = [
+  { name: "Beranda", url: "https://sekolahteologi.com/" },
+  { name: "Edukasi", url: "https://sekolahteologi.com/edukasi" },
+  {
+    name: "Teologi Sistematik",
+    url: "https://sekolahteologi.com/edukasi/teologi-sistematik",
+  },
+  {
+    name: "Angelologi",
+    url: "https://sekolahteologi.com/edukasi/teologi-sistematik/angelologi",
+  },
+];
+
+// Data untuk bagian-bagian terkait
+const relatedSections = [
+  {
+    title: "Teologi Proper - Doktrin Allah",
+    url: "/edukasi/teologi-sistematik/teologi-proper",
+    description: "Memahami Sang Pencipta malaikat dan seluruh ciptaan",
+    icon: "👑",
+  },
+  {
+    title: "Kristologi - Doktrin Kristus",
+    url: "/edukasi/teologi-sistematik/kristologi",
+    description: "Mempelajari Kristus yang lebih tinggi dari malaikat",
+    icon: "✝️",
+  },
+  {
+    title: "Antropologi - Doktrin Manusia",
+    url: "/edukasi/teologi-sistematik/antropologi",
+    description: "Memahami manusia yang dibuat sedikit lebih rendah dari malaikat",
+    icon: "👥",
+  },
+  {
+    title: "Hamartologi - Doktrin Dosa",
+    url: "/edukasi/teologi-sistematik/hamartologi",
+    description: "Mempelajari asal-usul dosa dari kejatuhan malaikat",
+    icon: "⚫",
+  },
+];
+---
+
+<EdukasiLayout
+  title={pageTitle}
+  description={pageDescription}
+  image={pageImage}
+  url={pageUrl}
+  type="article"
+  breadcrumbs={breadcrumbs}>
+  <div class="space-y-8">
+    <!-- Header Section -->
+    <header class="text-center py-12 bg-gradient-to-r from-sky-50 to-sky-100 rounded-2xl shadow-sm">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Angelologi
+        </h1>
+        <p class="text-xl text-gray-700 mb-6 p-5 max-w-3xl mx-auto leading-relaxed">
+          Doktrin tentang Malaikat - Memahami Dunia Roh, Pelayanan Malaikat Baik, dan Realitas Kejahatan Spiritual
+        </p>
+        <div class="flex flex-wrap justify-center gap-2">
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Malaikat Baik</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Setan & Iblis</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Dunia Roh</span>
+          <span class="bg-sky-100 text-sky-800 px-4 py-2 rounded-full text-sm font-semibold">Peperangan Rohani</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Pengertian Angelologi -->
+    <section id="pengertian" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Pengertian Angelologi dalam Teologi Sistematik
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 text-left mb-4 text-left">
+                Definisi dan Ruang Lingkup
+              </h3>
+
+              <div class="bg-sky-50 border-l-4 border-sky-400 p-4 mb-6">
+                <p class="text-sky-700 font-medium">
+                  <strong>Angelologi</strong> berasal dari bahasa Yunani <em>angelos</em> (ἄγγελος) yang berarti "utusan" atau "malaikat" dan <em>logos</em> (λόγος) yang berarti "studi/ilmu". Secara teologis berarti <strong>"studi tentang malaikat dan makhluk spiritual ciptaan Allah"</strong>.
+                </p>
+              </div>
+
+              <p class="text-gray-700 mb-4 leading-relaxed">
+                Dalam <strong>Teologi Sistematika</strong>, <strong>Angelologi</strong> adalah disiplin teologi yang mempelajari natur, hierarki, dan pelayanan malaikat baik, serta asal-usul, natur, dan aktivitas malaikat jahat (setan dan iblis).
+              </p>
+
+              <div class="bg-yellow-50 rounded-lg p-4 mb-6">
+                <h4 class="font-semibold text-yellow-900 mb-3">
+                  Signifikansi Angelologi
+                </h4>
+                <p class="text-yellow-800 text-sm">
+                  <strong>Pemahaman yang benar tentang malaikat membantu kita memahami realitas spiritual yang tak terlihat</strong>. "Janganlah kamu lupa memberi tumpangan kepada orang, sebab dengan berbuat demikian beberapa orang dengan tidak diketahuinya telah menjamu malaikat-malaikat." (Ibrani 13:2)
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 text-left mb-4 text-left">
+                Pertanyaan-Pertanyaan Kunci Angelologi
+              </h3>
+
+              <div class="space-y-4">
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q1</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Apa Hakikat Malaikat?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami natur, atribut, dan hierarki malaikat</p>
+                    <a href="#natur-malaikat" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">👼 Pelajari Natur Malaikat</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q2</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Apa Peran Malaikat Baik?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami pelayanan dan karya malaikat bagi orang percaya</p>
+                    <a href="#malaikat-baik" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">✨ Pelajari Malaikat Baik</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q3</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Bagaimana Asal-usul Kejahatan Spiritual?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami kejatuhan setan dan malaikat jahat</p>
+                    <a href="#kejatuhan-setan" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">😈 Pelajari Kejatuhan Setan</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start bg-gray-50 p-4 rounded-lg">
+                  <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded text-sm font-bold mr-4 mt-1">Q4</span>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 text-left">Bagaimana Peperangan Rohani?</h4>
+                    <p class="text-gray-700 text-sm mt-1">Memahami strategi iblis dan kemenangan dalam Kristus</p>
+                    <a href="#peperangan-rohani" class="inline-block mt-2 text-sky-700 font-medium text-sm hover:text-sky-900 hover:underline transition-colors duration-200">⚔️ Pelajari Peperangan Rohani</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hakikat Malaikat -->
+    <section id="hakikat-malaikat" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Hakikat dan Eksistensi Malaikat
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Malaikat</strong> adalah makhluk spiritual ciptaan Allah yang memiliki akal budi, emosi, dan kehendak. Mereka diciptakan sebelum dunia dijadikan dan memiliki peran penting dalam melaksanakan rencana Allah.
+            </p>
+          </div>
+
+          <!-- Ayat Kunci -->
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8 rounded-r-lg">
+            <h4 class="font-bold text-yellow-900 mb-2 text-left">Basis Alkitabiah Eksistensi Malaikat:</h4>
+            <p class="text-yellow-800 text-lg italic">
+              "Sebab di dalam Dia telah diciptakan segala sesuatu, yang ada di sorga dan yang ada di bumi, yang kelihatan dan yang tidak kelihatan, baik singgasana, maupun kerajaan, baik pemerintah, maupun penguasa; segala sesuatu diciptakan oleh Dia dan untuk Dia."<br>
+              <strong class="not-italic">Kolose 1:16</strong>
+            </p>
+            <p class="text-yellow-800 text-lg italic mt-4">
+              "Demi mereka, bukankah mereka semua adalah roh-roh yang melayani, yang diutus untuk melayani mereka yang harus memperoleh keselamatan?"<br>
+              <strong class="not-italic">Ibrani 1:14</strong>
+            </p>
+          </div>
+
+          <!-- Asal-usul dan Penciptaan -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Asal-usul dan Penciptaan Malaikat</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">👑 Waktu Penciptaan<br><span class="text-sm font-normal">(Time of Creation)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Malaikat diciptakan sebelum penciptaan dunia fisik, mungkin pada hari pertama penciptaan atau sebelumnya.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>"Bintang-bintang fajar bersorak-sorak bersama-sama" (Ayub 38:7)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Malaikat sudah ada saat dunia dijadikan</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Diciptakan dalam keadaan suci dan sempurna</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Ayub 38:4-7; Kolose 1:16</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">⚡ Sifat Penciptaan<br><span class="text-sm font-normal">(Nature of Creation)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Malaikat diciptakan langsung oleh Allah sebagai makhluk spiritual yang tidak berkembang dari bentuk lain.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Diciptakan oleh Kristus (Kolose 1:16)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Bukan hasil evolusi atau perkembangan</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Jumlahnya sangat banyak (Wahyu 5:11)</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Mazmur 148:2,5; Kolose 1:16</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Natur Malaikat -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Natur dan Karakteristik Malaikat</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Sifat Spiritual<br><span class="text-lg font-normal">(Spiritual Nature)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Makhluk Rohani</h5>
+                    <p class="text-sky-800 text-sm">Tidak memiliki tubuh fisik seperti manusia (Ibrani 1:14)</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Tidak Berkawin</h5>
+                    <p class="text-sky-800 text-sm">Tidak menikah dan tidak berkembang biak (Matius 22:30)</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Kekal</h5>
+                    <p class="text-sky-800 text-sm">Tidak mengalami kematian fisik (Lukas 20:36)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Kemampuan dan Batasan<br><span class="text-lg font-normal">(Abilities & Limitations)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Kekuatan Supernatural</h5>
+                    <p class="text-sky-800 text-sm">Lebih kuat dari manusia tetapi terbatas (2 Petrus 2:11)</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pengetahuan Terbatas</h5>
+                    <p class="text-sky-800 text-sm">Tidak mahatahu seperti Allah (Matius 24:36)</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Lokasi Terbatas</h5>
+                    <p class="text-sky-800 text-sm">Tidak mahahadir seperti Allah (Daniel 10:12-13)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Klasifikasi Malaikat -->
+    <section id="klasifikasi-malaikat" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Klasifikasi dan Hierarki Malaikat
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Hierarki malaikat</strong> menunjukkan keteraturan dalam kerajaan sorga. Alkitab menyebutkan berbagai jenis dan tingkat malaikat dengan peran dan tanggung jawab yang berbeda-beda.
+            </p>
+          </div>
+
+          <!-- Jenis-jenis Malaikat -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Jenis-jenis Malaikat dalam Alkitab</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">👼</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Malaikat Umum<br><span class="text-sm font-normal">(Angels)</span></h4>
+                <p class="text-gray-700 text-sm">Utusan Allah yang melayani manusia dan melaksanakan kehendak-Nya</p>
+                <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Ibrani 1:14; Mazmur 103:20</p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">💎</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Kerubim<br><span class="text-sm font-normal">(Cherubim)</span></h4>
+                <p class="text-gray-700 text-sm">Penjaga kekudusan Allah, sering dikaitkan dengan takhta dan kemuliaan Allah</p>
+                <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Kejadian 3:24; Yehezkiel 10:1-20</p>
+                </div>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 text-center shadow-sm">
+                <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-2xl">🔥</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Serafim<br><span class="text-sm font-normal">(Seraphim)</span></h4>
+                <p class="text-gray-700 text-sm">Malaikat penyembah yang melayani di takhta Allah, memuji kekudusan-Nya</p>
+                <div class="bg-sky-50 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Yesaya 6:2-3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Malaikat-malaikat Khusus -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Malaikat-malaikat Khusus yang Diberi Nama</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Mikhael<br><span class="text-lg font-normal">(Panglima Balatentara)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Arti Nama</h5>
+                    <p class="text-sky-800 text-sm">"Siapa seperti Allah?" - pengakuan keunggulan Allah</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Peran</h5>
+                    <p class="text-sky-800 text-sm">Panglima balatentara sorga, pelindung Israel, pejuang melawan iblis</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Daniel 10:13,21; 12:1; Yudas 1:9; Wahyu 12:7</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Gelar</h5>
+                    <p class="text-sky-800 text-sm">"Pemimpin malaikat" (archangel) - satu-satunya yang disebut demikian</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Gabriel<br><span class="text-lg font-normal">(Utusan Khusus)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Arti Nama</h5>
+                    <p class="text-sky-800 text-sm">"Pahlawan Allah" atau "Allah adalah kuat"</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Peran</h5>
+                    <p class="text-sky-800 text-sm">Utusan khusus untuk pengumuman penting, terutama terkait Mesias</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Daniel 8:16; 9:21; Lukas 1:19,26</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Penampakan</h5>
+                    <p class="text-sky-800 text-sm">Kepada Daniel, Zakharia (ayah Yohanes Pembaptis), Maria</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hierarki Malaikat -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Hierarki Malaikat Menurut Alkitab</h3>
+
+            <div class="bg-sky-50 rounded-2xl p-6">
+              <h4 class="font-bold text-sky-900 mb-4 text-center">Struktur Kerajaan Sorga</h4>
+              
+              <div class="flex flex-col items-center space-y-4">
+                <!-- Tingkat Tertinggi -->
+                <div class="bg-white border border-sky-200 rounded-xl p-4 text-center shadow-sm w-full max-w-md">
+                  <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                    <span class="text-sky-600 text-xl">👑</span>
+                  </div>
+                  <h5 class="font-semibold text-sky-900">Takhta Allah</h5>
+                  <p class="text-gray-600 text-sm">Allah Tritunggal - Sumber segala otoritas</p>
+                </div>
+
+                <div class="text-sky-400 text-xl">↓</div>
+
+                <!-- Tingkat Kedua -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-2xl">
+                  <div class="bg-white border border-sky-200 rounded-xl p-4 text-center shadow-sm">
+                    <div class="w-10 h-10 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                      <span class="text-sky-600 text-lg">🔥</span>
+                    </div>
+                    <h5 class="font-semibold text-sky-900 text-sm">Serafim</h5>
+                    <p class="text-gray-600 text-xs">Penyembah di takhta</p>
+                  </div>
+                  <div class="bg-white border border-sky-200 rounded-xl p-4 text-center shadow-sm">
+                    <div class="w-10 h-10 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                      <span class="text-sky-600 text-lg">💎</span>
+                    </div>
+                    <h5 class="font-semibold text-sky-900 text-sm">Kerubim</h5>
+                    <p class="text-gray-600 text-xs">Penjaga kekudusan</p>
+                  </div>
+                </div>
+
+                <div class="text-sky-400 text-xl">↓</div>
+
+                <!-- Tingkat Ketiga -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 w-full max-w-3xl">
+                  <div class="bg-white border border-sky-200 rounded-xl p-4 text-center shadow-sm">
+                    <div class="w-10 h-10 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                      <span class="text-sky-600 text-lg">⚡</span>
+                    </div>
+                    <h5 class="font-semibold text-sky-900 text-sm">Pemerintah</h5>
+                    <p class="text-gray-600 text-xs">Penguasa wilayah</p>
+                  </div>
+                  <div class="bg-white border border-sky-200 rounded-xl p-4 text-center shadow-sm">
+                    <div class="w-10 h-10 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                      <span class="text-sky-600 text-lg">💪</span>
+                    </div>
+                    <h5 class="font-semibold text-sky-900 text-sm">Kuasa</h5>
+                    <p class="text-gray-600 text-xs">Pelaksana kuasa</p>
+                  </div>
+                  <div class="bg-white border border-sky-200 rounded-xl p-4 text-center shadow-sm">
+                    <div class="w-10 h-10 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                      <span class="text-sky-600 text-lg">🛡️</span>
+                    </div>
+                    <h5 class="font-semibold text-sky-900 text-sm">Malaikat Umum</h5>
+                    <p class="text-gray-600 text-xs">Pelayan manusia</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-sky-100 rounded-lg p-4 mt-6">
+                <p class="text-sky-800 text-sm text-center">
+                  <strong>Catatan:</strong> Hierarki ini berdasarkan inferensi dari berbagai ayat Alkitab. Alkitab tidak memberikan diagram hierarki yang eksplisit, tetapi menunjukkan adanya perbedaan tingkat dan tanggung jawab di antara malaikat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pelayanan Malaikat Baik -->
+    <section id="malaikat-baik" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Pelayanan Malaikat Baik
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Malaikat baik</strong> melayani sebagai pelaksana kehendak Allah, melayani orang percaya, dan memuliakan Allah. Pelayanan mereka beragam dan selalu sesuai dengan rencana Allah.
+            </p>
+          </div>
+
+          <!-- Pelayanan kepada Allah -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Pelayanan Malaikat kepada Allah</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">🙌 Penyembahan dan Pujian<br><span class="text-sm font-normal">(Worship & Praise)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Malaikat terus-menerus memuji dan menyembah Allah di takhta-Nya.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Serafim berseru "Kudus, kudus, kudus" (Yesaya 6:3)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Pujian saat kelahiran Kristus (Lukas 2:13-14)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Penyembahan di sorga (Wahyu 5:11-12)</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Mazmur 103:20; Yesaya 6:2-3; Wahyu 5:11-12</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">⚡ Pelaksana Kehendak Allah<br><span class="text-sm font-normal">(Executors of God's Will)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Malaikat melaksanakan penghakiman dan berkat Allah sesuai perintah-Nya.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Penghakiman atas Sodom (Kejadian 19:13)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Pembebasan Petrus dari penjara (Kisah 12:7-10)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Penghakiman akhir zaman (Wahyu 15-16)</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Mazmur 103:20; Matius 13:41; Wahyu 7:1</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pelayanan kepada Manusia -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Pelayanan Malaikat kepada Manusia</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Pelayanan Perlindungan<br><span class="text-lg font-normal">(Protective Ministry)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Penjagaan dan Perlindungan</h5>
+                    <p class="text-sky-800 text-sm">Malaikat melindungi orang percaya dari bahaya fisik dan spiritual</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Mazmur 34:7; 91:11-12</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pembebasan</h5>
+                    <p class="text-sky-800 text-sm">Membebaskan dari penjara dan situasi berbahaya</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Kisah 5:19; 12:7-10</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Perlindungan Nasional</h5>
+                    <p class="text-sky-800 text-sm">Mikhael sebagai pelindung Israel</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Daniel 10:13,21; 12:1</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Pelayanan Penyampaian<br><span class="text-lg font-normal">(Communicative Ministry)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Penyampaian Wahyu</h5>
+                    <p class="text-sky-800 text-sm">Menyampaikan pesan dan penglihatan dari Allah</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Daniel 8:16; 9:21-22; Lukas 1:11-20</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Penafsiran Penglihatan</h5>
+                    <p class="text-sky-800 text-sm">Menjelaskan makna penglihatan dan mimpi</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Daniel 7:16; Zakharia 1:9</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Pengumuman Kabar Baik</h5>
+                    <p class="text-sky-800 text-sm">Mengumumkan kelahiran Yohanes Pembaptis dan Yesus</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Lukas 1:11-20,26-38; 2:8-14</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pelayanan Khusus -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Pelayanan Khusus Malaikat</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">💝</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Pelayanan kepada Kristus</h4>
+                <p class="text-sky-800 text-sm">Melayani Yesus selama pelayanan-Nya di bumi</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Matius 4:11; Lukas 22:43</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">⚰️</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Pelayanan saat Kematian</h4>
+                <p class="text-sky-800 text-sm">Membawa orang percaya ke hadapan Allah</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Lukas 16:22</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span class="text-sky-600 text-xl">📯</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Pelayanan Eskatologis</h4>
+                <p class="text-sky-800 text-sm">Peran dalam akhir zaman dan kedatangan Kristus</p>
+                <div class="bg-sky-100 rounded-lg p-2 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Matius 13:41; 24:31; 1 Tesalonika 4:16</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-6 rounded-r-lg">
+              <h4 class="font-bold text-yellow-900 mb-2 text-left">Peringatan Penting:</h4>
+              <p class="text-yellow-800 text-sm">
+                <strong>Malaikat adalah pelayan, bukan objek penyembahan.</strong> Kita tidak boleh menyembah malaikat atau berdoa kepada mereka. "Janganlah memuja aku, karena aku adalah hamba sama seperti engkau..." (Wahyu 19:10; 22:8-9)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kejatuhan Setan -->
+    <section id="kejatuhan-setan" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Kejatuhan Setan dan Malaikat Jahat
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Kejatuhan setan</strong> adalah peristiwa ketika sebagian malaikat memberontak melawan Allah. Pemberontakan ini mengakibatkan mereka diusir dari sorga dan menjadi musuh Allah serta manusia.
+            </p>
+          </div>
+
+          <!-- Penyebab Kejatuhan -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Penyebab dan Sifat Kejatuhan</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">😈 Kesombongan dan Ambisi<br><span class="text-sm font-normal">(Pride & Ambition)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Setan jatuh karena kesombongan dan keinginan untuk menyamai Allah.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>"Aku hendak naik mengatasi ketinggian awan-awan..." (Yesaya 14:13-14)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Keinginan untuk disembah seperti Allah</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Kesombongan menyebabkan kejatuhan (1 Timotius 3:6)</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Yesaya 14:12-15; Yehezkiel 28:12-17</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">⚖️ Waktu dan Skala Kejatuhan<br><span class="text-sm font-normal">(Time & Scale of Fall)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Kejatuhan terjadi setelah penciptaan tetapi sebelum pencobaan Hawa di Taman Eden.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Setan sudah jatuh saat menggoda Hawa (Kejadian 3)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Sepertiga malaikat mengikutinya (Wahyu 12:4)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Diciptakan sempurna tetapi jatuh karena pilihan</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Yudas 1:6; 2 Petrus 2:4; Wahyu 12:7-9</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nama dan Gelar Setan -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Nama dan Gelar Setan dalam Alkitab</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 mb-3">Setan<br><span class="text-sm font-normal">(Satan)</span></h4>
+                <p class="text-gray-700 text-sm mb-4">Berasal dari bahasa Ibrani yang berarti "musuh" atau "penuduh"</p>
+                <div class="bg-sky-50 rounded-lg p-3">
+                  <p class="text-sky-800 text-xs font-semibold">Ayub 1:6; Wahyu 12:9</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 mb-3">Iblis<br><span class="text-sm font-normal">(Devil)</span></h4>
+                <p class="text-gray-700 text-sm mb-4">Berasal dari bahasa Yunani yang berarti "penuduh" atau "pemfitnah"</p>
+                <div class="bg-sky-50 rounded-lg p-3">
+                  <p class="text-sky-800 text-xs font-semibold">Matius 4:1; 1 Petrus 5:8</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 mb-3">Lucifer<br><span class="text-sm font-normal">(Bintang Timur)</span></h4>
+                <p class="text-gray-700 text-sm mb-4">Nama sebelum kejatuhan, berarti "pembawa terang"</p>
+                <div class="bg-sky-50 rounded-lg p-3">
+                  <p class="text-sky-800 text-xs font-semibold">Yesaya 14:12</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 mb-3">Beelzebul<br><span class="text-sm font-normal">(Raja Setan)</span></h4>
+                <p class="text-gray-700 text-sm mb-4">"Raja rumah setan" - pemimpin malaikat jahat</p>
+                <div class="bg-sky-50 rounded-lg p-3">
+                  <p class="text-sky-800 text-xs font-semibold">Matius 12:24</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 mb-3">Penuduh<br><span class="text-sm font-normal">(Accuser)</span></h4>
+                <p class="text-gray-700 text-sm mb-4">Menuduh orang percaya siang dan malam</p>
+                <div class="bg-sky-50 rounded-lg p-3">
+                  <p class="text-sky-800 text-xs font-semibold">Wahyu 12:10</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 mb-3">Pendusta<br><span class="text-sm font-normal">(Liar)</span></h4>
+                <p class="text-gray-700 text-sm mb-4">Bapa segala dusta, tidak ada kebenaran padanya</p>
+                <div class="bg-sky-50 rounded-lg p-3">
+                  <p class="text-sky-800 text-xs font-semibold">Yohanes 8:44</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Organisasi Kerajaan Kegelapan -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Organisasi Kerajaan Kegelapan</h3>
+
+            <div class="space-y-6">
+              <div class="bg-sky-50 border-l-4 border-sky-400 p-4 rounded-r-lg">
+                <h4 class="font-bold text-sky-900 mb-2">Struktur Hierarki Setan</h4>
+                <p class="text-sky-800 text-sm mb-3">Alkitab menunjukkan adanya struktur dan organisasi dalam kerajaan kegelapan, dengan berbagai tingkat otoritas.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                  <div>
+                    <h5 class="font-semibold text-sky-900 mb-2">Tingkat Tertinggi:</h5>
+                    <ul class="text-sky-700 space-y-1 text-sm">
+                      <li>• Setan/Iblis - Pemimpin tertinggi</li>
+                      <li>• Malaikat jahat tingkat tinggi</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold text-sky-900 mb-2">Tingkat Bawahan:</h5>
+                    <ul class="text-sky-700 space-y-1 text-sm">
+                      <li>• Roh-roh jahat (setan)</li>
+                      <li>• Iblis-iblis regional/wilayah</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="bg-sky-100 rounded-lg p-3 mt-3">
+                  <p class="text-sky-800 text-xs font-semibold">Efesus 6:12; Kolose 2:15</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-white border border-sky-200 rounded-xl p-6">
+                  <h4 class="font-bold text-sky-900 mb-3 text-lg">Kekuatan dan Batasan<br><span class="text-sm font-normal">(Power & Limitations)</span></h4>
+                  <p class="text-sky-800 text-sm mb-4">Meskipun kuat, setan dan malaikat jahat terbatas oleh kedaulatan Allah.</p>
+                  <ul class="text-sky-700 space-y-2 text-sm">
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Tidak mahatahu - pengetahuan terbatas</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Tidak mahahadir - hanya di satu tempat</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Tidak mahakuasa - tunduk pada Allah</span>
+                    </li>
+                  </ul>
+                  <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                    <p class="text-sky-800 text-xs font-semibold">Ayub 1:12; 2:6; 1 Yohanes 4:4</p>
+                  </div>
+                </div>
+
+                <div class="bg-white border border-sky-200 rounded-xl p-6">
+                  <h4 class="font-bold text-sky-900 mb-3 text-lg">Takdir Akhir<br><span class="text-sm font-normal">(Final Destiny)</span></h4>
+                  <p class="text-sky-800 text-sm mb-4">Setan dan malaikat jahat menanti penghakiman dan hukuman kekal.</p>
+                  <ul class="text-sky-700 space-y-2 text-sm">
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Dilemparkan ke lautan api (Wahyu 20:10)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Disiksa siang dan malam selama-lamanya</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Api yang kekal telah disediakan (Matius 25:41)</span>
+                    </li>
+                  </ul>
+                  <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                    <p class="text-sky-800 text-xs font-semibold">Matius 25:41; Wahyu 20:10</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Peperangan Rohani -->
+    <section id="peperangan-rohani" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Peperangan Rohani dan Kemenangan dalam Kristus
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              <strong>Peperangan rohani</strong> adalah realitas konflik antara kerajaan Allah dan kerajaan kegelapan. Sebagai orang percaya, kita terlibat dalam peperangan ini, tetapi kita memiliki kemenangan yang pasti dalam Kristus.
+            </p>
+          </div>
+
+          <!-- Strategi Setan -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Strategi dan Taktik Setan</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">🎭 Penipuan dan Pencobaan<br><span class="text-sm font-normal">(Deception & Temptation)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Setan menggunakan tipu muslihat dan pencobaan untuk menjatuhkan orang percaya.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Memutarbalikkan firman Allah (Kejadian 3:1-5)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Menyamar sebagai malaikat terang (2 Korintus 11:14)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Menaburkan keraguan tentang karakter Allah</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">2 Korintus 2:11; 11:3; Efesus 6:11</p>
+                </div>
+              </div>
+
+              <div class="bg-sky-50 border border-sky-200 rounded-xl p-6">
+                <h4 class="font-bold text-sky-900 mb-3 text-lg">⚔️ Penuduhan dan Penghambatan<br><span class="text-sm font-normal">(Accusation & Hindrance)</span></h4>
+                <p class="text-sky-800 text-sm mb-4">Setan menuduh orang percaya dan menghambat pelayanan.</p>
+                <ul class="text-sky-700 space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Menuduh siang dan malam (Wahyu 12:10)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Menghambat pelayanan (1 Tesalonika 2:18)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Menghasut penganiayaan (Wahyu 2:10)</span>
+                  </li>
+                </ul>
+                <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                  <p class="text-sky-800 text-xs font-semibold">Zakharia 3:1; 1 Tesalonika 2:18; Wahyu 12:10</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Senjata Allah -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Senjata-senjata Allah untuk Peperangan Rohani</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Senjata Rohani<br><span class="text-lg font-normal">(Spiritual Weapons)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Iman sebagai Perisai</h5>
+                    <p class="text-sky-800 text-sm">Memadamkan semua panah berapi si jahat</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Efesus 6:16</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Firman sebagai Pedang</h5>
+                    <p class="text-sky-800 text-sm">Senjata ofensif melawan tipu muslihat setan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Efesus 6:17; Matius 4:4,7,10</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Doa dan Berjaga-jaga</h5>
+                    <p class="text-sky-800 text-sm">Komunikasi dengan Sumber kemenangan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Efesus 6:18; Matius 26:41</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Sumber Kekuatan<br><span class="text-lg font-normal">(Sources of Strength)</span></h4>
+                <div class="space-y-4">
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Kuasa dalam Nama Yesus</h5>
+                    <p class="text-sky-800 text-sm">Nama di atas segala nama, kuasa atas setan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Filipi 2:9-10; Kisah 16:18</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Darah Kristus</h5>
+                    <p class="text-sky-800 text-sm">Kemenangan melalui kematian dan kebangkitan-Nya</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Wahyu 12:11; Kolose 2:15</p>
+                  </div>
+                  <div class="bg-sky-50 rounded-lg p-4">
+                    <h5 class="font-semibold text-sky-900 mb-2">Roh Kudus</h5>
+                    <p class="text-sky-800 text-sm">Kuasa untuk bersaksi dan melawan</p>
+                    <p class="text-sky-700 text-xs font-semibold mt-2">Kisah 1:8; 1 Yohanes 4:4</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kemenangan dalam Kristus -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Kemenangan Pasti dalam Kristus</h3>
+
+            <div class="space-y-6">
+              <div class="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-lg">
+                <h4 class="font-bold text-green-900 mb-2">Kemenangan yang Sudah Dimenangkan</h4>
+                <p class="text-green-800 text-sm mb-3">Melalui kematian dan kebangkitan Kristus, kita sudah memiliki kemenangan atas setan dan kuasa kegelapan.</p>
+                <ul class="text-green-700 space-y-1 text-sm ml-4">
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Kristus melucuti pemerintah dan penguasa (Kolose 2:15)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Roh yang di dalam kita lebih besar (1 Yohanes 4:4)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="mr-2">•</span>
+                    <span>Kita lebih dari pemenang (Roma 8:37)</span>
+                  </li>
+                </ul>
+                <div class="bg-green-100 rounded-lg p-3 mt-3">
+                  <p class="text-green-800 text-xs font-semibold">Yohanes 16:33; Roma 8:37; 1 Yohanes 5:4</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-white border border-sky-200 rounded-xl p-6">
+                  <h4 class="font-bold text-sky-900 mb-3 text-lg">Peran Malaikat dalam Peperangan<br><span class="text-sm font-normal">(Angels in Spiritual Warfare)</span></h4>
+                  <p class="text-sky-800 text-sm mb-4">Malaikat baik aktif terlibat dalam peperangan rohani melawan kuasa kegelapan.</p>
+                  <ul class="text-sky-700 space-y-2 text-sm">
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Mikhael dan malaikatnya berperang (Wahyu 12:7)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Melayani orang percaya (Ibrani 1:14)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Bala tentara sorga siap menolong (2 Raja-raja 6:17)</span>
+                    </li>
+                  </ul>
+                  <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                    <p class="text-sky-800 text-xs font-semibold">Mazmur 34:7; Daniel 10:13; Wahyu 12:7-9</p>
+                  </div>
+                </div>
+
+                <div class="bg-white border border-sky-200 rounded-xl p-6">
+                  <h4 class="font-bold text-sky-900 mb-3 text-lg">Pengharapan Eskatologis<br><span class="text-sm font-normal">(Eschatological Hope)</span></h4>
+                  <p class="text-sky-800 text-sm mb-4">Pada akhirnya, setan dan semua kejahatan akan dikalahkan secara permanen.</p>
+                  <ul class="text-sky-700 space-y-2 text-sm">
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Setan akan dilemparkan ke lautan api (Wahyu 20:10)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Maut dan kerajaan maut dimusnahkan (1 Korintus 15:26)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>Allah akan menjadi semua di dalam semua (1 Korintus 15:28)</span>
+                    </li>
+                  </ul>
+                  <div class="bg-sky-100 rounded-lg p-3 mt-4">
+                    <p class="text-sky-800 text-xs font-semibold">Roma 16:20; Wahyu 20:10; 21:4</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aplikasi Praktis -->
+    <section id="aplikasi" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mt-8">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-800 p-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-white items-center text-left">
+            Aplikasi Praktis Angelologi
+          </h2>
+        </div>
+
+        <div class="p-6 md:p-4">
+          <div class="prose prose-lg max-w-none mb-8">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              Pemahaman angelologi yang benar memiliki implikasi praktis bagi kehidupan rohani, ibadah, dan pelayanan kita.
+            </p>
+          </div>
+
+          <!-- Sikap yang Benar -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left">Sikap yang Benar Terhadap Malaikat</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">🙌</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Penyembahan yang Tepat</h4>
+                <p class="text-gray-700 text-sm">Hanya menyembah Allah, bukan malaikat. Malaikat adalah pelayan.</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">💖</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Rasa Syukur</h4>
+                <p class="text-gray-700 text-sm">Bersyukur untuk pelayanan malaikat tanpa memusatkan perhatian pada mereka.</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">🛡️</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Kewaspadaan</h4>
+                <p class="text-gray-700 text-sm">Waspada terhadap tipu muslihat setan yang menyamar sebagai malaikat terang.</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">⚔️</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Keteguhan Iman</h4>
+                <p class="text-gray-700 text-sm">Bertekun dalam iman, mengetahui bahwa malaikat melayani kita.</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">📖</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Ketergantungan pada Firman</h4>
+                <p class="text-gray-700 text-sm">Menguji segala pengalaman spiritual dengan firman Allah.</p>
+              </div>
+
+              <div class="bg-white border border-sky-200 rounded-xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-sky-100 rounded-2xl flex items-center justify-center mb-4">
+                  <span class="text-sky-600 text-xl">🎯</span>
+                </div>
+                <h4 class="font-bold text-sky-900 mb-3">Fokus pada Kristus</h4>
+                <p class="text-gray-700 text-sm">Memusatkan perhatian pada Kristus yang lebih tinggi dari malaikat.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Implikasi bagi Pelayanan -->
+          <div class="bg-gradient-to-r from-gray-50 to-sky-50 rounded-2xl p-4 mb-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Implikasi bagi Kehidupan dan Pelayanan</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Kesadaran Spiritual<br><span class="text-lg font-normal">(Spiritual Awareness)</span></h4>
+                <p class="text-gray-700 mb-4 text-center">Memahami realitas dunia roh tanpa terobsesi atau takut berlebihan.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Praktik:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Mengakui realitas peperangan rohani</li>
+                    <li>• Tidak mengabaikan atau terobsesi dengan malaikat</li>
+                    <li>• Hidup dalam keseimbangan alkitabiah</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-sky-200">
+                <h4 class="font-bold text-sky-900 text-xl mb-4 text-center">Ketekunan dalam Kebenaran<br><span class="text-lg font-normal">(Perseverance in Truth)</span></h4>
+                <p class="text-gray-700 mb-4 text-center">Berpegang pada kebenaran firman Allah melawan penyesatan.</p>
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h5 class="font-semibold text-sky-900 mb-2">Praktik:</h5>
+                  <ul class="text-sky-800 space-y-1 text-sm">
+                    <li>• Memegang teguh pengajaran yang sehat</li>
+                    <li>• Menolak ajaran tentang malaikat yang tidak alkitabiah</li>
+                    <li>• Mengoreksi kesalahan dengan lemah lembut</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tips Pertumbuhan -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">Tips untuk Bertumbuh dalam Pemahaman Angelologi yang Sehat</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Studi yang Seimbang:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Pelajari seluruh Alkitab tentang malaikat, bukan hanya bagian tertentu</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Fokus pada Kristus sebagai pusat iman, bukan pada malaikat</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Uji semua pengalaman dengan firman Allah</span>
+                  </div>
+                  <div class="flex items-center bg-sky-50 p-4 rounded-lg">
+                    <span class="bg-sky-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Hindari spekulasi tentang hal-hal yang tidak dinyatakan jelas</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="font-bold text-gray-900 mb-4 text-lg">Hidup dalam Kebenaran:</h4>
+                <div class="space-y-3">
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Hidup dalam kekudusan yang menyenangkan Allah</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Gunakan senjata rohani untuk melawan tipu muslihat setan</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Bersyukur untuk pelayanan malaikat tanpa menyembah mereka</span>
+                  </div>
+                  <div class="flex items-center bg-blue-50 p-4 rounded-lg">
+                    <span class="bg-blue-500 text-white p-1 rounded mr-3">✓</span>
+                    <span class="text-gray-700">Beritakan Kristus yang berkuasa atas semua malaikat dan setan</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian-Bagian Terkait -->
+    <section class="mt-12">
+      <div class="bg-gradient-to-r from-sky-600 to-sky-800 text-white rounded-2xl p-4 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">
+          Lanjutkan Perjalanan Teologismu
+        </h2>
+        <p class="mb-8 max-w-2xl mx-auto text-lg">
+          Setelah memahami Angelologi, saatnya melanjutkan eksplorasi ke doktrin-doktrin sistematik berikutnya untuk membangun pemahaman teologis yang komprehensif dan alkitabiah.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/edukasi/teologi-sistematik/hamartologi"
+            class="bg-white text-sky-900 px-8 py-4 rounded-xl font-bold hover:text-sky-700 transition-all shadow-lg hover:shadow-xl">
+            ⚫ Pelajari Hamartologi Selanjutnya
+          </a>
+          <a
+            href="/edukasi/teologi-sistematik"
+            class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-sky-600 transition-all">
+            🏠 Kembali ke Overview Teologi
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Link ke Bagian-Bagian Terkait -->
+    <section class="mt-8">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-4">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6 text-left text-center">
+          Eksplorasi Lebih Lanjut tentang Dunia Roh
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {relatedSections.map((section) => (
+            <a
+              href={section.url}
+              class="bg-gray-50 hover:bg-gray-100 p-6 rounded-xl border border-gray-200 transition-all group">
+              <div class="flex items-start">
+                <span class="text-3xl mr-4 group-hover:scale-110 transition-transform">
+                  {section.icon}
+                </span>
+                <div>
+                  <h3 class="font-bold text-gray-900 text-lg mb-2 group-hover:text-sky-600">
+                    {section.title}
+                  </h3>
+                  <p class="text-gray-700 text-sm">{section.description}</p>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <div class="text-center mt-8">
+          <a
+            href="/edukasi/teologi-sistematik#kurikulum"
+            class="inline-flex items-center text-sky-600 hover:text-sky-800 font-semibold">
+            <span>Lihat Kurikulum Lengkap Teologi Sistematik</span>
+            <span class="ml-2">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <style>
+    .prose {
+      max-width: none;
+    }
+    .scroll-mt-24 {
+      scroll-margin-top: 6rem;
+    }
+  </style>
+</EdukasiLayout>

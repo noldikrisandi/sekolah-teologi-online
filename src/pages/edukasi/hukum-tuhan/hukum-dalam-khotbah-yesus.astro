@@ -1,0 +1,557 @@
+---
+// src/pages/edukasi/hukum-tuhan/hukum-dalam-khotbah-yesus.astro
+import EdukasiLayout from "../../../layouts/EdukasiLayout.astro";
+
+// Data untuk SEO dan konten
+const pageData = {
+  title: "Hukum dalam Khotbah Yesus - Penggenapan Hukum Taurat dalam Pengajaran Kristus",
+  description: "Kajian mendalam tentang bagaimana Yesus menggenapi dan memperdalam hukum Taurat dalam Khotbah di Bukit dan pengajaran-Nya lainnya. Memahami revolusi moral Kerajaan Allah.",
+  image: "/images/banner/hukum-khotbah-yesus.webp",
+  url: "edukasi/hukum-tuhan/hukum-dalam-khotbah-yesus",
+  type: "article",
+  breadcrumbs: [
+    { name: "Home", url: "https://sekolahteologi.com/" },
+    { name: "Edukasi Teologi", url: "https://sekolahteologi.com/edukasi" },
+    { name: "Hukum Tuhan", url: "https://sekolahteologi.com/edukasi/hukum-tuhan" },
+    { name: "Hukum dalam Khotbah Yesus", url: "https://sekolahteologi.com/edukasi/hukum-tuhan/hukum-dalam-khotbah-yesus" },
+  ],
+};
+
+// Data untuk konten utama
+const sermonSections = [
+  {
+    title: "Penggenapan Hukum Taurat",
+    scripture: "Matius 5:17-20",
+    content: "Janganlah kamu menyangka, bahwa Aku datang untuk meniadakan hukum Taurat atau kitab para nabi. Aku datang bukan untuk meniadakannya, melainkan untuk menggenapinya.",
+    explanation: "Yesus menegaskan otoritas dan permanensi hukum Taurat sambil menyatakan diri-Nya sebagai penggenapannya yang sempurna.",
+    applications: [
+      "Hukum Taurat tetap berlaku sebagai standar kebenaran",
+      "Yesus adalah penggenapan sempurna dari seluruh hukum",
+      "Kebenaran Kerajaan Allah melampaui kebenaran ahli-ahli Taurat"
+    ],
+    icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+  },
+  {
+    title: "Antitesis: Kamu Telah Mendengar... Tetapi Aku Berkata",
+    scripture: "Matius 5:21-48",
+    content: "Kamu telah mendengar firman kepada nenek moyang kita: Jangan membunuh... Tetapi Aku berkata kepadamu: Setiap orang yang marah terhadap saudaranya harus dihukum.",
+    explanation: "Yesus memperdalam dan menginternalisasi hukum, beralih dari tindakan eksternal ke motivasi internal hati.",
+    applications: [
+      "Standar moral meliputi pikiran dan motivasi hati",
+      "Kekudusan mencakup sikap hati, bukan hanya tindakan",
+      "Kasih menjadi motivasi utama ketaatan"
+    ],
+    icon: "M13 10V3L4 14h7v7l9-11h-7z"
+  },
+  {
+    title: "Kesempurnaan dalam Kasih",
+    scripture: "Matius 5:43-48",
+    content: "Kasihilah musuhmu dan berdoalah bagi mereka yang menganiaya kamu. Karena dengan demikianlah kamu menjadi anak-anak Bapamu yang di sorga.",
+    explanation: "Yesus menetapkan kasih sebagai standar tertinggi yang mencerminkan karakter Bapa surgawi.",
+    applications: [
+      "Kasih tanpa batas kepada semua orang",
+      "Meneladan karakter Allah yang sempurna",
+      "Mengasihi seperti Bapa mengasihi"
+    ],
+    icon: "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+  }
+];
+
+// Data untuk antitesis Yesus
+const antitheses = [
+  {
+    oldLaw: "Jangan membunuh",
+    newTeaching: "Jangan marah terhadap saudaramu",
+    reference: "Matius 5:21-26",
+    focus: "Mengatasi akar kemarahan dan rekonsiliasi",
+    implication: "Rekonsiliasi lebih penting dari persembahan"
+  },
+  {
+    oldLaw: "Jangan berzinah",
+    newTeaching: "Jangan memandang perempuan dengan nafsu",
+    reference: "Matius 5:27-30",
+    focus: "Kemurnian hati dan pikiran",
+    implication: "Kekudusan meliputi pikiran dan keinginan"
+  },
+  {
+    oldLaw: "Surat cerai untuk menceraikan",
+    newTeaching: "Apa yang dipersatukan Allah tidak boleh diceraikan manusia",
+    reference: "Matius 5:31-32",
+    focus: "Kesucian dan permanensi pernikahan",
+    implication: "Pernikahan sebagai perjanjian ilahi"
+  },
+  {
+    oldLaw: "Jangan bersumpah palsu",
+    newTeaching: "Jangan bersumpah sama sekali, katakan ya atau tidak",
+    reference: "Matius 5:33-37",
+    focus: "Integritas dan kejujuran mutlak",
+    implication: "Kebenaran dalam perkataan sehari-hari"
+  },
+  {
+    oldLaw: "Mata ganti mata, gigi ganti gigi",
+    newTeaching: "Jangan melawan orang yang berbuat jahat",
+    reference: "Matius 5:38-42",
+    focus: "Pengampunan dan tidak membalas dendam",
+    implication: "Mengalah demi perdamaian"
+  },
+  {
+    oldLaw: "Kasihilah sesamamu dan bencilah musuhmu",
+    newTeaching: "Kasihilah musuhmu dan berdoalah bagi mereka",
+    reference: "Matius 5:43-48",
+    focus: "Kasih universal tanpa batas",
+    implication: "Meneladan kasih Bapa surgawi"
+  }
+];
+
+// Data untuk implikasi teologis
+const theologicalImplications = [
+  {
+    title: "Otoritas Mesianik",
+    description: "Yesus berbicara dengan otoritas ilahi, 'Tetapi Aku berkata kepadamu'",
+    scripture: "Matius 7:28-29",
+    significance: "Klaim otoritas yang setara dengan Allah"
+  },
+  {
+    title: "Internalisasi Hukum",
+    description: "Pergeseran dari ketaatan eksternal ke transformasi internal",
+    scripture: "Matius 15:18-20",
+    significance: "Hati sebagai sumber tindakan moral"
+  },
+  {
+    title: "Standar Kerajaan Allah",
+    description: "Kebenaran yang melampaui standar religius masa itu",
+    scripture: "Matius 5:20",
+    significance: "Akses ke Kerajaan melalui kebenaran sejati"
+  },
+  {
+    title: "Kasih sebagai Fulfillment",
+    description: "Kasih sebagai penggenapan seluruh hukum Taurat",
+    scripture: "Roma 13:8-10",
+    significance: "Kasih sebagai prinsip pemersatu semua hukum"
+  }
+];
+---
+
+<EdukasiLayout {...pageData}>
+  <div class="space-y-10">
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-sky-600 to-sky-800 rounded-2xl p-8 md:p-12 text-white overflow-hidden">
+      <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cGF0aCBkPSJNMCA0MGg0MFYwaC00MCIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xNSA0MGgxMHYtNDBoLTEwdjQwem0yMC0yMGgxMHYtNDBoLTEwdjQweiIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgZmlsbD0idXJsKCNhKSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg==')] opacity-20"></div>
+      <div class="relative z-10 max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Hukum dalam Khotbah Yesus</h1>
+        <p class="text-xl md:text-2xl text-sky-100 max-w-3xl mx-auto mb-6">
+          Penggenapan dan Pendalaman Hukum Taurat dalam Khotbah di Bukit
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 mt-8">
+          <span class="bg-sky-500/30 backdrop-blur-sm text-sky-100 px-4 py-2 rounded-full text-sm font-medium">
+            Matius 5-7
+          </span>
+          <span class="bg-sky-500/30 backdrop-blur-sm text-sky-100 px-4 py-2 rounded-full text-sm font-medium">
+            Khotbah di Bukit
+          </span>
+          <span class="bg-sky-500/30 backdrop-blur-sm text-sky-100 px-4 py-2 rounded-full text-sm font-medium">
+            Penggenapan Hukum Taurat
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-sky-100">
+      <div class="flex items-start mb-6">
+        <div class="bg-sky-100 p-3 rounded-full mr-4">
+          <svg class="w-6 h-6 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </div>
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Revolusi Moral Kerajaan Allah</h2>
+          <p class="text-gray-600">Yesus Menggenapi dan Memperdalam Makna Hukum Taurat</p>
+        </div>
+      </div>
+      
+      <div class="prose prose-lg max-w-none text-gray-700">
+        <p class="text-lg">
+          <strong>Khotbah di Bukit</strong> (Matius 5-7) merupakan pengajaran Yesus yang paling komprehensif tentang 
+          hubungan antara hukum Taurat dan kehidupan dalam Kerajaan Allah. Di sini, Yesus tidak hanya menegaskan otoritas hukum Taurat, 
+          tetapi juga <strong>menggenapi</strong> dan <strong>memperdalam</strong> maknanya, membawa revolusi moral yang mengubah 
+          fokus dari ketaatan eksternal ke transformasi internal.
+        </p>
+        
+        <div class="bg-sky-50 border-l-4 border-sky-500 p-6 my-6 rounded-r-lg">
+          <p class="text-sky-800 font-medium mb-2">Kontekstualisasi Historis</p>
+          <p class="text-sky-700">
+            Yesus berbicara dalam konteks dimana hukum Taurat sering direduksi menjadi legalisme eksternal oleh para ahli Taurat dan orang Farisi. 
+            Khotbah di Bukit merupakan koreksi terhadap penyimpangan ini dan restorasi makna sejati hukum Allah.
+          </p>
+        </div>
+
+        <h3 class="text-xl font-bold text-gray-800 mt-8 mb-4">Struktur Khotbah di Bukit</h3>
+        <div class="grid md:grid-cols-3 gap-4 my-6">
+          <div class="bg-gradient-to-br from-sky-50 to-white border border-sky-100 rounded-lg p-4 text-center">
+            <div class="bg-sky-100 w-10 h-10 rounded-full flex items-center justify-center mx-auto mb-3">
+              <span class="text-sky-600 font-bold">1</span>
+            </div>
+            <h4 class="font-semibold text-gray-800 mb-2">Ucapan Bahagia</h4>
+            <p class="text-gray-600 text-sm">Nilai-nilai Kerajaan Allah (Matius 5:3-12)</p>
+          </div>
+          <div class="bg-gradient-to-br from-sky-50 to-white border border-sky-100 rounded-lg p-4 text-center">
+            <div class="bg-sky-100 w-10 h-10 rounded-full flex items-center justify-center mx-auto mb-3">
+              <span class="text-sky-600 font-bold">2</span>
+            </div>
+            <h4 class="font-semibold text-gray-800 mb-2">Penggenapan Hukum</h4>
+            <p class="text-gray-600 text-sm">Antitesis dan pendalaman (Matius 5:17-48)</p>
+          </div>
+          <div class="bg-gradient-to-br from-sky-50 to-white border border-sky-100 rounded-lg p-4 text-center">
+            <div class="bg-sky-100 w-10 h-10 rounded-full flex items-center justify-center mx-auto mb-3">
+              <span class="text-sky-600 font-bold">3</span>
+            </div>
+            <h4 class="font-semibold text-gray-800 mb-2">Hidup dalam Kerajaan</h4>
+            <p class="text-gray-600 text-sm">Aplikasi praktis (Matius 6-7)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Sermon Sections -->
+    <section class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-sky-100">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Bagian Utama Khotbah tentang Hukum</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Tiga pilar utama pengajaran Yesus tentang penggenapan hukum Taurat
+        </p>
+      </div>
+
+      <div class="space-y-8">
+        {sermonSections.map((section, index) => (
+          <div class="group bg-gradient-to-br from-white to-sky-50 border border-sky-100 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="flex flex-col lg:flex-row lg:items-start gap-6">
+              <!-- Icon and Number -->
+              <div class="flex-shrink-0">
+                <div class="flex items-center mb-4">
+                  <div class="bg-sky-100 w-12 h-12 rounded-lg flex items-center justify-center mr-4">
+                    <svg class="w-6 h-6 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={section.icon}></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="bg-sky-500 text-white text-xs font-semibold px-3 py-1 rounded-full">Bagian {index + 1}</span>
+                    <h3 class="text-xl font-bold text-gray-800 mt-2">{section.title}</h3>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Content -->
+              <div class="flex-grow">
+                <div class="bg-white rounded-lg p-4 mb-4 border border-sky-100">
+                  <p class="text-lg font-medium text-gray-800 italic mb-2">"{section.content}"</p>
+                  <p class="text-sm text-sky-600 font-semibold">{section.scripture}</p>
+                </div>
+                
+                <p class="text-gray-600 mb-6">{section.explanation}</p>
+                
+                <div class="bg-sky-50 rounded-lg p-4">
+                  <h4 class="font-semibold text-gray-800 mb-3 flex items-center">
+                    <svg class="w-4 h-4 text-sky-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    Implikasi Praktis
+                  </h4>
+                  <ul class="space-y-2">
+                    {section.applications.map((app) => (
+                      <li class="flex items-start text-gray-600 text-sm">
+                        <svg class="w-4 h-4 text-sky-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        {app}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Antitheses Section -->
+    <section class="bg-gradient-to-br from-sky-600 to-sky-800 rounded-2xl p-8 md:p-10 text-white">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">Enam Antitesis Yesus</h2>
+        <p class="text-sky-100 text-center mb-8 max-w-3xl mx-auto">
+          "Kamu telah mendengar firman kepada nenek moyang kita... tetapi Aku berkata kepadamu" - 
+          Yesus memperdalam dan menggenapi hukum Taurat dengan otoritas Mesianik
+        </p>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
+          {antitheses.map((antithesis, index) => (
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all duration-300">
+              <div class="flex items-start mb-4">
+                <div class="bg-white/20 w-8 h-8 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                  <span class="text-white font-bold text-sm">{index + 1}</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg mb-2">{antithesis.oldLaw}</h3>
+                  <p class="text-sky-100 text-sm italic">{antithesis.reference}</p>
+                </div>
+              </div>
+              
+              <div class="bg-white/10 rounded-lg p-4 mb-3">
+                <p class="text-white font-semibold text-sm mb-1">"Tetapi Aku berkata kepadamu:"</p>
+                <p class="text-sky-100 text-sm">{antithesis.newTeaching}</p>
+              </div>
+              
+              <div class="space-y-2">
+                <div class="flex items-start text-sky-100 text-xs">
+                  <span><strong>Fokus:</strong> {antithesis.focus}</span>
+                </div>
+                <div class="flex items-start text-sky-100 text-xs">
+                  <span><strong>Implikasi:</strong> {antithesis.implication}</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Theological Implications -->
+    <section class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-sky-100">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Implikasi Teologis</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Makna mendalam dari penggenapan hukum Taurat oleh Yesus
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        {theologicalImplications.map((implication) => (
+          <div class="group bg-gradient-to-br from-white to-sky-50 border border-sky-100 rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+              <svg class="w-5 h-5 text-sky-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+              </svg>
+              {implication.title}
+            </h3>
+            
+            <p class="text-gray-600 mb-4">{implication.description}</p>
+            
+            <div class="bg-white rounded-lg p-3 border border-sky-100 mb-3">
+              <p class="text-sky-600 font-semibold text-sm">{implication.scripture}</p>
+            </div>
+            
+            <div class="bg-sky-50 rounded-lg p-3">
+              <p class="text-sky-700 text-sm font-medium">Signifikansi: {implication.significance}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="mt-8 bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-lg">
+        <h4 class="font-bold text-amber-800 mb-2">Otoritas Mesianik Yesus</h4>
+        <p class="text-amber-700">
+          Ketika Yesus berkata "Tetapi Aku berkata kepadamu", Ia menegaskan otoritas yang setara dengan Allah. 
+          Ini bukan sekadar interpretasi baru tentang Taurat, tetapi penyataan otoritas Mesianik untuk 
+          menetapkan makna sejati dan penggenapan hukum Taurat.
+        </p>
+      </div>
+    </section>
+
+    <!-- Practical Applications -->
+    <section class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-sky-100">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Penerapan dalam Kehidupan Kristen</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Bagaimana hidup menurut standar Kerajaan Allah yang diajarkan Yesus
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="text-center">
+          <div class="bg-sky-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-gray-800 mb-2">Transformasi Hati</h3>
+          <p class="text-gray-600 text-sm">Fokus pada perubahan internal, bukan hanya eksternal</p>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-sky-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-gray-800 mb-2">Integritas Total</h3>
+          <p class="text-gray-600 text-sm">Keselarasan antara pikiran, perkataan, dan perbuatan</p>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-sky-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-gray-800 mb-2">Rekonsiliasi</h3>
+          <p class="text-gray-600 text-sm">Memulihkan hubungan sebelum menyembah</p>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-sky-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-gray-800 mb-2">Ketergantungan pada Anugerah</h3>
+          <p class="text-gray-600 text-sm">Mengakui kebutuhan akan kuasa Allah untuk taat</p>
+        </div>
+      </div>
+
+      <div class="mt-8 bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg">
+        <h4 class="font-bold text-green-800 mb-2">Keseimbangan yang Alkitabiah</h4>
+        <p class="text-green-700">
+          Pengajaran Yesus tentang hukum bukanlah legalisme baru, tetapi undangan untuk mengalami transformasi 
+          oleh Roh Kudus. Standar yang tinggi ini mengungkapkan kebutuhan kita akan kasih karunia dan 
+          memimpin kita kepada ketergantungan penuh pada Allah untuk kekuatan menaati-Nya.
+        </p>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-gradient-to-r from-sky-600 to-sky-800 rounded-2xl p-10 text-center text-white relative overflow-hidden">
+      <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cGF0aCBkPSJNMCA0MGg0MFYwaC00MCIgZillbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xNSA0MGgxMHYtNDBoLTEwdjQwem0yMC0yMGgxMHYtNDBoLTEwdjQweiIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgZmlsbD0idXJsKCNhKSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg==')] opacity-10"></div>
+      <div class="relative z-10">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Mulai Hidup Menurut Standar Kerajaan</h2>
+        <p class="text-sky-100 text-lg mb-8 max-w-2xl mx-auto">
+          Penggenapan hukum Taurat oleh Yesus mengundang kita untuk mengalami transformasi radikal 
+          dari dalam ke luar, bergantung sepenuhnya pada kasih karunia dan kuasa Roh Kudus.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/renungan/khobah-di-bukit"
+            class="bg-white text-sky-600 px-6 py-3 rounded-lg hover:bg-sky-50 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl">
+            Renungkan Khotbah di Bukit
+          </a>
+          <a
+            href="/studi-alkitab/matius-5-7"
+            class="border-2 border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-sky-600 transition-all duration-300 font-semibold">
+            Pelajari Lebih Dalam
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="bg-white rounded-2xl shadow-lg p-8 border border-sky-100">
+      <div class="grid md:grid-cols-2 gap-6">
+        <a href="/edukasi/hukum-tuhan/klasifikasi-hukum-taurat" class="group bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-left">
+          <div class="flex items-center justify-between mb-4">
+            <svg class="w-6 h-6 text-gray-400 group-hover:text-gray-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+            <span class="bg-gray-100 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">Sebelumnya</span>
+          </div>
+          <h3 class="text-lg font-bold text-gray-800 mb-2">Klasifikasi Hukum Taurat</h3>
+          <p class="text-gray-600 text-sm">Memahami pembagian hukum moral, seremonial, dan sipil</p>
+        </a>
+
+        <a href="/edukasi/hukum-tuhan/hukum-dan-roh-kudus" class="group bg-gradient-to-br from-sky-50 to-white border border-sky-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-left">
+          <div class="flex items-center justify-between mb-4">
+            <span class="bg-sky-100 text-sky-600 text-xs font-semibold px-3 py-1 rounded-full">Selanjutnya</span>
+            <svg class="w-6 h-6 text-sky-400 group-hover:text-sky-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-gray-800 mb-2">Hukum dan Roh Kudus</h3>
+          <p class="text-gray-600 text-sm">Peran Roh Kudus dalam penulisan dan penaatan hukum</p>
+        </a>
+      </div>
+    </section>
+  </div>
+</EdukasiLayout>
+
+<style>
+/* Custom styles untuk halaman hukum dalam khotbah Yesus */
+.prose {
+  line-height: 1.7;
+}
+
+.prose p {
+  margin-bottom: 1.2em;
+}
+
+/* Smooth transitions untuk semua interactive elements */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+/* Gradient text effect */
+.gradient-text {
+  background: linear-gradient(135deg, #0ea5e9, #0369a1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Animation for cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.group {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Sky theme enhancements */
+.bg-sky-50 {
+  background-color: #f0f9ff;
+}
+
+.border-sky-100 {
+  border-color: #e0f2fe;
+}
+
+.text-sky-600 {
+  color: #0284c7;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Hover effects for interactive elements */
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+</style>

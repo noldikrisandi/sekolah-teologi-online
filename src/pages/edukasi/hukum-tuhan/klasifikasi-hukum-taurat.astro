@@ -1,0 +1,622 @@
+---
+// src/pages/edukasi/hukum-tuhan/klasifikasi-hukum-taurat.astro
+import EdukasiLayout from "../../../layouts/EdukasiLayout.astro";
+
+// Data untuk SEO dan konten
+const pageData = {
+  title: "Klasifikasi Hukum Taurat - Moral, Seremonial, dan Sipil",
+  description: "Memahami pembagian hukum Taurat menjadi hukum moral, seremonial, dan sipil. Kajian tentang relevansi masing-masing kategori bagi orang Kristen masa kini.",
+  image: "/images/banner/klasifikasi-hukum.webp",
+  url: "edukasi/hukum-tuhan/klasifikasi-hukum-taurat",
+  type: "article",
+  breadcrumbs: [
+    { name: "Home", url: "https://sekolahteologi.com/" },
+    { name: "Edukasi Teologi", url: "https://sekolahteologi.com/edukasi" },
+    { name: "Hukum Tuhan", url: "https://sekolahteologi.com/edukasi/hukum-tuhan" },
+    { name: "Klasifikasi Hukum Taurat", url: "https://sekolahteologi.com/edukasi/hukum-tuhan/klasifikasi-hukum-taurat" },
+  ],
+};
+
+// Data untuk klasifikasi hukum
+const lawClassifications = [
+  {
+    category: "Hukum Moral",
+    description: "Hukum yang mencerminkan karakter moral Allah yang kekal",
+    color: "sky",
+    icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
+    examples: [
+      "Sepuluh Perintah Allah (Keluaran 20:1-17)",
+      "Hukum kasih kepada Allah dan sesama (Matius 22:37-40)",
+      "Prinsip keadilan dan kebenaran (Mikha 6:8)"
+    ],
+    purpose: "Menunjukkan standar kekudusan Allah dan membimbing perilaku moral",
+    relevance: "Tetap berlaku sebagai standar moral universal",
+    status: "Berlaku secara permanen",
+    newTestament: "Diteguhkan dan diperdalam oleh Yesus (Matius 5:17-48)"
+  },
+  {
+    category: "Hukum Seremonial",
+    description: "Hukum yang mengatur ibadah dan upacara keagamaan Israel",
+    color: "sky",
+    icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z",
+    examples: [
+      "Korban dan persembahan (Imamat 1-7)",
+      "Hari raya dan perayaan (Imamat 23)",
+      "Aturan tentang makanan halal dan haram (Imamat 11)",
+      "Tata cara pentahiran dan kekudusan (Imamat 12-15)"
+    ],
+    purpose: "Menunjuk kepada Kristus dan menyediakan bayangan dari realitas sorgawi",
+    relevance: "Digenapi dalam Kristus, tidak mengikat secara literal",
+    status: "Digenapi dan disingkirkan",
+    newTestament: "Digenapi oleh kematian dan kebangkitan Kristus (Ibrani 10:1-18)"
+  },
+  {
+    category: "Hukum Sipil",
+    description: "Hukum yang mengatur kehidupan sosial dan politik Israel kuno",
+    color: "sky",
+    icon: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4",
+    examples: [
+      "Hukum tentang perbudakan (Keluaran 21:1-11)",
+      "Hukum tentang ganti rugi dan kompensasi (Keluaran 21:18-36)",
+      "Hukum pertanian dan ekonomi (Imamat 19:9-10)",
+      "Hukum tentang pemerintahan dan peradilan (Ulangan 16:18-20)"
+    ],
+    purpose: "Mengatur masyarakat Israel teokratis sesuai konteks zaman",
+    relevance: "Prinsip-prinsipnya dapat diterapkan, tetapi tidak mengikat secara literal",
+    status: "Tidak berlaku secara langsung",
+    newTestament: "Prinsip keadilan dan kasih tetap relevan (Roma 13:8-10)"
+  }
+];
+
+// Data untuk perbandingan
+const comparisonData = [
+  {
+    aspect: "Dasar Kewajiban",
+    moral: "Karakter Allah yang kekal",
+    seremonial: "Bayangan dari Kristus",
+    sipil: "Konteks masyarakat Israel"
+  },
+  {
+    aspect: "Jangkauan Penerapan",
+    moral: "Universal - semua orang",
+    seremonial: "Nasional - Israel",
+    sipil: "Nasional - Israel"
+  },
+  {
+    aspect: "Durasi Berlaku",
+    moral: "Permanen",
+    seremonial: "Sampai kedatangan Kristus",
+    sipil: "Sampai berakhirnya negara Israel teokratis"
+  },
+  {
+    aspect: "Status dalam Perjanjian Baru",
+    moral: "Diteguhkan dan diperdalam",
+    seremonial: "Digenapi dan disingkirkan",
+    sipil: "Tidak mengikat, prinsip tetap relevan"
+  },
+  {
+    aspect: "Contoh Penerapan Kini",
+    moral: "Menghormati orang tua, tidak membunuh",
+    seremonial: "Ibadah dalam roh dan kebenaran",
+    sipil: "Prinsip keadilan dalam masyarakat"
+  }
+];
+
+// Data untuk prinsip penafsiran
+const interpretationPrinciples = [
+  {
+    principle: "Prinsip Kristologis",
+    description: "Semua hukum Taurat menunjuk kepada Kristus",
+    scripture: "Lukas 24:27, 44",
+    application: "Lihat bagaimana hukum digenapi dalam Kristus"
+  },
+  {
+    principle: "Prinsip Kasih",
+    description: "Kasih adalah penggenapan hukum Taurat",
+    scripture: "Roma 13:8-10",
+    application: "Terapkan hukum dengan motivasi kasih"
+  },
+  {
+    principle: "Prinsip Kebebasan Kristen",
+    description: "Kita bebas dari kutuk hukum, bukan dari tanggung jawab moral",
+    scripture: "Galatia 5:1, 13-14",
+    application: "Hidup dalam kebebasan yang bertanggung jawab"
+  },
+  {
+    principle: "Prinsip Roh Kudus",
+    description: "Roh Kudus memampukan ketaatan",
+    scripture: "Roma 8:3-4",
+    application: "Andalkan kuasa Roh, bukan kekuatan sendiri"
+  }
+];
+---
+
+<EdukasiLayout {...pageData}>
+  <div class="space-y-10">
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-sky-600 to-sky-800 rounded-2xl p-8 md:p-12 text-white overflow-hidden">
+      <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cGF0aCBkPSJNMCA0MGg0MFYwaC00MCIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xNSA0MGgxMHYtNDBoLTEwdjQwem0yMC0yMGgxMHYtNDBoLTEwdjQweiIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgZmlsbD0idXJsKCNhKSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg==')] opacity-20"></div>
+      <div class="relative z-10 max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Klasifikasi Hukum Taurat</h1>
+        <p class="text-xl md:text-2xl text-sky-100 max-w-3xl mx-auto mb-6">
+          Memahami Pembagian Hukum Moral, Seremonial, dan Sipil serta Relevansinya Bagi Orang Kristen
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 mt-8">
+          <span class="bg-sky-500/30 backdrop-blur-sm text-sky-100 px-4 py-2 rounded-full text-sm font-medium">
+            1 Korintus 9:20-21
+          </span>
+          <span class="bg-sky-500/30 backdrop-blur-sm text-sky-100 px-4 py-2 rounded-full text-sm font-medium">
+            Hermeneutika Hukum Taurat
+          </span>
+          <span class="bg-sky-500/30 backdrop-blur-sm text-sky-100 px-4 py-2 rounded-full text-sm font-medium">
+            Teologi Perjanjian
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-sky-100">
+      <div class="flex items-start mb-6">
+        <div class="bg-sky-100 p-3 rounded-full mr-4">
+          <svg class="w-6 h-6 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </div>
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Pengantar Klasifikasi Hukum Taurat</h2>
+          <p class="text-gray-600">Memahami Tiga Kategori Utama Hukum dalam Perjanjian Lama</p>
+        </div>
+      </div>
+      
+      <div class="prose prose-lg max-w-none text-gray-700">
+        <p class="text-lg">
+          Klasifikasi hukum Taurat menjadi <strong>hukum moral</strong>, <strong>seremonial</strong>, dan <strong>sipil</strong> 
+          merupakan alat hermeneutika yang penting untuk memahami relevansi berbagai hukum Perjanjian Lama bagi orang Kristen masa kini. 
+          Pembagian ini membantu kita membedakan antara prinsip-prinsip moral yang universal dan hukum-hukum spesifik yang terkait dengan konteks Israel kuno.
+        </p>
+        
+        <div class="bg-sky-50 border-l-4 border-sky-500 p-6 my-6 rounded-r-lg">
+          <p class="text-sky-800 font-medium mb-2">Dasar Teologis Klasifikasi</p>
+          <p class="text-sky-700">
+            Pembagian ini didasarkan pada perbedaan dalam sifat, tujuan, dan durasi berbagai hukum. 
+            Sementara semua hukum Taurat berasal dari Allah, mereka memiliki fungsi dan jangkauan penerapan yang berbeda.
+          </p>
+        </div>
+
+        <h3 class="text-xl font-bold text-gray-800 mt-8 mb-4">Mengapa Klasifikasi Penting?</h3>
+        <div class="grid md:grid-cols-2 gap-6 my-6">
+          <div class="flex items-start">
+            <div class="bg-sky-100 p-2 rounded-lg mr-3 mt-1">
+              <svg class="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <strong>Menghindari Kebingungan</strong>
+              <p class="text-gray-600 text-sm mt-1">Membedakan hukum yang masih mengikat dan yang telah digenapi</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="bg-sky-100 p-2 rounded-lg mr-3 mt-1">
+              <svg class="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <strong>Penafsiran yang Tepat</strong>
+              <p class="text-gray-600 text-sm mt-1">Memahami konteks dan tujuan setiap jenis hukum</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="bg-sky-100 p-2 rounded-lg mr-3 mt-1">
+              <svg class="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <strong>Penerapan yang Relevan</strong>
+              <p class="text-gray-600 text-sm mt-1">Menerapkan prinsip alkitabiah sesuai konteks masa kini</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="bg-sky-100 p-2 rounded-lg mr-3 mt-1">
+              <svg class="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </div>
+            <div>
+              <strong>Kesatuan Alkitab</strong>
+              <p class="text-gray-600 text-sm mt-1">Melihat kontinuitas dan diskontinuitas antara Perjanjian Lama dan Baru</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Classifications -->
+    <section class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-sky-100">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Tiga Kategori Utama Hukum Taurat</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Memahami karakteristik, tujuan, dan relevansi masing-masing kategori
+        </p>
+      </div>
+
+      <div class="space-y-8">
+        {lawClassifications.map((law) => (
+          <div class={`group border-l-4 border-${law.color}-500 rounded-r-lg p-6 hover:shadow-lg transition-all duration-300 bg-gradient-to-r from-white to-${law.color}-50`}>
+            <div class="flex flex-col lg:flex-row lg:items-start gap-6">
+              <!-- Header -->
+              <div class="flex-shrink-0 lg:w-1/3">
+                <div class="flex items-center mb-4">
+                  <div class={`bg-${law.color}-100 w-12 h-12 rounded-lg flex items-center justify-center mr-4`}>
+                    <svg class={`w-6 h-6 text-${law.color}-600`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={law.icon}></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-800">{law.category}</h3>
+                    <p class="text-gray-600 text-sm">{law.description}</p>
+                  </div>
+                </div>
+                <div class={`bg-${law.color}-100 rounded-lg p-4`}>
+                  <p class={`text-${law.color}-700 font-semibold text-sm`}>Status: {law.status}</p>
+                  <p class={`text-${law.color}-600 text-sm mt-1`}>Relevansi: {law.relevance}</p>
+                </div>
+              </div>
+              
+              <!-- Content -->
+              <div class="flex-grow lg:w-2/3">
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 class="font-semibold text-gray-800 mb-3 flex items-center">
+                      <svg class="w-4 h-4 text-gray-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      Contoh-contoh
+                    </h4>
+                    <ul class="space-y-2">
+                      {law.examples.map((example) => (
+                        <li class="flex items-start text-gray-600 text-sm">
+                          <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                          {example}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h4 class="font-semibold text-gray-800 mb-3 flex items-center">
+                      <svg class="w-4 h-4 text-gray-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                      </svg>
+                      Dalam Perjanjian Baru
+                    </h4>
+                    <p class="text-gray-600 text-sm">{law.newTestament}</p>
+                    
+                    <h4 class="font-semibold text-gray-800 mt-4 mb-2 flex items-center">
+                      <svg class="w-4 h-4 text-gray-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                      </svg>
+                      Tujuan
+                    </h4>
+                    <p class="text-gray-600 text-sm">{law.purpose}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-sky-100">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Perbandingan Tiga Kategori Hukum</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Memahami perbedaan mendasar antara hukum moral, seremonial, dan sipil
+        </p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm text-left text-gray-700">
+          <thead class="text-xs text-gray-700 uppercase bg-sky-50">
+            <tr>
+              <th class="px-6 py-3 font-semibold">Aspek</th>
+              <th class="px-6 py-3 font-semibold">Hukum Moral</th>
+              <th class="px-6 py-3 font-semibold">Hukum Seremonial</th>
+              <th class="px-6 py-3 font-semibold">Hukum Sipil</th>
+            </tr>
+          </thead>
+          <tbody>
+            {comparisonData.map((row, index) => (
+              <tr class={index % 2 === 0 ? 'bg-white border-b' : 'bg-gray-50 border-b'}>
+                <td class="px-6 py-4 font-medium">{row.aspect}</td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center">
+                    <div class="w-3 h-3 bg-sky-500 rounded-full mr-2"></div>
+                    {row.moral}
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center">
+                    <div class="w-3 h-3 bg-sky-500 rounded-full mr-2"></div>
+                    {row.seremonial}
+                  </div>
+                </td>
+                <td class="px-6 py-4">
+                  <div class="flex items-center">
+                    <div class="w-3 h-3 bg-sky-500 rounded-full mr-2"></div>
+                    {row.sipil}
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-8 bg-sky-50 border-l-4 border-sky-500 p-6 rounded-r-lg">
+        <p class="text-sky-800 font-medium">
+          💡 <strong>Penting:</strong> Klasifikasi ini bukan berarti kita dapat memilih-milih hukum yang kita suka. 
+          Semua hukum berasal dari Allah dan memiliki makna teologis. Klasifikasi membantu kita memahami 
+          <strong> bagaimana</strong> menerapkan berbagai jenis hukum dalam konteks Perjanjian Baru.
+        </p>
+      </div>
+    </section>
+
+    <!-- Interpretation Principles -->
+    <section class="bg-gradient-to-br from-sky-600 to-sky-800 rounded-2xl p-8 md:p-10 text-white">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">Prinsip Penafsiran Hukum Taurat</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          {interpretationPrinciples.map((principle) => (
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all duration-300">
+              <h3 class="font-bold text-lg mb-3 flex items-center">
+                <svg class="w-5 h-5 text-sky-300 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+                {principle.principle}
+              </h3>
+              
+              <p class="text-sky-100 mb-4">{principle.description}</p>
+              
+              <div class="bg-white/10 rounded-lg p-4 mb-3">
+                <p class="text-sky-100 italic text-sm">"{principle.scripture}"</p>
+              </div>
+              
+              <div class="bg-white/5 rounded-lg p-3">
+                <p class="text-sky-200 text-sm font-semibold">Aplikasi: {principle.application}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Practical Guidelines -->
+    <section class="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-sky-100">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Panduan Praktis</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Bagaimana menerapkan pemahaman klasifikasi hukum dalam kehidupan sehari-hari
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center">
+            <svg class="w-5 h-5 text-sky-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+            Yang Harus Dilakukan
+          </h3>
+          <ul class="space-y-3">
+            <li class="flex items-start text-gray-600">
+              <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Pelajari konteks historis dan tujuan setiap hukum</span>
+            </li>
+            <li class="flex items-start text-gray-600">
+              <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Terapkan prinsip moral universal dalam kehidupan</span>
+            </li>
+            <li class="flex items-start text-gray-600">
+              <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Lihat bagaimana hukum seremonial menunjuk kepada Kristus</span>
+            </li>
+            <li class="flex items-start text-gray-600">
+              <svg class="w-4 h-4 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Gunakan prinsip keadilan dari hukum sipil untuk konteks modern</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center">
+            <svg class="w-5 h-5 text-red-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+            Yang Harus Dihindari
+          </h3>
+          <ul class="space-y-3">
+            <li class="flex items-start text-gray-600">
+              <svg class="w-4 h-4 text-red-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <span>Mengabaikan seluruh Perjanjian Lama sebagai "tidak relevan"</span>
+            </li>
+            <li class="flex items-start text-gray-600">
+              <svg class="w-4 h-4 text-red-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <span>Mencoba menaati hukum seremonial secara literal</span>
+            </li>
+            <li class="flex items-start text-gray-600">
+              <svg class="w-4 h-4 text-red-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <span>Memisahkan hukum moral dari kasih karunia</span>
+            </li>
+            <li class="flex items-start text-gray-600">
+              <svg class="w-4 h-4 text-red-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <span>Menggunakan klasifikasi untuk membenarkan ketidaktaatan</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 bg-sky-50 border-l-4 border-sky-500 p-6 rounded-r-lg">
+        <h4 class="font-bold text-sky-800 mb-2">Kesimpulan</h4>
+        <p class="text-sky-700">
+          Klasifikasi hukum Taurat membantu kita menghormati seluruh Alkitab sebagai Firman Allah sambil memahami 
+          bagaimana berbagai jenis hukum berlaku dalam konteks Perjanjian Baru. Tujuannya bukan untuk mengurangi otoritas 
+          Alkitab, tetapi untuk menaatinya dengan pengertian yang benar.
+        </p>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="bg-white rounded-2xl shadow-lg p-8 border border-sky-100">
+      <div class="grid md:grid-cols-2 gap-6">
+        <a href="/edukasi/hukum-tuhan/hukum-dan-kasih-karunia" class="group bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-left">
+          <div class="flex items-center justify-between mb-4">
+            <svg class="w-6 h-6 text-gray-400 group-hover:text-gray-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+            <span class="bg-gray-100 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">Sebelumnya</span>
+          </div>
+          <h3 class="text-lg font-bold text-gray-800 mb-2">Hukum dan Kasih Karunia</h3>
+          <p class="text-gray-600 text-sm">Memahami hubungan dinamis antara hukum Taurat dan anugerah Allah</p>
+        </a>
+
+        <a href="/edukasi/hukum-tuhan/hukum-dalam-khotbah-yesus" class="group bg-gradient-to-br from-sky-50 to-white border border-sky-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-left">
+          <div class="flex items-center justify-between mb-4">
+            <span class="bg-sky-100 text-sky-600 text-xs font-semibold px-3 py-1 rounded-full">Selanjutnya</span>
+            <svg class="w-6 h-6 text-sky-400 group-hover:text-sky-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-gray-800 mb-2">Hukum dalam Khotbah Yesus</h3>
+          <p class="text-gray-600 text-sm">Memahami penggenapan hukum Taurat dalam pengajaran Yesus</p>
+        </a>
+      </div>
+    </section>
+  </div>
+</EdukasiLayout>
+
+<style>
+/* Custom styles untuk halaman klasifikasi hukum */
+.prose {
+  line-height: 1.7;
+}
+
+.prose p {
+  margin-bottom: 1.2em;
+}
+
+/* Smooth transitions untuk semua interactive elements */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+/* Gradient text effect */
+.gradient-text {
+  background: linear-gradient(135deg, #d97706, #b45309);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Animation for cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.group {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Table responsive styles */
+@media (max-width: 768px) {
+  .overflow-x-auto {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Color theme classes */
+.bg-sky-50 {
+  background-color: #fffbeb;
+}
+
+.border-sky-100 {
+  border-color: #fed7aa;
+}
+
+.text-sky-600 {
+  color: #d97706;
+}
+
+.bg-sky-50 {
+  background-color: #ecfdf5;
+}
+
+.border-sky-100 {
+  border-color: #a7f3d0;
+}
+
+.text-sky-600 {
+  color: #059669;
+}
+
+.bg-sky-50 {
+  background-color: #eff6ff;
+}
+
+.border-sky-100 {
+  border-color: #dbeafe;
+}
+
+.text-sky-600 {
+  color: #2563eb;
+}
+</style>
